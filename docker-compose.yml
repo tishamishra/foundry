@@ -1,8 +1,11 @@
-# Foundry — Dokploy deployment (Traefik-routed on dokploy-network).
+# Foundry — Dokploy deployment.
 #
-# The persistent volume foundry_data holds everything you create and survives
-# every redeploy. The Traefik labels are what make the custom domain resolve —
-# without them Dokploy's proxy has no route and returns a 404 + self-signed cert.
+# Routing is handled by Dokploy's Domains UI (Service Name = foundry, Container
+# Port = 8080), so this compose carries NO Traefik labels — Dokploy injects them
+# itself, and having our own too caused conflicting routers (a 404 on every
+# domain, including the demo one).
+#
+# The foundry_data volume holds everything you create and survives redeploys.
 services:
   foundry:
     build: .
@@ -14,24 +17,6 @@ services:
     volumes:
       - foundry_data:/app/data
       - foundry_dist:/app/dist
-    networks:
-      - dokploy-network
-    labels:
-      - traefik.enable=true
-      - traefik.docker.network=dokploy-network
-      # HTTP
-      - traefik.http.routers.foundry-web.rule=Host(`eng.affmeet.com`)
-      - traefik.http.routers.foundry-web.entrypoints=web
-      # HTTPS + Let's Encrypt
-      - traefik.http.routers.foundry.rule=Host(`eng.affmeet.com`)
-      - traefik.http.routers.foundry.entrypoints=websecure
-      - traefik.http.routers.foundry.tls.certresolver=letsencrypt
-      # the internal port the app listens on
-      - traefik.http.services.foundry.loadbalancer.server.port=8080
-
-networks:
-  dokploy-network:
-    external: true
 
 volumes:
   foundry_data:
