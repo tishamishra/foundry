@@ -1,25 +1,37 @@
-# Foundry — Dokploy / docker-compose deployment.
+# Foundry — Dokploy deployment (Traefik-routed on dokploy-network).
 #
-# The named volume `foundry_data` is the whole point: it holds everything you
-# create — imported blocks, sites, businesses, coverage, shipped record — and it
-# survives every redeploy. Update the image all you like; this volume is not
-# touched.
+# The persistent volume foundry_data holds everything you create and survives
+# every redeploy. The Traefik labels are what make the custom domain resolve —
+# without them Dokploy's proxy has no route and returns a 404 + self-signed cert.
 services:
   foundry:
     build: .
-    # or, once you push an image:  image: your-registry/foundry:latest
     restart: unless-stopped
     environment:
-      # CHANGE THIS. It is the panel login password.
       FOUNDRY_PASSWORD: "${FOUNDRY_PASSWORD:-change-me}"
-      # Stable secret so logins survive restarts (any long random string).
-      FOUNDRY_SECRET: "${FOUNDRY_SECRET:-please-change-this-to-a-long-random-string}"
+      FOUNDRY_SECRET: "${FOUNDRY_SECRET:-change-me-long-random}"
       PORT: "8080"
     volumes:
-      - foundry_data:/app/data          # <-- your content lives here, permanently
-      - foundry_dist:/app/dist          # built sites (optional to persist)
-    ports:
-      - "8080:8080"                     # Dokploy maps your subdomain to this
+      - foundry_data:/app/data
+      - foundry_dist:/app/dist
+    networks:
+      - dokploy-network
+    labels:
+      - traefik.enable=true
+      - traefik.docker.network=dokploy-network
+      # HTTP
+      - traefik.http.routers.foundry-web.rule=Host(`eng.affmeet.com`)
+      - traefik.http.routers.foundry-web.entrypoints=web
+      # HTTPS + Let's Encrypt
+      - traefik.http.routers.foundry.rule=Host(`eng.affmeet.com`)
+      - traefik.http.routers.foundry.entrypoints=websecure
+      - traefik.http.routers.foundry.tls.certresolver=letsencrypt
+      # the internal port the app listens on
+      - traefik.http.services.foundry.loadbalancer.server.port=8080
+
+networks:
+  dokploy-network:
+    external: true
 
 volumes:
   foundry_data:
