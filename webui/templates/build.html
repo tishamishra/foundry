@@ -1,0 +1,99 @@
+{% extends "base.html" %}{% block head %}
+{# The page reloads itself while the job runs. No websocket, no polling script:
+   a build is a handful of minutes at most and a meta refresh cannot get stuck
+   in a state the server disagrees with. #}
+{% if job and job.running %}<meta http-equiv="refresh" content="2">{% endif %}
+{% endblock %}{% block body %}
+<div class="head"><h1>Build</h1>
+  <p class="sub">
+    {% if job and job.running %}<span class="spin"></span>
+      Building {{ job.done|length }} of {{ job.targets|length }} — {{ job.elapsed|round|int }}s elapsed.
+    {% else %}
+      {{ results|selectattr('ok')|list|length }} of {{ results|length }} passed{% if job %}
+      in {{ job.elapsed|round|int }}s{% endif %}.
+    {% endif %}
+  </p>
+  <div class="actions"><a class="btn ghost" href="{{ url_for('dashboard') }}">Back to dashboard</a></div>
+</div>
+
+{% if job %}
+<div class="progress-wrap"><div class="progress" style="width:{{ job.progress }}%"></div></div>
+{% set finished = job.done|map(attribute='site_id')|list %}
+<p class="dim queue">
+  {% for t in job.targets %}
+  <span class="q {{ 'done' if t in finished else ('now' if t == job.current else '') }}">{{ t }}</span>
+  {% endfor %}
+</p>
+{% if job.error %}<div class="finding blocker"><strong>The build thread stopped</strong>
+  <div class="mono dim">{{ job.error }}</div></div>{% endif %}
+{% endif %}
+
+{% for r in results %}
+<div class="card build {{ 'ok' if r.ok else 'fail' }}">
+  <div class="build-head">
+    <h2>{{ r.site_id }}</h2>
+    <span class="pill {{ 'good' if r.ok else 'bad' }}">{{ 'pass' if r.ok else 'blocked' }}</span>
+    <span class="dim">{{ r.seconds }}s</span>
+    {% if r.ok %}<a class="btn sm" href="{{ url_for('preview', site_id=r.site_id) }}" target="_blank">Preview</a>{% endif %}
+  </div>
+
+  {% if r.stats %}
+  <p class="dim">{{ '{:,}'.format(r.stats.static) }} static + {{ '{:,}'.format(r.stats.edge) }} edge pages ·
+    {{ r.stats.assets }} assets · {{ r.report.stats.avg_words_per_page }} words/page</p>
+  {% set sim = r.report.stats.similarity %}
+  {% if sim and sim.nearest %}
+  <p>Closest existing site: <strong>{{ sim.nearest }}</strong> at
+    <span class="pill {{ 'good' if sim.score < WARN_AT else ('warn' if sim.score < BLOCK_AT else 'bad') }}">{{ '%.1f%%'|format(sim.score * 100) }}</span>
+    <span class="dim">(composed copy alone {{ '%.1f%%'|format(sim.copy_only * 100) }})</span></p>
+  {% endif %}
+  {% endif %}
+
+  {% if r.report %}
+    {% for f in r.report.findings %}
+    <div class="finding {{ f.severity }}">
+      <strong>{{ f.rule }}</strong> — {{ f.message }}
+      <div class="dim">why: {{ f.why }}</div>
+      {% for e in f.evidence %}<div class="mono dim">· {{ e }}</div>{% endfor %}
+    </div>
+    {% endfor %}
+    <details class="blind"><summary>What this build did NOT check ({{ r.report.not_verified|length }})</summary>
+      {% for n in r.report.not_verified %}<div class="dim">· {{ n }}</div>{% endfor %}
+    </details>
+  {% endif %}
+
+  {% if r.seo %}
+  <div class="seo-block">
+    <h3>SEO agent
+      <span class="pill {{ 'good' if r.seo.score >= 90 else ('warn' if r.seo.score >= 70 else 'bad') }}">{{ r.seo.score }}/100</span>
+    </h3>
+    <p class="dim">{{ r.seo.stats.unique_titles }} unique titles across
+      {{ r.seo.stats.pages_audited }} audited pages ·
+      {{ '{:,}'.format(r.seo.stats.sitemap_urls) }} sitemap URLs ·
+      {{ r.seo.stats.avg_page_kb }} KB average page</p>
+    {% for f in r.seo.findings %}
+    <div class="finding {{ f.severity }}">
+      <strong>{{ f.rule }}</strong> — {{ f.message }}
+      <div class="dim">why: {{ f.why }}</div>
+      {% for e in f.evidence %}<div class="mono dim">· {{ e }}</div>{% endfor %}
+    </div>
+    {% endfor %}
+    {% if not r.seo.findings %}<p class="dim">No SEO findings.</p>{% endif %}
+    <details class="blind"><summary>What the SEO agent did NOT check ({{ r.seo.not_verified|length }})</summary>
+      {% for n in r.seo.not_verified %}<div class="dim">· {{ n }}</div>{% endfor %}
+    </details>
+  </div>
+  {% endif %}
+
+  {% if r.diag %}
+  <div class="finding blocker">
+    <strong>{{ r.error }}</strong>
+    <div><em>{{ r.diag.title }}</em></div>
+    <div class="dim">cause: {{ r.diag.cause }}</div>
+    <div>fix: {{ r.diag.fix }}</div>
+    {% if r.diag.auto_handled %}<div class="warn-text">This class is already guarded — a guard missed
+    a case. Investigate, do not re-fix.</div>{% endif %}
+  </div>
+  {% endif %}
+</div>
+{% endfor %}
+{% endblock %}

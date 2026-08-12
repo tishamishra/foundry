@@ -1,0 +1,528 @@
+zip,city,state,county,payout
+75001,Addison,TX,Dallas County,74.0
+75002,Allen,TX,Collin County,81.5
+75013,Allen,TX,Collin County,81.5
+75409,Anna,TX,Collin County,81.5
+76226,Argyle,TX,Denton County,81.5
+76001,Arlington,TX,Tarrant County,81.5
+76002,Arlington,TX,Tarrant County,81.5
+76003,Arlington,TX,Tarrant County,81.5
+76004,Arlington,TX,Tarrant County,81.5
+76005,Arlington,TX,Tarrant County,81.5
+76006,Arlington,TX,Tarrant County,81.5
+76007,Arlington,TX,Tarrant County,81.5
+76010,Arlington,TX,Tarrant County,81.5
+76011,Arlington,TX,Tarrant County,81.5
+76012,Arlington,TX,Tarrant County,81.5
+76013,Arlington,TX,Tarrant County,81.5
+76014,Arlington,TX,Tarrant County,81.5
+76015,Arlington,TX,Tarrant County,81.5
+76016,Arlington,TX,Tarrant County,81.5
+76017,Arlington,TX,Tarrant County,81.5
+76018,Arlington,TX,Tarrant County,81.5
+76019,Arlington,TX,Tarrant County,81.5
+76094,Arlington,TX,Tarrant County,81.5
+76096,Arlington,TX,Tarrant County,81.5
+76227,Aubrey,TX,Denton County,81.5
+73301,Austin,TX,Travis County,85.5
+73344,Austin,TX,Travis County,85.5
+78701,Austin,TX,Travis County,85.5
+78702,Austin,TX,Travis County,85.5
+78703,Austin,TX,Travis County,85.5
+78704,Austin,TX,Travis County,85.5
+78705,Austin,TX,Travis County,85.5
+78708,Austin,TX,Travis County,85.5
+78709,Austin,TX,Travis County,85.5
+78710,Austin,TX,Travis County,85.5
+78711,Austin,TX,Travis County,85.5
+78712,Austin,TX,Travis County,85.5
+78713,Austin,TX,Travis County,85.5
+78714,Austin,TX,Travis County,85.5
+78715,Austin,TX,Travis County,85.5
+78716,Austin,TX,Travis County,85.5
+78717,Austin,TX,Williamson County,78.0
+78718,Austin,TX,Travis County,85.5
+78719,Austin,TX,Travis County,85.5
+78720,Austin,TX,Travis County,85.5
+78721,Austin,TX,Travis County,85.5
+78722,Austin,TX,Travis County,85.5
+78723,Austin,TX,Travis County,85.5
+78724,Austin,TX,Travis County,85.5
+78725,Austin,TX,Travis County,85.5
+78726,Austin,TX,Travis County,85.5
+78727,Austin,TX,Travis County,85.5
+78728,Austin,TX,Travis County,85.5
+78729,Austin,TX,Williamson County,78.0
+78730,Austin,TX,Travis County,85.5
+78731,Austin,TX,Travis County,85.5
+78732,Austin,TX,Travis County,85.5
+78733,Austin,TX,Travis County,85.5
+78734,Austin,TX,Travis County,85.5
+78735,Austin,TX,Travis County,85.5
+78736,Austin,TX,Travis County,85.5
+78737,Austin,TX,Hays County,74.0
+78738,Austin,TX,Travis County,85.5
+78739,Austin,TX,Travis County,85.5
+78741,Austin,TX,Travis County,85.5
+78742,Austin,TX,Travis County,85.5
+78744,Austin,TX,Travis County,85.5
+78745,Austin,TX,Travis County,85.5
+78746,Austin,TX,Travis County,85.5
+78747,Austin,TX,Travis County,85.5
+78748,Austin,TX,Travis County,85.5
+78749,Austin,TX,Travis County,85.5
+78750,Austin,TX,Travis County,85.5
+78751,Austin,TX,Travis County,85.5
+78752,Austin,TX,Travis County,85.5
+78753,Austin,TX,Travis County,85.5
+78754,Austin,TX,Travis County,85.5
+78755,Austin,TX,Travis County,85.5
+78756,Austin,TX,Travis County,85.5
+78757,Austin,TX,Travis County,85.5
+78758,Austin,TX,Travis County,85.5
+78759,Austin,TX,Travis County,85.5
+78760,Austin,TX,Travis County,85.5
+78761,Austin,TX,Travis County,85.5
+78762,Austin,TX,Travis County,85.5
+78763,Austin,TX,Travis County,85.5
+78764,Austin,TX,Travis County,85.5
+78765,Austin,TX,Travis County,85.5
+78766,Austin,TX,Travis County,85.5
+78767,Austin,TX,Travis County,85.5
+78768,Austin,TX,Travis County,85.5
+78772,Austin,TX,Travis County,85.5
+78773,Austin,TX,Travis County,85.5
+78774,Austin,TX,Travis County,85.5
+78778,Austin,TX,Travis County,85.5
+78779,Austin,TX,Travis County,85.5
+78783,Austin,TX,Travis County,85.5
+78799,Austin,TX,Travis County,85.5
+76020,Azle,TX,Tarrant County,81.5
+75180,Balch Springs,TX,Dallas County,74.0
+76021,Bedford,TX,Tarrant County,81.5
+76022,Bedford,TX,Tarrant County,81.5
+76095,Bedford,TX,Tarrant County,81.5
+77401,Bellaire,TX,Harris County,36.5
+75424,Blue Ridge,TX,Collin County,81.5
+78610,Buda,TX,Hays County,74.0
+75006,Carrollton,TX,Dallas County,74.0
+75007,Carrollton,TX,Denton County,81.5
+75010,Carrollton,TX,Denton County,81.5
+75011,Carrollton,TX,Dallas County,74.0
+75104,Cedar Hill,TX,Dallas County,74.0
+75106,Cedar Hill,TX,Dallas County,74.0
+78613,Cedar Park,TX,Williamson County,78.0
+78630,Cedar Park,TX,Williamson County,78.0
+75009,Celina,TX,Collin County,81.5
+76034,Colleyville,TX,Tarrant County,81.5
+77384,Conroe,TX,Montgomery County,36.5
+77385,Conroe,TX,Montgomery County,36.5
+75121,Copeville,TX,Collin County,81.5
+75019,Coppell,TX,Dallas County,74.0
+75099,Coppell,TX,Dallas County,74.0
+78615,Coupland,TX,Travis County,78.0
+75114,Crandall,TX,Kaufman County,74.0
+76036,Crowley,TX,Tarrant County,81.5
+77429,Cypress,TX,Harris County,36.5
+77433,Cypress,TX,Harris County,36.5
+75201,Dallas,TX,Dallas County,74.0
+75202,Dallas,TX,Dallas County,74.0
+75203,Dallas,TX,Dallas County,74.0
+75204,Dallas,TX,Dallas County,74.0
+75205,Dallas,TX,Dallas County,74.0
+75206,Dallas,TX,Dallas County,74.0
+75207,Dallas,TX,Dallas County,74.0
+75208,Dallas,TX,Dallas County,74.0
+75209,Dallas,TX,Dallas County,74.0
+75210,Dallas,TX,Dallas County,74.0
+75211,Dallas,TX,Dallas County,74.0
+75212,Dallas,TX,Dallas County,74.0
+75214,Dallas,TX,Dallas County,74.0
+75215,Dallas,TX,Dallas County,74.0
+75216,Dallas,TX,Dallas County,74.0
+75217,Dallas,TX,Dallas County,74.0
+75218,Dallas,TX,Dallas County,74.0
+75219,Dallas,TX,Dallas County,74.0
+75220,Dallas,TX,Dallas County,74.0
+75221,Dallas,TX,Dallas County,74.0
+75222,Dallas,TX,Dallas County,74.0
+75223,Dallas,TX,Dallas County,74.0
+75224,Dallas,TX,Dallas County,74.0
+75225,Dallas,TX,Dallas County,74.0
+75226,Dallas,TX,Dallas County,74.0
+75227,Dallas,TX,Dallas County,74.0
+75228,Dallas,TX,Dallas County,74.0
+75229,Dallas,TX,Dallas County,74.0
+75230,Dallas,TX,Dallas County,74.0
+75231,Dallas,TX,Dallas County,74.0
+75232,Dallas,TX,Dallas County,74.0
+75233,Dallas,TX,Dallas County,74.0
+75234,Dallas,TX,Dallas County,74.0
+75235,Dallas,TX,Dallas County,74.0
+75236,Dallas,TX,Dallas County,74.0
+75237,Dallas,TX,Dallas County,74.0
+75238,Dallas,TX,Dallas County,74.0
+75240,Dallas,TX,Dallas County,74.0
+75241,Dallas,TX,Dallas County,74.0
+75242,Dallas,TX,Dallas County,74.0
+75243,Dallas,TX,Dallas County,74.0
+75244,Dallas,TX,Dallas County,74.0
+75246,Dallas,TX,Dallas County,74.0
+75247,Dallas,TX,Dallas County,74.0
+75248,Dallas,TX,Dallas County,74.0
+75249,Dallas,TX,Dallas County,74.0
+75250,Dallas,TX,Dallas County,74.0
+75251,Dallas,TX,Dallas County,74.0
+75252,Dallas,TX,Collin County,81.5
+75253,Dallas,TX,Dallas County,74.0
+75254,Dallas,TX,Dallas County,74.0
+75260,Dallas,TX,Dallas County,74.0
+75261,Dallas,TX,Tarrant County,74.0
+75262,Dallas,TX,Dallas County,74.0
+75263,Dallas,TX,Dallas County,74.0
+75264,Dallas,TX,Dallas County,74.0
+75265,Dallas,TX,Dallas County,74.0
+75266,Dallas,TX,Dallas County,74.0
+75267,Dallas,TX,Dallas County,74.0
+75270,Dallas,TX,Dallas County,74.0
+75275,Dallas,TX,Dallas County,74.0
+75277,Dallas,TX,Dallas County,74.0
+75283,Dallas,TX,Dallas County,74.0
+75284,Dallas,TX,Dallas County,74.0
+75285,Dallas,TX,Dallas County,74.0
+75287,Dallas,TX,Denton County,81.5
+75301,Dallas,TX,Dallas County,74.0
+75303,Dallas,TX,Dallas County,74.0
+75312,Dallas,TX,Dallas County,74.0
+75313,Dallas,TX,Dallas County,74.0
+75315,Dallas,TX,Dallas County,74.0
+75320,Dallas,TX,Dallas County,74.0
+75326,Dallas,TX,Dallas County,74.0
+75336,Dallas,TX,Dallas County,74.0
+75339,Dallas,TX,Dallas County,74.0
+75342,Dallas,TX,Dallas County,74.0
+75354,Dallas,TX,Dallas County,74.0
+75355,Dallas,TX,Dallas County,74.0
+75356,Dallas,TX,Dallas County,74.0
+75357,Dallas,TX,Dallas County,74.0
+75358,Dallas,TX,Dallas County,74.0
+75359,Dallas,TX,Dallas County,74.0
+75360,Dallas,TX,Dallas County,74.0
+75367,Dallas,TX,Dallas County,74.0
+75368,Dallas,TX,Dallas County,74.0
+75370,Dallas,TX,Dallas County,74.0
+75371,Dallas,TX,Dallas County,74.0
+75372,Dallas,TX,Dallas County,74.0
+75373,Dallas,TX,Dallas County,74.0
+75374,Dallas,TX,Dallas County,74.0
+75376,Dallas,TX,Dallas County,74.0
+75378,Dallas,TX,Dallas County,74.0
+75379,Dallas,TX,Dallas County,74.0
+75380,Dallas,TX,Dallas County,74.0
+75381,Dallas,TX,Dallas County,74.0
+75382,Dallas,TX,Dallas County,74.0
+75389,Dallas,TX,Dallas County,74.0
+75390,Dallas,TX,Dallas County,74.0
+75391,Dallas,TX,Dallas County,74.0
+75392,Dallas,TX,Dallas County,74.0
+75393,Dallas,TX,Dallas County,74.0
+75394,Dallas,TX,Dallas County,74.0
+75395,Dallas,TX,Dallas County,74.0
+75397,Dallas,TX,Dallas County,74.0
+75398,Dallas,TX,Dallas County,74.0
+78617,Del Valle,TX,Travis County,85.5
+76201,Denton,TX,Denton County,81.5
+76202,Denton,TX,Denton County,81.5
+76203,Denton,TX,Denton County,81.5
+76204,Denton,TX,Denton County,81.5
+76205,Denton,TX,Denton County,81.5
+76206,Denton,TX,Denton County,81.5
+76207,Denton,TX,Denton County,81.5
+76208,Denton,TX,Denton County,81.5
+76209,Denton,TX,Denton County,81.5
+76210,Denton,TX,Denton County,81.5
+75115,Desoto,TX,Dallas County,74.0
+75123,Desoto,TX,Dallas County,74.0
+78619,Driftwood,TX,Hays County,74.0
+78620,Dripping Springs,TX,Hays County,74.0
+75116,Duncanville,TX,Dallas County,74.0
+75137,Duncanville,TX,Dallas County,74.0
+75138,Duncanville,TX,Dallas County,74.0
+76039,Euless,TX,Tarrant County,81.5
+76040,Euless,TX,Tarrant County,81.5
+75442,Farmersville,TX,Collin County,81.5
+76527,Florence,TX,Williamson County,78.0
+75022,Flower Mound,TX,Denton County,81.5
+75027,Flower Mound,TX,Denton County,81.5
+75028,Flower Mound,TX,Denton County,81.5
+75126,Forney,TX,Kaufman County,74.0
+76101,Fort Worth,TX,Tarrant County,81.5
+76102,Fort Worth,TX,Tarrant County,81.5
+76103,Fort Worth,TX,Tarrant County,81.5
+76104,Fort Worth,TX,Tarrant County,81.5
+76105,Fort Worth,TX,Tarrant County,81.5
+76106,Fort Worth,TX,Tarrant County,81.5
+76107,Fort Worth,TX,Tarrant County,81.5
+76108,Fort Worth,TX,Tarrant County,81.5
+76109,Fort Worth,TX,Tarrant County,81.5
+76110,Fort Worth,TX,Tarrant County,81.5
+76111,Fort Worth,TX,Tarrant County,81.5
+76112,Fort Worth,TX,Tarrant County,81.5
+76113,Fort Worth,TX,Tarrant County,81.5
+76114,Fort Worth,TX,Tarrant County,81.5
+76115,Fort Worth,TX,Tarrant County,81.5
+76116,Fort Worth,TX,Tarrant County,81.5
+76118,Fort Worth,TX,Tarrant County,81.5
+76119,Fort Worth,TX,Tarrant County,81.5
+76120,Fort Worth,TX,Tarrant County,81.5
+76121,Fort Worth,TX,Tarrant County,81.5
+76122,Fort Worth,TX,Tarrant County,81.5
+76123,Fort Worth,TX,Tarrant County,81.5
+76124,Fort Worth,TX,Tarrant County,81.5
+76126,Fort Worth,TX,Tarrant County,81.5
+76129,Fort Worth,TX,Tarrant County,81.5
+76130,Fort Worth,TX,Tarrant County,81.5
+76131,Fort Worth,TX,Tarrant County,81.5
+76132,Fort Worth,TX,Tarrant County,81.5
+76133,Fort Worth,TX,Tarrant County,81.5
+76134,Fort Worth,TX,Tarrant County,81.5
+76135,Fort Worth,TX,Tarrant County,81.5
+76136,Fort Worth,TX,Tarrant County,81.5
+76137,Fort Worth,TX,Tarrant County,81.5
+76140,Fort Worth,TX,Tarrant County,81.5
+76147,Fort Worth,TX,Tarrant County,81.5
+76148,Fort Worth,TX,Tarrant County,81.5
+76150,Fort Worth,TX,Tarrant County,81.5
+76155,Fort Worth,TX,Tarrant County,81.5
+76161,Fort Worth,TX,Tarrant County,81.5
+76162,Fort Worth,TX,Tarrant County,81.5
+76163,Fort Worth,TX,Tarrant County,81.5
+76164,Fort Worth,TX,Tarrant County,81.5
+76166,Fort Worth,TX,Tarrant County,81.5
+76177,Fort Worth,TX,Tarrant County,81.5
+76179,Fort Worth,TX,Tarrant County,81.5
+76181,Fort Worth,TX,Tarrant County,81.5
+76185,Fort Worth,TX,Tarrant County,81.5
+76191,Fort Worth,TX,Tarrant County,81.5
+76192,Fort Worth,TX,Tarrant County,81.5
+76193,Fort Worth,TX,Tarrant County,81.5
+76195,Fort Worth,TX,Tarrant County,81.5
+76196,Fort Worth,TX,Tarrant County,81.5
+76197,Fort Worth,TX,Tarrant County,81.5
+76198,Fort Worth,TX,Tarrant County,81.5
+76199,Fort Worth,TX,Tarrant County,81.5
+75033,Frisco,TX,Denton County,81.5
+75034,Frisco,TX,Collin County,81.5
+75035,Frisco,TX,Collin County,81.5
+75040,Garland,TX,Dallas County,74.0
+75041,Garland,TX,Dallas County,74.0
+75042,Garland,TX,Dallas County,74.0
+75043,Garland,TX,Dallas County,74.0
+75044,Garland,TX,Dallas County,74.0
+75045,Garland,TX,Dallas County,74.0
+75046,Garland,TX,Dallas County,74.0
+75047,Garland,TX,Dallas County,74.0
+75049,Garland,TX,Dallas County,74.0
+78626,Georgetown,TX,Williamson County,78.0
+78627,Georgetown,TX,Williamson County,78.0
+78628,Georgetown,TX,Williamson County,78.0
+78633,Georgetown,TX,Williamson County,78.0
+75050,Grand Prairie,TX,Dallas County,74.0
+75051,Grand Prairie,TX,Dallas County,74.0
+75052,Grand Prairie,TX,Dallas County,74.0
+75053,Grand Prairie,TX,Dallas County,74.0
+75054,Grand Prairie,TX,Tarrant County,81.5
+76530,Granger,TX,Williamson County,78.0
+76051,Grapevine,TX,Tarrant County,81.5
+76099,Grapevine,TX,Tarrant County,81.5
+76117,Haltom City,TX,Tarrant County,81.5
+76052,Haslet,TX,Tarrant County,81.5
+77002,Houston,TX,Harris County,36.5
+77003,Houston,TX,Harris County,36.5
+77004,Houston,TX,Harris County,36.5
+77005,Houston,TX,Harris County,36.5
+77006,Houston,TX,Harris County,36.5
+77007,Houston,TX,Harris County,36.5
+77008,Houston,TX,Harris County,36.5
+77009,Houston,TX,Harris County,36.5
+77010,Houston,TX,Harris County,36.5
+77014,Houston,TX,Harris County,36.5
+77018,Houston,TX,Harris County,36.5
+77019,Houston,TX,Harris County,36.5
+77022,Houston,TX,Harris County,36.5
+77024,Houston,TX,Harris County,36.5
+77025,Houston,TX,Harris County,36.5
+77027,Houston,TX,Harris County,36.5
+77030,Houston,TX,Harris County,36.5
+77031,Houston,TX,Harris County,36.5
+77035,Houston,TX,Harris County,36.5
+77036,Houston,TX,Harris County,36.5
+77037,Houston,TX,Harris County,36.5
+77038,Houston,TX,Harris County,36.5
+77040,Houston,TX,Harris County,36.5
+77041,Houston,TX,Harris County,36.5
+77042,Houston,TX,Harris County,36.5
+77043,Houston,TX,Harris County,36.5
+77045,Houston,TX,Harris County,36.5
+77046,Houston,TX,Harris County,36.5
+77053,Houston,TX,Fort Bend County,36.5
+77054,Houston,TX,Harris County,36.5
+77055,Houston,TX,Harris County,36.5
+77056,Houston,TX,Harris County,36.5
+77057,Houston,TX,Harris County,36.5
+77060,Houston,TX,Harris County,36.5
+77063,Houston,TX,Harris County,36.5
+77064,Houston,TX,Harris County,36.5
+77065,Houston,TX,Harris County,36.5
+77066,Houston,TX,Harris County,36.5
+77067,Houston,TX,Harris County,36.5
+77068,Houston,TX,Harris County,36.5
+77069,Houston,TX,Harris County,36.5
+77070,Houston,TX,Harris County,36.5
+77071,Houston,TX,Harris County,36.5
+77072,Houston,TX,Harris County,36.5
+77073,Houston,TX,Harris County,36.5
+77074,Houston,TX,Harris County,36.5
+77076,Houston,TX,Harris County,36.5
+77077,Houston,TX,Harris County,36.5
+77079,Houston,TX,Harris County,36.5
+77080,Houston,TX,Harris County,36.5
+77081,Houston,TX,Harris County,36.5
+77082,Houston,TX,Harris County,36.5
+77083,Houston,TX,Harris County,36.5
+77084,Houston,TX,Harris County,36.5
+77085,Houston,TX,Harris County,36.5
+77086,Houston,TX,Harris County,36.5
+77088,Houston,TX,Harris County,36.5
+77090,Houston,TX,Harris County,36.5
+77091,Houston,TX,Harris County,36.5
+77092,Houston,TX,Harris County,36.5
+77094,Houston,TX,Harris County,36.5
+77095,Houston,TX,Harris County,36.5
+77096,Houston,TX,Harris County,36.5
+77098,Houston,TX,Harris County,36.5
+77099,Houston,TX,Harris County,36.5
+76053,Hurst,TX,Tarrant County,81.5
+76054,Hurst,TX,Tarrant County,81.5
+75141,Hutchins,TX,Dallas County,74.0
+78634,Hutto,TX,Williamson County,78.0
+75014,Irving,TX,Dallas County,74.0
+75015,Irving,TX,Dallas County,74.0
+75016,Irving,TX,Dallas County,74.0
+75017,Irving,TX,Dallas County,74.0
+75038,Irving,TX,Dallas County,74.0
+75039,Irving,TX,Dallas County,74.0
+75060,Irving,TX,Dallas County,74.0
+75061,Irving,TX,Dallas County,74.0
+75062,Irving,TX,Dallas County,74.0
+75063,Irving,TX,Dallas County,74.0
+76537,Jarrell,TX,Williamson County,78.0
+75164,Josephine,TX,Collin County,81.5
+76247,Justin,TX,Denton County,81.5
+77449,Katy,TX,Harris County,36.5
+77450,Katy,TX,Harris County,36.5
+77493,Katy,TX,Harris County,36.5
+77494,Katy,TX,Fort Bend County,36.5
+75142,Kaufman,TX,Kaufman County,74.0
+76244,Keller,TX,Tarrant County,81.5
+76248,Keller,TX,Tarrant County,81.5
+76060,Kennedale,TX,Tarrant County,81.5
+76249,Krum,TX,Denton County,81.5
+78640,Kyle,TX,Hays County,74.0
+75065,Lake Dallas,TX,Denton County,81.5
+75134,Lancaster,TX,Dallas County,74.0
+75146,Lancaster,TX,Dallas County,74.0
+75166,Lavon,TX,Collin County,81.5
+78641,Leander,TX,Williamson County,78.0
+78645,Leander,TX,Travis County,85.5
+78646,Leander,TX,Williamson County,78.0
+75029,Lewisville,TX,Denton County,81.5
+75057,Lewisville,TX,Denton County,81.5
+75067,Lewisville,TX,Denton County,81.5
+75077,Lewisville,TX,Denton County,81.5
+78642,Liberty Hill,TX,Williamson County,78.0
+75068,Little Elm,TX,Denton County,81.5
+78652,Manchaca,TX,Travis County,85.5
+78653,Manor,TX,Travis County,85.5
+76063,Mansfield,TX,Tarrant County,81.5
+78651,Mc Neil,TX,Williamson County,85.5
+75069,Mckinney,TX,Collin County,81.5
+75070,Mckinney,TX,Collin County,81.5
+75071,Mckinney,TX,Collin County,81.5
+75454,Melissa,TX,Collin County,81.5
+75149,Mesquite,TX,Dallas County,74.0
+75150,Mesquite,TX,Dallas County,74.0
+75181,Mesquite,TX,Dallas County,74.0
+75185,Mesquite,TX,Dallas County,74.0
+75187,Mesquite,TX,Dallas County,74.0
+77489,Missouri City,TX,Fort Bend County,36.5
+76127,Naval Air Station Jrb,TX,Tarrant County,81.5
+75173,Nevada,TX,Collin County,81.5
+76180,North Richland Hills,TX,Tarrant County,81.5
+76182,North Richland Hills,TX,Tarrant County,81.5
+78660,Pflugerville,TX,Travis County,85.5
+78691,Pflugerville,TX,Travis County,85.5
+76258,Pilot Point,TX,Denton County,81.5
+75023,Plano,TX,Collin County,81.5
+75024,Plano,TX,Collin County,81.5
+75025,Plano,TX,Collin County,81.5
+75026,Plano,TX,Collin County,81.5
+75074,Plano,TX,Collin County,81.5
+75075,Plano,TX,Collin County,81.5
+75086,Plano,TX,Collin County,81.5
+75093,Plano,TX,Collin County,81.5
+75094,Plano,TX,Collin County,81.5
+76259,Ponder,TX,Denton County,81.5
+75407,Princeton,TX,Collin County,81.5
+75078,Prosper,TX,Collin County,81.5
+75080,Richardson,TX,Dallas County,74.0
+75081,Richardson,TX,Dallas County,74.0
+75082,Richardson,TX,Collin County,81.5
+75083,Richardson,TX,Dallas County,74.0
+75085,Richardson,TX,Dallas County,74.0
+77406,Richmond,TX,Fort Bend County,36.5
+77407,Richmond,TX,Fort Bend County,36.5
+76262,Roanoke,TX,Denton County,81.5
+78664,Round Rock,TX,Williamson County,78.0
+78665,Round Rock,TX,Williamson County,78.0
+78680,Round Rock,TX,Williamson County,78.0
+78681,Round Rock,TX,Williamson County,78.0
+78682,Round Rock,TX,Williamson County,78.0
+78683,Round Rock,TX,Williamson County,78.0
+75030,Rowlett,TX,Dallas County,74.0
+75088,Rowlett,TX,Dallas County,74.0
+75089,Rowlett,TX,Dallas County,74.0
+75048,Sachse,TX,Dallas County,74.0
+78666,San Marcos,TX,Hays County,74.0
+78667,San Marcos,TX,Hays County,74.0
+76266,Sanger,TX,Denton County,81.5
+76573,Schwertner,TX,Williamson County,78.0
+75159,Seagoville,TX,Dallas County,74.0
+76092,Southlake,TX,Tarrant County,81.5
+78669,Spicewood,TX,Travis County,85.5
+77373,Spring,TX,Harris County,36.5
+77379,Spring,TX,Harris County,36.5
+77380,Spring,TX,Montgomery County,36.5
+77381,Spring,TX,Montgomery County,36.5
+77382,Spring,TX,Montgomery County,36.5
+77386,Spring,TX,Montgomery County,36.5
+77388,Spring,TX,Harris County,36.5
+77389,Spring,TX,Harris County,36.5
+77477,Stafford,TX,Fort Bend County,36.5
+77478,Sugar Land,TX,Fort Bend County,36.5
+77479,Sugar Land,TX,Fort Bend County,36.5
+77498,Sugar Land,TX,Fort Bend County,36.5
+75182,Sunnyvale,TX,Dallas County,74.0
+76574,Taylor,TX,Williamson County,78.0
+75160,Terrell,TX,Kaufman County,74.0
+75161,Terrell,TX,Kaufman County,74.0
+75056,The Colony,TX,Denton County,81.5
+76578,Thrall,TX,Williamson County,78.0
+77375,Tomball,TX,Harris County,36.5
+78673,Walburg,TX,Williamson County,78.0
+78674,Weir,TX,Williamson County,78.0
+75485,Westminster,TX,Collin County,81.5
+75097,Weston,TX,Collin County,81.5
+75172,Wilmer,TX,Dallas County,74.0
+78676,Wimberley,TX,Hays County,74.0
+75098,Wylie,TX,Collin County,74.0

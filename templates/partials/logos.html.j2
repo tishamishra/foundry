@@ -1,0 +1,9 @@
+<section class="strip">
+  <div class="wrap strip-in">
+    <span class="strip-label">Serving</span>
+    <div class="strip-track">
+      {% for c in counties[:14] %}<span class="strip-item">{{ c.name }}</span>{% endfor %}
+      {% for c in counties[:14] %}<span class="strip-item" aria-hidden="true">{{ c.name }}</span>{% endfor %}
+    </div>
+  </div>
+</section>

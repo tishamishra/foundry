@@ -1,0 +1,11 @@
+<section class="sec">
+  <div class="wrap {{ 'about-split' if imgs.about }}">
+    <div class="prose">
+      {% for para in content.about.paras %}<p>{{ para }}</p>{% endfor %}
+      {% for para in content.closing.paras %}<p>{{ para }}</p>{% endfor %}
+    </div>
+    {% if imgs.about %}
+    <div class="about-pic"><img src="{{ imgs.about }}" alt="{{ biz.company }}" loading="lazy" width="700" height="520"></div>
+    {% endif %}
+  </div>
+</section>

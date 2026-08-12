@@ -1,0 +1,68 @@
+{% extends "base.html" %}{% block body %}
+<div class="head"><h1>Image library</h1>
+  <p class="sub">Paste URLs once. They are fetched once, stripped of metadata, resized, and each
+  site draws a <strong>different</strong> selection from the pool.</p></div>
+
+<form method="get" class="card row-form">
+  <label>Niche<select name="niche" onchange="this.form.submit()">
+    {% for n in NICHES %}<option value="{{ n }}" {{ 'selected' if n == niche }}>{{ n }}</option>{% endfor %}
+  </select></label>
+</form>
+
+<div class="card">
+  <h2>Pool for {{ niche }}</h2>
+  <p class="sub">A slot with fewer images than you have sites means sites will share pictures —
+  the same ceiling the block library has, for the most visible part of a page.</p>
+  {% for slot, n in counts.items() %}
+  <div class="meter"><span class="k">{{ slot }}</span>
+    <span class="bar"><i class="{{ 'thin' if n < 4 }}" style="width:{{ [(n * 8), 100]|min }}%"></i></span>
+    <span class="n">{{ n }}</span></div>
+  {% endfor %}
+  <form method="post" style="margin-top:1rem">
+    <input type="hidden" name="niche" value="{{ niche }}">
+    <button class="btn" name="action" value="fetch">Fetch everything not yet downloaded</button>
+  </form>
+</div>
+
+<form method="post" enctype="multipart/form-data" class="card">
+  <input type="hidden" name="niche" value="{{ niche }}">
+  <h2>Add URLs</h2>
+  <p class="sub">A CSV with <code>url,slot,tags</code>, or one URL per line. Cloud-drive share
+  links are rewritten to their direct form automatically.</p>
+  <label>Default slot for lines that do not name one
+    <select name="slot">{% for s in slots %}<option value="{{ s }}">{{ s }}</option>{% endfor %}</select>
+  </label>
+  <label>Paste<textarea name="rows" rows="8" class="mono" placeholder="url,slot,tags
+https://example.com/photo-1.jpg,hero,exterior
+https://example.com/photo-2.jpg,gallery,"></textarea></label>
+  <label>…or upload a CSV<input type="file" name="file" accept=".csv,.txt"></label>
+  <p class="note">Nothing is downloaded on add. The manifest records the URL; <strong>Fetch</strong>
+  does the work, validates by magic bytes, and rejects anything that is not really an image —
+  including a share link that returns a sign-in page.</p>
+  <div class="foot"><button class="btn" name="action" value="add">Add to manifest</button></div>
+</form>
+
+{% for p in problems %}<div class="flash warn">{{ p }}</div>{% endfor %}
+
+{% if failed %}
+<div class="card">
+  <h2>Rejected ({{ failed|length }})</h2>
+  <table class="grid"><thead><tr><th>URL</th><th>Slot</th><th>Why</th></tr></thead><tbody>
+  {% for r in failed %}
+  <tr><td class="mono">{{ r.url[:70] }}</td><td>{{ r.slot }}</td><td class="dim">{{ r.note }}</td></tr>
+  {% endfor %}
+  </tbody></table>
+</div>
+{% endif %}
+
+<div class="card">
+  <h2>Manifest ({{ rows|length }})</h2>
+  <table class="grid"><thead><tr><th>Slot</th><th>URL</th><th>Status</th><th>Stored</th></tr></thead><tbody>
+  {% for r in rows[:200] %}
+  <tr><td>{{ r.slot }}</td><td class="mono">{{ r.url[:64] }}</td>
+    <td><span class="pill {{ 'good' if r.status == 'ok' else ('bad' if r.status == 'failed' else '') }}">{{ r.status or 'pending' }}</span></td>
+    <td class="dim">{{ r.note }}</td></tr>
+  {% endfor %}
+  </tbody></table>
+</div>
+{% endblock %}

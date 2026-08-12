@@ -1,0 +1,905 @@
+zip,city,state,county,payout
+31001,Abbeville,GA,Wilcox County,32.5
+30101,Acworth,GA,Cobb County,42.5
+30102,Acworth,GA,Cherokee County,42.5
+30103,Adairsville,GA,Bartow County,42.5
+31620,Adel,GA,Cook County,42.5
+31002,Adrian,GA,Emanuel County,32.5
+30410,Ailey,GA,Montgomery County,32.5
+30411,Alamo,GA,Wheeler County,32.5
+31622,Alapaha,GA,Berrien County,42.5
+31701,Albany,GA,Dougherty County,42.5
+31702,Albany,GA,Dougherty County,42.5
+31704,Albany,GA,Dougherty County,42.5
+31705,Albany,GA,Dougherty County,42.5
+31706,Albany,GA,Dougherty County,42.5
+31707,Albany,GA,Dougherty County,42.5
+31708,Albany,GA,Dougherty County,42.5
+31721,Albany,GA,Dougherty County,42.5
+31301,Allenhurst,GA,Liberty County,32.5
+31003,Allentown,GA,Wilkinson County,32.5
+31510,Alma,GA,Bacon County,42.5
+30004,Alpharetta,GA,Fulton County,42.5
+30005,Alpharetta,GA,Fulton County,42.5
+30009,Alpharetta,GA,Fulton County,42.5
+30022,Alpharetta,GA,Fulton County,42.5
+30023,Alpharetta,GA,Fulton County,42.5
+30510,Alto,GA,Habersham County,42.5
+31512,Ambrose,GA,Coffee County,42.5
+31709,Americus,GA,Sumter County,32.5
+31719,Americus,GA,Sumter County,32.5
+31711,Andersonville,GA,Sumter County,32.5
+30802,Appling,GA,Columbia County,42.5
+31712,Arabi,GA,Crisp County,42.5
+30104,Aragon,GA,Polk County,42.5
+31623,Argyle,GA,Clinch County,42.5
+39813,Arlington,GA,Calhoun County,42.5
+30105,Armuchee,GA,Floyd County,42.5
+30619,Arnoldsville,GA,Oglethorpe County,42.5
+31714,Ashburn,GA,Turner County,42.5
+30601,Athens,GA,Clarke County,42.5
+30602,Athens,GA,Clarke County,42.5
+30603,Athens,GA,Clarke County,42.5
+30604,Athens,GA,Clarke County,42.5
+30605,Athens,GA,Clarke County,42.5
+30606,Athens,GA,Clarke County,42.5
+30607,Athens,GA,Clarke County,42.5
+30608,Athens,GA,Clarke County,42.5
+30609,Athens,GA,Clarke County,42.5
+30612,Athens,GA,Clarke County,42.5
+30301,Atlanta,GA,Fulton County,42.5
+30302,Atlanta,GA,Fulton County,42.5
+30303,Atlanta,GA,Fulton County,42.5
+30304,Atlanta,GA,Fulton County,42.5
+30305,Atlanta,GA,Fulton County,42.5
+30306,Atlanta,GA,Fulton County,42.5
+30307,Atlanta,GA,Dekalb County,42.5
+30308,Atlanta,GA,Fulton County,42.5
+30309,Atlanta,GA,Fulton County,42.5
+30310,Atlanta,GA,Fulton County,42.5
+30311,Atlanta,GA,Fulton County,42.5
+30312,Atlanta,GA,Fulton County,42.5
+30313,Atlanta,GA,Fulton County,42.5
+30314,Atlanta,GA,Fulton County,42.5
+30315,Atlanta,GA,Fulton County,42.5
+30316,Atlanta,GA,Dekalb County,42.5
+30317,Atlanta,GA,Dekalb County,42.5
+30318,Atlanta,GA,Fulton County,42.5
+30319,Atlanta,GA,Dekalb County,42.5
+30320,Atlanta,GA,Clayton County,42.5
+30321,Atlanta,GA,Fulton County,42.5
+30322,Atlanta,GA,Dekalb County,42.5
+30324,Atlanta,GA,Fulton County,42.5
+30325,Atlanta,GA,Fulton County,42.5
+30326,Atlanta,GA,Fulton County,42.5
+30327,Atlanta,GA,Fulton County,42.5
+30328,Atlanta,GA,Fulton County,42.5
+30329,Atlanta,GA,Dekalb County,42.5
+30330,Atlanta,GA,Fulton County,32.5
+30331,Atlanta,GA,Fulton County,42.5
+30332,Atlanta,GA,Fulton County,42.5
+30333,Atlanta,GA,Fulton County,42.5
+30334,Atlanta,GA,Fulton County,42.5
+30336,Atlanta,GA,Fulton County,42.5
+30337,Atlanta,GA,Fulton County,42.5
+30338,Atlanta,GA,Dekalb County,42.5
+30339,Atlanta,GA,Cobb County,42.5
+30340,Atlanta,GA,Dekalb County,42.5
+30341,Atlanta,GA,Dekalb County,42.5
+30342,Atlanta,GA,Fulton County,42.5
+30343,Atlanta,GA,Fulton County,42.5
+30344,Atlanta,GA,Fulton County,42.5
+30345,Atlanta,GA,Dekalb County,42.5
+30346,Atlanta,GA,Dekalb County,42.5
+30347,Atlanta,GA,Fulton County,32.5
+30348,Atlanta,GA,Fulton County,42.5
+30349,Atlanta,GA,Fulton County,42.5
+30350,Atlanta,GA,Fulton County,42.5
+30353,Atlanta,GA,Fulton County,42.5
+30354,Atlanta,GA,Fulton County,42.5
+30355,Atlanta,GA,Fulton County,42.5
+30356,Atlanta,GA,Fulton County,42.5
+30357,Atlanta,GA,Fulton County,42.5
+30358,Atlanta,GA,Fulton County,42.5
+30359,Atlanta,GA,Fulton County,42.5
+30360,Atlanta,GA,Dekalb County,42.5
+30361,Atlanta,GA,Fulton County,42.5
+30362,Atlanta,GA,Fulton County,42.5
+30363,Atlanta,GA,Fulton County,42.5
+30364,Atlanta,GA,Fulton County,42.5
+30366,Atlanta,GA,Fulton County,42.5
+30368,Atlanta,GA,Fulton County,42.5
+30369,Atlanta,GA,Fulton County,42.5
+30370,Atlanta,GA,Fulton County,42.5
+30371,Atlanta,GA,Fulton County,42.5
+30374,Atlanta,GA,Fulton County,42.5
+30375,Atlanta,GA,Fulton County,42.5
+30376,Atlanta,GA,Fulton County,32.5
+30377,Atlanta,GA,Fulton County,42.5
+30378,Atlanta,GA,Fulton County,42.5
+30379,Atlanta,GA,Fulton County,32.5
+30380,Atlanta,GA,Fulton County,42.5
+30384,Atlanta,GA,Fulton County,42.5
+30385,Atlanta,GA,Fulton County,42.5
+30386,Atlanta,GA,Fulton County,32.5
+30387,Atlanta,GA,Fulton County,32.5
+30388,Atlanta,GA,Fulton County,42.5
+30389,Atlanta,GA,Fulton County,32.5
+30390,Atlanta,GA,Fulton County,32.5
+30392,Atlanta,GA,Fulton County,42.5
+30394,Atlanta,GA,Fulton County,42.5
+30396,Atlanta,GA,Fulton County,42.5
+30398,Atlanta,GA,Fulton County,42.5
+30399,Atlanta,GA,Fulton County,32.5
+31106,Atlanta,GA,Fulton County,42.5
+31107,Atlanta,GA,Fulton County,42.5
+31119,Atlanta,GA,Fulton County,42.5
+31120,Atlanta,GA,Fulton County,32.5
+31126,Atlanta,GA,Fulton County,42.5
+31131,Atlanta,GA,Fulton County,42.5
+31136,Atlanta,GA,Fulton County,42.5
+31139,Atlanta,GA,Fulton County,42.5
+31141,Atlanta,GA,Fulton County,42.5
+31145,Atlanta,GA,Fulton County,42.5
+31146,Atlanta,GA,Fulton County,42.5
+31150,Atlanta,GA,Fulton County,42.5
+31156,Atlanta,GA,Fulton County,42.5
+31191,Atlanta,GA,Fulton County,32.5
+31192,Atlanta,GA,Fulton County,42.5
+31193,Atlanta,GA,Fulton County,42.5
+31195,Atlanta,GA,Fulton County,42.5
+31196,Atlanta,GA,Fulton County,42.5
+31197,Atlanta,GA,Fulton County,32.5
+31198,Atlanta,GA,Fulton County,32.5
+31199,Atlanta,GA,Fulton County,32.5
+39901,Atlanta,GA,Fulton County,42.5
+39815,Attapulgus,GA,Decatur County,42.5
+30011,Auburn,GA,Barrow County,42.5
+30901,Augusta,GA,Richmond County,42.5
+30903,Augusta,GA,Columbia County,42.5
+30904,Augusta,GA,Richmond County,42.5
+30905,Augusta,GA,Richmond County,42.5
+30906,Augusta,GA,Richmond County,42.5
+30907,Augusta,GA,Columbia County,42.5
+30909,Augusta,GA,Richmond County,42.5
+30912,Augusta,GA,Richmond County,42.5
+30913,Augusta,GA,Richmond County,32.5
+30914,Augusta,GA,Richmond County,42.5
+30916,Augusta,GA,Richmond County,42.5
+30917,Augusta,GA,Richmond County,42.5
+30919,Augusta,GA,Richmond County,42.5
+30999,Augusta,GA,Richmond County,42.5
+30106,Austell,GA,Cobb County,42.5
+30168,Austell,GA,Cobb County,42.5
+30803,Avera,GA,Jefferson County,42.5
+30002,Avondale Estates,GA,Dekalb County,42.5
+31624,Axson,GA,Atkinson County,42.5
+31716,Baconton,GA,Mitchell County,42.5
+39817,Bainbridge,GA,Decatur County,42.5
+39818,Bainbridge,GA,Decatur County,42.5
+39819,Bainbridge,GA,Decatur County,42.5
+30511,Baldwin,GA,Banks County,42.5
+30107,Ball Ground,GA,Cherokee County,42.5
+30204,Barnesville,GA,Lamar County,32.5
+31625,Barney,GA,Brooks County,42.5
+30413,Bartow,GA,Jefferson County,42.5
+30414,Bellville,GA,Evans County,32.5
+31722,Berlin,GA,Colquitt County,42.5
+30620,Bethlehem,GA,Barrow County,42.5
+30621,Bishop,GA,Oconee County,42.5
+31516,Blackshear,GA,Pierce County,42.5
+30512,Blairsville,GA,Union County,42.5
+30514,Blairsville,GA,Union County,42.5
+39823,Blakely,GA,Early County,42.5
+31302,Bloomingdale,GA,Effingham County,32.5
+30513,Blue Ridge,GA,Fannin County,42.5
+39824,Bluffton,GA,Clay County,42.5
+30805,Blythe,GA,Richmond County,42.5
+30622,Bogart,GA,Oconee County,42.5
+31004,Bolingbroke,GA,Monroe County,32.5
+31005,Bonaire,GA,Houston County,32.5
+30806,Boneville,GA,Mcduffie County,42.5
+31626,Boston,GA,Thomas County,42.5
+30623,Bostwick,GA,Morgan County,42.5
+30108,Bowdon,GA,Carroll County,42.5
+30109,Bowdon Junction,GA,Carroll County,42.5
+30516,Bowersville,GA,Hart County,42.5
+30624,Bowman,GA,Elbert County,42.5
+31801,Box Springs,GA,Marion County,32.5
+30517,Braselton,GA,Jackson County,42.5
+30110,Bremen,GA,Haralson County,42.5
+39825,Brinson,GA,Decatur County,42.5
+39826,Bronwood,GA,Terrell County,32.5
+31727,Brookfield,GA,Tift County,42.5
+30415,Brooklet,GA,Bulloch County,32.5
+30205,Brooks,GA,Fayette County,42.5
+31519,Broxton,GA,Coffee County,42.5
+30113,Buchanan,GA,Haralson County,42.5
+30625,Buckhead,GA,Morgan County,42.5
+31803,Buena Vista,GA,Marion County,32.5
+30515,Buford,GA,Gwinnett County,42.5
+30518,Buford,GA,Gwinnett County,42.5
+30519,Buford,GA,Gwinnett County,42.5
+31006,Butler,GA,Taylor County,32.5
+31007,Byromville,GA,Dooly County,32.5
+31008,Byron,GA,Peach County,32.5
+31009,Cadwell,GA,Laurens County,32.5
+39827,Cairo,GA,Grady County,42.5
+39828,Cairo,GA,Grady County,42.5
+30701,Calhoun,GA,Gordon County,42.5
+30703,Calhoun,GA,Gordon County,42.5
+30807,Camak,GA,Warren County,42.5
+31730,Camilla,GA,Mitchell County,42.5
+30520,Canon,GA,Franklin County,42.5
+30114,Canton,GA,Cherokee County,42.5
+30115,Canton,GA,Cherokee County,42.5
+30169,Canton,GA,Cherokee County,42.5
+30627,Carlton,GA,Oglethorpe County,42.5
+30521,Carnesville,GA,Franklin County,42.5
+30112,Carrollton,GA,Carroll County,42.5
+30116,Carrollton,GA,Carroll County,42.5
+30117,Carrollton,GA,Carroll County,42.5
+30118,Carrollton,GA,Carroll County,42.5
+30119,Carrollton,GA,Carroll County,42.5
+30120,Cartersville,GA,Bartow County,42.5
+30121,Cartersville,GA,Bartow County,42.5
+30123,Cassville,GA,Bartow County,42.5
+31804,Cataula,GA,Harris County,32.5
+30124,Cave Spring,GA,Floyd County,42.5
+31627,Cecil,GA,Cook County,42.5
+30125,Cedartown,GA,Polk County,42.5
+31028,Centerville,GA,Houston County,32.5
+30705,Chatsworth,GA,Murray County,32.5
+31011,Chauncey,GA,Dodge County,32.5
+30522,Cherry Log,GA,Gilmer County,42.5
+31012,Chester,GA,Dodge County,32.5
+30502,Chestnut Mountain,GA,Hall County,42.5
+30707,Chickamauga,GA,Walker County,32.5
+31733,Chula,GA,Tift County,42.5
+30708,Cisco,GA,Murray County,32.5
+30111,Clarkdale,GA,Cobb County,42.5
+30523,Clarkesville,GA,Habersham County,42.5
+30021,Clarkston,GA,Dekalb County,42.5
+30417,Claxton,GA,Evans County,32.5
+30525,Clayton,GA,Rabun County,42.5
+30527,Clermont,GA,Hall County,42.5
+30528,Cleveland,GA,White County,42.5
+39834,Climax,GA,Decatur County,42.5
+31013,Clinchfield,GA,Houston County,32.5
+31303,Clyo,GA,Effingham County,32.5
+31735,Cobb,GA,Sumter County,32.5
+31014,Cochran,GA,Bleckley County,32.5
+30710,Cohutta,GA,Whitfield County,32.5
+30628,Colbert,GA,Madison County,42.5
+39836,Coleman,GA,Randolph County,32.5
+39837,Colquitt,GA,Miller County,42.5
+31901,Columbus,GA,Muscogee County,32.5
+31902,Columbus,GA,Muscogee County,32.5
+31903,Columbus,GA,Muscogee County,32.5
+31904,Columbus,GA,Muscogee County,32.5
+31906,Columbus,GA,Muscogee County,32.5
+31907,Columbus,GA,Muscogee County,32.5
+31908,Columbus,GA,Muscogee County,32.5
+31909,Columbus,GA,Muscogee County,32.5
+31914,Columbus,GA,Muscogee County,32.5
+31917,Columbus,GA,Muscogee County,32.5
+30629,Comer,GA,Madison County,42.5
+30529,Commerce,GA,Jackson County,42.5
+30530,Commerce,GA,Banks County,42.5
+30599,Commerce,GA,Jackson County,32.5
+30206,Concord,GA,Pike County,42.5
+30288,Conley,GA,Clayton County,42.5
+30012,Conyers,GA,Rockdale County,42.5
+30013,Conyers,GA,Rockdale County,42.5
+30094,Conyers,GA,Rockdale County,42.5
+31738,Coolidge,GA,Thomas County,42.5
+30129,Coosa,GA,Floyd County,42.5
+31015,Cordele,GA,Crisp County,32.5
+30531,Cornelia,GA,Habersham County,42.5
+31739,Cotton,GA,Mitchell County,42.5
+30014,Covington,GA,Newton County,42.5
+30015,Covington,GA,Newton County,42.5
+30016,Covington,GA,Newton County,42.5
+30711,Crandall,GA,Murray County,32.5
+30630,Crawford,GA,Oglethorpe County,42.5
+30631,Crawfordville,GA,Taliaferro County,42.5
+31304,Crescent,GA,Mcintosh County,32.5
+31016,Culloden,GA,Monroe County,42.5
+30028,Cumming,GA,Forsyth County,42.5
+30040,Cumming,GA,Forsyth County,42.5
+30041,Cumming,GA,Forsyth County,42.5
+31805,Cusseta,GA,Chattahoochee County,32.5
+39840,Cuthbert,GA,Randolph County,32.5
+30019,Dacula,GA,Gwinnett County,42.5
+30533,Dahlonega,GA,Lumpkin County,42.5
+30597,Dahlonega,GA,Lumpkin County,42.5
+30423,Daisy,GA,Evans County,32.5
+30132,Dallas,GA,Paulding County,42.5
+30157,Dallas,GA,Paulding County,42.5
+30719,Dalton,GA,Whitfield County,32.5
+30720,Dalton,GA,Whitfield County,32.5
+30721,Dalton,GA,Whitfield County,32.5
+30722,Dalton,GA,Whitfield County,32.5
+39841,Damascus,GA,Early County,42.5
+30633,Danielsville,GA,Madison County,42.5
+31017,Danville,GA,Twiggs County,32.5
+31305,Darien,GA,Mcintosh County,32.5
+31018,Davisboro,GA,Washington County,32.5
+39842,Dawson,GA,Terrell County,32.5
+30534,Dawsonville,GA,Dawson County,42.5
+31743,De Soto,GA,Sumter County,32.5
+30808,Dearing,GA,Mcduffie County,42.5
+30030,Decatur,GA,Dekalb County,42.5
+30031,Decatur,GA,Dekalb County,42.5
+30032,Decatur,GA,Dekalb County,42.5
+30033,Decatur,GA,Dekalb County,42.5
+30034,Decatur,GA,Dekalb County,42.5
+30035,Decatur,GA,Dekalb County,42.5
+30036,Decatur,GA,Dekalb County,42.5
+30037,Decatur,GA,Dekalb County,42.5
+30535,Demorest,GA,Habersham County,42.5
+31532,Denton,GA,Jeff Davis County,32.5
+30634,Dewy Rose,GA,Elbert County,42.5
+31019,Dexter,GA,Laurens County,32.5
+30537,Dillard,GA,Rabun County,42.5
+31629,Dixie,GA,Brooks County,42.5
+31744,Doerun,GA,Colquitt County,42.5
+39845,Donalsonville,GA,Seminole County,42.5
+31533,Douglas,GA,Coffee County,42.5
+31534,Douglas,GA,Coffee County,42.5
+31535,Douglas,GA,Coffee County,42.5
+30133,Douglasville,GA,Douglas County,42.5
+30134,Douglasville,GA,Douglas County,42.5
+30135,Douglasville,GA,Douglas County,42.5
+30154,Douglasville,GA,Douglas County,42.5
+31020,Dry Branch,GA,Twiggs County,32.5
+31630,Du Pont,GA,Clinch County,42.5
+31021,Dublin,GA,Laurens County,32.5
+31040,Dublin,GA,Laurens County,32.5
+31022,Dudley,GA,Laurens County,32.5
+30095,Duluth,GA,Gwinnett County,42.5
+30096,Duluth,GA,Gwinnett County,42.5
+30097,Duluth,GA,Fulton County,42.5
+30098,Duluth,GA,Gwinnett County,42.5
+30099,Duluth,GA,Gwinnett County,42.5
+31027,East Dublin,GA,Laurens County,32.5
+30539,East Ellijay,GA,Gilmer County,42.5
+30538,Eastanollee,GA,Stephens County,42.5
+31023,Eastman,GA,Dodge County,32.5
+31024,Eatonton,GA,Putnam County,32.5
+31026,Eatonton,GA,Putnam County,32.5
+31307,Eden,GA,Effingham County,32.5
+39846,Edison,GA,Calhoun County,42.5
+30635,Elberton,GA,Elbert County,42.5
+31025,Elko,GA,Houston County,32.5
+31308,Ellabell,GA,Bryan County,32.5
+31806,Ellaville,GA,Schley County,32.5
+31747,Ellenton,GA,Colquitt County,42.5
+30294,Ellenwood,GA,Dekalb County,42.5
+31807,Ellerslie,GA,Harris County,32.5
+30536,Ellijay,GA,Gilmer County,42.5
+30540,Ellijay,GA,Gilmer County,42.5
+30137,Emerson,GA,Bartow County,42.5
+31749,Enigma,GA,Berrien County,42.5
+30541,Epworth,GA,Fannin County,42.5
+30138,Esom Hill,GA,Cleburne County,42.5
+30724,Eton,GA,Murray County,32.5
+30809,Evans,GA,Columbia County,42.5
+30212,Experiment,GA,Spalding County,42.5
+30213,Fairburn,GA,Fulton County,42.5
+30139,Fairmount,GA,Gordon County,42.5
+31631,Fargo,GA,Clinch County,42.5
+30638,Farmington,GA,Oconee County,42.5
+30214,Fayetteville,GA,Fayette County,42.5
+30215,Fayetteville,GA,Fayette County,42.5
+30140,Felton,GA,Haralson County,32.5
+31750,Fitzgerald,GA,Ben Hill County,42.5
+31309,Fleming,GA,Liberty County,32.5
+30725,Flintstone,GA,Walker County,32.5
+30216,Flovilla,GA,Butts County,42.5
+30542,Flowery Branch,GA,Hall County,42.5
+31537,Folkston,GA,Charlton County,42.5
+30297,Forest Park,GA,Clayton County,42.5
+30298,Forest Park,GA,Clayton County,42.5
+31029,Forsyth,GA,Monroe County,42.5
+31905,Fort Benning,GA,Muscogee County,32.5
+39851,Fort Gaines,GA,Clay County,42.5
+30742,Fort Oglethorpe,GA,Catoosa County,32.5
+31314,Fort Stewart,GA,Liberty County,32.5
+31315,Fort Stewart,GA,Liberty County,32.5
+31030,Fort Valley,GA,Peach County,32.5
+31808,Fortson,GA,Harris County,32.5
+30217,Franklin,GA,Heard County,42.5
+30639,Franklin Springs,GA,Franklin County,42.5
+31753,Funston,GA,Colquitt County,42.5
+30501,Gainesville,GA,Hall County,42.5
+30503,Gainesville,GA,Hall County,42.5
+30504,Gainesville,GA,Hall County,42.5
+30506,Gainesville,GA,Hall County,42.5
+30507,Gainesville,GA,Hall County,42.5
+30218,Gay,GA,Meriwether County,42.5
+31810,Geneva,GA,Talbot County,32.5
+39854,Georgetown,GA,Quitman County,32.5
+30810,Gibson,GA,Glascock County,42.5
+30543,Gillsville,GA,Hall County,42.5
+30426,Girard,GA,Burke County,42.5
+30219,Glenn,GA,Heard County,42.5
+30427,Glennville,GA,Tattnall County,32.5
+30428,Glenwood,GA,Wheeler County,32.5
+30641,Good Hope,GA,Walton County,42.5
+31031,Gordon,GA,Wilkinson County,32.5
+30811,Gough,GA,Burke County,42.5
+30812,Gracewood,GA,Richmond County,42.5
+30220,Grantville,GA,Coweta County,42.5
+31032,Gray,GA,Jones County,32.5
+30017,Grayson,GA,Gwinnett County,42.5
+30726,Graysville,GA,Catoosa County,32.5
+30642,Greensboro,GA,Greene County,42.5
+30222,Greenville,GA,Meriwether County,42.5
+30223,Griffin,GA,Spalding County,42.5
+30224,Griffin,GA,Spalding County,42.5
+30813,Grovetown,GA,Columbia County,42.5
+31312,Guyton,GA,Effingham County,32.5
+31033,Haddock,GA,Jones County,32.5
+30429,Hagan,GA,Evans County,32.5
+31632,Hahira,GA,Lowndes County,42.5
+31811,Hamilton,GA,Harris County,32.5
+30228,Hampton,GA,Henry County,42.5
+30229,Haralson,GA,Coweta County,42.5
+31034,Hardwick,GA,Baldwin County,32.5
+30814,Harlem,GA,Columbia County,42.5
+31035,Harrison,GA,Washington County,32.5
+31756,Hartsfield,GA,Colquitt County,42.5
+30643,Hartwell,GA,Hart County,42.5
+31036,Hawkinsville,GA,Pulaski County,32.5
+30545,Helen,GA,White County,42.5
+30815,Hephzibah,GA,Richmond County,42.5
+30546,Hiawassee,GA,Towns County,42.5
+30645,High Shoals,GA,Georgia Statewide,42.5
+31038,Hillsboro,GA,Jasper County,32.5
+31310,Hinesville,GA,Liberty County,32.5
+31313,Hinesville,GA,Liberty County,32.5
+30141,Hiram,GA,Paulding County,42.5
+30230,Hogansville,GA,Troup County,42.5
+30142,Holly Springs,GA,Cherokee County,42.5
+30547,Homer,GA,Banks County,42.5
+31634,Homerville,GA,Clinch County,42.5
+30548,Hoschton,GA,Jackson County,42.5
+31039,Howard,GA,Taylor County,32.5
+30646,Hull,GA,Madison County,42.5
+31041,Ideal,GA,Macon County,32.5
+30647,Ila,GA,Madison County,42.5
+39859,Iron City,GA,Seminole County,42.5
+31042,Irwinton,GA,Wilkinson County,32.5
+31760,Irwinville,GA,Irwin County,42.5
+30233,Jackson,GA,Butts County,42.5
+31544,Jacksonville,GA,Telfair County,32.5
+39861,Jakin,GA,Early County,42.5
+30143,Jasper,GA,Pickens County,42.5
+30549,Jefferson,GA,Jackson County,42.5
+31044,Jeffersonville,GA,Twiggs County,32.5
+30234,Jenkinsburg,GA,Butts County,42.5
+30018,Jersey,GA,Walton County,42.5
+31045,Jewell,GA,Warren County,42.5
+30236,Jonesboro,GA,Clayton County,42.5
+30237,Jonesboro,GA,Clayton County,42.5
+30238,Jonesboro,GA,Clayton County,42.5
+31046,Juliette,GA,Monroe County,32.5
+31812,Junction City,GA,Talbot County,32.5
+31047,Kathleen,GA,Houston County,32.5
+30144,Kennesaw,GA,Cobb County,42.5
+30152,Kennesaw,GA,Cobb County,42.5
+30156,Kennesaw,GA,Cobb County,42.5
+30160,Kennesaw,GA,Cobb County,42.5
+31144,Kennesaw,GA,Georgia Statewide,32.5
+30816,Keysville,GA,Burke County,42.5
+31547,Kings Bay,GA,Camden County,42.5
+31548,Kingsland,GA,Camden County,42.5
+30145,Kingston,GA,Bartow County,42.5
+31049,Kite,GA,Johnson County,32.5
+31050,Knoxville,GA,Crawford County,32.5
+30728,La Fayette,GA,Walker County,32.5
+30240,Lagrange,GA,Troup County,42.5
+30241,Lagrange,GA,Troup County,42.5
+30261,Lagrange,GA,Troup County,32.5
+31636,Lake Park,GA,Lowndes County,42.5
+31635,Lakeland,GA,Lanier County,42.5
+30552,Lakemont,GA,Rabun County,42.5
+30553,Lavonia,GA,Franklin County,42.5
+30042,Lawrenceville,GA,Gwinnett County,42.5
+30043,Lawrenceville,GA,Gwinnett County,42.5
+30044,Lawrenceville,GA,Gwinnett County,42.5
+30045,Lawrenceville,GA,Gwinnett County,42.5
+30046,Lawrenceville,GA,Gwinnett County,42.5
+30049,Lawrenceville,GA,Gwinnett County,42.5
+39862,Leary,GA,Calhoun County,42.5
+30146,Lebanon,GA,Cherokee County,42.5
+31763,Leesburg,GA,Lee County,32.5
+31637,Lenox,GA,Cook County,42.5
+31764,Leslie,GA,Sumter County,32.5
+30648,Lexington,GA,Oglethorpe County,42.5
+30047,Lilburn,GA,Gwinnett County,42.5
+30048,Lilburn,GA,Gwinnett County,42.5
+31051,Lilly,GA,Dooly County,32.5
+30817,Lincolnton,GA,Lincoln County,42.5
+30147,Lindale,GA,Floyd County,42.5
+30122,Lithia Springs,GA,Douglas County,42.5
+30038,Lithonia,GA,Dekalb County,42.5
+30058,Lithonia,GA,Dekalb County,42.5
+31052,Lizella,GA,Bibb County,32.5
+30248,Locust Grove,GA,Henry County,42.5
+30052,Loganville,GA,Gwinnett County,42.5
+30750,Lookout Mountain,GA,Walker County,32.5
+30434,Louisville,GA,Jefferson County,42.5
+31814,Louvale,GA,Stewart County,32.5
+30250,Lovejoy,GA,Clayton County,42.5
+31316,Ludowici,GA,Long County,32.5
+30554,Lula,GA,Hall County,42.5
+31549,Lumber City,GA,Telfair County,32.5
+31815,Lumpkin,GA,Stewart County,32.5
+30251,Luthersville,GA,Meriwether County,42.5
+30730,Lyerly,GA,Chattooga County,42.5
+30126,Mableton,GA,Cobb County,42.5
+31201,Macon,GA,Bibb County,32.5
+31202,Macon,GA,Bibb County,32.5
+31203,Macon,GA,Bibb County,32.5
+31204,Macon,GA,Bibb County,32.5
+31205,Macon,GA,Bibb County,32.5
+31206,Macon,GA,Bibb County,32.5
+31207,Macon,GA,Bibb County,32.5
+31208,Macon,GA,Bibb County,32.5
+31209,Macon,GA,Bibb County,32.5
+31210,Macon,GA,Bibb County,32.5
+31211,Macon,GA,Bibb County,32.5
+31213,Macon,GA,Bibb County,32.5
+31216,Macon,GA,Bibb County,32.5
+31217,Macon,GA,Bibb County,32.5
+31220,Macon,GA,Bibb County,32.5
+31221,Macon,GA,Bibb County,32.5
+31294,Macon,GA,Bibb County,32.5
+31295,Macon,GA,Bibb County,32.5
+31296,Macon,GA,Bibb County,32.5
+31297,Macon,GA,Bibb County,32.5
+30650,Madison,GA,Morgan County,42.5
+31816,Manchester,GA,Meriwether County,32.5
+31550,Manor,GA,Ware County,42.5
+30055,Mansfield,GA,Jasper County,42.5
+30148,Marble Hill,GA,Pickens County,42.5
+30006,Marietta,GA,Cobb County,42.5
+30007,Marietta,GA,Cobb County,42.5
+30008,Marietta,GA,Cobb County,42.5
+30060,Marietta,GA,Cobb County,42.5
+30061,Marietta,GA,Cobb County,42.5
+30062,Marietta,GA,Cobb County,42.5
+30063,Marietta,GA,Cobb County,42.5
+30064,Marietta,GA,Cobb County,42.5
+30065,Marietta,GA,Cobb County,42.5
+30066,Marietta,GA,Cobb County,42.5
+30067,Marietta,GA,Cobb County,42.5
+30068,Marietta,GA,Cobb County,42.5
+30069,Marietta,GA,Cobb County,42.5
+30090,Marietta,GA,Cobb County,42.5
+31057,Marshallville,GA,Macon County,32.5
+30557,Martin,GA,Franklin County,42.5
+30818,Matthews,GA,Jefferson County,42.5
+31058,Mauk,GA,Marion County,32.5
+30671,Maxeys,GA,Oglethorpe County,42.5
+30558,Maysville,GA,Jackson County,42.5
+30555,McCaysville,GA,Fannin County,42.5
+31054,McIntyre,GA,Wilkinson County,32.5
+31037,McRae Helena,GA,Telfair County,32.5
+31055,McRae Helena,GA,Telfair County,32.5
+30252,Mcdonough,GA,Henry County,42.5
+30253,Mcdonough,GA,Henry County,42.5
+30256,Meansville,GA,Pike County,42.5
+31765,Meigs,GA,Thomas County,42.5
+31318,Meldrim,GA,Effingham County,32.5
+30731,Menlo,GA,Chattooga County,42.5
+31319,Meridian,GA,Mcintosh County,32.5
+30819,Mesena,GA,Warren County,42.5
+31820,Midland,GA,Muscogee County,32.5
+30441,Midville,GA,Emanuel County,42.5
+31320,Midway,GA,Liberty County,32.5
+31060,Milan,GA,Telfair County,32.5
+31059,Milledgeville,GA,Baldwin County,32.5
+31061,Milledgeville,GA,Baldwin County,32.5
+31062,Milledgeville,GA,Baldwin County,32.5
+31552,Millwood,GA,Ware County,42.5
+30257,Milner,GA,Lamar County,42.5
+30559,Mineral Bluff,GA,Fannin County,42.5
+30820,Mitchell,GA,Glascock County,42.5
+30258,Molena,GA,Pike County,42.5
+30655,Monroe,GA,Walton County,42.5
+30656,Monroe,GA,Walton County,42.5
+31063,Montezuma,GA,Macon County,32.5
+31064,Monticello,GA,Jasper County,42.5
+31065,Montrose,GA,Laurens County,32.5
+31699,Moody Afb,GA,Lowndes County,42.5
+30259,Moreland,GA,Coweta County,42.5
+39866,Morgan,GA,Calhoun County,42.5
+30560,Morganton,GA,Fannin County,42.5
+39867,Morris,GA,Clay County,32.5
+30260,Morrow,GA,Clayton County,42.5
+30287,Morrow,GA,Clayton County,42.5
+31638,Morven,GA,Brooks County,42.5
+31768,Moultrie,GA,Colquitt County,42.5
+31776,Moultrie,GA,Colquitt County,42.5
+31788,Moultrie,GA,Colquitt County,42.5
+30563,Mount Airy,GA,Habersham County,42.5
+30149,Mount Berry,GA,Floyd County,42.5
+30445,Mount Vernon,GA,Montgomery County,32.5
+30150,Mount Zion,GA,Carroll County,42.5
+30562,Mountain City,GA,Rabun County,32.5
+30564,Murrayville,GA,Hall County,42.5
+31066,Musella,GA,Crawford County,32.5
+31769,Mystic,GA,Irwin County,42.5
+31553,Nahunta,GA,Brantley County,42.5
+31639,Nashville,GA,Berrien County,42.5
+31641,Naylor,GA,Lowndes County,42.5
+30151,Nelson,GA,Pickens County,42.5
+30056,Newborn,GA,Jasper County,42.5
+30446,Newington,GA,Screven County,32.5
+30263,Newnan,GA,Coweta County,42.5
+30264,Newnan,GA,Coweta County,42.5
+30265,Newnan,GA,Coweta County,42.5
+30271,Newnan,GA,Coweta County,42.5
+39870,Newton,GA,Baker County,42.5
+31554,Nicholls,GA,Coffee County,42.5
+30565,Nicholson,GA,Jackson County,42.5
+30003,Norcross,GA,Gwinnett County,42.5
+30010,Norcross,GA,Gwinnett County,42.5
+30071,Norcross,GA,Gwinnett County,42.5
+30091,Norcross,GA,Gwinnett County,42.5
+30093,Norcross,GA,Gwinnett County,42.5
+31771,Norman Park,GA,Colquitt County,42.5
+30026,North Metro,GA,Gwinnett County,42.5
+30029,North Metro,GA,Gwinnett County,42.5
+30821,Norwood,GA,Warren County,42.5
+31772,Oakfield,GA,Worth County,32.5
+30732,Oakman,GA,Gordon County,42.5
+30566,Oakwood,GA,Hall County,42.5
+31773,Ochlocknee,GA,Thomas County,42.5
+31774,Ocilla,GA,Irwin County,42.5
+31068,Oglethorpe,GA,Macon County,32.5
+31821,Omaha,GA,Stewart County,32.5
+31775,Omega,GA,Tift County,42.5
+30266,Orchard Hill,GA,Spalding County,42.5
+30054,Oxford,GA,Newton County,42.5
+30268,Palmetto,GA,Fulton County,42.5
+39877,Parrott,GA,Terrell County,32.5
+31557,Patterson,GA,Pierce County,42.5
+31778,Pavo,GA,Thomas County,42.5
+30269,Peachtree City,GA,Fayette County,42.5
+30270,Peachtree City,GA,Fayette County,42.5
+31169,Peachtree City,GA,Fayette County,42.5
+30092,Peachtree Corners,GA,Gwinnett County,42.5
+31642,Pearson,GA,Atkinson County,42.5
+31779,Pelham,GA,Mitchell County,42.5
+31321,Pembroke,GA,Bryan County,32.5
+30567,Pendergrass,GA,Jackson County,42.5
+31069,Perry,GA,Houston County,32.5
+30072,Pine Lake,GA,Dekalb County,42.5
+31822,Pine Mountain,GA,Harris County,32.5
+31823,Pine Mountain Valley,GA,Harris County,32.5
+31070,Pinehurst,GA,Dooly County,32.5
+31071,Pineview,GA,Wilcox County,32.5
+31072,Pitts,GA,Wilcox County,32.5
+31780,Plains,GA,Sumter County,32.5
+30733,Plainville,GA,Gordon County,42.5
+31322,Pooler,GA,Chatham County,32.5
+31407,Port Wentworth,GA,Chatham County,32.5
+30070,Porterdale,GA,Newton County,42.5
+31781,Poulan,GA,Worth County,42.5
+30127,Powder Springs,GA,Cobb County,42.5
+31824,Preston,GA,Webster County,32.5
+31782,Putney,GA,Dougherty County,42.5
+31643,Quitman,GA,Brooks County,42.5
+30568,Rabun Gap,GA,Rabun County,42.5
+30734,Ranger,GA,Gordon County,42.5
+31645,Ray City,GA,Berrien County,42.5
+30660,Rayle,GA,Wilkes County,42.5
+31783,Rebecca,GA,Turner County,42.5
+30272,Red Oak,GA,Fulton County,42.5
+30074,Redan,GA,Dekalb County,42.5
+30452,Register,GA,Bulloch County,32.5
+31075,Rentz,GA,Laurens County,32.5
+30735,Resaca,GA,Gordon County,42.5
+30273,Rex,GA,Clayton County,42.5
+31076,Reynolds,GA,Taylor County,32.5
+31077,Rhine,GA,Dodge County,32.5
+31323,Riceboro,GA,Liberty County,32.5
+31825,Richland,GA,Stewart County,32.5
+31324,Richmond Hill,GA,Bryan County,32.5
+31326,Rincon,GA,Effingham County,32.5
+30736,Ringgold,GA,Catoosa County,32.5
+30738,Rising Fawn,GA,Dade County,32.5
+30274,Riverdale,GA,Clayton County,42.5
+30296,Riverdale,GA,Clayton County,42.5
+31078,Roberta,GA,Crawford County,32.5
+31079,Rochelle,GA,Wilcox County,32.5
+30739,Rock Spring,GA,Walker County,32.5
+30454,Rockledge,GA,Laurens County,32.5
+30153,Rockmart,GA,Polk County,42.5
+30740,Rocky Face,GA,Whitfield County,32.5
+30161,Rome,GA,Floyd County,42.5
+30162,Rome,GA,Floyd County,42.5
+30163,Rome,GA,Floyd County,42.5
+30164,Rome,GA,Newton County,42.5
+30165,Rome,GA,Floyd County,42.5
+30170,Roopville,GA,Carroll County,42.5
+30741,Rossville,GA,Walker County,32.5
+30075,Roswell,GA,Fulton County,42.5
+30076,Roswell,GA,Fulton County,42.5
+30077,Roswell,GA,Fulton County,42.5
+30662,Royston,GA,Franklin County,42.5
+31081,Rupert,GA,Taylor County,32.5
+30663,Rutledge,GA,Morgan County,42.5
+30171,Rydal,GA,Bartow County,42.5
+31562,Saint George,GA,Charlton County,42.5
+31558,Saint Marys,GA,Camden County,42.5
+31522,Saint Simons Island,GA,Glynn County,42.5
+31784,Sale City,GA,Mitchell County,42.5
+31082,Sandersville,GA,Washington County,32.5
+31327,Sapelo Island,GA,Mcintosh County,32.5
+30456,Sardis,GA,Burke County,42.5
+30275,Sargent,GA,Coweta County,42.5
+30571,Sautee Nacoochee,GA,White County,42.5
+31401,Savannah,GA,Chatham County,32.5
+31402,Savannah,GA,Chatham County,32.5
+31403,Savannah,GA,Chatham County,32.5
+31404,Savannah,GA,Chatham County,32.5
+31405,Savannah,GA,Chatham County,32.5
+31406,Savannah,GA,Chatham County,32.5
+31408,Savannah,GA,Chatham County,32.5
+31409,Savannah,GA,Chatham County,32.5
+31410,Savannah,GA,Chatham County,32.5
+31411,Savannah,GA,Chatham County,32.5
+31412,Savannah,GA,Chatham County,32.5
+31414,Savannah,GA,Chatham County,32.5
+31415,Savannah,GA,Chatham County,32.5
+31416,Savannah,GA,Chatham County,32.5
+31418,Savannah,GA,Chatham County,32.5
+31419,Savannah,GA,Chatham County,32.5
+31420,Savannah,GA,Chatham County,32.5
+31421,Savannah,GA,Chatham County,32.5
+30079,Scottdale,GA,Dekalb County,42.5
+30276,Senoia,GA,Coweta County,42.5
+31085,Shady Dale,GA,Jasper County,42.5
+30172,Shannon,GA,Floyd County,42.5
+30664,Sharon,GA,Taliaferro County,42.5
+30277,Sharpsburg,GA,Coweta County,42.5
+39886,Shellman,GA,Randolph County,32.5
+31826,Shiloh,GA,Harris County,32.5
+30665,Siloam,GA,Greene County,42.5
+30173,Silver Creek,GA,Floyd County,42.5
+31086,Smarr,GA,Monroe County,32.5
+31787,Smithville,GA,Lee County,32.5
+30080,Smyrna,GA,Cobb County,42.5
+30081,Smyrna,GA,Cobb County,42.5
+30082,Smyrna,GA,Cobb County,42.5
+30039,Snellville,GA,Gwinnett County,42.5
+30078,Snellville,GA,Gwinnett County,42.5
+30025,Social Circle,GA,Walton County,42.5
+30457,Soperton,GA,Treutlen County,32.5
+31647,Sparks,GA,Cook County,42.5
+31087,Sparta,GA,Hancock County,32.5
+31329,Springfield,GA,Effingham County,32.5
+30823,Stapleton,GA,Jefferson County,42.5
+31648,Statenville,GA,Echols County,42.5
+30458,Statesboro,GA,Bulloch County,32.5
+30459,Statesboro,GA,Bulloch County,32.5
+30460,Statesboro,GA,Bulloch County,32.5
+30461,Statesboro,GA,Bulloch County,32.5
+30666,Statham,GA,Barrow County,42.5
+30667,Stephens,GA,Oglethorpe County,42.5
+30281,Stockbridge,GA,Henry County,42.5
+31649,Stockton,GA,Lanier County,42.5
+30083,Stone Mountain,GA,Dekalb County,42.5
+30086,Stone Mountain,GA,Dekalb County,42.5
+30087,Stone Mountain,GA,Dekalb County,42.5
+30088,Stone Mountain,GA,Dekalb County,42.5
+30572,Suches,GA,Union County,42.5
+30746,Sugar Valley,GA,Gordon County,42.5
+30747,Summerville,GA,Chattooga County,42.5
+31789,Sumner,GA,Worth County,42.5
+30284,Sunny Side,GA,Spalding County,42.5
+30024,Suwanee,GA,Gwinnett County,42.5
+31790,Sycamore,GA,Turner County,42.5
+31791,Sylvester,GA,Worth County,42.5
+31827,Talbotton,GA,Talbot County,32.5
+30175,Talking Rock,GA,Pickens County,42.5
+30176,Tallapoosa,GA,Haralson County,42.5
+30573,Tallulah Falls,GA,Rabun County,32.5
+30575,Talmo,GA,Jackson County,42.5
+30470,Tarrytown,GA,Montgomery County,32.5
+30177,Tate,GA,Pickens County,42.5
+30178,Taylorsville,GA,Bartow County,42.5
+30179,Temple,GA,Carroll County,42.5
+30751,Tennga,GA,Murray County,32.5
+31089,Tennille,GA,Washington County,32.5
+30285,The Rock,GA,Upson County,42.5
+30286,Thomaston,GA,Upson County,42.5
+31757,Thomasville,GA,Thomas County,42.5
+31758,Thomasville,GA,Thomas County,42.5
+31792,Thomasville,GA,Thomas County,42.5
+31799,Thomasville,GA,Thomas County,42.5
+30824,Thomson,GA,Mcduffie County,42.5
+31793,Tifton,GA,Tift County,42.5
+31794,Tifton,GA,Tift County,42.5
+30576,Tiger,GA,Rabun County,42.5
+30668,Tignall,GA,Wilkes County,42.5
+30577,Toccoa,GA,Stephens County,42.5
+30598,Toccoa Falls,GA,Stephens County,32.5
+31090,Toomsboro,GA,Wilkinson County,32.5
+31331,Townsend,GA,Mcintosh County,32.5
+30752,Trenton,GA,Dade County,32.5
+30753,Trion,GA,Chattooga County,42.5
+30084,Tucker,GA,Dekalb County,42.5
+30085,Tucker,GA,Dekalb County,42.5
+30755,Tunnel Hill,GA,Whitfield County,32.5
+30289,Turin,GA,Coweta County,42.5
+30580,Turnerville,GA,Habersham County,42.5
+31795,Ty Ty,GA,Tift County,42.5
+31328,Tybee Island,GA,Chatham County,32.5
+30290,Tyrone,GA,Fayette County,42.5
+31091,Unadilla,GA,Dooly County,32.5
+30291,Union City,GA,Fulton County,42.5
+30669,Union Point,GA,Greene County,42.5
+31829,Upatoi,GA,Muscogee County,32.5
+30473,Uvalda,GA,Montgomery County,32.5
+31601,Valdosta,GA,Lowndes County,42.5
+31602,Valdosta,GA,Lowndes County,42.5
+31603,Valdosta,GA,Lowndes County,42.5
+31604,Valdosta,GA,Lowndes County,42.5
+31605,Valdosta,GA,Lowndes County,42.5
+31606,Valdosta,GA,Lowndes County,42.5
+30756,Varnell,GA,Whitfield County,32.5
+31092,Vienna,GA,Dooly County,32.5
+30180,Villa Rica,GA,Carroll County,42.5
+30182,Waco,GA,Carroll County,42.5
+30477,Wadley,GA,Jefferson County,42.5
+30183,Waleska,GA,Cherokee County,42.5
+31333,Walthourville,GA,Liberty County,32.5
+31830,Warm Springs,GA,Meriwether County,32.5
+31088,Warner Robins,GA,Houston County,32.5
+31093,Warner Robins,GA,Houston County,32.5
+31095,Warner Robins,GA,Houston County,32.5
+31098,Warner Robins,GA,Houston County,32.5
+31099,Warner Robins,GA,Houston County,32.5
+30828,Warrenton,GA,Warren County,42.5
+31094,Warthen,GA,Washington County,32.5
+31796,Warwick,GA,Worth County,32.5
+30673,Washington,GA,Wilkes County,42.5
+30677,Watkinsville,GA,Oconee County,42.5
+31565,Waverly,GA,Camden County,42.5
+31831,Waverly Hall,GA,Harris County,32.5
+31501,Waycross,GA,Ware County,42.5
+31502,Waycross,GA,Ware County,42.5
+31503,Waycross,GA,Ware County,42.5
+30830,Waynesboro,GA,Burke County,42.5
+31567,West Green,GA,Coffee County,42.5
+31833,West Point,GA,Troup County,32.5
+31832,Weston,GA,Webster County,32.5
+39897,Whigham,GA,Grady County,42.5
+30184,White,GA,Bartow County,42.5
+31568,White Oak,GA,Camden County,42.5
+30678,White Plains,GA,Greene County,42.5
+30185,Whitesburg,GA,Carroll County,42.5
+30757,Wildwood,GA,Dade County,32.5
+30581,Wiley,GA,Rabun County,42.5
+31650,Willacoochee,GA,Atkinson County,42.5
+30292,Williamson,GA,Pike County,42.5
+30680,Winder,GA,Barrow County,42.5
+30187,Winston,GA,Douglas County,42.5
+30683,Winterville,GA,Clarke County,42.5
+31569,Woodbine,GA,Camden County,42.5
+30293,Woodbury,GA,Meriwether County,42.5
+31836,Woodland,GA,Talbot County,32.5
+30188,Woodstock,GA,Cherokee County,42.5
+30189,Woodstock,GA,Cherokee County,42.5
+31798,Wray,GA,Irwin County,42.5
+30833,Wrens,GA,Jefferson County,42.5
+31096,Wrightsville,GA,Johnson County,32.5
+31097,Yatesville,GA,Upson County,42.5
+30582,Young Harris,GA,Towns County,42.5
+30295,Zebulon,GA,Pike County,42.5

@@ -1,0 +1,208 @@
+zip,city,state,county,payout
+94501,Alameda,CA,Alameda County,34.02
+91803,Alhambra,CA,Los Angeles County,34.02
+92656,Aliso Viejo,CA,Orange County,34.02
+92805,Anaheim,CA,Orange County,34.02
+94509,Antioch,CA,Contra Costa County,54.18
+94531,Antioch,CA,Contra Costa County,35.22
+91006,Arcadia,CA,Los Angeles County,60.65
+95602,Auburn,CA,Placer County,44.63
+95603,Auburn,CA,Placer County,44.63
+94510,Benicia,CA,Solano County,44.63
+94702,Berkeley,CA,Alameda County,44.63
+90210,Beverly Hills,CA,Los Angeles County,70.0
+94513,Brentwood,CA,Contra Costa County,34.02
+91504,Burbank,CA,Los Angeles County,34.02
+95008,Campbell,CA,Santa Clara County,40.1
+91351,Canyon Country,CA,Los Angeles County,34.02
+92009,Carlsbad,CA,San Diego County,34.02
+91384,Castaic,CA,Los Angeles County,34.02
+94546,Castro Valley,CA,Alameda County,40.61
+95926,Chico,CA,Butte County,44.63
+95928,Chico,CA,Butte County,44.63
+91911,Chula Vista,CA,San Diego County,34.02
+90220,Compton,CA,Los Angeles County,34.02
+94520,Concord,CA,Contra Costa County,44.63
+94521,Concord,CA,Contra Costa County,44.63
+96021,Corning,CA,Tehama County,44.63
+92879,Corona,CA,Riverside County,34.02
+95014,Cupertino,CA,Santa Clara County,44.63
+94015,Daly City,CA,San Mateo County,34.02
+94506,Danville,CA,Contra Costa County,35.19
+95616,Davis,CA,Yolo County,44.63
+94505,Discovery Bay,CA,Contra Costa County,44.63
+94568,Dublin,CA,Alameda County,44.63
+94530,El Cerrito,CA,Contra Costa County,44.63
+95624,Elk Grove,CA,Sacramento County,35.23
+95758,Elk Grove,CA,Sacramento County,35.24
+92024,Encinitas,CA,San Diego County,33.08
+92025,Escondido,CA,San Diego County,33.08
+92026,Escondido,CA,San Diego County,33.08
+95627,Esparto,CA,Yolo County,44.63
+95628,Fair Oaks,CA,Sacramento County,44.63
+94533,Fairfield,CA,Solano County,44.63
+92028,Fallbrook,CA,San Diego County,33.08
+95630,Folsom,CA,Sacramento County,44.63
+92708,Fountain Valley,CA,Orange County,34.02
+94536,Fremont,CA,Alameda County,35.2
+94538,Fremont,CA,Alameda County,34.02
+92840,Garden Grove,CA,Orange County,34.02
+92841,Garden Grove,CA,Orange County,34.02
+94540,Hayward,CA,Alameda County,44.63
+94541,Hayward,CA,Alameda County,44.63
+94547,Hercules,CA,Contra Costa County,44.63
+92648,Huntington Beach,CA,Orange County,44.63
+91932,Imperial Beach,CA,San Diego County,34.02
+92604,Irvine,CA,Orange County,44.63
+92618,Irvine,CA,Orange County,34.02
+92620,Irvine,CA,Orange County,44.63
+91941,La Mesa,CA,San Diego County,34.02
+91942,La Mesa,CA,San Diego County,33.08
+90638,La Mirada,CA,Los Angeles County,34.02
+92653,Laguna Hills,CA,Orange County,44.63
+92677,Laguna Niguel,CA,Orange County,44.63
+92630,Lake Forest,CA,Orange County,44.63
+92040,Lakeside,CA,San Diego County,33.08
+95648,Lincoln,CA,Placer County,34.02
+95240,Lodi,CA,San Joaquin County,40.58
+93436,Lompoc,CA,Santa Barbara County,34.02
+90804,Long Beach,CA,Los Angeles County,34.02
+90806,Long Beach,CA,Los Angeles County,34.02
+95650,Loomis,CA,Placer County,44.63
+90720,Los Alamitos,CA,Orange County,70.89
+90001,Los Angeles,CA,Los Angeles County,34.02
+90024,Los Angeles,CA,Los Angeles County,34.02
+90046,Los Angeles,CA,Los Angeles County,34.02
+90066,Los Angeles,CA,Los Angeles County,34.25
+95030,Los Gatos,CA,Santa Clara County,44.63
+95337,Manteca,CA,San Joaquin County,34.02
+94553,Martinez,CA,Contra Costa County,44.63
+95901,Marysville,CA,Yuba County,34.02
+95035,Milpitas,CA,Santa Clara County,44.63
+92691,Mission Viejo,CA,Orange County,44.63
+92692,Mission Viejo,CA,Orange County,44.63
+91016,Monrovia,CA,Los Angeles County,34.02
+94041,Mountain View,CA,Santa Clara County,44.63
+91320,Newbury Park,CA,Ventura County,44.63
+91321,Newhall,CA,Los Angeles County,34.02
+92660,Newport Beach,CA,Orange County,44.63
+92663,Newport Beach,CA,Orange County,34.02
+92657,Newport Coast,CA,Orange County,60.65
+91325,Northridge,CA,Los Angeles County,44.63
+94561,Oakley,CA,Contra Costa County,40.1
+91761,Ontario,CA,San Bernardino County,34.02
+92866,Orange,CA,Orange County,34.02
+92867,Orange,CA,Orange County,34.02
+95662,Orangevale,CA,Sacramento County,44.63
+93033,Oxnard,CA,Ventura County,44.63
+94303,Palo Alto,CA,San Mateo County,35.19
+91402,Panorama City,CA,Los Angeles County,34.02
+93446,Paso Robles,CA,San Luis Obispo County,44.63
+95946,Penn Valley,CA,Nevada County,34.02
+93449,Pismo Beach,CA,San Luis Obispo County,44.63
+95667,Placerville,CA,El Dorado County,34.02
+94566,Pleasanton,CA,Alameda County,44.63
+91767,Pomona,CA,Los Angeles County,33.6
+93041,Port Hueneme,CA,Ventura County,44.63
+94028,Portola Valley,CA,San Mateo County,44.63
+92064,Poway,CA,San Diego County,34.02
+92065,Ramona,CA,San Diego County,34.02
+95670,Rancho Cordova,CA,Sacramento County,44.63
+95742,Rancho Cordova,CA,Sacramento County,44.63
+96080,Red Bluff,CA,Tehama County,44.63
+96001,Redding,CA,Shasta County,44.63
+96003,Redding,CA,Shasta County,44.63
+94063,Redwood City,CA,San Mateo County,44.63
+94065,Redwood City,CA,San Mateo County,35.23
+91335,Reseda,CA,Los Angeles County,34.02
+95673,Rio Linda,CA,Sacramento County,34.02
+95677,Rocklin,CA,Placer County,44.63
+95661,Roseville,CA,Placer County,44.63
+95678,Roseville,CA,Placer County,44.63
+95747,Roseville,CA,Placer County,44.63
+95812,Sacramento,CA,Sacramento County,44.63
+95814,Sacramento,CA,Sacramento County,44.63
+95816,Sacramento,CA,Sacramento County,44.63
+95818,Sacramento,CA,Sacramento County,44.63
+95819,Sacramento,CA,Sacramento County,44.63
+95821,Sacramento,CA,Sacramento County,34.02
+95824,Sacramento,CA,Sacramento County,44.63
+95828,Sacramento,CA,Sacramento County,44.63
+95829,Sacramento,CA,Sacramento County,44.63
+95838,Sacramento,CA,Sacramento County,44.63
+95864,Sacramento,CA,Sacramento County,44.63
+94066,San Bruno,CA,San Mateo County,44.63
+94070,San Carlos,CA,San Mateo County,35.19
+92673,San Clemente,CA,Orange County,44.63
+92101,San Diego,CA,San Diego County,33.08
+92103,San Diego,CA,San Diego County,34.02
+92104,San Diego,CA,San Diego County,34.02
+92106,San Diego,CA,San Diego County,33.08
+92108,San Diego,CA,San Diego County,33.08
+92113,San Diego,CA,San Diego County,33.08
+92114,San Diego,CA,San Diego County,34.02
+92115,San Diego,CA,San Diego County,33.08
+92116,San Diego,CA,San Diego County,33.08
+92126,San Diego,CA,San Diego County,33.08
+91340,San Fernando,CA,Los Angeles County,44.63
+95101,San Jose,CA,Santa Clara County,44.63
+95111,San Jose,CA,Santa Clara County,44.63
+95112,San Jose,CA,Santa Clara County,44.63
+95113,San Jose,CA,Santa Clara County,44.63
+95116,San Jose,CA,Santa Clara County,34.02
+95118,San Jose,CA,Santa Clara County,44.63
+95123,San Jose,CA,Santa Clara County,44.63
+95125,San Jose,CA,Santa Clara County,44.63
+95126,San Jose,CA,Santa Clara County,34.02
+95129,San Jose,CA,Santa Clara County,44.63
+95135,San Jose,CA,Santa Clara County,44.63
+95138,San Jose,CA,Santa Clara County,44.63
+95148,San Jose,CA,Santa Clara County,35.24
+92675,San Juan Capistrano,CA,Orange County,44.63
+94577,San Leandro,CA,Alameda County,34.02
+92078,San Marcos,CA,San Diego County,33.08
+94403,San Mateo,CA,San Mateo County,40.66
+94582,San Ramon,CA,Contra Costa County,44.63
+94583,San Ramon,CA,Contra Costa County,44.63
+92701,Santa Ana,CA,Orange County,34.02
+92706,Santa Ana,CA,Orange County,34.02
+91350,Santa Clarita,CA,Los Angeles County,34.02
+93454,Santa Maria,CA,Santa Barbara County,44.63
+93455,Santa Maria,CA,Santa Barbara County,44.63
+91423,Sherman Oaks,CA,Los Angeles County,34.02
+93063,Simi Valley,CA,Ventura County,44.63
+93065,Simi Valley,CA,Ventura County,44.63
+95476,Sonoma,CA,Sonoma County,44.63
+91977,Spring Valley,CA,San Diego County,33.08
+95201,Stockton,CA,San Joaquin County,34.02
+95205,Stockton,CA,San Joaquin County,44.63
+95206,Stockton,CA,San Joaquin County,44.63
+95209,Stockton,CA,San Joaquin County,44.63
+95210,Stockton,CA,San Joaquin County,44.63
+95219,Stockton,CA,San Joaquin County,34.02
+94089,Sunnyvale,CA,Santa Clara County,34.02
+96130,Susanville,CA,Lassen County,44.63
+91780,Temple City,CA,Los Angeles County,34.02
+91360,Thousand Oaks,CA,Ventura County,44.63
+90505,Torrance,CA,Los Angeles County,34.02
+95687,Vacaville,CA,Solano County,44.63
+95688,Vacaville,CA,Solano County,34.02
+94589,Vallejo,CA,Solano County,44.63
+94590,Vallejo,CA,Solano County,40.62
+94591,Vallejo,CA,Solano County,44.63
+91405,Van Nuys,CA,Los Angeles County,34.02
+93001,Ventura,CA,Ventura County,34.02
+93003,Ventura,CA,Ventura County,44.63
+93004,Ventura,CA,Ventura County,44.63
+92084,Vista,CA,San Diego County,33.08
+94598,Walnut Creek,CA,Contra Costa County,44.63
+95605,West Sacramento,CA,Yolo County,34.02
+91359,Westlake Village,CA,Los Angeles County,70.0
+91361,Westlake Village,CA,Ventura County,34.02
+92683,Westminster,CA,Orange County,34.02
+95693,Wilton,CA,Sacramento County,44.63
+95694,Winters,CA,Yolo County,44.63
+95695,Woodland,CA,Yolo County,44.63
+91367,Woodland Hills,CA,Los Angeles County,44.63
+92886,Yorba Linda,CA,Orange County,44.63
+95993,Yuba City,CA,Sutter County,34.02

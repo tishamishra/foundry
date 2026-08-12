@@ -1,0 +1,49 @@
+niche: personal-injury-attorneys
+label: Personal Injury Attorneys
+schema_type: Attorney
+services:
+- slug: slip-and-fall
+  name: Slip & Fall
+  summary: Premises liability, evidenced rather than asserted.
+- slug: workplace-injury
+  name: Workplace Injury
+  summary: Where the employer's process and the law diverge.
+- slug: product-liability
+  name: Product Liability
+  summary: Defects traced to the manufacturer.
+- slug: medical-negligence
+  name: Medical Negligence
+  summary: Reviewed with the records before any claim is made.
+- slug: wrongful-death
+  name: Wrongful Death
+  summary: Handled with the care the family is owed.
+- slug: case-evaluation
+  name: Free Case Evaluation
+  summary: A straight answer about the merits.
+seo:
+  home_title: '{company} | Personal Injury Attorneys'
+  home_description: '{company} handles {niche_lower} work across the areas we serve. Assessment first,
+    written findings, then a price. Call {phone}.'
+  about_title: About {company} | Personal Injury Attorneys Contractor
+  about_description: Who {company} is, how we work, what our written assessments cover, and what to expect
+    from first call to final check.
+  contact_title: Contact {company} | Call {phone}
+  contact_description: Call {company} on {phone} or request a callback. Tell us what you are seeing and
+    we will tell you what it usually means.
+  services_title: Personal Injury Attorneys Services | {company}
+  services_description: Everything {company} does, what each job includes, and how the scope and the price
+    are arrived at.
+  areas_title: Personal Injury Attorneys Service Areas | {company}
+  areas_description: Every community {company} covers for personal injury attorneys, listed by county.
+    Find your town and call {phone}.
+  service_title: '{service} | {company}'
+  service_description: '{service} from {company}. What the job includes, how the scope is agreed, and
+    what would change the price. Call {phone}.'
+  county_title: Personal Injury Attorneys in {county}, {state_abbr} | {company}
+  county_description: '{company} covers every community in {county}, {state_abbr} for personal injury
+    attorneys. Find your town below, or call {phone} to speak to someone.'
+  location_title: '{niche} in {city}, {state_abbr} | {company}'
+  location_description: '{niche} in {city}, {state_abbr}[[ and nearby {nearby}]]. Call {company} on {phone}.'
+  location_service_title: '{service} in {city}, {state_abbr} | {company}'
+  location_service_description: '{service} for {city}, {state_abbr} property owners[[ in {county}]]. Call
+    {phone}.'

@@ -1,0 +1,95 @@
+{% extends "base.html" %}{% block body %}
+<div class="head"><h1>Content intelligence — {{ niche_label }}</h1>
+  <p class="sub">How deep each section's pool is, how many distinct sites it can support before
+  content repeats, and where to add next. Weakest sections are at the top — that is your to-do list.
+  Each row hands you a small, ready prompt that outputs rows in your master-CSV format, so the
+  result drops straight into the bulk importer.</p>
+  <div class="actions">
+    <a class="btn ghost" href="{{ url_for('prompts_global') }}">Bulk importer</a>
+    <a class="btn ghost" href="{{ url_for('prompts') }}">Per-type prompts</a>
+  </div>
+</div>
+
+<form method="get" class="card row-form">
+  <label>Niche<select name="niche" onchange="this.form.submit()">
+    {% for x in NICHES %}<option value="{{ x }}" {{ 'selected' if x == niche }}>{{ x }}</option>{% endfor %}
+  </select></label>
+  <label>Target sites<input name="target" type="number" min="2" max="200" value="{{ target }}"
+    onchange="this.form.submit()" style="width:6rem"></label>
+  <span class="dim">This niche currently supports about <strong>{{ sites_now }}</strong> distinct
+    site(s) before its weakest section repeats.</span>
+</form>
+
+{% if weakest %}
+<div class="card">
+  <h2>Strengthen these first</h2>
+  <p class="dim queue">
+    {% for r in weakest %}
+    <span class="q {{ 'now' if r.strength=='empty' else '' }}">{{ r.kind }}
+      <em class="dim">{{ r.sites }} site{{ '' if r.sites==1 else 's' }}</em></span>
+    {% endfor %}
+  </p>
+</div>
+{% endif %}
+
+<div class="card">
+  <h2>Every section</h2>
+  <p class="note"><strong>Total pool = Base + Niche + Yours.</strong> “Base” is the shared <code>_base.yaml</code> every niche uses; “Yours” is what you imported into this niche. If the base file alone shows a smaller number, that is why — the dashboard counts all three.</p>
+  <table class="grid">
+    <thead><tr><th>Section</th>
+      <th title="Shared _base.yaml, used by every niche">Base</th>
+      <th title="This niche's own file">Niche</th>
+      <th title="What you imported">Yours</th>
+      <th>Total pool</th><th>Per site</th><th>Sites</th>
+      <th>Strength</th><th>To hit {{ target }}</th><th></th></tr></thead>
+    <tbody>
+      {% for r in coverage %}
+      <tr>
+        <td><strong>{{ r.kind }}</strong></td>
+        <td class="dim">{{ r.src.base }}</td>
+        <td class="dim">{{ r.src.niche }}</td>
+        <td>{{ r.src.user }}</td>
+        <td><strong>{{ r.pool }}</strong></td>
+        <td class="dim">{{ r.per_site }}</td>
+        <td>{{ r.sites }}</td>
+        <td><span class="pill {{ 'bad' if r.strength in ('empty','thin') else ('warn' if r.strength=='ok' else 'good') }}">{{ r.strength }}</span></td>
+        <td>{% if r.gap %}<strong>+{{ r.gap }}</strong>{% else %}<span class="dim">done</span>{% endif %}</td>
+        <td><button type="button" class="btn sm ghost" data-toggle="p-{{ r.kind }}">Prompt</button></td>
+      </tr>
+      <tr class="prow" id="p-{{ r.kind }}" hidden>
+        <td colspan="10">
+          <div class="prompt-wrap">
+            <button type="button" class="btn sm ghost" data-copy="t-{{ r.kind }}">Copy</button>
+            <pre class="prompt mono" id="t-{{ r.kind }}">{{ prompts[r.kind] }}</pre>
+          </div>
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  <p class="note">“Sites” is a conservative ceiling: <code>pool ÷ blocks-drawn-per-site</code>. Above
+  it, two sites in this niche share most of a section's content no matter which seed they use — which
+  is exactly the thin-content signal to avoid. Deeper pools raise it directly.</p>
+</div>
+
+<script>
+(function () {
+  document.querySelectorAll("[data-toggle]").forEach(function (b) {
+    b.addEventListener("click", function () {
+      var row = document.getElementById(b.getAttribute("data-toggle"));
+      if (row) row.hidden = !row.hidden;
+    });
+  });
+  document.querySelectorAll("[data-copy]").forEach(function (b) {
+    b.addEventListener("click", function () {
+      var pre = document.getElementById(b.getAttribute("data-copy"));
+      if (!pre) return;
+      var txt = pre.textContent;
+      function done(){ b.textContent = "Copied ✓"; setTimeout(function(){ b.textContent="Copy"; }, 1500); }
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(txt).then(done, done);
+      else { var r=document.createRange(); r.selectNode(pre); var s=getSelection(); s.removeAllRanges(); s.addRange(r); try{document.execCommand("copy");}catch(e){} s.removeAllRanges(); done(); }
+    });
+  });
+})();
+</script>
+{% endblock %}

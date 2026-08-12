@@ -1,0 +1,25 @@
+slug: harborline-roofing
+company: Harborline Roofing
+brand: Harborline Roofing
+phone: "+1 833 411 7720"
+email: hello@harborlineroofing.com
+address:
+  street: 118 Whitlock Avenue
+  city: Decatur
+  state: Georgia
+  zip: "30030"
+facts:
+  years_in_business: 9
+  hours: "Mon-Sat 7:30-18:00"
+  free_estimates: true
+  licensed: false
+  insured: false
+  emergency_24_7: false
+  warranty_years: null
+  financing: false
+  family_owned: false
+  bbb_rating: null
+  rating: null
+  awards: null
+  certifications: null
+  volume_claims: null

@@ -1,0 +1,123 @@
+zip,city,state,county,payout
+66002,Atchison,KS,Atchison County,45.5
+66006,Baldwin City,KS,Douglas County,59.5
+66007,Basehor,KS,Leavenworth County,59.5
+66008,Bendena,KS,Doniphan County,45.5
+66409,Berryton,KS,Shawnee County,59.5
+66012,Bonner Springs,KS,Wyandotte County,44.0
+66013,Bucyrus,KS,Johnson County,42.0
+66414,Carbondale,KS,Osage County,59.5
+66016,Cummings,KS,Atchison County,45.5
+66018,De Soto,KS,Johnson County,45.38
+66017,Denton,KS,Doniphan County,45.5
+66020,Easton,KS,Leavenworth County,59.5
+66021,Edgerton,KS,Johnson County,59.5
+66113,Edwardsville,KS,Wyandotte County,42.0
+66023,Effingham,KS,Atchison County,45.5
+66024,Elwood,KS,Doniphan County,45.5
+66025,Eudora,KS,Douglas County,59.5
+66424,Everest,KS,Brown County,45.5
+66027,Fort Leavenworth,KS,Leavenworth County,45.5
+66030,Gardner,KS,Johnson County,45.38
+66429,Grantville,KS,Jefferson County,59.5
+66434,Hiawatha,KS,Brown County,45.5
+66035,Highland,KS,Doniphan County,45.5
+66036,Hillsdale,KS,Miami County,42.0
+66101,Kansas City,KS,Wyandotte County,50.4
+66102,Kansas City,KS,Wyandotte County,50.4
+66103,Kansas City,KS,Wyandotte County,42.0
+66104,Kansas City,KS,Wyandotte County,42.0
+66105,Kansas City,KS,Wyandotte County,42.0
+66106,Kansas City,KS,Wyandotte County,42.52
+66109,Kansas City,KS,Wyandotte County,59.5
+66110,Kansas City,KS,Wyandotte County,45.5
+66111,Kansas City,KS,Wyandotte County,42.0
+66112,Kansas City,KS,Wyandotte County,42.0
+66115,Kansas City,KS,Wyandotte County,59.5
+66117,Kansas City,KS,Wyandotte County,45.5
+66118,Kansas City,KS,Wyandotte County,42.0
+66160,Kansas City,KS,Wyandotte County,37.13
+66041,Lancaster,KS,Atchison County,45.5
+66043,Lansing,KS,Leavenworth County,59.5
+66044,Lawrence,KS,Douglas County,59.5
+66046,Lawrence,KS,Douglas County,59.5
+66047,Lawrence,KS,Douglas County,59.5
+66049,Lawrence,KS,Douglas County,59.5
+66048,Leavenworth,KS,Leavenworth County,59.5
+66206,Leawood,KS,Johnson County,42.0
+66209,Leawood,KS,Johnson County,42.0
+66211,Leawood,KS,Johnson County,42.0
+66050,Lecompton,KS,Douglas County,59.5
+66215,Lenexa,KS,Johnson County,42.52
+66219,Lenexa,KS,Johnson County,42.0
+66220,Lenexa,KS,Johnson County,42.0
+66227,Lenexa,KS,Johnson County,42.0
+66250,Lenexa,KS,Johnson County,45.5
+66285,Lenexa,KS,Johnson County,45.38
+66052,Linwood,KS,Leavenworth County,59.5
+66053,Louisburg,KS,Miami County,59.5
+66054,Mc Louth,KS,Jefferson County,59.5
+66512,Meriden,KS,Jefferson County,59.5
+66201,Mission,KS,Johnson County,45.5
+66202,Mission,KS,Johnson County,42.0
+66205,Mission,KS,Johnson County,42.0
+66222,Mission,KS,Johnson County,45.38
+66031,New Century,KS,Johnson County,45.38
+66060,Nortonville,KS,Jefferson County,45.5
+66051,Olathe,KS,Johnson County,45.38
+66061,Olathe,KS,Johnson County,50.4
+66062,Olathe,KS,Johnson County,42.52
+66063,Olathe,KS,Johnson County,45.38
+66064,Osawatomie,KS,Miami County,59.5
+66066,Oskaloosa,KS,Jefferson County,59.5
+66067,Ottawa,KS,Franklin County,59.5
+66524,Overbrook,KS,Osage County,59.5
+66204,Overland Park,KS,Johnson County,42.0
+66207,Overland Park,KS,Johnson County,42.0
+66210,Overland Park,KS,Johnson County,42.0
+66212,Overland Park,KS,Johnson County,42.0
+66213,Overland Park,KS,Johnson County,42.0
+66214,Overland Park,KS,Johnson County,42.0
+66221,Overland Park,KS,Johnson County,42.0
+66223,Overland Park,KS,Johnson County,42.0
+66224,Overland Park,KS,Johnson County,42.0
+66225,Overland Park,KS,Johnson County,45.38
+66251,Overland Park,KS,Johnson County,45.38
+66282,Overland Park,KS,Johnson County,45.38
+66283,Overland Park,KS,Johnson County,45.38
+66070,Ozawkie,KS,Jefferson County,59.5
+66071,Paola,KS,Miami County,59.5
+66073,Perry,KS,Jefferson County,59.5
+66076,Pomona,KS,Franklin County,59.5
+66208,Prairie Village,KS,Johnson County,51.98
+66078,Princeton,KS,Franklin County,59.5
+66532,Robinson,KS,Brown County,45.5
+66203,Shawnee,KS,Johnson County,42.0
+66216,Shawnee,KS,Johnson County,42.0
+66217,Shawnee,KS,Johnson County,42.0
+66218,Shawnee,KS,Johnson County,42.0
+66226,Shawnee,KS,Johnson County,42.0
+66286,Shawnee,KS,Johnson County,45.5
+66276,Shawnee Mission,KS,Johnson County,45.5
+66083,Spring Hill,KS,Johnson County,45.38
+66085,Stilwell,KS,Johnson County,42.52
+66542,Tecumseh,KS,Shawnee County,59.5
+66086,Tonganoxie,KS,Leavenworth County,59.5
+66604,Topeka,KS,Shawnee County,59.5
+66605,Topeka,KS,Shawnee County,59.5
+66606,Topeka,KS,Shawnee County,59.5
+66607,Topeka,KS,Shawnee County,59.5
+66608,Topeka,KS,Shawnee County,59.5
+66609,Topeka,KS,Shawnee County,59.5
+66610,Topeka,KS,Shawnee County,59.5
+66611,Topeka,KS,Shawnee County,59.5
+66614,Topeka,KS,Shawnee County,59.5
+66615,Topeka,KS,Shawnee County,59.5
+66616,Topeka,KS,Shawnee County,59.5
+66617,Topeka,KS,Shawnee County,59.5
+66618,Topeka,KS,Shawnee County,59.5
+66087,Troy,KS,Doniphan County,45.5
+66088,Valley Falls,KS,Jefferson County,59.5
+66090,Wathena,KS,Doniphan County,45.5
+66092,Wellsville,KS,Franklin County,59.5
+66094,White Cloud,KS,Brown County,45.5

@@ -1,0 +1,67 @@
+{% extends "base.html" %}{% block head %}
+{% if job and job.running %}<meta http-equiv="refresh" content="2">{% endif %}
+{% endblock %}{% block body %}
+<div class="head"><h1>Deploy</h1>
+  <p class="sub">
+    {% if job.running %}<span class="spin"></span>
+      {{ job.done|length }} of {{ job.targets|length }} — {{ job.elapsed|round|int }}s elapsed.
+    {% else %}{{ job.passed }} of {{ job.targets|length }} succeeded in {{ job.elapsed|round|int }}s.{% endif %}
+  </p>
+  <div class="actions"><a class="btn ghost" href="{{ url_for('deploy_home') }}">Back to deploy</a></div>
+</div>
+
+<div class="progress-wrap"><div class="progress" style="width:{{ job.progress }}%"></div></div>
+{% set finished = job.done|map(attribute='site_id')|list %}
+<p class="dim queue">
+  {% for t in job.targets %}
+  <span class="q {{ 'done' if t in finished else ('now' if t == job.current else '') }}">{{ t }}</span>
+  {% endfor %}
+</p>
+{% if job.error %}<div class="finding blocker"><strong>The deploy thread stopped</strong>
+  <div class="mono dim">{{ job.error }}</div></div>{% endif %}
+
+{% for r in results %}
+<div class="card build {{ 'ok' if r.ok else 'fail' }}">
+  <div class="build-head">
+    <h2>{{ r.site_id }}</h2>
+    <span class="pill">{{ r.target }}</span>
+    {% if r.res and r.res.dry_run %}<span class="pill warn">dry run</span>{% endif %}
+    <span class="pill {{ 'good' if r.ok else 'bad' }}">{{ 'ok' if r.ok else 'stopped' }}</span>
+    <span class="dim">{{ r.seconds }}s</span>
+    {% if r.ok and r.res and r.res.url and not r.res.dry_run %}
+    <a class="btn sm" href="{{ r.res.url }}" target="_blank" rel="noopener">Open</a>{% endif %}
+  </div>
+
+  {% if r.res and r.res.dry_run %}
+  <p class="note">Nothing ran. Every check below passed and these are the exact commands, in
+  order, that a real deploy would execute.</p>
+  {% endif %}
+
+  {% for n in (r.res.notes if r.res else []) %}<div class="finding warning">{{ n }}</div>{% endfor %}
+
+  {% if r.diag %}
+  <div class="finding blocker">
+    <strong>{{ r.error }}</strong>
+    <div><em>{{ r.diag.title }}</em></div>
+    <div class="dim">cause: {{ r.diag.cause }}</div>
+    <div>fix: {{ r.diag.fix }}</div>
+  </div>
+  {% elif r.error %}
+  <div class="finding blocker"><strong>{{ r.error }}</strong></div>
+  {% endif %}
+
+  {% for s in (r.res.steps if r.res else []) %}
+  <div class="step {{ 'ok' if s.ok else 'bad' }}">
+    <div class="step-head"><strong>{{ s.name }}</strong>
+      {% if s.seconds %}<span class="dim">{{ s.seconds }}s</span>{% endif %}
+      {% if s.skipped %}<span class="pill">skipped</span>{% endif %}</div>
+    <div class="mono cmd">{{ s.cmd }}</div>
+    {% if s.skipped %}<div class="dim">{{ s.skipped }}</div>{% endif %}
+    {% if s.output %}<pre class="mono out">{{ s.output }}</pre>{% endif %}
+  </div>
+  {% endfor %}
+
+  {% if r.trace %}<pre class="mono out">{{ r.trace }}</pre>{% endif %}
+</div>
+{% endfor %}
+{% endblock %}

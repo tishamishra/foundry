@@ -1,0 +1,16 @@
+{% if services|length > 1 %}
+<section class="sec">
+  <div class="wrap">
+    <h2 class="section-head">Every service in {{ t.city }}</h2>
+    <div class="dir-tiles">
+      {% for s in services %}
+      <a class="dir-tile" href="{% if single_service %}/services/{{ s.slug }}{% else %}/services/{{ s.slug }}/{{ t.slug }}{% endif %}">
+        <strong>{{ s.name }}</strong>
+        <span>{{ s.summary }}</span>
+        <em>in {{ t.city }}, {{ t.state_abbr }} &rarr;</em>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}

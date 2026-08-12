@@ -1,0 +1,658 @@
+zip,city,state,county,payout
+08201,Absecon,NJ,Atlantic County,45.38
+08205,Absecon,NJ,Atlantic County,45.38
+07710,Adelphia,NJ,Monmouth County,46.75
+07401,Allendale,NJ,Bergen County,46.75
+07711,Allenhurst,NJ,Monmouth County,46.75
+08501,Allentown,NJ,Monmouth County,46.75
+08720,Allenwood,NJ,Monmouth County,46.75
+08001,Alloway,NJ,Salem County,36.75
+07620,Alpine,NJ,Bergen County,46.75
+07821,Andover,NJ,Sussex County,34.3
+08801,Annandale,NJ,Hunterdon County,47.25
+08802,Asbury,NJ,Hunterdon County,41.25
+07712,Asbury Park,NJ,Monmouth County,46.75
+08004,Atco,NJ,Camden County,52.67
+08401,Atlantic City,NJ,Atlantic County,55.13
+08404,Atlantic City,NJ,Atlantic County,36.75
+08405,Atlantic City,NJ,Atlantic County,36.75
+07716,Atlantic Highlands,NJ,Monmouth County,53.55
+08106,Audubon,NJ,Camden County,52.67
+08202,Avalon,NJ,Cape May County,45.38
+07001,Avenel,NJ,Middlesex County,41.25
+07717,Avon By The Sea,NJ,Monmouth County,46.75
+08803,Baptistown,NJ,Hunterdon County,41.25
+08005,Barnegat,NJ,Ocean County,44.0
+08006,Barnegat Light,NJ,Ocean County,44.0
+08007,Barrington,NJ,Camden County,43.68
+07920,Basking Ridge,NJ,Somerset County,43.92
+07002,Bayonne,NJ,Hudson County,47.25
+08721,Bayville,NJ,Ocean County,42.88
+08008,Beach Haven,NJ,Ocean County,55.13
+08722,Beachwood,NJ,Ocean County,42.88
+07921,Bedminster,NJ,Somerset County,47.25
+07718,Belford,NJ,Monmouth County,46.75
+08502,Belle Mead,NJ,Somerset County,37.8
+07109,Belleville,NJ,Essex County,43.92
+08031,Bellmawr,NJ,Camden County,41.25
+08099,Bellmawr,NJ,Camden County,36.75
+07715,Belmar,NJ,Monmouth County,46.75
+07719,Belmar,NJ,Monmouth County,46.75
+07621,Bergenfield,NJ,Bergen County,46.75
+07922,Berkeley Heights,NJ,Union County,42.0
+08009,Berlin,NJ,Camden County,43.68
+07924,Bernardsville,NJ,Somerset County,43.92
+08010,Beverly,NJ,Burlington County,41.25
+08011,Birmingham,NJ,Burlington County,52.67
+08012,Blackwood,NJ,Camden County,52.67
+08504,Blawenburg,NJ,Somerset County,34.3
+07003,Bloomfield,NJ,Essex County,49.0
+07403,Bloomingdale,NJ,Passaic County,34.3
+08804,Bloomsbury,NJ,Hunterdon County,41.25
+07603,Bogota,NJ,Bergen County,46.75
+07005,Boonton,NJ,Morris County,43.92
+08505,Bordentown,NJ,Burlington County,41.25
+08805,Bound Brook,NJ,Somerset County,34.3
+07720,Bradley Beach,NJ,Monmouth County,46.75
+08723,Brick,NJ,Ocean County,42.88
+08724,Brick,NJ,Ocean County,45.22
+08014,Bridgeport,NJ,Gloucester County,41.25
+08302,Bridgeton,NJ,Cumberland County,36.75
+08807,Bridgewater,NJ,Somerset County,34.3
+08730,Brielle,NJ,Monmouth County,46.75
+08203,Brigantine,NJ,Atlantic County,45.38
+07926,Brookside,NJ,Morris County,42.0
+08015,Browns Mills,NJ,Burlington County,41.25
+07828,Budd Lake,NJ,Morris County,43.92
+08310,Buena,NJ,Atlantic County,41.25
+08016,Burlington,NJ,Burlington County,52.67
+07405,Butler,NJ,Morris County,43.92
+07006,Caldwell,NJ,Essex County,47.25
+07007,Caldwell,NJ,Essex County,41.25
+07830,Califon,NJ,Hunterdon County,41.25
+08101,Camden,NJ,Camden County,41.39
+08102,Camden,NJ,Camden County,52.67
+08103,Camden,NJ,Camden County,52.67
+08104,Camden,NJ,Camden County,52.67
+08105,Camden,NJ,Camden County,52.67
+08204,Cape May,NJ,Cape May County,45.38
+08210,Cape May Court House,NJ,Cape May County,45.38
+08212,Cape May Point,NJ,Cape May County,45.38
+07072,Carlstadt,NJ,Bergen County,46.75
+07008,Carteret,NJ,Middlesex County,56.7
+08018,Cedar Brook,NJ,Camden County,36.75
+07009,Cedar Grove,NJ,Essex County,41.25
+07927,Cedar Knolls,NJ,Morris County,45.22
+08311,Cedarville,NJ,Cumberland County,36.75
+07928,Chatham,NJ,Morris County,42.0
+08019,Chatsworth,NJ,Burlington County,41.25
+08002,Cherry Hill,NJ,Camden County,52.67
+08003,Cherry Hill,NJ,Camden County,52.67
+08034,Cherry Hill,NJ,Camden County,43.68
+07930,Chester,NJ,Morris County,43.92
+08515,Chesterfield,NJ,Burlington County,41.25
+07066,Clark,NJ,Union County,43.92
+08020,Clarksboro,NJ,Gloucester County,41.25
+08312,Clayton,NJ,Gloucester County,41.25
+08021,Clementon,NJ,Camden County,52.67
+07010,Cliffside Park,NJ,Bergen County,49.0
+07721,Cliffwood,NJ,Monmouth County,46.75
+07011,Clifton,NJ,Passaic County,43.92
+07012,Clifton,NJ,Passaic County,43.92
+07013,Clifton,NJ,Passaic County,47.25
+07014,Clifton,NJ,Passaic County,41.25
+07015,Clifton,NJ,Passaic County,41.25
+08809,Clinton,NJ,Hunterdon County,41.25
+07624,Closter,NJ,Bergen County,46.75
+08108,Collingswood,NJ,Camden County,52.67
+08213,Cologne,NJ,Atlantic County,36.75
+07067,Colonia,NJ,Middlesex County,41.25
+07722,Colts Neck,NJ,Monmouth County,42.88
+07832,Columbia,NJ,Warren County,34.3
+08022,Columbus,NJ,Burlington County,41.25
+07961,Convent Station,NJ,Morris County,42.0
+08511,Cookstown,NJ,Burlington County,41.25
+08512,Cranbury,NJ,Mercer County,41.25
+07016,Cranford,NJ,Union County,47.25
+08514,Cream Ridge,NJ,Monmouth County,46.75
+07626,Cresskill,NJ,Bergen County,46.75
+08810,Dayton,NJ,Middlesex County,45.22
+07723,Deal,NJ,Monmouth County,46.75
+08023,Deepwater,NJ,Salem County,36.75
+08313,Deerfield Street,NJ,Cumberland County,36.75
+08314,Delmont,NJ,Cumberland County,36.75
+07627,Demarest,NJ,Bergen County,46.75
+08214,Dennisville,NJ,Cape May County,45.38
+07834,Denville,NJ,Morris County,43.92
+08096,Deptford,NJ,Gloucester County,43.68
+08315,Dividing Creek,NJ,Cumberland County,36.75
+08316,Dorchester,NJ,Cumberland County,36.75
+08317,Dorothy,NJ,Atlantic County,41.25
+07801,Dover,NJ,Morris County,43.92
+07802,Dover,NJ,Morris County,42.0
+07628,Dumont,NJ,Bergen County,46.75
+08812,Dunellen,NJ,Middlesex County,56.7
+08816,East Brunswick,NJ,Middlesex County,41.25
+07936,East Hanover,NJ,Morris County,53.55
+07017,East Orange,NJ,Essex County,41.25
+07018,East Orange,NJ,Essex County,49.0
+07073,East Rutherford,NJ,Bergen County,46.75
+07724,Eatontown,NJ,Monmouth County,42.0
+07799,Eatontown,NJ,Monmouth County,46.75
+07020,Edgewater,NJ,Bergen County,46.75
+08817,Edison,NJ,Middlesex County,41.25
+08818,Edison,NJ,Middlesex County,41.25
+08820,Edison,NJ,Middlesex County,41.25
+08837,Edison,NJ,Middlesex County,41.25
+08899,Edison,NJ,Middlesex County,41.25
+08215,Egg Harbor City,NJ,Atlantic County,41.25
+08234,Egg Harbor Township,NJ,Atlantic County,45.38
+07201,Elizabeth,NJ,Union County,49.0
+07202,Elizabeth,NJ,Union County,47.25
+07207,Elizabeth,NJ,Union County,47.25
+07208,Elizabeth,NJ,Union County,47.25
+07206,Elizabethport,NJ,Union County,42.0
+08318,Elmer,NJ,Salem County,36.75
+07407,Elmwood Park,NJ,Bergen County,46.75
+08217,Elwood,NJ,Atlantic County,41.25
+07630,Emerson,NJ,Bergen County,46.75
+07631,Englewood,NJ,Bergen County,46.75
+07632,Englewood Cliffs,NJ,Bergen County,46.75
+07726,Englishtown,NJ,Monmouth County,45.22
+07021,Essex Fells,NJ,Essex County,41.25
+08319,Estell Manor,NJ,Atlantic County,41.25
+08025,Ewan,NJ,Gloucester County,36.75
+07704,Fair Haven,NJ,Monmouth County,46.75
+07410,Fair Lawn,NJ,Bergen County,46.75
+07004,Fairfield,NJ,Essex County,41.25
+08320,Fairton,NJ,Cumberland County,36.75
+07022,Fairview,NJ,Bergen County,46.75
+07023,Fanwood,NJ,Union County,43.92
+07931,Far Hills,NJ,Somerset County,43.92
+07727,Farmingdale,NJ,Monmouth County,42.88
+08821,Flagtown,NJ,Somerset County,34.3
+07836,Flanders,NJ,Morris County,42.0
+08822,Flemington,NJ,Hunterdon County,41.25
+08518,Florence,NJ,Burlington County,41.25
+07932,Florham Park,NJ,Morris County,43.92
+08863,Fords,NJ,Middlesex County,41.25
+08731,Forked River,NJ,Ocean County,42.0
+07024,Fort Lee,NJ,Bergen County,49.0
+07703,Fort Monmouth,NJ,Monmouth County,46.75
+08321,Fortescue,NJ,Cumberland County,36.75
+07417,Franklin Lakes,NJ,Bergen County,46.75
+08823,Franklin Park,NJ,Somerset County,40.42
+08322,Franklinville,NJ,Gloucester County,43.68
+07728,Freehold,NJ,Monmouth County,56.7
+08825,Frenchtown,NJ,Hunterdon County,41.25
+07026,Garfield,NJ,Bergen County,46.75
+07027,Garwood,NJ,Union County,43.92
+08026,Gibbsboro,NJ,Camden County,43.68
+08027,Gibbstown,NJ,Gloucester County,41.25
+07933,Gillette,NJ,Morris County,42.0
+07934,Gladstone,NJ,Somerset County,34.3
+08028,Glassboro,NJ,Gloucester County,47.25
+08826,Glen Gardner,NJ,Hunterdon County,41.25
+07028,Glen Ridge,NJ,Essex County,43.92
+07452,Glen Rock,NJ,Bergen County,46.75
+08029,Glendora,NJ,Camden County,43.68
+07418,Glenwood,NJ,Sussex County,34.3
+08030,Gloucester City,NJ,Camden County,52.67
+08218,Goshen,NJ,Cape May County,36.75
+08219,Green Creek,NJ,Cape May County,36.75
+07935,Green Village,NJ,Morris County,42.0
+08323,Greenwich,NJ,Cumberland County,36.75
+08032,Grenloch,NJ,Gloucester County,43.68
+07601,Hackensack,NJ,Bergen County,46.75
+07602,Hackensack,NJ,Bergen County,46.75
+07840,Hackettstown,NJ,Warren County,41.25
+08035,Haddon Heights,NJ,Camden County,52.67
+08033,Haddonfield,NJ,Camden County,52.67
+08036,Hainesport,NJ,Burlington County,41.25
+07508,Haledon,NJ,Passaic County,43.92
+07538,Haledon,NJ,Passaic County,41.25
+08037,Hammonton,NJ,Atlantic County,43.68
+08827,Hampton,NJ,Hunterdon County,41.25
+08038,Hancocks Bridge,NJ,Salem County,36.75
+07640,Harrington Park,NJ,Bergen County,46.75
+08039,Harrisonville,NJ,Gloucester County,41.25
+07604,Hasbrouck Heights,NJ,Bergen County,46.75
+07420,Haskell,NJ,Passaic County,43.92
+07641,Haworth,NJ,Bergen County,46.75
+07506,Hawthorne,NJ,Passaic County,53.55
+07507,Hawthorne,NJ,Passaic County,40.7
+07730,Hazlet,NJ,Monmouth County,46.75
+08324,Heislerville,NJ,Cumberland County,36.75
+08828,Helmetta,NJ,Middlesex County,41.25
+07842,Hibernia,NJ,Morris County,42.0
+08829,High Bridge,NJ,Hunterdon County,41.25
+08904,Highland Park,NJ,Middlesex County,41.25
+07732,Highlands,NJ,Monmouth County,46.75
+08520,Hightstown,NJ,Mercer County,41.25
+08844,Hillsborough,NJ,Somerset County,34.3
+07642,Hillsdale,NJ,Bergen County,46.75
+07205,Hillside,NJ,Union County,42.0
+07423,Ho Ho Kus,NJ,Bergen County,46.75
+07030,Hoboken,NJ,Hudson County,36.23
+07733,Holmdel,NJ,Monmouth County,45.22
+07843,Hopatcong,NJ,Sussex County,34.3
+08525,Hopewell,NJ,Mercer County,41.25
+07731,Howell,NJ,Monmouth County,50.4
+08526,Imlaystown,NJ,Monmouth County,46.75
+07845,Ironia,NJ,Morris County,42.0
+08830,Iselin,NJ,Middlesex County,41.25
+08732,Island Heights,NJ,Ocean County,42.0
+08527,Jackson,NJ,Ocean County,42.88
+07302,Jersey City,NJ,Hudson County,49.0
+07304,Jersey City,NJ,Hudson County,34.65
+07305,Jersey City,NJ,Hudson County,34.65
+07306,Jersey City,NJ,Hudson County,34.3
+07307,Jersey City,NJ,Hudson County,34.3
+07310,Jersey City,NJ,Hudson County,34.3
+08041,Jobstown,NJ,Burlington County,41.25
+08640,Joint Base Mdl,NJ,Burlington County,41.25
+08641,Joint Base Mdl,NJ,Burlington County,41.25
+08042,Juliustown,NJ,Burlington County,41.25
+07734,Keansburg,NJ,Monmouth County,42.0
+07032,Kearny,NJ,Hudson County,34.13
+08832,Keasbey,NJ,Middlesex County,41.25
+08824,Kendall Park,NJ,Middlesex County,41.25
+07033,Kenilworth,NJ,Union County,45.22
+07847,Kenvil,NJ,Morris County,42.0
+07735,Keyport,NJ,Monmouth County,46.75
+08528,Kingston,NJ,Somerset County,34.3
+07034,Lake Hiawatha,NJ,Morris County,42.0
+07849,Lake Hopatcong,NJ,Morris County,42.0
+08733,Lakehurst,NJ,Ocean County,42.0
+08701,Lakewood,NJ,Ocean County,45.22
+08530,Lambertville,NJ,Hunterdon County,47.25
+07850,Landing,NJ,Morris County,42.0
+08326,Landisville,NJ,Atlantic County,41.25
+08734,Lanoka Harbor,NJ,Ocean County,42.0
+08735,Lavallette,NJ,Ocean County,42.0
+08045,Lawnside,NJ,Camden County,41.25
+08648,Lawrence Township,NJ,Mercer County,41.25
+08833,Lebanon,NJ,Hunterdon County,41.25
+07852,Ledgewood,NJ,Morris County,42.0
+08220,Leeds Point,NJ,Atlantic County,45.38
+08327,Leesburg,NJ,Cumberland County,36.75
+07737,Leonardo,NJ,Monmouth County,46.75
+07605,Leonia,NJ,Bergen County,46.75
+07035,Lincoln Park,NJ,Morris County,42.0
+07738,Lincroft,NJ,Monmouth County,46.75
+07036,Linden,NJ,Union County,43.92
+08221,Linwood,NJ,Atlantic County,45.38
+07424,Little Falls,NJ,Passaic County,41.25
+07643,Little Ferry,NJ,Bergen County,46.75
+07739,Little Silver,NJ,Monmouth County,46.75
+08834,Little York,NJ,Hunterdon County,41.25
+07039,Livingston,NJ,Essex County,45.22
+07644,Lodi,NJ,Bergen County,49.0
+07740,Long Branch,NJ,Monmouth County,50.4
+07853,Long Valley,NJ,Morris County,42.0
+08403,Longport,NJ,Atlantic County,45.38
+08048,Lumberton,NJ,Burlington County,41.25
+07071,Lyndhurst,NJ,Bergen County,46.75
+07940,Madison,NJ,Morris County,47.25
+08049,Magnolia,NJ,Camden County,52.67
+07430,Mahwah,NJ,Bergen County,46.75
+07495,Mahwah,NJ,Bergen County,46.75
+08328,Malaga,NJ,Gloucester County,41.25
+08050,Manahawkin,NJ,Ocean County,44.0
+08736,Manasquan,NJ,Monmouth County,46.75
+08759,Manchester Township,NJ,Ocean County,42.26
+08738,Mantoloking,NJ,Ocean County,42.0
+08051,Mantua,NJ,Gloucester County,41.25
+08835,Manville,NJ,Somerset County,34.3
+08052,Maple Shade,NJ,Burlington County,52.67
+07040,Maplewood,NJ,Essex County,43.92
+08402,Margate City,NJ,Atlantic County,45.38
+07746,Marlboro,NJ,Monmouth County,53.55
+08053,Marlton,NJ,Burlington County,47.25
+08223,Marmora,NJ,Cape May County,45.38
+08836,Martinsville,NJ,Somerset County,34.3
+07747,Matawan,NJ,Monmouth County,46.75
+08329,Mauricetown,NJ,Cumberland County,36.75
+08330,Mays Landing,NJ,Atlantic County,41.25
+07607,Maywood,NJ,Bergen County,46.75
+08055,Medford,NJ,Burlington County,52.67
+07945,Mendham,NJ,Morris County,42.0
+08109,Merchantville,NJ,Camden County,52.67
+08840,Metuchen,NJ,Middlesex County,45.22
+08056,Mickleton,NJ,Gloucester County,43.68
+08846,Middlesex,NJ,Middlesex County,41.25
+07748,Middletown,NJ,Monmouth County,45.22
+07432,Midland Park,NJ,Bergen County,46.75
+08848,Milford,NJ,Hunterdon County,41.25
+07041,Millburn,NJ,Essex County,41.25
+07946,Millington,NJ,Morris County,43.92
+08510,Millstone Township,NJ,Monmouth County,46.75
+08535,Millstone Township,NJ,Monmouth County,42.0
+08850,Milltown,NJ,Middlesex County,41.25
+08332,Millville,NJ,Cumberland County,36.75
+08340,Milmay,NJ,Atlantic County,41.25
+07803,Mine Hill,NJ,Morris County,42.0
+08341,Minotola,NJ,Atlantic County,45.38
+08342,Mizpah,NJ,Atlantic County,45.38
+07750,Monmouth Beach,NJ,Monmouth County,46.75
+08852,Monmouth Junction,NJ,Middlesex County,41.25
+08831,Monroe Township,NJ,Middlesex County,47.25
+08343,Monroeville,NJ,Gloucester County,43.68
+07042,Montclair,NJ,Essex County,41.25
+07043,Montclair,NJ,Essex County,41.25
+07645,Montvale,NJ,Bergen County,46.75
+07045,Montville,NJ,Morris County,42.0
+07074,Moonachie,NJ,Bergen County,46.75
+08057,Moorestown,NJ,Burlington County,52.67
+07751,Morganville,NJ,Monmouth County,42.88
+07950,Morris Plains,NJ,Morris County,42.0
+07960,Morristown,NJ,Morris County,53.55
+07962,Morristown,NJ,Morris County,42.0
+07963,Morristown,NJ,Morris County,42.0
+07856,Mount Arlington,NJ,Morris County,42.0
+08059,Mount Ephraim,NJ,Camden County,41.25
+07970,Mount Freedom,NJ,Morris County,42.0
+08060,Mount Holly,NJ,Burlington County,52.67
+08054,Mount Laurel,NJ,Burlington County,52.67
+08061,Mount Royal,NJ,Gloucester County,43.68
+07878,Mount Tabor,NJ,Morris County,42.0
+07046,Mountain Lakes,NJ,Morris County,42.0
+07092,Mountainside,NJ,Union County,42.0
+08062,Mullica Hill,NJ,Gloucester County,43.68
+08063,National Park,NJ,Gloucester County,41.25
+07752,Navesink,NJ,Monmouth County,46.75
+07753,Neptune,NJ,Monmouth County,46.75
+07754,Neptune,NJ,Monmouth County,46.75
+08853,Neshanic Station,NJ,Somerset County,43.92
+07857,Netcong,NJ,Morris County,42.0
+08901,New Brunswick,NJ,Middlesex County,41.25
+08903,New Brunswick,NJ,Middlesex County,41.25
+08906,New Brunswick,NJ,Middlesex County,41.25
+08933,New Brunswick,NJ,Middlesex County,34.3
+08989,New Brunswick,NJ,Middlesex County,45.22
+08533,New Egypt,NJ,Ocean County,56.7
+08224,New Gretna,NJ,Burlington County,41.25
+08064,New Lisbon,NJ,Burlington County,41.25
+07646,New Milford,NJ,Bergen County,46.75
+07974,New Providence,NJ,Union County,42.0
+07976,New Vernon,NJ,Morris County,42.0
+07102,Newark,NJ,Essex County,49.0
+07103,Newark,NJ,Essex County,34.3
+07104,Newark,NJ,Essex County,34.3
+07105,Newark,NJ,Essex County,49.0
+07106,Newark,NJ,Essex County,34.3
+07107,Newark,NJ,Essex County,36.75
+07108,Newark,NJ,Essex County,47.25
+07112,Newark,NJ,Essex County,41.25
+07114,Newark,NJ,Essex County,41.25
+07189,Newark,NJ,Essex County,41.25
+07195,Newark,NJ,Essex County,41.25
+07198,Newark,NJ,Essex County,41.25
+07199,Newark,NJ,Essex County,41.25
+08344,Newfield,NJ,Gloucester County,41.25
+07435,Newfoundland,NJ,Passaic County,41.25
+08345,Newport,NJ,Cumberland County,36.75
+08346,Newtonville,NJ,Atlantic County,41.25
+08347,Norma,NJ,Salem County,36.75
+08739,Normandy Beach,NJ,Ocean County,42.0
+07031,North Arlington,NJ,Bergen County,46.75
+07047,North Bergen,NJ,Hudson County,43.92
+08902,North Brunswick,NJ,Middlesex County,41.25
+08225,Northfield,NJ,Atlantic County,45.38
+07647,Northvale,NJ,Bergen County,46.75
+07648,Norwood,NJ,Bergen County,46.75
+07110,Nutley,NJ,Essex County,49.0
+07438,Oak Ridge,NJ,Morris County,41.25
+07755,Oakhurst,NJ,Monmouth County,46.75
+07436,Oakland,NJ,Bergen County,46.75
+08107,Oaklyn,NJ,Camden County,43.68
+08226,Ocean City,NJ,Cape May County,45.38
+08740,Ocean Gate,NJ,Ocean County,42.0
+07756,Ocean Grove,NJ,Monmouth County,46.75
+08230,Ocean View,NJ,Cape May County,36.75
+07757,Oceanport,NJ,Monmouth County,46.75
+08231,Oceanville,NJ,Atlantic County,36.75
+07439,Ogdensburg,NJ,Sussex County,34.3
+08857,Old Bridge,NJ,Middlesex County,39.9
+08858,Oldwick,NJ,Hunterdon County,41.25
+07649,Oradell,NJ,Bergen County,46.75
+07050,Orange,NJ,Essex County,41.25
+07650,Palisades Park,NJ,Bergen County,46.75
+08065,Palmyra,NJ,Burlington County,41.25
+07652,Paramus,NJ,Bergen County,47.25
+07653,Paramus,NJ,Bergen County,46.75
+07656,Park Ridge,NJ,Bergen County,46.75
+08859,Parlin,NJ,Middlesex County,41.25
+07054,Parsippany,NJ,Morris County,43.92
+07055,Passaic,NJ,Passaic County,43.92
+07501,Paterson,NJ,Passaic County,46.62
+07502,Paterson,NJ,Passaic County,32.81
+07503,Paterson,NJ,Passaic County,41.25
+07504,Paterson,NJ,Passaic County,36.38
+07509,Paterson,NJ,Passaic County,40.7
+07510,Paterson,NJ,Passaic County,40.7
+07513,Paterson,NJ,Passaic County,34.3
+07514,Paterson,NJ,Passaic County,33.08
+07533,Paterson,NJ,Passaic County,40.7
+07543,Paterson,NJ,Passaic County,40.7
+07544,Paterson,NJ,Passaic County,40.7
+08066,Paulsboro,NJ,Gloucester County,43.68
+07977,Peapack,NJ,Somerset County,34.3
+08067,Pedricktown,NJ,Salem County,36.75
+08068,Pemberton,NJ,Burlington County,41.25
+08534,Pennington,NJ,Mercer County,41.25
+08069,Penns Grove,NJ,Salem County,40.95
+08110,Pennsauken,NJ,Camden County,52.67
+08070,Pennsville,NJ,Salem County,36.75
+07440,Pequannock,NJ,Morris County,42.0
+08861,Perth Amboy,NJ,Middlesex County,47.25
+08862,Perth Amboy,NJ,Middlesex County,41.25
+07806,Picatinny Arsenal,NJ,Morris County,42.0
+08741,Pine Beach,NJ,Ocean County,42.0
+07058,Pine Brook,NJ,Morris County,42.0
+08854,Piscataway,NJ,Middlesex County,41.25
+08071,Pitman,NJ,Gloucester County,43.68
+08867,Pittstown,NJ,Hunterdon County,41.25
+07060,Plainfield,NJ,Union County,47.25
+07061,Plainfield,NJ,Union County,42.0
+07062,Plainfield,NJ,Union County,43.92
+07063,Plainfield,NJ,Union County,47.25
+08536,Plainsboro,NJ,Middlesex County,41.25
+08232,Pleasantville,NJ,Atlantic County,55.13
+07978,Pluckemin,NJ,Somerset County,34.3
+08742,Point Pleasant Beach,NJ,Ocean County,42.0
+08240,Pomona,NJ,Atlantic County,36.75
+07444,Pompton Plains,NJ,Morris County,42.0
+08348,Port Elizabeth,NJ,Cumberland County,36.75
+07758,Port Monmouth,NJ,Monmouth County,46.75
+08349,Port Norris,NJ,Cumberland County,36.75
+07064,Port Reading,NJ,Middlesex County,41.25
+08241,Port Republic,NJ,Atlantic County,36.75
+07979,Pottersville,NJ,Hunterdon County,41.25
+08540,Princeton,NJ,Mercer County,41.25
+08541,Princeton,NJ,Mercer County,36.75
+08542,Princeton,NJ,Mercer County,41.25
+08543,Princeton,NJ,Mercer County,41.25
+08544,Princeton,NJ,Mercer County,39.9
+08550,Princeton Junction,NJ,Mercer County,56.7
+08868,Quakertown,NJ,Hunterdon County,41.25
+08072,Quinton,NJ,Salem County,36.75
+07065,Rahway,NJ,Union County,43.92
+07446,Ramsey,NJ,Bergen County,49.0
+08073,Rancocas,NJ,Burlington County,41.25
+07869,Randolph,NJ,Morris County,42.0
+08869,Raritan,NJ,Somerset County,34.3
+08870,Readington,NJ,Hunterdon County,41.25
+07701,Red Bank,NJ,Monmouth County,45.22
+07709,Red Bank,NJ,Monmouth County,46.75
+08350,Richland,NJ,Atlantic County,41.25
+08074,Richwood,NJ,Gloucester County,41.25
+07657,Ridgefield,NJ,Bergen County,46.75
+07660,Ridgefield Park,NJ,Bergen County,46.75
+07450,Ridgewood,NJ,Bergen County,46.75
+07451,Ridgewood,NJ,Bergen County,46.75
+08551,Ringoes,NJ,Hunterdon County,41.25
+08242,Rio Grande,NJ,Cape May County,36.75
+07661,River Edge,NJ,Bergen County,49.0
+07457,Riverdale,NJ,Morris County,42.0
+08075,Riverside,NJ,Burlington County,52.67
+08076,Riverton,NJ,Burlington County,41.25
+08077,Riverton,NJ,Burlington County,41.25
+08691,Robbinsville,NJ,Mercer County,41.25
+07662,Rochelle Park,NJ,Bergen County,46.75
+07866,Rockaway,NJ,Morris County,42.0
+08553,Rocky Hill,NJ,Somerset County,34.3
+08554,Roebling,NJ,Burlington County,41.25
+08555,Roosevelt,NJ,Monmouth County,46.75
+07068,Roseland,NJ,Essex County,41.25
+07203,Roselle,NJ,Union County,47.25
+07204,Roselle Park,NJ,Union County,42.0
+08556,Rosemont,NJ,Hunterdon County,41.25
+08352,Rosenhayn,NJ,Cumberland County,36.75
+07760,Rumson,NJ,Monmouth County,45.22
+08078,Runnemede,NJ,Camden County,43.68
+07070,Rutherford,NJ,Bergen County,46.75
+07663,Saddle Brook,NJ,Bergen County,49.0
+07458,Saddle River,NJ,Bergen County,47.25
+08079,Salem,NJ,Salem County,36.75
+08871,Sayreville,NJ,Middlesex County,41.25
+08872,Sayreville,NJ,Middlesex County,45.22
+07870,Schooleys Mountain,NJ,Morris County,42.0
+07076,Scotch Plains,NJ,Union County,42.0
+08750,Sea Girt,NJ,Monmouth County,46.75
+08243,Sea Isle City,NJ,Cape May County,36.75
+08751,Seaside Heights,NJ,Ocean County,56.7
+08752,Seaside Park,NJ,Ocean County,42.0
+07094,Secaucus,NJ,Hudson County,47.25
+08557,Sergeantsville,NJ,Hunterdon County,41.25
+07077,Sewaren,NJ,Middlesex County,41.25
+08080,Sewell,NJ,Gloucester County,43.68
+08353,Shiloh,NJ,Cumberland County,36.75
+07078,Short Hills,NJ,Essex County,43.92
+07702,Shrewsbury,NJ,Monmouth County,46.75
+08081,Sicklerville,NJ,Camden County,52.67
+08558,Skillman,NJ,Somerset County,34.3
+08083,Somerdale,NJ,Camden County,41.25
+08244,Somers Point,NJ,Atlantic County,45.38
+08873,Somerset,NJ,Somerset County,45.22
+08875,Somerset,NJ,Somerset County,34.3
+08876,Somerville,NJ,Somerset County,40.42
+08879,South Amboy,NJ,Middlesex County,41.25
+08880,South Bound Brook,NJ,Somerset County,34.3
+08245,South Dennis,NJ,Cape May County,36.75
+07606,South Hackensack,NJ,Bergen County,46.75
+07079,South Orange,NJ,Essex County,43.92
+07080,South Plainfield,NJ,Middlesex County,41.25
+08882,South River,NJ,Middlesex County,41.25
+08246,South Seaville,NJ,Cape May County,36.75
+07871,Sparta,NJ,Sussex County,34.3
+08884,Spotswood,NJ,Middlesex County,34.65
+07762,Spring Lake,NJ,Monmouth County,46.75
+07081,Springfield,NJ,Union County,42.0
+07874,Stanhope,NJ,Sussex County,34.3
+08885,Stanton,NJ,Hunterdon County,41.25
+07980,Stirling,NJ,Morris County,42.0
+08559,Stockton,NJ,Hunterdon County,41.25
+08247,Stone Harbor,NJ,Cape May County,36.75
+08084,Stratford,NJ,Camden County,43.68
+08248,Strathmere,NJ,Cape May County,36.75
+07876,Succasunna,NJ,Morris County,43.92
+07901,Summit,NJ,Union County,47.25
+07902,Summit,NJ,Union County,42.0
+08085,Swedesboro,NJ,Gloucester County,43.68
+07666,Teaneck,NJ,Bergen County,53.55
+07670,Tenafly,NJ,Bergen County,49.0
+07763,Tennent,NJ,Monmouth County,46.75
+07608,Teterboro,NJ,Bergen County,46.75
+07699,Teterboro,NJ,Bergen County,46.75
+08086,Thorofare,NJ,Gloucester County,43.68
+08887,Three Bridges,NJ,Hunterdon County,41.25
+08560,Titusville,NJ,Mercer County,41.25
+08753,Toms River,NJ,Ocean County,53.55
+08754,Toms River,NJ,Ocean County,42.0
+08755,Toms River,NJ,Ocean County,42.26
+08756,Toms River,NJ,Ocean County,42.0
+08757,Toms River,NJ,Ocean County,42.88
+07511,Totowa,NJ,Passaic County,40.7
+07512,Totowa,NJ,Passaic County,43.92
+07082,Towaco,NJ,Morris County,42.0
+07676,Township Of Washington,NJ,Bergen County,46.75
+08601,Trenton,NJ,Mercer County,41.25
+08602,Trenton,NJ,Mercer County,41.25
+08603,Trenton,NJ,Mercer County,41.25
+08604,Trenton,NJ,Mercer County,41.25
+08605,Trenton,NJ,Mercer County,41.25
+08606,Trenton,NJ,Mercer County,41.25
+08607,Trenton,NJ,Mercer County,41.25
+08608,Trenton,NJ,Mercer County,41.25
+08609,Trenton,NJ,Mercer County,41.25
+08610,Trenton,NJ,Mercer County,47.25
+08611,Trenton,NJ,Mercer County,47.25
+08618,Trenton,NJ,Mercer County,41.25
+08619,Trenton,NJ,Mercer County,47.25
+08620,Trenton,NJ,Mercer County,41.25
+08625,Trenton,NJ,Mercer County,41.25
+08628,Trenton,NJ,Mercer County,41.25
+08629,Trenton,NJ,Mercer County,41.25
+08638,Trenton,NJ,Mercer County,41.25
+08645,Trenton,NJ,Mercer County,36.75
+08646,Trenton,NJ,Mercer County,36.75
+08647,Trenton,NJ,Mercer County,36.75
+08650,Trenton,NJ,Mercer County,41.25
+08666,Trenton,NJ,Mercer County,36.75
+08690,Trenton,NJ,Mercer County,41.25
+08695,Trenton,NJ,Mercer County,36.75
+08250,Tuckahoe,NJ,Cape May County,36.75
+08087,Tuckerton,NJ,Ocean County,44.0
+07083,Union,NJ,Union County,49.0
+07087,Union City,NJ,Hudson County,34.3
+07088,Vauxhall,NJ,Union County,42.0
+08406,Ventnor City,NJ,Atlantic County,36.75
+07462,Vernon,NJ,Sussex County,34.3
+07044,Verona,NJ,Essex County,43.92
+08251,Villas,NJ,Cape May County,36.75
+08088,Vincentown,NJ,Burlington County,52.67
+08360,Vineland,NJ,Cumberland County,40.42
+08361,Vineland,NJ,Cumberland County,36.75
+08362,Vineland,NJ,Cumberland County,36.75
+08043,Voorhees,NJ,Camden County,43.68
+07463,Waldwick,NJ,Bergen County,46.75
+07057,Wallington,NJ,Bergen County,46.75
+08758,Waretown,NJ,Ocean County,42.0
+07059,Warren,NJ,Somerset County,34.13
+07069,Watchung,NJ,Somerset County,34.3
+08089,Waterford Works,NJ,Camden County,43.68
+07470,Wayne,NJ,Passaic County,43.92
+07474,Wayne,NJ,Passaic County,41.25
+07086,Weehawken,NJ,Hudson County,43.92
+08090,Wenonah,NJ,Gloucester County,43.68
+08091,West Berlin,NJ,Camden County,43.68
+08092,West Creek,NJ,Ocean County,44.0
+07764,West Long Branch,NJ,Monmouth County,46.75
+07480,West Milford,NJ,Passaic County,43.92
+07093,West New York,NJ,Hudson County,43.92
+07052,West Orange,NJ,Essex County,41.25
+07090,Westfield,NJ,Union County,43.92
+07091,Westfield,NJ,Union County,42.0
+08093,Westville,NJ,Gloucester County,43.68
+07675,Westwood,NJ,Bergen County,46.75
+07885,Wharton,NJ,Morris County,42.0
+07981,Whippany,NJ,Morris County,43.92
+07999,Whippany,NJ,Morris County,42.0
+08888,Whitehouse,NJ,Hunterdon County,41.25
+08889,Whitehouse Station,NJ,Hunterdon County,47.25
+08252,Whitesboro,NJ,Cape May County,36.75
+07765,Wickatunk,NJ,Monmouth County,46.75
+08260,Wildwood,NJ,Cape May County,36.75
+08094,Williamstown,NJ,Gloucester County,47.25
+08046,Willingboro,NJ,Burlington County,52.67
+08561,Windsor,NJ,Mercer County,41.25
+08095,Winslow,NJ,Camden County,41.25
+07075,Wood Ridge,NJ,Bergen County,46.75
+08270,Woodbine,NJ,Cape May County,36.75
+07095,Woodbridge,NJ,Middlesex County,41.25
+08097,Woodbury Heights,NJ,Gloucester County,41.25
+07677,Woodcliff Lake,NJ,Bergen County,46.75
+08098,Woodstown,NJ,Salem County,36.75
+08562,Wrightstown,NJ,Burlington County,41.25
+07481,Wyckoff,NJ,Bergen County,46.75

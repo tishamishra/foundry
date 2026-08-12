@@ -1,0 +1,65 @@
+{% extends "base.html" %}{% block body %}
+<div class="head"><h1>Library</h1>
+  <p class="sub">Blocks are written once and composed into every site. Deeper pools mean more sites
+  before the copy starts repeating — this page is where the ceiling lives.</p></div>
+
+<form method="get" class="card row-form">
+  <label>Niche<select name="niche" onchange="this.form.submit()">
+    {% for n in NICHES %}<option value="{{ n }}" {{ 'selected' if n == niche }}>{{ n }}</option>{% endfor %}</select></label>
+  <label>Kind<select name="kind" onchange="this.form.submit()">
+    {% for k in kinds %}<option value="{{ k }}" {{ 'selected' if k == kind }}>{{ k }}</option>{% endfor %}</select></label>
+</form>
+
+{% if caps.get(kind) %}
+<div class="card">
+  <h2>Capacity</h2>
+  <p>This pool holds <strong>{{ caps[kind].pool }}</strong> blocks{% if src and src.get(kind) %} <span class="dim">({{ src[kind].base }} base + {{ src[kind].niche }} niche + {{ src[kind].user }} yours)</span>{% endif %}. One site draws
+  <strong>{{ caps[kind].draws }}</strong> of them, so it supports roughly
+  <strong>{{ caps[kind].sites }}</strong> non-overlapping site(s).
+  {% if caps[kind].short %}<span class="warn-text">The pool is smaller than a single site's
+  demand — every site will use nearly all of it, and no seed can change that.</span>{% endif %}</p>
+  <p class="dim">Whole niche supports about
+  <strong>{{ caps.values()|map(attribute='sites')|min }}</strong> distinct site(s); the binding
+  kinds are {% for k, c in caps.items() if c.sites == caps.values()|map(attribute='sites')|min %}<code>{{ k }}</code> {% endfor %}.</p>
+</div>
+{% endif %}
+
+<div class="cols">
+<div class="card">
+  <h2>{{ kind }} — {{ blocks|length }} block(s)</h2>
+  {% if lib and lib.filtered.get(kind) %}
+  <p class="warn-text">{{ lib.filtered[kind] }} block(s) in this pool are hidden for a given business
+  because they assert a fact its record does not supply.</p>
+  {% endif %}
+  <div class="blocks">
+  {% for b in blocks %}
+    <div class="block">
+      {% if b is mapping %}
+        {% for k, v in b.items() %}{% if k != 'requires' %}
+          <div class="kv"><span class="k">{{ k }}</span>
+          <span class="v">{% if v is string %}{{ v }}{% else %}{{ v|join(' ⏎ ') if v is iterable and v is not string else v }}{% endif %}</span></div>
+        {% endif %}{% endfor %}
+        {% if b.requires %}<div class="pill warn">requires: {{ b.requires|join(', ') }}</div>{% endif %}
+      {% else %}{{ b }}{% endif %}
+    </div>
+  {% endfor %}
+  </div>
+</div>
+
+<form method="post" class="card">
+  <input type="hidden" name="niche" value="{{ niche }}"><input type="hidden" name="kind" value="{{ kind }}">
+  <h2>Add blocks</h2>
+  <p class="sub">A YAML list, matching the shape below. Duplicates are dropped by fingerprint, so
+  pasting the same batch twice is a no-op. These go to <code>data/library/user/{{ niche }}.yaml</code> —
+  the shipped file is never written to.</p>
+  <label>Shape<textarea rows="6" readonly class="mono">{{ example }}</textarea></label>
+  <label>Your blocks<textarea name="blocks" rows="14" class="mono" placeholder="- q: ...
+  a: ..."></textarea></label>
+  <p class="note">Anything asserting a licence, warranty, rating, tenure or 24/7 cover must declare
+  <code>requires: [fact_name]</code>, or it will be selectable for businesses that cannot support it.</p>
+  <div class="foot"><button class="btn" name="action" value="add">Add to library</button></div>
+  <p class="note">To generate blocks instead of writing them:
+  <code class="mono">python3 foundry.py fill {{ niche }} {{ kind }} 20</code></p>
+</form>
+</div>
+{% endblock %}

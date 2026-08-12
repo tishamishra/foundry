@@ -1,0 +1,10 @@
+# Operator-editable SEO severities. Defaults live in core/seo.py:DEFAULT_RULES;
+# anything here overrides them.
+#
+#   blocker  stops "shipped" — the site still builds and previews
+#   warning  reported, does not stop
+#   off      not run, and DECLARED as a blind spot in the report
+
+# Example: treat short metadata as a blocker once the copy is settled.
+# description-length:
+#   severity: blocker

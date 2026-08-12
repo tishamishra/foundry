@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" role="img" aria-label="Roofline illustration">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#cfe0f5"/><stop offset="1" stop-color="#eef4fb"/>
+    </linearGradient>
+    <linearGradient id="roof" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4b5563"/><stop offset="1" stop-color="#2b3440"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#sky)"/>
+  <circle cx="648" cy="112" r="46" fill="#fff" opacity=".55"/>
+  <circle cx="606" cy="126" r="34" fill="#fff" opacity=".45"/>
+  <rect x="120" y="292" width="560" height="168" fill="#f3f0ea"/>
+  <path d="M92 300 L400 128 L708 300 Z" fill="url(#roof)"/>
+  <g stroke="#5c6672" stroke-width="2" opacity=".55">
+    <path d="M150 300 L400 160 L650 300"/><path d="M190 300 L400 188 L610 300"/>
+    <path d="M230 300 L400 216 L570 300"/><path d="M270 300 L400 244 L530 300"/>
+  </g>
+  <rect x="520" y="176" width="46" height="86" fill="#8d5a4a"/>
+  <rect x="512" y="166" width="62" height="16" fill="#6f4438"/>
+  <rect x="88" y="296" width="624" height="14" rx="6" fill="#9aa3ae"/>
+  <rect x="176" y="336" width="86" height="86" fill="#dfe6ef" stroke="#b9c3cf" stroke-width="3"/>
+  <rect x="356" y="336" width="86" height="124" fill="#7d5a46"/>
+  <rect x="538" y="336" width="86" height="86" fill="#dfe6ef" stroke="#b9c3cf" stroke-width="3"/>
+  <rect x="0" y="458" width="800" height="42" fill="#cfd8c8"/>
+</svg>

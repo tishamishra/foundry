@@ -1,0 +1,41 @@
+{# The service x place matrix. Every cell is a real page — which is what stops
+   a long tail from being orphans.
+
+   With ONE service there is no second axis, so it becomes a plain place index.
+   A one-column table pretending to be a matrix is worse than a list. #}
+<section class="sec">
+  <div class="wrap">
+    {% if services|length > 1 %}
+    <h2 class="section-head">Services by area</h2>
+    <p class="lede">Every combination below is a page. Pick the one that matches your job.</p>
+    <div class="matrix-scroll">
+      <table class="matrix">
+        <thead><tr><th>Area</th>{% for s in services %}<th>{{ s.name }}</th>{% endfor %}</tr></thead>
+        <tbody>
+          {% for c in locations[:24] %}
+          <tr>
+            <th scope="row"><a href="/areas/{{ c.slug }}">{{ c.city }}<span class="dim">, {{ c.state_abbr }}</span></a></th>
+            {% for s in services %}
+            <td><a href="/services/{{ s.slug }}/{{ c.slug }}" aria-label="{{ s.name }} in {{ c.city }}">&check;</a></td>
+            {% endfor %}
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    {% else %}
+    <h2 class="section-head">{{ services[0].name }} by area</h2>
+    <p class="lede">{{ locations|length }} communities covered. Every one has its own page.</p>
+    <div class="dir-tiles">
+      {% for c in locations[:12] %}
+      <a class="dir-tile" href="/areas/{{ c.slug }}">
+        <strong>{{ c.city }}, {{ c.state_abbr }}</strong>
+        <span>{{ c.county }}</span>
+        <em>{{ c.zips|length }} ZIP code{{ '' if c.zips|length == 1 else 's' }} &rarr;</em>
+      </a>
+      {% endfor %}
+    </div>
+    {% endif %}
+    <p><a class="more" href="/areas">All {{ locations|length }} communities &rarr;</a></p>
+  </div>
+</section>

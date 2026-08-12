@@ -1,0 +1,27 @@
+# Deliberately built with the SAME composition_seed as bennettroofers.com, to
+# prove the duplicate-content gate actually fires. It should be BLOCKED.
+slug: control-check
+company: Control Check Roofing
+brand: Control Check Roofing
+phone: "+1 833 000 0001"
+email: test@controlcheck.test
+address:
+  street: 1 Test Way
+  city: Marietta
+  state: Georgia
+  zip: "30060"
+facts:
+  years_in_business: 15
+  hours: "Mon-Fri 8:00-18:00"
+  free_estimates: true
+  licensed: false
+  insured: false
+  emergency_24_7: false
+  warranty_years: null
+  financing: false
+  family_owned: false
+  bbb_rating: null
+  rating: null
+  awards: null
+  certifications: null
+  volume_claims: null

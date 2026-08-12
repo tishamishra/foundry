@@ -1,0 +1,56 @@
+niche: roofing
+label: Roofing
+schema_type: RoofingContractor
+services:
+- slug: roof-repair
+  name: Roof Repair
+  summary: Targeted fixes for leaks, storm damage and worn flashing, without replacing a roof that still
+    has life in it.
+- slug: roof-replacement
+  name: Roof Replacement
+  summary: Full tear-off and replacement when repairs stop being economical, with the deck inspected before
+    anything new goes down.
+- slug: storm-damage
+  name: Storm Damage Repair
+  summary: Fast response after wind, hail or fallen limbs, including temporary cover and documentation
+    for your claim.
+- slug: roof-inspection
+  name: Roof Inspection
+  summary: A written condition report on what is failing, what has life left, and what it will take to
+    keep the water out.
+- slug: gutter-installation
+  name: Gutter Installation
+  summary: Sizing, pitch and downspout placement that moves water away from the foundation instead of
+    into it.
+- slug: commercial-roofing
+  name: Commercial Roofing
+  summary: Flat and low-slope systems for small commercial buildings, scheduled around the business using
+    them.
+seo:
+  home_title: '{company} | {niche} Contractor'
+  home_description: '{company} handles {niche_lower} work across the areas we serve. Assessment first,
+    written findings, then a price. Call {phone}.'
+  about_title: About {company} | Roofing Contractor
+  about_description: Who {company} is, how we work, what our written assessments cover, and what to expect
+    from first call to final check.
+  contact_title: Contact {company} | Call {phone}
+  contact_description: Call {company} on {phone} or request a callback. Tell us what you are seeing and
+    we will tell you what it usually means.
+  services_title: Roofing Services | {company}
+  services_description: Everything {company} does, what each job includes, and how the scope and the price
+    are arrived at.
+  areas_title: Roofing Service Areas | {company}
+  areas_description: Every community {company} covers for roofing, listed by county. Find your town and
+    call {phone}.
+  service_title: '{service} | {company}'
+  service_description: '{service} from {company}. What the job includes, how the scope is agreed, and
+    what would change the price. Call {phone}.'
+  county_title: Roofing in {county}, {state_abbr} | {company}
+  county_description: '{company} covers every community in {county}, {state_abbr} for roofing. Find your
+    town below, or call {phone} to speak to someone.'
+  location_title: '{niche} in {city}, {state_abbr} | {company}'
+  location_description: '{niche} services in {city}, {state_abbr}[[ and nearby {nearby}]]. Call {company}
+    on {phone}.'
+  location_service_title: '{service} in {city}, {state_abbr} | {company}'
+  location_service_description: '{service} for {city}, {state_abbr} property owners[[ in {county}]]. Call
+    {company} on {phone}.'

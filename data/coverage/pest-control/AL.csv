@@ -1,0 +1,608 @@
+zip,city,state,county,payout
+35440,Abernant,AL,Tuscaloosa County,32.5
+35005,Adamsville,AL,Jefferson County,32.5
+35540,Addison,AL,Winston County,32.5
+35006,Adger,AL,Jefferson County,32.5
+35441,Akron,AL,Hale County,32.5
+35007,Alabaster,AL,Shelby County,32.5
+35114,Alabaster,AL,Shelby County,32.5
+36720,Alberta,AL,Wilcox County,32.5
+35950,Albertville,AL,Marshall County,32.5
+35951,Albertville,AL,Marshall County,32.5
+35010,Alexander City,AL,Tallapoosa County,32.5
+36250,Alexandria,AL,Calhoun County,32.5
+35442,Aliceville,AL,Pickens County,32.5
+35015,Alton,AL,Jefferson County,32.5
+35952,Altoona,AL,Etowah County,32.5
+35610,Anderson,AL,Lauderdale County,32.5
+36721,Annemanie,AL,Wilcox County,32.5
+36201,Anniston,AL,Calhoun County,32.5
+36206,Anniston,AL,Calhoun County,32.5
+36207,Anniston,AL,Calhoun County,32.5
+35016,Arab,AL,Marshall County,32.5
+35739,Ardmore,AL,Limestone County,32.5
+35541,Arley,AL,Winston County,32.5
+36722,Arlington,AL,Wilcox County,32.5
+36251,Ashland,AL,Clay County,32.5
+35611,Athens,AL,Limestone County,32.5
+35612,Athens,AL,Limestone County,32.5
+35613,Athens,AL,Limestone County,32.5
+35614,Athens,AL,Limestone County,32.5
+35954,Attalla,AL,Etowah County,32.5
+36830,Auburn,AL,Lee County,32.5
+36831,Auburn,AL,Lee County,32.5
+36832,Auburn,AL,Lee County,32.5
+36849,Auburn University,AL,Lee County,32.5
+36003,Autaugaville,AL,Autauga County,32.5
+35019,Baileyton,AL,Cullman County,32.5
+35542,Bankston,AL,Fayette County,32.5
+35543,Bear Creek,AL,Marion County,32.5
+36425,Beatrice,AL,Monroe County,32.5
+35544,Beaverton,AL,Lamar County,32.5
+35545,Belk,AL,Fayette County,32.5
+36901,Bellamy,AL,Sumter County,32.5
+35615,Belle Mina,AL,Limestone County,32.5
+35546,Berry,AL,Fayette County,32.5
+35020,Bessemer,AL,Jefferson County,32.5
+35021,Bessemer,AL,Jefferson County,32.5
+35022,Bessemer,AL,Jefferson County,32.5
+35023,Bessemer,AL,Jefferson County,32.5
+36006,Billingsley,AL,Autauga County,32.5
+35201,Birmingham,AL,Jefferson County,32.5
+35202,Birmingham,AL,Jefferson County,32.5
+35203,Birmingham,AL,Jefferson County,32.5
+35204,Birmingham,AL,Jefferson County,32.5
+35205,Birmingham,AL,Jefferson County,32.5
+35206,Birmingham,AL,Jefferson County,32.5
+35207,Birmingham,AL,Jefferson County,32.5
+35208,Birmingham,AL,Jefferson County,32.5
+35209,Birmingham,AL,Jefferson County,32.5
+35210,Birmingham,AL,Jefferson County,32.5
+35211,Birmingham,AL,Jefferson County,32.5
+35212,Birmingham,AL,Jefferson County,32.5
+35213,Birmingham,AL,Jefferson County,32.5
+35214,Birmingham,AL,Jefferson County,32.5
+35215,Birmingham,AL,Jefferson County,32.5
+35216,Birmingham,AL,Jefferson County,32.5
+35217,Birmingham,AL,Jefferson County,32.5
+35218,Birmingham,AL,Jefferson County,32.5
+35219,Birmingham,AL,Jefferson County,32.5
+35220,Birmingham,AL,Jefferson County,32.5
+35221,Birmingham,AL,Jefferson County,32.5
+35222,Birmingham,AL,Jefferson County,32.5
+35223,Birmingham,AL,Jefferson County,32.5
+35224,Birmingham,AL,Jefferson County,32.5
+35226,Birmingham,AL,Jefferson County,32.5
+35228,Birmingham,AL,Jefferson County,32.5
+35229,Birmingham,AL,Jefferson County,32.5
+35231,Birmingham,AL,Jefferson County,32.5
+35232,Birmingham,AL,Jefferson County,32.5
+35233,Birmingham,AL,Jefferson County,32.5
+35234,Birmingham,AL,Jefferson County,32.5
+35235,Birmingham,AL,Jefferson County,32.5
+35236,Birmingham,AL,Jefferson County,32.5
+35237,Birmingham,AL,Jefferson County,32.5
+35238,Birmingham,AL,Jefferson County,32.5
+35242,Birmingham,AL,Shelby County,32.5
+35243,Birmingham,AL,Jefferson County,32.5
+35244,Birmingham,AL,Jefferson County,32.5
+35246,Birmingham,AL,Jefferson County,32.5
+35249,Birmingham,AL,Jefferson County,32.5
+35253,Birmingham,AL,Jefferson County,32.5
+35254,Birmingham,AL,Jefferson County,32.5
+35255,Birmingham,AL,Jefferson County,32.5
+35259,Birmingham,AL,Jefferson County,32.5
+35260,Birmingham,AL,Jefferson County,32.5
+35261,Birmingham,AL,Jefferson County,32.5
+35266,Birmingham,AL,Jefferson County,32.5
+35282,Birmingham,AL,Jefferson County,32.5
+35283,Birmingham,AL,Jefferson County,32.5
+35285,Birmingham,AL,Jefferson County,32.5
+35287,Birmingham,AL,Jefferson County,32.5
+35288,Birmingham,AL,Jefferson County,32.5
+35290,Birmingham,AL,Jefferson County,32.5
+35291,Birmingham,AL,Jefferson County,32.5
+35292,Birmingham,AL,Jefferson County,32.5
+35293,Birmingham,AL,Jefferson County,32.5
+35294,Birmingham,AL,Jefferson County,32.5
+35295,Birmingham,AL,Jefferson County,32.5
+35296,Birmingham,AL,Jefferson County,32.5
+35297,Birmingham,AL,Jefferson County,32.5
+35298,Birmingham,AL,Jefferson County,32.5
+35956,Boaz,AL,Etowah County,32.5
+35957,Boaz,AL,Marshall County,32.5
+35443,Boligee,AL,Greene County,32.5
+36008,Booth,AL,Autauga County,32.5
+36723,Boykin,AL,Wilcox County,32.5
+36009,Brantley,AL,Crenshaw County,32.5
+35033,Bremen,AL,Cullman County,32.5
+35034,Brent,AL,Bibb County,32.5
+35740,Bridgeport,AL,Jackson County,32.5
+35035,Brierfield,AL,Bibb County,32.5
+35548,Brilliant,AL,Marion County,32.5
+36429,Brooklyn,AL,Conecuh County,32.5
+35036,Brookside,AL,Jefferson County,32.5
+35444,Brookwood,AL,Tuscaloosa County,32.5
+35741,Brownsboro,AL,Madison County,32.5
+35958,Bryant,AL,Jackson County,32.5
+35446,Buhl,AL,Tuscaloosa County,32.5
+35038,Burnwell,AL,Walker County,32.5
+36904,Butler,AL,Choctaw County,32.5
+35040,Calera,AL,Shelby County,32.5
+36726,Camden,AL,Wilcox County,32.5
+36850,Camp Hill,AL,Tallapoosa County,32.5
+36727,Campbell,AL,Clarke County,32.5
+35742,Capshaw,AL,Limestone County,32.5
+35549,Carbon Hill,AL,Walker County,32.5
+36515,Carlton,AL,Clarke County,32.5
+35447,Carrollton,AL,Pickens County,32.5
+36432,Castleberry,AL,Conecuh County,32.5
+36728,Catherine,AL,Wilcox County,32.5
+36013,Cecil,AL,Montgomery County,32.5
+35042,Centreville,AL,Bibb County,32.5
+36015,Chapman,AL,Butler County,32.5
+35043,Chelsea,AL,Shelby County,32.5
+35616,Cherokee,AL,Colbert County,32.5
+35045,Clanton,AL,Chilton County,32.5
+35046,Clanton,AL,Chilton County,32.5
+35048,Clay,AL,Jefferson County,32.5
+35049,Cleveland,AL,Blount County,32.5
+35448,Clinton,AL,Greene County,32.5
+35617,Cloverdale,AL,Lauderdale County,32.5
+35449,Coaling,AL,Tuscaloosa County,32.5
+36524,Coffeeville,AL,Clarke County,32.5
+35452,Coker,AL,Tuscaloosa County,32.5
+35961,Collinsville,AL,Dekalb County,32.5
+35051,Columbiana,AL,Shelby County,32.5
+36020,Coosada,AL,Elmore County,32.5
+35550,Cordova,AL,Walker County,32.5
+35453,Cottondale,AL,Tuscaloosa County,32.5
+36851,Cottonton,AL,Russell County,32.5
+35618,Courtland,AL,Lawrence County,32.5
+36435,Coy,AL,Wilcox County,32.5
+35053,Crane Hill,AL,Cullman County,32.5
+35054,Cropwell,AL,St. Clair County,32.5
+35962,Crossville,AL,Dekalb County,32.5
+36907,Cuba,AL,Sumter County,32.5
+35055,Cullman,AL,Cullman County,32.5
+35056,Cullman,AL,Cullman County,32.5
+35057,Cullman,AL,Cullman County,32.5
+35058,Cullman,AL,Cullman County,32.5
+36852,Cusseta,AL,Lee County,32.5
+36853,Dadeville,AL,Tallapoosa County,32.5
+35619,Danville,AL,Morgan County,32.5
+36256,Daviston,AL,Tallapoosa County,32.5
+35963,Dawson,AL,Dekalb County,32.5
+36022,Deatsville,AL,Elmore County,32.5
+35601,Decatur,AL,Morgan County,32.5
+35602,Decatur,AL,Morgan County,32.5
+35603,Decatur,AL,Morgan County,32.5
+35609,Decatur,AL,Morgan County,32.5
+35699,Decatur,AL,Morgan County,32.5
+35551,Delmar,AL,Winston County,32.5
+36258,Delta,AL,Clay County,32.5
+36732,Demopolis,AL,Marengo County,32.5
+35552,Detroit,AL,Lamar County,32.5
+36436,Dickinson,AL,Clarke County,32.5
+36736,Dixons Mills,AL,Marengo County,32.5
+35060,Docena,AL,Jefferson County,32.5
+35061,Dolomite,AL,Jefferson County,32.5
+35062,Dora,AL,Jefferson County,32.5
+35553,Double Springs,AL,Winston County,32.5
+35964,Douglas,AL,Marshall County,32.5
+36028,Dozier,AL,Covington County,32.5
+35456,Duncanville,AL,Tuscaloosa County,32.5
+35744,Dutton,AL,Jackson County,32.5
+35457,Echola,AL,Tuscaloosa County,32.5
+36024,Eclectic,AL,Elmore County,32.5
+35554,Eldridge,AL,Fayette County,32.5
+35620,Elkmont,AL,Limestone County,32.5
+36025,Elmore,AL,Elmore County,32.5
+35458,Elrod,AL,Tuscaloosa County,32.5
+35459,Emelle,AL,Sumter County,32.5
+35063,Empire,AL,Walker County,32.5
+35460,Epes,AL,Sumter County,32.5
+36026,Equality,AL,Coosa County,32.5
+35745,Estillfork,AL,Jackson County,32.5
+35461,Ethelsville,AL,Pickens County,32.5
+35462,Eutaw,AL,Greene County,32.5
+35621,Eva,AL,Morgan County,32.5
+36401,Evergreen,AL,Conecuh County,32.5
+36439,Excel,AL,Monroe County,32.5
+35746,Fackler,AL,Jackson County,32.5
+35064,Fairfield,AL,Jefferson County,32.5
+35622,Falkville,AL,Morgan County,32.5
+36738,Faunsdale,AL,Marengo County,32.5
+35555,Fayette,AL,Fayette County,32.5
+36029,Fitzpatrick,AL,Bullock County,32.5
+36855,Five Points,AL,Chambers County,32.5
+35966,Flat Rock,AL,Jackson County,32.5
+35630,Florence,AL,Lauderdale County,32.5
+35631,Florence,AL,Lauderdale County,32.5
+35632,Florence,AL,Lauderdale County,32.5
+35633,Florence,AL,Lauderdale County,32.5
+35634,Florence,AL,Lauderdale County,32.5
+36030,Forest Home,AL,Butler County,32.5
+36740,Forkland,AL,Greene County,32.5
+36031,Fort Davis,AL,Macon County,32.5
+36032,Fort Deposit,AL,Lowndes County,32.5
+36856,Fort Mitchell,AL,Russell County,32.5
+35967,Fort Payne,AL,Dekalb County,32.5
+35968,Fort Payne,AL,Dekalb County,32.5
+36444,Franklin,AL,Monroe County,32.5
+36445,Frisco City,AL,Monroe County,32.5
+36446,Fulton,AL,Clarke County,32.5
+35068,Fultondale,AL,Jefferson County,32.5
+36741,Furman,AL,Wilcox County,32.5
+35971,Fyffe,AL,Dekalb County,32.5
+35901,Gadsden,AL,Etowah County,32.5
+35903,Gadsden,AL,Etowah County,32.5
+35907,Gadsden,AL,Etowah County,32.5
+36540,Gainestown,AL,Clarke County,32.5
+35464,Gainesville,AL,Sumter County,32.5
+36742,Gallion,AL,Marengo County,32.5
+35070,Garden City,AL,Cullman County,32.5
+35071,Gardendale,AL,Jefferson County,32.5
+36033,Georgiana,AL,Butler County,32.5
+35974,Geraldine,AL,Dekalb County,32.5
+36908,Gilbertown,AL,Choctaw County,32.5
+35559,Glen Allen,AL,Fayette County,32.5
+36034,Glenwood,AL,Pike County,32.5
+35560,Goodsprings,AL,Walker County,32.5
+35072,Goodwater,AL,Coosa County,32.5
+35466,Gordo,AL,Pickens County,32.5
+36036,Grady,AL,Montgomery County,32.5
+35747,Grant,AL,Marshall County,32.5
+35073,Graysville,AL,Jefferson County,32.5
+35074,Green Pond,AL,Bibb County,32.5
+36744,Greensboro,AL,Hale County,32.5
+36037,Greenville,AL,Butler County,32.5
+36451,Grove Hill,AL,Clarke County,32.5
+35975,Groveoak,AL,Dekalb County,32.5
+35563,Guin,AL,Marion County,32.5
+35976,Guntersville,AL,Marshall County,32.5
+35748,Gurley,AL,Madison County,32.5
+35564,Hackleburg,AL,Marion County,32.5
+35565,Haleyville,AL,Winston County,32.5
+35570,Hamilton,AL,Marion County,32.5
+35077,Hanceville,AL,Cullman County,32.5
+36039,Hardaway,AL,Macon County,32.5
+35078,Harpersville,AL,Shelby County,32.5
+35640,Hartselle,AL,Morgan County,32.5
+35749,Harvest,AL,Madison County,32.5
+36858,Hatchechubbee,AL,Russell County,32.5
+35079,Hayden,AL,Blount County,32.5
+36040,Hayneville,AL,Lowndes County,32.5
+35750,Hazel Green,AL,Madison County,32.5
+35080,Helena,AL,Shelby County,32.5
+35978,Henagar,AL,Dekalb County,32.5
+35979,Higdon,AL,Dekalb County,32.5
+36041,Highland Home,AL,Crenshaw County,32.5
+35643,Hillsboro,AL,Lawrence County,32.5
+35571,Hodges,AL,Franklin County,32.5
+35083,Holly Pond,AL,Cullman County,32.5
+35751,Hollytree,AL,Jackson County,32.5
+35752,Hollywood,AL,Jackson County,32.5
+36859,Holy Trinity,AL,Russell County,32.5
+36042,Honoraville,AL,Crenshaw County,32.5
+36043,Hope Hull,AL,Montgomery County,32.5
+35980,Horton,AL,Marshall County,32.5
+35572,Houston,AL,Winston County,32.5
+35801,Huntsville,AL,Madison County,32.5
+35802,Huntsville,AL,Madison County,32.5
+35803,Huntsville,AL,Madison County,32.5
+35804,Huntsville,AL,Madison County,32.5
+35805,Huntsville,AL,Madison County,32.5
+35806,Huntsville,AL,Madison County,32.5
+35807,Huntsville,AL,Madison County,32.5
+35808,Huntsville,AL,Madison County,32.5
+35809,Huntsville,AL,Madison County,32.5
+35810,Huntsville,AL,Madison County,32.5
+35811,Huntsville,AL,Madison County,32.5
+35812,Huntsville,AL,Madison County,32.5
+35813,Huntsville,AL,Madison County,32.5
+35814,Huntsville,AL,Madison County,32.5
+35815,Huntsville,AL,Madison County,32.5
+35816,Huntsville,AL,Madison County,32.5
+35824,Huntsville,AL,Madison County,32.5
+35893,Huntsville,AL,Madison County,32.5
+35894,Huntsville,AL,Madison County,32.5
+35895,Huntsville,AL,Madison County,32.5
+35896,Huntsville,AL,Madison County,32.5
+35897,Huntsville,AL,Madison County,32.5
+35898,Huntsville,AL,Madison County,32.5
+35899,Huntsville,AL,Madison County,32.5
+36860,Hurtsboro,AL,Russell County,32.5
+35981,Ider,AL,Dekalb County,32.5
+36910,Jachin,AL,Choctaw County,32.5
+36545,Jackson,AL,Clarke County,32.5
+36861,Jacksons Gap,AL,Tallapoosa County,32.5
+36265,Jacksonville,AL,Calhoun County,32.5
+35501,Jasper,AL,Walker County,32.5
+35502,Jasper,AL,Walker County,32.5
+35503,Jasper,AL,Walker County,32.5
+35504,Jasper,AL,Walker County,32.5
+36745,Jefferson,AL,Marengo County,32.5
+35085,Jemison,AL,Chilton County,32.5
+36749,Jones,AL,Autauga County,32.5
+35087,Joppa,AL,Cullman County,32.5
+35573,Kansas,AL,Walker County,32.5
+35468,Kellerman,AL,Tuscaloosa County,32.5
+35089,Kellyton,AL,Coosa County,32.5
+35574,Kennedy,AL,Lamar County,32.5
+36045,Kent,AL,Elmore County,32.5
+35645,Killen,AL,Lauderdale County,32.5
+35091,Kimberly,AL,Jefferson County,32.5
+35469,Knoxville,AL,Greene County,32.5
+35754,Laceys Spring,AL,Morgan County,32.5
+36862,Lafayette,AL,Chambers County,32.5
+36863,Lanett,AL,Chambers County,32.5
+35755,Langston,AL,Marshall County,32.5
+36046,Lapine,AL,Crenshaw County,32.5
+36793,Lawley,AL,Bibb County,32.5
+35094,Leeds,AL,Jefferson County,32.5
+35646,Leighton,AL,Colbert County,32.5
+36454,Lenox,AL,Conecuh County,32.5
+35647,Lester,AL,Limestone County,32.5
+36047,Letohatchee,AL,Lowndes County,32.5
+35648,Lexington,AL,Lauderdale County,32.5
+35096,Lincoln,AL,Talladega County,32.5
+36748,Linden,AL,Marengo County,32.5
+36266,Lineville,AL,Clay County,32.5
+36912,Lisman,AL,Choctaw County,32.5
+35470,Livingston,AL,Sumter County,32.5
+36865,Loachapoka,AL,Lee County,32.5
+35098,Logan,AL,Cullman County,32.5
+36751,Lower Peach Tree,AL,Wilcox County,32.5
+36752,Lowndesboro,AL,Lowndes County,32.5
+36049,Luverne,AL,Crenshaw County,32.5
+35575,Lynn,AL,Winston County,32.5
+35756,Madison,AL,Limestone County,32.5
+35757,Madison,AL,Madison County,32.5
+35758,Madison,AL,Madison County,32.5
+36754,Magnolia,AL,Marengo County,32.5
+36750,Maplesville,AL,Chilton County,32.5
+36051,Marbury,AL,Autauga County,32.5
+36756,Marion,AL,Perry County,32.5
+36759,Marion Junction,AL,Dallas County,32.5
+36052,Mathews,AL,Montgomery County,32.5
+35471,Mc Shan,AL,Pickens County,32.5
+35111,McCalla,AL,Tuscaloosa County,32.5
+36456,McKenzie,AL,Butler County,32.5
+36753,McWilliams,AL,Wilcox County,32.5
+36457,Megargel,AL,Monroe County,32.5
+36913,Melvin,AL,Choctaw County,32.5
+35984,Mentone,AL,Dekalb County,32.5
+35759,Meridianville,AL,Madison County,32.5
+36458,Mexia,AL,Monroe County,32.5
+36053,Midway,AL,Bullock County,32.5
+36054,Millbrook,AL,Elmore County,32.5
+35576,Millport,AL,Lamar County,32.5
+36761,Minter,AL,Dallas County,32.5
+36460,Monroeville,AL,Monroe County,32.5
+36461,Monroeville,AL,Monroe County,32.5
+35115,Montevallo,AL,Shelby County,32.5
+36101,Montgomery,AL,Montgomery County,32.5
+36102,Montgomery,AL,Montgomery County,32.5
+36103,Montgomery,AL,Montgomery County,32.5
+36104,Montgomery,AL,Montgomery County,32.5
+36105,Montgomery,AL,Montgomery County,32.5
+36106,Montgomery,AL,Montgomery County,32.5
+36107,Montgomery,AL,Montgomery County,32.5
+36108,Montgomery,AL,Montgomery County,32.5
+36109,Montgomery,AL,Montgomery County,32.5
+36110,Montgomery,AL,Montgomery County,32.5
+36111,Montgomery,AL,Montgomery County,32.5
+36112,Montgomery,AL,Montgomery County,32.5
+36113,Montgomery,AL,Montgomery County,32.5
+36114,Montgomery,AL,Montgomery County,32.5
+36115,Montgomery,AL,Montgomery County,32.5
+36116,Montgomery,AL,Montgomery County,32.5
+36117,Montgomery,AL,Montgomery County,32.5
+36118,Montgomery,AL,Montgomery County,32.5
+36119,Montgomery,AL,Montgomery County,32.5
+36120,Montgomery,AL,Montgomery County,32.5
+36121,Montgomery,AL,Montgomery County,32.5
+36123,Montgomery,AL,Montgomery County,32.5
+36124,Montgomery,AL,Montgomery County,32.5
+36125,Montgomery,AL,Montgomery County,32.5
+36130,Montgomery,AL,Montgomery County,32.5
+36131,Montgomery,AL,Montgomery County,32.5
+36132,Montgomery,AL,Montgomery County,32.5
+36133,Montgomery,AL,Montgomery County,32.5
+36134,Montgomery,AL,Montgomery County,32.5
+36135,Montgomery,AL,Montgomery County,32.5
+36140,Montgomery,AL,Montgomery County,32.5
+36141,Montgomery,AL,Montgomery County,32.5
+36142,Montgomery,AL,Montgomery County,32.5
+36177,Montgomery,AL,Montgomery County,32.5
+36191,Montgomery,AL,Montgomery County,32.5
+35004,Moody,AL,St. Clair County,32.5
+35649,Mooresville,AL,Limestone County,32.5
+35116,Morris,AL,Jefferson County,32.5
+36762,Morvin,AL,Clarke County,32.5
+35650,Moulton,AL,Lawrence County,32.5
+35474,Moundville,AL,Hale County,32.5
+35651,Mount Hope,AL,Lawrence County,32.5
+36057,Mount Meigs,AL,Montgomery County,32.5
+35117,Mount Olive,AL,Jefferson County,32.5
+35118,Mulga,AL,Jefferson County,32.5
+36268,Munford,AL,Talladega County,32.5
+35661,Muscle Shoals,AL,Colbert County,32.5
+35662,Muscle Shoals,AL,Colbert County,32.5
+36763,Myrtlewood,AL,Marengo County,32.5
+36764,Nanafalia,AL,Marengo County,32.5
+35577,Natural Bridge,AL,Winston County,32.5
+35578,Nauvoo,AL,Walker County,32.5
+36915,Needham,AL,Choctaw County,32.5
+35119,New Castle,AL,Jefferson County,32.5
+35760,New Hope,AL,Madison County,32.5
+35761,New Market,AL,Madison County,32.5
+36765,Newbern,AL,Hale County,32.5
+35762,Normal,AL,Madison County,32.5
+35473,Northport,AL,Tuscaloosa County,32.5
+35475,Northport,AL,Tuscaloosa County,32.5
+35476,Northport,AL,Tuscaloosa County,32.5
+36866,Notasulga,AL,Macon County,32.5
+36766,Oak Hill,AL,Wilcox County,32.5
+35579,Oakman,AL,Walker County,32.5
+35120,Odenville,AL,St. Clair County,32.5
+35121,Oneonta,AL,Blount County,32.5
+36801,Opelika,AL,Lee County,32.5
+36802,Opelika,AL,Lee County,32.5
+36803,Opelika,AL,Lee County,32.5
+36804,Opelika,AL,Lee County,32.5
+36767,Orrville,AL,Dallas County,32.5
+35763,Owens Cross Roads,AL,Madison County,32.5
+36203,Oxford,AL,Calhoun County,32.5
+35764,Paint Rock,AL,Jackson County,32.5
+35123,Palmerdale,AL,Jefferson County,32.5
+35477,Panola,AL,Sumter County,32.5
+35580,Parrish,AL,Walker County,32.5
+35124,Pelham,AL,Shelby County,32.5
+35125,Pell City,AL,St. Clair County,32.5
+35128,Pell City,AL,St. Clair County,32.5
+36916,Pennington,AL,Choctaw County,32.5
+36470,Perdue Hill,AL,Monroe County,32.5
+36061,Perote,AL,Bullock County,32.5
+36471,Peterman,AL,Monroe County,32.5
+35478,Peterson,AL,Tuscaloosa County,32.5
+36062,Petrey,AL,Crenshaw County,32.5
+36867,Phenix City,AL,Russell County,32.5
+36868,Phenix City,AL,Russell County,32.5
+36869,Phenix City,AL,Russell County,32.5
+36870,Phenix City,AL,Lee County,32.5
+35581,Phil Campbell,AL,Franklin County,32.5
+36064,Pike Road,AL,Montgomery County,32.5
+36768,Pine Apple,AL,Wilcox County,32.5
+36769,Pine Hill,AL,Wilcox County,32.5
+36065,Pine Level,AL,Montgomery County,32.5
+35126,Pinson,AL,Jefferson County,32.5
+35765,Pisgah,AL,Jackson County,32.5
+36871,Pittsview,AL,Russell County,32.5
+36758,Plantersville,AL,Dallas County,32.5
+35127,Pleasant Grove,AL,Jefferson County,32.5
+36066,Prattville,AL,Autauga County,32.5
+36067,Prattville,AL,Autauga County,32.5
+36068,Prattville,AL,Autauga County,32.5
+35766,Princeton,AL,Jackson County,32.5
+35130,Quinton,AL,Walker County,32.5
+35906,Rainbow City,AL,Etowah County,32.5
+35986,Rainsville,AL,Dekalb County,32.5
+35480,Ralph,AL,Tuscaloosa County,32.5
+36069,Ramer,AL,Montgomery County,32.5
+36792,Randolph,AL,Bibb County,32.5
+36473,Range,AL,Conecuh County,32.5
+35582,Red Bay,AL,Franklin County,32.5
+35481,Reform,AL,Pickens County,32.5
+35133,Remlap,AL,Blount County,32.5
+36475,Repton,AL,Conecuh County,32.5
+35135,Riverside,AL,St. Clair County,32.5
+36274,Roanoke,AL,Randolph County,32.5
+35136,Rockford,AL,Coosa County,32.5
+35652,Rogersville,AL,Lauderdale County,32.5
+35653,Russellville,AL,Franklin County,32.5
+35654,Russellville,AL,Franklin County,32.5
+36071,Rutledge,AL,Crenshaw County,32.5
+35767,Ryland,AL,Madison County,32.5
+36773,Safford,AL,Dallas County,32.5
+35137,Saginaw,AL,Shelby County,32.5
+36874,Salem,AL,Lee County,32.5
+35482,Samantha,AL,Tuscaloosa County,32.5
+36775,Sardis,AL,Dallas County,32.5
+36776,Sawyerville,AL,Hale County,32.5
+35139,Sayre,AL,Jefferson County,32.5
+35768,Scottsboro,AL,Jackson County,32.5
+35769,Scottsboro,AL,Jackson County,32.5
+36875,Seale,AL,Russell County,32.5
+35771,Section,AL,Jackson County,32.5
+36701,Selma,AL,Dallas County,32.5
+36702,Selma,AL,Dallas County,32.5
+36703,Selma,AL,Dallas County,32.5
+35142,Shannon,AL,Jefferson County,32.5
+35660,Sheffield,AL,Colbert County,32.5
+35143,Shelby,AL,Shelby County,32.5
+36075,Shorter,AL,Macon County,32.5
+36919,Silas,AL,Choctaw County,32.5
+35144,Siluria,AL,Shelby County,32.5
+35584,Sipsey,AL,Walker County,32.5
+36877,Smiths Station,AL,Lee County,32.5
+35670,Somerville,AL,Morgan County,32.5
+35146,Springville,AL,St. Clair County,32.5
+35585,Spruce Pine,AL,Franklin County,32.5
+36790,Stanton,AL,Chilton County,32.5
+35147,Sterrett,AL,Shelby County,32.5
+35772,Stevenson,AL,Jackson County,32.5
+35586,Sulligent,AL,Lamar County,32.5
+35148,Sumiton,AL,Walker County,32.5
+36782,Sweet Water,AL,Marengo County,32.5
+35988,Sylvania,AL,Dekalb County,32.5
+35160,Talladega,AL,Talladega County,32.5
+36078,Tallassee,AL,Elmore County,32.5
+35671,Tanner,AL,Limestone County,32.5
+36783,Thomaston,AL,Marengo County,32.5
+36784,Thomasville,AL,Clarke County,32.5
+35171,Thorsby,AL,Chilton County,32.5
+36080,Titus,AL,Elmore County,32.5
+35773,Toney,AL,Madison County,32.5
+35672,Town Creek,AL,Lawrence County,32.5
+35587,Townley,AL,Walker County,32.5
+36921,Toxey,AL,Choctaw County,32.5
+35172,Trafford,AL,Blount County,32.5
+35774,Trenton,AL,Jackson County,32.5
+35673,Trinity,AL,Lawrence County,32.5
+35173,Trussville,AL,Jefferson County,32.5
+35401,Tuscaloosa,AL,Tuscaloosa County,32.5
+35402,Tuscaloosa,AL,Tuscaloosa County,32.5
+35403,Tuscaloosa,AL,Tuscaloosa County,32.5
+35404,Tuscaloosa,AL,Tuscaloosa County,32.5
+35405,Tuscaloosa,AL,Tuscaloosa County,32.5
+35406,Tuscaloosa,AL,Tuscaloosa County,32.5
+35407,Tuscaloosa,AL,Tuscaloosa County,32.5
+35485,Tuscaloosa,AL,Tuscaloosa County,32.5
+35486,Tuscaloosa,AL,Tuscaloosa County,32.5
+35487,Tuscaloosa,AL,Tuscaloosa County,32.5
+35674,Tuscumbia,AL,Colbert County,32.5
+36083,Tuskegee,AL,Macon County,32.5
+36087,Tuskegee Institute,AL,Macon County,32.5
+36088,Tuskegee Institute,AL,Macon County,32.5
+36785,Tyler,AL,Lowndes County,32.5
+35175,Union Grove,AL,Marshall County,32.5
+36089,Union Springs,AL,Bullock County,32.5
+36786,Uniontown,AL,Perry County,32.5
+36449,Uriah,AL,Monroe County,32.5
+36480,Uriah,AL,Monroe County,32.5
+35775,Valhermoso Springs,AL,Morgan County,32.5
+36854,Valley,AL,Chambers County,32.5
+36872,Valley,AL,Chambers County,32.5
+35989,Valley Head,AL,Dekalb County,32.5
+35490,Vance,AL,Tuscaloosa County,32.5
+35176,Vandiver,AL,Shelby County,32.5
+36091,Verbena,AL,Chilton County,32.5
+35592,Vernon,AL,Lamar County,32.5
+35593,Vina,AL,Franklin County,32.5
+35178,Vincent,AL,Shelby County,32.5
+35179,Vinemont,AL,Cullman County,32.5
+36481,Vredenburgh,AL,Monroe County,32.5
+36276,Wadley,AL,Randolph County,32.5
+36922,Ward,AL,Choctaw County,32.5
+35180,Warrior,AL,Jefferson County,32.5
+35677,Waterloo,AL,Lauderdale County,32.5
+35181,Watson,AL,Jefferson County,32.5
+36879,Waverly,AL,Lee County,32.5
+36277,Weaver,AL,Calhoun County,32.5
+36278,Wedowee,AL,Randolph County,32.5
+35183,Weogufka,AL,Coosa County,32.5
+35184,West Blocton,AL,Bibb County,32.5
+35491,West Greene,AL,Greene County,32.5
+35185,Westover,AL,Shelby County,32.5
+36092,Wetumpka,AL,Elmore County,32.5
+36093,Wetumpka,AL,Elmore County,32.5
+36482,Whatley,AL,Clarke County,32.5
+35186,Wilsonville,AL,Shelby County,32.5
+35187,Wilton,AL,Shelby County,32.5
+35594,Winfield,AL,Marion County,32.5
+36280,Woodland,AL,Randolph County,32.5
+35188,Woodstock,AL,Bibb County,32.5
+35776,Woodville,AL,Jackson County,32.5
+36925,York,AL,Sumter County,32.5

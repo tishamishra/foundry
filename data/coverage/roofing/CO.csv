@@ -1,0 +1,221 @@
+zip,city,state,county,payout
+80002,Arvada,CO,Jefferson County,63.0
+80003,Arvada,CO,Jefferson County,63.0
+80004,Arvada,CO,Jefferson County,63.0
+80005,Arvada,CO,Jefferson County,63.0
+80007,Arvada,CO,Jefferson County,63.0
+80610,Ault,CO,Weld County,63.0
+80010,Aurora,CO,Arapahoe County,63.0
+80011,Aurora,CO,Arapahoe County,63.0
+80012,Aurora,CO,Arapahoe County,63.0
+80013,Aurora,CO,Arapahoe County,63.0
+80014,Aurora,CO,Arapahoe County,63.0
+80015,Aurora,CO,Arapahoe County,63.0
+80016,Aurora,CO,Arapahoe County,63.0
+80017,Aurora,CO,Arapahoe County,63.0
+80018,Aurora,CO,Arapahoe County,63.0
+80019,Aurora,CO,Adams County,63.0
+80040,Aurora,CO,Arapahoe County,34.78
+80045,Aurora,CO,Adams County,63.0
+80102,Bennett,CO,Adams County,63.0
+80513,Berthoud,CO,Larimer County,63.0
+80301,Boulder,CO,Boulder County,63.0
+80302,Boulder,CO,Boulder County,63.0
+80303,Boulder,CO,Boulder County,63.0
+80304,Boulder,CO,Boulder County,63.0
+80305,Boulder,CO,Boulder County,63.0
+80310,Boulder,CO,Boulder County,63.0
+80611,Briggsdale,CO,Weld County,63.0
+80601,Brighton,CO,Adams County,63.0
+80602,Brighton,CO,Adams County,63.0
+80603,Brighton,CO,Weld County,63.0
+80020,Broomfield,CO,Broomfield County,63.0
+80021,Broomfield,CO,Jefferson County,63.0
+80023,Broomfield,CO,Broomfield County,63.0
+80103,Byers,CO,Arapahoe County,63.0
+80809,Cascade,CO,El Paso County,63.0
+80104,Castle Rock,CO,Douglas County,63.0
+80108,Castle Rock,CO,Douglas County,63.0
+80109,Castle Rock,CO,Douglas County,63.0
+81221,Coal Creek,CO,Fremont County,63.0
+81019,Colorado City,CO,Pueblo County,63.0
+80902,Colorado Springs,CO,El Paso County,63.0
+80903,Colorado Springs,CO,El Paso County,63.0
+80904,Colorado Springs,CO,El Paso County,63.0
+80905,Colorado Springs,CO,El Paso County,63.0
+80906,Colorado Springs,CO,El Paso County,63.0
+80907,Colorado Springs,CO,El Paso County,63.0
+80908,Colorado Springs,CO,El Paso County,63.0
+80909,Colorado Springs,CO,El Paso County,63.0
+80910,Colorado Springs,CO,El Paso County,63.0
+80911,Colorado Springs,CO,El Paso County,63.0
+80913,Colorado Springs,CO,El Paso County,63.0
+80914,Colorado Springs,CO,El Paso County,63.0
+80915,Colorado Springs,CO,El Paso County,63.0
+80916,Colorado Springs,CO,El Paso County,63.0
+80917,Colorado Springs,CO,El Paso County,63.0
+80918,Colorado Springs,CO,El Paso County,63.0
+80919,Colorado Springs,CO,El Paso County,63.0
+80920,Colorado Springs,CO,El Paso County,63.0
+80921,Colorado Springs,CO,El Paso County,63.0
+80922,Colorado Springs,CO,El Paso County,63.0
+80923,Colorado Springs,CO,El Paso County,63.0
+80924,Colorado Springs,CO,El Paso County,63.0
+80925,Colorado Springs,CO,El Paso County,63.0
+80926,Colorado Springs,CO,El Paso County,63.0
+80927,Colorado Springs,CO,El Paso County,63.0
+80929,Colorado Springs,CO,El Paso County,63.0
+80930,Colorado Springs,CO,El Paso County,63.0
+80938,Colorado Springs,CO,El Paso County,63.0
+80939,Colorado Springs,CO,El Paso County,63.0
+80951,Colorado Springs,CO,El Paso County,63.0
+80022,Commerce City,CO,Adams County,63.0
+80514,Dacono,CO,Weld County,63.0
+80201,Denver,CO,Denver County,35.7
+80202,Denver,CO,Denver County,63.0
+80203,Denver,CO,Denver County,63.0
+80204,Denver,CO,Denver County,63.0
+80205,Denver,CO,Denver County,63.0
+80206,Denver,CO,Denver County,63.0
+80207,Denver,CO,Denver County,63.0
+80209,Denver,CO,Denver County,63.0
+80210,Denver,CO,Denver County,63.0
+80211,Denver,CO,Denver County,63.0
+80212,Denver,CO,Denver County,63.0
+80214,Denver,CO,Jefferson County,63.0
+80215,Denver,CO,Jefferson County,63.0
+80216,Denver,CO,Denver County,63.0
+80218,Denver,CO,Denver County,63.0
+80219,Denver,CO,Denver County,63.0
+80220,Denver,CO,Denver County,63.0
+80221,Denver,CO,Adams County,63.0
+80222,Denver,CO,Denver County,63.0
+80223,Denver,CO,Denver County,63.0
+80224,Denver,CO,Denver County,63.0
+80226,Denver,CO,Jefferson County,63.0
+80227,Denver,CO,Jefferson County,63.0
+80228,Denver,CO,Jefferson County,63.0
+80229,Denver,CO,Adams County,63.0
+80230,Denver,CO,Denver County,63.0
+80231,Denver,CO,Denver County,63.0
+80232,Denver,CO,Jefferson County,63.0
+80233,Denver,CO,Adams County,63.0
+80234,Denver,CO,Adams County,63.0
+80235,Denver,CO,Jefferson County,63.0
+80236,Denver,CO,Denver County,63.0
+80237,Denver,CO,Denver County,63.0
+80238,Denver,CO,Denver County,63.0
+80239,Denver,CO,Denver County,63.0
+80246,Denver,CO,Denver County,63.0
+80247,Denver,CO,Arapahoe County,63.0
+80249,Denver,CO,Denver County,63.0
+80260,Denver,CO,Adams County,63.0
+80264,Denver,CO,Denver County,63.0
+80266,Denver,CO,Denver County,63.0
+80290,Denver,CO,Denver County,63.0
+80293,Denver,CO,Denver County,63.0
+80294,Denver,CO,Denver County,63.0
+80024,Dupont,CO,Adams County,50.75
+80614,Eastlake,CO,Adams County,50.75
+80615,Eaton,CO,Weld County,63.0
+80106,Elbert,CO,El Paso County,63.0
+80025,Eldorado Springs,CO,Boulder County,63.0
+80107,Elizabeth,CO,Elbert County,63.0
+80110,Englewood,CO,Arapahoe County,63.0
+80111,Englewood,CO,Arapahoe County,63.0
+80112,Englewood,CO,Arapahoe County,63.0
+80113,Englewood,CO,Arapahoe County,63.0
+80516,Erie,CO,Weld County,63.0
+80620,Evans,CO,Weld County,63.0
+80439,Evergreen,CO,Jefferson County,33.37
+80520,Firestone,CO,Weld County,63.0
+81226,Florence,CO,Fremont County,63.0
+80521,Fort Collins,CO,Larimer County,63.0
+80524,Fort Collins,CO,Larimer County,63.0
+80525,Fort Collins,CO,Larimer County,63.0
+80526,Fort Collins,CO,Larimer County,63.0
+80528,Fort Collins,CO,Larimer County,63.0
+80621,Fort Lupton,CO,Weld County,63.0
+80701,Fort Morgan,CO,Morgan County,33.38
+80817,Fountain,CO,El Paso County,63.0
+80116,Franktown,CO,Douglas County,63.0
+80530,Frederick,CO,Weld County,63.0
+80622,Galeton,CO,Weld County,63.0
+80623,Gilcrest,CO,Weld County,63.0
+80624,Gill,CO,Weld County,63.0
+80401,Golden,CO,Jefferson County,63.0
+80403,Golden,CO,Jefferson County,63.0
+80419,Golden,CO,Jefferson County,63.0
+80631,Greeley,CO,Weld County,63.0
+80634,Greeley,CO,Weld County,63.0
+80819,Green Mountain Falls,CO,El Paso County,63.0
+80640,Henderson,CO,Adams County,63.0
+80642,Hudson,CO,Weld County,63.0
+80453,Idledale,CO,Jefferson County,63.0
+80454,Indian Hills,CO,Jefferson County,63.0
+80455,Jamestown,CO,Boulder County,63.0
+80534,Johnstown,CO,Weld County,63.0
+80643,Keenesburg,CO,Weld County,63.0
+80644,Kersey,CO,Weld County,63.0
+80117,Kiowa,CO,Elbert County,63.0
+80645,La Salle,CO,Weld County,63.0
+80026,Lafayette,CO,Boulder County,63.0
+80118,Larkspur,CO,Douglas County,63.0
+80120,Littleton,CO,Arapahoe County,63.0
+80121,Littleton,CO,Arapahoe County,63.0
+80122,Littleton,CO,Arapahoe County,63.0
+80123,Littleton,CO,Jefferson County,63.0
+80125,Littleton,CO,Douglas County,63.0
+80126,Littleton,CO,Douglas County,63.0
+80127,Littleton,CO,Jefferson County,63.0
+80128,Littleton,CO,Jefferson County,63.0
+80129,Littleton,CO,Douglas County,63.0
+80130,Littleton,CO,Douglas County,63.0
+80705,Log Lane Village,CO,Morgan County,63.0
+80124,Lone Tree,CO,Douglas County,63.0
+80501,Longmont,CO,Boulder County,63.0
+80502,Longmont,CO,Boulder County,45.33
+80503,Longmont,CO,Boulder County,63.0
+80504,Longmont,CO,Boulder County,63.0
+80027,Louisville,CO,Boulder County,63.0
+80131,Louviers,CO,Douglas County,63.0
+80537,Loveland,CO,Larimer County,63.0
+80538,Loveland,CO,Larimer County,63.0
+80646,Lucerne,CO,Weld County,63.0
+80540,Lyons,CO,Boulder County,45.33
+80829,Manitou Springs,CO,El Paso County,63.0
+80542,Mead,CO,Weld County,63.0
+80543,Milliken,CO,Weld County,63.0
+80132,Monument,CO,El Paso County,63.0
+80465,Morrison,CO,Jefferson County,63.0
+80648,Nunn,CO,Weld County,63.0
+80649,Orchard,CO,Morgan County,63.0
+80133,Palmer Lake,CO,El Paso County,63.0
+80134,Parker,CO,Douglas County,63.0
+80138,Parker,CO,Douglas County,63.0
+81240,Penrose,CO,Fremont County,63.0
+80831,Peyton,CO,El Paso County,63.0
+80650,Pierce,CO,Weld County,63.0
+80651,Platteville,CO,Weld County,63.0
+81001,Pueblo,CO,Pueblo County,63.0
+81003,Pueblo,CO,Pueblo County,63.0
+81004,Pueblo,CO,Pueblo County,63.0
+81005,Pueblo,CO,Pueblo County,63.0
+81006,Pueblo,CO,Pueblo County,63.0
+81007,Pueblo,CO,Pueblo County,63.0
+81008,Pueblo,CO,Pueblo County,63.0
+81244,Rockvale,CO,Fremont County,63.0
+80652,Roggen,CO,Weld County,63.0
+80135,Sedalia,CO,Douglas County,34.65
+80546,Severance,CO,Weld County,63.0
+80136,Strasburg,CO,Adams County,63.0
+80241,Thornton,CO,Adams County,63.0
+80547,Timnath,CO,Larimer County,63.0
+80840,Usaf Academy,CO,El Paso County,63.0
+80137,Watkins,CO,Arapahoe County,63.0
+80653,Weldona,CO,Morgan County,63.0
+80030,Westminster,CO,Adams County,63.0
+80031,Westminster,CO,Adams County,63.0
+80033,Wheat Ridge,CO,Jefferson County,63.0
+80654,Wiggins,CO,Morgan County,63.0
+80550,Windsor,CO,Weld County,63.0

@@ -1,0 +1,513 @@
+zip,city,state,county,payout
+02351,Abington,MA,Plymouth County,55.25
+02018,Accord,MA,Plymouth County,52.67
+01718,Acton,MA,Middlesex County,49.5
+01720,Acton,MA,Middlesex County,49.5
+02743,Acushnet,MA,Bristol County,49.0
+01001,Agawam,MA,Hampden County,32.6
+02134,Allston,MA,Suffolk County,49.5
+01913,Amesbury,MA,Essex County,49.5
+01002,Amherst,MA,Hampshire County,32.6
+01810,Andover,MA,Essex County,49.5
+01812,Andover,MA,Essex County,45.5
+01899,Andover,MA,Essex County,45.5
+05501,Andover,MA,Essex County,45.5
+05544,Andover,MA,Essex County,45.5
+02474,Arlington,MA,Middlesex County,49.5
+02476,Arlington,MA,Middlesex County,55.25
+02475,Arlington Heights,MA,Middlesex County,45.5
+01431,Ashby,MA,Middlesex County,38.5
+01721,Ashland,MA,Middlesex County,42.63
+02702,Assonet,MA,Bristol County,49.0
+02703,Attleboro,MA,Bristol County,50.75
+02763,Attleboro Falls,MA,Bristol County,42.63
+01501,Auburn,MA,Worcester County,42.63
+02466,Auburndale,MA,Middlesex County,49.5
+02322,Avon,MA,Norfolk County,55.25
+01432,Ayer,MA,Middlesex County,46.2
+02457,Babson Park,MA,Norfolk County,45.5
+02630,Barnstable,MA,Barnstable County,49.0
+01730,Bedford,MA,Middlesex County,49.5
+01007,Belchertown,MA,Hampshire County,32.6
+02019,Bellingham,MA,Norfolk County,50.75
+02478,Belmont,MA,Middlesex County,49.5
+02779,Berkley,MA,Bristol County,49.0
+01503,Berlin,MA,Worcester County,49.0
+01915,Beverly,MA,Essex County,49.5
+01821,Billerica,MA,Middlesex County,49.5
+01822,Billerica,MA,Middlesex County,45.5
+01504,Blackstone,MA,Worcester County,50.75
+01740,Bolton,MA,Worcester County,46.2
+02108,Boston,MA,Suffolk County,70.88
+02109,Boston,MA,Suffolk County,49.5
+02110,Boston,MA,Suffolk County,70.88
+02111,Boston,MA,Suffolk County,70.88
+02112,Boston,MA,Suffolk County,49.5
+02113,Boston,MA,Suffolk County,49.5
+02114,Boston,MA,Suffolk County,49.5
+02115,Boston,MA,Suffolk County,70.88
+02116,Boston,MA,Suffolk County,49.5
+02117,Boston,MA,Suffolk County,45.5
+02118,Boston,MA,Suffolk County,49.5
+02123,Boston,MA,Suffolk County,45.5
+02133,Boston,MA,Suffolk County,45.5
+02163,Boston,MA,Suffolk County,67.72
+02196,Boston,MA,Suffolk County,45.5
+02199,Boston,MA,Suffolk County,68.51
+02201,Boston,MA,Suffolk County,45.5
+02203,Boston,MA,Suffolk County,45.5
+02204,Boston,MA,Suffolk County,45.5
+02205,Boston,MA,Suffolk County,45.5
+02206,Boston,MA,Suffolk County,45.5
+02210,Boston,MA,Suffolk County,45.5
+02211,Boston,MA,Suffolk County,45.5
+02212,Boston,MA,Suffolk County,45.5
+02215,Boston,MA,Suffolk County,49.5
+02217,Boston,MA,Suffolk County,45.5
+02222,Boston,MA,Suffolk County,45.5
+02241,Boston,MA,Suffolk County,45.5
+02266,Boston,MA,Suffolk County,45.5
+02283,Boston,MA,Suffolk County,45.5
+02284,Boston,MA,Suffolk County,45.5
+02293,Boston,MA,Suffolk County,45.5
+02297,Boston,MA,Suffolk County,45.5
+02298,Boston,MA,Suffolk County,45.5
+01719,Boxborough,MA,Middlesex County,49.5
+01921,Boxford,MA,Essex County,49.5
+01505,Boylston,MA,Worcester County,49.0
+02184,Braintree,MA,Norfolk County,70.88
+02185,Braintree,MA,Norfolk County,45.33
+02020,Brant Rock,MA,Plymouth County,49.0
+02631,Brewster,MA,Barnstable County,41.25
+02324,Bridgewater,MA,Plymouth County,55.25
+02325,Bridgewater,MA,Plymouth County,49.0
+02135,Brighton,MA,Suffolk County,49.5
+02301,Brockton,MA,Plymouth County,55.25
+02302,Brockton,MA,Plymouth County,72.45
+02303,Brockton,MA,Plymouth County,49.0
+02304,Brockton,MA,Plymouth County,49.0
+02305,Brockton,MA,Plymouth County,49.0
+01506,Brookfield,MA,Worcester County,42.63
+02445,Brookline,MA,Norfolk County,49.5
+02446,Brookline,MA,Norfolk County,56.07
+02447,Brookline Village,MA,Norfolk County,45.5
+02327,Bryantville,MA,Plymouth County,49.0
+01803,Burlington,MA,Middlesex County,49.5
+01805,Burlington,MA,Middlesex County,49.5
+02532,Buzzards Bay,MA,Barnstable County,49.0
+02542,Buzzards Bay,MA,Barnstable County,49.0
+01922,Byfield,MA,Essex County,49.5
+02138,Cambridge,MA,Middlesex County,49.5
+02139,Cambridge,MA,Middlesex County,49.5
+02140,Cambridge,MA,Middlesex County,72.45
+02141,Cambridge,MA,Middlesex County,70.84
+02142,Cambridge,MA,Middlesex County,45.5
+02238,Cambridge,MA,Middlesex County,45.5
+02021,Canton,MA,Norfolk County,55.25
+01741,Carlisle,MA,Middlesex County,49.5
+02330,Carver,MA,Plymouth County,55.25
+02534,Cataumet,MA,Barnstable County,49.0
+02632,Centerville,MA,Barnstable County,49.0
+02634,Centerville,MA,Barnstable County,49.0
+02129,Charlestown,MA,Suffolk County,49.5
+01507,Charlton,MA,Worcester County,42.63
+01508,Charlton City,MA,Worcester County,42.63
+01509,Charlton Depot,MA,Worcester County,42.63
+02712,Chartley,MA,Bristol County,39.88
+02633,Chatham,MA,Barnstable County,45.67
+01824,Chelmsford,MA,Middlesex County,49.5
+02150,Chelsea,MA,Suffolk County,49.5
+01611,Cherry Valley,MA,Worcester County,42.63
+02467,Chestnut Hill,MA,Middlesex County,49.5
+01013,Chicopee,MA,Hampden County,32.6
+01510,Clinton,MA,Worcester County,49.0
+02025,Cohasset,MA,Norfolk County,55.25
+01742,Concord,MA,Middlesex County,49.5
+02635,Cotuit,MA,Barnstable County,49.0
+02637,Cummaquid,MA,Barnstable County,49.0
+01923,Danvers,MA,Essex County,49.5
+02714,Dartmouth,MA,Bristol County,43.65
+02026,Dedham,MA,Norfolk County,72.45
+02027,Dedham,MA,Norfolk County,45.5
+02638,Dennis,MA,Barnstable County,49.0
+02639,Dennis Port,MA,Barnstable County,41.25
+01434,Devens,MA,Worcester County,45.5
+02715,Dighton,MA,Bristol County,42.63
+02121,Dorchester,MA,Suffolk County,70.88
+02122,Dorchester,MA,Suffolk County,70.88
+02125,Dorchester,MA,Suffolk County,49.5
+02124,Dorchester Center,MA,Suffolk County,49.5
+01516,Douglas,MA,Worcester County,42.63
+02030,Dover,MA,Norfolk County,48.95
+01826,Dracut,MA,Middlesex County,49.5
+01571,Dudley,MA,Worcester County,42.63
+01827,Dunstable,MA,Middlesex County,46.2
+02331,Duxbury,MA,Plymouth County,49.0
+02332,Duxbury,MA,Plymouth County,55.25
+02128,East Boston,MA,Suffolk County,49.5
+02228,East Boston,MA,Suffolk County,45.5
+02333,East Bridgewater,MA,Plymouth County,55.25
+01515,East Brookfield,MA,Worcester County,42.63
+02641,East Dennis,MA,Barnstable County,41.25
+02536,East Falmouth,MA,Barnstable County,49.0
+02717,East Freetown,MA,Bristol County,49.0
+01028,East Longmeadow,MA,Hampden County,32.6
+02643,East Orleans,MA,Barnstable County,35.0
+02537,East Sandwich,MA,Barnstable County,49.0
+02718,East Taunton,MA,Bristol County,49.0
+02032,East Walpole,MA,Norfolk County,42.63
+02538,East Wareham,MA,Plymouth County,49.0
+02189,East Weymouth,MA,Norfolk County,55.25
+02642,Eastham,MA,Barnstable County,35.0
+01027,Easthampton,MA,Hampshire County,32.6
+02334,Easton,MA,Bristol County,45.33
+02337,Elmwood,MA,Plymouth County,49.0
+01929,Essex,MA,Essex County,49.5
+02149,Everett,MA,Middlesex County,49.5
+02719,Fairhaven,MA,Bristol County,49.0
+02720,Fall River,MA,Bristol County,42.63
+02721,Fall River,MA,Bristol County,42.63
+02722,Fall River,MA,Bristol County,39.5
+02723,Fall River,MA,Bristol County,42.63
+02724,Fall River,MA,Bristol County,42.63
+02540,Falmouth,MA,Barnstable County,49.0
+02541,Falmouth,MA,Barnstable County,49.0
+01745,Fayville,MA,Worcester County,49.0
+02644,Forestdale,MA,Barnstable County,49.0
+02035,Foxboro,MA,Norfolk County,69.3
+01701,Framingham,MA,Middlesex County,45.5
+01702,Framingham,MA,Middlesex County,49.5
+01703,Framingham,MA,Middlesex County,45.5
+01704,Framingham,MA,Middlesex County,45.5
+01705,Framingham,MA,Middlesex County,45.5
+02038,Franklin,MA,Norfolk County,50.75
+01833,Georgetown,MA,Essex County,49.5
+01930,Gloucester,MA,Essex County,49.5
+01931,Gloucester,MA,Essex County,38.5
+01519,Grafton,MA,Worcester County,49.0
+02041,Green Harbor,MA,Plymouth County,49.0
+02040,Greenbush,MA,Plymouth County,49.0
+01450,Groton,MA,Middlesex County,46.2
+01470,Groton,MA,Middlesex County,45.5
+01471,Groton,MA,Middlesex County,45.5
+01834,Groveland,MA,Essex County,49.5
+02338,Halifax,MA,Plymouth County,55.25
+01936,Hamilton,MA,Essex County,49.5
+02339,Hanover,MA,Plymouth County,55.25
+02340,Hanover,MA,Plymouth County,49.0
+01731,Hanscom Afb,MA,Middlesex County,49.5
+02341,Hanson,MA,Plymouth County,55.25
+01451,Harvard,MA,Worcester County,46.2
+02645,Harwich,MA,Barnstable County,47.25
+02646,Harwich Port,MA,Barnstable County,41.25
+01937,Hathorne,MA,Essex County,49.5
+01830,Haverhill,MA,Essex County,49.5
+01831,Haverhill,MA,Essex County,45.5
+01832,Haverhill,MA,Essex County,49.5
+01835,Haverhill,MA,Essex County,49.5
+02043,Hingham,MA,Plymouth County,55.25
+02044,Hingham,MA,Plymouth County,44.8
+02343,Holbrook,MA,Norfolk County,55.25
+01746,Holliston,MA,Middlesex County,45.33
+01040,Holyoke,MA,Hampden County,32.6
+01747,Hopedale,MA,Worcester County,49.0
+01748,Hopkinton,MA,Middlesex County,48.83
+01749,Hudson,MA,Middlesex County,49.5
+02045,Hull,MA,Plymouth County,66.22
+02047,Humarock,MA,Plymouth County,49.0
+02601,Hyannis,MA,Barnstable County,49.0
+02647,Hyannis Port,MA,Barnstable County,49.0
+02136,Hyde Park,MA,Suffolk County,67.72
+01938,Ipswich,MA,Essex County,49.5
+02130,Jamaica Plain,MA,Suffolk County,49.5
+02364,Kingston,MA,Plymouth County,55.25
+02347,Lakeville,MA,Plymouth County,49.0
+02348,Lakeville,MA,Plymouth County,49.0
+01523,Lancaster,MA,Worcester County,49.0
+01840,Lawrence,MA,Essex County,49.5
+01841,Lawrence,MA,Essex County,49.5
+01842,Lawrence,MA,Essex County,45.5
+01843,Lawrence,MA,Essex County,49.5
+01524,Leicester,MA,Worcester County,47.74
+01453,Leominster,MA,Worcester County,45.5
+02420,Lexington,MA,Middlesex County,49.5
+02421,Lexington,MA,Middlesex County,49.5
+01773,Lincoln,MA,Middlesex County,49.5
+01525,Linwood,MA,Worcester County,49.0
+01460,Littleton,MA,Middlesex County,45.5
+01850,Lowell,MA,Middlesex County,49.5
+01851,Lowell,MA,Middlesex County,49.5
+01852,Lowell,MA,Middlesex County,49.5
+01853,Lowell,MA,Middlesex County,45.5
+01854,Lowell,MA,Middlesex County,49.5
+01056,Ludlow,MA,Hampden County,32.6
+01462,Lunenburg,MA,Worcester County,45.5
+01901,Lynn,MA,Essex County,49.5
+01902,Lynn,MA,Essex County,49.5
+01903,Lynn,MA,Essex County,49.5
+01904,Lynn,MA,Essex County,49.5
+01905,Lynn,MA,Essex County,49.5
+01910,Lynn,MA,Essex County,45.5
+01940,Lynnfield,MA,Essex County,49.5
+02148,Malden,MA,Middlesex County,49.5
+01526,Manchaug,MA,Worcester County,42.63
+01944,Manchester,MA,Essex County,49.5
+02345,Manomet,MA,Plymouth County,49.0
+02048,Mansfield,MA,Bristol County,45.67
+01945,Marblehead,MA,Essex County,49.5
+02738,Marion,MA,Plymouth County,49.0
+01752,Marlborough,MA,Middlesex County,56.07
+02050,Marshfield,MA,Plymouth County,55.25
+02051,Marshfield Hills,MA,Plymouth County,49.0
+02648,Marstons Mills,MA,Barnstable County,49.0
+02649,Mashpee,MA,Barnstable County,49.0
+02126,Mattapan,MA,Suffolk County,49.5
+02739,Mattapoisett,MA,Plymouth County,49.0
+01754,Maynard,MA,Middlesex County,49.5
+02052,Medfield,MA,Norfolk County,55.25
+02153,Medford,MA,Middlesex County,45.5
+02155,Medford,MA,Middlesex County,49.5
+02053,Medway,MA,Norfolk County,50.75
+02176,Melrose,MA,Middlesex County,49.5
+01756,Mendon,MA,Worcester County,49.0
+01860,Merrimac,MA,Essex County,49.5
+01844,Methuen,MA,Essex County,49.5
+02344,Middleboro,MA,Plymouth County,49.0
+02346,Middleboro,MA,Plymouth County,55.25
+02349,Middleboro,MA,Plymouth County,49.0
+01949,Middleton,MA,Essex County,49.5
+01757,Milford,MA,Worcester County,49.0
+01527,Millbury,MA,Worcester County,49.0
+02054,Millis,MA,Norfolk County,55.25
+01529,Millville,MA,Worcester County,49.0
+02186,Milton,MA,Norfolk County,55.25
+02187,Milton Village,MA,Norfolk County,52.67
+02055,Minot,MA,Plymouth County,44.8
+02350,Monponsett,MA,Plymouth County,49.0
+02553,Monument Beach,MA,Barnstable County,49.0
+01908,Nahant,MA,Essex County,49.5
+01760,Natick,MA,Middlesex County,49.5
+02492,Needham,MA,Norfolk County,48.95
+02494,Needham Heights,MA,Norfolk County,56.07
+02740,New Bedford,MA,Bristol County,49.0
+02741,New Bedford,MA,Bristol County,49.0
+02742,New Bedford,MA,Bristol County,49.0
+02744,New Bedford,MA,Bristol County,49.0
+02745,New Bedford,MA,Bristol County,49.0
+02746,New Bedford,MA,Bristol County,49.0
+01531,New Braintree,MA,Worcester County,42.63
+02456,New Town,MA,Middlesex County,45.5
+01951,Newbury,MA,Essex County,49.5
+01950,Newburyport,MA,Essex County,49.5
+02458,Newton,MA,Middlesex County,49.5
+02459,Newton Center,MA,Middlesex County,49.5
+02461,Newton Highlands,MA,Middlesex County,49.5
+02462,Newton Lower Falls,MA,Middlesex County,45.5
+02464,Newton Upper Falls,MA,Middlesex County,49.5
+02460,Newtonville,MA,Middlesex County,55.25
+02495,Nonantum,MA,Middlesex County,45.5
+02056,Norfolk,MA,Norfolk County,55.25
+01845,North Andover,MA,Essex County,49.5
+02760,North Attleboro,MA,Bristol County,45.33
+02761,North Attleboro,MA,Bristol County,42.63
+01862,North Billerica,MA,Middlesex County,49.5
+01535,North Brookfield,MA,Worcester County,42.63
+02355,North Carver,MA,Plymouth County,49.0
+02650,North Chatham,MA,Barnstable County,35.0
+01863,North Chelmsford,MA,Middlesex County,49.5
+02747,North Dartmouth,MA,Bristol County,49.0
+02764,North Dighton,MA,Bristol County,50.75
+02651,North Eastham,MA,Barnstable County,35.0
+02356,North Easton,MA,Bristol County,39.9
+02357,North Easton,MA,Bristol County,39.88
+02556,North Falmouth,MA,Barnstable County,49.0
+01536,North Grafton,MA,Worcester County,49.0
+02059,North Marshfield,MA,Plymouth County,49.0
+01537,North Oxford,MA,Worcester County,42.63
+02358,North Pembroke,MA,Plymouth County,49.0
+01864,North Reading,MA,Middlesex County,49.5
+01889,North Reading,MA,Middlesex County,45.5
+02060,North Scituate,MA,Plymouth County,49.0
+02652,North Truro,MA,Barnstable County,35.0
+01538,North Uxbridge,MA,Worcester County,49.0
+02455,North Waltham,MA,Middlesex County,45.5
+02191,North Weymouth,MA,Norfolk County,55.25
+01060,Northampton,MA,Hampshire County,32.6
+01532,Northborough,MA,Worcester County,49.0
+01534,Northbridge,MA,Worcester County,49.0
+02766,Norton,MA,Bristol County,50.75
+02061,Norwell,MA,Plymouth County,55.25
+02062,Norwood,MA,Norfolk County,55.25
+01865,Nutting Lake,MA,Middlesex County,45.5
+01068,Oakham,MA,Worcester County,42.63
+02065,Ocean Bluff,MA,Plymouth County,49.0
+02558,Onset,MA,Plymouth County,49.0
+02653,Orleans,MA,Barnstable County,35.0
+02655,Osterville,MA,Barnstable County,49.0
+01540,Oxford,MA,Worcester County,42.63
+01612,Paxton,MA,Worcester County,47.74
+01960,Peabody,MA,Essex County,49.5
+01961,Peabody,MA,Essex County,49.5
+02359,Pembroke,MA,Plymouth County,55.25
+01463,Pepperell,MA,Middlesex County,46.2
+01866,Pinehurst,MA,Middlesex County,45.5
+02762,Plainville,MA,Norfolk County,48.83
+02360,Plymouth,MA,Plymouth County,55.25
+02361,Plymouth,MA,Plymouth County,49.0
+02362,Plymouth,MA,Plymouth County,49.0
+02367,Plympton,MA,Plymouth County,55.25
+02559,Pocasset,MA,Barnstable County,49.0
+01965,Prides Crossing,MA,Essex County,49.5
+02169,Quincy,MA,Norfolk County,70.88
+02170,Quincy,MA,Norfolk County,55.25
+02171,Quincy,MA,Norfolk County,52.67
+02269,Quincy,MA,Norfolk County,52.67
+02368,Randolph,MA,Norfolk County,70.88
+02767,Raynham,MA,Bristol County,55.25
+02768,Raynham Center,MA,Bristol County,49.0
+01867,Reading,MA,Middlesex County,49.5
+02137,Readville,MA,Suffolk County,52.67
+02769,Rehoboth,MA,Bristol County,50.75
+02151,Revere,MA,Suffolk County,72.45
+01542,Rochdale,MA,Worcester County,42.63
+02770,Rochester,MA,Plymouth County,49.0
+02370,Rockland,MA,Plymouth County,70.88
+01966,Rockport,MA,Essex County,49.5
+02131,Roslindale,MA,Suffolk County,49.5
+01969,Rowley,MA,Essex County,49.5
+02119,Roxbury,MA,Suffolk County,49.5
+02120,Roxbury Crossing,MA,Suffolk County,45.5
+02561,Sagamore,MA,Barnstable County,49.0
+02562,Sagamore Beach,MA,Barnstable County,55.25
+01970,Salem,MA,Essex County,49.5
+01971,Salem,MA,Essex County,49.5
+01952,Salisbury,MA,Essex County,49.5
+02563,Sandwich,MA,Barnstable County,49.0
+01906,Saugus,MA,Essex County,49.5
+02066,Scituate,MA,Plymouth County,52.67
+02771,Seekonk,MA,Bristol County,42.63
+02067,Sharon,MA,Norfolk County,68.51
+02070,Sheldonville,MA,Norfolk County,49.0
+01770,Sherborn,MA,Middlesex County,55.25
+01464,Shirley,MA,Middlesex County,45.5
+01545,Shrewsbury,MA,Worcester County,49.5
+01546,Shrewsbury,MA,Worcester County,49.0
+02565,Silver Beach,MA,Barnstable County,49.0
+02725,Somerset,MA,Bristol County,42.63
+02726,Somerset,MA,Bristol County,39.5
+02143,Somerville,MA,Middlesex County,49.5
+02144,Somerville,MA,Middlesex County,49.5
+02145,Somerville,MA,Middlesex County,49.5
+02127,South Boston,MA,Suffolk County,49.5
+02366,South Carver,MA,Plymouth County,49.0
+02659,South Chatham,MA,Barnstable County,41.25
+02748,South Dartmouth,MA,Bristol County,42.63
+02660,South Dennis,MA,Barnstable County,41.25
+02375,South Easton,MA,Bristol County,70.88
+01560,South Grafton,MA,Worcester County,49.0
+01982,South Hamilton,MA,Essex County,49.5
+02661,South Harwich,MA,Barnstable County,41.25
+01561,South Lancaster,MA,Worcester County,49.0
+02662,South Orleans,MA,Barnstable County,41.25
+02071,South Walpole,MA,Norfolk County,49.0
+02663,South Wellfleet,MA,Barnstable County,35.0
+02190,South Weymouth,MA,Norfolk County,55.25
+02664,South Yarmouth,MA,Barnstable County,47.25
+01772,Southborough,MA,Worcester County,49.0
+01550,Southbridge,MA,Worcester County,48.83
+01562,Spencer,MA,Worcester County,47.74
+01103,Springfield,MA,Hampden County,32.6
+01118,Springfield,MA,Hampden County,32.6
+01564,Sterling,MA,Worcester County,49.0
+01467,Still River,MA,Worcester County,45.5
+02180,Stoneham,MA,Middlesex County,49.5
+02072,Stoughton,MA,Norfolk County,70.88
+01775,Stow,MA,Middlesex County,49.5
+01566,Sturbridge,MA,Worcester County,42.63
+01776,Sudbury,MA,Middlesex County,54.82
+01590,Sutton,MA,Worcester County,49.0
+01907,Swampscott,MA,Essex County,49.5
+02777,Swansea,MA,Bristol County,42.63
+02780,Taunton,MA,Bristol County,50.75
+02783,Taunton,MA,Bristol County,49.0
+01876,Tewksbury,MA,Middlesex County,49.5
+01983,Topsfield,MA,Essex County,49.5
+01469,Townsend,MA,Middlesex County,45.5
+02666,Truro,MA,Barnstable County,35.0
+01879,Tyngsboro,MA,Middlesex County,49.5
+01568,Upton,MA,Worcester County,49.0
+01569,Uxbridge,MA,Worcester County,49.0
+02468,Waban,MA,Middlesex County,49.5
+01880,Wakefield,MA,Middlesex County,49.5
+02081,Walpole,MA,Norfolk County,50.75
+02451,Waltham,MA,Middlesex County,49.5
+02452,Waltham,MA,Middlesex County,49.5
+02453,Waltham,MA,Middlesex County,49.5
+02454,Waltham,MA,Middlesex County,45.5
+02571,Wareham,MA,Plymouth County,49.0
+02471,Watertown,MA,Middlesex County,45.5
+02472,Watertown,MA,Middlesex County,55.25
+02477,Watertown,MA,Middlesex County,45.5
+02479,Waverley,MA,Middlesex County,45.5
+01778,Wayland,MA,Middlesex County,45.5
+01570,Webster,MA,Worcester County,48.83
+02482,Wellesley,MA,Norfolk County,56.07
+02481,Wellesley Hills,MA,Norfolk County,49.5
+02667,Wellfleet,MA,Barnstable County,35.0
+01984,Wenham,MA,Essex County,49.5
+02668,West Barnstable,MA,Barnstable County,49.0
+01885,West Boxford,MA,Essex County,45.5
+01583,West Boylston,MA,Worcester County,49.0
+02379,West Bridgewater,MA,Plymouth County,49.0
+02669,West Chatham,MA,Barnstable County,41.25
+02670,West Dennis,MA,Barnstable County,41.25
+02574,West Falmouth,MA,Barnstable County,49.0
+01472,West Groton,MA,Middlesex County,45.5
+02671,West Harwich,MA,Barnstable County,41.25
+02672,West Hyannisport,MA,Barnstable County,49.0
+02156,West Medford,MA,Middlesex County,45.5
+01586,West Millbury,MA,Worcester County,49.0
+01985,West Newbury,MA,Essex County,49.5
+02465,West Newton,MA,Middlesex County,70.88
+02132,West Roxbury,MA,Suffolk County,70.88
+01089,West Springfield,MA,Hampden County,32.6
+01474,West Townsend,MA,Middlesex County,45.5
+02576,West Wareham,MA,Plymouth County,49.0
+02673,West Yarmouth,MA,Barnstable County,47.25
+01581,Westborough,MA,Worcester County,49.0
+01886,Westford,MA,Middlesex County,49.5
+02493,Weston,MA,Middlesex County,49.5
+02790,Westport,MA,Bristol County,48.83
+02791,Westport Point,MA,Bristol County,39.5
+02090,Westwood,MA,Norfolk County,55.25
+02188,Weymouth,MA,Norfolk County,55.25
+02381,White Horse Beach,MA,Plymouth County,49.0
+01588,Whitinsville,MA,Worcester County,49.0
+02382,Whitman,MA,Plymouth County,55.25
+01887,Wilmington,MA,Middlesex County,49.5
+01890,Winchester,MA,Middlesex County,49.5
+02152,Winthrop,MA,Suffolk County,49.5
+01801,Woburn,MA,Middlesex County,49.5
+01813,Woburn,MA,Middlesex County,45.5
+01815,Woburn,MA,Middlesex County,45.5
+01888,Woburn,MA,Middlesex County,45.5
+02543,Woods Hole,MA,Barnstable County,49.0
+01784,Woodville,MA,Middlesex County,42.63
+01601,Worcester,MA,Worcester County,49.0
+01602,Worcester,MA,Worcester County,48.83
+01603,Worcester,MA,Worcester County,48.83
+01604,Worcester,MA,Worcester County,49.0
+01605,Worcester,MA,Worcester County,49.0
+01606,Worcester,MA,Worcester County,49.0
+01607,Worcester,MA,Worcester County,49.0
+01608,Worcester,MA,Worcester County,49.0
+01609,Worcester,MA,Worcester County,49.0
+01610,Worcester,MA,Worcester County,49.0
+01613,Worcester,MA,Worcester County,49.0
+01614,Worcester,MA,Worcester County,49.0
+01615,Worcester,MA,Worcester County,49.0
+01653,Worcester,MA,Worcester County,49.0
+01654,Worcester,MA,Worcester County,49.0
+01655,Worcester,MA,Worcester County,49.0
+02093,Wrentham,MA,Norfolk County,50.75
+02675,Yarmouth Port,MA,Barnstable County,49.0

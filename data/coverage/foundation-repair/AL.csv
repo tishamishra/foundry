@@ -1,0 +1,487 @@
+zip,city,state,county,payout
+35440,Abernant,AL,Tuscaloosa County,96.0
+35005,Adamsville,AL,Jefferson County,96.0
+35006,Adger,AL,Jefferson County,96.0
+35441,Akron,AL,Hale County,44.0
+35007,Alabaster,AL,Shelby County,96.0
+35114,Alabaster,AL,Shelby County,96.0
+35950,Albertville,AL,Marshall County,44.0
+35951,Albertville,AL,Marshall County,44.0
+35010,Alexander City,AL,Tallapoosa County,44.0
+35011,Alexander City,AL,Tallapoosa County,44.0
+36250,Alexandria,AL,Calhoun County,96.0
+35013,Allgood,AL,Blount County,44.0
+35014,Alpine,AL,Talladega County,44.0
+35015,Alton,AL,Jefferson County,96.0
+35952,Altoona,AL,Etowah County,96.0
+36201,Anniston,AL,Calhoun County,96.0
+36202,Anniston,AL,Calhoun County,96.0
+36204,Anniston,AL,Calhoun County,96.0
+36205,Anniston,AL,Calhoun County,96.0
+36206,Anniston,AL,Calhoun County,96.0
+36207,Anniston,AL,Calhoun County,96.0
+35016,Arab,AL,Marshall County,44.0
+35739,Ardmore,AL,Limestone County,44.0
+35953,Ashville,AL,St. Clair County,44.0
+36502,Atmore,AL,Escambia County,96.0
+35954,Attalla,AL,Etowah County,96.0
+36830,Auburn,AL,Lee County,44.0
+36831,Auburn,AL,Lee County,44.0
+36832,Auburn,AL,Lee County,44.0
+36849,Auburn University,AL,Lee County,44.0
+36505,Axis,AL,Mobile County,96.0
+35019,Baileyton,AL,Cullman County,44.0
+36507,Bay Minette,AL,Baldwin County,96.0
+36509,Bayou La Batre,AL,Mobile County,96.0
+35546,Berry,AL,Fayette County,96.0
+35020,Bessemer,AL,Jefferson County,96.0
+35021,Bessemer,AL,Jefferson County,96.0
+35022,Bessemer,AL,Jefferson County,96.0
+35023,Bessemer,AL,Jefferson County,96.0
+36006,Billingsley,AL,Autauga County,44.0
+35201,Birmingham,AL,Jefferson County,96.0
+35202,Birmingham,AL,Jefferson County,96.0
+35203,Birmingham,AL,Jefferson County,96.0
+35204,Birmingham,AL,Jefferson County,96.0
+35205,Birmingham,AL,Jefferson County,96.0
+35206,Birmingham,AL,Jefferson County,96.0
+35207,Birmingham,AL,Jefferson County,96.0
+35208,Birmingham,AL,Jefferson County,96.0
+35209,Birmingham,AL,Jefferson County,96.0
+35210,Birmingham,AL,Jefferson County,96.0
+35211,Birmingham,AL,Jefferson County,96.0
+35212,Birmingham,AL,Jefferson County,96.0
+35213,Birmingham,AL,Jefferson County,96.0
+35214,Birmingham,AL,Jefferson County,96.0
+35215,Birmingham,AL,Jefferson County,96.0
+35216,Birmingham,AL,Jefferson County,96.0
+35217,Birmingham,AL,Jefferson County,96.0
+35218,Birmingham,AL,Jefferson County,96.0
+35219,Birmingham,AL,Jefferson County,96.0
+35220,Birmingham,AL,Jefferson County,96.0
+35221,Birmingham,AL,Jefferson County,96.0
+35222,Birmingham,AL,Jefferson County,96.0
+35223,Birmingham,AL,Jefferson County,96.0
+35224,Birmingham,AL,Jefferson County,96.0
+35226,Birmingham,AL,Jefferson County,96.0
+35228,Birmingham,AL,Jefferson County,96.0
+35229,Birmingham,AL,Jefferson County,96.0
+35231,Birmingham,AL,Jefferson County,96.0
+35232,Birmingham,AL,Jefferson County,96.0
+35233,Birmingham,AL,Jefferson County,96.0
+35234,Birmingham,AL,Jefferson County,96.0
+35235,Birmingham,AL,Jefferson County,96.0
+35236,Birmingham,AL,Jefferson County,96.0
+35237,Birmingham,AL,Jefferson County,96.0
+35238,Birmingham,AL,Jefferson County,96.0
+35242,Birmingham,AL,Shelby County,96.0
+35243,Birmingham,AL,Jefferson County,96.0
+35244,Birmingham,AL,Jefferson County,96.0
+35246,Birmingham,AL,Jefferson County,96.0
+35249,Birmingham,AL,Jefferson County,96.0
+35253,Birmingham,AL,Jefferson County,96.0
+35254,Birmingham,AL,Jefferson County,96.0
+35255,Birmingham,AL,Jefferson County,96.0
+35259,Birmingham,AL,Jefferson County,96.0
+35260,Birmingham,AL,Jefferson County,96.0
+35261,Birmingham,AL,Jefferson County,96.0
+35266,Birmingham,AL,Jefferson County,96.0
+35270,Birmingham,AL,Alabama Statewide,96.0
+35282,Birmingham,AL,Jefferson County,96.0
+35283,Birmingham,AL,Jefferson County,96.0
+35285,Birmingham,AL,Jefferson County,96.0
+35287,Birmingham,AL,Jefferson County,96.0
+35288,Birmingham,AL,Jefferson County,96.0
+35290,Birmingham,AL,Jefferson County,96.0
+35291,Birmingham,AL,Jefferson County,96.0
+35292,Birmingham,AL,Jefferson County,96.0
+35293,Birmingham,AL,Jefferson County,96.0
+35294,Birmingham,AL,Jefferson County,96.0
+35295,Birmingham,AL,Jefferson County,96.0
+35296,Birmingham,AL,Jefferson County,96.0
+35297,Birmingham,AL,Jefferson County,96.0
+35298,Birmingham,AL,Jefferson County,96.0
+35031,Blountsville,AL,Blount County,44.0
+35956,Boaz,AL,Etowah County,96.0
+35957,Boaz,AL,Marshall County,44.0
+35032,Bon Air,AL,Talladega County,44.0
+36511,Bon Secour,AL,Baldwin County,96.0
+35033,Bremen,AL,Cullman County,96.0
+35036,Brookside,AL,Jefferson County,96.0
+35444,Brookwood,AL,Tuscaloosa County,96.0
+35741,Brownsboro,AL,Madison County,44.0
+36512,Bucks,AL,Mobile County,96.0
+35446,Buhl,AL,Tuscaloosa County,96.0
+35038,Burnwell,AL,Walker County,44.0
+36253,Bynum,AL,Calhoun County,96.0
+35040,Calera,AL,Shelby County,96.0
+36850,Camp Hill,AL,Tallapoosa County,44.0
+35549,Carbon Hill,AL,Walker County,96.0
+36013,Cecil,AL,Montgomery County,44.0
+35959,Cedar Bluff,AL,Cherokee County,44.0
+35960,Centre,AL,Cherokee County,44.0
+35043,Chelsea,AL,Shelby County,96.0
+35044,Childersburg,AL,Talladega County,44.0
+36254,Choccolocco,AL,Calhoun County,96.0
+36521,Chunchula,AL,Mobile County,96.0
+36522,Citronelle,AL,Mobile County,96.0
+35045,Clanton,AL,Chilton County,44.0
+35046,Clanton,AL,Chilton County,44.0
+35048,Clay,AL,Jefferson County,96.0
+35049,Cleveland,AL,Blount County,44.0
+35449,Coaling,AL,Tuscaloosa County,96.0
+36523,Coden,AL,Mobile County,96.0
+35452,Coker,AL,Tuscaloosa County,96.0
+35051,Columbiana,AL,Shelby County,96.0
+35052,Cook Springs,AL,St. Clair County,44.0
+36020,Coosada,AL,Elmore County,44.0
+35550,Cordova,AL,Walker County,96.0
+35453,Cottondale,AL,Tuscaloosa County,96.0
+35053,Crane Hill,AL,Cullman County,44.0
+36525,Creola,AL,Mobile County,96.0
+35054,Cropwell,AL,St. Clair County,44.0
+35055,Cullman,AL,Cullman County,44.0
+35056,Cullman,AL,Cullman County,44.0
+35057,Cullman,AL,Cullman County,44.0
+35058,Cullman,AL,Cullman County,44.0
+36852,Cusseta,AL,Lee County,44.0
+36853,Dadeville,AL,Tallapoosa County,44.0
+35619,Danville,AL,Morgan County,44.0
+36526,Daphne,AL,Baldwin County,96.0
+36527,Daphne,AL,Baldwin County,96.0
+36528,Dauphin Island,AL,Mobile County,96.0
+36256,Daviston,AL,Tallapoosa County,44.0
+36257,De Armanville,AL,Calhoun County,96.0
+36022,Deatsville,AL,Elmore County,44.0
+35601,Decatur,AL,Morgan County,44.0
+35602,Decatur,AL,Morgan County,44.0
+35603,Decatur,AL,Morgan County,44.0
+35609,Decatur,AL,Morgan County,44.0
+35699,Decatur,AL,Morgan County,44.0
+35060,Docena,AL,Jefferson County,96.0
+35061,Dolomite,AL,Jefferson County,96.0
+35062,Dora,AL,Jefferson County,96.0
+35964,Douglas,AL,Marshall County,44.0
+35456,Duncanville,AL,Tuscaloosa County,96.0
+36023,East Tallassee,AL,Tallapoosa County,44.0
+36260,Eastaboga,AL,Calhoun County,96.0
+35457,Echola,AL,Tuscaloosa County,96.0
+36024,Eclectic,AL,Elmore County,44.0
+36613,Eight Mile,AL,Mobile County,96.0
+36530,Elberta,AL,Baldwin County,96.0
+35554,Eldridge,AL,Fayette County,96.0
+36025,Elmore,AL,Elmore County,44.0
+35458,Elrod,AL,Tuscaloosa County,96.0
+35063,Empire,AL,Walker County,96.0
+36026,Equality,AL,Coosa County,44.0
+35621,Eva,AL,Morgan County,44.0
+35064,Fairfield,AL,Jefferson County,96.0
+36532,Fairhope,AL,Baldwin County,96.0
+36533,Fairhope,AL,Baldwin County,96.0
+35622,Falkville,AL,Morgan County,44.0
+36738,Faunsdale,AL,Marengo County,44.0
+36535,Foley,AL,Baldwin County,96.0
+36536,Foley,AL,Baldwin County,96.0
+36740,Forkland,AL,Greene County,44.0
+35463,Fosters,AL,Tuscaloosa County,96.0
+35068,Fultondale,AL,Jefferson County,96.0
+35901,Gadsden,AL,Etowah County,96.0
+35902,Gadsden,AL,Etowah County,96.0
+35903,Gadsden,AL,Etowah County,96.0
+35904,Gadsden,AL,Etowah County,96.0
+35905,Gadsden,AL,Etowah County,96.0
+35907,Gadsden,AL,Etowah County,96.0
+35972,Gallant,AL,Etowah County,96.0
+36742,Gallion,AL,Marengo County,44.0
+35070,Garden City,AL,Cullman County,44.0
+35071,Gardendale,AL,Jefferson County,96.0
+35973,Gaylesville,AL,Cherokee County,44.0
+35560,Goodsprings,AL,Walker County,44.0
+35072,Goodwater,AL,Coosa County,44.0
+35466,Gordo,AL,Pickens County,96.0
+36036,Grady,AL,Montgomery County,44.0
+36541,Grand Bay,AL,Mobile County,96.0
+35747,Grant,AL,Marshall County,44.0
+35073,Graysville,AL,Jefferson County,96.0
+36744,Greensboro,AL,Hale County,44.0
+35975,Groveoak,AL,Dekalb County,44.0
+36542,Gulf Shores,AL,Baldwin County,96.0
+36547,Gulf Shores,AL,Baldwin County,96.0
+35976,Guntersville,AL,Marshall County,44.0
+35748,Gurley,AL,Madison County,44.0
+35077,Hanceville,AL,Cullman County,44.0
+35078,Harpersville,AL,Shelby County,96.0
+35640,Hartselle,AL,Morgan County,44.0
+35749,Harvest,AL,Madison County,44.0
+35079,Hayden,AL,Blount County,44.0
+35750,Hazel Green,AL,Madison County,44.0
+35080,Helena,AL,Shelby County,96.0
+35083,Holly Pond,AL,Cullman County,44.0
+36043,Hope Hull,AL,Montgomery County,44.0
+35980,Horton,AL,Marshall County,44.0
+35801,Huntsville,AL,Madison County,44.0
+35802,Huntsville,AL,Madison County,44.0
+35803,Huntsville,AL,Madison County,44.0
+35804,Huntsville,AL,Madison County,44.0
+35805,Huntsville,AL,Madison County,44.0
+35806,Huntsville,AL,Madison County,44.0
+35807,Huntsville,AL,Madison County,44.0
+35808,Huntsville,AL,Madison County,44.0
+35809,Huntsville,AL,Madison County,44.0
+35810,Huntsville,AL,Madison County,44.0
+35811,Huntsville,AL,Madison County,44.0
+35812,Huntsville,AL,Madison County,44.0
+35813,Huntsville,AL,Madison County,44.0
+35814,Huntsville,AL,Madison County,44.0
+35815,Huntsville,AL,Madison County,44.0
+35816,Huntsville,AL,Madison County,44.0
+35824,Huntsville,AL,Madison County,44.0
+35893,Huntsville,AL,Madison County,44.0
+35894,Huntsville,AL,Madison County,44.0
+35895,Huntsville,AL,Madison County,44.0
+35896,Huntsville,AL,Madison County,44.0
+35897,Huntsville,AL,Madison County,44.0
+35898,Huntsville,AL,Madison County,44.0
+35899,Huntsville,AL,Madison County,44.0
+36544,Irvington,AL,Mobile County,96.0
+36861,Jacksons Gap,AL,Tallapoosa County,44.0
+36265,Jacksonville,AL,Calhoun County,96.0
+35501,Jasper,AL,Walker County,96.0
+35502,Jasper,AL,Walker County,44.0
+35503,Jasper,AL,Walker County,96.0
+35504,Jasper,AL,Walker County,96.0
+35085,Jemison,AL,Chilton County,44.0
+35087,Joppa,AL,Cullman County,44.0
+35573,Kansas,AL,Walker County,44.0
+35468,Kellerman,AL,Tuscaloosa County,96.0
+35089,Kellyton,AL,Coosa County,44.0
+36045,Kent,AL,Elmore County,44.0
+35091,Kimberly,AL,Jefferson County,96.0
+35469,Knoxville,AL,Greene County,96.0
+35754,Laceys Spring,AL,Morgan County,44.0
+35755,Langston,AL,Marshall County,44.0
+36046,Lapine,AL,Crenshaw County,44.0
+36793,Lawley,AL,Bibb County,44.0
+35094,Leeds,AL,Jefferson County,96.0
+35983,Leesburg,AL,Cherokee County,44.0
+36549,Lillian,AL,Baldwin County,96.0
+35096,Lincoln,AL,Talladega County,96.0
+36550,Little River,AL,Baldwin County,96.0
+36865,Loachapoka,AL,Lee County,44.0
+35097,Locust Fork,AL,Blount County,44.0
+35098,Logan,AL,Cullman County,44.0
+36551,Loxley,AL,Baldwin County,96.0
+35756,Madison,AL,Limestone County,44.0
+35757,Madison,AL,Madison County,44.0
+35758,Madison,AL,Madison County,44.0
+36555,Magnolia Springs,AL,Baldwin County,96.0
+36556,Malcolm,AL,Washington County,96.0
+36750,Maplesville,AL,Chilton County,44.0
+36051,Marbury,AL,Autauga County,44.0
+35112,Margaret,AL,St. Clair County,44.0
+36052,Mathews,AL,Montgomery County,44.0
+35111,McCalla,AL,Tuscaloosa County,96.0
+35984,Mentone,AL,Dekalb County,44.0
+35759,Meridianville,AL,Madison County,44.0
+36054,Millbrook,AL,Elmore County,44.0
+36601,Mobile,AL,Mobile County,96.0
+36602,Mobile,AL,Mobile County,96.0
+36603,Mobile,AL,Mobile County,96.0
+36604,Mobile,AL,Mobile County,96.0
+36605,Mobile,AL,Mobile County,96.0
+36606,Mobile,AL,Mobile County,96.0
+36607,Mobile,AL,Mobile County,96.0
+36608,Mobile,AL,Mobile County,96.0
+36609,Mobile,AL,Mobile County,96.0
+36610,Mobile,AL,Mobile County,96.0
+36611,Mobile,AL,Mobile County,96.0
+36612,Mobile,AL,Mobile County,96.0
+36615,Mobile,AL,Mobile County,96.0
+36616,Mobile,AL,Mobile County,96.0
+36617,Mobile,AL,Mobile County,96.0
+36618,Mobile,AL,Mobile County,96.0
+36619,Mobile,AL,Mobile County,96.0
+36628,Mobile,AL,Mobile County,96.0
+36633,Mobile,AL,Mobile County,96.0
+36640,Mobile,AL,Mobile County,96.0
+36641,Mobile,AL,Mobile County,96.0
+36644,Mobile,AL,Mobile County,96.0
+36652,Mobile,AL,Mobile County,96.0
+36660,Mobile,AL,Mobile County,96.0
+36663,Mobile,AL,Mobile County,96.0
+36670,Mobile,AL,Mobile County,96.0
+36671,Mobile,AL,Mobile County,96.0
+36675,Mobile,AL,Mobile County,96.0
+36685,Mobile,AL,Mobile County,96.0
+36688,Mobile,AL,Mobile County,96.0
+36689,Mobile,AL,Mobile County,96.0
+36691,Mobile,AL,Mobile County,96.0
+36693,Mobile,AL,Mobile County,96.0
+36695,Mobile,AL,Mobile County,96.0
+35115,Montevallo,AL,Shelby County,96.0
+36101,Montgomery,AL,Montgomery County,44.0
+36102,Montgomery,AL,Montgomery County,44.0
+36103,Montgomery,AL,Montgomery County,44.0
+36104,Montgomery,AL,Montgomery County,44.0
+36105,Montgomery,AL,Montgomery County,44.0
+36106,Montgomery,AL,Montgomery County,44.0
+36107,Montgomery,AL,Montgomery County,44.0
+36108,Montgomery,AL,Montgomery County,44.0
+36109,Montgomery,AL,Montgomery County,44.0
+36110,Montgomery,AL,Montgomery County,44.0
+36111,Montgomery,AL,Montgomery County,44.0
+36112,Montgomery,AL,Montgomery County,44.0
+36113,Montgomery,AL,Montgomery County,44.0
+36114,Montgomery,AL,Montgomery County,44.0
+36115,Montgomery,AL,Montgomery County,44.0
+36116,Montgomery,AL,Montgomery County,44.0
+36117,Montgomery,AL,Montgomery County,44.0
+36118,Montgomery,AL,Montgomery County,44.0
+36119,Montgomery,AL,Montgomery County,44.0
+36120,Montgomery,AL,Montgomery County,44.0
+36121,Montgomery,AL,Montgomery County,44.0
+36123,Montgomery,AL,Montgomery County,44.0
+36124,Montgomery,AL,Montgomery County,44.0
+36125,Montgomery,AL,Montgomery County,44.0
+36130,Montgomery,AL,Montgomery County,44.0
+36131,Montgomery,AL,Montgomery County,44.0
+36132,Montgomery,AL,Montgomery County,44.0
+36135,Montgomery,AL,Montgomery County,44.0
+36140,Montgomery,AL,Montgomery County,44.0
+36141,Montgomery,AL,Montgomery County,44.0
+36142,Montgomery,AL,Montgomery County,44.0
+36177,Montgomery,AL,Montgomery County,44.0
+36191,Montgomery,AL,Montgomery County,44.0
+36559,Montrose,AL,Baldwin County,96.0
+35004,Moody,AL,St. Clair County,44.0
+35116,Morris,AL,Jefferson County,96.0
+35474,Moundville,AL,Hale County,96.0
+36057,Mount Meigs,AL,Montgomery County,44.0
+35117,Mount Olive,AL,Jefferson County,96.0
+36560,Mount Vernon,AL,Mobile County,96.0
+35118,Mulga,AL,Jefferson County,96.0
+36268,Munford,AL,Talladega County,44.0
+35578,Nauvoo,AL,Walker County,96.0
+35119,New Castle,AL,Jefferson County,96.0
+35760,New Hope,AL,Madison County,44.0
+35761,New Market,AL,Madison County,44.0
+36765,Newbern,AL,Hale County,44.0
+35762,Normal,AL,Madison County,44.0
+35473,Northport,AL,Tuscaloosa County,96.0
+35475,Northport,AL,Tuscaloosa County,96.0
+35476,Northport,AL,Tuscaloosa County,96.0
+36866,Notasulga,AL,Macon County,44.0
+35579,Oakman,AL,Walker County,96.0
+35120,Odenville,AL,St. Clair County,44.0
+36271,Ohatchee,AL,Calhoun County,96.0
+35121,Oneonta,AL,Blount County,44.0
+36801,Opelika,AL,Lee County,44.0
+36802,Opelika,AL,Lee County,44.0
+36803,Opelika,AL,Lee County,44.0
+36804,Opelika,AL,Lee County,44.0
+36561,Orange Beach,AL,Baldwin County,96.0
+35763,Owens Cross Roads,AL,Madison County,44.0
+36203,Oxford,AL,Calhoun County,96.0
+35123,Palmerdale,AL,Jefferson County,96.0
+35580,Parrish,AL,Walker County,96.0
+35124,Pelham,AL,Shelby County,96.0
+35125,Pell City,AL,St. Clair County,44.0
+35128,Pell City,AL,St. Clair County,44.0
+36562,Perdido,AL,Baldwin County,96.0
+35478,Peterson,AL,Tuscaloosa County,96.0
+36867,Phenix City,AL,Russell County,44.0
+36870,Phenix City,AL,Lee County,44.0
+36272,Piedmont,AL,Calhoun County,96.0
+36064,Pike Road,AL,Montgomery County,44.0
+36065,Pine Level,AL,Montgomery County,44.0
+35126,Pinson,AL,Jefferson County,96.0
+36758,Plantersville,AL,Dallas County,44.0
+35127,Pleasant Grove,AL,Jefferson County,96.0
+36564,Point Clear,AL,Baldwin County,96.0
+36066,Prattville,AL,Autauga County,44.0
+35130,Quinton,AL,Walker County,96.0
+35131,Ragland,AL,St. Clair County,44.0
+35906,Rainbow City,AL,Etowah County,96.0
+35480,Ralph,AL,Tuscaloosa County,96.0
+36069,Ramer,AL,Montgomery County,44.0
+36792,Randolph,AL,Bibb County,44.0
+35133,Remlap,AL,Blount County,44.0
+35135,Riverside,AL,St. Clair County,44.0
+36567,Robertsdale,AL,Baldwin County,96.0
+35767,Ryland,AL,Madison County,44.0
+35137,Saginaw,AL,Shelby County,96.0
+36568,Saint Elmo,AL,Mobile County,96.0
+36874,Salem,AL,Lee County,44.0
+35482,Samantha,AL,Tuscaloosa County,96.0
+36571,Saraland,AL,Mobile County,96.0
+36572,Satsuma,AL,Mobile County,96.0
+36776,Sawyerville,AL,Hale County,44.0
+35139,Sayre,AL,Jefferson County,96.0
+35769,Scottsboro,AL,Jackson County,44.0
+36574,Seminole,AL,Baldwin County,96.0
+36575,Semmes,AL,Mobile County,96.0
+35142,Shannon,AL,Jefferson County,96.0
+35143,Shelby,AL,Shelby County,96.0
+35144,Siluria,AL,Shelby County,96.0
+36576,Silverhill,AL,Baldwin County,96.0
+35584,Sipsey,AL,Walker County,44.0
+36877,Smiths Station,AL,Lee County,44.0
+35670,Somerville,AL,Morgan County,44.0
+36577,Spanish Fort,AL,Baldwin County,96.0
+36275,Spring Garden,AL,Cherokee County,44.0
+35146,Springville,AL,St. Clair County,44.0
+36790,Stanton,AL,Chilton County,44.0
+36578,Stapleton,AL,Baldwin County,96.0
+35987,Steele,AL,St. Clair County,44.0
+35147,Sterrett,AL,Shelby County,96.0
+36579,Stockton,AL,Baldwin County,96.0
+35148,Sumiton,AL,Walker County,96.0
+36580,Summerdale,AL,Baldwin County,96.0
+35149,Sycamore,AL,Talladega County,44.0
+35150,Sylacauga,AL,Talladega County,44.0
+35151,Sylacauga,AL,Talladega County,44.0
+35160,Talladega,AL,Talladega County,44.0
+35161,Talladega,AL,Talladega County,44.0
+36078,Tallassee,AL,Elmore County,44.0
+36582,Theodore,AL,Mobile County,96.0
+36590,Theodore,AL,Mobile County,96.0
+35171,Thorsby,AL,Chilton County,44.0
+36080,Titus,AL,Elmore County,44.0
+35773,Toney,AL,Madison County,44.0
+35587,Townley,AL,Walker County,96.0
+35172,Trafford,AL,Blount County,96.0
+35673,Trinity,AL,Lawrence County,44.0
+35173,Trussville,AL,Jefferson County,96.0
+35401,Tuscaloosa,AL,Tuscaloosa County,96.0
+35402,Tuscaloosa,AL,Tuscaloosa County,96.0
+35403,Tuscaloosa,AL,Tuscaloosa County,96.0
+35404,Tuscaloosa,AL,Tuscaloosa County,96.0
+35405,Tuscaloosa,AL,Tuscaloosa County,96.0
+35406,Tuscaloosa,AL,Tuscaloosa County,96.0
+35407,Tuscaloosa,AL,Tuscaloosa County,96.0
+35485,Tuscaloosa,AL,Tuscaloosa County,96.0
+35486,Tuscaloosa,AL,Tuscaloosa County,96.0
+35487,Tuscaloosa,AL,Tuscaloosa County,96.0
+35175,Union Grove,AL,Marshall County,44.0
+35775,Valhermoso Springs,AL,Morgan County,44.0
+36854,Valley,AL,Chambers County,44.0
+35490,Vance,AL,Tuscaloosa County,96.0
+35176,Vandiver,AL,Shelby County,96.0
+36091,Verbena,AL,Chilton County,44.0
+35178,Vincent,AL,Shelby County,96.0
+35179,Vinemont,AL,Cullman County,44.0
+35990,Walnut Grove,AL,Etowah County,96.0
+35180,Warrior,AL,Jefferson County,96.0
+35181,Watson,AL,Jefferson County,96.0
+35182,Wattsville,AL,St. Clair County,44.0
+36879,Waverly,AL,Lee County,44.0
+36277,Weaver,AL,Calhoun County,96.0
+36279,Wellington,AL,Calhoun County,96.0
+35185,Westover,AL,Shelby County,96.0
+36092,Wetumpka,AL,Elmore County,44.0
+36093,Wetumpka,AL,Elmore County,44.0
+36587,Wilmer,AL,Mobile County,96.0
+35186,Wilsonville,AL,Shelby County,96.0
+35187,Wilton,AL,Shelby County,96.0
+35188,Woodstock,AL,Bibb County,96.0
+35776,Woodville,AL,Jackson County,44.0

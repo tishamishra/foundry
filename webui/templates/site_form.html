@@ -1,0 +1,318 @@
+{% extends "base.html" %}{% block body %}
+<div class="head"><h1>{{ 'Edit site' if site_id else 'New site' }}</h1>
+  <p class="sub">A site is a <em>placement</em>: this business, on this domain, over this coverage, with this composition.</p></div>
+
+<form method="post" action="{{ url_for('site_save') }}" class="card">
+  <input type="hidden" name="site_id" value="{{ site_id or '' }}">
+  <div class="two">
+    <label>Business *
+      <select name="business" required>
+        <option value="">— pick one —</option>
+        {% for b in businesses %}
+        <option value="{{ b.slug }}" {{ 'selected' if s.business == b.slug }}>{{ b.company }}</option>
+        {% endfor %}
+      </select>
+    </label>
+    <label>Domain *<input name="domain" value="{{ s.domain or '' }}" placeholder="example.com" required></label>
+    <label>Niche *
+      <select name="niche" id="niche" required>
+        {% for n in NICHES %}<option value="{{ n }}" {{ 'selected' if s.niche == n }}>{{ n }}</option>{% endfor %}
+      </select>
+    </label>
+    <label>Theme
+      <select name="theme">
+        {% for key, t in THEMES.items() %}<option value="{{ key }}" {{ 'selected' if s.theme == key }}>{{ t.label }}</option>{% endfor %}
+      </select>
+    </label>
+    <label>Style pack
+      <select name="style">
+        {% for key, st in STYLES.items() %}<option value="{{ key }}" {{ 'selected' if s.style == key }}>{{ st.label }}</option>{% endfor %}
+      </select>
+    </label>
+    <label>Page skeleton
+      <select name="skeleton">
+        {% for key, sk in SKELETONS.items() %}<option value="{{ key }}" {{ 'selected' if s.skeleton == key }}>{{ sk.label }}</option>{% endfor %}
+      </select>
+    </label>
+  </div>
+
+  <h2>Services</h2>
+  <p class="sub">A site covers <strong>one niche</strong>. These are the jobs within it. Leave
+  them all ticked for a full-service site, or tick <strong>one</strong> to build a single-service
+  site — the city page then <em>is</em> the service page, and the duplicate
+  <code>/services/&lt;x&gt;/&lt;city&gt;</code> pages are not generated at all.</p>
+  {# The global selector. Picking a trade here sets the niche AND ticks every
+     service under it in one action — the individual boxes below are then for
+     narrowing, not for assembling the list one tick at a time. #}
+  <div class="global-svc">
+    <label>Global service
+      <select data-global-service>
+        <option value="">— pick a trade to select everything under it —</option>
+        {% for niche_key, svcs in niche_services.items() %}
+        <option value="{{ niche_key }}">{{ niche_labels[niche_key] }} — all {{ svcs|length }} services</option>
+        {% endfor %}
+      </select>
+    </label>
+    <div class="svc-actions">
+      <button type="button" class="btn sm ghost" data-svc-all>Select all</button>
+      <button type="button" class="btn sm ghost" data-svc-none>Clear</button>
+      <span class="dim" data-svc-count></span>
+    </div>
+  </div>
+
+  <div class="checks" data-services>
+    {% for niche_key, svcs in niche_services.items() %}
+      {% for sv in svcs %}
+      <label class="chk" data-for-niche="{{ niche_key }}">
+        <input type="checkbox" name="services" value="{{ sv.slug }}"
+          {{ 'checked' if (not s.services) or sv.slug in (s.services or []) }}>
+        {{ sv.name }}</label>
+      {% endfor %}
+    {% endfor %}
+  </div>
+  <p class="note">Ticking every service and ticking none mean the same thing: all of them.
+  Ticking exactly <strong>one</strong> builds a single-service site.</p>
+
+  <h2>Coverage</h2>
+  <p class="sub">Tick a state to take <strong>every city in it</strong>. Expand a state to pick
+  cities individually — untick one and the rest still build. Cities are listed richest first, by
+  the payout the buyer's feed carries.</p>
+
+  <div class="cover" data-cover data-niche-src="niche">
+    {% set chosen = (s.coverage.cities if s.coverage else []) or [] %}
+    <input type="hidden" name="__cities_preset" value="{{ chosen|join(',') }}">
+    {% for niche_key, states in cover.items() %}
+      {% for st in states %}
+      <details class="state" data-state="{{ st }}" data-niche="{{ niche_key }}">
+        <summary>
+          <label class="chk" onclick="event.stopPropagation()">
+            <input type="checkbox" name="states" value="{{ st }}" data-state-box
+              {{ 'checked' if s.coverage and st in (s.coverage.states or []) }}>
+            <strong>{{ st }}</strong> <span class="dim">{{ STATES.get(st, st) }}</span>
+          </label>
+          <span class="state-meta dim" data-meta>expand to load cities</span>
+        </summary>
+        <div class="city-box" data-cities>
+          <div class="city-tools">
+            <input type="search" placeholder="Filter cities…" data-filter>
+            <button type="button" class="mini" data-all>Select all</button>
+            <button type="button" class="mini" data-none>Clear</button>
+          </div>
+          <div class="city-list" data-list><span class="dim">loading…</span></div>
+        </div>
+      </details>
+      {% endfor %}
+    {% endfor %}
+    {% if not cover.values()|select|list %}
+    <p class="warn-text">No coverage lists loaded. <a href="{{ url_for('coverage') }}">Import the feed first.</a></p>
+    {% endif %}
+  </div>
+  <p class="note">Leaving every city unticked inside a checked state means <strong>all of them</strong>.
+  Ticking cities explicitly narrows the site to exactly those, and any that later drop out of the
+  buyer's list are reported at build time rather than silently published.</p>
+
+  <h2>Composition</h2>
+  <div class="two">
+    <label>Seed<input name="composition_seed" value="{{ s.composition_seed or 1 }}"></label>
+    <label>Search depth<input name="search" value="250"></label>
+  </div>
+  <label class="chk big"><input type="checkbox" name="autoseed" checked>
+    <span><strong>Find the best seed automatically</strong> — composes every candidate and keeps the one
+    whose copy overlaps least with every other site in this niche. Measured, not guessed.</span></label>
+
+  <h2>Output</h2>
+  <div class="two">
+    <label>Render mode
+      <select name="mode">
+        {% for m in ['hybrid', 'static', 'edge'] %}<option value="{{ m }}" {{ 'selected' if s.render and s.render.mode == m }}>{{ m }}</option>{% endfor %}
+      </select>
+    </label>
+    <label>Pre-render how many cities
+      <input name="prerender_top_n" value="{{ '' if not s.render or s.render.prerender_top_n is none else s.render.prerender_top_n }}" placeholder="blank = all">
+    </label>
+    <label>City-page variants<input name="location_variants" value="{{ s.render.location_variants if s.render else 4 }}"></label>
+  </div>
+  <p class="note">Blank pre-render count writes every page as a file. A number writes that many and
+  lets the Cloudflare Worker render the rest on demand — build time then stops depending on how many
+  cities you cover.</p>
+
+  <div class="foot">
+    <button class="btn" name="then" value="dash">Save</button>
+    <button class="btn ghost" name="then" value="build">Save and build</button>
+  </div>
+</form>
+
+<script>
+(function () {
+  /* Services: one global selector over many individual boxes.
+   *
+   * The box draws a checkbox for EVERY trade's services and hides the ones that
+   * do not belong to the selected niche — which is also why the server filters
+   * and de-duplicates what gets posted: three service slugs are shared by two
+   * trades each, so a hidden twin must never reach the site record.
+   */
+  var svcBox = document.querySelector("[data-services]");
+  var nicheSel = document.getElementById("niche");
+  var globalSel = document.querySelector("[data-global-service]");
+  var counter = document.querySelector("[data-svc-count]");
+  if (!svcBox || !nicheSel) return;
+
+  function mine() {
+    return Array.prototype.filter.call(
+      svcBox.querySelectorAll("[data-for-niche]"),
+      function (l) { return l.getAttribute("data-for-niche") === nicheSel.value; });
+  }
+
+  function count() {
+    if (!counter) return;
+    var rows = mine();
+    var on = rows.filter(function (l) { return l.querySelector("input").checked; }).length;
+    counter.textContent = !rows.length ? "this trade has no services defined"
+      : on === 0 ? "none ticked — which means all " + rows.length
+      : on === 1 ? "1 of " + rows.length + " — single-service site"
+      : on + " of " + rows.length + " selected";
+  }
+
+  function syncServices() {
+    svcBox.querySelectorAll("[data-for-niche]").forEach(function (l) {
+      var belongs = l.getAttribute("data-for-niche") === nicheSel.value;
+      l.hidden = !belongs;
+      if (!belongs) l.querySelector("input").checked = false;
+    });
+    if (globalSel) globalSel.value = nicheSel.value;
+    count();
+  }
+
+  function setAll(on) {
+    mine().forEach(function (l) { l.querySelector("input").checked = on; });
+    count();
+  }
+
+  // Changing the trade in either control means the same thing, so both do the
+  // same thing. The initial sync calls syncServices() directly and never enters
+  // this handler, so a saved narrower selection survives a page load.
+  nicheSel.addEventListener("change", function () { syncServices(); setAll(true); });
+  svcBox.addEventListener("change", count);
+
+  if (globalSel) {
+    globalSel.addEventListener("change", function () {
+      if (!globalSel.value) return;
+      nicheSel.value = globalSel.value;
+      // The niche drives coverage as well as services, so fire its own change
+      // handlers rather than only calling ours — the state list below must
+      // follow the trade, not lag one selection behind it.
+      nicheSel.dispatchEvent(new Event("change", {bubbles: true}));
+      setAll(true);
+    });
+  }
+  var all = document.querySelector("[data-svc-all]");
+  var none = document.querySelector("[data-svc-none]");
+  if (all) all.addEventListener("click", function () { setAll(true); });
+  if (none) none.addEventListener("click", function () { setAll(false); });
+
+  syncServices();
+})();
+
+(function () {
+  var root = document.querySelector("[data-cover]");
+  if (!root) return;
+  var nicheSel = document.getElementById("niche");
+  var preset = new Set((document.querySelector("[name=__cities_preset]").value || "")
+                       .split(",").filter(Boolean));
+
+  function load(det) {
+    if (det.dataset.loaded) return;
+    det.dataset.loaded = "1";
+    var st = det.dataset.state, niche = nicheSel ? nicheSel.value : det.dataset.niche;
+    var list = det.querySelector("[data-list]");
+    fetch("/api/cities/" + encodeURIComponent(niche) + "/" + encodeURIComponent(st))
+      .then(function (r) { return r.json(); })
+      .then(function (d) {
+        if (!d.cities || !d.cities.length) {
+          list.innerHTML = '<span class="warn-text">' + (d.error || "no cities for this niche") + '</span>';
+          return;
+        }
+        det.querySelector("[data-meta]").textContent = d.count + " cities";
+        list.innerHTML = d.cities.map(function (c) {
+          // The searchable text is written once, here, as a data attribute.
+          // Reading it back off the element per keystroke instead of calling
+          // textContent is the difference between a filter that keeps up with
+          // typing at four thousand rows and one that does not.
+          var hay = (c.city + " " + c.county).toLowerCase();
+          return '<label class="chk city" data-hay="' + hay.replace(/"/g, "&quot;") +
+                 '"><input type="checkbox" name="cities" value="' + c.slug +
+                 '"' + (preset.has(c.slug) ? " checked" : "") + '> <span>' + c.city +
+                 '</span> <em class="dim">' + c.county + " · " + c.zips + " zip" +
+                 (c.zips === 1 ? "" : "s") + (c.payout ? " · $" + Math.round(c.payout) : "") +
+                 "</em></label>";
+        }).join("");
+        // Cache the nodes and their haystacks once. Everything the filter does
+        // afterwards is array work plus the few DOM writes that actually change.
+        var nodes = list.querySelectorAll(".city");
+        det._rows = new Array(nodes.length);
+        for (var i = 0; i < nodes.length; i++) {
+          det._rows[i] = {el: nodes[i], hay: nodes[i].getAttribute("data-hay"), on: true};
+        }
+      });
+  }
+
+  root.addEventListener("toggle", function (e) {
+    if (e.target.tagName === "DETAILS" && e.target.open) load(e.target);
+  }, true);
+
+  root.addEventListener("change", function (e) {
+    if (e.target.matches("[data-state-box]") && e.target.checked) {
+      var det = e.target.closest("details");
+      det.open = true; load(det);
+    }
+  });
+
+  root.addEventListener("click", function (e) {
+    var det = e.target.closest("details");
+    if (!det) return;
+    if (e.target.matches("[data-all]") || e.target.matches("[data-none]")) {
+      var on = e.target.matches("[data-all]");
+      det.querySelectorAll('input[name=cities]').forEach(function (b) {
+        if (b.closest("label").style.display !== "none") b.checked = on;
+      });
+      if (on) det.querySelector("[data-state-box]").checked = true;
+    }
+  });
+
+  /* Filtering four thousand cities, once per keystroke.
+   *
+   * The first version did, for every row and every character: rebuild the
+   * NodeList, serialise textContent, lowercase it, and write style.display.
+   * That is a DOM read and a style write per row per keypress — at 4,000 rows
+   * it interleaves reads and writes badly enough to force synchronous layout,
+   * and the box stops keeping up with a fast typist.
+   *
+   * Three changes, in order of how much they matter:
+   *   the haystack is cached at injection, so no per-row read happens at all;
+   *   only rows whose visibility ACTUALLY changes are written to, which after
+   *     the second character is a handful instead of four thousand;
+   *   the pass is coalesced to one animation frame, so holding a key down
+   *     cannot queue one full pass per repeat.
+   */
+  var pending = null;
+  function applyFilter(det, q) {
+    var rows = det._rows;
+    if (!rows) return;
+    for (var i = 0; i < rows.length; i++) {
+      var r = rows[i], on = !q || r.hay.indexOf(q) !== -1;
+      if (on !== r.on) {                       // the only DOM write in here
+        r.el.style.display = on ? "" : "none";
+        r.on = on;
+      }
+    }
+  }
+
+  root.addEventListener("input", function (e) {
+    if (!e.target.matches("[data-filter]")) return;
+    var det = e.target.closest("details"), q = e.target.value.trim().toLowerCase();
+    if (pending) cancelAnimationFrame(pending);
+    pending = requestAnimationFrame(function () { pending = null; applyFilter(det, q); });
+  });
+})();
+</script>
+{% endblock %}

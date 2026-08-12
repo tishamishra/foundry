@@ -1,0 +1,17 @@
+site_id: scale-hybrid
+business: statewide-pest
+niche: pest-control
+domain: scale-hybrid.test
+theme: moss
+style: ledger
+skeleton: directory
+composition_seed: 71
+coverage:
+  states:
+  - PA
+  - CA
+  - TX
+render:
+  mode: hybrid
+  prerender_top_n: 500
+  location_variants: 10

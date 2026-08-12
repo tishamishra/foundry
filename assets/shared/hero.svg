@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" role="img" aria-label="Property illustration">
+  <defs>
+    <linearGradient id="sk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d6e2f2"/><stop offset="1" stop-color="#eef3f9"/></linearGradient>
+    <linearGradient id="rf" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#55606e"/><stop offset="1" stop-color="#333c48"/></linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#sk)"/>
+  <circle cx="662" cy="104" r="40" fill="#fff" opacity=".5"/>
+  <circle cx="624" cy="118" r="30" fill="#fff" opacity=".4"/>
+  <rect x="96" y="286" width="608" height="176" fill="#f4f1ec"/>
+  <path d="M72 292 L400 132 L728 292 Z" fill="url(#rf)"/>
+  <rect x="72" y="286" width="656" height="12" rx="6" fill="#98a1ad"/>
+  <rect x="150" y="326" width="92" height="88" fill="#e2e9f1" stroke="#bcc6d2" stroke-width="3"/>
+  <rect x="352" y="326" width="96" height="136" fill="#7f6350"/>
+  <circle cx="432" cy="396" r="5" fill="#e8d8a8"/>
+  <rect x="558" y="326" width="92" height="88" fill="#e2e9f1" stroke="#bcc6d2" stroke-width="3"/>
+  <rect x="186" y="212" width="46" height="80" fill="#8a5c4a"/>
+  <rect x="178" y="202" width="62" height="16" fill="#6d4437"/>
+  <rect x="0" y="460" width="800" height="40" fill="#cdd6c6"/>
+</svg>

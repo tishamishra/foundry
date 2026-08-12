@@ -1,0 +1,756 @@
+zip,city,state,county,payout
+37010,Adams,TN,Montgomery County,162.5
+38310,Adamsville,TN,Mcnairy County,165.5
+37616,Afton,TN,Greene County,165.5
+38001,Alamo,TN,Crockett County,162.5
+37701,Alcoa,TN,Blount County,165.5
+37012,Alexandria,TN,Dekalb County,162.5
+38504,Allardt,TN,Fentress County,165.5
+38541,Allons,TN,Overton County,162.5
+38542,Allred,TN,Overton County,162.5
+38543,Alpine,TN,Overton County,162.5
+37301,Altamont,TN,Grundy County,165.5
+37705,Andersonville,TN,Anderson County,165.5
+37011,Antioch,TN,Davidson County,398.0
+37013,Antioch,TN,Davidson County,398.0
+37302,Apison,TN,Hamilton County,279.0
+38449,Ardmore,TN,Giles County,162.5
+38002,Arlington,TN,Shelby County,239.0
+37389,Arnold AFB,TN,Coffee County,165.5
+37014,Arrington,TN,Williamson County,189.0
+37707,Arthur,TN,Claiborne County,165.5
+37015,Ashland City,TN,Cheatham County,162.5
+37303,Athens,TN,Mcminn County,165.5
+37371,Athens,TN,Mcminn County,165.5
+38004,Atoka,TN,Tipton County,165.5
+38220,Atwood,TN,Carroll County,162.5
+37016,Auburntown,TN,Cannon County,165.5
+37304,Bakewell,TN,Hamilton County,279.0
+38311,Bath Springs,TN,Decatur County,162.5
+38544,Baxter,TN,Putnam County,219.5
+37708,Bean Station,TN,Grainger County,165.5
+38313,Beech Bluff,TN,Madison County,165.5
+37018,Beechgrove,TN,Coffee County,165.5
+37305,Beersheba Springs,TN,Grundy County,165.5
+37019,Belfast,TN,Marshall County,165.5
+37020,Bell Buckle,TN,Bedford County,165.5
+38006,Bells,TN,Crockett County,162.5
+37306,Belvidere,TN,Franklin County,165.5
+37307,Benton,TN,Polk County,162.5
+38315,Bethel Springs,TN,Mcnairy County,165.5
+37022,Bethpage,TN,Sumner County,165.5
+37308,Birchwood,TN,Hamilton County,279.0
+37709,Blaine,TN,Grainger County,165.5
+37617,Blountville,TN,Sullivan County,165.5
+37618,Bluff City,TN,Sullivan County,165.5
+38007,Bogota,TN,Dyer County,165.5
+38008,Bolivar,TN,Hardeman County,165.5
+38010,Braden,TN,Fayette County,165.5
+38316,Bradford,TN,Gibson County,165.5
+37026,Bradyville,TN,Cannon County,165.5
+37024,Brentwood,TN,Williamson County,189.0
+37027,Brentwood,TN,Williamson County,189.0
+37710,Briceville,TN,Anderson County,165.5
+38011,Brighton,TN,Tipton County,165.5
+37620,Bristol,TN,Sullivan County,165.5
+37621,Bristol,TN,Sullivan County,165.5
+37625,Bristol,TN,Sullivan County,165.5
+38012,Brownsville,TN,Haywood County,165.5
+38317,Bruceton,TN,Carroll County,162.5
+38014,Brunswick,TN,Shelby County,239.0
+38547,Brush Creek,TN,Smith County,165.5
+38222,Buchanan,TN,Henry County,165.5
+38318,Buena Vista,TN,Carroll County,162.5
+38548,Buffalo Valley,TN,Putnam County,219.5
+37711,Bulls Gap,TN,Hawkins County,165.5
+38015,Burlison,TN,Tipton County,165.5
+37029,Burns,TN,Dickson County,165.5
+37640,Butler,TN,Johnson County,165.5
+37713,Bybee,TN,Cocke County,165.5
+38549,Byrdstown,TN,Pickett County,165.5
+37309,Calhoun,TN,Mcminn County,165.5
+38550,Campaign,TN,Warren County,165.5
+37030,Carthage,TN,Smith County,165.5
+37714,Caryville,TN,Campbell County,165.5
+37031,Castalian Springs,TN,Sumner County,165.5
+38321,Cedar Grove,TN,Carroll County,162.5
+37032,Cedar Hill,TN,Robertson County,162.5
+37034,Chapel Hill,TN,Marshall County,165.5
+37035,Chapmansboro,TN,Cheatham County,162.5
+37310,Charleston,TN,Bradley County,165.5
+37036,Charlotte,TN,Dickson County,165.5
+37401,Chattanooga,TN,Hamilton County,279.0
+37402,Chattanooga,TN,Hamilton County,279.0
+37403,Chattanooga,TN,Hamilton County,279.0
+37404,Chattanooga,TN,Hamilton County,279.0
+37405,Chattanooga,TN,Hamilton County,279.0
+37406,Chattanooga,TN,Hamilton County,279.0
+37407,Chattanooga,TN,Hamilton County,279.0
+37408,Chattanooga,TN,Hamilton County,279.0
+37409,Chattanooga,TN,Hamilton County,279.0
+37410,Chattanooga,TN,Hamilton County,279.0
+37411,Chattanooga,TN,Hamilton County,279.0
+37412,Chattanooga,TN,Hamilton County,279.0
+37414,Chattanooga,TN,Hamilton County,279.0
+37415,Chattanooga,TN,Hamilton County,279.0
+37416,Chattanooga,TN,Hamilton County,279.0
+37419,Chattanooga,TN,Hamilton County,279.0
+37421,Chattanooga,TN,Hamilton County,279.0
+37422,Chattanooga,TN,Hamilton County,279.0
+37424,Chattanooga,TN,Hamilton County,279.0
+37450,Chattanooga,TN,Hamilton County,279.0
+38552,Chestnut Mound,TN,Smith County,165.5
+38393,Chewalla,TN,Mcnairy County,165.5
+37037,Christiana,TN,Rutherford County,239.0
+37641,Chuckey,TN,Greene County,165.5
+37642,Church Hill,TN,Hawkins County,165.5
+37715,Clairfield,TN,Claiborne County,165.5
+38553,Clarkrange,TN,Fentress County,165.5
+38324,Clarksburg,TN,Carroll County,162.5
+37040,Clarksville,TN,Montgomery County,239.0
+37041,Clarksville,TN,Montgomery County,239.0
+37042,Clarksville,TN,Montgomery County,239.0
+37043,Clarksville,TN,Montgomery County,239.0
+37044,Clarksville,TN,Montgomery County,239.0
+37311,Cleveland,TN,Bradley County,165.5
+37312,Cleveland,TN,Bradley County,165.5
+37320,Cleveland,TN,Bradley County,165.5
+37323,Cleveland,TN,Bradley County,165.5
+37364,Cleveland,TN,Bradley County,165.5
+38425,Clifton,TN,Wayne County,165.5
+37716,Clinton,TN,Anderson County,165.5
+37717,Clinton,TN,Anderson County,165.5
+37719,Coalfield,TN,Morgan County,162.5
+37313,Coalmont,TN,Grundy County,165.5
+37314,Coker Creek,TN,Monroe County,165.5
+37046,College Grove,TN,Williamson County,189.0
+37315,Collegedale,TN,Hamilton County,279.0
+38017,Collierville,TN,Shelby County,239.0
+38027,Collierville,TN,Shelby County,239.0
+38450,Collinwood,TN,Wayne County,165.5
+38401,Columbia,TN,Maury County,165.5
+38402,Columbia,TN,Maury County,165.5
+38223,Como,TN,Henry County,165.5
+37316,Conasauga,TN,Polk County,162.5
+38501,Cookeville,TN,Putnam County,219.5
+38502,Cookeville,TN,Putnam County,219.5
+38503,Cookeville,TN,Putnam County,219.5
+38505,Cookeville,TN,Putnam County,219.5
+38506,Cookeville,TN,Putnam County,219.5
+37317,Copperhill,TN,Polk County,162.5
+38016,Cordova,TN,Shelby County,239.0
+38018,Cordova,TN,Shelby County,239.0
+38088,Cordova,TN,Shelby County,239.0
+37047,Cornersville,TN,Marshall County,165.5
+37721,Corryton,TN,Knox County,165.5
+37722,Cosby,TN,Cocke County,165.5
+38224,Cottage Grove,TN,Henry County,165.5
+37048,Cottontown,TN,Sumner County,165.5
+38326,Counce,TN,Hardin County,165.5
+38019,Covington,TN,Tipton County,165.5
+37318,Cowan,TN,Franklin County,165.5
+37723,Crab Orchard,TN,Cumberland County,165.5
+38554,Crawford,TN,Overton County,162.5
+38021,Crockett Mills,TN,Crockett County,162.5
+37049,Cross Plains,TN,Robertson County,162.5
+38555,Crossville,TN,Cumberland County,165.5
+38557,Crossville,TN,Cumberland County,165.5
+38558,Crossville,TN,Cumberland County,165.5
+38571,Crossville,TN,Cumberland County,165.5
+38572,Crossville,TN,Cumberland County,165.5
+38327,Crump,TN,Hardin County,165.5
+38451,Culleoka,TN,Maury County,165.5
+37051,Cumberland Furnace,TN,Dickson County,165.5
+37724,Cumberland Gap,TN,Claiborne County,165.5
+37052,Cunningham,TN,Montgomery County,239.0
+38452,Cypress Inn,TN,Wayne County,165.5
+37725,Dandridge,TN,Jefferson County,165.5
+38328,Darden,TN,Henderson County,165.5
+37321,Dayton,TN,Rhea County,165.5
+37322,Decatur,TN,Meigs County,165.5
+38329,Decaturville,TN,Decatur County,162.5
+37324,Decherd,TN,Franklin County,165.5
+37726,Deer Lodge,TN,Morgan County,162.5
+37727,Del Rio,TN,Cocke County,165.5
+37325,Delano,TN,Polk County,162.5
+38453,Dellrose,TN,Lincoln County,162.5
+38391,Denmark,TN,Madison County,165.5
+37055,Dickson,TN,Dickson County,165.5
+37056,Dickson,TN,Dickson County,165.5
+37057,Dixon Springs,TN,Macon County,165.5
+37059,Dowelltown,TN,Dekalb County,162.5
+38559,Doyle,TN,White County,165.5
+38225,Dresden,TN,Weakley County,165.5
+38023,Drummonds,TN,Tipton County,165.5
+37326,Ducktown,TN,Polk County,162.5
+37729,Duff,TN,Campbell County,165.5
+38226,Dukedom,TN,Weakley County,165.5
+37327,Dunlap,TN,Sequatchie County,165.5
+38330,Dyer,TN,Gibson County,165.5
+38024,Dyersburg,TN,Dyer County,165.5
+38025,Dyersburg,TN,Dyer County,165.5
+38028,Eads,TN,Fayette County,165.5
+37730,Eagan,TN,Claiborne County,165.5
+37060,Eagleville,TN,Rutherford County,239.0
+38331,Eaton,TN,Gibson County,165.5
+37731,Eidson,TN,Hawkins County,165.5
+37732,Elgin,TN,Scott County,162.5
+37643,Elizabethton,TN,Carter County,165.5
+37644,Elizabethton,TN,Carter County,165.5
+38455,Elkton,TN,Giles County,162.5
+38029,Ellendale,TN,Shelby County,239.0
+38560,Elmwood,TN,Smith County,165.5
+37328,Elora,TN,Lincoln County,162.5
+37329,Englewood,TN,Mcminn County,165.5
+38332,Enville,TN,Chester County,162.5
+37650,Erwin,TN,Unicoi County,165.5
+37330,Estill Springs,TN,Franklin County,165.5
+38456,Ethridge,TN,Lawrence County,162.5
+37331,Etowah,TN,Mcminn County,165.5
+37332,Evensville,TN,Rhea County,165.5
+37062,Fairview,TN,Williamson County,189.0
+37656,Fall Branch,TN,Washington County,165.5
+37333,Farner,TN,Polk County,162.5
+37934,Farragut,TN,Knox County,165.5
+37334,Fayetteville,TN,Lincoln County,162.5
+38334,Finger,TN,Mcnairy County,165.5
+38030,Finley,TN,Dyer County,165.5
+38457,Five Points,TN,Lawrence County,162.5
+37657,Flag Pond,TN,Unicoi County,165.5
+37335,Flintville,TN,Lincoln County,162.5
+37063,Fosterville,TN,Rutherford County,239.0
+38459,Frankewing,TN,Lincoln County,162.5
+37064,Franklin,TN,Williamson County,189.0
+37065,Franklin,TN,Williamson County,189.0
+37067,Franklin,TN,Williamson County,189.0
+37068,Franklin,TN,Williamson County,189.0
+37069,Franklin,TN,Williamson County,189.0
+38034,Friendship,TN,Crockett County,162.5
+37737,Friendsville,TN,Blount County,165.5
+38336,Fruitvale,TN,Crockett County,162.5
+38337,Gadsden,TN,Crockett County,162.5
+37066,Gallatin,TN,Sumner County,165.5
+38036,Gallaway,TN,Fayette County,165.5
+38037,Gates,TN,Lauderdale County,162.5
+37738,Gatlinburg,TN,Sevier County,239.0
+37336,Georgetown,TN,Bradley County,165.5
+38138,Germantown,TN,Shelby County,239.0
+38139,Germantown,TN,Shelby County,239.0
+38183,Germantown,TN,Shelby County,239.0
+38338,Gibson,TN,Gibson County,165.5
+37071,Gladeville,TN,Wilson County,249.5
+38229,Gleason,TN,Weakley County,165.5
+37070,Goodlettsville,TN,Davidson County,398.0
+37072,Goodlettsville,TN,Davidson County,398.0
+38460,Goodspring,TN,Giles County,162.5
+38563,Gordonsville,TN,Smith County,165.5
+38039,Grand Junction,TN,Hardeman County,165.5
+37337,Grandview,TN,Rhea County,165.5
+37338,Graysville,TN,Rhea County,165.5
+37742,Greenback,TN,Loudon County,234.5
+37073,Greenbrier,TN,Robertson County,162.5
+37743,Greeneville,TN,Greene County,165.5
+37744,Greeneville,TN,Greene County,165.5
+37745,Greeneville,TN,Greene County,165.5
+38230,Greenfield,TN,Weakley County,165.5
+38565,Grimsley,TN,Fentress County,165.5
+37339,Gruetli Laager,TN,Grundy County,165.5
+37340,Guild,TN,Marion County,165.5
+38339,Guys,TN,Mcnairy County,165.5
+38040,Halls,TN,Lauderdale County,162.5
+38461,Hampshire,TN,Maury County,165.5
+37658,Hampton,TN,Carter County,165.5
+37748,Harriman,TN,Roane County,165.5
+37341,Harrison,TN,Hamilton County,279.0
+37752,Harrogate,TN,Claiborne County,165.5
+37753,Hartford,TN,Cocke County,165.5
+37074,Hartsville,TN,Trousdale County,162.5
+37754,Heiskell,TN,Anderson County,165.5
+37755,Helenwood,TN,Scott County,162.5
+38340,Henderson,TN,Chester County,162.5
+37075,Hendersonville,TN,Sumner County,165.5
+37077,Hendersonville,TN,Sumner County,165.5
+38041,Henning,TN,Lauderdale County,162.5
+38231,Henry,TN,Henry County,165.5
+37076,Hermitage,TN,Davidson County,398.0
+38567,Hickman,TN,Smith County,165.5
+38042,Hickory Valley,TN,Hardeman County,165.5
+38568,Hilham,TN,Overton County,162.5
+37342,Hillsboro,TN,Coffee County,165.5
+37343,Hixson,TN,Hamilton County,279.0
+38342,Hollow Rock,TN,Carroll County,162.5
+38232,Hornbeak,TN,Obion County,165.5
+38044,Hornsby,TN,Hardeman County,165.5
+38343,Humboldt,TN,Gibson County,165.5
+38344,Huntingdon,TN,Carroll County,162.5
+37345,Huntland,TN,Franklin County,165.5
+37756,Huntsville,TN,Scott County,162.5
+38345,Huron,TN,Henderson County,165.5
+38346,Idlewild,TN,Gibson County,165.5
+38463,Iron City,TN,Wayne County,162.5
+38347,Jacks Creek,TN,Chester County,162.5
+37757,Jacksboro,TN,Campbell County,165.5
+38301,Jackson,TN,Madison County,165.5
+38302,Jackson,TN,Madison County,165.5
+38303,Jackson,TN,Madison County,165.5
+38305,Jackson,TN,Madison County,165.5
+38308,Jackson,TN,Madison County,165.5
+38314,Jackson,TN,Madison County,165.5
+38556,Jamestown,TN,Fentress County,165.5
+37347,Jasper,TN,Marion County,165.5
+37760,Jefferson City,TN,Jefferson County,165.5
+37762,Jellico,TN,Campbell County,165.5
+37080,Joelton,TN,Davidson County,398.0
+37601,Johnson City,TN,Washington County,165.5
+37602,Johnson City,TN,Washington County,165.5
+37604,Johnson City,TN,Washington County,165.5
+37605,Johnson City,TN,Washington County,165.5
+37614,Johnson City,TN,Washington County,165.5
+37615,Johnson City,TN,Washington County,165.5
+37659,Jonesborough,TN,Washington County,165.5
+37348,Kelso,TN,Lincoln County,162.5
+38233,Kenton,TN,Gibson County,165.5
+37660,Kingsport,TN,Sullivan County,165.5
+37662,Kingsport,TN,Sullivan County,165.5
+37663,Kingsport,TN,Sullivan County,165.5
+37664,Kingsport,TN,Sullivan County,165.5
+37665,Kingsport,TN,Sullivan County,165.5
+37669,Kingsport,TN,Sullivan County,165.5
+37763,Kingston,TN,Roane County,165.5
+37082,Kingston Springs,TN,Cheatham County,162.5
+37901,Knoxville,TN,Knox County,165.5
+37902,Knoxville,TN,Knox County,165.5
+37909,Knoxville,TN,Knox County,165.5
+37912,Knoxville,TN,Knox County,165.5
+37914,Knoxville,TN,Knox County,165.5
+37915,Knoxville,TN,Knox County,165.5
+37916,Knoxville,TN,Knox County,165.5
+37917,Knoxville,TN,Knox County,165.5
+37918,Knoxville,TN,Knox County,165.5
+37919,Knoxville,TN,Knox County,165.5
+37920,Knoxville,TN,Knox County,165.5
+37921,Knoxville,TN,Knox County,165.5
+37922,Knoxville,TN,Knox County,165.5
+37923,Knoxville,TN,Knox County,165.5
+37924,Knoxville,TN,Knox County,165.5
+37927,Knoxville,TN,Knox County,165.5
+37928,Knoxville,TN,Knox County,165.5
+37929,Knoxville,TN,Knox County,165.5
+37930,Knoxville,TN,Knox County,165.5
+37931,Knoxville,TN,Knox County,165.5
+37932,Knoxville,TN,Knox County,165.5
+37933,Knoxville,TN,Knox County,165.5
+37938,Knoxville,TN,Knox County,165.5
+37939,Knoxville,TN,Knox County,165.5
+37940,Knoxville,TN,Knox County,165.5
+37950,Knoxville,TN,Knox County,165.5
+37995,Knoxville,TN,Knox County,165.5
+37996,Knoxville,TN,Knox County,165.5
+37997,Knoxville,TN,Knox County,165.5
+37998,Knoxville,TN,Knox County,165.5
+37764,Kodak,TN,Sevier County,239.0
+37765,Kyles Ford,TN,Hancock County,162.5
+37766,La Follette,TN,Campbell County,165.5
+38046,La Grange,TN,Fayette County,165.5
+37086,La Vergne,TN,Rutherford County,239.0
+37089,La Vergne,TN,Rutherford County,239.0
+38045,Laconia,TN,Fayette County,165.5
+38569,Lancaster,TN,Smith County,165.5
+37770,Lancing,TN,Morgan County,162.5
+37085,Lascassas,TN,Rutherford County,239.0
+37680,Laurel Bloomery,TN,Johnson County,165.5
+38348,Lavinia,TN,Carroll County,162.5
+38464,Lawrenceburg,TN,Lawrence County,162.5
+37087,Lebanon,TN,Wilson County,249.5
+37088,Lebanon,TN,Wilson County,249.5
+37090,Lebanon,TN,Wilson County,249.5
+37771,Lenoir City,TN,Loudon County,234.5
+37772,Lenoir City,TN,Loudon County,234.5
+38047,Lenox,TN,Dyer County,165.5
+38468,Leoma,TN,Lawrence County,162.5
+37091,Lewisburg,TN,Marshall County,165.5
+38351,Lexington,TN,Henderson County,165.5
+37095,Liberty,TN,Dekalb County,162.5
+37681,Limestone,TN,Washington County,165.5
+37096,Linden,TN,Perry County,162.5
+38570,Livingston,TN,Overton County,162.5
+37097,Lobelville,TN,Perry County,162.5
+37773,Lone Mountain,TN,Claiborne County,165.5
+37350,Lookout Mountain,TN,Hamilton County,279.0
+38469,Loretto,TN,Lawrence County,162.5
+37774,Loudon,TN,Loudon County,234.5
+37777,Louisville,TN,Blount County,165.5
+37778,Lowland,TN,Hamblen County,165.5
+37351,Lupton City,TN,Hamilton County,279.0
+38352,Luray,TN,Chester County,162.5
+37779,Luttrell,TN,Union County,165.5
+38471,Lutts,TN,Wayne County,165.5
+37352,Lynchburg,TN,Moore County,151.0
+38472,Lynnville,TN,Giles County,162.5
+38048,Macon,TN,Fayette County,165.5
+37115,Madison,TN,Davidson County,398.0
+37116,Madison,TN,Davidson County,398.0
+37354,Madisonville,TN,Monroe County,165.5
+37349,Manchester,TN,Coffee County,165.5
+37355,Manchester,TN,Coffee County,165.5
+38236,Mansfield,TN,Henry County,165.5
+38237,Martin,TN,Weakley County,165.5
+38238,Martin,TN,Weakley County,165.5
+37801,Maryville,TN,Blount County,165.5
+37802,Maryville,TN,Blount County,165.5
+37803,Maryville,TN,Blount County,165.5
+37804,Maryville,TN,Blount County,165.5
+37806,Mascot,TN,Knox County,165.5
+38049,Mason,TN,Tipton County,165.5
+38050,Maury City,TN,Crockett County,162.5
+37807,Maynardville,TN,Union County,165.5
+37353,McDonald,TN,Bradley County,165.5
+38201,McKenzie,TN,Carroll County,162.5
+38235,McLemoresville,TN,Carroll County,162.5
+37110,Mcminnville,TN,Warren County,165.5
+37111,Mcminnville,TN,Warren County,165.5
+38355,Medina,TN,Gibson County,165.5
+38356,Medon,TN,Madison County,165.5
+37501,Memphis,TN,Shelby County,239.0
+37544,Memphis,TN,Shelby County,239.0
+38101,Memphis,TN,Shelby County,239.0
+38103,Memphis,TN,Shelby County,239.0
+38104,Memphis,TN,Shelby County,239.0
+38105,Memphis,TN,Shelby County,239.0
+38106,Memphis,TN,Shelby County,239.0
+38107,Memphis,TN,Shelby County,239.0
+38108,Memphis,TN,Shelby County,239.0
+38109,Memphis,TN,Shelby County,239.0
+38111,Memphis,TN,Shelby County,239.0
+38112,Memphis,TN,Shelby County,239.0
+38113,Memphis,TN,Shelby County,239.0
+38114,Memphis,TN,Shelby County,239.0
+38115,Memphis,TN,Shelby County,239.0
+38116,Memphis,TN,Shelby County,239.0
+38117,Memphis,TN,Shelby County,239.0
+38118,Memphis,TN,Shelby County,239.0
+38119,Memphis,TN,Shelby County,239.0
+38120,Memphis,TN,Shelby County,239.0
+38122,Memphis,TN,Shelby County,239.0
+38124,Memphis,TN,Shelby County,239.0
+38125,Memphis,TN,Shelby County,239.0
+38126,Memphis,TN,Shelby County,239.0
+38127,Memphis,TN,Shelby County,239.0
+38128,Memphis,TN,Shelby County,239.0
+38130,Memphis,TN,Shelby County,239.0
+38131,Memphis,TN,Shelby County,239.0
+38132,Memphis,TN,Shelby County,239.0
+38133,Memphis,TN,Shelby County,239.0
+38134,Memphis,TN,Shelby County,239.0
+38135,Memphis,TN,Shelby County,239.0
+38136,Memphis,TN,Shelby County,239.0
+38137,Memphis,TN,Shelby County,239.0
+38141,Memphis,TN,Shelby County,239.0
+38145,Memphis,TN,Shelby County,239.0
+38147,Memphis,TN,Shelby County,239.0
+38148,Memphis,TN,Shelby County,239.0
+38150,Memphis,TN,Shelby County,239.0
+38151,Memphis,TN,Shelby County,239.0
+38152,Memphis,TN,Shelby County,239.0
+38157,Memphis,TN,Shelby County,239.0
+38159,Memphis,TN,Shelby County,239.0
+38161,Memphis,TN,Shelby County,239.0
+38163,Memphis,TN,Shelby County,239.0
+38166,Memphis,TN,Shelby County,239.0
+38167,Memphis,TN,Shelby County,239.0
+38168,Memphis,TN,Shelby County,239.0
+38173,Memphis,TN,Shelby County,239.0
+38174,Memphis,TN,Shelby County,239.0
+38175,Memphis,TN,Shelby County,239.0
+38177,Memphis,TN,Shelby County,239.0
+38181,Memphis,TN,Shelby County,239.0
+38182,Memphis,TN,Shelby County,239.0
+38184,Memphis,TN,Shelby County,239.0
+38186,Memphis,TN,Shelby County,239.0
+38187,Memphis,TN,Shelby County,239.0
+38188,Memphis,TN,Shelby County,239.0
+38190,Memphis,TN,Shelby County,239.0
+38193,Memphis,TN,Shelby County,239.0
+38194,Memphis,TN,Shelby County,239.0
+38197,Memphis,TN,Shelby County,239.0
+38392,Mercer,TN,Madison County,165.5
+38357,Michie,TN,Mcnairy County,165.5
+38052,Middleton,TN,Hardeman County,165.5
+37809,Midway,TN,Greene County,165.5
+38358,Milan,TN,Gibson County,165.5
+38359,Milledgeville,TN,Mcnairy County,165.5
+37682,Milligan College,TN,Carter County,165.5
+38053,Millington,TN,Shelby County,239.0
+38054,Millington,TN,Shelby County,239.0
+38055,Millington,TN,Shelby County,239.0
+38083,Millington,TN,Shelby County,239.0
+37118,Milton,TN,Rutherford County,239.0
+38473,Minor Hill,TN,Giles County,162.5
+37119,Mitchellville,TN,Sumner County,165.5
+37810,Mohawk,TN,Greene County,165.5
+38573,Monroe,TN,Overton County,162.5
+37356,Monteagle,TN,Grundy County,165.5
+38574,Monterey,TN,Putnam County,219.5
+37811,Mooresburg,TN,Hawkins County,165.5
+38361,Morris Chapel,TN,Hardin County,165.5
+37357,Morrison,TN,Warren County,165.5
+37813,Morristown,TN,Hamblen County,165.5
+37814,Morristown,TN,Hamblen County,165.5
+37815,Morristown,TN,Hamblen County,165.5
+37816,Morristown,TN,Hamblen County,165.5
+38057,Moscow,TN,Fayette County,165.5
+37818,Mosheim,TN,Greene County,165.5
+37645,Mount Carmel,TN,Hawkins County,165.5
+37121,Mount Juliet,TN,Wilson County,249.5
+37122,Mount Juliet,TN,Wilson County,249.5
+38474,Mount Pleasant,TN,Maury County,165.5
+37683,Mountain City,TN,Johnson County,165.5
+37684,Mountain Home,TN,Washington County,165.5
+37359,Mulberry,TN,Lincoln County,162.5
+38058,Munford,TN,Tipton County,165.5
+37127,Murfreesboro,TN,Rutherford County,239.0
+37128,Murfreesboro,TN,Rutherford County,239.0
+37129,Murfreesboro,TN,Rutherford County,239.0
+37130,Murfreesboro,TN,Rutherford County,239.0
+37131,Murfreesboro,TN,Rutherford County,239.0
+37132,Murfreesboro,TN,Rutherford County,239.0
+37133,Murfreesboro,TN,Rutherford County,239.0
+37201,Nashville,TN,Davidson County,398.0
+37202,Nashville,TN,Davidson County,398.0
+37203,Nashville,TN,Davidson County,398.0
+37204,Nashville,TN,Davidson County,398.0
+37205,Nashville,TN,Davidson County,398.0
+37206,Nashville,TN,Davidson County,398.0
+37207,Nashville,TN,Davidson County,398.0
+37208,Nashville,TN,Davidson County,398.0
+37209,Nashville,TN,Davidson County,398.0
+37210,Nashville,TN,Davidson County,398.0
+37211,Nashville,TN,Davidson County,398.0
+37212,Nashville,TN,Davidson County,398.0
+37213,Nashville,TN,Davidson County,398.0
+37214,Nashville,TN,Davidson County,398.0
+37215,Nashville,TN,Davidson County,398.0
+37216,Nashville,TN,Davidson County,398.0
+37217,Nashville,TN,Davidson County,398.0
+37218,Nashville,TN,Davidson County,398.0
+37219,Nashville,TN,Davidson County,398.0
+37220,Nashville,TN,Davidson County,398.0
+37221,Nashville,TN,Davidson County,398.0
+37222,Nashville,TN,Davidson County,398.0
+37224,Nashville,TN,Davidson County,398.0
+37227,Nashville,TN,Davidson County,398.0
+37228,Nashville,TN,Davidson County,398.0
+37229,Nashville,TN,Davidson County,398.0
+37230,Nashville,TN,Davidson County,398.0
+37232,Nashville,TN,Davidson County,398.0
+37234,Nashville,TN,Davidson County,398.0
+37235,Nashville,TN,Davidson County,398.0
+37236,Nashville,TN,Davidson County,398.0
+37238,Nashville,TN,Davidson County,398.0
+37240,Nashville,TN,Davidson County,398.0
+37241,Nashville,TN,Davidson County,398.0
+37242,Nashville,TN,Davidson County,398.0
+37243,Nashville,TN,Davidson County,398.0
+37244,Nashville,TN,Davidson County,398.0
+37246,Nashville,TN,Davidson County,398.0
+37250,Nashville,TN,Davidson County,398.0
+37820,New Market,TN,Jefferson County,165.5
+37824,New Tazewell,TN,Claiborne County,165.5
+37825,New Tazewell,TN,Claiborne County,165.5
+38059,Newbern,TN,Dyer County,165.5
+37819,Newcomb,TN,Campbell County,165.5
+37821,Newport,TN,Cocke County,165.5
+37822,Newport,TN,Cocke County,165.5
+37826,Niota,TN,Mcminn County,165.5
+37135,Nolensville,TN,Williamson County,189.0
+37136,Norene,TN,Wilson County,249.5
+37360,Normandy,TN,Coffee County,165.5
+37828,Norris,TN,Anderson County,165.5
+37830,Oak Ridge,TN,Anderson County,165.5
+37831,Oak Ridge,TN,Anderson County,165.5
+37829,Oakdale,TN,Morgan County,162.5
+38362,Oakfield,TN,Madison County,165.5
+38060,Oakland,TN,Fayette County,165.5
+38240,Obion,TN,Obion County,165.5
+37361,Ocoee,TN,Polk County,162.5
+37362,Old Fort,TN,Polk County,162.5
+37138,Old Hickory,TN,Davidson County,398.0
+38475,Olivehill,TN,Hardin County,165.5
+37840,Oliver Springs,TN,Roane County,165.5
+37841,Oneida,TN,Scott County,162.5
+37363,Ooltewah,TN,Hamilton County,279.0
+37141,Orlinda,TN,Robertson County,162.5
+38577,Pall Mall,TN,Pickett County,165.5
+37365,Palmer,TN,Grundy County,165.5
+38241,Palmersville,TN,Weakley County,165.5
+37142,Palmyra,TN,Montgomery County,239.0
+38242,Paris,TN,Henry County,165.5
+37843,Parrottsville,TN,Cocke County,165.5
+38363,Parsons,TN,Decatur County,162.5
+37143,Pegram,TN,Cheatham County,162.5
+37366,Pelham,TN,Grundy County,165.5
+37144,Petersburg,TN,Lincoln County,162.5
+37845,Petros,TN,Morgan County,162.5
+37846,Philadelphia,TN,Loudon County,234.5
+38365,Pickwick Dam,TN,Hardin County,165.5
+37863,Pigeon Forge,TN,Sevier County,239.0
+37868,Pigeon Forge,TN,Sevier County,239.0
+37367,Pikeville,TN,Bledsoe County,165.5
+37686,Piney Flats,TN,Sullivan County,165.5
+37699,Piney Flats,TN,Sullivan County,165.5
+38366,Pinson,TN,Madison County,165.5
+37847,Pioneer,TN,Scott County,165.5
+38578,Pleasant Hill,TN,Cumberland County,165.5
+37145,Pleasant Shade,TN,Smith County,165.5
+37146,Pleasant View,TN,Cheatham County,162.5
+38061,Pocahontas,TN,Hardeman County,165.5
+37148,Portland,TN,Sumner County,165.5
+37848,Powder Springs,TN,Grainger County,165.5
+37849,Powell,TN,Knox County,165.5
+38476,Primm Springs,TN,Williamson County,189.0
+38477,Prospect,TN,Giles County,162.5
+37851,Pruden,TN,Claiborne County,165.5
+38478,Pulaski,TN,Giles County,162.5
+38251,Puryear,TN,Henry County,165.5
+38579,Quebeck,TN,White County,165.5
+38367,Ramer,TN,Mcnairy County,165.5
+37149,Readyville,TN,Rutherford County,239.0
+38368,Reagan,TN,Henderson County,165.5
+37369,Reliance,TN,Polk County,162.5
+37370,Riceville,TN,Mcminn County,165.5
+38580,Rickman,TN,Overton County,162.5
+37151,Riddleton,TN,Smith County,165.5
+38080,Ridgely,TN,Lake County,162.5
+37152,Ridgetop,TN,Robertson County,162.5
+38063,Ripley,TN,Lauderdale County,162.5
+38253,Rives,TN,Obion County,165.5
+37687,Roan Mountain,TN,Carter County,165.5
+37852,Robbins,TN,Scott County,162.5
+38581,Rock Island,TN,Warren County,165.5
+37853,Rockford,TN,Blount County,165.5
+37153,Rockvale,TN,Rutherford County,239.0
+37854,Rockwood,TN,Roane County,165.5
+37769,Rocky Top,TN,Anderson County,165.5
+37857,Rogersville,TN,Hawkins County,165.5
+38066,Rossville,TN,Fayette County,165.5
+37733,Rugby,TN,Morgan County,162.5
+37860,Russellville,TN,Hamblen County,165.5
+38369,Rutherford,TN,Gibson County,165.5
+37861,Rutledge,TN,Grainger County,165.5
+38481,Saint Joseph,TN,Lawrence County,162.5
+37373,Sale Creek,TN,Hamilton County,279.0
+38370,Saltillo,TN,Hardin County,165.5
+38254,Samburg,TN,Obion County,165.5
+38482,Santa Fe,TN,Maury County,165.5
+38371,Sardis,TN,Henderson County,165.5
+38067,Saulsbury,TN,Hardeman County,165.5
+38372,Savannah,TN,Hardin County,165.5
+38374,Scotts Hill,TN,Henderson County,162.5
+38375,Selmer,TN,Mcnairy County,165.5
+37374,Sequatchie,TN,Marion County,165.5
+37862,Sevierville,TN,Sevier County,239.0
+37864,Sevierville,TN,Sevier County,239.0
+37876,Sevierville,TN,Sevier County,239.0
+37375,Sewanee,TN,Franklin County,165.5
+37383,Sewanee,TN,Franklin County,165.5
+37865,Seymour,TN,Sevier County,239.0
+37688,Shady Valley,TN,Johnson County,165.5
+38255,Sharon,TN,Weakley County,165.5
+37866,Sharps Chapel,TN,Union County,165.5
+37867,Shawanee,TN,Claiborne County,165.5
+37160,Shelbyville,TN,Bedford County,165.5
+37161,Shelbyville,TN,Bedford County,165.5
+37162,Shelbyville,TN,Bedford County,165.5
+37376,Sherwood,TN,Franklin County,165.5
+38376,Shiloh,TN,Hardin County,165.5
+37377,Signal Mountain,TN,Hamilton County,279.0
+38377,Silerton,TN,Hardeman County,165.5
+38582,Silver Point,TN,Putnam County,219.5
+37165,Slayden,TN,Dickson County,165.5
+37378,Smartt,TN,Warren County,165.5
+37166,Smithville,TN,Dekalb County,162.5
+37167,Smyrna,TN,Rutherford County,239.0
+37869,Sneedville,TN,Hancock County,162.5
+37379,Soddy Daisy,TN,Hamilton County,279.0
+37384,Soddy Daisy,TN,Hamilton County,279.0
+38068,Somerville,TN,Fayette County,165.5
+38257,South Fulton,TN,Obion County,165.5
+37380,South Pittsburg,TN,Marion County,165.5
+37171,Southside,TN,Montgomery County,239.0
+38583,Sparta,TN,White County,165.5
+37870,Speedwell,TN,Claiborne County,165.5
+38585,Spencer,TN,Van Buren County,162.5
+37381,Spring City,TN,Rhea County,165.5
+38378,Spring Creek,TN,Madison County,165.5
+37174,Spring Hill,TN,Williamson County,165.5
+37172,Springfield,TN,Robertson County,162.5
+38256,Springville,TN,Henry County,165.5
+38069,Stanton,TN,Haywood County,165.5
+38379,Stantonville,TN,Mcnairy County,165.5
+37871,Strawberry Plains,TN,Jefferson County,165.5
+38380,Sugar Tree,TN,Decatur County,162.5
+38483,Summertown,TN,Lawrence County,162.5
+37382,Summitville,TN,Coffee County,165.5
+37872,Sunbright,TN,Morgan County,162.5
+37873,Surgoinsville,TN,Hawkins County,165.5
+37874,Sweetwater,TN,Monroe County,165.5
+38488,Taft,TN,Lincoln County,162.5
+37877,Talbott,TN,Hamblen County,165.5
+37878,Tallassee,TN,Blount County,165.5
+37879,Tazewell,TN,Claiborne County,165.5
+37690,Telford,TN,Washington County,165.5
+37385,Tellico Plains,TN,Monroe County,165.5
+37880,Ten Mile,TN,Meigs County,165.5
+37179,Thompsons Station,TN,Williamson County,189.0
+37881,Thorn Hill,TN,Grainger County,165.5
+38070,Tigrett,TN,Dyer County,165.5
+38071,Tipton,TN,Tipton County,165.5
+38079,Tiptonville,TN,Lake County,162.5
+38381,Toone,TN,Hardeman County,165.5
+37882,Townsend,TN,Blount County,165.5
+37387,Tracy City,TN,Grundy County,165.5
+37691,Trade,TN,Johnson County,165.5
+38382,Trenton,TN,Gibson County,165.5
+38258,Trezevant,TN,Carroll County,162.5
+38259,Trimble,TN,Dyer County,165.5
+38260,Troy,TN,Obion County,165.5
+37388,Tullahoma,TN,Coffee County,165.5
+37391,Turtletown,TN,Polk County,162.5
+37692,Unicoi,TN,Unicoi County,165.5
+38261,Union City,TN,Obion County,165.5
+38281,Union City,TN,Obion County,165.5
+37180,Unionville,TN,Bedford County,165.5
+37181,Vanleer,TN,Dickson County,165.5
+37394,Viola,TN,Warren County,165.5
+37885,Vonore,TN,Monroe County,165.5
+37886,Walland,TN,Blount County,165.5
+38587,Walling,TN,White County,165.5
+37887,Wartburg,TN,Morgan County,162.5
+37183,Wartrace,TN,Bedford County,165.5
+37888,Washburn,TN,Grainger County,165.5
+37694,Watauga,TN,Carter County,165.5
+37184,Watertown,TN,Wilson County,249.5
+38485,Waynesboro,TN,Wayne County,165.5
+37186,Westmoreland,TN,Sumner County,165.5
+38486,Westpoint,TN,Lawrence County,162.5
+38387,Westport,TN,Carroll County,162.5
+37187,White Bluff,TN,Dickson County,165.5
+37188,White House,TN,Robertson County,162.5
+37890,White Pine,TN,Jefferson County,165.5
+37189,Whites Creek,TN,Davidson County,398.0
+37891,Whitesburg,TN,Hamblen County,165.5
+37396,Whiteside,TN,Marion County,165.5
+38075,Whiteville,TN,Hardeman County,165.5
+37397,Whitwell,TN,Marion County,165.5
+38589,Wilder,TN,Fentress County,165.5
+38388,Wildersville,TN,Henderson County,165.5
+38487,Williamsport,TN,Maury County,165.5
+38076,Williston,TN,Fayette County,165.5
+37398,Winchester,TN,Franklin County,165.5
+37892,Winfield,TN,Scott County,162.5
+37190,Woodbury,TN,Cannon County,165.5
+38271,Woodland Mills,TN,Obion County,165.5
+37191,Woodlawn,TN,Montgomery County,239.0
+38077,Wynnburg,TN,Lake County,162.5
+38389,Yorkville,TN,Gibson County,165.5
+38390,Yuma,TN,Carroll County,162.5

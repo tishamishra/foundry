@@ -1,0 +1,597 @@
+zip,city,state,county,payout
+25606,Accoville,WV,Logan County,32.5
+24910,Alderson,WV,Greenbrier County,32.5
+25501,Alkol,WV,Lincoln County,32.5
+25810,Allen Junction,WV,Wyoming County,32.5
+25002,Alloy,WV,Fayette County,32.5
+26320,Alma,WV,Tyler County,32.5
+25003,Alum Creek,WV,Lincoln County,32.5
+25607,Amherstdale,WV,Logan County,32.5
+25811,Amigo,WV,Wyoming County,32.5
+24808,Anawalt,WV,Mcdowell County,32.5
+25812,Ansted,WV,Fayette County,32.5
+25502,Apple Grove,WV,Mason County,32.5
+24915,Arbovale,WV,Pocahontas County,32.5
+25007,Arnett,WV,Raleigh County,32.5
+25008,Artie,WV,Raleigh County,32.5
+24916,Asbury,WV,Greenbrier County,32.5
+25009,Ashford,WV,Boone County,32.5
+25503,Ashton,WV,Mason County,32.5
+24712,Athens,WV,Mercer County,32.5
+24811,Avondale,WV,Mcdowell County,32.5
+25608,Baisden,WV,Mingo County,32.5
+26801,Baker,WV,Hardy County,42.5
+25410,Bakerton,WV,Washington County,42.5
+24918,Ballard,WV,Monroe County,32.5
+25011,Bancroft,WV,Putnam County,32.5
+25504,Barboursville,WV,Cabell County,32.5
+24813,Bartley,WV,Mcdowell County,32.5
+24920,Bartow,WV,Pocahontas County,32.5
+25813,Beaver,WV,Raleigh County,32.5
+25801,Beckley,WV,Raleigh County,32.5
+25802,Beckley,WV,Raleigh County,32.5
+26030,Beech Bottom,WV,Brooke County,32.5
+24714,Beeson,WV,Mercer County,32.5
+25015,Belle,WV,Kanawha County,32.5
+26656,Belva,WV,Nicholas County,32.5
+26031,Benwood,WV,Marshall County,32.5
+26298,Bergoo,WV,Webster County,32.5
+24815,Berwind,WV,Mcdowell County,32.5
+26032,Bethany,WV,Brooke County,32.5
+25019,Bickmore,WV,Clay County,32.5
+25505,Big Creek,WV,Logan County,32.5
+26561,Big Run,WV,Wetzel County,32.5
+24816,Big Sandy,WV,Mcdowell County,32.5
+25021,Bim,WV,Boone County,32.5
+26610,Birch River,WV,Nicholas County,32.5
+25022,Blair,WV,Logan County,32.5
+25024,Bloomingrose,WV,Boone County,32.5
+25025,Blount,WV,Kanawha County,32.5
+25026,Blue Creek,WV,Kanawha County,32.5
+25028,Bob White,WV,Boone County,32.5
+25817,Bolt,WV,Raleigh County,32.5
+25030,Bomont,WV,Clay County,32.5
+25031,Boomer,WV,Fayette County,32.5
+25665,Borderland,WV,Mingo County,32.5
+25818,Bradley,WV,Raleigh County,32.5
+24817,Bradshaw,WV,Mcdowell County,32.5
+24715,Bramwell,WV,Mercer County,32.5
+25506,Branchland,WV,Lincoln County,32.5
+26802,Brandywine,WV,Pendleton County,42.5
+25666,Breeden,WV,Mingo County,32.5
+24818,Brenton,WV,Wyoming County,32.5
+25611,Bruno,WV,Logan County,32.5
+24924,Buckeye,WV,Pocahontas County,32.5
+24716,Bud,WV,Wyoming County,32.5
+25033,Buffalo,WV,Putnam County,32.5
+26562,Burton,WV,Wetzel County,32.5
+25035,Cabin Creek,WV,Kanawha County,32.5
+26855,Cabins,WV,Grant County,42.5
+24925,Caldwell,WV,Greenbrier County,32.5
+26660,Calvin,WV,Nicholas County,32.5
+26208,Camden On Gauley,WV,Webster County,32.5
+26033,Cameron,WV,Marshall County,32.5
+25820,Camp Creek,WV,Mercer County,32.5
+25036,Cannelton,WV,Fayette County,32.5
+26662,Canvas,WV,Nicholas County,32.5
+24927,Cass,WV,Pocahontas County,32.5
+25039,Cedar Grove,WV,Kanawha County,32.5
+25507,Ceredo,WV,Wayne County,32.5
+25508,Chapmanville,WV,Logan County,32.5
+25414,Charles Town,WV,Jefferson County,42.5
+25301,Charleston,WV,Kanawha County,32.5
+25302,Charleston,WV,Kanawha County,32.5
+25304,Charleston,WV,Kanawha County,32.5
+25305,Charleston,WV,Kanawha County,32.5
+25306,Charleston,WV,Kanawha County,32.5
+25311,Charleston,WV,Kanawha County,32.5
+25312,Charleston,WV,Kanawha County,32.5
+25313,Charleston,WV,Kanawha County,32.5
+25314,Charleston,WV,Kanawha County,32.5
+25315,Charleston,WV,Kanawha County,32.5
+25317,Charleston,WV,Kanawha County,32.5
+25320,Charleston,WV,Kanawha County,32.5
+25321,Charleston,WV,Kanawha County,32.5
+25322,Charleston,WV,Kanawha County,32.5
+25323,Charleston,WV,Kanawha County,32.5
+25324,Charleston,WV,Kanawha County,32.5
+25325,Charleston,WV,Kanawha County,32.5
+25326,Charleston,WV,Kanawha County,32.5
+25327,Charleston,WV,Kanawha County,32.5
+25328,Charleston,WV,Kanawha County,32.5
+25329,Charleston,WV,Kanawha County,32.5
+25330,Charleston,WV,Kanawha County,32.5
+25331,Charleston,WV,Kanawha County,32.5
+25332,Charleston,WV,Kanawha County,32.5
+25333,Charleston,WV,Kanawha County,32.5
+25334,Charleston,WV,Kanawha County,32.5
+25335,Charleston,WV,Kanawha County,32.5
+25336,Charleston,WV,Kanawha County,32.5
+25337,Charleston,WV,Kanawha County,32.5
+25338,Charleston,WV,Kanawha County,32.5
+25339,Charleston,WV,Kanawha County,32.5
+25350,Charleston,WV,Kanawha County,32.5
+25356,Charleston,WV,Kanawha County,32.5
+25357,Charleston,WV,Kanawha County,32.5
+25358,Charleston,WV,Kanawha County,32.5
+25360,Charleston,WV,Kanawha County,32.5
+25361,Charleston,WV,Kanawha County,32.5
+25362,Charleston,WV,Kanawha County,32.5
+25364,Charleston,WV,Kanawha County,32.5
+25365,Charleston,WV,Kanawha County,32.5
+25375,Charleston,WV,Kanawha County,32.5
+25387,Charleston,WV,Kanawha County,32.5
+25389,Charleston,WV,Kanawha County,32.5
+25392,Charleston,WV,Kanawha County,32.5
+25396,Charleston,WV,Kanawha County,32.5
+25040,Charlton Heights,WV,Fayette County,32.5
+25958,Charmco,WV,Greenbrier County,32.5
+25667,Chattaroy,WV,Mingo County,32.5
+25612,Chauncey,WV,Logan County,32.5
+26034,Chester,WV,Hancock County,32.5
+26804,Circleville,WV,Pendleton County,42.5
+25043,Clay,WV,Clay County,32.5
+25044,Clear Creek,WV,Raleigh County,32.5
+24822,Clear Fork,WV,Wyoming County,32.5
+25045,Clendenin,WV,Kanawha County,32.5
+25047,Clothier,WV,Logan County,32.5
+25823,Coal City,WV,Raleigh County,32.5
+24823,Coal Mountain,WV,Wyoming County,32.5
+25048,Colcord,WV,Raleigh County,32.5
+26035,Colliers,WV,Brooke County,32.5
+25049,Comfort,WV,Boone County,32.5
+25825,Cool Ridge,WV,Raleigh County,32.5
+25614,Cora,WV,Logan County,32.5
+25826,Corinne,WV,Wyoming County,32.5
+25051,Costa,WV,Boone County,32.5
+24719,Covel,WV,Wyoming County,32.5
+26206,Cowen,WV,Webster County,32.5
+25827,Crab Orchard,WV,Raleigh County,32.5
+26205,Craigsville,WV,Nicholas County,32.5
+24931,Crawley,WV,Greenbrier County,32.5
+25669,Crum,WV,Wayne County,32.5
+24826,Cucumber,WV,Mcdowell County,32.5
+25510,Culloden,WV,Cabell County,32.5
+24827,Cyclone,WV,Wyoming County,32.5
+26036,Dallas,WV,Marshall County,32.5
+25831,Danese,WV,Fayette County,32.5
+25832,Daniels,WV,Raleigh County,32.5
+25053,Danville,WV,Boone County,32.5
+25617,Davin,WV,Logan County,32.5
+24828,Davy,WV,Mcdowell County,32.5
+25054,Dawes,WV,Kanawha County,32.5
+25057,Deep Water,WV,Fayette County,32.5
+25670,Delbarton,WV,Mingo County,32.5
+26217,Diana,WV,Webster County,32.5
+26617,Dille,WV,Clay County,32.5
+25671,Dingess,WV,Mingo County,32.5
+25059,Dixie,WV,Fayette County,32.5
+25060,Dorothy,WV,Raleigh County,32.5
+25833,Dothan,WV,Fayette County,32.5
+26667,Drennen,WV,Nicholas County,32.5
+25062,Dry Creek,WV,Raleigh County,32.5
+25061,Drybranch,WV,Kanawha County,32.5
+25063,Duck,WV,Braxton County,32.5
+25064,Dunbar,WV,Kanawha County,32.5
+25511,Dunlow,WV,Wayne County,32.5
+24934,Dunmore,WV,Pocahontas County,32.5
+26264,Durbin,WV,Pocahontas County,32.5
+25067,East Bank,WV,Kanawha County,32.5
+25512,East Lynn,WV,Wayne County,32.5
+25836,Eccles,WV,Raleigh County,32.5
+24829,Eckman,WV,Mcdowell County,32.5
+25672,Edgarton,WV,Mingo County,32.5
+25837,Edmond,WV,Fayette County,32.5
+24830,Elbert,WV,Mcdowell County,32.5
+25070,Eleanor,WV,Putnam County,32.5
+24831,Elkhorn,WV,Mcdowell County,32.5
+25071,Elkview,WV,Kanawha County,32.5
+26203,Erbacon,WV,Webster County,32.5
+25075,Eskdale,WV,Kanawha County,32.5
+25076,Ethel,WV,Logan County,32.5
+25839,Fairdale,WV,Raleigh County,32.5
+24902,Fairlea,WV,Greenbrier County,32.5
+25079,Falling Rock,WV,Kanawha County,32.5
+24834,Fanrock,WV,Wyoming County,32.5
+25840,Fayetteville,WV,Fayette County,32.5
+26202,Fenwick,WV,Nicholas County,32.5
+26818,Fisher,WV,Hardy County,42.5
+25841,Flat Top,WV,Mercer County,32.5
+26037,Follansbee,WV,Brooke County,32.5
+26348,Folsom,WV,Wetzel County,32.5
+24935,Forest Hill,WV,Summers County,32.5
+25514,Fort Gay,WV,Wayne County,32.5
+25081,Foster,WV,Boone County,32.5
+24938,Frankford,WV,Greenbrier County,32.5
+26807,Franklin,WV,Pendleton County,42.5
+25082,Fraziers Bottom,WV,Putnam County,32.5
+24724,Freeman,WV,Mercer County,32.5
+26146,Friendly,WV,Tyler County,32.5
+25083,Gallagher,WV,Kanawha County,32.5
+25515,Gallipolis Ferry,WV,Mason County,32.5
+24941,Gap Mills,WV,Monroe County,32.5
+24836,Gary,WV,Mcdowell County,32.5
+25085,Gauley Bridge,WV,Fayette County,32.5
+25517,Genoa,WV,Wayne County,32.5
+25843,Ghent,WV,Raleigh County,32.5
+25621,Gilbert,WV,Mingo County,32.5
+26671,Gilboa,WV,Nicholas County,32.5
+25086,Glasgow,WV,Kanawha County,32.5
+25088,Glen,WV,Clay County,32.5
+26038,Glen Dale,WV,Marshall County,32.5
+25844,Glen Daniel,WV,Raleigh County,32.5
+26039,Glen Easton,WV,Marshall County,32.5
+25090,Glen Ferris,WV,Fayette County,32.5
+25845,Glen Fork,WV,Wyoming County,32.5
+25846,Glen Jean,WV,Fayette County,32.5
+25848,Glen Rogers,WV,Wyoming County,32.5
+25849,Glen White,WV,Raleigh County,32.5
+25520,Glenwood,WV,Cabell County,32.5
+25093,Gordon,WV,Boone County,32.5
+24943,Grassy Meadows,WV,Greenbrier County,32.5
+24944,Green Bank,WV,Pocahontas County,32.5
+25966,Green Sulphur Springs,WV,Summers County,32.5
+24945,Greenville,WV,Monroe County,32.5
+25521,Griffithsville,WV,Lincoln County,32.5
+26222,Hacker Valley,WV,Webster County,32.5
+25423,Halltown,WV,Jefferson County,42.5
+25523,Hamlin,WV,Lincoln County,32.5
+25102,Handley,WV,Kanawha County,32.5
+24839,Hanover,WV,Wyoming County,32.5
+25103,Hansford,WV,Kanawha County,32.5
+25851,Harper,WV,Raleigh County,32.5
+25425,Harpers Ferry,WV,Jefferson County,42.5
+25247,Hartford,WV,Mason County,32.5
+25524,Harts,WV,Lincoln County,32.5
+25853,Helen,WV,Raleigh County,32.5
+25106,Henderson,WV,Mason County,32.5
+25624,Henlawson,WV,Logan County,32.5
+24843,Hensley,WV,Mcdowell County,32.5
+24726,Herndon,WV,Wyoming County,32.5
+25107,Hernshaw,WV,Kanawha County,32.5
+25108,Hewett,WV,Boone County,32.5
+24729,Hiawatha,WV,Mercer County,32.5
+25854,Hico,WV,Fayette County,32.5
+24946,Hillsboro,WV,Pocahontas County,32.5
+25855,Hilltop,WV,Fayette County,32.5
+25951,Hinton,WV,Summers County,32.5
+25625,Holden,WV,Logan County,32.5
+25109,Hometown,WV,Putnam County,32.5
+25110,Hugheston,WV,Kanawha County,32.5
+26575,Hundred,WV,Wetzel County,32.5
+25701,Huntington,WV,Cabell County,32.5
+25702,Huntington,WV,Cabell County,32.5
+25703,Huntington,WV,Cabell County,32.5
+25704,Huntington,WV,Wayne County,32.5
+25705,Huntington,WV,Cabell County,32.5
+25706,Huntington,WV,Cabell County,32.5
+25707,Huntington,WV,Cabell County,32.5
+25708,Huntington,WV,Cabell County,32.5
+25709,Huntington,WV,Cabell County,32.5
+25710,Huntington,WV,Cabell County,32.5
+25711,Huntington,WV,Cabell County,32.5
+25712,Huntington,WV,Cabell County,32.5
+25713,Huntington,WV,Cabell County,32.5
+25714,Huntington,WV,Cabell County,32.5
+25715,Huntington,WV,Cabell County,32.5
+25716,Huntington,WV,Cabell County,32.5
+25717,Huntington,WV,Cabell County,32.5
+25718,Huntington,WV,Cabell County,32.5
+25719,Huntington,WV,Cabell County,32.5
+25720,Huntington,WV,Cabell County,32.5
+25721,Huntington,WV,Cabell County,32.5
+25722,Huntington,WV,Cabell County,32.5
+25723,Huntington,WV,Cabell County,32.5
+25724,Huntington,WV,Cabell County,32.5
+25725,Huntington,WV,Cabell County,32.5
+25726,Huntington,WV,Cabell County,32.5
+25727,Huntington,WV,Cabell County,32.5
+25728,Huntington,WV,Cabell County,32.5
+25729,Huntington,WV,Cabell County,32.5
+25755,Huntington,WV,Cabell County,32.5
+25770,Huntington,WV,Cabell County,32.5
+25771,Huntington,WV,Cabell County,32.5
+25772,Huntington,WV,Cabell County,32.5
+25773,Huntington,WV,Cabell County,32.5
+25774,Huntington,WV,Cabell County,32.5
+25775,Huntington,WV,Cabell County,32.5
+25776,Huntington,WV,Cabell County,32.5
+25777,Huntington,WV,Cabell County,32.5
+25778,Huntington,WV,Cabell County,32.5
+25779,Huntington,WV,Cabell County,32.5
+25526,Hurricane,WV,Putnam County,32.5
+24844,Iaeger,WV,Mcdowell County,32.5
+24845,Ikes Fork,WV,Wyoming County,32.5
+25111,Indore,WV,Clay County,32.5
+25112,Institute,WV,Kanawha County,32.5
+24846,Isaban,WV,Mingo County,32.5
+24847,Itmann,WV,Wyoming County,32.5
+25113,Ivydale,WV,Clay County,32.5
+26377,Jacksonburg,WV,Wetzel County,32.5
+25114,Jeffrey,WV,Boone County,32.5
+24848,Jenkinjones,WV,Mcdowell County,32.5
+24849,Jesse,WV,Wyoming County,32.5
+24850,Jolo,WV,Mcdowell County,32.5
+25857,Josephine,WV,Raleigh County,32.5
+25529,Julian,WV,Boone County,32.5
+25969,Jumping Branch,WV,Summers County,32.5
+25115,Kanawha Falls,WV,Fayette County,32.5
+25430,Kearneysville,WV,Jefferson County,42.5
+24731,Kegley,WV,Mercer County,32.5
+24732,Kellysville,WV,Mercer County,32.5
+25530,Kenova,WV,Wayne County,32.5
+25674,Kermit,WV,Mingo County,32.5
+26675,Keslers Cross Lanes,WV,Nicholas County,32.5
+25534,Kiahsville,WV,Wayne County,32.5
+24853,Kimball,WV,Mcdowell County,32.5
+25118,Kimberly,WV,Fayette County,32.5
+25119,Kincaid,WV,Fayette County,32.5
+25628,Kistler,WV,Logan County,32.5
+24854,Kopperston,WV,Wyoming County,32.5
+24855,Kyle,WV,Mcdowell County,32.5
+25121,Lake,WV,Logan County,32.5
+25860,Lanark,WV,Raleigh County,32.5
+25862,Lansing,WV,Fayette County,32.5
+24733,Lashmeet,WV,Mercer County,32.5
+25535,Lavalette,WV,Wayne County,32.5
+25864,Layland,WV,Fayette County,32.5
+26676,Leivasy,WV,Nicholas County,32.5
+25676,Lenore,WV,Mingo County,32.5
+25123,Leon,WV,Mason County,32.5
+25971,Lerona,WV,Mercer County,32.5
+25537,Lesage,WV,Cabell County,32.5
+25972,Leslie,WV,Greenbrier County,32.5
+25865,Lester,WV,Raleigh County,32.5
+25253,Letart,WV,Mason County,32.5
+24901,Lewisburg,WV,Greenbrier County,32.5
+25124,Liberty,WV,Putnam County,32.5
+24951,Lindside,WV,Monroe County,32.5
+26581,Littleton,WV,Wetzel County,32.5
+25125,Lizemores,WV,Clay County,32.5
+25866,Lochgelly,WV,Fayette County,32.5
+25601,Logan,WV,Logan County,32.5
+25126,London,WV,Kanawha County,32.5
+25868,Lookout,WV,Fayette County,32.5
+25630,Lorado,WV,Logan County,32.5
+26810,Lost City,WV,Hardy County,42.5
+25632,Lyburn,WV,Logan County,32.5
+24857,Lynco,WV,Wyoming County,32.5
+25870,Maben,WV,Wyoming County,32.5
+25871,Mabscott,WV,Raleigh County,32.5
+25873,MacArthur,WV,Raleigh County,32.5
+25130,Madison,WV,Boone County,32.5
+25634,Mallory,WV,Logan County,32.5
+25132,Mammoth,WV,Kanawha County,32.5
+25635,Man,WV,Logan County,32.5
+24859,Marianna,WV,Wyoming County,32.5
+24954,Marlinton,WV,Pocahontas County,32.5
+25260,Mason,WV,Mason County,32.5
+25678,Matewan,WV,Mingo County,32.5
+24860,Matheny,WV,Wyoming County,32.5
+26812,Mathias,WV,Hardy County,42.5
+24736,Matoaka,WV,Mercer County,32.5
+24957,Maxwelton,WV,Greenbrier County,32.5
+24861,Maybeury,WV,Mcdowell County,32.5
+25133,Maysel,WV,Clay County,32.5
+26833,Maysville,WV,Grant County,42.5
+25875,McGraws,WV,Wyoming County,32.5
+26040,Mcmechen,WV,Marshall County,32.5
+25976,Meadow Bridge,WV,Fayette County,32.5
+25977,Meadow Creek,WV,Summers County,32.5
+25134,Miami,WV,Kanawha County,32.5
+26149,Middlebourne,WV,Tyler County,32.5
+25540,Midkiff,WV,Lincoln County,32.5
+25878,Midway,WV,Raleigh County,32.5
+26838,Milam,WV,Hardy County,42.5
+25432,Millville,WV,Jefferson County,42.5
+25541,Milton,WV,Cabell County,32.5
+25879,Minden,WV,Fayette County,32.5
+24862,Mohawk,WV,Mcdowell County,32.5
+24737,Montcalm,WV,Mercer County,32.5
+25136,Montgomery,WV,Fayette County,32.5
+26836,Moorefield,WV,Hardy County,42.5
+26041,Moundsville,WV,Marshall County,32.5
+25139,Mount Carbon,WV,Fayette County,32.5
+25637,Mount Gay,WV,Logan County,32.5
+25880,Mount Hope,WV,Raleigh County,32.5
+26678,Mount Lookout,WV,Nicholas County,32.5
+26679,Mount Nebo,WV,Nicholas County,32.5
+25185,Mount Olive,WV,Fayette County,32.5
+25882,Mullens,WV,Wyoming County,32.5
+25544,Myra,WV,Lincoln County,32.5
+26680,Nallen,WV,Fayette County,32.5
+25140,Naoma,WV,Raleigh County,32.5
+25685,Naugatuck,WV,Mingo County,32.5
+25141,Nebo,WV,Clay County,32.5
+25142,Nellis,WV,Boone County,32.5
+24738,Nemours,WV,Mercer County,32.5
+26681,Nettie,WV,Nicholas County,32.5
+26047,New Cumberland,WV,Hancock County,32.5
+25265,New Haven,WV,Mason County,32.5
+26056,New Manchester,WV,Hancock County,32.5
+26155,New Martinsville,WV,Wetzel County,32.5
+24867,New Richmond,WV,Wyoming County,32.5
+26050,Newell,WV,Hancock County,32.5
+24866,Newhall,WV,Mcdowell County,32.5
+25686,Newtown,WV,Mingo County,32.5
+25978,Nimitz,WV,Summers County,32.5
+25143,Nitro,WV,Kanawha County,32.5
+25688,North Matewan,WV,Mingo County,32.5
+24869,North Spring,WV,Wyoming County,32.5
+24868,Northfork,WV,Mcdowell County,32.5
+25901,Oak Hill,WV,Fayette County,32.5
+24870,Oceana,WV,Wyoming County,32.5
+25902,Odd,WV,Raleigh County,32.5
+26845,Old Fields,WV,Hardy County,42.5
+25638,Omar,WV,Logan County,32.5
+25545,Ona,WV,Cabell County,32.5
+26886,Onego,WV,Pendleton County,42.5
+25148,Orgas,WV,Boone County,32.5
+25149,Ottawa,WV,Boone County,32.5
+26159,Paden City,WV,Wetzel County,32.5
+25152,Page,WV,Fayette County,32.5
+24871,Pageton,WV,Mcdowell County,32.5
+24872,Panther,WV,Mcdowell County,32.5
+25904,Pax,WV,Fayette County,32.5
+24873,Paynesville,WV,Mcdowell County,32.5
+25639,Peach Creek,WV,Logan County,32.5
+25547,Pecks Mill,WV,Logan County,32.5
+24962,Pence Springs,WV,Summers County,32.5
+26847,Petersburg,WV,Grant County,42.5
+24963,Peterstown,WV,Monroe County,32.5
+25154,Peytona,WV,Boone County,32.5
+25156,Pinch,WV,Kanawha County,32.5
+26419,Pine Grove,WV,Wetzel County,32.5
+24874,Pineville,WV,Wyoming County,32.5
+25906,Piney View,WV,Raleigh County,32.5
+25979,Pipestem,WV,Summers County,32.5
+25159,Poca,WV,Putnam County,32.5
+25550,Point Pleasant,WV,Mason County,32.5
+25160,Pond Gap,WV,Kanawha County,32.5
+26684,Pool,WV,Nicholas County,32.5
+26162,Porters Falls,WV,Wetzel County,32.5
+25161,Powellton,WV,Fayette County,32.5
+25162,Pratt,WV,Kanawha County,32.5
+24878,Premier,WV,Mcdowell County,32.5
+25555,Prichard,WV,Wayne County,32.5
+25907,Prince,WV,Fayette County,32.5
+24739,Princeton,WV,Mercer County,32.5
+24740,Princeton,WV,Mercer County,32.5
+25908,Princewick,WV,Raleigh County,32.5
+25164,Procious,WV,Clay County,32.5
+26055,Proctor,WV,Marshall County,32.5
+25909,Prosperity,WV,Raleigh County,32.5
+25981,Quinwood,WV,Greenbrier County,32.5
+25165,Racine,WV,Boone County,32.5
+25690,Ragland,WV,Mingo County,32.5
+25962,Rainelle,WV,Greenbrier County,32.5
+25911,Raleigh,WV,Raleigh County,32.5
+25557,Ranger,WV,Lincoln County,32.5
+25438,Ranson,WV,Jefferson County,42.5
+25913,Ravencliff,WV,Wyoming County,32.5
+25691,Rawl,WV,Mingo County,32.5
+24879,Raysal,WV,Mcdowell County,32.5
+26167,Reader,WV,Wetzel County,32.5
+25168,Red House,WV,Putnam County,32.5
+25692,Red Jacket,WV,Mingo County,32.5
+24966,Renick,WV,Greenbrier County,32.5
+25915,Rhodell,WV,Raleigh County,32.5
+26261,Richwood,WV,Nicholas County,32.5
+25169,Ridgeview,WV,Boone County,32.5
+25441,Rippon,WV,Jefferson County,42.5
+26814,Riverton,WV,Pendleton County,42.5
+25173,Robson,WV,Fayette County,32.5
+24747,Rock,WV,Mercer County,32.5
+25174,Rock Creek,WV,Raleigh County,32.5
+24880,Rock View,WV,Wyoming County,32.5
+24881,Roderfield,WV,Mcdowell County,32.5
+24970,Ronceverte,WV,Greenbrier County,32.5
+25984,Rupert,WV,Greenbrier County,32.5
+25916,Sabine,WV,Wyoming County,32.5
+25177,Saint Albans,WV,Kanawha County,32.5
+25559,Salt Rock,WV,Cabell County,32.5
+25985,Sandstone,WV,Summers County,32.5
+25644,Sarah Ann,WV,Logan County,32.5
+25876,Saulsville,WV,Wyoming County,32.5
+25180,Saxon,WV,Raleigh County,32.5
+25917,Scarbro,WV,Fayette County,32.5
+25560,Scott Depot,WV,Putnam County,32.5
+24974,Secondcreekx,WV,Monroe County,32.5
+26884,Seneca Rocks,WV,Pendleton County,42.5
+25181,Seth,WV,Boone County,32.5
+25918,Shady Spring,WV,Raleigh County,32.5
+25183,Sharples,WV,Logan County,32.5
+25442,Shenandoah Junction,WV,Jefferson County,42.5
+25443,Shepherdstown,WV,Jefferson County,42.5
+26434,Shirley,WV,Tyler County,32.5
+25562,Shoals,WV,Wayne County,32.5
+26058,Short Creek,WV,Brooke County,32.5
+24882,Simon,WV,Wyoming County,32.5
+24976,Sinks Grove,WV,Monroe County,32.5
+26175,Sistersville,WV,Tyler County,32.5
+25919,Skelton,WV,Raleigh County,32.5
+25920,Slab Fork,WV,Raleigh County,32.5
+26291,Slatyfork,WV,Pocahontas County,32.5
+25186,Smithers,WV,Fayette County,32.5
+26437,Smithfield,WV,Wetzel County,32.5
+24977,Smoot,WV,Greenbrier County,32.5
+26209,Snowshoe,WV,Pocahontas County,32.5
+25564,Sod,WV,Lincoln County,32.5
+25921,Sophia,WV,Raleigh County,32.5
+25303,South Charleston,WV,Kanawha County,32.5
+25309,South Charleston,WV,Kanawha County,32.5
+25187,Southside,WV,Mason County,32.5
+25922,Spanishburg,WV,Mercer County,32.5
+25986,Spring Dale,WV,Fayette County,32.5
+25565,Spurlockville,WV,Lincoln County,32.5
+24884,Squire,WV,Mcdowell County,32.5
+25927,Stanaford,WV,Raleigh County,32.5
+25928,Stephenson,WV,Wyoming County,32.5
+25646,Stollings,WV,Logan County,32.5
+26815,Sugar Grove,WV,Pendleton County,42.5
+25567,Sumerco,WV,Lincoln County,32.5
+26651,Summersville,WV,Nicholas County,32.5
+25446,Summit Point,WV,Jefferson County,42.5
+25932,Surveyor,WV,Raleigh County,32.5
+26690,Swiss,WV,Fayette County,32.5
+24887,Switchback,WV,Mcdowell County,32.5
+25647,Switzer,WV,Logan County,32.5
+25193,Sylvester,WV,Boone County,32.5
+25201,Tad,WV,Kanawha County,32.5
+24981,Talcott,WV,Summers County,32.5
+25569,Teays,WV,Putnam County,32.5
+24888,Thorpe,WV,Mcdowell County,32.5
+25936,Thurmond,WV,Fayette County,32.5
+26691,Tioga,WV,Nicholas County,32.5
+25202,Tornado,WV,Kanawha County,32.5
+26059,Triadelphia,WV,Ohio County,32.5
+25203,Turtle Creek,WV,Boone County,32.5
+25204,Twilight,WV,Boone County,32.5
+25205,Uneeda,WV,Boone County,32.5
+24983,Union,WV,Monroe County,32.5
+26866,Upper Tract,WV,Pendleton County,42.5
+26266,Upperglade,WV,Webster County,32.5
+26060,Valley Grove,WV,Ohio County,32.5
+25206,Van,WV,Boone County,32.5
+25696,Varney,WV,Mingo County,32.5
+25649,Verdunville,WV,Logan County,32.5
+25650,Verner,WV,Mingo County,32.5
+25938,Victor,WV,Fayette County,32.5
+24984,Waiteville,WV,Monroe County,32.5
+25285,Wallback,WV,Clay County,32.5
+24892,War,WV,Mcdowell County,32.5
+26851,Wardensville,WV,Hardy County,42.5
+24894,Warriormine,WV,Mcdowell County,32.5
+25570,Wayne,WV,Wayne County,32.5
+24985,Wayside,WV,Monroe County,32.5
+26288,Webster Springs,WV,Webster County,32.5
+26062,Weirton,WV,Hancock County,32.5
+24801,Welch,WV,Mcdowell County,32.5
+26070,Wellsburg,WV,Brooke County,32.5
+25287,West Columbia,WV,Mason County,32.5
+25571,West Hamlin,WV,Lincoln County,32.5
+26074,West Liberty,WV,Ohio County,32.5
+25651,Wharncliffe,WV,Mingo County,32.5
+25208,Wharton,WV,Boone County,32.5
+26003,Wheeling,WV,Ohio County,32.5
+25989,White Oak,WV,Raleigh County,32.5
+24986,White Sulphur Springs,WV,Greenbrier County,32.5
+25209,Whitesville,WV,Boone County,32.5
+25652,Whitman,WV,Logan County,32.5
+25211,Widen,WV,Clay County,32.5
+24895,Wilcoe,WV,Mcdowell County,32.5
+25653,Wilkinson,WV,Logan County,32.5
+24991,Williamsburg,WV,Greenbrier County,32.5
+25661,Williamson,WV,Mingo County,32.5
+25699,Wilsondale,WV,Wayne County,32.5
+26075,Windsor Heights,WV,Brooke County,32.5
+25213,Winfield,WV,Putnam County,32.5
+25214,Winifrede,WV,Kanawha County,32.5
+25942,Winona,WV,Fayette County,32.5
+24993,Wolfcreek,WV,Monroe County,32.5
+24751,Wolfe,WV,Mercer County,32.5
+25572,Woodville,WV,Lincoln County,32.5
+25943,Wyco,WV,Wyoming County,32.5
+24898,Wyoming,WV,Wyoming County,32.5
+25573,Yawkey,WV,Lincoln County,32.5
+25654,Yolyn,WV,Logan County,32.5

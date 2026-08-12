@@ -1,0 +1,20 @@
+<section class="sec">
+  <div class="wrap contact-grid">
+    <div class="prose">
+      <h2>Talk to a person</h2>
+      <p>The fastest way to get an answer is a phone call. We will ask what is going on, roughly where you are, and when suits you.</p>
+      <p class="big-phone"><a href="tel:{{ t.phone_link }}">{{ t.phone }}</a></p>
+      {% if t.email %}<p>Email: <a href="mailto:{{ t.email }}">{{ t.email }}</a></p>{% endif %}
+      {% if t.hours %}<p>Hours: {{ t.hours }}</p>{% endif %}
+      {% if t.address %}<p>{{ t.address }}</p>{% endif %}
+    </div>
+    <form class="form" method="post" action="#" novalidate>
+      <label>Name<input name="name" autocomplete="name" required></label>
+      <label>Phone<input name="phone" type="tel" autocomplete="tel" required></label>
+      <label>Town<input name="town" autocomplete="address-level2"></label>
+      <label>What do you need?<textarea name="detail" rows="4"></textarea></label>
+      <button class="btn btn-accent btn-lg" type="submit">Request a callback</button>
+      <p class="micro">Or call {{ t.phone }} now.</p>
+    </form>
+  </div>
+</section>

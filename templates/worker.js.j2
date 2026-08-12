@@ -1,0 +1,73 @@
+/*
+ * Foundry edge renderer for {{ domain }}
+ *
+ * Static first, edge second. Any page that was pre-rendered is served straight
+ * from assets; only the long tail reaches the renderer. That is why
+ * `prerender_top_n` is a dial rather than a fork — 0 means everything is
+ * rendered here, null means this file is never even consulted.
+ *
+ * One wildcard DNS record. No origin server. No process per site.
+ */
+
+const ROOT = "{{ domain }}";
+let INDEX = null;
+
+async function index(env, origin) {
+  if (INDEX) return INDEX;
+  const res = await env.ASSETS.fetch(new Request(origin + "/_masters/index.json"));
+  INDEX = res.ok ? await res.json() : { locations: {}, services: [], variants: 1 };
+  return INDEX;
+}
+
+function match(path, idx) {
+  const parts = path.replace(/^\/+|\/+$/g, "").split("/");
+  if (parts.length === 2 && parts[0] === "areas") {
+    const row = idx.locations[parts[1]];
+    if (row) return { row, slug: parts[1], master: "location-" + row[6] };
+  }
+  if (parts.length === 3 && parts[0] === "services" && idx.services.includes(parts[1])) {
+    const row = idx.locations[parts[2]];
+    if (row) return { row, slug: parts[2], master: "location_service-" + row[6] + "-" + parts[1] };
+  }
+  return null;
+}
+
+function fill(html, slug, row) {
+  const map = new Map([
+    ["%%city%%", row[0]], ["%%state%%", row[1]], ["%%state_abbr%%", row[2]],
+    ["%%county%%", row[3]], ["%%zips_short%%", row[4]], ["%%nearby%%", row[5]],
+    ["%%slug%%", slug], ["%%city_slug%%", slug.replace(/-[a-z]{2}$/, "")]
+  ]);
+  let out = html;
+  for (const [token, value] of map) out = out.split(token).join(value);
+  return out;
+}
+
+export default {
+  async fetch(request, env) {
+    const url = new URL(request.url);
+    let path = url.pathname;
+    if (path.startsWith("/_masters/")) return new Response("Not found", { status: 404 });
+
+    const assetPath = path.endsWith("/") ? path + "index.html"
+                    : (path.includes(".") ? path : path + "/index.html");
+    const hit = await env.ASSETS.fetch(new Request(url.origin + assetPath, request));
+    if (hit.status !== 404) return hit;
+
+    const idx = await index(env, url.origin);
+    const found = match(path, idx);
+    if (!found) return Response.redirect("https://" + ROOT + "/", 302);
+
+    const master = await env.ASSETS.fetch(
+      new Request(url.origin + "/_masters/" + found.master + ".html"));
+    if (!master.ok) return Response.redirect("https://" + ROOT + "/", 302);
+
+    return new Response(fill(await master.text(), found.slug, found.row), {
+      headers: {
+        "content-type": "text/html; charset=utf-8",
+        "cache-control": "public, max-age=3600, s-maxage=86400",
+        "x-foundry-render": "edge"
+      }
+    });
+  }
+};

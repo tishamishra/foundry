@@ -1,0 +1,127 @@
+slate:
+  label: Slate
+  brand: "#2563eb"
+  brand_dark: "#1d4ed8"
+  brand_light: "#eff6ff"
+  accent: "#f59e0b"
+  accent_text: "#1f1300"
+  ink: "#0f172a"
+  muted: "#5b6472"
+  line: "#dfe3ea"
+  surface: "#f6f8fb"
+  display_font: Georgia
+  body_font: system-ui
+
+forest:
+  label: Forest
+  brand: "#15803d"
+  brand_dark: "#14532d"
+  brand_light: "#eefaf1"
+  accent: "#facc15"
+  accent_text: "#1a1500"
+  ink: "#10251a"
+  muted: "#4d6157"
+  line: "#dbe6de"
+  surface: "#f4f9f5"
+  display_font: Georgia
+  body_font: system-ui
+
+ember:
+  label: Ember
+  brand: "#c2410c"
+  brand_dark: "#9a3412"
+  brand_light: "#fff3ec"
+  accent: "#0f766e"
+  accent_text: "#ffffff"
+  ink: "#26160f"
+  muted: "#6b544a"
+  line: "#ebdcd4"
+  surface: "#fbf6f3"
+  display_font: Georgia
+  body_font: system-ui
+
+navy:
+  label: Navy
+  brand: "#1e3a8a"
+  brand_dark: "#172554"
+  brand_light: "#eef2ff"
+  accent: "#f97316"
+  accent_text: "#1a0d00"
+  ink: "#111827"
+  muted: "#4b5563"
+  line: "#dcdfe8"
+  surface: "#f5f7fb"
+  display_font: Georgia
+  body_font: system-ui
+
+crimson:
+  label: Crimson
+  brand: "#be123c"
+  brand_dark: "#9f1239"
+  brand_light: "#fff1f4"
+  accent: "#0f766e"
+  accent_text: "#ffffff"
+  ink: "#1f1115"
+  muted: "#6b5058"
+  line: "#ecdcdf"
+  surface: "#fdf6f7"
+
+teal:
+  label: Teal
+  brand: "#0d9488"
+  brand_dark: "#0f766e"
+  brand_light: "#effbf9"
+  accent: "#f59e0b"
+  accent_text: "#1a1200"
+  ink: "#0d1f1d"
+  muted: "#4b6360"
+  line: "#d8e8e5"
+  surface: "#f3faf9"
+
+plum:
+  label: Plum
+  brand: "#7c3aed"
+  brand_dark: "#5b21b6"
+  brand_light: "#f5f0ff"
+  accent: "#f59e0b"
+  accent_text: "#1a1200"
+  ink: "#1a1424"
+  muted: "#5b5270"
+  line: "#e4dff0"
+  surface: "#f8f6fd"
+
+bronze:
+  label: Bronze
+  brand: "#a16207"
+  brand_dark: "#854d0e"
+  brand_light: "#fdf8ec"
+  accent: "#1d4ed8"
+  accent_text: "#ffffff"
+  ink: "#241c0d"
+  muted: "#655a44"
+  line: "#e8e0cd"
+  surface: "#faf7ef"
+
+midnight:
+  label: Midnight
+  brand: "#334155"
+  brand_dark: "#1e293b"
+  brand_light: "#f1f5f9"
+  accent: "#22d3ee"
+  accent_text: "#04262c"
+  ink: "#0b1220"
+  muted: "#55627a"
+  line: "#dde3ec"
+  surface: "#f4f6fa"
+
+moss:
+  label: Moss
+  brand: "#4d7c0f"
+  brand_dark: "#3f6212"
+  brand_light: "#f4faea"
+  accent: "#ea580c"
+  accent_text: "#2a0e00"
+  ink: "#16200d"
+  muted: "#556146"
+  line: "#e0e8d2"
+  surface: "#f7faf2"

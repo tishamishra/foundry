@@ -1,0 +1,906 @@
+zip,city,state,county,payout
+12404,Accord,NY,Ulster County,39.9
+14001,Akron,NY,Erie County,36.0
+12205,Albany,NY,Albany County,37.69
+12206,Albany,NY,Albany County,37.59
+11507,Albertson,NY,Nassau County,62.5
+14004,Alden,NY,Erie County,36.0
+13301,Alder Creek,NY,Oneida County,39.5
+14005,Alexander,NY,Genesee County,35.0
+10501,Amawalk,NY,Westchester County,44.0
+12501,Amenia,NY,Dutchess County,43.0
+11701,Amityville,NY,Suffolk County,49.5
+12502,Ancram,NY,Columbia County,36.0
+12503,Ancramdale,NY,Columbia County,36.0
+13731,Andes,NY,Delaware County,38.5
+14006,Angola,NY,Erie County,36.0
+12504,Annandale On Hudson,NY,Dutchess County,43.0
+14008,Appleton,NY,Niagara County,36.0
+13020,Apulia Station,NY,Onondaga County,39.5
+11931,Aquebogue,NY,Suffolk County,48.0
+10910,Arden,NY,Orange County,43.0
+10502,Ardsley,NY,Westchester County,44.0
+10503,Ardsley On Hudson,NY,Westchester County,44.0
+12406,Arkville,NY,Delaware County,38.5
+10504,Armonk,NY,Westchester County,44.0
+11102,Astoria,NY,Queens County,33.08
+11105,Astoria,NY,Queens County,49.5
+14010,Athol Springs,NY,Erie County,36.0
+11509,Atlantic Beach,NY,Nassau County,62.5
+14011,Attica,NY,Wyoming County,35.0
+12017,Austerlitz,NY,Columbia County,36.0
+13303,Ava,NY,Oneida County,39.5
+11702,Babylon,NY,Suffolk County,48.83
+11510,Baldwin,NY,Nassau County,62.5
+10505,Baldwin Place,NY,Westchester County,44.0
+13027,Baldwinsville,NY,Onondaga County,39.5
+12506,Bangall,NY,Dutchess County,43.0
+14012,Barker,NY,Niagara County,36.0
+13304,Barneveld,NY,Oneida County,39.5
+12507,Barrytown,NY,Dutchess County,43.0
+14013,Basom,NY,Genesee County,35.0
+11706,Bay Shore,NY,Suffolk County,48.83
+11705,Bayport,NY,Suffolk County,48.0
+11709,Bayville,NY,Nassau County,62.5
+12508,Beacon,NY,Dutchess County,43.0
+10911,Bear Mountain,NY,Rockland County,43.0
+12409,Bearsville,NY,Ulster County,39.9
+10506,Bedford,NY,Westchester County,44.0
+10507,Bedford Hills,NY,Westchester County,44.0
+11710,Bellmore,NY,Nassau County,62.5
+11713,Bellport,NY,Suffolk County,48.83
+10912,Bellvale,NY,Orange County,43.0
+11714,Bethpage,NY,Nassau County,62.5
+12410,Big Indian,NY,Ulster County,39.5
+12510,Billings,NY,Dutchess County,43.0
+10913,Blauvelt,NY,Rockland County,43.0
+10914,Blooming Grove,NY,Orange County,43.0
+12411,Bloomington,NY,Ulster County,39.9
+13739,Bloomville,NY,Delaware County,38.5
+13308,Blossvale,NY,Oneida County,39.5
+11715,Blue Point,NY,Suffolk County,48.0
+11716,Bohemia,NY,Suffolk County,48.0
+12412,Boiceville,NY,Ulster County,39.9
+13309,Boonville,NY,Oneida County,39.5
+14025,Boston,NY,Erie County,36.0
+13310,Bouckville,NY,Madison County,39.5
+13740,Bovina Center,NY,Delaware County,38.5
+14026,Bowmansville,NY,Erie County,36.0
+12024,Brainard,NY,Columbia County,36.0
+14027,Brant,NY,Erie County,36.0
+11717,Brentwood,NY,Suffolk County,48.0
+13029,Brewerton,NY,Onondaga County,39.5
+10509,Brewster,NY,Putnam County,44.0
+10510,Briarcliff Manor,NY,Westchester County,44.0
+11932,Bridgehampton,NY,Suffolk County,45.0
+13030,Bridgeport,NY,Madison County,39.5
+13313,Bridgewater,NY,Oneida County,39.5
+11718,Brightwaters,NY,Suffolk County,48.0
+10465,Bronx,NY,Bronx County,33.08
+10466,Bronx,NY,Bronx County,33.08
+10467,Bronx,NY,Bronx County,36.23
+10708,Bronxville,NY,Westchester County,44.0
+13314,Brookfield,NY,Madison County,39.5
+11719,Brookhaven,NY,Suffolk County,49.5
+11203,Brooklyn,NY,Kings County,33.08
+11204,Brooklyn,NY,Kings County,36.54
+11205,Brooklyn,NY,Kings County,37.8
+11206,Brooklyn,NY,Kings County,33.08
+11207,Brooklyn,NY,Kings County,37.8
+11208,Brooklyn,NY,Kings County,36.54
+11210,Brooklyn,NY,Kings County,36.12
+11211,Brooklyn,NY,Kings County,36.23
+11212,Brooklyn,NY,Kings County,33.08
+11213,Brooklyn,NY,Kings County,39.38
+11214,Brooklyn,NY,Kings County,33.08
+11215,Brooklyn,NY,Kings County,37.8
+11217,Brooklyn,NY,Kings County,36.96
+11219,Brooklyn,NY,Kings County,36.96
+11220,Brooklyn,NY,Kings County,37.8
+11221,Brooklyn,NY,Kings County,37.8
+11222,Brooklyn,NY,Kings County,34.62
+11223,Brooklyn,NY,Kings County,37.8
+11224,Brooklyn,NY,Kings County,34.62
+11225,Brooklyn,NY,Kings County,33.08
+11226,Brooklyn,NY,Kings County,39.38
+11228,Brooklyn,NY,Kings County,33.08
+11229,Brooklyn,NY,Kings County,36.23
+11230,Brooklyn,NY,Kings County,33.08
+11233,Brooklyn,NY,Kings County,33.08
+11234,Brooklyn,NY,Kings County,35.02
+11236,Brooklyn,NY,Kings County,37.8
+11237,Brooklyn,NY,Kings County,33.08
+11238,Brooklyn,NY,Kings County,37.8
+11239,Brooklyn,NY,Kings County,33.08
+10511,Buchanan,NY,Westchester County,44.0
+14201,Buffalo,NY,Erie County,36.0
+14202,Buffalo,NY,Erie County,36.0
+14203,Buffalo,NY,Erie County,36.0
+14204,Buffalo,NY,Erie County,36.0
+14205,Buffalo,NY,Erie County,36.0
+14206,Buffalo,NY,Erie County,36.0
+14207,Buffalo,NY,Erie County,36.0
+14208,Buffalo,NY,Erie County,36.0
+14209,Buffalo,NY,Erie County,36.0
+14210,Buffalo,NY,Erie County,36.0
+14211,Buffalo,NY,Erie County,36.0
+14212,Buffalo,NY,Erie County,36.0
+14213,Buffalo,NY,Erie County,36.0
+14214,Buffalo,NY,Erie County,36.0
+14215,Buffalo,NY,Erie County,36.0
+14216,Buffalo,NY,Erie County,36.0
+14217,Buffalo,NY,Erie County,36.0
+14218,Buffalo,NY,Erie County,36.0
+14219,Buffalo,NY,Erie County,36.0
+14220,Buffalo,NY,Erie County,36.0
+14221,Buffalo,NY,Erie County,36.0
+14222,Buffalo,NY,Erie County,36.0
+14223,Buffalo,NY,Erie County,36.0
+14224,Buffalo,NY,Erie County,36.0
+14225,Buffalo,NY,Erie County,36.0
+14226,Buffalo,NY,Erie County,36.0
+14227,Buffalo,NY,Erie County,36.0
+14228,Buffalo,NY,Erie County,36.0
+14231,Buffalo,NY,Erie County,36.0
+14233,Buffalo,NY,Erie County,36.0
+14240,Buffalo,NY,Erie County,36.0
+14241,Buffalo,NY,Erie County,36.0
+14260,Buffalo,NY,Erie County,36.0
+14261,Buffalo,NY,Erie County,36.0
+14263,Buffalo,NY,Erie County,36.0
+14264,Buffalo,NY,Erie County,36.0
+14265,Buffalo,NY,Erie County,36.0
+14267,Buffalo,NY,Erie County,36.0
+14269,Buffalo,NY,Erie County,36.0
+14270,Buffalo,NY,Erie County,36.0
+14272,Buffalo,NY,Erie County,36.0
+14273,Buffalo,NY,Erie County,36.0
+14276,Buffalo,NY,Erie County,36.0
+14280,Buffalo,NY,Erie County,36.0
+10915,Bullville,NY,Orange County,43.0
+14028,Burt,NY,Niagara County,36.0
+11933,Calverton,NY,Suffolk County,48.0
+11411,Cambria Heights,NY,Queens County,36.96
+13316,Camden,NY,Oneida County,39.5
+13031,Camillus,NY,Onondaga County,39.5
+10916,Campbell Hall,NY,Orange County,43.0
+12029,Canaan,NY,Columbia County,36.0
+13032,Canastota,NY,Madison County,39.5
+11514,Carle Place,NY,Nassau County,62.5
+10512,Carmel,NY,Putnam County,44.0
+13318,Cassville,NY,Oneida County,39.5
+12511,Castle Point,NY,Dutchess County,43.0
+13035,Cazenovia,NY,Madison County,39.5
+11516,Cedarhurst,NY,Nassau County,62.5
+11934,Center Moriches,NY,Suffolk County,45.0
+11720,Centereach,NY,Suffolk County,49.5
+11721,Centerport,NY,Suffolk County,48.0
+11722,Central Islip,NY,Suffolk County,48.0
+10917,Central Valley,NY,Orange County,43.0
+13319,Chadwicks,NY,Oneida County,39.5
+10514,Chappaqua,NY,Westchester County,44.0
+12037,Chatham,NY,Columbia County,36.0
+12512,Chelsea,NY,Dutchess County,43.0
+10918,Chester,NY,Orange County,43.0
+12416,Chichester,NY,Ulster County,39.5
+13037,Chittenango,NY,Madison County,39.5
+13039,Cicero,NY,Onondaga County,39.5
+10919,Circleville,NY,Orange County,43.0
+14031,Clarence,NY,Erie County,36.0
+14032,Clarence Center,NY,Erie County,36.0
+13321,Clark Mills,NY,Oneida County,39.5
+12725,Claryville,NY,Ulster County,39.5
+12513,Claverack,NY,Columbia County,36.0
+13041,Clay,NY,Onondaga County,39.5
+13322,Clayville,NY,Oneida County,39.5
+13323,Clinton,NY,Oneida County,39.5
+12514,Clinton Corners,NY,Dutchess County,43.0
+12515,Clintondale,NY,Ulster County,39.5
+13043,Clockville,NY,Madison County,39.5
+13324,Cold Brook,NY,Herkimer County,39.5
+10516,Cold Spring,NY,Putnam County,44.0
+11724,Cold Spring Harbor,NY,Suffolk County,48.0
+14033,Colden,NY,Erie County,36.0
+12050,Columbiaville,NY,Columbia County,36.0
+11725,Commack,NY,Suffolk County,48.83
+10920,Congers,NY,Rockland County,43.0
+12417,Connelly,NY,Ulster County,39.5
+12516,Copake,NY,Columbia County,36.0
+12517,Copake Falls,NY,Columbia County,36.0
+11726,Copiague,NY,Suffolk County,48.0
+11727,Coram,NY,Suffolk County,48.83
+14036,Corfu,NY,Genesee County,35.0
+12518,Cornwall,NY,Orange County,43.0
+12520,Cornwall On Hudson,NY,Orange County,43.0
+11368,Corona,NY,Queens County,37.8
+10567,Cortlandt Manor,NY,Westchester County,44.0
+12419,Cottekill,NY,Ulster County,39.9
+14037,Cowlesville,NY,Wyoming County,35.0
+12420,Cragsmoor,NY,Ulster County,39.5
+12521,Craryville,NY,Columbia County,36.0
+14038,Crittenden,NY,Erie County,36.0
+10517,Crompond,NY,Westchester County,44.0
+10518,Cross River,NY,Westchester County,44.0
+10519,Croton Falls,NY,Westchester County,44.0
+10520,Croton On Hudson,NY,Westchester County,44.0
+10521,Croton On Hudson,NY,Westchester County,44.0
+12729,Cuddebackville,NY,Orange County,43.0
+11935,Cutchogue,NY,Suffolk County,48.0
+14040,Darien Center,NY,Genesee County,35.0
+13750,Davenport,NY,Delaware County,38.5
+13751,Davenport Center,NY,Delaware County,38.5
+13052,De Ruyter,NY,Madison County,39.5
+13328,Deansboro,NY,Oneida County,39.5
+11729,Deer Park,NY,Suffolk County,48.83
+13752,Delancey,NY,Delaware County,38.5
+13753,Delhi,NY,Delaware County,38.5
+12054,Delmar,NY,Albany County,37.66
+13051,Delphi Falls,NY,Onondaga County,39.5
+12421,Denver,NY,Delaware County,38.5
+14043,Depew,NY,Erie County,36.0
+14047,Derby,NY,Erie County,36.0
+10522,Dobbs Ferry,NY,Westchester County,44.0
+13329,Dolgeville,NY,Herkimer County,39.5
+12522,Dover Plains,NY,Dutchess County,43.0
+13755,Downsville,NY,Delaware County,38.5
+13054,Durhamville,NY,Oneida County,39.5
+13331,Eagle Bay,NY,Herkimer County,39.5
+14051,East Amherst,NY,Erie County,36.0
+14052,East Aurora,NY,Erie County,36.0
+13756,East Branch,NY,Delaware County,38.5
+12060,East Chatham,NY,Columbia County,36.0
+11369,East Elmhurst,NY,Queens County,37.8
+11370,East Elmhurst,NY,Queens County,33.08
+11730,East Islip,NY,Suffolk County,48.83
+11554,East Meadow,NY,Nassau County,62.5
+13757,East Meredith,NY,Delaware County,38.5
+11940,East Moriches,NY,Suffolk County,49.5
+11731,East Northport,NY,Suffolk County,48.83
+11732,East Norwich,NY,Nassau County,62.5
+14056,East Pembroke,NY,Genesee County,35.0
+11942,East Quogue,NY,Suffolk County,45.0
+11518,East Rockaway,NY,Nassau County,62.5
+11733,East Setauket,NY,Suffolk County,48.83
+13057,East Syracuse,NY,Onondaga County,39.5
+10709,Eastchester,NY,Westchester County,44.0
+11941,Eastport,NY,Suffolk County,48.0
+13334,Eaton,NY,Madison County,39.5
+14057,Eden,NY,Erie County,36.0
+13060,Elbridge,NY,Onondaga County,39.5
+12523,Elizaville,NY,Columbia County,36.0
+12428,Ellenville,NY,Ulster County,39.5
+14059,Elma,NY,Erie County,36.0
+11373,Elmhurst,NY,Queens County,37.8
+11003,Elmont,NY,Nassau County,62.5
+10523,Elmsford,NY,Westchester County,44.0
+13061,Erieville,NY,Madison County,39.5
+12429,Esopus,NY,Ulster County,39.5
+13063,Fabius,NY,Onondaga County,39.5
+11691,Far Rockaway,NY,Queens County,36.54
+11735,Farmingdale,NY,Nassau County,62.5
+11737,Farmingdale,NY,Nassau County,62.5
+11738,Farmingville,NY,Suffolk County,48.0
+14061,Farnham,NY,Erie County,36.0
+13066,Fayetteville,NY,Onondaga County,39.5
+06390,Fishers Island,NY,Suffolk County,49.5
+12524,Fishkill,NY,Dutchess County,43.0
+13774,Fishs Eddy,NY,Delaware County,38.5
+12430,Fleischmanns,NY,Delaware County,38.5
+11001,Floral Park,NY,Nassau County,62.5
+11002,Floral Park,NY,Queens County,62.5
+10921,Florida,NY,Orange County,43.0
+11351,Flushing,NY,Queens County,33.08
+11354,Flushing,NY,Queens County,33.08
+11355,Flushing,NY,Queens County,37.8
+11358,Flushing,NY,Queens County,33.08
+11367,Flushing,NY,Queens County,36.54
+11375,Forest Hills,NY,Queens County,36.12
+13338,Forestport,NY,Oneida County,39.5
+10922,Fort Montgomery,NY,Orange County,43.0
+13340,Frankfort,NY,Herkimer County,39.5
+13775,Franklin,NY,Delaware County,38.5
+13341,Franklin Springs,NY,Oneida County,39.5
+11010,Franklin Square,NY,Nassau County,62.5
+11520,Freeport,NY,Nassau County,62.5
+11365,Fresh Meadows,NY,Queens County,37.8
+11530,Garden City,NY,Nassau County,62.5
+11531,Garden City,NY,Nassau County,62.5
+11599,Garden City,NY,Nassau County,62.5
+12525,Gardiner,NY,Ulster County,39.5
+10923,Garnerville,NY,Rockland County,43.0
+10524,Garrison,NY,Putnam County,44.0
+14067,Gasport,NY,Niagara County,36.0
+13072,Georgetown,NY,Madison County,39.5
+12526,Germantown,NY,Columbia County,36.0
+14068,Getzville,NY,Erie County,36.0
+12075,Ghent,NY,Columbia County,36.0
+12432,Glasco,NY,Ulster County,39.5
+11542,Glen Cove,NY,Nassau County,62.5
+11545,Glen Head,NY,Nassau County,62.5
+12433,Glenford,NY,Ulster County,39.9
+12527,Glenham,NY,Dutchess County,43.0
+14069,Glenwood,NY,Erie County,36.0
+11547,Glenwood Landing,NY,Nassau County,62.5
+10526,Goldens Bridge,NY,Westchester County,44.0
+10924,Goshen,NY,Orange County,43.0
+12434,Grand Gorge,NY,Delaware County,38.5
+14072,Grand Island,NY,Erie County,36.0
+10527,Granite Springs,NY,Westchester County,44.0
+11020,Great Neck,NY,Nassau County,62.5
+11021,Great Neck,NY,Nassau County,62.5
+11022,Great Neck,NY,Nassau County,62.5
+11023,Great Neck,NY,Nassau County,62.5
+11024,Great Neck,NY,Nassau County,62.5
+11026,Great Neck,NY,Nassau County,62.5
+11027,Great Neck,NY,Nassau County,62.5
+11739,Great River,NY,Suffolk County,48.0
+12435,Greenfield Park,NY,Ulster County,39.5
+11740,Greenlawn,NY,Suffolk County,48.0
+11548,Greenvale,NY,Nassau County,62.5
+10925,Greenwood Lake,NY,Orange County,43.0
+12438,Halcottsville,NY,Delaware County,38.5
+14075,Hamburg,NY,Erie County,36.0
+13782,Hamden,NY,Delaware County,38.5
+13346,Hamilton,NY,Madison County,39.5
+11946,Hampton Bays,NY,Suffolk County,48.0
+13783,Hancock,NY,Delaware County,38.5
+13786,Harpersfield,NY,Delaware County,38.5
+10926,Harriman,NY,Orange County,43.0
+10528,Harrison,NY,Westchester County,44.0
+10530,Hartsdale,NY,Westchester County,44.0
+10706,Hastings On Hudson,NY,Westchester County,44.0
+11788,Hauppauge,NY,Suffolk County,48.0
+10927,Haverstraw,NY,Rockland County,43.0
+10532,Hawthorne,NY,Westchester County,44.0
+11549,Hempstead,NY,Nassau County,62.5
+11550,Hempstead,NY,Nassau County,62.5
+11551,Hempstead,NY,Nassau County,62.5
+13350,Herkimer,NY,Herkimer County,39.5
+11557,Hewlett,NY,Nassau County,62.5
+11801,Hicksville,NY,Nassau County,62.5
+11802,Hicksville,NY,Nassau County,48.0
+11815,Hicksville,NY,Nassau County,48.0
+11819,Hicksville,NY,Nassau County,62.5
+12440,High Falls,NY,Ulster County,39.9
+12528,Highland,NY,Ulster County,39.5
+10928,Highland Falls,NY,Orange County,43.0
+10930,Highland Mills,NY,Orange County,43.0
+12441,Highmount,NY,Ulster County,39.5
+10931,Hillburn,NY,Rockland County,43.0
+12529,Hillsdale,NY,Columbia County,36.0
+13352,Hinckley,NY,Oneida County,39.5
+13788,Hobart,NY,Delaware County,38.5
+11741,Holbrook,NY,Suffolk County,48.0
+14080,Holland,NY,Erie County,36.0
+13354,Holland Patent,NY,Oneida County,39.5
+11423,Hollis,NY,Queens County,33.08
+12530,Hollowville,NY,Columbia County,36.0
+12531,Holmes,NY,Dutchess County,43.0
+00501,Holtsville,NY,Suffolk County,45.0
+00544,Holtsville,NY,Suffolk County,45.0
+11742,Holtsville,NY,Suffolk County,48.0
+12533,Hopewell Junction,NY,Dutchess County,43.0
+11414,Howard Beach,NY,Queens County,33.08
+10932,Howells,NY,Orange County,43.0
+13355,Hubbardsville,NY,Madison County,39.5
+12534,Hudson,NY,Columbia County,36.0
+12537,Hughsonville,NY,Dutchess County,43.0
+12746,Huguenot,NY,Orange County,43.0
+11743,Huntington,NY,Suffolk County,48.83
+11746,Huntington Station,NY,Suffolk County,48.0
+12443,Hurley,NY,Ulster County,39.9
+12538,Hyde Park,NY,Dutchess County,43.0
+13357,Ilion,NY,Herkimer County,39.5
+11096,Inwood,NY,Nassau County,62.5
+14081,Irving,NY,Erie County,36.0
+10533,Irvington,NY,Westchester County,44.0
+11558,Island Park,NY,Nassau County,62.5
+11749,Islandia,NY,Suffolk County,48.0
+11751,Islip,NY,Suffolk County,48.0
+11752,Islip Terrace,NY,Suffolk County,48.0
+11372,Jackson Heights,NY,Queens County,37.8
+11432,Jamaica,NY,Queens County,33.08
+11434,Jamaica,NY,Queens County,37.8
+11435,Jamaica,NY,Queens County,33.08
+11436,Jamaica,NY,Queens County,37.8
+11947,Jamesport,NY,Suffolk County,48.0
+13078,Jamesville,NY,Onondaga County,39.5
+14083,Java Village,NY,Wyoming County,35.0
+10535,Jefferson Valley,NY,Westchester County,44.0
+11753,Jericho,NY,Nassau County,62.5
+11853,Jericho,NY,Nassau County,62.5
+10933,Johnson,NY,Orange County,43.0
+12095,Johnstown,NY,Fulton County,37.68
+13080,Jordan,NY,Onondaga County,39.5
+13361,Jordanville,NY,Herkimer County,39.5
+10536,Katonah,NY,Westchester County,44.0
+12446,Kerhonkson,NY,Ulster County,39.5
+11415,Kew Gardens,NY,Queens County,37.8
+12106,Kinderhook,NY,Columbia County,36.0
+11754,Kings Park,NY,Suffolk County,48.0
+12401,Kingston,NY,Ulster County,39.9
+12402,Kingston,NY,Ulster County,39.9
+13082,Kirkville,NY,Madison County,39.5
+13362,Knoxboro,NY,Oneida County,39.5
+13084,La Fayette,NY,Onondaga County,39.5
+12540,Lagrangeville,NY,Dutchess County,43.0
+12845,Lake George,NY,Warren County,33.6
+11755,Lake Grove,NY,Suffolk County,48.0
+12448,Lake Hill,NY,Ulster County,39.5
+12449,Lake Katrine,NY,Ulster County,39.5
+10537,Lake Peekskill,NY,Putnam County,44.0
+14085,Lake View,NY,Erie County,36.0
+14086,Lancaster,NY,Erie County,36.0
+10538,Larchmont,NY,Westchester County,44.0
+12110,Latham,NY,Albany County,37.59
+11948,Laurel,NY,Suffolk County,45.0
+11559,Lawrence,NY,Nassau County,62.5
+14091,Lawtons,NY,Erie County,36.0
+13363,Lee Center,NY,Oneida County,39.5
+13364,Leonardsville,NY,Madison County,39.5
+11756,Levittown,NY,Nassau County,62.5
+14092,Lewiston,NY,Niagara County,36.0
+10540,Lincolndale,NY,Westchester County,44.0
+11757,Lindenhurst,NY,Suffolk County,49.5
+13365,Little Falls,NY,Herkimer County,39.5
+11362,Little Neck,NY,Queens County,37.8
+13088,Liverpool,NY,Onondaga County,39.5
+13089,Liverpool,NY,Onondaga County,39.5
+13090,Liverpool,NY,Onondaga County,39.5
+12541,Livingston,NY,Columbia County,36.0
+14094,Lockport,NY,Niagara County,36.0
+14095,Lockport,NY,Niagara County,36.0
+11560,Locust Valley,NY,Nassau County,62.5
+11561,Long Beach,NY,Nassau County,62.5
+12760,Long Eddy,NY,Delaware County,38.5
+11563,Lynbrook,NY,Nassau County,62.5
+13402,Madison,NY,Madison County,39.5
+10541,Mahopac,NY,Putnam County,44.0
+10542,Mahopac Falls,NY,Putnam County,44.0
+12115,Malden Bridge,NY,Columbia County,36.0
+12453,Malden On Hudson,NY,Ulster County,39.5
+11565,Malverne,NY,Nassau County,62.5
+10543,Mamaroneck,NY,Westchester County,44.0
+11030,Manhasset,NY,Nassau County,62.5
+13104,Manlius,NY,Onondaga County,39.5
+11949,Manorville,NY,Suffolk County,48.0
+13108,Marcellus,NY,Onondaga County,39.5
+13403,Marcy,NY,Oneida County,39.5
+12455,Margaretville,NY,Delaware County,38.5
+13110,Marietta,NY,Onondaga County,39.5
+14102,Marilla,NY,Erie County,36.0
+12542,Marlboro,NY,Ulster County,39.5
+10545,Maryknoll,NY,Westchester County,44.0
+13804,Masonville,NY,Delaware County,38.5
+11378,Maspeth,NY,Queens County,33.08
+11758,Massapequa,NY,Nassau County,62.5
+11762,Massapequa Park,NY,Nassau County,62.5
+11950,Mastic,NY,Suffolk County,45.0
+11951,Mastic Beach,NY,Suffolk County,49.5
+11952,Mattituck,NY,Suffolk County,45.0
+12543,Maybrook,NY,Orange County,43.0
+13401,Mc Connellsville,NY,Oneida County,39.5
+11763,Medford,NY,Suffolk County,48.0
+14103,Medina,NY,Orleans County,35.0
+12544,Mellenville,NY,Columbia County,36.0
+11747,Melville,NY,Suffolk County,48.83
+11760,Melville,NY,Suffolk County,48.0
+11773,Melville,NY,Nassau County,62.5
+11775,Melville,NY,Suffolk County,45.0
+13112,Memphis,NY,Onondaga County,39.5
+13806,Meridale,NY,Delaware County,38.5
+11566,Merrick,NY,Nassau County,62.5
+11953,Middle Island,NY,Suffolk County,49.5
+11379,Middle Village,NY,Queens County,33.08
+14105,Middleport,NY,Niagara County,36.0
+10940,Middletown,NY,Orange County,43.0
+10941,Middletown,NY,Orange County,43.0
+13406,Middleville,NY,Herkimer County,39.5
+11765,Mill Neck,NY,Nassau County,62.5
+12545,Millbrook,NY,Dutchess County,43.0
+11764,Miller Place,NY,Suffolk County,48.0
+12546,Millerton,NY,Dutchess County,43.0
+10546,Millwood,NY,Westchester County,44.0
+12547,Milton,NY,Ulster County,39.5
+11501,Mineola,NY,Nassau County,62.5
+13116,Minoa,NY,Onondaga County,39.5
+14107,Model City,NY,Niagara County,36.0
+12548,Modena,NY,Ulster County,39.5
+13407,Mohawk,NY,Herkimer County,39.5
+10547,Mohegan Lake,NY,Westchester County,44.0
+10949,Monroe,NY,Orange County,43.0
+10950,Monroe,NY,Orange County,43.0
+10952,Monsey,NY,Rockland County,43.0
+12549,Montgomery,NY,Orange County,49.5
+10548,Montrose,NY,Westchester County,44.0
+11955,Moriches,NY,Suffolk County,48.0
+13408,Morrisville,NY,Madison County,39.5
+13119,Mottville,NY,Onondaga County,39.5
+10549,Mount Kisco,NY,Westchester County,44.0
+12456,Mount Marion,NY,Ulster County,39.5
+11766,Mount Sinai,NY,Suffolk County,49.5
+12457,Mount Tremper,NY,Ulster County,39.9
+10550,Mount Vernon,NY,Westchester County,44.0
+10551,Mount Vernon,NY,Westchester County,44.0
+10552,Mount Vernon,NY,Westchester County,44.0
+10553,Mount Vernon,NY,Westchester County,44.0
+10953,Mountainville,NY,Orange County,43.0
+13409,Munnsville,NY,Madison County,39.5
+10954,Nanuet,NY,Rockland County,43.0
+12458,Napanoch,NY,Ulster County,39.5
+13120,Nedrow,NY,Onondaga County,39.5
+11767,Nesconset,NY,Suffolk County,48.0
+10956,New City,NY,Rockland County,43.0
+10958,New Hampton,NY,Orange County,43.0
+13413,New Hartford,NY,Oneida County,39.5
+11040,New Hyde Park,NY,Nassau County,62.5
+11042,New Hyde Park,NY,Nassau County,62.5
+12459,New Kingston,NY,Delaware County,38.5
+12125,New Lebanon,NY,Columbia County,36.0
+10959,New Milford,NY,Orange County,43.0
+12561,New Paltz,NY,Ulster County,39.5
+10801,New Rochelle,NY,Westchester County,44.0
+10802,New Rochelle,NY,Westchester County,44.0
+10804,New Rochelle,NY,Westchester County,44.0
+10805,New Rochelle,NY,Westchester County,44.0
+11956,New Suffolk,NY,Suffolk County,49.5
+12553,New Windsor,NY,Orange County,43.0
+13122,New Woodstock,NY,Madison County,39.5
+10001,New York,NY,New York County,36.23
+10003,New York,NY,New York County,33.08
+10005,New York,NY,New York County,33.08
+10007,New York,NY,New York County,33.08
+10009,New York,NY,New York County,33.08
+10010,New York,NY,New York County,35.02
+10011,New York,NY,New York County,33.08
+10012,New York,NY,New York County,33.08
+10013,New York,NY,New York County,36.23
+10016,New York,NY,New York County,35.42
+10022,New York,NY,New York County,33.08
+10023,New York,NY,New York County,33.08
+10025,New York,NY,New York County,36.23
+13417,New York Mills,NY,Oneida County,39.5
+12550,Newburgh,NY,Orange County,43.0
+12551,Newburgh,NY,Orange County,43.0
+12552,Newburgh,NY,Orange County,43.0
+12555,Newburgh,NY,Orange County,43.0
+14108,Newfane,NY,Niagara County,36.0
+13416,Newport,NY,Herkimer County,39.5
+14301,Niagara Falls,NY,Niagara County,36.0
+14302,Niagara Falls,NY,Niagara County,36.0
+14303,Niagara Falls,NY,Niagara County,36.0
+14304,Niagara Falls,NY,Niagara County,36.0
+14305,Niagara Falls,NY,Niagara County,36.0
+14109,Niagara University,NY,Niagara County,36.0
+12130,Niverville,NY,Columbia County,36.0
+11703,North Babylon,NY,Suffolk County,48.0
+13123,North Bay,NY,Oneida County,39.5
+14110,North Boston,NY,Erie County,36.0
+13418,North Brookfield,NY,Madison County,39.5
+12132,North Chatham,NY,Columbia County,36.0
+14111,North Collins,NY,Erie County,36.0
+14112,North Evans,NY,Erie County,36.0
+10560,North Salem,NY,Westchester County,44.0
+14120,North Tonawanda,NY,Niagara County,36.0
+11768,Northport,NY,Suffolk County,48.83
+10960,Nyack,NY,Rockland County,43.0
+11769,Oakdale,NY,Suffolk County,48.0
+14125,Oakfield,NY,Genesee County,35.0
+11364,Oakland Gardens,NY,Queens County,37.8
+11770,Ocean Beach,NY,Suffolk County,45.0
+11572,Oceanside,NY,Nassau County,62.5
+14126,Olcott,NY,Niagara County,36.0
+11804,Old Bethpage,NY,Nassau County,62.5
+12136,Old Chatham,NY,Columbia County,36.0
+13420,Old Forge,NY,Herkimer County,39.5
+11568,Old Westbury,NY,Nassau County,62.5
+12461,Olivebridge,NY,Ulster County,39.9
+13421,Oneida,NY,Madison County,39.5
+10962,Orangeburg,NY,Rockland County,43.0
+14127,Orchard Park,NY,Erie County,36.0
+13424,Oriskany,NY,Oneida County,39.5
+13425,Oriskany Falls,NY,Oneida County,39.5
+10562,Ossining,NY,Westchester County,44.0
+10963,Otisville,NY,Orange County,43.0
+11771,Oyster Bay,NY,Nassau County,62.5
+11416,Ozone Park,NY,Queens County,35.42
+11417,Ozone Park,NY,Queens County,33.08
+10964,Palisades,NY,Rockland County,43.0
+11772,Patchogue,NY,Suffolk County,48.83
+12563,Patterson,NY,Putnam County,44.0
+12564,Pawling,NY,Dutchess County,43.0
+10965,Pearl River,NY,Rockland County,43.0
+11958,Peconic,NY,Suffolk County,45.0
+10566,Peekskill,NY,Westchester County,44.0
+10803,Pelham,NY,Westchester County,44.0
+13134,Peterboro,NY,Madison County,39.5
+12565,Philmont,NY,Columbia County,36.0
+12464,Phoenicia,NY,Ulster County,39.9
+10968,Piermont,NY,Rockland County,43.0
+12566,Pine Bush,NY,Ulster County,39.5
+12465,Pine Hill,NY,Ulster County,39.5
+10969,Pine Island,NY,Orange County,43.0
+12567,Pine Plains,NY,Dutchess County,43.0
+11803,Plainview,NY,Nassau County,62.5
+13137,Plainville,NY,Onondaga County,39.5
+12568,Plattekill,NY,Ulster County,39.5
+12569,Pleasant Valley,NY,Dutchess County,43.0
+10570,Pleasantville,NY,Westchester County,44.0
+11569,Point Lookout,NY,Nassau County,62.5
+13431,Poland,NY,Herkimer County,39.5
+10970,Pomona,NY,Rockland County,43.0
+13138,Pompey,NY,Onondaga County,39.5
+10573,Port Chester,NY,Westchester County,44.0
+12466,Port Ewen,NY,Ulster County,39.5
+11777,Port Jefferson,NY,Suffolk County,48.0
+11776,Port Jefferson Station,NY,Suffolk County,48.83
+11050,Port Washington,NY,Nassau County,62.5
+11051,Port Washington,NY,Nassau County,62.5
+11052,Port Washington,NY,Nassau County,62.5
+11053,Port Washington,NY,Nassau County,62.5
+11054,Port Washington,NY,Nassau County,62.5
+11055,Port Washington,NY,Nassau County,62.5
+12601,Poughkeepsie,NY,Dutchess County,43.0
+12602,Poughkeepsie,NY,Dutchess County,43.0
+12603,Poughkeepsie,NY,Dutchess County,43.0
+12604,Poughkeepsie,NY,Dutchess County,43.0
+12570,Poughquag,NY,Dutchess County,43.0
+10576,Pound Ridge,NY,Westchester County,44.0
+13435,Prospect,NY,Oneida County,39.5
+10577,Purchase,NY,Westchester County,44.0
+10578,Purdys,NY,Westchester County,44.0
+10579,Putnam Valley,NY,Putnam County,44.0
+11959,Quogue,NY,Suffolk County,45.0
+14131,Ransomville,NY,Niagara County,36.0
+12571,Red Hook,NY,Dutchess County,43.0
+11374,Rego Park,NY,Queens County,33.08
+13438,Remsen,NY,Oneida County,39.5
+11960,Remsenburg,NY,Suffolk County,45.0
+12144,Rensselaer,NY,Rensselaer County,37.66
+12572,Rhinebeck,NY,Dutchess County,43.0
+12574,Rhinecliff,NY,Dutchess County,43.0
+11418,Richmond Hill,NY,Queens County,37.8
+11961,Ridge,NY,Suffolk County,48.0
+11385,Ridgewood,NY,Queens County,37.8
+12471,Rifton,NY,Ulster County,39.9
+11901,Riverhead,NY,Suffolk County,48.0
+12575,Rock Tavern,NY,Orange County,43.0
+11570,Rockville Centre,NY,Nassau County,62.5
+11571,Rockville Centre,NY,Nassau County,62.5
+11778,Rocky Point,NY,Suffolk County,48.0
+13440,Rome,NY,Oneida County,39.5
+13441,Rome,NY,Oneida County,39.5
+13442,Rome,NY,Oneida County,39.5
+13449,Rome,NY,Oneida County,39.5
+11779,Ronkonkoma,NY,Suffolk County,48.83
+11575,Roosevelt,NY,Nassau County,62.5
+11422,Rosedale,NY,Queens County,37.8
+12472,Rosendale,NY,Ulster County,39.9
+11576,Roslyn,NY,Nassau County,62.5
+11577,Roslyn Heights,NY,Nassau County,62.5
+12474,Roxbury,NY,Delaware County,38.5
+12475,Ruby,NY,Ulster County,39.5
+10580,Rye,NY,Westchester County,44.0
+11963,Sag Harbor,NY,Suffolk County,45.0
+11962,Sagaponack,NY,Suffolk County,45.0
+11412,Saint Albans,NY,Queens County,33.08
+11780,Saint James,NY,Suffolk County,49.5
+13454,Salisbury Center,NY,Herkimer County,39.5
+12577,Salisbury Mills,NY,Orange County,43.0
+12578,Salt Point,NY,Dutchess County,43.0
+14132,Sanborn,NY,Niagara County,36.0
+13455,Sangerfield,NY,Oneida County,39.5
+12477,Saugerties,NY,Ulster County,39.5
+13456,Sauquoit,NY,Oneida County,39.5
+11782,Sayville,NY,Suffolk County,48.83
+10583,Scarsdale,NY,Westchester County,44.0
+11579,Sea Cliff,NY,Nassau County,62.5
+11783,Seaford,NY,Nassau County,62.5
+11784,Selden,NY,Suffolk County,48.83
+12480,Shandaken,NY,Ulster County,39.5
+11965,Shelter Island Heights,NY,Suffolk County,49.5
+10587,Shenorock,NY,Westchester County,44.0
+13461,Sherrill,NY,Oneida County,39.5
+11967,Shirley,NY,Suffolk County,45.0
+12481,Shokan,NY,Ulster County,39.9
+11786,Shoreham,NY,Suffolk County,48.83
+10588,Shrub Oak,NY,Westchester County,44.0
+13838,Sidney,NY,Delaware County,38.5
+13839,Sidney Center,NY,Delaware County,38.5
+13152,Skaneateles,NY,Onondaga County,39.5
+13153,Skaneateles Falls,NY,Onondaga County,39.5
+10973,Slate Hill,NY,Orange County,43.0
+10974,Sloatsburg,NY,Rockland County,43.0
+11787,Smithtown,NY,Suffolk County,48.83
+13465,Solsville,NY,Madison County,39.5
+10589,Somers,NY,Westchester County,44.0
+11789,Sound Beach,NY,Suffolk County,45.0
+11970,South Jamesport,NY,Suffolk County,45.0
+13842,South Kortright,NY,Delaware County,38.5
+11420,South Ozone Park,NY,Queens County,33.08
+10590,South Salem,NY,Westchester County,44.0
+14139,South Wales,NY,Erie County,36.0
+11968,Southampton,NY,Suffolk County,49.5
+11969,Southampton,NY,Suffolk County,45.0
+10975,Southfields,NY,Orange County,43.0
+11971,Southold,NY,Suffolk County,33.08
+10976,Sparkill,NY,Rockland County,43.0
+12780,Sparrow Bush,NY,Orange County,43.0
+12165,Spencertown,NY,Columbia County,36.0
+11972,Speonk,NY,Suffolk County,45.0
+14140,Spring Brook,NY,Erie County,36.0
+12483,Spring Glen,NY,Ulster County,39.5
+10977,Spring Valley,NY,Rockland County,43.0
+11413,Springfield Gardens,NY,Queens County,35.02
+12580,Staatsburg,NY,Dutchess County,43.0
+12167,Stamford,NY,Delaware County,38.5
+12581,Stanfordville,NY,Dutchess County,43.0
+10301,Staten Island,NY,Richmond County,33.08
+10304,Staten Island,NY,Richmond County,33.08
+10310,Staten Island,NY,Richmond County,33.08
+10312,Staten Island,NY,Richmond County,33.08
+10314,Staten Island,NY,Richmond County,33.08
+14144,Stella Niagara,NY,Niagara County,36.0
+12169,Stephentown,NY,Rensselaer County,37.68
+10979,Sterling Forest,NY,Orange County,43.0
+13469,Stittville,NY,Oneida County,39.5
+12484,Stone Ridge,NY,Ulster County,39.9
+11790,Stony Brook,NY,Suffolk County,48.83
+11794,Stony Brook,NY,Suffolk County,48.0
+10980,Stony Point,NY,Rockland County,43.0
+12582,Stormville,NY,Dutchess County,43.0
+12172,Stottville,NY,Columbia County,36.0
+14145,Strykersville,NY,Wyoming County,35.0
+12173,Stuyvesant,NY,Columbia County,36.0
+12174,Stuyvesant Falls,NY,Columbia County,36.0
+10901,Suffern,NY,Rockland County,43.0
+10981,Sugar Loaf,NY,Orange County,43.0
+13157,Sylvan Beach,NY,Oneida County,39.5
+11791,Syosset,NY,Nassau County,62.5
+13201,Syracuse,NY,Onondaga County,39.5
+13202,Syracuse,NY,Onondaga County,39.5
+13203,Syracuse,NY,Onondaga County,39.5
+13204,Syracuse,NY,Onondaga County,39.5
+13205,Syracuse,NY,Onondaga County,39.5
+13206,Syracuse,NY,Onondaga County,39.5
+13207,Syracuse,NY,Onondaga County,39.5
+13208,Syracuse,NY,Onondaga County,39.5
+13209,Syracuse,NY,Onondaga County,39.5
+13210,Syracuse,NY,Onondaga County,39.5
+13211,Syracuse,NY,Onondaga County,39.5
+13212,Syracuse,NY,Onondaga County,39.5
+13214,Syracuse,NY,Onondaga County,39.5
+13215,Syracuse,NY,Onondaga County,39.5
+13217,Syracuse,NY,Onondaga County,39.5
+13218,Syracuse,NY,Onondaga County,39.5
+13219,Syracuse,NY,Onondaga County,39.5
+13220,Syracuse,NY,Onondaga County,39.5
+13221,Syracuse,NY,Onondaga County,39.5
+13224,Syracuse,NY,Onondaga County,39.5
+13225,Syracuse,NY,Onondaga County,39.5
+13235,Syracuse,NY,Onondaga County,39.5
+13244,Syracuse,NY,Onondaga County,39.5
+13250,Syracuse,NY,Onondaga County,39.5
+13251,Syracuse,NY,Onondaga County,39.5
+13252,Syracuse,NY,Onondaga County,39.5
+13261,Syracuse,NY,Onondaga County,39.5
+13290,Syracuse,NY,Onondaga County,39.5
+13471,Taberg,NY,Oneida County,39.5
+10982,Tallman,NY,Rockland County,43.0
+10983,Tappan,NY,Rockland County,43.0
+10591,Tarrytown,NY,Westchester County,44.0
+13472,Thendara,NY,Herkimer County,39.5
+10984,Thiells,NY,Rockland County,43.0
+10985,Thompson Ridge,NY,Orange County,43.0
+10594,Thornwood,NY,Westchester County,44.0
+12486,Tillson,NY,Ulster County,39.5
+12583,Tivoli,NY,Dutchess County,43.0
+10986,Tomkins Cove,NY,Rockland County,43.0
+14150,Tonawanda,NY,Erie County,36.0
+14151,Tonawanda,NY,Erie County,36.0
+13846,Treadwell,NY,Delaware County,38.5
+13847,Trout Creek,NY,Delaware County,38.5
+10707,Tuckahoe,NY,Westchester County,44.0
+13159,Tully,NY,Onondaga County,39.5
+10987,Tuxedo Park,NY,Orange County,43.0
+12487,Ulster Park,NY,Ulster County,39.5
+11553,Uniondale,NY,Nassau County,62.5
+11555,Uniondale,NY,Nassau County,62.5
+11556,Uniondale,NY,Nassau County,62.5
+10988,Unionville,NY,Orange County,43.0
+11973,Upton,NY,Suffolk County,45.0
+13501,Utica,NY,Oneida County,39.5
+13502,Utica,NY,Oneida County,39.5
+13503,Utica,NY,Oneida County,39.5
+13504,Utica,NY,Oneida County,39.5
+13505,Utica,NY,Oneida County,39.5
+13599,Utica,NY,Oneida County,39.5
+12584,Vails Gate,NY,Orange County,43.0
+12184,Valatie,NY,Columbia County,36.0
+10595,Valhalla,NY,Westchester County,44.0
+10989,Valley Cottage,NY,Rockland County,43.0
+11580,Valley Stream,NY,Nassau County,62.5
+11581,Valley Stream,NY,Nassau County,62.5
+11582,Valley Stream,NY,Nassau County,62.5
+13475,Van Hornesville,NY,Herkimer County,39.5
+12585,Verbank,NY,Dutchess County,43.0
+13476,Vernon,NY,Oneida County,39.5
+13477,Vernon Center,NY,Oneida County,39.5
+13478,Verona,NY,Oneida County,39.5
+13162,Verona Beach,NY,Oneida County,39.5
+10596,Verplanck,NY,Westchester County,44.0
+10597,Waccabuc,NY,Westchester County,44.0
+11792,Wading River,NY,Suffolk County,45.0
+11975,Wainscott,NY,Suffolk County,45.0
+12586,Walden,NY,Orange County,43.0
+14169,Wales Center,NY,Erie County,36.0
+12588,Walker Valley,NY,Ulster County,39.5
+12589,Wallkill,NY,Ulster County,39.5
+13856,Walton,NY,Delaware County,38.5
+13163,Wampsville,NY,Madison County,39.5
+11793,Wantagh,NY,Nassau County,62.5
+12590,Wappingers Falls,NY,Dutchess County,43.0
+13164,Warners,NY,Onondaga County,39.5
+10990,Warwick,NY,Orange County,43.0
+13479,Washington Mills,NY,Oneida County,39.5
+10992,Washingtonville,NY,Orange County,43.0
+12592,Wassaic,NY,Dutchess County,43.0
+11976,Water Mill,NY,Suffolk County,45.0
+13480,Waterville,NY,Oneida County,39.5
+12189,Watervliet,NY,Albany County,37.7
+12489,Wawarsing,NY,Ulster County,39.5
+11704,West Babylon,NY,Suffolk County,48.83
+11707,West Babylon,NY,Suffolk County,45.0
+12490,West Camp,NY,Ulster County,39.5
+13860,West Davenport,NY,Delaware County,38.5
+13484,West Eaton,NY,Madison County,39.5
+13485,West Edmeston,NY,Madison County,39.5
+14170,West Falls,NY,Erie County,36.0
+10604,West Harrison,NY,Westchester County,44.0
+10993,West Haverstraw,NY,Rockland County,43.0
+11552,West Hempstead,NY,Nassau County,62.5
+12491,West Hurley,NY,Ulster County,39.9
+11795,West Islip,NY,Suffolk County,48.0
+12195,West Lebanon,NY,Columbia County,36.0
+10994,West Nyack,NY,Rockland County,43.0
+12493,West Park,NY,Ulster County,39.5
+10996,West Point,NY,Orange County,43.0
+10997,West Point,NY,Orange County,43.0
+11796,West Sayville,NY,Suffolk County,48.0
+12494,West Shokan,NY,Ulster County,39.9
+13491,West Winfield,NY,Herkimer County,39.5
+11590,Westbury,NY,Nassau County,62.5
+13483,Westdale,NY,Oneida County,39.5
+13486,Westernville,NY,Oneida County,39.5
+11977,Westhampton,NY,Suffolk County,45.0
+11978,Westhampton Beach,NY,Suffolk County,45.0
+13490,Westmoreland,NY,Oneida County,39.5
+10998,Westtown,NY,Orange County,43.0
+10601,White Plains,NY,Westchester County,44.0
+10602,White Plains,NY,Westchester County,44.0
+10603,White Plains,NY,Westchester County,44.0
+10605,White Plains,NY,Westchester County,44.0
+10606,White Plains,NY,Westchester County,44.0
+10607,White Plains,NY,Westchester County,44.0
+10610,White Plains,NY,Westchester County,44.0
+13492,Whitesboro,NY,Oneida County,39.5
+11596,Williston Park,NY,Nassau County,62.5
+12495,Willow,NY,Ulster County,39.5
+14172,Wilson,NY,Niagara County,36.0
+12594,Wingdale,NY,Dutchess County,43.0
+11797,Woodbury,NY,Nassau County,62.5
+13494,Woodgate,NY,Oneida County,39.5
+11598,Woodmere,NY,Nassau County,62.5
+11377,Woodside,NY,Queens County,37.8
+12498,Woodstock,NY,Ulster County,39.9
+11798,Wyandanch,NY,Suffolk County,48.0
+11980,Yaphank,NY,Suffolk County,45.0
+10701,Yonkers,NY,Westchester County,44.0
+10702,Yonkers,NY,Westchester County,44.0
+10703,Yonkers,NY,Westchester County,44.0
+10704,Yonkers,NY,Westchester County,44.0
+10705,Yonkers,NY,Westchester County,44.0
+10710,Yonkers,NY,Westchester County,44.0
+10598,Yorktown Heights,NY,Westchester County,44.0
+13495,Yorkville,NY,Oneida County,39.5
+14174,Youngstown,NY,Niagara County,36.0

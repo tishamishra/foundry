@@ -1,0 +1,14 @@
+{# Renders ONLY what the fact block supplies. A business with an empty record
+   gets the honest fallbacks instead of borrowed credentials. #}
+<section class="badges reveal">
+  <div class="wrap badge-row">
+    {% if facts.licensed %}<div class="badge"><span class="ico">✓</span><div><strong>Licensed</strong><em>as declared by the business</em></div></div>{% endif %}
+    {% if facts.insured %}<div class="badge"><span class="ico">✓</span><div><strong>Insured</strong><em>cover in place</em></div></div>{% endif %}
+    {% if facts.free_estimates %}<div class="badge"><span class="ico">✓</span><div><strong>Free estimates</strong><em>assessment before any price</em></div></div>{% endif %}
+    {% if facts.warranty_years %}<div class="badge"><span class="ico">✓</span><div><strong>{{ facts.warranty_years }}-year warranty</strong><em>on workmanship</em></div></div>{% endif %}
+    {% if facts.emergency_24_7 %}<div class="badge"><span class="ico">✓</span><div><strong>24/7 response</strong><em>for active leaks</em></div></div>{% endif %}
+    {% if facts.financing %}<div class="badge"><span class="ico">✓</span><div><strong>Financing available</strong><em>ask when you call</em></div></div>{% endif %}
+    <div class="badge"><span class="ico">✓</span><div><strong>Written findings</strong><em>photographs with every report</em></div></div>
+    <div class="badge"><span class="ico">✓</span><div><strong>Clear scope</strong><em>the quote names its exclusions</em></div></div>
+  </div>
+</section>

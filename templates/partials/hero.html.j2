@@ -1,0 +1,42 @@
+{# One markup, four shapes. The variant lives on <body data-hero> and the
+   stylesheet carries a rule for each value, so a new hero is a CSS block and a
+   line of YAML — never a new template. #}
+<main id="main">
+<section class="hero">
+  {% if style.hero in ('overlay', 'banner') %}
+  <div class="hero-bg" aria-hidden="true"><img src="{{ imgs.hero or '/assets/hero.svg' }}" alt="" width="1600" height="900" fetchpriority="high"></div>
+  {% endif %}
+  <div class="wrap hero-in">
+    <div class="hero-copy">
+      <p class="eyebrow">
+        {%- if t.city %}{{ t.city }}, {{ t.state_abbr }}{% if t.county %} &middot; {{ t.county }}{% endif %}
+        {%- else %}{{ niche.label }} contractor{% endif -%}
+      </p>
+      <h1 class="hero-h1">
+        {%- if kind == 'location_service' %}{{ t.service }} in <em>{{ t.city }}</em>, {{ t.state_abbr }}
+        {%- elif kind == 'location' %}{{ niche.label }} in <em>{{ t.city }}</em>, {{ t.state_abbr }}
+        {%- elif kind == 'service' %}{{ t.service }}
+        {%- else %}{{ content.tagline }}{% endif -%}
+      </h1>
+      <p class="lede">
+        {%- if kind in ('location', 'location_service') and lc is defined and lc.hero %}{{ lc.hero }}
+        {%- elif kind == 'service' and svc is defined and svc.hero %}{{ svc.hero }}
+        {%- else %}{{ content.hero_intro }}{% endif -%}
+      </p>
+      <ul class="ticks">
+        {% for point in content.trust %}<li>{{ point.title }}</li>{% endfor %}
+      </ul>
+      <div class="cta-row">
+        <a class="btn btn-accent btn-lg" href="tel:{{ t.phone_link }}">{{ content.hero_cta }}</a>
+        <a class="btn btn-ghost btn-lg" href="#quote">Request a callback</a>
+      </div>
+      <p class="micro">Call {{ t.phone }}{% if t.hours %} &middot; {{ t.hours }}{% endif %}</p>
+    </div>
+    {% if style.hero in ('split', 'stacked') %}
+    <div class="hero-art">
+      <img src="{{ imgs.hero or '/assets/hero.svg' }}" alt="{{ niche.label }} work by {{ biz.company }}" width="800" height="500" fetchpriority="high">
+      <div class="hero-chip"><strong>{{ locations|length }}</strong><span>communities covered</span></div>
+    </div>
+    {% endif %}
+  </div>
+</section>

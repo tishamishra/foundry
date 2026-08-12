@@ -1,0 +1,391 @@
+standard:
+  label: Standard
+  shell: single
+  note: The balanced marketing page. Good default for most trades.
+  page_sections:
+    home:
+    - header
+    - hero
+    - answer_first
+    - logos
+    - stats
+    - services_showcase
+    - gallery
+    - why_us
+    - timeline
+    - reviews_carousel
+    - areas_teaser
+    - faq
+    - quote_band
+    - footer
+    - sticky_call
+    service:
+    - header
+    - hero
+    - answer_first
+    - badges
+    - service_body
+    - signs
+    - timeline
+    - compare
+    - reviews_carousel
+    - faq
+    - quote_band
+    - footer
+    - sticky_call
+    location:
+    - header
+    - hero
+    - answer_first
+    - stats
+    - location_body
+    - services_grid
+    - why_us
+    - coverage_map
+    - signs
+    - timeline
+    - costs
+    - compare
+    - reviews_carousel
+    - faq
+    - quote_band
+    - footer
+    - sticky_call
+    location_service:
+    - header
+    - hero
+    - answer_first
+    - badges
+    - location_service_body
+    - signs
+    - timeline
+    - compare
+    - costs
+    - reviews_carousel
+    - faq
+    - quote_band
+    - footer
+    - sticky_call
+conversion:
+  label: Conversion
+  shell: single
+  note: CTA-dense and short-sectioned. For paid traffic and urgent trades.
+  page_sections:
+    home:
+    - header
+    - emergency
+    - hero
+    - answer_first
+    - quote_band
+    - stats
+    - badges
+    - services_tabs
+    - why_us
+    - reviews_carousel
+    - cta
+    - faq
+    - footer
+    - sticky_call
+    service:
+    - header
+    - emergency
+    - hero
+    - answer_first
+    - quote_band
+    - service_body
+    - signs
+    - badges
+    - reviews_carousel
+    - cta
+    - faq
+    - footer
+    - sticky_call
+    location:
+    - header
+    - emergency
+    - hero
+    - answer_first
+    - quote_band
+    - stats
+    - location_body
+    - services_grid
+    - signs
+    - timeline
+    - costs
+    - reviews_carousel
+    - cta
+    - faq
+    - footer
+    - sticky_call
+    location_service:
+    - header
+    - emergency
+    - hero
+    - answer_first
+    - quote_band
+    - location_service_body
+    - signs
+    - timeline
+    - costs
+    - reviews_carousel
+    - cta
+    - faq
+    - footer
+    - sticky_call
+longform:
+  label: Longform
+  shell: reading
+  note: Content-led and prose-heavy. Fewer, deeper sections; best where the buyer researches.
+  page_sections:
+    home:
+    - header
+    - hero
+    - answer_first
+    - about_body
+    - services_showcase
+    - timeline
+    - costs
+    - compare
+    - gallery
+    - reviews_carousel
+    - faq
+    - areas_teaser
+    - quote_band
+    - footer
+    - sticky_call
+    service:
+    - header
+    - hero
+    - answer_first
+    - service_body
+    - compare
+    - costs
+    - signs
+    - timeline
+    - gallery
+    - reviews_carousel
+    - faq
+    - quote_band
+    - footer
+    - sticky_call
+    location:
+    - header
+    - hero
+    - answer_first
+    - location_body
+    - services_showcase
+    - coverage_map
+    - costs
+    - why_us
+    - signs
+    - timeline
+    - compare
+    - reviews_carousel
+    - faq
+    - quote_band
+    - footer
+    - sticky_call
+    location_service:
+    - header
+    - hero
+    - answer_first
+    - location_service_body
+    - compare
+    - costs
+    - signs
+    - timeline
+    - reviews_carousel
+    - faq
+    - quote_band
+    - footer
+    - sticky_call
+directory:
+  label: Directory
+  shell: directory
+  note: 'Index-first. The page is a browsable directory of areas and services rather than a brochure —
+    a service matrix, an A-Z of covered places, and a compact marketing spine underneath. Built for the
+    long tail: every cell is a real internal link, which is what stops a 26,000-page site from being 25,000
+    orphans.'
+  page_sections:
+    home:
+    - header
+    - hero_compact
+    - answer_first
+    - dir_search
+    - dir_matrix
+    - dir_index
+    - stats
+    - why_us
+    - reviews_carousel
+    - faq
+    - quote_band
+    - footer
+    - sticky_call
+    service:
+    - header
+    - hero_compact
+    - answer_first
+    - service_body
+    - dir_service_places
+    - badges
+    - reviews_carousel
+    - faq
+    - quote_band
+    - footer
+    - sticky_call
+    location:
+    - header
+    - hero_compact
+    - answer_first
+    - location_body
+    - dir_place_services
+    - dir_nearby
+    - stats
+    - signs
+    - costs
+    - reviews_carousel
+    - faq
+    - quote_band
+    - footer
+    - sticky_call
+    location_service:
+    - header
+    - hero_compact
+    - answer_first
+    - location_service_body
+    - dir_nearby
+    - dir_place_services
+    - signs
+    - costs
+    - reviews_carousel
+    - faq
+    - quote_band
+    - footer
+    - sticky_call
+local:
+  label: Local-first
+  shell: single
+  note: Geography leads. Coverage and place names above the marketing copy.
+  page_sections:
+    home:
+    - header
+    - hero
+    - answer_first
+    - coverage_map
+    - stats
+    - areas_teaser
+    - services_grid
+    - why_us
+    - reviews_carousel
+    - faq
+    - quote_band
+    - footer
+    - sticky_call
+    service:
+    - header
+    - hero
+    - answer_first
+    - service_body
+    - dir_service_places
+    - why_us
+    - reviews_carousel
+    - faq
+    - quote_band
+    - footer
+    - sticky_call
+    location:
+    - header
+    - hero
+    - answer_first
+    - location_body
+    - dir_place_services
+    - dir_nearby
+    - coverage_map
+    - why_us
+    - signs
+    - timeline
+    - costs
+    - reviews_carousel
+    - faq
+    - quote_band
+    - footer
+    - sticky_call
+    location_service:
+    - header
+    - hero
+    - answer_first
+    - location_service_body
+    - dir_nearby
+    - signs
+    - timeline
+    - costs
+    - reviews_carousel
+    - faq
+    - quote_band
+    - footer
+    - sticky_call
+showcase:
+  label: Showcase
+  shell: single
+  note: Visual. Leans on the image pool — weakest of the six if the pool is thin.
+  page_sections:
+    home:
+    - header
+    - hero
+    - answer_first
+    - gallery
+    - stats
+    - services_showcase
+    - logos
+    - timeline
+    - why_us
+    - reviews_carousel
+    - faq
+    - quote_band
+    - footer
+    - sticky_call
+    service:
+    - header
+    - hero
+    - answer_first
+    - gallery
+    - service_body
+    - timeline
+    - signs
+    - reviews_carousel
+    - faq
+    - quote_band
+    - footer
+    - sticky_call
+    location:
+    - header
+    - hero
+    - answer_first
+    - gallery
+    - location_body
+    - services_showcase
+    - coverage_map
+    - signs
+    - timeline
+    - costs
+    - compare
+    - reviews_carousel
+    - faq
+    - quote_band
+    - footer
+    - sticky_call
+    location_service:
+    - header
+    - hero
+    - answer_first
+    - location_service_body
+    - gallery
+    - signs
+    - compare
+    - timeline
+    - costs
+    - reviews_carousel
+    - faq
+    - quote_band
+    - footer
+    - sticky_call

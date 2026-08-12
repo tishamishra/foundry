@@ -1,0 +1,12 @@
+{% if imgs.gallery %}
+<section class="sec">
+  <div class="wrap">
+    <h2 class="section-head">Recent work{% if t.city %} near {{ t.city }}{% endif %}</h2>
+    <div class="gal">
+      {% for src in imgs.gallery %}
+      <figure class="gal-item reveal"><img src="{{ src }}" alt="{{ niche.label }} work by {{ biz.company }}" loading="lazy" width="600" height="450"></figure>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}

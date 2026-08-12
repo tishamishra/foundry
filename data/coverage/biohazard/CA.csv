@@ -1,0 +1,1528 @@
+zip,city,state,county,payout
+95220,Acampo,CA,San Joaquin County,222.0
+93510,Acton,CA,Los Angeles County,189.0
+92301,Adelanto,CA,San Bernardino County,195.0
+91301,Agoura Hills,CA,Los Angeles County,189.0
+91376,Agoura Hills,CA,Los Angeles County,189.0
+92536,Aguanga,CA,Riverside County,210.5
+93601,Ahwahnee,CA,Madera County,203.0
+94501,Alameda,CA,Alameda County,222.0
+94502,Alameda,CA,Alameda County,222.0
+94507,Alamo,CA,Contra Costa County,222.0
+94706,Albany,CA,Alameda County,222.0
+95701,Alta,CA,Placer County,210.5
+95221,Altaville,CA,Calaveras County,210.5
+95002,Alviso,CA,Santa Clara County,222.0
+95601,Amador City,CA,Amador County,203.0
+94503,American Canyon,CA,Napa County,210.5
+95222,Angels Camp,CA,Calaveras County,210.5
+92305,Angelus Oaks,CA,San Bernardino County,195.0
+94508,Angwin,CA,Napa County,210.5
+95412,Annapolis,CA,Sonoma County,222.0
+95843,Antelope,CA,Sacramento County,222.0
+94509,Antioch,CA,Contra Costa County,222.0
+94531,Antioch,CA,Contra Costa County,222.0
+92539,Anza,CA,Riverside County,210.5
+92308,Apple Valley,CA,San Bernardino County,195.0
+95703,Applegate,CA,Placer County,210.5
+95001,Aptos,CA,Santa Cruz County,197.5
+95003,Aptos,CA,Santa Cruz County,197.5
+95223,Arnold,CA,Calaveras County,210.5
+95004,Aromas,CA,Monterey County,210.5
+93203,Arvin,CA,Kern County,195.0
+94027,Atherton,CA,San Mateo County,222.0
+95301,Atwater,CA,Merced County,210.5
+93602,Auberry,CA,Fresno County,203.0
+95602,Auburn,CA,Placer County,210.5
+95603,Auburn,CA,Placer County,210.5
+95604,Auburn,CA,Placer County,210.5
+95224,Avery,CA,Calaveras County,210.5
+95303,Ballico,CA,Merced County,210.5
+92220,Banning,CA,Riverside County,210.5
+93604,Bass Lake,CA,Madera County,203.0
+95903,Beale Afb,CA,Yuba County,203.0
+92223,Beaumont,CA,Riverside County,210.5
+94002,Belmont,CA,San Mateo County,222.0
+94920,Belvedere Tiburon,CA,Marin County,210.5
+95005,Ben Lomond,CA,Santa Cruz County,197.5
+94510,Benicia,CA,Solano County,203.0
+94701,Berkeley,CA,Alameda County,222.0
+94702,Berkeley,CA,Alameda County,222.0
+94703,Berkeley,CA,Alameda County,222.0
+94704,Berkeley,CA,Alameda County,222.0
+94705,Berkeley,CA,Alameda County,222.0
+94707,Berkeley,CA,Alameda County,222.0
+94708,Berkeley,CA,Alameda County,222.0
+94709,Berkeley,CA,Alameda County,222.0
+94710,Berkeley,CA,Alameda County,222.0
+94712,Berkeley,CA,Alameda County,222.0
+94720,Berkeley,CA,Alameda County,222.0
+94511,Bethel Island,CA,Contra Costa County,222.0
+90209,Beverly Hills,CA,Los Angeles County,189.0
+90210,Beverly Hills,CA,Los Angeles County,189.0
+90211,Beverly Hills,CA,Los Angeles County,189.0
+90212,Beverly Hills,CA,Los Angeles County,189.0
+90213,Beverly Hills,CA,Los Angeles County,189.0
+92314,Big Bear City,CA,San Bernardino County,195.0
+92315,Big Bear Lake,CA,San Bernardino County,195.0
+93605,Big Creek,CA,Fresno County,203.0
+95305,Big Oak Flat,CA,Tuolumne County,210.5
+93920,Big Sur,CA,Monterey County,210.5
+93606,Biola,CA,Fresno County,203.0
+94512,Birds Landing,CA,Solano County,203.0
+92316,Bloomington,CA,San Bernardino County,195.0
+92317,Blue Jay,CA,San Bernardino County,195.0
+94922,Bodega,CA,Sonoma County,222.0
+94923,Bodega Bay,CA,Sonoma County,222.0
+94924,Bolinas,CA,Marin County,210.5
+95006,Boulder Creek,CA,Santa Cruz County,197.5
+95416,Boyes Hot Springs,CA,Sonoma County,222.0
+93426,Bradley,CA,Monterey County,210.5
+93064,Brandeis,CA,Ventura County,195.0
+94513,Brentwood,CA,Contra Costa County,222.0
+94005,Brisbane,CA,San Mateo County,222.0
+95007,Brookdale,CA,Santa Cruz County,197.5
+95606,Brooks,CA,Yolo County,210.5
+95918,Browns Valley,CA,Yuba County,203.0
+95919,Brownsville,CA,Yuba County,203.0
+92318,Bryn Mawr,CA,San Bernardino County,195.0
+91501,Burbank,CA,Los Angeles County,189.0
+91502,Burbank,CA,Los Angeles County,189.0
+91503,Burbank,CA,Los Angeles County,189.0
+91504,Burbank,CA,Los Angeles County,189.0
+91505,Burbank,CA,Los Angeles County,189.0
+91506,Burbank,CA,Los Angeles County,189.0
+91507,Burbank,CA,Los Angeles County,189.0
+91508,Burbank,CA,Los Angeles County,189.0
+91510,Burbank,CA,Los Angeles County,189.0
+91521,Burbank,CA,Los Angeles County,189.0
+91522,Burbank,CA,Los Angeles County,189.0
+91523,Burbank,CA,Los Angeles County,189.0
+91526,Burbank,CA,Los Angeles County,189.0
+94010,Burlingame,CA,San Mateo County,222.0
+94011,Burlingame,CA,San Mateo County,222.0
+93607,Burrel,CA,Fresno County,203.0
+95225,Burson,CA,Calaveras County,210.5
+94514,Byron,CA,Contra Costa County,222.0
+92230,Cabazon,CA,Riverside County,210.5
+91302,Calabasas,CA,Los Angeles County,189.0
+91372,Calabasas,CA,Los Angeles County,189.0
+93505,California City,CA,Kern County,195.0
+92320,Calimesa,CA,Riverside County,210.5
+94515,Calistoga,CA,Napa County,210.5
+93010,Camarillo,CA,Ventura County,195.0
+93011,Camarillo,CA,Ventura County,195.0
+93012,Camarillo,CA,Ventura County,195.0
+95709,Camino,CA,El Dorado County,203.0
+95419,Camp Meeker,CA,Sonoma County,222.0
+95008,Campbell,CA,Santa Clara County,222.0
+95009,Campbell,CA,Santa Clara County,222.0
+95011,Campbell,CA,Santa Clara County,222.0
+95226,Campo Seco,CA,Calaveras County,210.5
+95922,Camptonville,CA,Yuba County,203.0
+91303,Canoga Park,CA,Los Angeles County,189.0
+91304,Canoga Park,CA,Los Angeles County,189.0
+91305,Canoga Park,CA,Los Angeles County,189.0
+91309,Canoga Park,CA,Los Angeles County,189.0
+93519,Cantil,CA,Kern County,195.0
+93608,Cantua Creek,CA,Fresno County,203.0
+94516,Canyon,CA,Contra Costa County,222.0
+91351,Canyon Country,CA,Los Angeles County,189.0
+91386,Canyon Country,CA,Los Angeles County,189.0
+91387,Canyon Country,CA,Los Angeles County,189.0
+95607,Capay,CA,Yolo County,210.5
+95010,Capitola,CA,Santa Cruz County,197.5
+93922,Carmel,CA,Monterey County,210.5
+93923,Carmel,CA,Monterey County,210.5
+93921,Carmel By The Sea,CA,Monterey County,210.5
+93924,Carmel Valley,CA,Monterey County,210.5
+95608,Carmichael,CA,Sacramento County,222.0
+95609,Carmichael,CA,Sacramento County,222.0
+96140,Carnelian Bay,CA,Placer County,210.5
+93013,Carpinteria,CA,Santa Barbara County,203.0
+93014,Carpinteria,CA,Santa Barbara County,203.0
+93609,Caruthers,CA,Fresno County,203.0
+91310,Castaic,CA,Los Angeles County,189.0
+91384,Castaic,CA,Los Angeles County,189.0
+94546,Castro Valley,CA,Alameda County,222.0
+94552,Castro Valley,CA,Alameda County,222.0
+95012,Castroville,CA,Monterey County,210.5
+92234,Cathedral City,CA,Riverside County,210.5
+92235,Cathedral City,CA,Riverside County,210.5
+95306,Catheys Valley,CA,Mariposa County,203.0
+95421,Cazadero,CA,Sonoma County,222.0
+92321,Cedar Glen,CA,San Bernardino County,195.0
+95924,Cedar Ridge,CA,Nevada County,203.0
+92322,Cedarpines Park,CA,San Bernardino County,195.0
+95307,Ceres,CA,Stanislaus County,210.5
+95925,Challenge,CA,Yuba County,203.0
+91311,Chatsworth,CA,Los Angeles County,189.0
+91313,Chatsworth,CA,Los Angeles County,189.0
+95712,Chicago Park,CA,Nevada County,203.0
+95309,Chinese Camp,CA,Tuolumne County,210.5
+91708,Chino,CA,San Bernardino County,195.0
+91710,Chino,CA,San Bernardino County,195.0
+93610,Chowchilla,CA,Madera County,203.0
+93925,Chualar,CA,Monterey County,210.5
+95610,Citrus Heights,CA,Sacramento County,222.0
+95611,Citrus Heights,CA,Sacramento County,222.0
+95621,Citrus Heights,CA,Sacramento County,222.0
+91711,Claremont,CA,Los Angeles County,189.0
+95612,Clarksburg,CA,Yolo County,210.5
+94517,Clayton,CA,Contra Costa County,222.0
+95227,Clements,CA,San Joaquin County,222.0
+95425,Cloverdale,CA,Sonoma County,222.0
+93611,Clovis,CA,Fresno County,203.0
+93612,Clovis,CA,Fresno County,203.0
+93613,Clovis,CA,Fresno County,203.0
+93619,Clovis,CA,Fresno County,203.0
+92236,Coachella,CA,Riverside County,210.5
+93210,Coalinga,CA,Fresno County,203.0
+93614,Coarsegold,CA,Madera County,203.0
+95713,Colfax,CA,Placer County,210.5
+95613,Coloma,CA,El Dorado County,203.0
+92324,Colton,CA,San Bernardino County,195.0
+95310,Columbia,CA,Tuolumne County,210.5
+94518,Concord,CA,Contra Costa County,222.0
+94519,Concord,CA,Contra Costa County,222.0
+94520,Concord,CA,Contra Costa County,222.0
+94521,Concord,CA,Contra Costa County,222.0
+94522,Concord,CA,Contra Costa County,222.0
+94524,Concord,CA,Contra Costa County,222.0
+94527,Concord,CA,Contra Costa County,222.0
+94529,Concord,CA,Contra Costa County,222.0
+95614,Cool,CA,El Dorado County,203.0
+95228,Copperopolis,CA,Calaveras County,210.5
+92877,Corona,CA,Riverside County,210.5
+92879,Corona,CA,Riverside County,210.5
+92880,Corona,CA,Riverside County,210.5
+92881,Corona,CA,Riverside County,210.5
+92883,Corona,CA,Riverside County,210.5
+94925,Corte Madera,CA,Marin County,210.5
+94976,Corte Madera,CA,Marin County,210.5
+94931,Cotati,CA,Sonoma County,222.0
+95311,Coulterville,CA,Mariposa County,203.0
+95615,Courtland,CA,Sacramento County,222.0
+95013,Coyote,CA,Santa Clara County,222.0
+95531,Crescent City,CA,Del Norte County,210.5
+95532,Crescent City,CA,Del Norte County,210.5
+95312,Cressey,CA,Merced County,210.5
+92325,Crestline,CA,San Bernardino County,195.0
+94525,Crockett,CA,Contra Costa County,222.0
+95313,Crows Landing,CA,Stanislaus County,210.5
+90230,Culver City,CA,Los Angeles County,189.0
+90231,Culver City,CA,Los Angeles County,189.0
+90232,Culver City,CA,Los Angeles County,189.0
+95014,Cupertino,CA,Santa Clara County,222.0
+95015,Cupertino,CA,Santa Clara County,222.0
+94014,Daly City,CA,San Mateo County,222.0
+94015,Daly City,CA,San Mateo County,222.0
+94016,Daly City,CA,San Mateo County,222.0
+94017,Daly City,CA,San Mateo County,222.0
+94506,Danville,CA,Contra Costa County,222.0
+94526,Danville,CA,Contra Costa County,222.0
+95017,Davenport,CA,Santa Cruz County,197.5
+95616,Davis,CA,Yolo County,210.5
+95617,Davis,CA,Yolo County,210.5
+95618,Davis,CA,Yolo County,210.5
+94576,Deer Park,CA,Napa County,210.5
+93616,Del Rey,CA,Fresno County,203.0
+95315,Delhi,CA,Merced County,210.5
+95316,Denair,CA,Stanislaus County,210.5
+92240,Desert Hot Springs,CA,Riverside County,210.5
+92241,Desert Hot Springs,CA,Riverside County,210.5
+94528,Diablo,CA,Contra Costa County,222.0
+95619,Diamond Springs,CA,El Dorado County,203.0
+94929,Dillon Beach,CA,Marin County,210.5
+93618,Dinuba,CA,Tulare County,203.0
+94505,Discovery Bay,CA,Contra Costa County,222.0
+95620,Dixon,CA,Solano County,203.0
+95935,Dobbins,CA,Yuba County,203.0
+93620,Dos Palos,CA,Merced County,210.5
+95229,Douglas Flat,CA,Calaveras County,210.5
+95699,Drytown,CA,Amador County,203.0
+94568,Dublin,CA,Alameda County,222.0
+95430,Duncans Mills,CA,Sonoma County,222.0
+93621,Dunlap,CA,Fresno County,203.0
+95937,Dunnigan,CA,Yolo County,210.5
+95714,Dutch Flat,CA,Placer County,210.5
+95721,Echo Lake,CA,El Dorado County,203.0
+93523,Edwards,CA,Kern County,195.0
+93524,Edwards,CA,Kern County,195.0
+94530,El Cerrito,CA,Contra Costa County,222.0
+95623,El Dorado,CA,El Dorado County,203.0
+95762,El Dorado Hills,CA,El Dorado County,203.0
+94018,El Granada,CA,San Mateo County,222.0
+95317,El Nido,CA,Merced County,210.5
+95318,El Portal,CA,Mariposa County,203.0
+94803,El Sobrante,CA,Contra Costa County,222.0
+94820,El Sobrante,CA,Contra Costa County,222.0
+95433,El Verano,CA,Sonoma County,222.0
+95431,Eldridge,CA,Sonoma County,222.0
+95624,Elk Grove,CA,Sacramento County,222.0
+95757,Elk Grove,CA,Sacramento County,222.0
+95758,Elk Grove,CA,Sacramento County,222.0
+95759,Elk Grove,CA,Sacramento County,222.0
+95625,Elmira,CA,Solano County,203.0
+95626,Elverta,CA,Sacramento County,222.0
+94608,Emeryville,CA,Alameda County,222.0
+94662,Emeryville,CA,Alameda County,222.0
+95715,Emigrant Gap,CA,Placer County,210.5
+95319,Empire,CA,Stanislaus County,210.5
+91316,Encino,CA,Los Angeles County,189.0
+91416,Encino,CA,Los Angeles County,189.0
+91426,Encino,CA,Los Angeles County,189.0
+91436,Encino,CA,Los Angeles County,189.0
+95320,Escalon,CA,San Joaquin County,222.0
+95627,Esparto,CA,Yolo County,210.5
+95628,Fair Oaks,CA,Sacramento County,222.0
+94930,Fairfax,CA,Marin County,210.5
+94978,Fairfax,CA,Marin County,210.5
+94533,Fairfield,CA,Solano County,203.0
+94534,Fairfield,CA,Solano County,203.0
+95230,Farmington,CA,San Joaquin County,210.5
+92333,Fawnskin,CA,San Bernardino County,195.0
+95018,Felton,CA,Santa Cruz County,197.5
+95629,Fiddletown,CA,Amador County,203.0
+93015,Fillmore,CA,Ventura County,195.0
+93016,Fillmore,CA,Ventura County,195.0
+93622,Firebaugh,CA,Fresno County,203.0
+93623,Fish Camp,CA,Mariposa County,203.0
+93624,Five Points,CA,Fresno County,203.0
+96111,Floriston,CA,Nevada County,203.0
+95630,Folsom,CA,Sacramento County,222.0
+95763,Folsom,CA,Sacramento County,222.0
+92331,Fontana,CA,San Bernardino County,195.0
+92334,Fontana,CA,San Bernardino County,195.0
+92335,Fontana,CA,San Bernardino County,195.0
+92336,Fontana,CA,San Bernardino County,195.0
+92337,Fontana,CA,San Bernardino County,195.0
+92339,Forest Falls,CA,San Bernardino County,195.0
+94933,Forest Knolls,CA,Marin County,210.5
+95631,Foresthill,CA,Placer County,210.5
+95436,Forestville,CA,Sonoma County,222.0
+95538,Fort Dick,CA,Del Norte County,210.5
+93625,Fowler,CA,Fresno County,203.0
+93225,Frazier Park,CA,Kern County,195.0
+95019,Freedom,CA,Santa Cruz County,197.5
+94536,Fremont,CA,Alameda County,222.0
+94537,Fremont,CA,Alameda County,222.0
+94538,Fremont,CA,Alameda County,222.0
+94539,Fremont,CA,Alameda County,222.0
+94555,Fremont,CA,Alameda County,222.0
+95231,French Camp,CA,San Joaquin County,222.0
+93650,Fresno,CA,Fresno County,203.0
+93701,Fresno,CA,Fresno County,203.0
+93702,Fresno,CA,Fresno County,203.0
+93703,Fresno,CA,Fresno County,203.0
+93704,Fresno,CA,Fresno County,203.0
+93705,Fresno,CA,Fresno County,203.0
+93706,Fresno,CA,Fresno County,203.0
+93707,Fresno,CA,Fresno County,203.0
+93708,Fresno,CA,Fresno County,203.0
+93709,Fresno,CA,Fresno County,203.0
+93710,Fresno,CA,Fresno County,203.0
+93711,Fresno,CA,Fresno County,203.0
+93712,Fresno,CA,Fresno County,203.0
+93714,Fresno,CA,Fresno County,203.0
+93715,Fresno,CA,Fresno County,203.0
+93716,Fresno,CA,Fresno County,203.0
+93717,Fresno,CA,Fresno County,203.0
+93718,Fresno,CA,Fresno County,203.0
+93720,Fresno,CA,Fresno County,203.0
+93721,Fresno,CA,Fresno County,203.0
+93722,Fresno,CA,Fresno County,203.0
+93723,Fresno,CA,Fresno County,203.0
+93724,Fresno,CA,Fresno County,203.0
+93725,Fresno,CA,Fresno County,203.0
+93726,Fresno,CA,Fresno County,203.0
+93727,Fresno,CA,Fresno County,203.0
+93728,Fresno,CA,Fresno County,203.0
+93729,Fresno,CA,Fresno County,203.0
+93730,Fresno,CA,Fresno County,203.0
+93737,Fresno,CA,Fresno County,203.0
+93740,Fresno,CA,Fresno County,203.0
+93741,Fresno,CA,Fresno County,203.0
+93744,Fresno,CA,Fresno County,203.0
+93745,Fresno,CA,Fresno County,203.0
+93747,Fresno,CA,Fresno County,203.0
+93750,Fresno,CA,Fresno County,203.0
+93755,Fresno,CA,Fresno County,203.0
+93760,Fresno,CA,Fresno County,203.0
+93761,Fresno,CA,Fresno County,203.0
+93764,Fresno,CA,Fresno County,203.0
+93765,Fresno,CA,Fresno County,203.0
+93771,Fresno,CA,Fresno County,203.0
+93772,Fresno,CA,Fresno County,203.0
+93773,Fresno,CA,Fresno County,203.0
+93774,Fresno,CA,Fresno County,203.0
+93775,Fresno,CA,Fresno County,203.0
+93776,Fresno,CA,Fresno County,203.0
+93777,Fresno,CA,Fresno County,203.0
+93778,Fresno,CA,Fresno County,203.0
+93779,Fresno,CA,Fresno County,203.0
+93786,Fresno,CA,Fresno County,203.0
+93790,Fresno,CA,Fresno County,203.0
+93791,Fresno,CA,Fresno County,203.0
+93792,Fresno,CA,Fresno County,203.0
+93793,Fresno,CA,Fresno County,203.0
+93794,Fresno,CA,Fresno County,203.0
+93844,Fresno,CA,Fresno County,203.0
+93888,Fresno,CA,Fresno County,203.0
+93626,Friant,CA,Fresno County,203.0
+95439,Fulton,CA,Sonoma County,222.0
+95632,Galt,CA,Sacramento County,222.0
+95633,Garden Valley,CA,El Dorado County,203.0
+95543,Gasquet,CA,Del Norte County,210.5
+95634,Georgetown,CA,El Dorado County,203.0
+95441,Geyserville,CA,Sonoma County,222.0
+95020,Gilroy,CA,Santa Clara County,222.0
+95021,Gilroy,CA,Santa Clara County,222.0
+95442,Glen Ellen,CA,Sonoma County,222.0
+95232,Glencoe,CA,Calaveras County,210.5
+91201,Glendale,CA,Los Angeles County,189.0
+91202,Glendale,CA,Los Angeles County,189.0
+91203,Glendale,CA,Los Angeles County,189.0
+91207,Glendale,CA,Los Angeles County,189.0
+91208,Glendale,CA,Los Angeles County,189.0
+91221,Glendale,CA,Los Angeles County,189.0
+91222,Glendale,CA,Los Angeles County,189.0
+95717,Gold Run,CA,Placer County,210.5
+93116,Goleta,CA,Santa Barbara County,203.0
+93118,Goleta,CA,Santa Barbara County,203.0
+93199,Goleta,CA,Santa Barbara County,203.0
+93926,Gonzales,CA,Monterey County,210.5
+91344,Granada Hills,CA,Los Angeles County,189.0
+91394,Granada Hills,CA,Los Angeles County,189.0
+92313,Grand Terrace,CA,San Bernardino County,195.0
+95746,Granite Bay,CA,Placer County,210.5
+95945,Grass Valley,CA,Nevada County,203.0
+95949,Grass Valley,CA,Nevada County,203.0
+95444,Graton,CA,Sonoma County,222.0
+92341,Green Valley Lake,CA,San Bernardino County,195.0
+94904,Greenbrae,CA,Marin County,210.5
+93927,Greenfield,CA,Monterey County,210.5
+95635,Greenwood,CA,El Dorado County,203.0
+95636,Grizzly Flats,CA,El Dorado County,203.0
+95321,Groveland,CA,Tuolumne County,210.5
+91743,Guasti,CA,San Bernardino County,195.0
+95446,Guerneville,CA,Sonoma County,222.0
+95637,Guinda,CA,Yolo County,210.5
+95322,Gustine,CA,Merced County,210.5
+94019,Half Moon Bay,CA,San Mateo County,222.0
+95233,Hathaway Pines,CA,Calaveras County,210.5
+94540,Hayward,CA,Alameda County,222.0
+94541,Hayward,CA,Alameda County,222.0
+94542,Hayward,CA,Alameda County,222.0
+94543,Hayward,CA,Alameda County,222.0
+94544,Hayward,CA,Alameda County,222.0
+94545,Hayward,CA,Alameda County,222.0
+94557,Hayward,CA,Alameda County,222.0
+95448,Healdsburg,CA,Sonoma County,222.0
+93627,Helm,CA,Fresno County,203.0
+92543,Hemet,CA,Riverside County,210.5
+92544,Hemet,CA,Riverside County,210.5
+92545,Hemet,CA,Riverside County,210.5
+92546,Hemet,CA,Riverside County,210.5
+95638,Herald,CA,Sacramento County,222.0
+94547,Hercules,CA,Contra Costa County,222.0
+92340,Hesperia,CA,San Bernardino County,195.0
+92344,Hesperia,CA,San Bernardino County,195.0
+92345,Hesperia,CA,San Bernardino County,195.0
+95323,Hickman,CA,Stanislaus County,210.5
+92346,Highland,CA,San Bernardino County,195.0
+95324,Hilmar,CA,Merced County,210.5
+95023,Hollister,CA,San Benito County,203.0
+95024,Hollister,CA,San Benito County,203.0
+95234,Holt,CA,San Joaquin County,222.0
+95026,Holy City,CA,Santa Clara County,222.0
+92548,Homeland,CA,Riverside County,210.5
+96141,Homewood,CA,Placer County,210.5
+95639,Hood,CA,Sacramento County,222.0
+95325,Hornitos,CA,Mariposa County,203.0
+95326,Hughson,CA,Stanislaus County,210.5
+93628,Hume,CA,Fresno County,203.0
+93234,Huron,CA,Fresno County,203.0
+92549,Idyllwild,CA,Riverside County,210.5
+92210,Indian Wells,CA,Riverside County,210.5
+92201,Indio,CA,Riverside County,210.5
+92202,Indio,CA,Riverside County,210.5
+92203,Indio,CA,Riverside County,210.5
+94937,Inverness,CA,Marin County,210.5
+95640,Ione,CA,Amador County,203.0
+95641,Isleton,CA,Sacramento County,222.0
+95642,Jackson,CA,Amador County,203.0
+95327,Jamestown,CA,Tuolumne County,210.5
+95450,Jenner,CA,Sonoma County,222.0
+93928,Jolon,CA,Monterey County,210.5
+92252,Joshua Tree,CA,San Bernardino County,195.0
+92509,Jurupa Valley,CA,Riverside County,210.5
+93531,Keene,CA,Kern County,195.0
+94914,Kentfield,CA,Marin County,210.5
+95452,Kenwood,CA,Sonoma County,222.0
+93630,Kerman,CA,Fresno County,203.0
+95328,Keyes,CA,Stanislaus County,210.5
+93930,King City,CA,Monterey County,210.5
+96143,Kings Beach,CA,Placer County,210.5
+93631,Kingsburg,CA,Fresno County,203.0
+95646,Kirkwood,CA,Alpine County,203.0
+95644,Kit Carson,CA,El Dorado County,203.0
+95548,Klamath,CA,Del Norte County,210.5
+95645,Knights Landing,CA,Yolo County,210.5
+94548,Knightsen,CA,Contra Costa County,222.0
+95720,Kyburz,CA,El Dorado County,203.0
+91011,La Canada Flintridge,CA,Los Angeles County,189.0
+91012,La Canada Flintridge,CA,Los Angeles County,189.0
+91214,La Crescenta,CA,Los Angeles County,189.0
+91224,La Crescenta,CA,Los Angeles County,189.0
+95329,La Grange,CA,Tuolumne County,210.5
+94020,La Honda,CA,San Mateo County,222.0
+92247,La Quinta,CA,Riverside County,210.5
+92248,La Quinta,CA,Riverside County,210.5
+92253,La Quinta,CA,Riverside County,210.5
+91750,La Verne,CA,Los Angeles County,189.0
+94549,Lafayette,CA,Contra Costa County,222.0
+94938,Lagunitas,CA,Marin County,210.5
+92352,Lake Arrowhead,CA,San Bernardino County,195.0
+92531,Lake Elsinore,CA,Riverside County,210.5
+92532,Lake Elsinore,CA,Riverside County,210.5
+93532,Lake Hughes,CA,Los Angeles County,189.0
+93634,Lakeshore,CA,Fresno County,203.0
+93534,Lancaster,CA,Los Angeles County,189.0
+93535,Lancaster,CA,Los Angeles County,189.0
+93536,Lancaster,CA,Los Angeles County,189.0
+93539,Lancaster,CA,Los Angeles County,189.0
+93584,Lancaster,CA,Los Angeles County,189.0
+94939,Larkspur,CA,Marin County,210.5
+94977,Larkspur,CA,Marin County,210.5
+95330,Lathrop,CA,San Joaquin County,222.0
+93242,Laton,CA,Fresno County,203.0
+95333,Le Grand,CA,Merced County,210.5
+93243,Lebec,CA,Kern County,195.0
+95648,Lincoln,CA,Placer County,210.5
+95236,Linden,CA,San Joaquin County,222.0
+93543,Littlerock,CA,Los Angeles County,189.0
+95953,Live Oak,CA,Sutter County,210.5
+94550,Livermore,CA,Alameda County,222.0
+94551,Livermore,CA,Alameda County,222.0
+95334,Livingston,CA,Merced County,210.5
+93544,Llano,CA,Los Angeles County,189.0
+95237,Lockeford,CA,San Joaquin County,222.0
+93932,Lockwood,CA,Monterey County,210.5
+95240,Lodi,CA,San Joaquin County,222.0
+95241,Lodi,CA,San Joaquin County,222.0
+95242,Lodi,CA,San Joaquin County,222.0
+92350,Loma Linda,CA,San Bernardino County,195.0
+92354,Loma Linda,CA,San Bernardino County,195.0
+92357,Loma Linda,CA,San Bernardino County,195.0
+94021,Loma Mar,CA,San Mateo County,222.0
+95335,Long Barn,CA,Tuolumne County,210.5
+95650,Loomis,CA,Placer County,210.5
+94022,Los Altos,CA,Santa Clara County,222.0
+94023,Los Altos,CA,Santa Clara County,222.0
+94024,Los Altos,CA,Santa Clara County,222.0
+90004,Los Angeles,CA,Los Angeles County,189.0
+90005,Los Angeles,CA,Los Angeles County,189.0
+90006,Los Angeles,CA,Los Angeles County,189.0
+90007,Los Angeles,CA,Los Angeles County,189.0
+90008,Los Angeles,CA,Los Angeles County,189.0
+90010,Los Angeles,CA,Los Angeles County,189.0
+90012,Los Angeles,CA,Los Angeles County,189.0
+90013,Los Angeles,CA,Los Angeles County,189.0
+90014,Los Angeles,CA,Los Angeles County,189.0
+90015,Los Angeles,CA,Los Angeles County,189.0
+90016,Los Angeles,CA,Los Angeles County,189.0
+90017,Los Angeles,CA,Los Angeles County,189.0
+90018,Los Angeles,CA,Los Angeles County,189.0
+90019,Los Angeles,CA,Los Angeles County,189.0
+90020,Los Angeles,CA,Los Angeles County,189.0
+90021,Los Angeles,CA,Los Angeles County,189.0
+90024,Los Angeles,CA,Los Angeles County,189.0
+90025,Los Angeles,CA,Los Angeles County,189.0
+90026,Los Angeles,CA,Los Angeles County,189.0
+90027,Los Angeles,CA,Los Angeles County,189.0
+90028,Los Angeles,CA,Los Angeles County,189.0
+90029,Los Angeles,CA,Los Angeles County,189.0
+90030,Los Angeles,CA,Los Angeles County,189.0
+90034,Los Angeles,CA,Los Angeles County,189.0
+90035,Los Angeles,CA,Los Angeles County,189.0
+90036,Los Angeles,CA,Los Angeles County,189.0
+90037,Los Angeles,CA,Los Angeles County,189.0
+90038,Los Angeles,CA,Los Angeles County,189.0
+90039,Los Angeles,CA,Los Angeles County,189.0
+90046,Los Angeles,CA,Los Angeles County,189.0
+90048,Los Angeles,CA,Los Angeles County,189.0
+90049,Los Angeles,CA,Los Angeles County,189.0
+90053,Los Angeles,CA,Los Angeles County,189.0
+90054,Los Angeles,CA,Los Angeles County,189.0
+90055,Los Angeles,CA,Los Angeles County,189.0
+90056,Los Angeles,CA,Los Angeles County,189.0
+90057,Los Angeles,CA,Los Angeles County,189.0
+90060,Los Angeles,CA,Los Angeles County,189.0
+90062,Los Angeles,CA,Los Angeles County,189.0
+90064,Los Angeles,CA,Los Angeles County,189.0
+90066,Los Angeles,CA,Los Angeles County,189.0
+90067,Los Angeles,CA,Los Angeles County,189.0
+90068,Los Angeles,CA,Los Angeles County,189.0
+90070,Los Angeles,CA,Los Angeles County,189.0
+90071,Los Angeles,CA,Los Angeles County,189.0
+90072,Los Angeles,CA,Los Angeles County,189.0
+90073,Los Angeles,CA,Los Angeles County,189.0
+90074,Los Angeles,CA,Los Angeles County,189.0
+90075,Los Angeles,CA,Los Angeles County,189.0
+90076,Los Angeles,CA,Los Angeles County,189.0
+90077,Los Angeles,CA,Los Angeles County,189.0
+90078,Los Angeles,CA,Los Angeles County,189.0
+90079,Los Angeles,CA,Los Angeles County,189.0
+90081,Los Angeles,CA,Los Angeles County,189.0
+90082,Los Angeles,CA,Los Angeles County,189.0
+90084,Los Angeles,CA,Los Angeles County,189.0
+90086,Los Angeles,CA,Los Angeles County,189.0
+90087,Los Angeles,CA,Los Angeles County,189.0
+90088,Los Angeles,CA,Los Angeles County,189.0
+90089,Los Angeles,CA,Los Angeles County,189.0
+90093,Los Angeles,CA,Los Angeles County,189.0
+90095,Los Angeles,CA,Los Angeles County,189.0
+90099,Los Angeles,CA,Los Angeles County,189.0
+90189,Los Angeles,CA,Los Angeles County,189.0
+93635,Los Banos,CA,Merced County,210.5
+95030,Los Gatos,CA,Santa Clara County,222.0
+95031,Los Gatos,CA,Santa Clara County,222.0
+95032,Los Gatos,CA,Santa Clara County,222.0
+95033,Los Gatos,CA,Santa Cruz County,197.5
+95651,Lotus,CA,El Dorado County,203.0
+92358,Lytle Creek,CA,San Bernardino County,195.0
+93636,Madera,CA,Madera County,203.0
+93637,Madera,CA,Madera County,203.0
+93638,Madera,CA,Madera County,203.0
+93639,Madera,CA,Madera County,203.0
+95653,Madison,CA,Yolo County,210.5
+90263,Malibu,CA,Los Angeles County,189.0
+90264,Malibu,CA,Los Angeles County,189.0
+90265,Malibu,CA,Los Angeles County,189.0
+95336,Manteca,CA,San Joaquin County,222.0
+95337,Manteca,CA,San Joaquin County,222.0
+92518,March Air Reserve Base,CA,Riverside County,210.5
+93933,Marina,CA,Monterey County,210.5
+90292,Marina Del Rey,CA,Los Angeles County,189.0
+90295,Marina Del Rey,CA,Los Angeles County,189.0
+95338,Mariposa,CA,Mariposa County,203.0
+94940,Marshall,CA,Marin County,210.5
+95654,Martell,CA,Amador County,203.0
+94553,Martinez,CA,Contra Costa County,222.0
+95901,Marysville,CA,Yuba County,203.0
+95655,Mather,CA,Sacramento County,222.0
+95652,Mcclellan,CA,Sacramento County,222.0
+95722,Meadow Vista,CA,Placer County,210.5
+93640,Mendota,CA,Fresno County,203.0
+92584,Menifee,CA,Riverside County,210.5
+92585,Menifee,CA,Riverside County,210.5
+92586,Menifee,CA,Riverside County,210.5
+92587,Menifee,CA,Riverside County,210.5
+94025,Menlo Park,CA,San Mateo County,222.0
+94026,Menlo Park,CA,San Mateo County,222.0
+92359,Mentone,CA,San Bernardino County,195.0
+95340,Merced,CA,Merced County,210.5
+95341,Merced,CA,Merced County,210.5
+95343,Merced,CA,Merced County,210.5
+95344,Merced,CA,Merced County,210.5
+95348,Merced,CA,Merced County,210.5
+95957,Meridian,CA,Sutter County,210.5
+95346,Mi Wuk Village,CA,Tuolumne County,210.5
+95345,Midpines,CA,Mariposa County,203.0
+94941,Mill Valley,CA,Marin County,210.5
+94942,Mill Valley,CA,Marin County,210.5
+94030,Millbrae,CA,San Mateo County,222.0
+95035,Milpitas,CA,Santa Clara County,222.0
+95036,Milpitas,CA,Santa Clara County,222.0
+91752,Mira Loma,CA,Riverside County,210.5
+93641,Miramonte,CA,Fresno County,203.0
+91345,Mission Hills,CA,Los Angeles County,189.0
+91346,Mission Hills,CA,Los Angeles County,189.0
+91395,Mission Hills,CA,Los Angeles County,189.0
+95347,Moccasin,CA,Tuolumne County,210.5
+95350,Modesto,CA,Stanislaus County,210.5
+95351,Modesto,CA,Stanislaus County,210.5
+95352,Modesto,CA,Stanislaus County,210.5
+95353,Modesto,CA,Stanislaus County,210.5
+95354,Modesto,CA,Stanislaus County,210.5
+95355,Modesto,CA,Stanislaus County,210.5
+95356,Modesto,CA,Stanislaus County,210.5
+95357,Modesto,CA,Stanislaus County,210.5
+95358,Modesto,CA,Stanislaus County,210.5
+95397,Modesto,CA,Stanislaus County,210.5
+93501,Mojave,CA,Kern County,195.0
+93502,Mojave,CA,Kern County,195.0
+95245,Mokelumne Hill,CA,Calaveras County,210.5
+93642,Mono Hot Springs,CA,Fresno County,203.0
+94037,Montara,CA,San Mateo County,222.0
+91763,Montclair,CA,San Bernardino County,195.0
+95462,Monte Rio,CA,Sonoma County,222.0
+93940,Monterey,CA,Monterey County,210.5
+93942,Monterey,CA,Monterey County,210.5
+93943,Monterey,CA,Monterey County,210.5
+93944,Monterey,CA,Monterey County,210.5
+91020,Montrose,CA,Los Angeles County,189.0
+91021,Montrose,CA,Los Angeles County,189.0
+93020,Moorpark,CA,Ventura County,195.0
+93021,Moorpark,CA,Ventura County,195.0
+94556,Moraga,CA,Contra Costa County,222.0
+94570,Moraga,CA,Contra Costa County,222.0
+94575,Moraga,CA,Contra Costa County,222.0
+92551,Moreno Valley,CA,Riverside County,210.5
+92552,Moreno Valley,CA,Riverside County,210.5
+92553,Moreno Valley,CA,Riverside County,210.5
+92554,Moreno Valley,CA,Riverside County,210.5
+92555,Moreno Valley,CA,Riverside County,210.5
+92556,Moreno Valley,CA,Riverside County,210.5
+92557,Moreno Valley,CA,Riverside County,210.5
+95037,Morgan Hill,CA,Santa Clara County,222.0
+95038,Morgan Hill,CA,Santa Clara County,222.0
+92256,Morongo Valley,CA,San Bernardino County,195.0
+94038,Moss Beach,CA,San Mateo County,222.0
+95039,Moss Landing,CA,Monterey County,210.5
+95656,Mount Aukum,CA,El Dorado County,203.0
+95140,Mount Hamilton,CA,Santa Clara County,222.0
+95041,Mount Hermon,CA,Santa Cruz County,197.5
+92561,Mountain Center,CA,Riverside County,210.5
+95246,Mountain Ranch,CA,Calaveras County,210.5
+94035,Mountain View,CA,Santa Clara County,222.0
+94039,Mountain View,CA,Santa Clara County,222.0
+94040,Mountain View,CA,Santa Clara County,222.0
+94041,Mountain View,CA,Santa Clara County,222.0
+94042,Mountain View,CA,Santa Clara County,222.0
+94043,Mountain View,CA,Santa Clara County,222.0
+91759,Mt Baldy,CA,San Bernardino County,195.0
+95247,Murphys,CA,Calaveras County,210.5
+92563,Murrieta,CA,Riverside County,210.5
+92564,Murrieta,CA,Riverside County,210.5
+94558,Napa,CA,Napa County,210.5
+94559,Napa,CA,Napa County,210.5
+94581,Napa,CA,Napa County,210.5
+95959,Nevada City,CA,Nevada County,203.0
+95042,New Almaden,CA,Santa Clara County,222.0
+94560,Newark,CA,Alameda County,222.0
+91319,Newbury Park,CA,Ventura County,195.0
+91320,Newbury Park,CA,Ventura County,195.0
+95658,Newcastle,CA,Placer County,210.5
+91321,Newhall,CA,Los Angeles County,189.0
+91322,Newhall,CA,Los Angeles County,189.0
+95360,Newman,CA,Stanislaus County,210.5
+94946,Nicasio,CA,Marin County,210.5
+95659,Nicolaus,CA,Sutter County,210.5
+92860,Norco,CA,Riverside County,210.5
+95724,Norden,CA,Placer County,203.0
+93643,North Fork,CA,Madera County,203.0
+95660,North Highlands,CA,Sacramento County,222.0
+91343,North Hills,CA,Los Angeles County,189.0
+91393,North Hills,CA,Los Angeles County,189.0
+91601,North Hollywood,CA,Los Angeles County,189.0
+91602,North Hollywood,CA,Los Angeles County,189.0
+91603,North Hollywood,CA,Los Angeles County,189.0
+91605,North Hollywood,CA,Los Angeles County,189.0
+91606,North Hollywood,CA,Los Angeles County,189.0
+91609,North Hollywood,CA,Los Angeles County,189.0
+91611,North Hollywood,CA,Los Angeles County,189.0
+91612,North Hollywood,CA,Los Angeles County,189.0
+91615,North Hollywood,CA,Los Angeles County,189.0
+91616,North Hollywood,CA,Los Angeles County,189.0
+91618,North Hollywood,CA,Los Angeles County,189.0
+92258,North Palm Springs,CA,Riverside County,210.5
+95960,North San Juan,CA,Nevada County,203.0
+91324,Northridge,CA,Los Angeles County,189.0
+91325,Northridge,CA,Los Angeles County,189.0
+91327,Northridge,CA,Los Angeles County,189.0
+91328,Northridge,CA,Los Angeles County,189.0
+91329,Northridge,CA,Los Angeles County,189.0
+91330,Northridge,CA,Los Angeles County,189.0
+94945,Novato,CA,Marin County,210.5
+94947,Novato,CA,Marin County,210.5
+94948,Novato,CA,Marin County,210.5
+94949,Novato,CA,Marin County,210.5
+94998,Novato,CA,Marin County,210.5
+92567,Nuevo,CA,Riverside County,210.5
+93645,O'Neals,CA,Madera County,203.0
+91377,Oak Park,CA,Ventura County,195.0
+93022,Oak View,CA,Ventura County,195.0
+95361,Oakdale,CA,Stanislaus County,210.5
+93644,Oakhurst,CA,Madera County,203.0
+94601,Oakland,CA,Alameda County,222.0
+94602,Oakland,CA,Alameda County,222.0
+94603,Oakland,CA,Alameda County,222.0
+94604,Oakland,CA,Alameda County,222.0
+94605,Oakland,CA,Alameda County,222.0
+94606,Oakland,CA,Alameda County,222.0
+94607,Oakland,CA,Alameda County,222.0
+94609,Oakland,CA,Alameda County,222.0
+94610,Oakland,CA,Alameda County,222.0
+94611,Oakland,CA,Alameda County,222.0
+94612,Oakland,CA,Alameda County,222.0
+94613,Oakland,CA,Alameda County,222.0
+94614,Oakland,CA,Alameda County,222.0
+94615,Oakland,CA,Alameda County,222.0
+94617,Oakland,CA,Alameda County,222.0
+94618,Oakland,CA,Alameda County,222.0
+94619,Oakland,CA,Alameda County,222.0
+94621,Oakland,CA,Alameda County,222.0
+94622,Oakland,CA,Alameda County,222.0
+94623,Oakland,CA,Alameda County,222.0
+94624,Oakland,CA,Alameda County,222.0
+94649,Oakland,CA,Alameda County,222.0
+94659,Oakland,CA,Alameda County,222.0
+94660,Oakland,CA,Alameda County,222.0
+94661,Oakland,CA,Alameda County,222.0
+94666,Oakland,CA,Alameda County,222.0
+94561,Oakley,CA,Contra Costa County,222.0
+94562,Oakville,CA,Napa County,210.5
+95465,Occidental,CA,Sonoma County,222.0
+93023,Ojai,CA,Ventura County,195.0
+93024,Ojai,CA,Ventura County,195.0
+94950,Olema,CA,Marin County,210.5
+95961,Olivehurst,CA,Yuba County,203.0
+96146,Olympic Valley,CA,Placer County,210.5
+91758,Ontario,CA,San Bernardino County,195.0
+91761,Ontario,CA,San Bernardino County,195.0
+91762,Ontario,CA,San Bernardino County,195.0
+91764,Ontario,CA,San Bernardino County,195.0
+93646,Orange Cove,CA,Fresno County,203.0
+95662,Orangevale,CA,Sacramento County,222.0
+95962,Oregon House,CA,Yuba County,203.0
+94563,Orinda,CA,Contra Costa County,222.0
+93030,Oxnard,CA,Ventura County,195.0
+93031,Oxnard,CA,Ventura County,195.0
+93032,Oxnard,CA,Ventura County,195.0
+93033,Oxnard,CA,Ventura County,195.0
+93034,Oxnard,CA,Ventura County,195.0
+93035,Oxnard,CA,Ventura County,195.0
+93036,Oxnard,CA,Ventura County,195.0
+93950,Pacific Grove,CA,Monterey County,210.5
+90272,Pacific Palisades,CA,Los Angeles County,189.0
+94044,Pacifica,CA,San Mateo County,222.0
+91331,Pacoima,CA,Los Angeles County,189.0
+91333,Pacoima,CA,Los Angeles County,189.0
+91334,Pacoima,CA,Los Angeles County,189.0
+95043,Paicines,CA,San Benito County,203.0
+92211,Palm Desert,CA,Riverside County,210.5
+92255,Palm Desert,CA,Riverside County,210.5
+92260,Palm Desert,CA,Riverside County,210.5
+92261,Palm Desert,CA,Riverside County,210.5
+92262,Palm Springs,CA,Riverside County,210.5
+92263,Palm Springs,CA,Riverside County,210.5
+92264,Palm Springs,CA,Riverside County,210.5
+93550,Palmdale,CA,Los Angeles County,189.0
+93551,Palmdale,CA,Los Angeles County,189.0
+93552,Palmdale,CA,Los Angeles County,189.0
+93590,Palmdale,CA,Los Angeles County,189.0
+93591,Palmdale,CA,Los Angeles County,189.0
+93599,Palmdale,CA,Los Angeles County,189.0
+94301,Palo Alto,CA,Santa Clara County,222.0
+94302,Palo Alto,CA,Santa Clara County,222.0
+94303,Palo Alto,CA,San Mateo County,222.0
+94304,Palo Alto,CA,Santa Clara County,222.0
+94306,Palo Alto,CA,Santa Clara County,222.0
+94309,Palo Alto,CA,Santa Clara County,222.0
+91402,Panorama City,CA,Los Angeles County,189.0
+91412,Panorama City,CA,Los Angeles County,189.0
+93648,Parlier,CA,Fresno County,203.0
+95363,Patterson,CA,Stanislaus County,210.5
+92369,Patton,CA,San Bernardino County,195.0
+93553,Pearblossom,CA,Los Angeles County,189.0
+93953,Pebble Beach,CA,Monterey County,210.5
+95946,Penn Valley,CA,Nevada County,203.0
+94951,Penngrove,CA,Sonoma County,222.0
+95663,Penryn,CA,Placer County,210.5
+92570,Perris,CA,Riverside County,210.5
+92571,Perris,CA,Riverside County,210.5
+92572,Perris,CA,Riverside County,210.5
+92599,Perris,CA,Riverside County,210.5
+94060,Pescadero,CA,San Mateo County,222.0
+94952,Petaluma,CA,Sonoma County,222.0
+94953,Petaluma,CA,Sonoma County,222.0
+94954,Petaluma,CA,Sonoma County,222.0
+94955,Petaluma,CA,Sonoma County,222.0
+94975,Petaluma,CA,Sonoma County,222.0
+94999,Petaluma,CA,Sonoma County,222.0
+92329,Phelan,CA,San Bernardino County,195.0
+92371,Phelan,CA,San Bernardino County,195.0
+94620,Piedmont,CA,Alameda County,222.0
+93649,Piedra,CA,Fresno County,203.0
+95664,Pilot Hill,CA,El Dorado County,203.0
+95665,Pine Grove,CA,Amador County,203.0
+93222,Pine Mountain Club,CA,Kern County,195.0
+95364,Pinecrest,CA,Tuolumne County,210.5
+94564,Pinole,CA,Contra Costa County,222.0
+92372,Pinon Hills,CA,San Bernardino County,195.0
+95666,Pioneer,CA,Amador County,203.0
+92268,Pioneertown,CA,San Bernardino County,195.0
+93040,Piru,CA,Ventura County,195.0
+94565,Pittsburg,CA,Contra Costa County,222.0
+95667,Placerville,CA,El Dorado County,203.0
+95365,Planada,CA,Merced County,210.5
+95668,Pleasant Grove,CA,Sutter County,210.5
+94523,Pleasant Hill,CA,Contra Costa County,222.0
+94566,Pleasanton,CA,Alameda County,222.0
+94588,Pleasanton,CA,Alameda County,222.0
+95669,Plymouth,CA,Amador County,203.0
+93042,Point Mugu Nawc,CA,Ventura County,195.0
+94956,Point Reyes Station,CA,Marin County,210.5
+95726,Pollock Pines,CA,El Dorado County,203.0
+91766,Pomona,CA,Los Angeles County,189.0
+91767,Pomona,CA,Los Angeles County,189.0
+91768,Pomona,CA,Los Angeles County,189.0
+91769,Pomona,CA,Los Angeles County,189.0
+94567,Pope Valley,CA,Napa County,210.5
+94569,Port Costa,CA,Contra Costa County,222.0
+93041,Port Hueneme,CA,Ventura County,195.0
+93044,Port Hueneme,CA,Ventura County,195.0
+93043,Port Hueneme Cbc Base,CA,Ventura County,195.0
+91326,Porter Ranch,CA,Los Angeles County,189.0
+94028,Portola Valley,CA,San Mateo County,222.0
+93651,Prather,CA,Fresno County,203.0
+95972,Rackerby,CA,Yuba County,203.0
+95248,Rail Road Flat,CA,Calaveras County,210.5
+93652,Raisin City,CA,Fresno County,203.0
+95670,Rancho Cordova,CA,Sacramento County,222.0
+95741,Rancho Cordova,CA,Sacramento County,222.0
+95742,Rancho Cordova,CA,Sacramento County,222.0
+91701,Rancho Cucamonga,CA,San Bernardino County,195.0
+91729,Rancho Cucamonga,CA,San Bernardino County,195.0
+91730,Rancho Cucamonga,CA,San Bernardino County,195.0
+91737,Rancho Cucamonga,CA,San Bernardino County,195.0
+91739,Rancho Cucamonga,CA,San Bernardino County,195.0
+92270,Rancho Mirage,CA,Riverside County,210.5
+93653,Raymond,CA,Madera County,203.0
+92373,Redlands,CA,San Bernardino County,195.0
+92374,Redlands,CA,San Bernardino County,195.0
+92375,Redlands,CA,San Bernardino County,195.0
+94061,Redwood City,CA,San Mateo County,222.0
+94062,Redwood City,CA,San Mateo County,222.0
+94063,Redwood City,CA,San Mateo County,222.0
+94064,Redwood City,CA,San Mateo County,222.0
+94065,Redwood City,CA,San Mateo County,222.0
+95044,Redwood Estates,CA,Santa Clara County,222.0
+93654,Reedley,CA,Fresno County,203.0
+95671,Represa,CA,Sacramento County,222.0
+95672,Rescue,CA,El Dorado County,203.0
+91335,Reseda,CA,Los Angeles County,189.0
+91337,Reseda,CA,Los Angeles County,189.0
+92376,Rialto,CA,San Bernardino County,195.0
+92377,Rialto,CA,San Bernardino County,195.0
+94801,Richmond,CA,Contra Costa County,222.0
+94802,Richmond,CA,Contra Costa County,222.0
+94804,Richmond,CA,Contra Costa County,222.0
+94805,Richmond,CA,Contra Costa County,222.0
+94807,Richmond,CA,Contra Costa County,222.0
+94808,Richmond,CA,Contra Costa County,222.0
+94850,Richmond,CA,Contra Costa County,222.0
+92378,Rimforest,CA,San Bernardino County,195.0
+95673,Rio Linda,CA,Sacramento County,222.0
+95471,Rio Nido,CA,Sonoma County,222.0
+95674,Rio Oso,CA,Sutter County,210.5
+94571,Rio Vista,CA,Solano County,203.0
+95366,Ripon,CA,San Joaquin County,222.0
+95675,River Pines,CA,Amador County,203.0
+95367,Riverbank,CA,Stanislaus County,210.5
+93656,Riverdale,CA,Fresno County,203.0
+92501,Riverside,CA,Riverside County,210.5
+92502,Riverside,CA,Riverside County,210.5
+92503,Riverside,CA,Riverside County,210.5
+92504,Riverside,CA,Riverside County,210.5
+92505,Riverside,CA,Riverside County,210.5
+92506,Riverside,CA,Riverside County,210.5
+92507,Riverside,CA,Riverside County,210.5
+92508,Riverside,CA,Riverside County,210.5
+92513,Riverside,CA,Riverside County,210.5
+92514,Riverside,CA,Riverside County,210.5
+92516,Riverside,CA,Riverside County,210.5
+92517,Riverside,CA,Riverside County,210.5
+92519,Riverside,CA,Riverside County,210.5
+92521,Riverside,CA,Riverside County,210.5
+92522,Riverside,CA,Riverside County,210.5
+95676,Robbins,CA,Sutter County,210.5
+95677,Rocklin,CA,Placer County,210.5
+95765,Rocklin,CA,Placer County,210.5
+94572,Rodeo,CA,Contra Costa County,222.0
+94926,Rohnert Park,CA,Sonoma County,222.0
+94927,Rohnert Park,CA,Sonoma County,222.0
+94928,Rohnert Park,CA,Sonoma County,222.0
+93560,Rosamond,CA,Kern County,195.0
+95661,Roseville,CA,Placer County,210.5
+95678,Roseville,CA,Placer County,210.5
+95747,Roseville,CA,Placer County,210.5
+94957,Ross,CA,Marin County,210.5
+95975,Rough And Ready,CA,Nevada County,203.0
+95679,Rumsey,CA,Yolo County,210.5
+92382,Running Springs,CA,San Bernardino County,195.0
+94573,Rutherford,CA,Napa County,210.5
+95680,Ryde,CA,Sacramento County,222.0
+94203,Sacramento,CA,Sacramento County,222.0
+94204,Sacramento,CA,Sacramento County,222.0
+94205,Sacramento,CA,Sacramento County,222.0
+94206,Sacramento,CA,Sacramento County,222.0
+94207,Sacramento,CA,Sacramento County,222.0
+94208,Sacramento,CA,Sacramento County,222.0
+94209,Sacramento,CA,Sacramento County,222.0
+94211,Sacramento,CA,Sacramento County,222.0
+94229,Sacramento,CA,Sacramento County,222.0
+94230,Sacramento,CA,Sacramento County,222.0
+94232,Sacramento,CA,Sacramento County,222.0
+94234,Sacramento,CA,Sacramento County,222.0
+94235,Sacramento,CA,Sacramento County,222.0
+94236,Sacramento,CA,Sacramento County,222.0
+94237,Sacramento,CA,Sacramento County,222.0
+94239,Sacramento,CA,Sacramento County,222.0
+94240,Sacramento,CA,Sacramento County,222.0
+94244,Sacramento,CA,Sacramento County,222.0
+94245,Sacramento,CA,Sacramento County,222.0
+94247,Sacramento,CA,Sacramento County,222.0
+94248,Sacramento,CA,Sacramento County,222.0
+94249,Sacramento,CA,Sacramento County,222.0
+94250,Sacramento,CA,Sacramento County,222.0
+94252,Sacramento,CA,Sacramento County,222.0
+94254,Sacramento,CA,Sacramento County,222.0
+94256,Sacramento,CA,Sacramento County,222.0
+94257,Sacramento,CA,Sacramento County,222.0
+94258,Sacramento,CA,Sacramento County,222.0
+94259,Sacramento,CA,Sacramento County,222.0
+94261,Sacramento,CA,Sacramento County,222.0
+94262,Sacramento,CA,Sacramento County,222.0
+94263,Sacramento,CA,Sacramento County,222.0
+94267,Sacramento,CA,Sacramento County,222.0
+94268,Sacramento,CA,Sacramento County,222.0
+94269,Sacramento,CA,Sacramento County,222.0
+94271,Sacramento,CA,Sacramento County,222.0
+94273,Sacramento,CA,Sacramento County,222.0
+94274,Sacramento,CA,Sacramento County,222.0
+94277,Sacramento,CA,Sacramento County,222.0
+94278,Sacramento,CA,Sacramento County,222.0
+94279,Sacramento,CA,Sacramento County,222.0
+94280,Sacramento,CA,Sacramento County,222.0
+94282,Sacramento,CA,Sacramento County,222.0
+94283,Sacramento,CA,Sacramento County,222.0
+94284,Sacramento,CA,Sacramento County,222.0
+94285,Sacramento,CA,Sacramento County,222.0
+94286,Sacramento,CA,Sacramento County,222.0
+94287,Sacramento,CA,Sacramento County,222.0
+94288,Sacramento,CA,Sacramento County,222.0
+94289,Sacramento,CA,Sacramento County,222.0
+94290,Sacramento,CA,Sacramento County,222.0
+94291,Sacramento,CA,Sacramento County,222.0
+94293,Sacramento,CA,Sacramento County,222.0
+94294,Sacramento,CA,Sacramento County,222.0
+94295,Sacramento,CA,Sacramento County,222.0
+94296,Sacramento,CA,Sacramento County,222.0
+94297,Sacramento,CA,Sacramento County,222.0
+94298,Sacramento,CA,Sacramento County,222.0
+94299,Sacramento,CA,Sacramento County,222.0
+95811,Sacramento,CA,Sacramento County,222.0
+95812,Sacramento,CA,Sacramento County,222.0
+95813,Sacramento,CA,Sacramento County,222.0
+95814,Sacramento,CA,Sacramento County,222.0
+95815,Sacramento,CA,Sacramento County,222.0
+95816,Sacramento,CA,Sacramento County,222.0
+95817,Sacramento,CA,Sacramento County,222.0
+95818,Sacramento,CA,Sacramento County,222.0
+95819,Sacramento,CA,Sacramento County,222.0
+95820,Sacramento,CA,Sacramento County,222.0
+95821,Sacramento,CA,Sacramento County,222.0
+95822,Sacramento,CA,Sacramento County,222.0
+95823,Sacramento,CA,Sacramento County,222.0
+95824,Sacramento,CA,Sacramento County,222.0
+95825,Sacramento,CA,Sacramento County,222.0
+95826,Sacramento,CA,Sacramento County,222.0
+95827,Sacramento,CA,Sacramento County,222.0
+95828,Sacramento,CA,Sacramento County,222.0
+95829,Sacramento,CA,Sacramento County,222.0
+95830,Sacramento,CA,Sacramento County,222.0
+95831,Sacramento,CA,Sacramento County,222.0
+95832,Sacramento,CA,Sacramento County,222.0
+95833,Sacramento,CA,Sacramento County,222.0
+95834,Sacramento,CA,Sacramento County,222.0
+95835,Sacramento,CA,Sacramento County,222.0
+95836,Sacramento,CA,Sacramento County,222.0
+95837,Sacramento,CA,Sacramento County,222.0
+95838,Sacramento,CA,Sacramento County,222.0
+95840,Sacramento,CA,Sacramento County,222.0
+95841,Sacramento,CA,Sacramento County,222.0
+95842,Sacramento,CA,Sacramento County,222.0
+95851,Sacramento,CA,Sacramento County,222.0
+95852,Sacramento,CA,Sacramento County,222.0
+95853,Sacramento,CA,Sacramento County,222.0
+95860,Sacramento,CA,Sacramento County,222.0
+95864,Sacramento,CA,Sacramento County,222.0
+95865,Sacramento,CA,Sacramento County,222.0
+95866,Sacramento,CA,Sacramento County,222.0
+95867,Sacramento,CA,Sacramento County,222.0
+95894,Sacramento,CA,Sacramento County,222.0
+95899,Sacramento,CA,Sacramento County,222.0
+94574,Saint Helena,CA,Napa County,210.5
+95368,Salida,CA,Stanislaus County,210.5
+93901,Salinas,CA,Monterey County,210.5
+93902,Salinas,CA,Monterey County,210.5
+93905,Salinas,CA,Monterey County,210.5
+93906,Salinas,CA,Monterey County,210.5
+93907,Salinas,CA,Monterey County,210.5
+93908,Salinas,CA,Monterey County,210.5
+93912,Salinas,CA,Monterey County,210.5
+93915,Salinas,CA,Monterey County,210.5
+95249,San Andreas,CA,Calaveras County,210.5
+94960,San Anselmo,CA,Marin County,210.5
+94979,San Anselmo,CA,Marin County,210.5
+93450,San Ardo,CA,Monterey County,210.5
+92401,San Bernardino,CA,San Bernardino County,195.0
+92402,San Bernardino,CA,San Bernardino County,195.0
+92403,San Bernardino,CA,San Bernardino County,195.0
+92404,San Bernardino,CA,San Bernardino County,195.0
+92405,San Bernardino,CA,San Bernardino County,195.0
+92406,San Bernardino,CA,San Bernardino County,195.0
+92407,San Bernardino,CA,San Bernardino County,195.0
+92408,San Bernardino,CA,San Bernardino County,195.0
+92410,San Bernardino,CA,San Bernardino County,195.0
+92411,San Bernardino,CA,San Bernardino County,195.0
+92413,San Bernardino,CA,San Bernardino County,195.0
+92415,San Bernardino,CA,San Bernardino County,195.0
+92418,San Bernardino,CA,San Bernardino County,195.0
+92423,San Bernardino,CA,San Bernardino County,195.0
+92427,San Bernardino,CA,San Bernardino County,195.0
+94066,San Bruno,CA,San Mateo County,222.0
+94070,San Carlos,CA,San Mateo County,222.0
+91773,San Dimas,CA,Los Angeles County,189.0
+91340,San Fernando,CA,Los Angeles County,189.0
+91341,San Fernando,CA,Los Angeles County,189.0
+94102,San Francisco,CA,San Francisco County,222.0
+94103,San Francisco,CA,San Francisco County,222.0
+94104,San Francisco,CA,San Francisco County,222.0
+94105,San Francisco,CA,San Francisco County,222.0
+94107,San Francisco,CA,San Francisco County,222.0
+94108,San Francisco,CA,San Francisco County,222.0
+94109,San Francisco,CA,San Francisco County,222.0
+94110,San Francisco,CA,San Francisco County,222.0
+94111,San Francisco,CA,San Francisco County,222.0
+94112,San Francisco,CA,San Francisco County,222.0
+94114,San Francisco,CA,San Francisco County,222.0
+94115,San Francisco,CA,San Francisco County,222.0
+94116,San Francisco,CA,San Francisco County,222.0
+94117,San Francisco,CA,San Francisco County,222.0
+94118,San Francisco,CA,San Francisco County,222.0
+94119,San Francisco,CA,San Francisco County,222.0
+94120,San Francisco,CA,San Francisco County,222.0
+94121,San Francisco,CA,San Francisco County,222.0
+94122,San Francisco,CA,San Francisco County,222.0
+94123,San Francisco,CA,San Francisco County,222.0
+94124,San Francisco,CA,San Francisco County,222.0
+94125,San Francisco,CA,San Francisco County,222.0
+94126,San Francisco,CA,San Francisco County,222.0
+94127,San Francisco,CA,San Francisco County,222.0
+94128,San Francisco,CA,San Mateo County,222.0
+94129,San Francisco,CA,San Francisco County,222.0
+94130,San Francisco,CA,San Francisco County,222.0
+94131,San Francisco,CA,San Francisco County,222.0
+94132,San Francisco,CA,San Francisco County,222.0
+94133,San Francisco,CA,San Francisco County,222.0
+94134,San Francisco,CA,San Francisco County,222.0
+94137,San Francisco,CA,San Francisco County,222.0
+94139,San Francisco,CA,San Francisco County,222.0
+94140,San Francisco,CA,San Francisco County,222.0
+94141,San Francisco,CA,San Francisco County,222.0
+94142,San Francisco,CA,San Francisco County,222.0
+94143,San Francisco,CA,San Francisco County,222.0
+94144,San Francisco,CA,San Francisco County,222.0
+94145,San Francisco,CA,San Francisco County,222.0
+94146,San Francisco,CA,San Francisco County,222.0
+94147,San Francisco,CA,San Francisco County,222.0
+94151,San Francisco,CA,San Francisco County,222.0
+94158,San Francisco,CA,San Francisco County,222.0
+94159,San Francisco,CA,San Francisco County,222.0
+94160,San Francisco,CA,San Francisco County,222.0
+94161,San Francisco,CA,San Francisco County,222.0
+94163,San Francisco,CA,San Francisco County,222.0
+94164,San Francisco,CA,San Francisco County,222.0
+94172,San Francisco,CA,San Francisco County,222.0
+94177,San Francisco,CA,San Francisco County,222.0
+94188,San Francisco,CA,San Francisco County,222.0
+94963,San Geronimo,CA,Marin County,210.5
+94074,San Gregorio,CA,San Mateo County,222.0
+92581,San Jacinto,CA,Riverside County,210.5
+92582,San Jacinto,CA,Riverside County,210.5
+92583,San Jacinto,CA,Riverside County,210.5
+93660,San Joaquin,CA,Fresno County,203.0
+95101,San Jose,CA,Santa Clara County,222.0
+95103,San Jose,CA,Santa Clara County,222.0
+95106,San Jose,CA,Santa Clara County,222.0
+95108,San Jose,CA,Santa Clara County,222.0
+95109,San Jose,CA,Santa Clara County,222.0
+95110,San Jose,CA,Santa Clara County,222.0
+95111,San Jose,CA,Santa Clara County,222.0
+95112,San Jose,CA,Santa Clara County,222.0
+95113,San Jose,CA,Santa Clara County,222.0
+95115,San Jose,CA,Santa Clara County,222.0
+95116,San Jose,CA,Santa Clara County,222.0
+95117,San Jose,CA,Santa Clara County,222.0
+95118,San Jose,CA,Santa Clara County,222.0
+95119,San Jose,CA,Santa Clara County,222.0
+95120,San Jose,CA,Santa Clara County,222.0
+95121,San Jose,CA,Santa Clara County,222.0
+95122,San Jose,CA,Santa Clara County,222.0
+95123,San Jose,CA,Santa Clara County,222.0
+95124,San Jose,CA,Santa Clara County,222.0
+95125,San Jose,CA,Santa Clara County,222.0
+95126,San Jose,CA,Santa Clara County,222.0
+95127,San Jose,CA,Santa Clara County,222.0
+95128,San Jose,CA,Santa Clara County,222.0
+95129,San Jose,CA,Santa Clara County,222.0
+95130,San Jose,CA,Santa Clara County,222.0
+95131,San Jose,CA,Santa Clara County,222.0
+95132,San Jose,CA,Santa Clara County,222.0
+95133,San Jose,CA,Santa Clara County,222.0
+95134,San Jose,CA,Santa Clara County,222.0
+95135,San Jose,CA,Santa Clara County,222.0
+95136,San Jose,CA,Santa Clara County,222.0
+95138,San Jose,CA,Santa Clara County,222.0
+95139,San Jose,CA,Santa Clara County,222.0
+95141,San Jose,CA,Santa Clara County,222.0
+95148,San Jose,CA,Santa Clara County,222.0
+95150,San Jose,CA,Santa Clara County,222.0
+95151,San Jose,CA,Santa Clara County,222.0
+95152,San Jose,CA,Santa Clara County,222.0
+95153,San Jose,CA,Santa Clara County,222.0
+95154,San Jose,CA,Santa Clara County,222.0
+95155,San Jose,CA,Santa Clara County,222.0
+95156,San Jose,CA,Santa Clara County,222.0
+95157,San Jose,CA,Santa Clara County,222.0
+95158,San Jose,CA,Santa Clara County,222.0
+95159,San Jose,CA,Santa Clara County,222.0
+95160,San Jose,CA,Santa Clara County,222.0
+95161,San Jose,CA,Santa Clara County,222.0
+95164,San Jose,CA,Santa Clara County,222.0
+95170,San Jose,CA,Santa Clara County,222.0
+95172,San Jose,CA,Santa Clara County,222.0
+95173,San Jose,CA,Santa Clara County,222.0
+95190,San Jose,CA,Santa Clara County,222.0
+95191,San Jose,CA,Santa Clara County,222.0
+95192,San Jose,CA,Santa Clara County,222.0
+95193,San Jose,CA,Santa Clara County,222.0
+95194,San Jose,CA,Santa Clara County,222.0
+95196,San Jose,CA,Santa Clara County,222.0
+95045,San Juan Bautista,CA,San Benito County,203.0
+94577,San Leandro,CA,Alameda County,222.0
+94578,San Leandro,CA,Alameda County,222.0
+94579,San Leandro,CA,Alameda County,222.0
+94580,San Lorenzo,CA,Alameda County,222.0
+93954,San Lucas,CA,Monterey County,210.5
+95046,San Martin,CA,Santa Clara County,222.0
+94401,San Mateo,CA,San Mateo County,222.0
+94402,San Mateo,CA,San Mateo County,222.0
+94403,San Mateo,CA,San Mateo County,222.0
+94404,San Mateo,CA,San Mateo County,222.0
+94497,San Mateo,CA,San Mateo County,222.0
+94806,San Pablo,CA,Contra Costa County,222.0
+94964,San Quentin,CA,Marin County,210.5
+94974,San Quentin,CA,Marin County,210.5
+94901,San Rafael,CA,Marin County,210.5
+94903,San Rafael,CA,Marin County,210.5
+94912,San Rafael,CA,Marin County,210.5
+94913,San Rafael,CA,Marin County,210.5
+94915,San Rafael,CA,Marin County,210.5
+94582,San Ramon,CA,Contra Costa County,222.0
+94583,San Ramon,CA,Contra Costa County,222.0
+93657,Sanger,CA,Fresno County,203.0
+93101,Santa Barbara,CA,Santa Barbara County,203.0
+93102,Santa Barbara,CA,Santa Barbara County,203.0
+93103,Santa Barbara,CA,Santa Barbara County,203.0
+93105,Santa Barbara,CA,Santa Barbara County,203.0
+93106,Santa Barbara,CA,Santa Barbara County,203.0
+93107,Santa Barbara,CA,Santa Barbara County,203.0
+93108,Santa Barbara,CA,Santa Barbara County,203.0
+93109,Santa Barbara,CA,Santa Barbara County,203.0
+93110,Santa Barbara,CA,Santa Barbara County,203.0
+93111,Santa Barbara,CA,Santa Barbara County,203.0
+93120,Santa Barbara,CA,Santa Barbara County,203.0
+93121,Santa Barbara,CA,Santa Barbara County,203.0
+93130,Santa Barbara,CA,Santa Barbara County,203.0
+93140,Santa Barbara,CA,Santa Barbara County,203.0
+93150,Santa Barbara,CA,Santa Barbara County,203.0
+93160,Santa Barbara,CA,Santa Barbara County,203.0
+93190,Santa Barbara,CA,Santa Barbara County,203.0
+95050,Santa Clara,CA,Santa Clara County,222.0
+95051,Santa Clara,CA,Santa Clara County,222.0
+95052,Santa Clara,CA,Santa Clara County,222.0
+95053,Santa Clara,CA,Santa Clara County,222.0
+95054,Santa Clara,CA,Santa Clara County,222.0
+95055,Santa Clara,CA,Santa Clara County,222.0
+95056,Santa Clara,CA,Santa Clara County,222.0
+91350,Santa Clarita,CA,Los Angeles County,189.0
+91380,Santa Clarita,CA,Los Angeles County,189.0
+91382,Santa Clarita,CA,Los Angeles County,189.0
+91383,Santa Clarita,CA,Los Angeles County,189.0
+91390,Santa Clarita,CA,Los Angeles County,189.0
+95060,Santa Cruz,CA,Santa Cruz County,197.5
+95061,Santa Cruz,CA,Santa Cruz County,197.5
+95062,Santa Cruz,CA,Santa Cruz County,197.5
+95063,Santa Cruz,CA,Santa Cruz County,197.5
+95064,Santa Cruz,CA,Santa Cruz County,197.5
+95065,Santa Cruz,CA,Santa Cruz County,197.5
+90401,Santa Monica,CA,Los Angeles County,189.0
+90402,Santa Monica,CA,Los Angeles County,189.0
+90403,Santa Monica,CA,Los Angeles County,189.0
+90404,Santa Monica,CA,Los Angeles County,189.0
+90405,Santa Monica,CA,Los Angeles County,189.0
+90406,Santa Monica,CA,Los Angeles County,189.0
+90407,Santa Monica,CA,Los Angeles County,189.0
+90408,Santa Monica,CA,Los Angeles County,189.0
+90409,Santa Monica,CA,Los Angeles County,189.0
+90410,Santa Monica,CA,Los Angeles County,189.0
+90411,Santa Monica,CA,Los Angeles County,189.0
+93060,Santa Paula,CA,Ventura County,195.0
+93061,Santa Paula,CA,Ventura County,195.0
+93661,Santa Rita Park,CA,Merced County,210.5
+95401,Santa Rosa,CA,Sonoma County,222.0
+95402,Santa Rosa,CA,Sonoma County,222.0
+95403,Santa Rosa,CA,Sonoma County,222.0
+95404,Santa Rosa,CA,Sonoma County,222.0
+95405,Santa Rosa,CA,Sonoma County,222.0
+95406,Santa Rosa,CA,Sonoma County,222.0
+95407,Santa Rosa,CA,Sonoma County,222.0
+95409,Santa Rosa,CA,Sonoma County,222.0
+95070,Saratoga,CA,Santa Clara County,222.0
+95071,Saratoga,CA,Santa Clara County,222.0
+94965,Sausalito,CA,Marin County,210.5
+94966,Sausalito,CA,Marin County,210.5
+95066,Scotts Valley,CA,Santa Cruz County,197.5
+95067,Scotts Valley,CA,Santa Cruz County,197.5
+93955,Seaside,CA,Monterey County,210.5
+95472,Sebastopol,CA,Sonoma County,222.0
+95473,Sebastopol,CA,Sonoma County,222.0
+93662,Selma,CA,Fresno County,203.0
+93664,Shaver Lake,CA,Fresno County,203.0
+95681,Sheridan,CA,Placer County,210.5
+91403,Sherman Oaks,CA,Los Angeles County,189.0
+91413,Sherman Oaks,CA,Los Angeles County,189.0
+91423,Sherman Oaks,CA,Los Angeles County,189.0
+91495,Sherman Oaks,CA,Los Angeles County,189.0
+95682,Shingle Springs,CA,El Dorado County,203.0
+93062,Simi Valley,CA,Ventura County,195.0
+93063,Simi Valley,CA,Ventura County,195.0
+93065,Simi Valley,CA,Ventura County,195.0
+93094,Simi Valley,CA,Ventura County,195.0
+93099,Simi Valley,CA,Ventura County,195.0
+92385,Skyforest,CA,San Bernardino County,195.0
+95683,Sloughhouse,CA,Sacramento County,222.0
+95977,Smartsville,CA,Nevada County,203.0
+95567,Smith River,CA,Del Norte County,210.5
+95369,Snelling,CA,Merced County,210.5
+95728,Soda Springs,CA,Placer County,203.0
+93960,Soledad,CA,Monterey County,210.5
+95684,Somerset,CA,El Dorado County,203.0
+93066,Somis,CA,Ventura County,195.0
+95476,Sonoma,CA,Sonoma County,222.0
+95370,Sonora,CA,Tuolumne County,210.5
+95073,Soquel,CA,Santa Cruz County,197.5
+95372,Soulsbyville,CA,Tuolumne County,210.5
+93665,South Dos Palos,CA,Merced County,210.5
+96150,South Lake Tahoe,CA,El Dorado County,203.0
+96151,South Lake Tahoe,CA,El Dorado County,203.0
+96152,South Lake Tahoe,CA,El Dorado County,203.0
+96154,South Lake Tahoe,CA,El Dorado County,203.0
+96155,South Lake Tahoe,CA,El Dorado County,203.0
+96156,South Lake Tahoe,CA,Alpine County,203.0
+96157,South Lake Tahoe,CA,El Dorado County,203.0
+96158,South Lake Tahoe,CA,El Dorado County,203.0
+94080,South San Francisco,CA,San Mateo County,222.0
+94083,South San Francisco,CA,San Mateo County,222.0
+93962,Spreckels,CA,Monterey County,210.5
+93675,Squaw Valley,CA,Fresno County,203.0
+95373,Standard,CA,Tuolumne County,210.5
+94305,Stanford,CA,Santa Clara County,222.0
+91381,Stevenson Ranch,CA,Los Angeles County,189.0
+95374,Stevinson,CA,Merced County,210.5
+95480,Stewarts Point,CA,Sonoma County,222.0
+94970,Stinson Beach,CA,Marin County,210.5
+95201,Stockton,CA,San Joaquin County,222.0
+95202,Stockton,CA,San Joaquin County,222.0
+95203,Stockton,CA,San Joaquin County,222.0
+95204,Stockton,CA,San Joaquin County,222.0
+95205,Stockton,CA,San Joaquin County,222.0
+95206,Stockton,CA,San Joaquin County,222.0
+95207,Stockton,CA,San Joaquin County,222.0
+95208,Stockton,CA,San Joaquin County,222.0
+95209,Stockton,CA,San Joaquin County,222.0
+95210,Stockton,CA,San Joaquin County,222.0
+95211,Stockton,CA,San Joaquin County,222.0
+95212,Stockton,CA,San Joaquin County,222.0
+95213,Stockton,CA,San Joaquin County,222.0
+95215,Stockton,CA,San Joaquin County,222.0
+95219,Stockton,CA,San Joaquin County,222.0
+95267,Stockton,CA,San Joaquin County,222.0
+95269,Stockton,CA,San Joaquin County,222.0
+95296,Stockton,CA,San Joaquin County,222.0
+95297,Stockton,CA,San Joaquin County,222.0
+95375,Strawberry,CA,Tuolumne County,210.5
+95981,Strawberry Valley,CA,Plumas County,203.0
+91604,Studio City,CA,Los Angeles County,189.0
+91614,Studio City,CA,Los Angeles County,189.0
+92386,Sugarloaf,CA,San Bernardino County,195.0
+94585,Suisun City,CA,Solano County,203.0
+93067,Summerland,CA,Santa Barbara County,203.0
+91352,Sun Valley,CA,Los Angeles County,189.0
+91353,Sun Valley,CA,Los Angeles County,189.0
+91040,Sunland,CA,Los Angeles County,189.0
+91041,Sunland,CA,Los Angeles County,189.0
+94085,Sunnyvale,CA,Santa Clara County,222.0
+94086,Sunnyvale,CA,Santa Clara County,222.0
+94087,Sunnyvale,CA,Santa Clara County,222.0
+94088,Sunnyvale,CA,Santa Clara County,222.0
+94089,Sunnyvale,CA,Santa Clara County,222.0
+94586,Sunol,CA,Alameda County,222.0
+95982,Sutter,CA,Sutter County,210.5
+95685,Sutter Creek,CA,Amador County,203.0
+91342,Sylmar,CA,Los Angeles County,189.0
+91392,Sylmar,CA,Los Angeles County,189.0
+96145,Tahoe City,CA,Placer County,210.5
+96148,Tahoe Vista,CA,Placer County,210.5
+96142,Tahoma,CA,El Dorado County,210.5
+91356,Tarzana,CA,Los Angeles County,189.0
+91357,Tarzana,CA,Los Angeles County,189.0
+92389,Tecopa,CA,Inyo County,179.0
+93561,Tehachapi,CA,Kern County,195.0
+93581,Tehachapi,CA,Kern County,195.0
+92589,Temecula,CA,Riverside County,210.5
+92591,Temecula,CA,Riverside County,210.5
+92592,Temecula,CA,Riverside County,210.5
+92593,Temecula,CA,Riverside County,210.5
+95497,The Sea Ranch,CA,Sonoma County,222.0
+95686,Thornton,CA,San Joaquin County,222.0
+91358,Thousand Oaks,CA,Ventura County,195.0
+91360,Thousand Oaks,CA,Ventura County,195.0
+91362,Thousand Oaks,CA,Ventura County,195.0
+92276,Thousand Palms,CA,Riverside County,210.5
+93667,Tollhouse,CA,Fresno County,203.0
+91610,Toluca Lake,CA,Los Angeles County,189.0
+94971,Tomales,CA,Marin County,210.5
+90290,Topanga,CA,Los Angeles County,189.0
+95304,Tracy,CA,San Joaquin County,222.0
+95376,Tracy,CA,San Joaquin County,222.0
+95377,Tracy,CA,San Joaquin County,222.0
+95378,Tracy,CA,San Joaquin County,222.0
+95391,Tracy,CA,San Joaquin County,222.0
+93668,Tranquillity,CA,Fresno County,203.0
+94535,Travis Afb,CA,Solano County,203.0
+95075,Tres Pinos,CA,San Benito County,203.0
+96160,Truckee,CA,Nevada County,203.0
+96161,Truckee,CA,Nevada County,203.0
+96162,Truckee,CA,Placer County,210.5
+91042,Tujunga,CA,Los Angeles County,189.0
+91043,Tujunga,CA,Los Angeles County,189.0
+95379,Tuolumne,CA,Tuolumne County,210.5
+95380,Turlock,CA,Stanislaus County,210.5
+95381,Turlock,CA,Stanislaus County,210.5
+95382,Turlock,CA,Stanislaus County,210.5
+95383,Twain Harte,CA,Tuolumne County,210.5
+95735,Twin Bridges,CA,El Dorado County,203.0
+92391,Twin Peaks,CA,San Bernardino County,195.0
+94587,Union City,CA,Alameda County,222.0
+91608,Universal City,CA,Los Angeles County,189.0
+91784,Upland,CA,San Bernardino County,195.0
+91785,Upland,CA,San Bernardino County,195.0
+91786,Upland,CA,San Bernardino County,195.0
+95687,Vacaville,CA,Solano County,203.0
+95688,Vacaville,CA,Solano County,203.0
+95696,Vacaville,CA,Solano County,203.0
+91354,Valencia,CA,Los Angeles County,189.0
+91355,Valencia,CA,Los Angeles County,189.0
+91385,Valencia,CA,Los Angeles County,189.0
+95251,Vallecito,CA,Calaveras County,210.5
+94589,Vallejo,CA,Solano County,203.0
+94590,Vallejo,CA,Solano County,203.0
+94591,Vallejo,CA,Solano County,203.0
+94592,Vallejo,CA,Solano County,203.0
+94972,Valley Ford,CA,Sonoma County,222.0
+95252,Valley Springs,CA,Calaveras County,210.5
+91607,Valley Village,CA,Los Angeles County,189.0
+91617,Valley Village,CA,Los Angeles County,189.0
+93563,Valyermo,CA,Los Angeles County,189.0
+91401,Van Nuys,CA,Los Angeles County,189.0
+91404,Van Nuys,CA,Los Angeles County,189.0
+91405,Van Nuys,CA,Los Angeles County,189.0
+91406,Van Nuys,CA,Los Angeles County,189.0
+91407,Van Nuys,CA,Los Angeles County,189.0
+91408,Van Nuys,CA,Los Angeles County,189.0
+91409,Van Nuys,CA,Los Angeles County,189.0
+91410,Van Nuys,CA,Los Angeles County,189.0
+91411,Van Nuys,CA,Los Angeles County,189.0
+91482,Van Nuys,CA,Los Angeles County,189.0
+91496,Van Nuys,CA,Los Angeles County,189.0
+91499,Van Nuys,CA,Los Angeles County,189.0
+90291,Venice,CA,Los Angeles County,189.0
+90294,Venice,CA,Los Angeles County,189.0
+93001,Ventura,CA,Ventura County,195.0
+93002,Ventura,CA,Ventura County,195.0
+93003,Ventura,CA,Ventura County,195.0
+93004,Ventura,CA,Ventura County,195.0
+93005,Ventura,CA,Ventura County,195.0
+93006,Ventura,CA,Ventura County,195.0
+93007,Ventura,CA,Ventura County,195.0
+93009,Ventura,CA,Ventura County,195.0
+91046,Verdugo City,CA,Los Angeles County,189.0
+95385,Vernalis,CA,Stanislaus County,222.0
+95253,Victor,CA,San Joaquin County,222.0
+92392,Victorville,CA,San Bernardino County,195.0
+92393,Victorville,CA,San Bernardino County,195.0
+92394,Victorville,CA,San Bernardino County,195.0
+92395,Victorville,CA,San Bernardino County,195.0
+95486,Villa Grande,CA,Sonoma County,222.0
+95487,Vineburg,CA,Sonoma County,222.0
+93277,Visalia,CA,Tulare County,203.0
+93291,Visalia,CA,Tulare County,203.0
+95689,Volcano,CA,Amador County,203.0
+95254,Wallace,CA,Calaveras County,210.5
+94595,Walnut Creek,CA,Contra Costa County,222.0
+94596,Walnut Creek,CA,Contra Costa County,222.0
+94597,Walnut Creek,CA,Contra Costa County,222.0
+94598,Walnut Creek,CA,Contra Costa County,222.0
+95690,Walnut Grove,CA,Sacramento County,222.0
+95986,Washington,CA,Nevada County,203.0
+95386,Waterford,CA,Stanislaus County,210.5
+95076,Watsonville,CA,Santa Cruz County,197.5
+95077,Watsonville,CA,Santa Cruz County,197.5
+95736,Weimar,CA,Placer County,210.5
+91307,West Hills,CA,Los Angeles County,189.0
+90069,West Hollywood,CA,Los Angeles County,189.0
+95255,West Point,CA,Calaveras County,210.5
+95605,West Sacramento,CA,Yolo County,210.5
+95691,West Sacramento,CA,Yolo County,210.5
+95798,West Sacramento,CA,Yolo County,210.5
+95799,West Sacramento,CA,Yolo County,210.5
+91359,Westlake Village,CA,Los Angeles County,195.0
+91361,Westlake Village,CA,Ventura County,195.0
+95387,Westley,CA,Stanislaus County,210.5
+95692,Wheatland,CA,Yuba County,203.0
+92282,Whitewater,CA,Riverside County,210.5
+92595,Wildomar,CA,Riverside County,210.5
+95257,Wilseyville,CA,Calaveras County,210.5
+95693,Wilton,CA,Sacramento County,222.0
+92596,Winchester,CA,Riverside County,210.5
+95492,Windsor,CA,Sonoma County,222.0
+91306,Winnetka,CA,Los Angeles County,189.0
+91396,Winnetka,CA,Los Angeles County,189.0
+95694,Winters,CA,Yolo County,210.5
+95388,Winton,CA,Merced County,210.5
+93669,Wishon,CA,Madera County,203.0
+94973,Woodacre,CA,Marin County,210.5
+95258,Woodbridge,CA,San Joaquin County,222.0
+95695,Woodland,CA,Yolo County,210.5
+95776,Woodland,CA,Yolo County,210.5
+91364,Woodland Hills,CA,Los Angeles County,189.0
+91365,Woodland Hills,CA,Los Angeles County,189.0
+91367,Woodland Hills,CA,Los Angeles County,189.0
+91371,Woodland Hills,CA,Los Angeles County,189.0
+92397,Wrightwood,CA,San Bernardino County,195.0
+95697,Yolo,CA,Yolo County,210.5
+95389,Yosemite National Park,CA,Mariposa County,203.0
+94599,Yountville,CA,Napa County,210.5
+95991,Yuba City,CA,Sutter County,210.5
+95992,Yuba City,CA,Sutter County,210.5
+95993,Yuba City,CA,Sutter County,210.5
+92399,Yucaipa,CA,San Bernardino County,195.0
+92284,Yucca Valley,CA,San Bernardino County,195.0
+92286,Yucca Valley,CA,San Bernardino County,195.0
+95698,Zamora,CA,Yolo County,210.5

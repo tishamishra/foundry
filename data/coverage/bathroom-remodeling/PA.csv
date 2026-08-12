@@ -1,0 +1,835 @@
+zip,city,state,county,payout
+17301,Abbottstown,PA,Adams County,33.83
+19001,Abington,PA,Montgomery County,33.83
+19501,Adamstown,PA,Lancaster County,33.83
+17302,Airville,PA,York County,33.83
+17501,Akron,PA,Lancaster County,33.83
+18011,Alburtis,PA,Lehigh County,33.83
+18101,Allentown,PA,Lehigh County,33.83
+18102,Allentown,PA,Lehigh County,33.83
+18103,Allentown,PA,Lehigh County,33.83
+18104,Allentown,PA,Lehigh County,33.83
+18105,Allentown,PA,Lehigh County,33.83
+18109,Allentown,PA,Lehigh County,33.83
+18195,Allentown,PA,Lehigh County,33.83
+17210,Amberson,PA,Franklin County,33.83
+19002,Ambler,PA,Montgomery County,44.63
+18320,Analomink,PA,Monroe County,33.83
+18403,Archbald,PA,Lackawanna County,33.83
+19420,Arcola,PA,Montgomery County,33.83
+19003,Ardmore,PA,Montgomery County,33.83
+17303,Arendtsville,PA,Adams County,33.83
+17920,Aristes,PA,Columbia County,33.83
+17304,Aspers,PA,Adams County,33.83
+19014,Aston,PA,Delaware County,33.83
+19407,Audubon,PA,Montgomery County,33.83
+19311,Avondale,PA,Chester County,33.83
+17502,Bainbridge,PA,Lancaster County,33.83
+19004,Bala Cynwyd,PA,Montgomery County,33.83
+19503,Bally,PA,Berks County,33.83
+18010,Bangor,PA,Northampton County,33.83
+18013,Bangor,PA,Northampton County,33.83
+18050,Bangor,PA,Northampton County,33.83
+17503,Bart,PA,Lancaster County,33.83
+18321,Bartonsville,PA,Monroe County,33.83
+18014,Bath,PA,Northampton County,33.83
+17504,Bausman,PA,Lancaster County,33.83
+18601,Beach Haven,PA,Luzerne County,33.83
+18405,Beach Lake,PA,Wayne County,33.83
+18602,Bear Creek,PA,Luzerne County,33.83
+19505,Bechtelsville,PA,Berks County,33.83
+18910,Bedminster,PA,Bucks County,33.83
+17306,Bendersville,PA,Adams County,33.83
+19020,Bensalem,PA,Bucks County,44.63
+17814,Benton,PA,Columbia County,33.83
+19506,Bernville,PA,Berks County,33.83
+17005,Berrysburg,PA,Dauphin County,33.83
+18603,Berwick,PA,Columbia County,34.02
+19507,Bethel,PA,Berks County,33.83
+18015,Bethlehem,PA,Northampton County,33.83
+18016,Bethlehem,PA,Lehigh County,33.83
+18017,Bethlehem,PA,Northampton County,44.63
+18018,Bethlehem,PA,Lehigh County,33.83
+18020,Bethlehem,PA,Northampton County,33.83
+18025,Bethlehem,PA,Northampton County,33.83
+17212,Big Cove Tannery,PA,Fulton County,33.83
+17307,Biglerville,PA,Adams County,33.83
+19421,Birchrunville,PA,Chester County,33.83
+17505,Bird In Hand,PA,Lancaster County,33.83
+19508,Birdsboro,PA,Berks County,38.32
+17006,Blain,PA,Perry County,33.83
+18610,Blakeslee,PA,Monroe County,33.83
+19510,Blandon,PA,Berks County,33.83
+18911,Blooming Glen,PA,Bucks County,33.83
+17815,Bloomsburg,PA,Columbia County,33.83
+17839,Bloomsburg,PA,Columbia County,33.83
+17506,Blue Ball,PA,Lancaster County,33.83
+19422,Blue Bell,PA,Montgomery County,33.83
+19424,Blue Bell,PA,Montgomery County,33.83
+17214,Blue Ridge Summit,PA,Franklin County,33.83
+17007,Boiling Springs,PA,Cumberland County,33.83
+19511,Bowers,PA,Berks County,33.83
+17507,Bowmansville,PA,Lancaster County,33.83
+19512,Boyertown,PA,Berks County,33.83
+19316,Brandamore,PA,Chester County,33.83
+19405,Bridgeport,PA,Montgomery County,33.83
+19007,Bristol,PA,Bucks County,44.63
+18322,Brodheadsville,PA,Monroe County,33.83
+17309,Brogue,PA,York County,33.83
+19015,Brookhaven,PA,Delaware County,33.83
+19008,Broomall,PA,Delaware County,33.83
+17508,Brownstown,PA,Lancaster County,33.83
+19009,Bryn Athyn,PA,Montgomery County,33.83
+18323,Buck Hill Falls,PA,Monroe County,33.83
+18912,Buckingham,PA,Bucks County,33.83
+15021,Burgettstown,PA,Washington County,35.44
+17215,Burnt Cabins,PA,Fulton County,33.83
+18324,Bushkill,PA,Pike County,33.83
+18373,Bushkill,PA,Pike County,33.83
+18611,Cambra,PA,Luzerne County,33.83
+17001,Camp Hill,PA,Cumberland County,33.83
+17011,Camp Hill,PA,Cumberland County,33.83
+17012,Camp Hill,PA,Cumberland County,33.83
+17089,Camp Hill,PA,Cumberland County,33.83
+17010,Campbelltown,PA,Lebanon County,33.83
+18407,Carbondale,PA,Lackawanna County,33.83
+17013,Carlisle,PA,Cumberland County,33.83
+17015,Carlisle,PA,Cumberland County,33.83
+18913,Carversville,PA,Bucks County,33.83
+17310,Cashtown,PA,Adams County,33.83
+18032,Catasauqua,PA,Lehigh County,33.83
+17820,Catawissa,PA,Columbia County,33.83
+19423,Cedars,PA,Montgomery County,33.83
+18034,Center Valley,PA,Lehigh County,33.83
+19516,Centerport,PA,Berks County,33.83
+19317,Chadds Ford,PA,Delaware County,33.83
+18914,Chalfont,PA,Bucks County,33.83
+17201,Chambersburg,PA,Franklin County,33.83
+17202,Chambersburg,PA,Franklin County,48.13
+15022,Charleroi,PA,Washington County,35.44
+19318,Chatham,PA,Chester County,33.83
+19012,Cheltenham,PA,Montgomery County,33.83
+18035,Cherryville,PA,Northampton County,33.83
+19016,Chester,PA,Delaware County,33.83
+19017,Chester Heights,PA,Delaware County,33.83
+19425,Chester Springs,PA,Chester County,44.63
+19319,Cheyney,PA,Delaware County,33.83
+18410,Chinchilla,PA,Lackawanna County,33.83
+17509,Christiana,PA,Lancaster County,33.83
+18411,Clarks Summit,PA,Lackawanna County,33.83
+19018,Clifton Heights,PA,Delaware County,33.83
+17866,Coal Township,PA,Northumberland County,33.83
+19320,Coatesville,PA,Chester County,44.63
+19330,Cochranville,PA,Chester County,33.83
+17311,Codorus,PA,York County,33.83
+19426,Collegeville,PA,Montgomery County,34.02
+18915,Colmar,PA,Montgomery County,33.83
+17512,Columbia,PA,Lancaster County,33.83
+17217,Concord,PA,Franklin County,33.83
+19331,Concordville,PA,Delaware County,33.83
+19339,Concordville,PA,Delaware County,33.83
+19340,Concordville,PA,Delaware County,33.83
+19428,Conshohocken,PA,Montgomery County,33.83
+19429,Conshohocken,PA,Montgomery County,33.83
+18219,Conyngham,PA,Luzerne County,33.83
+18036,Coopersburg,PA,Lehigh County,33.83
+18037,Coplay,PA,Lehigh County,33.83
+17016,Cornwall,PA,Lebanon County,33.83
+17312,Craley,PA,York County,33.83
+19430,Creamery,PA,Montgomery County,33.83
+18326,Cresco,PA,Monroe County,33.83
+19021,Croydon,PA,Bucks County,33.83
+19022,Crum Lynne,PA,Delaware County,33.83
+15536,Crystal Spring,PA,Fulton County,33.83
+18612,Dallas,PA,Luzerne County,33.83
+18690,Dallas,PA,Luzerne County,33.83
+17313,Dallastown,PA,York County,33.83
+17017,Dalmatia,PA,Northumberland County,33.83
+18414,Dalton,PA,Lackawanna County,33.83
+18415,Damascus,PA,Wayne County,33.83
+18916,Danboro,PA,Bucks County,33.83
+18038,Danielsville,PA,Northampton County,33.83
+17821,Danville,PA,Montour County,34.02
+17018,Dauphin,PA,Dauphin County,33.83
+18327,Delaware Water Gap,PA,Monroe County,33.83
+17314,Delta,PA,York County,33.83
+17517,Denver,PA,Lancaster County,33.83
+19333,Devon,PA,Chester County,33.83
+17730,Dewart,PA,Northumberland County,33.83
+17019,Dillsburg,PA,York County,33.83
+15033,Donora,PA,Washington County,35.44
+17823,Dornsife,PA,Northumberland County,33.83
+19518,Douglassville,PA,Berks County,33.83
+17315,Dover,PA,York County,33.83
+19335,Downingtown,PA,Chester County,33.83
+17219,Doylesburg,PA,Franklin County,33.83
+18901,Doylestown,PA,Bucks County,44.63
+18902,Doylestown,PA,Bucks County,33.83
+19025,Dresher,PA,Montgomery County,33.83
+19026,Drexel Hill,PA,Delaware County,44.63
+18221,Drifton,PA,Luzerne County,33.83
+17518,Drumore,PA,Lancaster County,33.83
+18222,Drums,PA,Luzerne County,33.83
+17220,Dry Run,PA,Franklin County,33.83
+18917,Dublin,PA,Bucks County,33.83
+17020,Duncannon,PA,Perry County,33.83
+18039,Durham,PA,Bucks County,33.83
+18642,Duryea,PA,Luzerne County,33.83
+19408,Eagleville,PA,Montgomery County,33.83
+19415,Eagleville,PA,Montgomery County,33.83
+18918,Earlington,PA,Montgomery County,33.83
+19519,Earlville,PA,Berks County,33.83
+17316,East Berlin,PA,Adams County,33.83
+17519,East Earl,PA,Lancaster County,33.83
+18041,East Greenville,PA,Montgomery County,44.63
+17520,East Petersburg,PA,Lancaster County,33.83
+17317,East Prospect,PA,York County,33.83
+18301,East Stroudsburg,PA,Monroe County,34.02
+18302,East Stroudsburg,PA,Monroe County,33.83
+18046,East Texas,PA,Lehigh County,33.83
+18040,Easton,PA,Northampton County,33.83
+18042,Easton,PA,Northampton County,33.83
+18043,Easton,PA,Northampton County,33.83
+18044,Easton,PA,Northampton County,33.83
+18045,Easton,PA,Northampton County,34.02
+18223,Ebervale,PA,Luzerne County,44.63
+19028,Edgemont,PA,Delaware County,33.83
+18330,Effort,PA,Monroe County,33.83
+17022,Elizabethtown,PA,Lancaster County,33.83
+17023,Elizabethville,PA,Dauphin County,33.83
+19027,Elkins Park,PA,Montgomery County,33.83
+17024,Elliottsburg,PA,Perry County,33.83
+17521,Elm,PA,Lancaster County,33.83
+18416,Elmhurst,PA,Lackawanna County,33.83
+19520,Elverson,PA,Chester County,33.83
+17824,Elysburg,PA,Northumberland County,33.83
+17318,Emigsville,PA,York County,33.83
+18049,Emmaus,PA,Lehigh County,33.83
+18098,Emmaus,PA,Lehigh County,33.83
+18099,Emmaus,PA,Lehigh County,33.83
+17025,Enola,PA,Cumberland County,33.83
+17522,Ephrata,PA,Lancaster County,33.83
+18417,Equinunk,PA,Wayne County,33.83
+18920,Erwinna,PA,Bucks County,33.83
+19029,Essington,PA,Delaware County,33.83
+17319,Etters,PA,York County,33.83
+16033,Evans City,PA,Butler County,35.44
+15632,Export,PA,Westmoreland County,35.44
+19341,Exton,PA,Chester County,33.83
+18419,Factoryville,PA,Wyoming County,33.83
+17320,Fairfield,PA,Adams County,33.83
+19030,Fairless Hills,PA,Bucks County,33.83
+19409,Fairview Village,PA,Montgomery County,33.83
+17221,Fannettsburg,PA,Franklin County,33.83
+17321,Fawn Grove,PA,York County,33.83
+19053,Feasterville Trevose,PA,Bucks County,44.63
+17322,Felton,PA,York County,33.83
+18921,Ferndale,PA,Bucks County,33.83
+18420,Fleetville,PA,Lackawanna County,33.83
+19031,Flourtown,PA,Montgomery County,33.83
+18051,Fogelsville,PA,Lehigh County,33.83
+19032,Folcroft,PA,Delaware County,33.83
+19033,Folsom,PA,Delaware County,33.83
+18421,Forest City,PA,Susquehanna County,33.83
+18922,Forest Grove,PA,Bucks County,33.83
+17223,Fort Littleton,PA,Fulton County,33.83
+19034,Fort Washington,PA,Montgomery County,44.63
+19048,Fort Washington,PA,Montgomery County,33.83
+19049,Fort Washington,PA,Montgomery County,33.83
+18923,Fountainville,PA,Bucks County,33.83
+18924,Franconia,PA,Montgomery County,33.83
+17323,Franklintown,PA,York County,33.83
+19435,Frederick,PA,Montgomery County,33.83
+17026,Fredericksburg,PA,Lebanon County,33.83
+18224,Freeland,PA,Luzerne County,33.83
+18925,Furlong,PA,Bucks County,33.83
+17527,Gap,PA,Lancaster County,33.83
+18926,Gardenville,PA,Bucks County,33.83
+17324,Gardners,PA,Cumberland County,33.83
+19060,Garnet Valley,PA,Delaware County,34.02
+19523,Geigertown,PA,Berks County,33.83
+18053,Germansville,PA,Lehigh County,33.83
+17325,Gettysburg,PA,Adams County,33.83
+18331,Gilbert,PA,Monroe County,33.83
+19525,Gilbertsville,PA,Montgomery County,33.83
+18617,Glen Lyon,PA,Luzerne County,33.83
+19342,Glen Mills,PA,Delaware County,33.83
+19037,Glen Riddle Lima,PA,Delaware County,33.83
+17327,Glen Rock,PA,York County,33.83
+19343,Glenmoore,PA,Chester County,33.83
+19036,Glenolden,PA,Delaware County,33.83
+19038,Glenside,PA,Montgomery County,33.83
+17329,Glenville,PA,York County,33.83
+17528,Goodville,PA,Lancaster County,33.83
+17529,Gordonville,PA,Lancaster County,33.83
+18424,Gouldsboro,PA,Lackawanna County,33.83
+19039,Gradyville,PA,Delaware County,33.83
+17027,Grantham,PA,Cumberland County,33.83
+17028,Grantville,PA,Dauphin County,33.83
+18425,Greeley,PA,Pike County,33.83
+18054,Green Lane,PA,Montgomery County,33.83
+17225,Greencastle,PA,Franklin County,33.83
+18426,Greentown,PA,Pike County,33.83
+19436,Gwynedd,PA,Montgomery County,33.83
+19437,Gwynedd Valley,PA,Montgomery County,33.83
+17032,Halifax,PA,Dauphin County,33.83
+19526,Hamburg,PA,Berks County,33.83
+18427,Hamlin,PA,Wayne County,33.83
+17331,Hanover,PA,York County,33.83
+17332,Hanover,PA,York County,33.83
+17333,Hanover,PA,York County,33.83
+17334,Hanover,PA,York County,33.83
+18225,Harleigh,PA,Luzerne County,33.83
+19438,Harleysville,PA,Montgomery County,44.63
+19441,Harleysville,PA,Montgomery County,33.83
+17101,Harrisburg,PA,Dauphin County,33.83
+17102,Harrisburg,PA,Dauphin County,33.83
+17103,Harrisburg,PA,Dauphin County,33.83
+17104,Harrisburg,PA,Dauphin County,33.83
+17105,Harrisburg,PA,Dauphin County,33.83
+17106,Harrisburg,PA,Dauphin County,33.83
+17107,Harrisburg,PA,Dauphin County,33.83
+17108,Harrisburg,PA,Dauphin County,33.83
+17109,Harrisburg,PA,Dauphin County,33.83
+17110,Harrisburg,PA,Dauphin County,33.83
+17111,Harrisburg,PA,Dauphin County,33.83
+17112,Harrisburg,PA,Dauphin County,33.83
+17113,Harrisburg,PA,Dauphin County,33.83
+17120,Harrisburg,PA,Dauphin County,33.83
+17121,Harrisburg,PA,Dauphin County,33.83
+17122,Harrisburg,PA,Dauphin County,33.83
+17123,Harrisburg,PA,Dauphin County,33.83
+17124,Harrisburg,PA,Dauphin County,33.83
+17125,Harrisburg,PA,Dauphin County,33.83
+17126,Harrisburg,PA,Dauphin County,33.83
+17127,Harrisburg,PA,Dauphin County,33.83
+17128,Harrisburg,PA,Dauphin County,33.83
+17129,Harrisburg,PA,Dauphin County,33.83
+17130,Harrisburg,PA,Dauphin County,33.83
+17140,Harrisburg,PA,Dauphin County,33.83
+17177,Harrisburg,PA,Dauphin County,33.83
+17228,Harrisonville,PA,Fulton County,33.83
+18618,Harveys Lake,PA,Luzerne County,33.83
+19040,Hatboro,PA,Montgomery County,44.63
+19440,Hatfield,PA,Montgomery County,33.83
+19083,Havertown,PA,Delaware County,33.83
+18428,Hawley,PA,Pike County,33.83
+18201,Hazleton,PA,Luzerne County,44.63
+18202,Hazleton,PA,Luzerne County,33.83
+18055,Hellertown,PA,Northampton County,33.83
+18332,Henryville,PA,Monroe County,33.83
+18056,Hereford,PA,Berks County,33.83
+17830,Herndon,PA,Northumberland County,33.83
+17033,Hershey,PA,Dauphin County,33.83
+17034,Highspire,PA,Dauphin County,33.83
+18927,Hilltown,PA,Bucks County,33.83
+18928,Holicong,PA,Bucks County,33.83
+19043,Holmes,PA,Delaware County,33.83
+19098,Holmes,PA,Delaware County,33.83
+17532,Holtwood,PA,Lancaster County,33.83
+18431,Honesdale,PA,Wayne County,33.83
+17533,Hopeland,PA,Lancaster County,33.83
+19044,Horsham,PA,Montgomery County,33.83
+17036,Hummelstown,PA,Dauphin County,33.83
+18621,Hunlock Creek,PA,Luzerne County,33.83
+19006,Huntingdon Valley,PA,Montgomery County,44.63
+18622,Huntington Mills,PA,Luzerne County,33.83
+17229,Hustontown,PA,Fulton County,33.83
+17037,Ickesburg,PA,Perry County,33.83
+17337,Idaville,PA,Adams County,33.83
+19345,Immaculata,PA,Chester County,33.83
+17534,Intercourse,PA,Lancaster County,33.83
+18929,Jamison,PA,Bucks County,33.83
+19046,Jenkintown,PA,Montgomery County,33.83
+18433,Jermyn,PA,Lackawanna County,33.83
+18434,Jessup,PA,Lackawanna County,33.83
+18229,Jim Thorpe,PA,Carbon County,44.63
+17038,Jonestown,PA,Lebanon County,33.83
+19346,Kelton,PA,Chester County,33.83
+19347,Kemblesville,PA,Chester County,33.83
+19529,Kempton,PA,Berks County,33.83
+19348,Kennett Square,PA,Chester County,33.83
+19442,Kimberton,PA,Chester County,33.83
+19406,King Of Prussia,PA,Montgomery County,33.83
+18704,Kingston,PA,Luzerne County,33.83
+18930,Kintnersville,PA,Bucks County,33.83
+17535,Kinzers,PA,Lancaster County,33.83
+17536,Kirkwood,PA,Lancaster County,33.83
+17039,Kleinfeltersville,PA,Lebanon County,33.83
+18333,Kresgeville,PA,Monroe County,33.83
+17834,Kulpmont,PA,Northumberland County,33.83
+19443,Kulpsville,PA,Montgomery County,33.83
+18058,Kunkletown,PA,Monroe County,33.83
+18440,La Plume,PA,Lackawanna County,33.83
+18435,Lackawaxen,PA,Pike County,33.83
+19444,Lafayette Hill,PA,Montgomery County,33.83
+18931,Lahaska,PA,Bucks County,33.83
+18436,Lake Ariel,PA,Wayne County,33.83
+18437,Lake Como,PA,Wayne County,33.83
+18438,Lakeville,PA,Wayne County,33.83
+18439,Lakewood,PA,Wayne County,33.83
+17537,Lampeter,PA,Lancaster County,33.83
+17573,Lancaster,PA,Lancaster County,33.83
+17603,Lancaster,PA,Lancaster County,33.83
+17604,Lancaster,PA,Lancaster County,33.83
+17605,Lancaster,PA,Lancaster County,33.83
+17606,Lancaster,PA,Lancaster County,33.83
+17607,Lancaster,PA,Lancaster County,33.83
+17608,Lancaster,PA,Lancaster County,33.83
+17611,Lancaster,PA,Lancaster County,33.83
+17699,Lancaster,PA,Lancaster County,33.83
+19350,Landenberg,PA,Chester County,33.83
+17040,Landisburg,PA,Perry County,33.83
+17538,Landisville,PA,Lancaster County,33.83
+19047,Langhorne,PA,Bucks County,33.83
+19446,Lansdale,PA,Montgomery County,33.83
+19050,Lansdowne,PA,Delaware County,33.83
+18234,Lattimer Mines,PA,Luzerne County,33.83
+18059,Laurys Station,PA,Lehigh County,33.83
+17041,Lawn,PA,Lebanon County,33.83
+17042,Lebanon,PA,Lebanon County,33.83
+17046,Lebanon,PA,Lebanon County,33.83
+17836,Leck Kill,PA,Northumberland County,33.83
+19450,Lederach,PA,Montgomery County,33.83
+19533,Leesport,PA,Berks County,33.83
+18627,Lehman,PA,Luzerne County,33.83
+17231,Lemasters,PA,Franklin County,33.83
+17043,Lemoyne,PA,Cumberland County,33.83
+19534,Lenhartsville,PA,Berks County,33.83
+19052,Lenni,PA,Delaware County,33.83
+18441,Lenoxville,PA,Susquehanna County,33.83
+17540,Leola,PA,Lancaster County,33.83
+19054,Levittown,PA,Bucks County,33.83
+19055,Levittown,PA,Bucks County,33.83
+19056,Levittown,PA,Bucks County,33.83
+19057,Levittown,PA,Bucks County,33.83
+19058,Levittown,PA,Bucks County,33.83
+17339,Lewisberry,PA,York County,33.83
+19351,Lewisville,PA,Chester County,33.83
+19535,Limekiln,PA,Berks County,33.83
+18060,Limeport,PA,Lehigh County,33.83
+19352,Lincoln University,PA,Chester County,33.83
+18932,Line Lexington,PA,Bucks County,33.83
+19353,Lionville,PA,Chester County,33.83
+17543,Lititz,PA,Lancaster County,33.83
+17340,Littlestown,PA,Adams County,33.83
+17045,Liverpool,PA,Perry County,33.83
+17840,Locust Gap,PA,Northumberland County,33.83
+17342,Loganville,PA,York County,33.83
+18334,Long Pond,PA,Monroe County,33.83
+17047,Loysville,PA,Perry County,33.83
+18933,Lumberville,PA,Bucks County,33.83
+17232,Lurgan,PA,Franklin County,33.83
+18709,Luzerne,PA,Luzerne County,33.83
+17048,Lykens,PA,Dauphin County,33.83
+19354,Lyndell,PA,Chester County,33.83
+19536,Lyon Station,PA,Berks County,33.83
+18062,Macungie,PA,Lehigh County,33.83
+19451,Mainland,PA,Montgomery County,33.83
+19355,Malvern,PA,Chester County,44.63
+17345,Manchester,PA,York County,33.83
+17545,Manheim,PA,Lancaster County,33.83
+19061,Marcus Hook,PA,Delaware County,44.63
+17547,Marietta,PA,Lancaster County,33.83
+17235,Marion,PA,Franklin County,33.83
+17832,Marion Heights,PA,Northumberland County,33.83
+18335,Marshalls Creek,PA,Monroe County,33.83
+17549,Martindale,PA,Lancaster County,33.83
+18063,Martins Creek,PA,Northampton County,44.63
+17053,Marysville,PA,Perry County,33.83
+18336,Matamoras,PA,Pike County,33.83
+19538,Maxatawny,PA,Berks County,33.83
+17550,Maytown,PA,Lancaster County,33.83
+17233,Mc Connellsburg,PA,Fulton County,33.83
+17749,Mc Ewensville,PA,Northumberland County,33.83
+17343,Mc Knightstown,PA,Adams County,33.83
+17344,Mc Sherrystown,PA,Adams County,33.83
+17050,Mechanicsburg,PA,Cumberland County,33.83
+17055,Mechanicsburg,PA,Cumberland County,33.83
+18934,Mechanicsville,PA,Bucks County,33.83
+19063,Media,PA,Delaware County,33.83
+19065,Media,PA,Delaware County,33.83
+19091,Media,PA,Delaware County,33.83
+19357,Mendenhall,PA,Chester County,33.83
+17236,Mercersburg,PA,Franklin County,33.83
+19539,Mertztown,PA,Berks County,33.83
+18631,Mifflinville,PA,Columbia County,33.83
+18443,Milanville,PA,Wayne County,33.83
+18935,Milford Square,PA,Bucks County,44.63
+17062,Millerstown,PA,Perry County,33.83
+17551,Millersville,PA,Lancaster County,33.83
+18340,Millrift,PA,Pike County,33.83
+17846,Millville,PA,Columbia County,33.83
+18239,Milnesville,PA,Luzerne County,33.83
+17847,Milton,PA,Northumberland County,33.83
+18341,Minisink Hills,PA,Monroe County,33.83
+19358,Modena,PA,Chester County,33.83
+19540,Mohnton,PA,Berks County,33.83
+19541,Mohrsville,PA,Berks County,33.83
+19542,Monocacy Station,PA,Berks County,33.83
+15063,Monongahela,PA,Washington County,35.44
+17237,Mont Alto,PA,Franklin County,33.83
+19453,Mont Clare,PA,Montgomery County,33.83
+17850,Montandon,PA,Northumberland County,33.83
+18936,Montgomeryville,PA,Montgomery County,33.83
+18507,Moosic,PA,Lackawanna County,33.83
+19067,Morrisville,PA,Bucks County,33.83
+19070,Morton,PA,Delaware County,33.83
+18444,Moscow,PA,Lackawanna County,33.83
+19544,Mount Aetna,PA,Berks County,33.83
+18343,Mount Bethel,PA,Northampton County,33.83
+17851,Mount Carmel,PA,Northumberland County,33.83
+17064,Mount Gretna,PA,Lebanon County,33.83
+17065,Mount Holly Springs,PA,Cumberland County,33.83
+17552,Mount Joy,PA,Lancaster County,33.83
+18344,Mount Pocono,PA,Monroe County,33.83
+17347,Mount Wolf,PA,York County,33.83
+18707,Mountain Top,PA,Luzerne County,33.83
+18342,Mountainhome,PA,Monroe County,33.83
+17554,Mountville,PA,Lancaster County,33.83
+18634,Nanticoke,PA,Luzerne County,33.83
+19072,Narberth,PA,Montgomery County,33.83
+17555,Narvon,PA,Lancaster County,33.83
+18064,Nazareth,PA,Northampton County,33.83
+17238,Needmore,PA,Fulton County,33.83
+18065,Neffs,PA,Lehigh County,33.83
+18635,Nescopeck,PA,Luzerne County,33.83
+19545,New Berlinville,PA,Berks County,33.83
+17068,New Bloomfield,PA,Perry County,33.83
+17069,New Buffalo,PA,Perry County,33.83
+17070,New Cumberland,PA,Cumberland County,33.83
+17349,New Freedom,PA,York County,33.83
+17071,New Germantown,PA,Perry County,33.83
+17557,New Holland,PA,Lancaster County,33.83
+18938,New Hope,PA,Bucks County,33.83
+15068,New Kensington,PA,Westmoreland County,35.44
+17072,New Kingstown,PA,Cumberland County,33.83
+19360,New London,PA,Chester County,33.83
+17350,New Oxford,PA,Adams County,33.83
+17352,New Park,PA,York County,33.83
+17959,New Philadelphia,PA,Schuylkill County,34.02
+17560,New Providence,PA,Lancaster County,33.83
+17240,Newburg,PA,Cumberland County,33.83
+18445,Newfoundland,PA,Wayne County,33.83
+17074,Newport,PA,Perry County,33.83
+18940,Newtown,PA,Bucks County,33.83
+19073,Newtown Square,PA,Delaware County,44.63
+17241,Newville,PA,Cumberland County,33.83
+19401,Norristown,PA,Montgomery County,44.63
+19403,Norristown,PA,Montgomery County,33.83
+19404,Norristown,PA,Montgomery County,33.83
+19454,North Wales,PA,Montgomery County,44.63
+19455,North Wales,PA,Montgomery County,33.83
+18067,Northampton,PA,Northampton County,33.83
+17857,Northumberland,PA,Northumberland County,33.83
+19074,Norwood,PA,Delaware County,33.83
+19362,Nottingham,PA,Chester County,33.83
+17858,Numidia,PA,Columbia County,33.83
+19456,Oaks,PA,Montgomery County,33.83
+18518,Old Forge,PA,Lackawanna County,33.83
+18068,Old Zionsville,PA,Lehigh County,33.83
+19547,Oley,PA,Berks County,33.83
+18447,Olyphant,PA,Lackawanna County,33.83
+18448,Olyphant,PA,Lackawanna County,33.83
+17077,Ono,PA,Lebanon County,33.83
+17859,Orangeville,PA,Columbia County,33.83
+17244,Orrstown,PA,Franklin County,33.83
+17353,Orrtanna,PA,Adams County,33.83
+18449,Orson,PA,Wayne County,33.83
+18942,Ottsville,PA,Bucks County,33.83
+19363,Oxford,PA,Chester County,33.83
+18070,Palm,PA,Montgomery County,33.83
+17078,Palmyra,PA,Lebanon County,33.83
+19301,Paoli,PA,Chester County,33.83
+17562,Paradise,PA,Lancaster County,33.83
+19457,Parker Ford,PA,Chester County,33.83
+19365,Parkesburg,PA,Chester County,33.83
+18451,Paupack,PA,Pike County,33.83
+17860,Paxinos,PA,Northumberland County,33.83
+17375,Peach Glen,PA,Adams County,33.83
+18452,Peckville,PA,Lackawanna County,33.83
+18072,Pen Argyl,PA,Northampton County,33.83
+18943,Penns Park,PA,Bucks County,33.83
+18073,Pennsburg,PA,Montgomery County,33.83
+17564,Penryn,PA,Lancaster County,33.83
+17565,Pequea,PA,Lancaster County,33.83
+18944,Perkasie,PA,Bucks County,33.83
+18074,Perkiomenville,PA,Montgomery County,33.83
+19113,Philadelphia,PA,Delaware County,33.83
+19460,Phoenixville,PA,Chester County,44.63
+17080,Pillow,PA,Dauphin County,33.83
+19548,Pine Forge,PA,Berks County,33.83
+18946,Pineville,PA,Bucks County,33.83
+18947,Pipersville,PA,Bucks County,33.83
+18640,Pittston,PA,Luzerne County,33.83
+18641,Pittston,PA,Luzerne County,33.83
+18643,Pittston,PA,Luzerne County,33.83
+17081,Plainfield,PA,Cumberland County,33.83
+17246,Pleasant Hall,PA,Franklin County,33.83
+18453,Pleasant Mount,PA,Wayne County,33.83
+18949,Plumsteadville,PA,Bucks County,33.83
+18651,Plymouth,PA,Luzerne County,34.02
+19462,Plymouth Meeting,PA,Montgomery County,33.83
+18347,Pocono Lake,PA,Monroe County,33.83
+18348,Pocono Lake Preserve,PA,Monroe County,33.83
+18349,Pocono Manor,PA,Monroe County,33.83
+18350,Pocono Pines,PA,Monroe County,33.83
+18346,Pocono Summit,PA,Monroe County,33.83
+19366,Pocopson,PA,Chester County,33.83
+18950,Point Pleasant,PA,Bucks County,33.83
+19367,Pomeroy,PA,Chester County,33.83
+18351,Portland,PA,Northampton County,33.83
+17865,Potts Grove,PA,Northumberland County,33.83
+19464,Pottstown,PA,Montgomery County,33.83
+19465,Pottstown,PA,Chester County,33.83
+18454,Poyntelle,PA,Wayne County,33.83
+18455,Preston Park,PA,Wayne County,33.83
+18456,Prompton,PA,Wayne County,33.83
+19076,Prospect Park,PA,Delaware County,33.83
+18951,Quakertown,PA,Bucks County,44.63
+17083,Quentin,PA,Lebanon County,33.83
+17247,Quincy,PA,Franklin County,33.83
+17355,Railroad,PA,York County,33.83
+18653,Ransom,PA,Lackawanna County,33.83
+19601,Reading,PA,Berks County,34.02
+19602,Reading,PA,Berks County,33.83
+19603,Reading,PA,Berks County,33.83
+19604,Reading,PA,Berks County,33.83
+19605,Reading,PA,Berks County,44.63
+19606,Reading,PA,Berks County,33.83
+19607,Reading,PA,Berks County,33.83
+19608,Reading,PA,Berks County,33.83
+19609,Reading,PA,Berks County,33.83
+19610,Reading,PA,Berks County,33.83
+19611,Reading,PA,Berks County,33.83
+19612,Reading,PA,Berks County,33.83
+17567,Reamstown,PA,Lancaster County,33.83
+17867,Rebuck,PA,Northumberland County,33.83
+18076,Red Hill,PA,Montgomery County,33.83
+17356,Red Lion,PA,York County,33.83
+18352,Reeders,PA,Monroe County,33.83
+17568,Refton,PA,Lancaster County,33.83
+19550,Rehrersburg,PA,Berks County,33.83
+18953,Revere,PA,Bucks County,33.83
+17085,Rexmont,PA,Lebanon County,33.83
+17570,Rheems,PA,Lancaster County,33.83
+18954,Richboro,PA,Bucks County,33.83
+17087,Richland,PA,Lebanon County,33.83
+18955,Richlandtown,PA,Bucks County,44.63
+19078,Ridley Park,PA,Delaware County,33.83
+18077,Riegelsville,PA,Bucks County,33.83
+17868,Riverside,PA,Northumberland County,33.83
+19551,Robesonia,PA,Berks County,33.83
+18246,Rock Glen,PA,Luzerne County,33.83
+17572,Ronks,PA,Lancaster County,33.83
+17358,Rossville,PA,York County,33.83
+17250,Rouzerville,PA,Franklin County,33.83
+18457,Rowland,PA,Pike County,33.83
+17251,Roxbury,PA,Franklin County,33.83
+18956,Rushland,PA,Bucks County,33.83
+19369,Sadsburyville,PA,Chester County,33.83
+18247,Saint Johns,PA,Luzerne County,33.83
+19470,Saint Peters,PA,Chester County,33.83
+17252,Saint Thomas,PA,Franklin County,33.83
+18957,Salford,PA,Montgomery County,33.83
+18958,Salfordville,PA,Montgomery County,33.83
+19472,Sassamansville,PA,Montgomery County,33.83
+18353,Saylorsburg,PA,Monroe County,33.83
+17088,Schaefferstown,PA,Lebanon County,33.83
+18078,Schnecksville,PA,Lehigh County,33.83
+19473,Schwenksville,PA,Montgomery County,33.83
+18354,Sciota,PA,Monroe County,44.63
+17254,Scotland,PA,Franklin County,33.83
+18355,Scotrun,PA,Monroe County,33.83
+18501,Scranton,PA,Lackawanna County,33.83
+18502,Scranton,PA,Lackawanna County,33.83
+18503,Scranton,PA,Lackawanna County,33.83
+18504,Scranton,PA,Lackawanna County,33.83
+18505,Scranton,PA,Lackawanna County,33.83
+18508,Scranton,PA,Lackawanna County,33.83
+18509,Scranton,PA,Lackawanna County,33.83
+18510,Scranton,PA,Lackawanna County,33.83
+18512,Scranton,PA,Lackawanna County,33.83
+18515,Scranton,PA,Lackawanna County,33.83
+18519,Scranton,PA,Lackawanna County,33.83
+18540,Scranton,PA,Lackawanna County,33.83
+18577,Scranton,PA,Lackawanna County,33.83
+18960,Sellersville,PA,Bucks County,44.63
+17360,Seven Valleys,PA,York County,33.83
+17256,Shady Grove,PA,Franklin County,33.83
+17872,Shamokin,PA,Northumberland County,33.83
+19554,Shartlesville,PA,Berks County,33.83
+18708,Shavertown,PA,Luzerne County,33.83
+18654,Shawanese,PA,Luzerne County,33.83
+18356,Shawnee On Delaware,PA,Monroe County,33.83
+17090,Shermans Dale,PA,Perry County,33.83
+18655,Shickshinny,PA,Luzerne County,33.83
+17257,Shippensburg,PA,Cumberland County,33.83
+19555,Shoemakersville,PA,Berks County,44.63
+17361,Shrewsbury,PA,York County,33.83
+17575,Silver Spring,PA,Lancaster County,33.83
+18962,Silverdale,PA,Bucks County,33.83
+19474,Skippack,PA,Montgomery County,33.83
+18357,Skytop,PA,Monroe County,33.83
+18079,Slatedale,PA,Lehigh County,33.83
+18080,Slatington,PA,Lehigh County,33.83
+17576,Smoketown,PA,Lancaster County,33.83
+17877,Snydertown,PA,Northumberland County,33.83
+18963,Solebury,PA,Bucks County,33.83
+18964,Souderton,PA,Montgomery County,33.83
+18459,South Canaan,PA,Wayne County,33.83
+17261,South Mountain,PA,Franklin County,33.83
+18460,South Sterling,PA,Wayne County,33.83
+18966,Southampton,PA,Bucks County,44.63
+19397,Southeastern,PA,Chester County,33.83
+19398,Southeastern,PA,Chester County,33.83
+19399,Southeastern,PA,Chester County,33.83
+18968,Spinnerstown,PA,Bucks County,33.83
+19475,Spring City,PA,Chester County,33.83
+17354,Spring Grove,PA,York County,33.83
+17362,Spring Grove,PA,York County,33.83
+19477,Spring House,PA,Montgomery County,33.83
+19478,Spring Mount,PA,Montgomery County,33.83
+17262,Spring Run,PA,Franklin County,33.83
+19064,Springfield,PA,Delaware County,44.63
+18081,Springtown,PA,Bucks County,33.83
+18461,Starlight,PA,Wayne County,33.83
+18462,Starrucca,PA,Wayne County,33.83
+17263,State Line,PA,Franklin County,33.83
+18463,Sterling,PA,Wayne County,33.83
+17578,Stevens,PA,Lancaster County,33.83
+17363,Stewartstown,PA,York County,33.83
+17878,Stillwater,PA,Columbia County,33.83
+18083,Stockertown,PA,Northampton County,33.83
+17579,Strasburg,PA,Lancaster County,33.83
+19559,Strausstown,PA,Berks County,33.83
+18360,Stroudsburg,PA,Monroe County,48.08
+18249,Sugarloaf,PA,Luzerne County,33.83
+17093,Summerdale,PA,Cumberland County,33.83
+18084,Sumneytown,PA,Montgomery County,33.83
+17801,Sunbury,PA,Northumberland County,33.83
+19371,Suplee,PA,Chester County,33.83
+18847,Susquehanna,PA,Susquehanna County,33.83
+19081,Swarthmore,PA,Delaware County,33.83
+18656,Sweet Valley,PA,Luzerne County,33.83
+18370,Swiftwater,PA,Monroe County,33.83
+18251,Sybertsville,PA,Luzerne County,33.83
+18464,Tafton,PA,Pike County,33.83
+17580,Talmage,PA,Lancaster County,33.83
+18371,Tamiment,PA,Pike County,33.83
+18372,Tannersville,PA,Monroe County,44.63
+15084,Tarentum,PA,Allegheny County,35.44
+18085,Tatamy,PA,Northampton County,33.83
+18517,Taylor,PA,Lackawanna County,33.83
+17581,Terre Hill,PA,Lancaster County,33.83
+17364,Thomasville,PA,York County,33.83
+18465,Thompson,PA,Susquehanna County,33.83
+19372,Thorndale,PA,Chester County,33.83
+19373,Thornton,PA,Delaware County,33.83
+18466,Tobyhanna,PA,Monroe County,33.83
+19562,Topton,PA,Berks County,33.83
+19374,Toughkenamon,PA,Chester County,33.83
+17980,Tower City,PA,Schuylkill County,34.02
+18086,Treichlers,PA,Northampton County,33.83
+18254,Tresckow,PA,Carbon County,44.63
+17881,Trevorton,PA,Northumberland County,33.83
+18970,Trumbauersville,PA,Bucks County,33.83
+17772,Turbotville,PA,Northumberland County,33.83
+18469,Tyler Hill,PA,Wayne County,33.83
+18971,Tylersport,PA,Montgomery County,33.83
+18470,Union Dale,PA,Susquehanna County,33.83
+19375,Unionville,PA,Chester County,33.83
+18972,Upper Black Eddy,PA,Bucks County,33.83
+17265,Upperstrasburg,PA,Franklin County,33.83
+19480,Uwchland,PA,Chester County,33.83
+19481,Valley Forge,PA,Montgomery County,33.83
+19482,Valley Forge,PA,Montgomery County,33.83
+19484,Valley Forge,PA,Montgomery County,33.83
+19493,Valley Forge,PA,Montgomery County,33.83
+19494,Valley Forge,PA,Montgomery County,33.83
+19495,Valley Forge,PA,Montgomery County,33.83
+19496,Valley Forge,PA,Montgomery County,33.83
+19564,Virginville,PA,Berks County,33.83
+19376,Wagontown,PA,Chester County,33.83
+19086,Wallingford,PA,Delaware County,33.83
+17266,Walnut Bottom,PA,Cumberland County,33.83
+18088,Walnutport,PA,Northampton County,33.83
+18660,Wapwallopen,PA,Luzerne County,33.83
+17267,Warfordsburg,PA,Fulton County,33.83
+18974,Warminster,PA,Bucks County,44.63
+18991,Warminster,PA,Bucks County,33.83
+18976,Warrington,PA,Bucks County,44.63
+17582,Washington Boro,PA,Lancaster County,33.83
+18977,Washington Crossing,PA,Bucks County,33.83
+16689,Waterfall,PA,Fulton County,33.83
+17777,Watsontown,PA,Northumberland County,33.83
+18471,Waverly,PA,Lackawanna County,33.83
+18472,Waymart,PA,Wayne County,33.83
+19080,Wayne,PA,Delaware County,33.83
+19087,Wayne,PA,Chester County,44.63
+19088,Wayne,PA,Delaware County,33.83
+19089,Wayne,PA,Delaware County,33.83
+17268,Waynesboro,PA,Franklin County,33.83
+16691,Wells Tannery,PA,Fulton County,33.83
+17365,Wellsville,PA,York County,33.83
+19565,Wernersville,PA,Berks County,33.83
+19380,West Chester,PA,Chester County,33.83
+19381,West Chester,PA,Chester County,33.83
+19382,West Chester,PA,Chester County,33.83
+19383,West Chester,PA,Chester County,33.83
+19390,West Grove,PA,Chester County,33.83
+15089,West Newton,PA,Westmoreland County,35.44
+19486,West Point,PA,Montgomery County,33.83
+17583,West Willow,PA,Lancaster County,33.83
+18256,Weston,PA,Luzerne County,33.83
+19395,Westtown,PA,Chester County,33.83
+18661,White Haven,PA,Luzerne County,44.63
+18473,White Mills,PA,Wayne County,33.83
+17097,Wiconisco,PA,Dauphin County,33.83
+17888,Wilburton,PA,Columbia County,33.83
+18701,Wilkes Barre,PA,Luzerne County,44.63
+18702,Wilkes Barre,PA,Luzerne County,33.83
+18703,Wilkes Barre,PA,Luzerne County,33.83
+18705,Wilkes Barre,PA,Luzerne County,33.83
+18706,Wilkes Barre,PA,Luzerne County,33.83
+18710,Wilkes Barre,PA,Luzerne County,44.63
+18711,Wilkes Barre,PA,Luzerne County,33.83
+18762,Wilkes Barre,PA,Luzerne County,33.83
+18764,Wilkes Barre,PA,Luzerne County,33.83
+18765,Wilkes Barre,PA,Luzerne County,33.83
+18766,Wilkes Barre,PA,Luzerne County,33.83
+18767,Wilkes Barre,PA,Luzerne County,33.83
+18769,Wilkes Barre,PA,Luzerne County,33.83
+18773,Wilkes Barre,PA,Luzerne County,33.83
+17270,Williamson,PA,Franklin County,33.83
+17701,Williamsport,PA,Lycoming County,34.02
+19090,Willow Grove,PA,Montgomery County,34.02
+17271,Willow Hill,PA,Franklin County,33.83
+17584,Willow Street,PA,Lancaster County,33.83
+18091,Wind Gap,PA,Northampton County,33.83
+17366,Windsor,PA,York County,33.83
+17585,Witmer,PA,Lancaster County,33.83
+19567,Womelsdorf,PA,Berks County,33.83
+16694,Wood,PA,Huntingdon County,33.83
+19094,Woodlyn,PA,Delaware County,33.83
+18979,Woxall,PA,Montgomery County,33.83
+18980,Wycombe,PA,Bucks County,33.83
+19095,Wyncote,PA,Montgomery County,33.83
+19096,Wynnewood,PA,Montgomery County,44.63
+18644,Wyoming,PA,Luzerne County,33.83
+17401,York,PA,York County,33.83
+17402,York,PA,York County,33.83
+17403,York,PA,York County,33.83
+17404,York,PA,York County,33.83
+17405,York,PA,York County,33.83
+17406,York,PA,York County,33.83
+17407,York,PA,York County,33.83
+17408,York,PA,York County,48.15
+17415,York,PA,York County,33.83
+17370,York Haven,PA,York County,33.83
+17371,York New Salem,PA,York County,33.83
+17372,York Springs,PA,Adams County,33.83
+19492,Zieglerville,PA,Montgomery County,33.83
+18981,Zionhill,PA,Bucks County,33.83
+18092,Zionsville,PA,Lehigh County,33.83
+17272,Zullinger,PA,Franklin County,33.83

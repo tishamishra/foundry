@@ -1,0 +1,40 @@
+{% extends "base.html" %}{% block body %}
+<div class="head"><h1>{{ 'Edit business' if slug else 'New business' }}</h1></div>
+<form method="post" action="{{ url_for('business_save') }}" class="card">
+  <input type="hidden" name="slug" value="{{ b.slug or '' }}">
+  <div class="two">
+    <label>Company name *<input name="company" value="{{ b.company or '' }}" required></label>
+    <label>Brand (if different)<input name="brand" value="{{ b.brand or '' }}"></label>
+    <label>Phone *<input name="phone" value="{{ b.phone or '' }}" required></label>
+    <label>Email<input name="email" value="{{ b.email or '' }}"></label>
+    <label>Street<input name="street" value="{{ b.address.street if b.address else '' }}"></label>
+    <label>City<input name="city" value="{{ b.address.city if b.address else '' }}"></label>
+    <label>State<input name="state" value="{{ b.address.state if b.address else '' }}"></label>
+    <label>ZIP<input name="zip" value="{{ b.address.zip if b.address else '' }}"></label>
+  </div>
+
+  <h2>The fact block</h2>
+  <p class="sub">This is a closed world. Anything not ticked here is <strong>removed from the block
+  pool before selection</strong>, so the copy cannot claim it — even by accident.
+  Tick only what you can evidence.</p>
+  <div class="two">
+    <label>Years in business<input name="years" value="{{ b.facts.years_in_business if b.facts and b.facts.years_in_business else '' }}" placeholder="leave blank if not claimed"></label>
+    <label>Hours<input name="hours" value="{{ b.facts.hours if b.facts and b.facts.hours else '' }}" placeholder="Mon-Fri 8:00-18:00"></label>
+    <label>Warranty (years)<input name="warranty" value="{{ b.facts.warranty_years if b.facts and b.facts.warranty_years else '' }}"></label>
+  </div>
+  <div class="checks">
+    {% set F = b.facts or {} %}
+    <label class="chk"><input type="checkbox" name="free_estimates" {{ 'checked' if F.free_estimates }}> Free estimates</label>
+    <label class="chk"><input type="checkbox" name="licensed" {{ 'checked' if F.licensed }}> Licensed</label>
+    <label class="chk"><input type="checkbox" name="insured" {{ 'checked' if F.insured }}> Insured</label>
+    <label class="chk"><input type="checkbox" name="emergency_24_7" {{ 'checked' if F.emergency_24_7 }}> 24/7 emergency</label>
+    <label class="chk"><input type="checkbox" name="financing" {{ 'checked' if F.financing }}> Financing</label>
+    <label class="chk"><input type="checkbox" name="family_owned" {{ 'checked' if F.family_owned }}> Family owned</label>
+  </div>
+
+  <div class="foot">
+    <button class="btn" name="then" value="dash">Save</button>
+    <button class="btn ghost" name="then" value="site">Save and create a site</button>
+  </div>
+</form>
+{% endblock %}

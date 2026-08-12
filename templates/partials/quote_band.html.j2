@@ -1,0 +1,18 @@
+<section class="qband{{ ' has-pic' if imgs.cta }}" id="quote">{% if imgs.cta %}<div class="qband-bg" aria-hidden="true"><img src="{{ imgs.cta }}" alt="" loading="lazy" width="1600" height="900"></div>{% endif %}
+  <div class="wrap qband-in">
+    <div class="qband-copy">
+      <h2>{{ content.cta.heading }}</h2>
+      <p>{{ content.cta.text }}</p>
+      <p class="qband-phone"><a href="tel:{{ t.phone_link }}">{{ t.phone }}</a></p>
+    </div>
+    <form class="qform" method="post" action="#" novalidate>
+      <div class="qform-row">
+        <label>Name<input name="name" autocomplete="name" required></label>
+        <label>Phone<input name="phone" type="tel" autocomplete="tel" required></label>
+      </div>
+      <label>{% if t.city %}Your address in {{ t.city }}{% else %}Town{% endif %}<input name="town" autocomplete="address-level2"></label>
+      <label>What is happening?<textarea name="detail" rows="3"></textarea></label>
+      <button class="btn btn-accent btn-lg" type="submit">{{ content.cta.button }}</button>
+    </form>
+  </div>
+</section>

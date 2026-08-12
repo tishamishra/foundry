@@ -1,0 +1,20 @@
+<section class="sec">
+  <div class="wrap">
+    <h2 class="section-head">What customers say</h2>
+    <div class="carousel" data-carousel>
+      <div class="car-track">
+        {% for r in (lc.reviews if lc is defined else content.reviews) %}
+        <figure class="car-slide">
+          <blockquote>{{ r.text }}</blockquote>
+          <figcaption>{{ r.name }}{% if t.city %} · {{ t.city }}, {{ t.state_abbr }}{% endif %}</figcaption>
+        </figure>
+        {% endfor %}
+      </div>
+      <div class="car-nav">
+        <button class="car-btn" data-car="prev" aria-label="Previous">&larr;</button>
+        <div class="car-dots"></div>
+        <button class="car-btn" data-car="next" aria-label="Next">&rarr;</button>
+      </div>
+    </div>
+  </div>
+</section>

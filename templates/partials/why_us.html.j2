@@ -1,0 +1,13 @@
+<section class="sec sec-alt">
+  <div class="wrap">
+    <h2>Why homeowners call {{ biz.company }}</h2>
+    <div class="grid grid-3">
+      {% for item in content.why_us %}
+      <div class="tile">
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.text }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

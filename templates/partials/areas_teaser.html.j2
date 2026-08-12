@@ -1,0 +1,10 @@
+<section class="sec sec-alt">
+  <div class="wrap">
+    <h2>Where we work</h2>
+    <p class="lede">{{ locations|length }} communities across {{ counties|length }} counties.</p>
+    <div class="chips">
+      {% for c in locations[:24] %}<a class="chip" href="/areas/{{ c.slug }}">{{ c.city }}, {{ c.state_abbr }}</a>{% endfor %}
+    </div>
+    <p><a class="more" href="/areas">See every service area &rarr;</a></p>
+  </div>
+</section>

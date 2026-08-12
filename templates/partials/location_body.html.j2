@@ -1,0 +1,24 @@
+<section class="sec">
+  <div class="wrap prose">
+    <h2>{{ niche.label }} services in {{ t.city }}</h2>
+    {% for para in lc.intro.paras %}<p>{{ para }}</p>{% endfor %}
+    <div class="factbar">
+      <div><span>Area</span><strong>{{ t.city }}, {{ t.state_abbr }}</strong></div>
+      <div><span>County</span><strong>{{ t.county }}</strong></div>
+      {% if t.zips_short %}<div><span>ZIP codes</span><strong>{{ t.zips_short }}</strong></div>{% endif %}
+      {% if t.nearby %}<div><span>Also serving</span><strong>{{ t.nearby }}</strong></div>{% endif %}
+    </div>
+  </div>
+</section>
+{% if loc.zips and loc.zips|length > 1 %}
+<section class="sec sec-alt">
+  <div class="wrap">
+    <h2 class="section-head">ZIP codes we cover in {{ t.city }}</h2>
+    <p class="lede">Every postal code inside our {{ t.city }} service area. If yours is not listed,
+    call {{ t.phone }} and ask rather than assuming — the list is the buyer's, and it changes.</p>
+    <div class="chips zips">
+      {% for z in loc.zips %}<span class="chip zip">{{ z }}</span>{% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}

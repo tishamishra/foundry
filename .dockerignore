@@ -1,0 +1,9 @@
+dist/
+.deploy/
+node_modules/
+__pycache__/
+*.pyc
+.git/
+data/secrets.yaml
+data/deploy.yaml
+.foundry-trash-*

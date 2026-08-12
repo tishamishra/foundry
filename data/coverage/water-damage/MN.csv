@@ -1,0 +1,609 @@
+zip,city,state,county,payout
+55909,Adams,MN,Mower County,177.0
+56110,Adrian,MN,Nobles County,165.5
+55001,Afton,MN,Washington County,260.0
+56307,Albany,MN,Stearns County,165.5
+56007,Albert Lea,MN,Freeborn County,177.0
+55301,Albertville,MN,Wright County,361.5
+55702,Alborn,MN,St. Louis County,165.5
+56009,Alden,MN,Freeborn County,177.0
+55002,Almelund,MN,Chisago County,213.0
+55910,Altura,MN,Winona County,174.0
+56010,Amboy,MN,Blue Earth County,189.0
+55304,Andover,MN,Anoka County,260.0
+55703,Angora,MN,St. Louis County,165.5
+55302,Annandale,MN,Wright County,361.5
+55303,Anoka,MN,Anoka County,260.0
+55307,Arlington,MN,Sibley County,177.0
+55704,Askov,MN,Pine County,177.0
+56511,Audubon,MN,Becker County,162.5
+55705,Aurora,MN,St. Louis County,165.5
+55912,Austin,MN,Mower County,177.0
+56310,Avon,MN,Stearns County,165.5
+55706,Babbitt,MN,St. Louis County,165.5
+56115,Balaton,MN,Lyon County,162.5
+55707,Barnum,MN,Carlton County,177.0
+55003,Bayport,MN,Washington County,260.0
+55601,Beaver Bay,MN,Lake County,162.5
+56116,Beaver Creek,MN,Rock County,162.5
+55308,Becker,MN,Sherburne County,165.5
+56312,Belgrade,MN,Stearns County,165.5
+56011,Belle Plaine,MN,Scott County,243.5
+55005,Bethel,MN,Anoka County,260.0
+55309,Big Lake,MN,Sherburne County,165.5
+56117,Bigelow,MN,Nobles County,165.5
+55708,Biwabik,MN,St. Louis County,165.5
+55917,Blooming Prairie,MN,Steele County,177.0
+56013,Blue Earth,MN,Faribault County,177.0
+56313,Bock,MN,Mille Lacs County,177.0
+55006,Braham,MN,Isanti County,209.0
+56119,Brewster,MN,Nobles County,165.5
+56014,Bricelyn,MN,Faribault County,177.0
+55602,Brimson,MN,St. Louis County,165.5
+55710,Britt,MN,St. Louis County,165.5
+55007,Brook Park,MN,Kanabec County,177.0
+55711,Brookston,MN,St. Louis County,165.5
+56316,Brooten,MN,Stearns County,165.5
+55918,Brownsdale,MN,Mower County,177.0
+55919,Brownsville,MN,Houston County,165.5
+55312,Brownton,MN,Mcleod County,165.5
+55712,Bruno,MN,Pine County,177.0
+55313,Buffalo,MN,Wright County,361.5
+55713,Buhl,MN,St. Louis County,165.5
+55306,Burnsville,MN,Dakota County,361.5
+55337,Burnsville,MN,Dakota County,361.5
+56120,Butterfield,MN,Watonwan County,177.0
+55920,Byron,MN,Olmsted County,177.0
+55921,Caledonia,MN,Houston County,165.5
+56521,Callaway,MN,Becker County,162.5
+55008,Cambridge,MN,Isanti County,209.0
+55009,Cannon Falls,MN,Goodhue County,224.0
+55922,Canton,MN,Fillmore County,174.0
+55717,Canyon,MN,St. Louis County,165.5
+55718,Carlton,MN,Carlton County,177.0
+55315,Carver,MN,Carver County,189.0
+55010,Castle Rock,MN,Dakota County,361.5
+55011,Cedar,MN,Anoka County,260.0
+55012,Center City,MN,Chisago County,213.0
+55316,Champlin,MN,Hennepin County,361.5
+56122,Chandler,MN,Murray County,162.5
+55317,Chanhassen,MN,Carver County,189.0
+55318,Chaska,MN,Carver County,189.0
+55923,Chatfield,MN,Fillmore County,174.0
+55013,Chisago City,MN,Chisago County,213.0
+55719,Chisholm,MN,St. Louis County,165.5
+55014,Circle Pines,MN,Anoka County,260.0
+55924,Claremont,MN,Dodge County,174.0
+56016,Clarks Grove,MN,Freeborn County,177.0
+55319,Clear Lake,MN,Sherburne County,165.5
+55320,Clearwater,MN,Wright County,361.5
+56017,Cleveland,MN,Le Sueur County,177.0
+55720,Cloquet,MN,Carlton County,177.0
+55321,Cokato,MN,Wright County,361.5
+56320,Cold Spring,MN,Stearns County,165.5
+56321,Collegeville,MN,Stearns County,165.5
+55322,Cologne,MN,Carver County,189.0
+56020,Conger,MN,Freeborn County,177.0
+55723,Cook,MN,St. Louis County,165.5
+56228,Cosmos,MN,Meeker County,174.0
+55016,Cottage Grove,MN,Washington County,260.0
+55724,Cotton,MN,St. Louis County,165.5
+56021,Courtland,MN,Nicollet County,177.0
+55725,Crane Lake,MN,St. Louis County,165.5
+55726,Cromwell,MN,Carlton County,177.0
+55323,Crystal Bay,MN,Hennepin County,361.5
+55925,Dakota,MN,Winona County,174.0
+55017,Dalbo,MN,Isanti County,209.0
+56022,Darfur,MN,Watonwan County,177.0
+55324,Darwin,MN,Meeker County,174.0
+55325,Dassel,MN,Meeker County,174.0
+55327,Dayton,MN,Hennepin County,361.5
+55328,Delano,MN,Wright County,361.5
+56023,Delavan,MN,Faribault County,177.0
+55018,Dennison,MN,Goodhue County,224.0
+56501,Detroit Lakes,MN,Becker County,162.5
+56502,Detroit Lakes,MN,Becker County,162.5
+55926,Dexter,MN,Mower County,177.0
+55927,Dodge Center,MN,Dodge County,174.0
+55929,Dover,MN,Olmsted County,177.0
+55801,Duluth,MN,St. Louis County,165.5
+55802,Duluth,MN,St. Louis County,165.5
+55803,Duluth,MN,St. Louis County,165.5
+55804,Duluth,MN,St. Louis County,165.5
+55805,Duluth,MN,St. Louis County,165.5
+55806,Duluth,MN,St. Louis County,165.5
+55807,Duluth,MN,St. Louis County,165.5
+55808,Duluth,MN,St. Louis County,165.5
+55810,Duluth,MN,St. Louis County,165.5
+55811,Duluth,MN,St. Louis County,165.5
+55812,Duluth,MN,St. Louis County,165.5
+55814,Duluth,MN,St. Louis County,165.5
+55815,Duluth,MN,St. Louis County,165.5
+55816,Duluth,MN,St. Louis County,165.5
+55019,Dundas,MN,Rice County,248.5
+56024,Eagle Lake,MN,Blue Earth County,189.0
+56025,Easton,MN,Faribault County,177.0
+55344,Eden Prairie,MN,Hennepin County,361.5
+55346,Eden Prairie,MN,Hennepin County,361.5
+55347,Eden Prairie,MN,Hennepin County,361.5
+55329,Eden Valley,MN,Meeker County,174.0
+56128,Edgerton,MN,Pipestone County,162.5
+55931,Eitzen,MN,Houston County,165.5
+55932,Elgin,MN,Wabasha County,177.0
+55330,Elk River,MN,Sherburne County,165.5
+55020,Elko New Market,MN,Scott County,243.5
+55054,Elko New Market,MN,Scott County,243.5
+55933,Elkton,MN,Mower County,177.0
+56026,Ellendale,MN,Steele County,177.0
+56129,Ellsworth,MN,Nobles County,165.5
+56027,Elmore,MN,Faribault County,177.0
+56325,Elrosa,MN,Stearns County,165.5
+55731,Ely,MN,St. Louis County,165.5
+56028,Elysian,MN,Le Sueur County,177.0
+55732,Embarrass,MN,St. Louis County,165.5
+56029,Emmons,MN,Freeborn County,177.0
+55733,Esko,MN,Carlton County,177.0
+55734,Eveleth,MN,St. Louis County,165.5
+55331,Excelsior,MN,Hennepin County,361.5
+55934,Eyota,MN,Olmsted County,177.0
+55021,Faribault,MN,Rice County,248.5
+55024,Farmington,MN,Dakota County,361.5
+55603,Finland,MN,Lake County,162.5
+55735,Finlayson,MN,Pine County,177.0
+55736,Floodwood,MN,St. Louis County,165.5
+56329,Foley,MN,Benton County,165.5
+55738,Forbes,MN,St. Louis County,165.5
+55025,Forest Lake,MN,Washington County,260.0
+56330,Foreston,MN,Mille Lacs County,177.0
+55935,Fountain,MN,Fillmore County,174.0
+56544,Frazee,MN,Becker County,162.5
+56032,Freeborn,MN,Freeborn County,177.0
+56331,Freeport,MN,Stearns County,165.5
+55026,Frontenac,MN,Goodhue County,224.0
+56033,Frost,MN,Faribault County,177.0
+56131,Fulda,MN,Murray County,162.5
+56034,Garden City,MN,Blue Earth County,189.0
+55334,Gaylord,MN,Sibley County,177.0
+56035,Geneva,MN,Freeborn County,177.0
+55335,Gibbon,MN,Sibley County,177.0
+55741,Gilbert,MN,St. Louis County,165.5
+56333,Gilman,MN,Benton County,165.5
+55336,Glencoe,MN,Mcleod County,165.5
+56036,Glenville,MN,Freeborn County,177.0
+56037,Good Thunder,MN,Blue Earth County,189.0
+55027,Goodhue,MN,Goodhue County,224.0
+55936,Grand Meadow,MN,Mower County,177.0
+55029,Grandy,MN,Isanti County,209.0
+55030,Grasston,MN,Pine County,177.0
+55338,Green Isle,MN,Sibley County,177.0
+56335,Greenwald,MN,Stearns County,165.5
+56243,Grove City,MN,Meeker County,174.0
+55339,Hamburg,MN,Carver County,189.0
+55340,Hamel,MN,Hennepin County,361.5
+55031,Hampton,MN,Dakota County,361.5
+55341,Hanover,MN,Wright County,361.5
+56134,Hardwick,MN,Rock County,162.5
+55939,Harmony,MN,Fillmore County,174.0
+55032,Harris,MN,Chisago County,213.0
+56042,Hartland,MN,Freeborn County,177.0
+55033,Hastings,MN,Dakota County,361.5
+55940,Hayfield,MN,Dodge County,174.0
+56043,Hayward,MN,Freeborn County,177.0
+56044,Henderson,MN,Sibley County,177.0
+55036,Henriette,MN,Pine County,177.0
+55746,Hibbing,MN,St. Louis County,165.5
+55747,Hibbing,MN,St. Louis County,165.5
+56138,Hills,MN,Rock County,162.5
+55037,Hinckley,MN,Pine County,177.0
+55941,Hokah,MN,Houston County,165.5
+56340,Holdingford,MN,Stearns County,165.5
+56139,Holland,MN,Pipestone County,162.5
+56045,Hollandale,MN,Freeborn County,177.0
+55749,Holyoke,MN,Carlton County,177.0
+55942,Homer,MN,Winona County,174.0
+56046,Hope,MN,Steele County,177.0
+55305,Hopkins,MN,Hennepin County,361.5
+55343,Hopkins,MN,Hennepin County,361.5
+55943,Houston,MN,Houston County,165.5
+55349,Howard Lake,MN,Wright County,361.5
+55575,Howard Lake,MN,Wright County,361.5
+55750,Hoyt Lakes,MN,St. Louis County,165.5
+55038,Hugo,MN,Washington County,260.0
+56047,Huntley,MN,Faribault County,177.0
+55350,Hutchinson,MN,Mcleod County,165.5
+56140,Ihlen,MN,Pipestone County,162.5
+55076,Inver Grove Heights,MN,Dakota County,361.5
+55077,Inver Grove Heights,MN,Dakota County,361.5
+56141,Iona,MN,Murray County,162.5
+55751,Iron,MN,St. Louis County,165.5
+55607,Isabella,MN,Lake County,162.5
+55040,Isanti,MN,Isanti County,209.0
+56342,Isle,MN,Mille Lacs County,177.0
+56048,Janesville,MN,Waseca County,174.0
+56144,Jasper,MN,Pipestone County,162.5
+55352,Jordan,MN,Scott County,243.5
+56146,Kanaranzi,MN,Rock County,162.5
+56050,Kasota,MN,Le Sueur County,177.0
+55944,Kasson,MN,Dodge County,174.0
+55945,Kellogg,MN,Wabasha County,177.0
+56147,Kenneth,MN,Rock County,162.5
+55946,Kenyon,MN,Goodhue County,224.0
+55756,Kerrick,MN,Pine County,177.0
+55757,Kettle River,MN,Carlton County,177.0
+56051,Kiester,MN,Faribault County,177.0
+56052,Kilkenny,MN,Le Sueur County,248.5
+55353,Kimball,MN,Stearns County,165.5
+55758,Kinney,MN,St. Louis County,165.5
+55609,Knife River,MN,Lake County,162.5
+55947,La Crescent,MN,Houston County,165.5
+56056,La Salle,MN,Watonwan County,177.0
+56054,Lafayette,MN,Nicollet County,177.0
+56149,Lake Benton,MN,Lincoln County,165.5
+55041,Lake City,MN,Wabasha County,177.0
+56055,Lake Crystal,MN,Blue Earth County,189.0
+55042,Lake Elmo,MN,Washington County,260.0
+56554,Lake Park,MN,Becker County,162.5
+56151,Lake Wilson,MN,Murray County,162.5
+55043,Lakeland,MN,Washington County,260.0
+55044,Lakeville,MN,Dakota County,361.5
+55949,Lanesboro,MN,Fillmore County,174.0
+55950,Lansing,MN,Mower County,177.0
+56057,Le Center,MN,Le Sueur County,177.0
+55951,Le Roy,MN,Mower County,177.0
+56058,Le Sueur,MN,Le Sueur County,177.0
+56153,Leota,MN,Nobles County,165.5
+55354,Lester Prairie,MN,Mcleod County,165.5
+55952,Lewiston,MN,Winona County,174.0
+56060,Lewisville,MN,Watonwan County,177.0
+55045,Lindstrom,MN,Chisago County,213.0
+56155,Lismore,MN,Nobles County,165.5
+55355,Litchfield,MN,Meeker County,174.0
+55356,Long Lake,MN,Hennepin County,361.5
+55046,Lonsdale,MN,Rice County,248.5
+55357,Loretto,MN,Hennepin County,361.5
+55595,Loretto,MN,Hennepin County,361.5
+55596,Loretto,MN,Hennepin County,361.5
+55597,Loretto,MN,Hennepin County,361.5
+55598,Loretto,MN,Hennepin County,361.5
+55599,Loretto,MN,Hennepin County,361.5
+56156,Luverne,MN,Rock County,162.5
+55953,Lyle,MN,Mower County,177.0
+55954,Mabel,MN,Fillmore County,174.0
+56062,Madelia,MN,Watonwan County,177.0
+56063,Madison Lake,MN,Blue Earth County,189.0
+56158,Magnolia,MN,Rock County,162.5
+55763,Makinen,MN,St. Louis County,165.5
+56001,Mankato,MN,Blue Earth County,189.0
+56002,Mankato,MN,Blue Earth County,189.0
+56003,Mankato,MN,Nicollet County,177.0
+55955,Mantorville,MN,Dodge County,174.0
+55311,Maple Grove,MN,Hennepin County,361.5
+55358,Maple Lake,MN,Wright County,361.5
+55348,Maple Plain,MN,Hennepin County,361.5
+55359,Maple Plain,MN,Hennepin County,361.5
+55570,Maple Plain,MN,Hennepin County,361.5
+55571,Maple Plain,MN,Hennepin County,361.5
+55574,Maple Plain,MN,Hennepin County,361.5
+55576,Maple Plain,MN,Hennepin County,361.5
+55578,Maple Plain,MN,Hennepin County,361.5
+55579,Maple Plain,MN,Hennepin County,361.5
+55592,Maple Plain,MN,Hennepin County,361.5
+55593,Maple Plain,MN,Hennepin County,361.5
+56065,Mapleton,MN,Blue Earth County,189.0
+55047,Marine On Saint Croix,MN,Washington County,260.0
+55360,Mayer,MN,Carver County,189.0
+55956,Mazeppa,MN,Wabasha County,177.0
+55765,Meadowlands,MN,St. Louis County,165.5
+55049,Medford,MN,Steele County,177.0
+56352,Melrose,MN,Stearns County,165.5
+55766,Melrude,MN,St. Louis County,165.5
+55150,Mendota,MN,Dakota County,361.5
+56353,Milaca,MN,Mille Lacs County,177.0
+55957,Millville,MN,Wabasha County,177.0
+55401,Minneapolis,MN,Hennepin County,361.5
+55402,Minneapolis,MN,Hennepin County,361.5
+55403,Minneapolis,MN,Hennepin County,361.5
+55404,Minneapolis,MN,Hennepin County,361.5
+55405,Minneapolis,MN,Hennepin County,361.5
+55406,Minneapolis,MN,Hennepin County,361.5
+55407,Minneapolis,MN,Hennepin County,361.5
+55408,Minneapolis,MN,Hennepin County,361.5
+55409,Minneapolis,MN,Hennepin County,361.5
+55410,Minneapolis,MN,Hennepin County,361.5
+55411,Minneapolis,MN,Hennepin County,361.5
+55412,Minneapolis,MN,Hennepin County,361.5
+55413,Minneapolis,MN,Hennepin County,361.5
+55414,Minneapolis,MN,Hennepin County,361.5
+55415,Minneapolis,MN,Hennepin County,361.5
+55416,Minneapolis,MN,Hennepin County,361.5
+55417,Minneapolis,MN,Hennepin County,361.5
+55418,Minneapolis,MN,Hennepin County,361.5
+55419,Minneapolis,MN,Hennepin County,361.5
+55420,Minneapolis,MN,Hennepin County,361.5
+55421,Minneapolis,MN,Anoka County,260.0
+55422,Minneapolis,MN,Hennepin County,361.5
+55423,Minneapolis,MN,Hennepin County,361.5
+55424,Minneapolis,MN,Hennepin County,361.5
+55425,Minneapolis,MN,Hennepin County,361.5
+55426,Minneapolis,MN,Hennepin County,361.5
+55427,Minneapolis,MN,Hennepin County,361.5
+55428,Minneapolis,MN,Hennepin County,361.5
+55429,Minneapolis,MN,Hennepin County,361.5
+55430,Minneapolis,MN,Hennepin County,361.5
+55431,Minneapolis,MN,Hennepin County,361.5
+55432,Minneapolis,MN,Anoka County,260.0
+55433,Minneapolis,MN,Anoka County,260.0
+55434,Minneapolis,MN,Anoka County,260.0
+55435,Minneapolis,MN,Hennepin County,361.5
+55436,Minneapolis,MN,Hennepin County,361.5
+55437,Minneapolis,MN,Hennepin County,361.5
+55438,Minneapolis,MN,Hennepin County,361.5
+55439,Minneapolis,MN,Hennepin County,361.5
+55440,Minneapolis,MN,Hennepin County,361.5
+55441,Minneapolis,MN,Hennepin County,361.5
+55442,Minneapolis,MN,Hennepin County,361.5
+55443,Minneapolis,MN,Hennepin County,361.5
+55444,Minneapolis,MN,Hennepin County,361.5
+55445,Minneapolis,MN,Hennepin County,361.5
+55446,Minneapolis,MN,Hennepin County,361.5
+55447,Minneapolis,MN,Hennepin County,361.5
+55448,Minneapolis,MN,Anoka County,260.0
+55449,Minneapolis,MN,Anoka County,260.0
+55450,Minneapolis,MN,Hennepin County,361.5
+55454,Minneapolis,MN,Hennepin County,361.5
+55455,Minneapolis,MN,Hennepin County,361.5
+55458,Minneapolis,MN,Hennepin County,361.5
+55459,Minneapolis,MN,Hennepin County,361.5
+55460,Minneapolis,MN,Hennepin County,361.5
+55467,Minneapolis,MN,Hennepin County,361.5
+55470,Minneapolis,MN,Hennepin County,361.5
+55472,Minneapolis,MN,Hennepin County,361.5
+55473,Minneapolis,MN,Hennepin County,189.0
+55474,Minneapolis,MN,Hennepin County,361.5
+55478,Minneapolis,MN,Hennepin County,361.5
+55479,Minneapolis,MN,Hennepin County,361.5
+55480,Minneapolis,MN,Hennepin County,361.5
+55483,Minneapolis,MN,Hennepin County,361.5
+55484,Minneapolis,MN,Hennepin County,361.5
+55485,Minneapolis,MN,Hennepin County,361.5
+55486,Minneapolis,MN,Hennepin County,361.5
+55487,Minneapolis,MN,Hennepin County,361.5
+55488,Minneapolis,MN,Hennepin County,361.5
+55959,Minnesota City,MN,Winona County,174.0
+56068,Minnesota Lake,MN,Faribault County,177.0
+55345,Minnetonka,MN,Hennepin County,361.5
+55361,Minnetonka Beach,MN,Hennepin County,361.5
+56069,Montgomery,MN,Le Sueur County,177.0
+55362,Monticello,MN,Wright County,361.5
+55363,Montrose,MN,Wright County,361.5
+55767,Moose Lake,MN,Carlton County,177.0
+55051,Mora,MN,Kanabec County,165.5
+55052,Morristown,MN,Rice County,248.5
+55364,Mound,MN,Hennepin County,361.5
+55768,Mountain Iron,MN,St. Louis County,165.5
+55392,Navarre,MN,Hennepin County,361.5
+55053,Nerstrand,MN,Rice County,248.5
+55366,New Auburn,MN,Sibley County,177.0
+55367,New Germany,MN,Carver County,189.0
+56356,New Munich,MN,Stearns County,165.5
+56071,New Prague,MN,Scott County,177.0
+56072,New Richland,MN,Waseca County,174.0
+55055,Newport,MN,Washington County,260.0
+56074,Nicollet,MN,Nicollet County,177.0
+55056,North Branch,MN,Chisago County,213.0
+55057,Northfield,MN,Rice County,248.5
+55383,Norwood,MN,Carver County,189.0
+55554,Norwood,MN,Carver County,189.0
+55583,Norwood,MN,Carver County,189.0
+55368,Norwood Young America,MN,Carver County,189.0
+56357,Oak Park,MN,Benton County,165.5
+56160,Odin,MN,Watonwan County,177.0
+56569,Ogema,MN,Becker County,162.5
+56358,Ogilvie,MN,Kanabec County,165.5
+56359,Onamia,MN,Mille Lacs County,177.0
+55960,Oronoco,MN,Olmsted County,177.0
+55771,Orr,MN,St. Louis County,165.5
+56570,Osage,MN,Becker County,162.5
+55369,Osseo,MN,Hennepin County,361.5
+55569,Osseo,MN,Hennepin County,361.5
+55961,Ostrander,MN,Fillmore County,174.0
+55060,Owatonna,MN,Steele County,177.0
+56362,Paynesville,MN,Stearns County,165.5
+56363,Pease,MN,Mille Lacs County,177.0
+56078,Pemberton,MN,Blue Earth County,189.0
+55962,Peterson,MN,Fillmore County,174.0
+55063,Pine City,MN,Pine County,177.0
+55963,Pine Island,MN,Goodhue County,224.0
+56164,Pipestone,MN,Pipestone County,162.5
+55964,Plainview,MN,Wabasha County,177.0
+55370,Plato,MN,Mcleod County,165.5
+56575,Ponsford,MN,Becker County,162.5
+55965,Preston,MN,Fillmore County,174.0
+55371,Princeton,MN,Mille Lacs County,177.0
+55372,Prior Lake,MN,Scott County,243.5
+55967,Racine,MN,Mower County,177.0
+55065,Randolph,MN,Dakota County,361.5
+56165,Reading,MN,Nobles County,165.5
+55968,Reads Landing,MN,Wabasha County,177.0
+55066,Red Wing,MN,Goodhue County,224.0
+56367,Rice,MN,Benton County,165.5
+56368,Richmond,MN,Stearns County,165.5
+56577,Richwood,MN,Becker County,162.5
+56578,Rochert,MN,Becker County,162.5
+55901,Rochester,MN,Olmsted County,177.0
+55902,Rochester,MN,Olmsted County,177.0
+55903,Rochester,MN,Olmsted County,177.0
+55904,Rochester,MN,Olmsted County,177.0
+55905,Rochester,MN,Olmsted County,177.0
+55906,Rochester,MN,Olmsted County,177.0
+55067,Rock Creek,MN,Pine County,177.0
+55373,Rockford,MN,Wright County,361.5
+55572,Rockford,MN,Wright County,361.5
+55577,Rockford,MN,Wright County,361.5
+56369,Rockville,MN,Stearns County,165.5
+55374,Rogers,MN,Hennepin County,361.5
+55969,Rollingstone,MN,Winona County,174.0
+56371,Roscoe,MN,Stearns County,165.5
+55970,Rose Creek,MN,Mower County,177.0
+55068,Rosemount,MN,Dakota County,361.5
+55069,Rush City,MN,Chisago County,213.0
+55971,Rushford,MN,Fillmore County,174.0
+56168,Rushmore,MN,Nobles County,165.5
+56170,Ruthton,MN,Pipestone County,162.5
+55779,Saginaw,MN,St. Louis County,165.5
+55375,Saint Bonifacius,MN,Hennepin County,361.5
+55972,Saint Charles,MN,Winona County,174.0
+56080,Saint Clair,MN,Blue Earth County,189.0
+56301,Saint Cloud,MN,Stearns County,165.5
+56302,Saint Cloud,MN,Stearns County,165.5
+56303,Saint Cloud,MN,Stearns County,165.5
+56304,Saint Cloud,MN,Sherburne County,165.5
+56372,Saint Cloud,MN,Stearns County,165.5
+56388,Saint Cloud,MN,Stearns County,165.5
+56393,Saint Cloud,MN,Stearns County,165.5
+56395,Saint Cloud,MN,Stearns County,165.5
+56396,Saint Cloud,MN,Stearns County,165.5
+56397,Saint Cloud,MN,Stearns County,165.5
+56398,Saint Cloud,MN,Stearns County,165.5
+56399,Saint Cloud,MN,Stearns County,165.5
+55070,Saint Francis,MN,Anoka County,260.0
+56081,Saint James,MN,Watonwan County,177.0
+56374,Saint Joseph,MN,Stearns County,165.5
+56376,Saint Martin,MN,Stearns County,165.5
+55376,Saint Michael,MN,Wright County,361.5
+55101,Saint Paul,MN,Ramsey County,260.0
+55102,Saint Paul,MN,Ramsey County,260.0
+55103,Saint Paul,MN,Ramsey County,260.0
+55104,Saint Paul,MN,Ramsey County,260.0
+55105,Saint Paul,MN,Ramsey County,260.0
+55106,Saint Paul,MN,Ramsey County,260.0
+55107,Saint Paul,MN,Ramsey County,260.0
+55108,Saint Paul,MN,Ramsey County,260.0
+55109,Saint Paul,MN,Ramsey County,260.0
+55110,Saint Paul,MN,Ramsey County,260.0
+55111,Saint Paul,MN,Hennepin County,361.5
+55112,Saint Paul,MN,Ramsey County,260.0
+55113,Saint Paul,MN,Ramsey County,260.0
+55114,Saint Paul,MN,Ramsey County,260.0
+55115,Saint Paul,MN,Washington County,260.0
+55116,Saint Paul,MN,Ramsey County,260.0
+55117,Saint Paul,MN,Ramsey County,260.0
+55118,Saint Paul,MN,Dakota County,361.5
+55119,Saint Paul,MN,Ramsey County,260.0
+55120,Saint Paul,MN,Dakota County,361.5
+55121,Saint Paul,MN,Dakota County,361.5
+55122,Saint Paul,MN,Dakota County,361.5
+55123,Saint Paul,MN,Dakota County,361.5
+55124,Saint Paul,MN,Dakota County,361.5
+55125,Saint Paul,MN,Washington County,260.0
+55126,Saint Paul,MN,Ramsey County,260.0
+55127,Saint Paul,MN,Ramsey County,260.0
+55128,Saint Paul,MN,Washington County,260.0
+55129,Saint Paul,MN,Washington County,260.0
+55130,Saint Paul,MN,Ramsey County,260.0
+55133,Saint Paul,MN,Ramsey County,260.0
+55144,Saint Paul,MN,Ramsey County,260.0
+55145,Saint Paul,MN,Ramsey County,260.0
+55146,Saint Paul,MN,Ramsey County,260.0
+55155,Saint Paul,MN,Ramsey County,260.0
+55164,Saint Paul,MN,Ramsey County,260.0
+55165,Saint Paul,MN,Ramsey County,260.0
+55170,Saint Paul,MN,Ramsey County,260.0
+55172,Saint Paul,MN,Ramsey County,260.0
+55175,Saint Paul,MN,Ramsey County,260.0
+55187,Saint Paul,MN,Ramsey County,260.0
+55188,Saint Paul,MN,Ramsey County,260.0
+55071,Saint Paul Park,MN,Washington County,260.0
+56082,Saint Peter,MN,Nicollet County,177.0
+56375,Saint Stephen,MN,Stearns County,165.5
+55072,Sandstone,MN,Pine County,177.0
+55377,Santiago,MN,Sherburne County,165.5
+55973,Sargeant,MN,Mower County,177.0
+56377,Sartell,MN,Stearns County,165.5
+56378,Sauk Centre,MN,Stearns County,165.5
+56379,Sauk Rapids,MN,Benton County,165.5
+55378,Savage,MN,Scott County,243.5
+55780,Sawyer,MN,Carlton County,177.0
+55073,Scandia,MN,Washington County,260.0
+55074,Shafer,MN,Chisago County,213.0
+55379,Shakopee,MN,Scott County,243.5
+55781,Side Lake,MN,St. Louis County,165.5
+55614,Silver Bay,MN,Lake County,162.5
+55380,Silver Creek,MN,Wright County,361.5
+55381,Silver Lake,MN,Mcleod County,165.5
+56172,Slayton,MN,Murray County,162.5
+55782,Soudan,MN,St. Louis County,165.5
+55382,South Haven,MN,Stearns County,361.5
+55075,South Saint Paul,MN,Dakota County,361.5
+55974,Spring Grove,MN,Houston County,165.5
+55384,Spring Park,MN,Hennepin County,361.5
+55975,Spring Valley,MN,Fillmore County,174.0
+55078,Stacy,MN,Chisago County,213.0
+55079,Stacy,MN,Chisago County,213.0
+55080,Stanchfield,MN,Isanti County,209.0
+56173,Steen,MN,Rock County,162.5
+55385,Stewart,MN,Mcleod County,165.5
+55976,Stewartville,MN,Olmsted County,177.0
+55082,Stillwater,MN,Washington County,260.0
+55083,Stillwater,MN,Washington County,260.0
+55988,Stockton,MN,Winona County,174.0
+55783,Sturgeon Lake,MN,Pine County,177.0
+55977,Taopi,MN,Mower County,177.0
+55084,Taylors Falls,MN,Chisago County,213.0
+55790,Tower,MN,St. Louis County,165.5
+55791,Twig,MN,St. Louis County,165.5
+56089,Twin Lakes,MN,Freeborn County,177.0
+55616,Two Harbors,MN,Lake County,162.5
+56178,Tyler,MN,Lincoln County,165.5
+55979,Utica,MN,Winona County,174.0
+55085,Vermillion,MN,Dakota County,361.5
+56090,Vernon Center,MN,Blue Earth County,189.0
+55386,Victoria,MN,Carver County,189.0
+55777,Virginia,MN,St. Louis County,165.5
+55792,Virginia,MN,St. Louis County,165.5
+55981,Wabasha,MN,Wabasha County,177.0
+55387,Waconia,MN,Carver County,189.0
+56386,Wahkon,MN,Mille Lacs County,177.0
+56387,Waite Park,MN,Stearns County,165.5
+56091,Waldorf,MN,Waseca County,174.0
+55982,Waltham,MN,Mower County,177.0
+55983,Wanamingo,MN,Goodhue County,224.0
+55087,Warsaw,MN,Rice County,248.5
+56093,Waseca,MN,Waseca County,174.0
+55388,Watertown,MN,Carver County,189.0
+56096,Waterville,MN,Le Sueur County,177.0
+55389,Watkins,MN,Meeker County,174.0
+56589,Waubun,MN,Mahnomen County,162.5
+55390,Waverly,MN,Wright County,361.5
+55391,Wayzata,MN,Hennepin County,361.5
+55088,Webster,MN,Rice County,248.5
+55089,Welch,MN,Goodhue County,224.0
+56097,Wells,MN,Faribault County,177.0
+55985,West Concord,MN,Dodge County,174.0
+56591,White Earth,MN,Becker County,162.5
+55090,Willernie,MN,Washington County,260.0
+55795,Willow River,MN,Pine County,177.0
+56185,Wilmont,MN,Nobles County,165.5
+56098,Winnebago,MN,Faribault County,177.0
+55987,Winona,MN,Winona County,174.0
+55395,Winsted,MN,Mcleod County,165.5
+55396,Winthrop,MN,Sibley County,177.0
+55796,Winton,MN,St. Louis County,165.5
+56593,Wolf Lake,MN,Becker County,162.5
+56186,Woodstock,MN,Pipestone County,162.5
+56187,Worthington,MN,Nobles County,165.5
+55797,Wrenshall,MN,Carlton County,177.0
+55798,Wright,MN,Carlton County,177.0
+55990,Wykoff,MN,Fillmore County,174.0
+55092,Wyoming,MN,Chisago County,213.0
+55397,Young America,MN,Carver County,189.0
+55550,Young America,MN,Carver County,189.0
+55551,Young America,MN,Carver County,189.0
+55553,Young America,MN,Carver County,189.0
+55558,Young America,MN,Carver County,189.0
+55568,Young America,MN,Carver County,189.0
+55573,Young America,MN,Carver County,361.5
+55594,Young America,MN,Carver County,189.0
+55398,Zimmerman,MN,Sherburne County,165.5
+55991,Zumbro Falls,MN,Wabasha County,177.0
+55992,Zumbrota,MN,Goodhue County,224.0

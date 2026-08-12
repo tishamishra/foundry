@@ -1,0 +1,23 @@
+{# AEO — the answer-first block.
+   Placed immediately after the hero, before the long body. Answer engines lift
+   the first self-contained, declarative answer on a page, so this states, in
+   two or three plain sentences, who does what, where, and how to start. It is
+   deterministic and factual on purpose — no pool, nothing to fabricate — and it
+   uses tokens so every city and service reads with its own name. #}
+<section class="answer" aria-label="Summary">
+  <div class="wrap">
+    <p class="answer-lead">
+      {%- if kind == 'location_service' -%}
+        {{ biz.company }} provides {{ t.service_lower }} in {{ t.city }}, {{ t.state_abbr }}[[, including {{ t.nearby }}]]. Each job starts with an on-site assessment, and the written quote names what is and is not included. To arrange a visit, call {{ t.phone }}.
+      {%- elif kind == 'location' -%}
+        {{ biz.company }} provides {{ niche.label|lower }} in {{ t.city }}, {{ t.state_abbr }}[[, and across {{ t.county }}]]. Every job begins with an on-site assessment before any price is quoted, with photographs and a written scope. To book one, call {{ t.phone }}.
+      {%- elif kind == 'service' -%}
+        {{ biz.company }} provides {{ t.service_lower }} as part of its {{ niche.label|lower }} work. The scope is set after an assessment, never before, and the quote states its exclusions up front. Call {{ t.phone }} to arrange a visit.
+      {%- elif kind == 'county' -%}
+        {{ biz.company }} provides {{ niche.label|lower }} across {{ t.county }}. Every job begins with an on-site assessment before any price is quoted. Call {{ t.phone }} to book one.
+      {%- else -%}
+        {{ biz.company }} provides {{ niche.label|lower }}. Work begins with an on-site assessment and a written quote before anything starts — no price is given from the kerb. Call {{ t.phone }} to arrange a visit.
+      {%- endif -%}
+    </p>
+  </div>
+</section>

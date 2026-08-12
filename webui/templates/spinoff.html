@@ -1,0 +1,39 @@
+{% extends "base.html" %}{% block body %}
+<div class="head">
+  <h1>Spin-off from {{ src.domain }}</h1>
+  <p class="sub">Same niche, same coverage, same page structure — new branding, and a seed searched
+  so the copy does not repeat the original.</p>
+</div>
+<form method="post" class="card">
+  <div class="two">
+    <label>Company name *<input name="company" required autofocus></label>
+    <label>Domain *<input name="domain" placeholder="example.com" required></label>
+    <label>Phone *<input name="phone" required></label>
+    <label>Email<input name="email"></label>
+    <label>City<input name="city"></label>
+    <label>State<input name="state"></label>
+    <label>Theme
+      <select name="theme">
+        {% for key, t in THEMES.items() %}<option value="{{ key }}" {{ 'selected' if src.theme == key }}>{{ t.label }}</option>{% endfor %}
+      </select>
+    </label>
+    <label>Style pack
+      <select name="style">
+        {% for key, st in STYLES.items() %}<option value="{{ key }}" {{ 'selected' if src.style == key }}>{{ st.label }}</option>{% endfor %}
+      </select>
+    </label>
+    <label>Page skeleton
+      <select name="skeleton">
+        {% for key, sk in SKELETONS.items() %}<option value="{{ key }}" {{ 'selected' if src.skeleton == key }}>{{ sk.label }}</option>{% endfor %}
+      </select>
+    </label>
+  </div>
+  <p class="note">Inherited from {{ src.domain }}: niche <strong>{{ src.niche }}</strong>,
+  coverage <strong>{{ (src.coverage.states or [])|join(', ') }}</strong>,
+  render mode <strong>{{ src.render.mode }}</strong>.
+  The new business starts with an <strong>empty fact block</strong> — no licence, no warranty, no
+  tenure — so nothing is inherited that you have not evidenced. Fill those in afterwards if you can.</p>
+  <div class="foot"><button class="btn">Create and build</button>
+    <a class="btn ghost" href="{{ url_for('dashboard') }}">Cancel</a></div>
+</form>
+{% endblock %}

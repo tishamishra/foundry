@@ -1,0 +1,14 @@
+<section class="sec">
+  <div class="wrap prose">
+    <h2>{{ service.name }} for {{ t.city }} property owners</h2>
+    {% for para in lc.service_intro.paras %}<p>{{ para }}</p>{% endfor %}
+    {% for para in svc.intro.paras %}<p>{{ para }}</p>{% endfor %}
+    <h3>What the job includes</h3>
+    <ul class="bullets">{% for b in svc.bullets %}<li>{{ b }}</li>{% endfor %}</ul>
+    <div class="factbar">
+      <div><span>Area</span><strong>{{ t.city }}, {{ t.state_abbr }}</strong></div>
+      <div><span>County</span><strong>{{ t.county }}</strong></div>
+      {% if t.zips_short %}<div><span>ZIP codes</span><strong>{{ t.zips_short }}</strong></div>{% endif %}
+    </div>
+  </div>
+</section>

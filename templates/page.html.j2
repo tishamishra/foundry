@@ -1,0 +1,93 @@
+{#
+  The shell.
+
+  Two things travel from data onto the document and drive everything below:
+
+    data-hero / data-cards / data-headline / data-accent / data-rhythm
+        the STYLE PACK. One hand-authored stylesheet carries a rule for each
+        value, so a new look is a block of CSS and a line of YAML — never a
+        new template and never a build step.
+
+    :root custom properties
+        the THEME. Colour and type are variables, so six palettes and six
+        packs are 36 distinct looks over one stylesheet.
+
+  Below the head it is a loop over a named section list. A section is a partial
+  and its name in a list — no registry, no interface, no Python coupling. The
+  list may repeat an entry, so ordering decisions live in data.
+#}<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ title }}</title>
+<meta name="description" content="{{ description }}">
+<link rel="canonical" href="https://{{ site.domain }}{{ '' if url == '/' else url }}">
+<meta property="og:title" content="{{ title }}">
+<meta property="og:description" content="{{ description }}">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="{{ theme.brand }}">
+{% if style.fonts_url %}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="{{ style.fonts_url }}">
+{% endif %}
+<link rel="stylesheet" href="/assets/css/site.css">
+<style>
+:root{
+--brand:{{ theme.brand }};--brand-dark:{{ theme.brand_dark }};--brand-light:{{ theme.brand_light }};
+--accent:{{ theme.accent }};--accent-text:{{ theme.accent_text }};--ink:{{ theme.ink }};
+--muted:{{ theme.muted }};--line:{{ theme.line }};--surface:{{ theme.surface }};
+--font-display:{{ style.display_font }};--font-body:{{ style.body_font }};
+--radius:{{ style.radius }};
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "{{ niche.schema_type }}",
+  "name": "{{ biz.company }}",
+  "telephone": "{{ t.phone }}",
+  "url": "https://{{ site.domain }}{{ '' if url == '/' else url }}",
+  {% if t.street %}"address": {"@type": "PostalAddress", "streetAddress": "{{ t.street }}", "addressLocality": "{{ t.hq_city }}", "addressRegion": "{{ t.hq_state }}", "postalCode": "{{ t.hq_zip }}", "addressCountry": "US"},{% endif %}
+  "areaServed": [{% for c in counties[:12] %}{"@type": "AdministrativeArea", "name": "{{ c.name }}, {{ c.state_abbr }}"}{{ "," if not loop.last }}{% endfor %}]
+}
+</script>
+{# --- AEO: the FAQs are already on the page; this makes them machine-readable.
+   Answer engines (Google AI Overviews, Perplexity, ChatGPT) lift Q&A straight
+   from FAQPage markup, so the same content earns citations it otherwise would
+   not. tojson escapes each string; {tokens} inside are resolved afterwards. #}
+{% set faqlist = (lc.faqs if lc is defined else (svc.faqs if svc is defined else content.faqs)) %}
+{% if faqlist %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{% for item in faqlist %}{"@type":"Question","name":{{ item.q|tojson }},"acceptedAnswer":{"@type":"Answer","text":{{ item.a|tojson }}}}{{ "," if not loop.last }}
+{% endfor %}]}
+</script>
+{% endif %}
+{# --- AEO: a Service page should say, in machine terms, WHAT service and WHERE.
+   Emitted on service and service-in-city pages, tied back to the business. #}
+{% if kind in ('service', 'location_service') and service is defined %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Service","serviceType":{{ service.name|tojson }},
+"provider":{"@type":"{{ niche.schema_type }}","name":{{ biz.company|tojson }},"telephone":"{{ t.phone }}"},
+"areaServed":{% if t.city %}{"@type":"City","name":"{{ t.city }}, {{ t.state_abbr }}"}{% else %}[{% for c in counties[:12] %}{"@type":"AdministrativeArea","name":"{{ c.name }}, {{ c.state_abbr }}"}{{ "," if not loop.last }}{% endfor %}]{% endif %},
+"url":"https://{{ site.domain }}{{ url }}"}
+</script>
+{% endif %}
+</head>
+<body class="page-{{ kind }}"
+      data-style="{{ style.key }}"
+      data-hero="{{ style.hero }}"
+      data-cards="{{ style.cards }}"
+      data-headline="{{ style.headline }}"
+      data-accent="{{ style.accent }}"
+      data-rhythm="{{ style.rhythm }}"
+      data-skeleton="{{ skeleton.key }}"
+      data-shell="{{ skeleton.shell }}">
+{% for section in sections %}
+{% include "partials/" + section + ".html.j2" %}
+{% endfor %}
+<script src="/assets/js/site.js" defer></script>
+</body>
+</html>

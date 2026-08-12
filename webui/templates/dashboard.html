@@ -1,0 +1,85 @@
+{% extends "base.html" %}{% block body %}
+<div class="head">
+  <div><h1>Sites</h1><p class="sub">{{ rows|length }} site(s) · {{ businesses|length }} business record(s)</p></div>
+  <div class="actions">
+    <a class="btn" href="{{ url_for('site_form') }}">New site</a>
+    <a class="btn ghost" href="{{ url_for('business_form') }}">New business</a>
+    <a class="btn ghost" href="{{ url_for('bulk') }}">Bulk create</a>
+  </div>
+</div>
+
+{% if not rows %}
+<div class="card empty">
+  <h2>Nothing yet</h2>
+  <p>Start with a coverage list (the buyer's payable ZIPs), then a business, then a site.
+     Or go straight to <a href="{{ url_for('bulk') }}">Bulk create</a> and paste a list of businesses.</p>
+</div>
+{% else %}
+<table class="grid">
+<thead><tr><th>Site</th><th>Business</th><th>Coverage</th><th>Seed</th><th>Mode</th><th>Status</th><th></th></tr></thead>
+<tbody>
+{% for r in rows %}
+<tr>
+  <td><strong>{{ r.raw.domain }}</strong><div class="mono dim">{{ r.site_id }}</div></td>
+  <td>{{ r.company }}<div class="dim">{{ r.raw.niche }} · {{ r.raw.theme }}</div></td>
+  <td>{% if r.error %}<span class="pill bad">error</span>{% else %}{{ r.cities }} cities<div class="dim">{{ r.counties }} counties</div>{% endif %}</td>
+  <td class="mono">{{ r.raw.composition_seed }}</td>
+  <td class="dim">{{ r.raw.render.mode }}{% if r.raw.render.prerender_top_n is not none %} · top {{ r.raw.render.prerender_top_n }}{% endif %}</td>
+  <td>
+    {% if r.error %}<span class="pill bad" title="{{ r.error }}">blocked</span>
+    {% elif r.shipped %}<span class="pill good">shipped</span>
+    {% elif r.built %}<span class="pill warn">built, not passed</span>
+    {% else %}<span class="pill">not built</span>{% endif %}
+  </td>
+  <td class="row-actions">
+    <a class="mini" href="{{ url_for('build', site=r.site_id) }}">Build</a>
+    {% if r.built %}<a class="mini" href="{{ url_for('preview', site_id=r.site_id) }}" target="_blank">Preview</a>
+    <a class="mini" href="{{ url_for('download_site', site_id=r.site_id) }}">Download</a>{% endif %}
+    <a class="mini" href="{{ url_for('spinoff', site_id=r.site_id) }}">Spin-off</a>
+    <a class="mini" href="{{ url_for('site_form', site_id=r.site_id) }}">Edit</a>
+    <form method="post" action="{{ url_for('site_seed', site_id=r.site_id) }}" class="inline"><button class="mini">Re-seed</button></form>
+    <form method="post" action="{{ url_for('site_delete', site_id=r.site_id) }}" class="inline"><button class="mini danger">Delete</button></form>
+  </td>
+</tr>
+{% if r.error %}<tr class="detail"><td colspan="7"><span class="dim">{{ r.error }}</span></td></tr>{% endif %}
+{% endfor %}
+</tbody></table>
+{% endif %}
+
+<div class="cols">
+  <div class="card">
+    <h2>Library capacity</h2>
+    <p class="sub">Blocks in the pool against how many one site draws. The seed space cannot fix a
+    shallow pool — if a site consumes most of a pool, every site will.</p>
+    <form method="get" class="row-form" style="margin-bottom:1rem">
+      <label>Niche<select name="cap" onchange="this.form.submit()">
+        {% for n in all_niches %}<option value="{{ n }}" {{ 'selected' if n == cap_pick }}>{{ n }}</option>{% endfor %}
+      </select></label>
+    </form>
+    {% for niche, cap in caps.items() %}
+      {% set worst = cap.values()|map(attribute='sites')|min %}
+      <p><strong>{{ libs[niche].counts.values()|sum }}</strong> blocks ·
+        supports about <strong>{{ worst }}</strong> distinct site(s) ·
+        binding: {% for k, c in cap.items() if c.sites == worst %}<code>{{ k }}</code> {% endfor %}</p>
+      <details>
+        <summary class="dim" style="cursor:pointer;margin-bottom:.6rem">every block kind</summary>
+        {% for kind, c in cap.items() %}
+        <div class="meter"><span class="k">{{ kind }}</span>
+          <span class="bar"><i class="{{ 'thin' if c.sites < 2 }}" style="width:{{ [(c.sites * 20), 100]|min }}%"></i></span>
+          <span class="n" title="pool {{ c.pool }} / draws {{ c.draws }}">{{ c.pool }}/{{ c.draws }}</span></div>
+        {% endfor %}
+      </details>
+    {% endfor %}
+    <p><a class="btn ghost sm" href="{{ url_for('library') }}">Open library</a>
+       <a class="btn ghost sm" href="{{ url_for('images') }}">Image pool</a></p>
+  </div>
+  <div class="card">
+    <h2>Coverage</h2>
+    <p class="sub">The buyer's payable-ZIP footprint. Publishing outside it is a compliance failure, so the build refuses.</p>
+    {% for niche, states in coverage.items() %}
+    <p><strong>{{ niche }}</strong> — {% if states %}{{ states|join(', ') }}{% else %}<span class="warn-text">no list loaded</span>{% endif %}</p>
+    {% endfor %}
+    <p><a class="btn ghost sm" href="{{ url_for('coverage') }}">Import a list</a></p>
+  </div>
+</div>
+{% endblock %}

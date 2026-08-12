@@ -1,0 +1,282 @@
+zip,city,state,county,payout
+03601,Acworth,NH,Sullivan County,64.0
+03602,Alstead,NH,Cheshire County,65.5
+03809,Alton,NH,Belknap County,65.5
+03810,Alton Bay,NH,Belknap County,65.5
+03031,Amherst,NH,Hillsborough County,65.5
+03216,Andover,NH,Merrimack County,65.5
+03440,Antrim,NH,Hillsborough County,65.5
+03217,Ashland,NH,Grafton County,65.5
+03441,Ashuelot,NH,Cheshire County,65.5
+03811,Atkinson,NH,Rockingham County,65.5
+03032,Auburn,NH,Rockingham County,65.5
+03218,Barnstead,NH,Belknap County,65.5
+03825,Barrington,NH,Strafford County,65.5
+03812,Bartlett,NH,Carroll County,65.5
+03740,Bath,NH,Grafton County,65.5
+03110,Bedford,NH,Hillsborough County,65.5
+03220,Belmont,NH,Belknap County,65.5
+03442,Bennington,NH,Hillsborough County,65.5
+03570,Berlin,NH,Coos County,65.5
+03574,Bethlehem,NH,Grafton County,65.5
+03304,Bow,NH,Merrimack County,65.5
+03221,Bradford,NH,Merrimack County,65.5
+03575,Bretton Woods,NH,Coos County,65.5
+03222,Bristol,NH,Grafton County,65.5
+03033,Brookline,NH,Hillsborough County,65.5
+03223,Campton,NH,Grafton County,65.5
+03741,Canaan,NH,Grafton County,65.5
+03034,Candia,NH,Rockingham County,65.5
+03224,Canterbury,NH,Merrimack County,65.5
+03225,Center Barnstead,NH,Belknap County,65.5
+03813,Center Conway,NH,Carroll County,65.5
+03226,Center Harbor,NH,Belknap County,65.5
+03814,Center Ossipee,NH,Carroll County,65.5
+03227,Center Sandwich,NH,Carroll County,65.5
+03815,Center Strafford,NH,Strafford County,65.5
+03816,Center Tuftonboro,NH,Carroll County,65.5
+03603,Charlestown,NH,Sullivan County,64.0
+03036,Chester,NH,Rockingham County,65.5
+03443,Chesterfield,NH,Cheshire County,65.5
+03258,Chichester,NH,Merrimack County,65.5
+03817,Chocorua,NH,Carroll County,65.5
+03743,Claremont,NH,Sullivan County,64.0
+03576,Colebrook,NH,Coos County,65.5
+03301,Concord,NH,Merrimack County,65.5
+03302,Concord,NH,Merrimack County,65.5
+03303,Concord,NH,Merrimack County,65.5
+03305,Concord,NH,Merrimack County,65.5
+03229,Contoocook,NH,Merrimack County,65.5
+03818,Conway,NH,Carroll County,65.5
+03745,Cornish,NH,Sullivan County,64.0
+03746,Cornish Flat,NH,Sullivan County,64.0
+03230,Danbury,NH,Merrimack County,65.5
+03819,Danville,NH,Rockingham County,65.5
+03037,Deerfield,NH,Rockingham County,65.5
+03038,Derry,NH,Rockingham County,65.5
+03820,Dover,NH,Strafford County,65.5
+03821,Dover,NH,Strafford County,65.5
+03822,Dover,NH,Strafford County,65.5
+03604,Drewsville,NH,Cheshire County,65.5
+03444,Dublin,NH,Cheshire County,65.5
+03046,Dunbarton,NH,Merrimack County,65.5
+03824,Durham,NH,Strafford County,65.5
+03231,East Andover,NH,Merrimack County,65.5
+03040,East Candia,NH,Rockingham County,65.5
+03041,East Derry,NH,Rockingham County,65.5
+03826,East Hampstead,NH,Rockingham County,65.5
+03827,East Kingston,NH,Rockingham County,65.5
+03830,East Wakefield,NH,Carroll County,65.5
+03832,Eaton Center,NH,Carroll County,65.5
+03882,Effingham,NH,Carroll County,65.5
+03233,Elkins,NH,Merrimack County,65.5
+03748,Enfield,NH,Grafton County,65.5
+03749,Enfield Center,NH,Grafton County,65.5
+03042,Epping,NH,Rockingham County,65.5
+03234,Epsom,NH,Merrimack County,65.5
+03579,Errol,NH,Coos County,65.5
+03750,Etna,NH,Grafton County,65.5
+03833,Exeter,NH,Rockingham County,65.5
+03835,Farmington,NH,Strafford County,65.5
+03447,Fitzwilliam,NH,Cheshire County,65.5
+03043,Francestown,NH,Hillsborough County,65.5
+03580,Franconia,NH,Grafton County,65.5
+03235,Franklin,NH,Merrimack County,65.5
+03836,Freedom,NH,Carroll County,65.5
+03044,Fremont,NH,Rockingham County,65.5
+03751,Georges Mills,NH,Sullivan County,64.0
+03249,Gilford,NH,Belknap County,65.5
+03237,Gilmanton,NH,Belknap County,65.5
+03837,Gilmanton Iron Works,NH,Belknap County,65.5
+03448,Gilsum,NH,Cheshire County,65.5
+03838,Glen,NH,Carroll County,65.5
+03238,Glencliff,NH,Grafton County,65.5
+03045,Goffstown,NH,Hillsborough County,65.5
+03581,Gorham,NH,Coos County,65.5
+03752,Goshen,NH,Sullivan County,64.0
+03240,Grafton,NH,Grafton County,65.5
+03753,Grantham,NH,Sullivan County,64.0
+03047,Greenfield,NH,Hillsborough County,65.5
+03840,Greenland,NH,Rockingham County,65.5
+03048,Greenville,NH,Hillsborough County,65.5
+03582,Groveton,NH,Coos County,65.5
+03754,Guild,NH,Sullivan County,64.0
+03841,Hampstead,NH,Rockingham County,65.5
+03842,Hampton,NH,Rockingham County,65.5
+03843,Hampton,NH,Rockingham County,65.5
+03844,Hampton Falls,NH,Rockingham County,65.5
+03449,Hancock,NH,Hillsborough County,65.5
+03755,Hanover,NH,Grafton County,65.5
+03450,Harrisville,NH,Cheshire County,65.5
+03765,Haverhill,NH,Grafton County,65.5
+03241,Hebron,NH,Grafton County,65.5
+03242,Henniker,NH,Merrimack County,65.5
+03243,Hill,NH,Merrimack County,65.5
+03244,Hillsborough,NH,Hillsborough County,65.5
+03451,Hinsdale,NH,Cheshire County,65.5
+03245,Holderness,NH,Grafton County,65.5
+03049,Hollis,NH,Hillsborough County,65.5
+03106,Hooksett,NH,Merrimack County,65.5
+03051,Hudson,NH,Hillsborough County,65.5
+03845,Intervale,NH,Carroll County,65.5
+03846,Jackson,NH,Carroll County,65.5
+03452,Jaffrey,NH,Cheshire County,65.5
+03583,Jefferson,NH,Coos County,65.5
+03847,Kearsarge,NH,Carroll County,65.5
+03431,Keene,NH,Cheshire County,65.5
+03435,Keene,NH,Cheshire County,65.5
+03848,Kingston,NH,Rockingham County,65.5
+03246,Laconia,NH,Belknap County,65.5
+03247,Laconia,NH,Belknap County,65.5
+03584,Lancaster,NH,Coos County,65.5
+03756,Lebanon,NH,Grafton County,65.5
+03766,Lebanon,NH,Grafton County,65.5
+03861,Lee,NH,Strafford County,65.5
+03605,Lempster,NH,Sullivan County,64.0
+03251,Lincoln,NH,Grafton County,65.5
+03585,Lisbon,NH,Grafton County,65.5
+03052,Litchfield,NH,Hillsborough County,65.5
+03561,Littleton,NH,Grafton County,65.5
+03252,Lochmere,NH,Belknap County,65.5
+03053,Londonderry,NH,Rockingham County,65.5
+03307,Loudon,NH,Merrimack County,65.5
+03768,Lyme,NH,Grafton County,65.5
+03769,Lyme Center,NH,Grafton County,65.5
+03082,Lyndeborough,NH,Hillsborough County,65.5
+03823,Madbury,NH,Strafford County,65.5
+03849,Madison,NH,Carroll County,65.5
+03101,Manchester,NH,Hillsborough County,65.5
+03102,Manchester,NH,Hillsborough County,65.5
+03103,Manchester,NH,Hillsborough County,65.5
+03104,Manchester,NH,Hillsborough County,65.5
+03105,Manchester,NH,Hillsborough County,65.5
+03108,Manchester,NH,Hillsborough County,65.5
+03109,Manchester,NH,Hillsborough County,65.5
+03111,Manchester,NH,Hillsborough County,65.5
+03455,Marlborough,NH,Cheshire County,65.5
+03456,Marlow,NH,Cheshire County,65.5
+03850,Melvin Village,NH,Carroll County,65.5
+03253,Meredith,NH,Belknap County,65.5
+03770,Meriden,NH,Sullivan County,64.0
+03054,Merrimack,NH,Hillsborough County,65.5
+03588,Milan,NH,Coos County,65.5
+03055,Milford,NH,Hillsborough County,65.5
+03851,Milton,NH,Strafford County,65.5
+03852,Milton Mills,NH,Strafford County,65.5
+03853,Mirror Lake,NH,Carroll County,65.5
+03771,Monroe,NH,Grafton County,65.5
+03057,Mont Vernon,NH,Hillsborough County,65.5
+03254,Moultonborough,NH,Carroll County,65.5
+03589,Mount Washington,NH,Coos County,65.5
+03060,Nashua,NH,Hillsborough County,65.5
+03061,Nashua,NH,Hillsborough County,65.5
+03062,Nashua,NH,Hillsborough County,65.5
+03063,Nashua,NH,Hillsborough County,65.5
+03064,Nashua,NH,Hillsborough County,65.5
+03457,Nelson,NH,Cheshire County,65.5
+03070,New Boston,NH,Hillsborough County,65.5
+03854,New Castle,NH,Rockingham County,65.5
+03855,New Durham,NH,Strafford County,65.5
+03256,New Hampton,NH,Belknap County,65.5
+03071,New Ipswich,NH,Hillsborough County,65.5
+03257,New London,NH,Merrimack County,65.5
+03255,Newbury,NH,Merrimack County,65.5
+03856,Newfields,NH,Rockingham County,65.5
+03857,Newmarket,NH,Rockingham County,65.5
+03773,Newport,NH,Sullivan County,64.0
+03858,Newton,NH,Rockingham County,65.5
+03859,Newton Junction,NH,Rockingham County,65.5
+03860,North Conway,NH,Carroll County,65.5
+03862,North Hampton,NH,Rockingham County,65.5
+03774,North Haverhill,NH,Grafton County,65.5
+03073,North Salem,NH,Rockingham County,65.5
+03259,North Sandwich,NH,Carroll County,65.5
+03590,North Stratford,NH,Coos County,65.5
+03260,North Sutton,NH,Merrimack County,65.5
+03609,North Walpole,NH,Cheshire County,65.5
+03262,North Woodstock,NH,Grafton County,65.5
+03261,Northwood,NH,Rockingham County,65.5
+03290,Nottingham,NH,Rockingham County,65.5
+03777,Orford,NH,Grafton County,65.5
+03864,Ossipee,NH,Carroll County,65.5
+03076,Pelham,NH,Hillsborough County,65.5
+03458,Peterborough,NH,Hillsborough County,65.5
+03779,Piermont,NH,Grafton County,65.5
+03780,Pike,NH,Grafton County,65.5
+03592,Pittsburg,NH,Coos County,65.5
+03263,Pittsfield,NH,Merrimack County,65.5
+03781,Plainfield,NH,Sullivan County,64.0
+03865,Plaistow,NH,Rockingham County,65.5
+03264,Plymouth,NH,Grafton County,65.5
+03801,Portsmouth,NH,Rockingham County,65.5
+03802,Portsmouth,NH,Rockingham County,65.5
+03803,Portsmouth,NH,Rockingham County,65.5
+03804,Portsmouth,NH,Rockingham County,65.5
+03593,Randolph,NH,Coos County,65.5
+03077,Raymond,NH,Rockingham County,65.5
+03461,Rindge,NH,Cheshire County,65.5
+03839,Rochester,NH,Strafford County,65.5
+03866,Rochester,NH,Strafford County,65.5
+03867,Rochester,NH,Strafford County,65.5
+03868,Rochester,NH,Strafford County,65.5
+03869,Rollinsford,NH,Strafford County,65.5
+03266,Rumney,NH,Grafton County,65.5
+03870,Rye,NH,Rockingham County,65.5
+03871,Rye Beach,NH,Rockingham County,65.5
+03079,Salem,NH,Rockingham County,65.5
+03268,Salisbury,NH,Merrimack County,65.5
+03269,Sanbornton,NH,Belknap County,65.5
+03872,Sanbornville,NH,Carroll County,65.5
+03873,Sandown,NH,Rockingham County,65.5
+03874,Seabrook,NH,Rockingham County,65.5
+03875,Silver Lake,NH,Carroll County,65.5
+03878,Somersworth,NH,Strafford County,65.5
+03607,South Acworth,NH,Sullivan County,64.0
+03272,South Newbury,NH,Merrimack County,65.5
+03273,South Sutton,NH,Merrimack County,65.5
+03883,South Tamworth,NH,Carroll County,65.5
+03462,Spofford,NH,Cheshire County,65.5
+03284,Springfield,NH,Sullivan County,64.0
+03464,Stoddard,NH,Cheshire County,65.5
+03884,Strafford,NH,Strafford County,65.5
+03885,Stratham,NH,Rockingham County,65.5
+03586,Sugar Hill,NH,Grafton County,65.5
+03445,Sullivan,NH,Cheshire County,65.5
+03782,Sunapee,NH,Sullivan County,64.0
+03275,Suncook,NH,Merrimack County,65.5
+03446,Swanzey,NH,Cheshire County,65.5
+03886,Tamworth,NH,Carroll County,65.5
+03084,Temple,NH,Hillsborough County,65.5
+03285,Thornton,NH,Grafton County,65.5
+03276,Tilton,NH,Merrimack County,65.5
+03298,Tilton,NH,Belknap County,65.5
+03299,Tilton,NH,Belknap County,65.5
+03465,Troy,NH,Cheshire County,65.5
+03595,Twin Mountain,NH,Coos County,65.5
+03887,Union,NH,Strafford County,65.5
+03608,Walpole,NH,Cheshire County,65.5
+03278,Warner,NH,Merrimack County,65.5
+03279,Warren,NH,Grafton County,65.5
+03280,Washington,NH,Sullivan County,64.0
+03215,Waterville Valley,NH,Grafton County,65.5
+03281,Weare,NH,Hillsborough County,65.5
+03282,Wentworth,NH,Grafton County,65.5
+03466,West Chesterfield,NH,Cheshire County,65.5
+03784,West Lebanon,NH,Grafton County,65.5
+03291,West Nottingham,NH,Rockingham County,65.5
+03890,West Ossipee,NH,Carroll County,65.5
+03468,West Peterborough,NH,Hillsborough County,65.5
+03597,West Stewartstown,NH,Coos County,65.5
+03469,West Swanzey,NH,Cheshire County,65.5
+03467,Westmoreland,NH,Cheshire County,65.5
+03598,Whitefield,NH,Coos County,65.5
+03287,Wilmot,NH,Merrimack County,65.5
+03086,Wilton,NH,Hillsborough County,65.5
+03470,Winchester,NH,Cheshire County,65.5
+03087,Windham,NH,Rockingham County,65.5
+03289,Winnisquam,NH,Belknap County,65.5
+03894,Wolfeboro,NH,Carroll County,65.5
+03896,Wolfeboro Falls,NH,Carroll County,65.5
+03897,Wonalancet,NH,Carroll County,65.5
+03293,Woodstock,NH,Grafton County,65.5
+03785,Woodsville,NH,Grafton County,65.5

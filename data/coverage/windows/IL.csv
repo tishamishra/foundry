@@ -1,0 +1,764 @@
+zip,city,state,county,payout
+61410,Abingdon,IL,Knox County,97.0
+61411,Adair,IL,Mcdonough County,97.0
+60101,Addison,IL,Dupage County,61.0
+62601,Alexander,IL,Morgan County,97.0
+60102,Algonquin,IL,Mchenry County,64.0
+61810,Allerton,IL,Vermilion County,97.0
+62610,Alsey,IL,Scott County,97.0
+62411,Altamont,IL,Effingham County,97.0
+61414,Altona,IL,Knox County,97.0
+61811,Alvin,IL,Vermilion County,97.0
+61720,Anchor,IL,Mclean County,97.0
+61311,Ancona,IL,Livingston County,97.0
+61910,Arcola,IL,Douglas County,97.0
+62611,Arenzville,IL,Cass County,97.0
+62501,Argenta,IL,Macon County,97.0
+60004,Arlington Heights,IL,Cook County,64.0
+60005,Arlington Heights,IL,Cook County,64.0
+61721,Armington,IL,Tazewell County,97.0
+61812,Armstrong,IL,Vermilion County,97.0
+60910,Aroma Park,IL,Kankakee County,97.0
+61722,Arrowsmith,IL,Mclean County,97.0
+61911,Arthur,IL,Douglas County,97.0
+60911,Ashkum,IL,Iroquois County,97.0
+62612,Ashland,IL,Cass County,97.0
+61912,Ashmore,IL,Coles County,97.0
+62510,Assumption,IL,Christian County,97.0
+61501,Astoria,IL,Fulton County,97.0
+62613,Athens,IL,Menard County,97.0
+61723,Atlanta,IL,Logan County,97.0
+61913,Atwood,IL,Douglas County,97.0
+62615,Auburn,IL,Sangamon County,97.0
+62311,Augusta,IL,Hancock County,97.0
+60504,Aurora,IL,Dupage County,61.0
+61415,Avon,IL,Fulton County,97.0
+61416,Bardolph,IL,Mcdonough County,97.0
+60010,Barrington,IL,Lake County,64.0
+62312,Barry,IL,Pike County,97.0
+60103,Bartlett,IL,Dupage County,64.0
+62313,Basco,IL,Hancock County,97.0
+60510,Batavia,IL,Kane County,61.0
+62617,Bath,IL,Mason County,97.0
+62314,Baylis,IL,Pike County,97.0
+62618,Beardstown,IL,Cass County,97.0
+62512,Beason,IL,Logan County,97.0
+60912,Beaverville,IL,Iroquois County,97.0
+62414,Beecher City,IL,Effingham County,97.0
+61724,Bellflower,IL,Mclean County,97.0
+60104,Bellwood,IL,Cook County,61.0
+61813,Bement,IL,Piatt County,97.0
+60106,Bensenville,IL,Dupage County,61.0
+61516,Benson,IL,Woodford County,97.0
+60163,Berkeley,IL,Cook County,61.0
+60402,Berwyn,IL,Cook County,61.0
+61914,Bethany,IL,Moultrie County,97.0
+61814,Bismarck,IL,Vermilion County,97.0
+61313,Blackstone,IL,Livingston County,97.0
+61420,Blandinsville,IL,Mcdonough County,97.0
+60108,Bloomingdale,IL,Dupage County,61.0
+61701,Bloomington,IL,Mclean County,97.0
+61702,Bloomington,IL,Mclean County,97.0
+61704,Bloomington,IL,Mclean County,97.0
+61705,Bloomington,IL,Mclean County,97.0
+61709,Bloomington,IL,Mclean County,97.0
+61710,Bloomington,IL,Mclean County,97.0
+61791,Bloomington,IL,Mclean County,97.0
+61799,Bloomington,IL,Mclean County,97.0
+62513,Blue Mound,IL,Macon County,97.0
+62622,Bluff Springs,IL,Cass County,97.0
+62621,Bluffs,IL,Scott County,97.0
+60440,Bolingbrook,IL,Will County,61.0
+60490,Bolingbrook,IL,Will County,61.0
+61815,Bondville,IL,Champaign County,97.0
+60913,Bonfield,IL,Kankakee County,97.0
+62514,Boody,IL,Macon County,97.0
+60914,Bourbonnais,IL,Kankakee County,97.0
+62316,Bowen,IL,Hancock County,97.0
+60407,Braceville,IL,Grundy County,97.0
+61421,Bradford,IL,Stark County,97.0
+60915,Bradley,IL,Kankakee County,97.0
+60408,Braidwood,IL,Will County,97.0
+61517,Brimfield,IL,Peoria County,97.0
+61816,Broadlands,IL,Champaign County,97.0
+60155,Broadview,IL,Cook County,61.0
+61917,Brocton,IL,Edgar County,97.0
+60513,Brookfield,IL,Cook County,61.0
+62624,Browning,IL,Schuyler County,97.0
+61519,Bryant,IL,Fulton County,97.0
+60917,Buckingham,IL,Kankakee County,97.0
+60918,Buckley,IL,Iroquois County,97.0
+62515,Buffalo,IL,Sangamon County,97.0
+60089,Buffalo Grove,IL,Lake County,64.0
+62517,Bulpitt,IL,Christian County,97.0
+61422,Bushnell,IL,Mcdonough County,97.0
+60919,Cabery,IL,Ford County,97.0
+61919,Camargo,IL,Douglas County,97.0
+62319,Camden,IL,Schuyler County,97.0
+61424,Camp Grove,IL,Marshall County,97.0
+62320,Camp Point,IL,Adams County,97.0
+60920,Campus,IL,Livingston County,97.0
+61520,Canton,IL,Fulton County,97.0
+62625,Cantrall,IL,Sangamon County,97.0
+61725,Carlock,IL,Mclean County,97.0
+60188,Carol Stream,IL,Dupage County,61.0
+60199,Carol Stream,IL,Dupage County,61.0
+62321,Carthage,IL,Hancock County,97.0
+61426,Castleton,IL,Stark County,97.0
+61817,Catlin,IL,Vermilion County,97.0
+61316,Cedar Point,IL,Lasalle County,97.0
+61818,Cerro Gordo,IL,Piatt County,97.0
+62323,Chambersburg,IL,Pike County,97.0
+61820,Champaign,IL,Champaign County,97.0
+61821,Champaign,IL,Champaign County,97.0
+61822,Champaign,IL,Champaign County,97.0
+61824,Champaign,IL,Champaign County,97.0
+61825,Champaign,IL,Champaign County,97.0
+61826,Champaign,IL,Champaign County,97.0
+62627,Chandlerville,IL,Cass County,97.0
+62628,Chapin,IL,Morgan County,97.0
+61920,Charleston,IL,Coles County,97.0
+62629,Chatham,IL,Sangamon County,97.0
+60921,Chatsworth,IL,Livingston County,97.0
+60922,Chebanse,IL,Kankakee County,97.0
+61726,Chenoa,IL,Mclean County,97.0
+62518,Chestnut,IL,Logan County,97.0
+60610,Chicago,IL,Cook County,46.0
+60611,Chicago,IL,Cook County,46.0
+60613,Chicago,IL,Cook County,46.0
+60614,Chicago,IL,Cook County,46.0
+60618,Chicago,IL,Cook County,46.0
+60625,Chicago,IL,Cook County,64.0
+60626,Chicago,IL,Cook County,46.0
+60630,Chicago,IL,Cook County,46.0
+60631,Chicago,IL,Cook County,46.0
+60640,Chicago,IL,Cook County,46.0
+60645,Chicago,IL,Cook County,46.0
+60646,Chicago,IL,Cook County,46.0
+60657,Chicago,IL,Cook County,46.0
+60659,Chicago,IL,Cook County,46.0
+60660,Chicago,IL,Cook County,46.0
+60666,Chicago,IL,Cook County,64.0
+60701,Chicago,IL,Cook County,64.0
+61523,Chillicothe,IL,Peoria County,97.0
+61924,Chrisman,IL,Edgar County,97.0
+61830,Cisco,IL,Piatt County,97.0
+60924,Cissna Park,IL,Iroquois County,97.0
+60514,Clarendon Hills,IL,Dupage County,61.0
+62324,Clayton,IL,Adams County,97.0
+60926,Claytonville,IL,Iroquois County,97.0
+60927,Clifton,IL,Iroquois County,97.0
+61727,Clinton,IL,De Witt County,97.0
+60416,Coal City,IL,Grundy County,97.0
+62325,Coatsburg,IL,Adams County,97.0
+62326,Colchester,IL,Mcdonough County,97.0
+61728,Colfax,IL,Mclean County,97.0
+61831,Collison,IL,Vermilion County,97.0
+62329,Colusa,IL,Hancock County,97.0
+62631,Concord,IL,Morgan County,97.0
+61729,Congerville,IL,Woodford County,97.0
+61730,Cooksville,IL,Mclean County,97.0
+61319,Cornell,IL,Livingston County,97.0
+62519,Cornland,IL,Logan County,97.0
+62422,Cowden,IL,Shelby County,97.0
+60928,Crescent City,IL,Iroquois County,97.0
+61610,Creve Coeur,IL,Tazewell County,97.0
+61731,Cropsey,IL,Mclean County,97.0
+61427,Cuba,IL,Fulton County,97.0
+60929,Cullom,IL,Livingston County,97.0
+61428,Dahinda,IL,Knox County,97.0
+62330,Dallas City,IL,Hancock County,97.0
+61925,Dalton City,IL,Moultrie County,97.0
+61320,Dalzell,IL,Bureau County,97.0
+61321,Dana,IL,Lasalle County,97.0
+60930,Danforth,IL,Iroquois County,97.0
+61732,Danvers,IL,Mclean County,97.0
+61832,Danville,IL,Vermilion County,97.0
+61834,Danville,IL,Vermilion County,97.0
+60561,Darien,IL,Dupage County,61.0
+62520,Dawson,IL,Sangamon County,97.0
+61839,De Land,IL,Piatt County,97.0
+62521,Decatur,IL,Macon County,97.0
+62522,Decatur,IL,Macon County,97.0
+62523,Decatur,IL,Macon County,97.0
+62524,Decatur,IL,Macon County,97.0
+62525,Decatur,IL,Macon County,97.0
+62526,Decatur,IL,Macon County,97.0
+61733,Deer Creek,IL,Tazewell County,97.0
+60015,Deerfield,IL,Lake County,64.0
+61734,Delavan,IL,Tazewell County,97.0
+60016,Des Plaines,IL,Cook County,64.0
+60017,Des Plaines,IL,Cook County,64.0
+60018,Des Plaines,IL,Cook County,64.0
+60019,Des Plaines,IL,Cook County,64.0
+61840,Dewey,IL,Champaign County,97.0
+61735,Dewitt,IL,De Witt County,97.0
+62424,Dieterich,IL,Effingham County,97.0
+62530,Divernon,IL,Sangamon County,97.0
+60931,Donovan,IL,Iroquois County,97.0
+60515,Downers Grove,IL,Dupage County,61.0
+60516,Downers Grove,IL,Dupage County,61.0
+61736,Downs,IL,Mclean County,97.0
+61524,Dunfermline,IL,Fulton County,97.0
+61525,Dunlap,IL,Peoria County,97.0
+60420,Dwight,IL,Livingston County,97.0
+60518,Earlville,IL,Lasalle County,97.0
+61430,East Galesburg,IL,Knox County,131.5
+60932,East Lynn,IL,Vermilion County,97.0
+61611,East Peoria,IL,Tazewell County,97.0
+61635,East Peoria,IL,Peoria County,97.0
+62633,Easton,IL,Mason County,97.0
+61526,Edelstein,IL,Peoria County,97.0
+62426,Edgewood,IL,Effingham County,97.0
+62531,Edinburg,IL,Christian County,97.0
+61528,Edwards,IL,Peoria County,97.0
+62401,Effingham,IL,Effingham County,97.0
+61738,El Paso,IL,Woodford County,97.0
+60120,Elgin,IL,Cook County,64.0
+60007,Elk Grove Village,IL,Cook County,64.0
+62634,Elkhart,IL,Logan County,97.0
+60933,Elliott,IL,Ford County,97.0
+61431,Ellisville,IL,Fulton County,97.0
+61737,Ellsworth,IL,Mclean County,97.0
+60126,Elmhurst,IL,Dupage County,61.0
+61529,Elmwood,IL,Peoria County,97.0
+62334,Elvaston,IL,Hancock County,97.0
+62532,Elwin,IL,Macon County,97.0
+62635,Emden,IL,Logan County,97.0
+60934,Emington,IL,Livingston County,97.0
+60935,Essex,IL,Kankakee County,97.0
+61530,Eureka,IL,Woodford County,97.0
+60201,Evanston,IL,Cook County,64.0
+60202,Evanston,IL,Cook County,64.0
+60203,Evanston,IL,Cook County,64.0
+60204,Evanston,IL,Cook County,64.0
+60208,Evanston,IL,Cook County,64.0
+61739,Fairbury,IL,Livingston County,97.0
+61841,Fairmount,IL,Vermilion County,97.0
+61432,Fairview,IL,Fulton County,97.0
+61842,Farmer City,IL,De Witt County,97.0
+62533,Farmersville,IL,Montgomery County,97.0
+61531,Farmington,IL,Fulton County,97.0
+62336,Ferris,IL,Hancock County,97.0
+61433,Fiatt,IL,Fulton County,97.0
+62534,Findlay,IL,Shelby County,97.0
+61843,Fisher,IL,Champaign County,97.0
+61844,Fithian,IL,Vermilion County,97.0
+61740,Flanagan,IL,Livingston County,97.0
+61845,Foosland,IL,Champaign County,97.0
+61532,Forest City,IL,Mason County,97.0
+60130,Forest Park,IL,Cook County,61.0
+61741,Forrest,IL,Livingston County,97.0
+62535,Forsyth,IL,Macon County,97.0
+60037,Fort Sheridan,IL,Lake County,64.0
+62338,Fowler,IL,Adams County,97.0
+62638,Franklin,IL,Morgan County,97.0
+60131,Franklin Park,IL,Cook County,61.0
+62639,Frederick,IL,Schuyler County,97.0
+61401,Galesburg,IL,Knox County,131.5
+61402,Galesburg,IL,Knox County,97.0
+60424,Gardner,IL,Grundy County,97.0
+61928,Gays,IL,Moultrie County,97.0
+60134,Geneva,IL,Kane County,61.0
+61846,Georgetown,IL,Vermilion County,97.0
+60936,Gibson City,IL,Ford County,97.0
+61847,Gifford,IL,Champaign County,97.0
+60938,Gilman,IL,Iroquois County,97.0
+61436,Gilson,IL,Knox County,97.0
+62640,Girard,IL,Macoupin County,97.0
+61533,Glasford,IL,Peoria County,97.0
+60137,Glen Ellyn,IL,Dupage County,61.0
+60138,Glen Ellyn,IL,Dupage County,61.0
+62536,Glenarm,IL,Sangamon County,97.0
+60022,Glencoe,IL,Cook County,64.0
+60139,Glendale Heights,IL,Dupage County,61.0
+60025,Glenview,IL,Cook County,64.0
+60026,Glenview,IL,Cook County,64.0
+62339,Golden,IL,Adams County,97.0
+60029,Golf,IL,Cook County,64.0
+61438,Good Hope,IL,Mcdonough County,97.0
+61742,Goodfield,IL,Woodford County,97.0
+60939,Goodwine,IL,Iroquois County,97.0
+61325,Grand Ridge,IL,Lasalle County,97.0
+60940,Grant Park,IL,Kankakee County,97.0
+61326,Granville,IL,Putnam County,97.0
+61743,Graymont,IL,Livingston County,97.0
+61534,Green Valley,IL,Tazewell County,97.0
+62428,Greenup,IL,Cumberland County,97.0
+62642,Greenview,IL,Menard County,97.0
+61744,Gridley,IL,Mclean County,97.0
+62340,Griggsville,IL,Pike County,97.0
+61535,Groveland,IL,Tazewell County,97.0
+62341,Hamilton,IL,Hancock County,97.0
+61929,Hammond,IL,Piatt County,97.0
+61536,Hanna City,IL,Peoria County,97.0
+60133,Hanover Park,IL,Cook County,64.0
+62537,Harristown,IL,Macon County,97.0
+62643,Hartsburg,IL,Logan County,97.0
+62538,Harvel,IL,Montgomery County,97.0
+62644,Havana,IL,Mason County,97.0
+61439,Henderson,IL,Knox County,97.0
+61327,Hennepin,IL,Putnam County,97.0
+61848,Henning,IL,Vermilion County,97.0
+61537,Henry,IL,Marshall County,97.0
+62431,Herrick,IL,Shelby County,97.0
+60941,Herscher,IL,Kankakee County,97.0
+62649,Hettick,IL,Macoupin County,97.0
+61745,Heyworth,IL,Mclean County,97.0
+60035,Highland Park,IL,Lake County,64.0
+60040,Highwood,IL,Lake County,64.0
+60162,Hillside,IL,Cook County,61.0
+61930,Hindsboro,IL,Douglas County,97.0
+60141,Hines,IL,Cook County,61.0
+60521,Hinsdale,IL,Dupage County,61.0
+60169,Hoffman Estates,IL,Cook County,64.0
+60192,Hoffman Estates,IL,Cook County,64.0
+61849,Homer,IL,Champaign County,97.0
+60942,Hoopeston,IL,Vermilion County,97.0
+61747,Hopedale,IL,Tazewell County,97.0
+60944,Hopkins Park,IL,Kankakee County,97.0
+61748,Hudson,IL,Mclean County,97.0
+62343,Hull,IL,Pike County,97.0
+61931,Humboldt,IL,Coles County,97.0
+61932,Hume,IL,Edgar County,97.0
+62344,Huntsville,IL,Schuyler County,97.0
+62539,Illiopolis,IL,Sangamon County,97.0
+61850,Indianola,IL,Vermilion County,97.0
+61440,Industry,IL,Mcdonough County,97.0
+61441,Ipava,IL,Fulton County,97.0
+60945,Iroquois,IL,Iroquois County,97.0
+60042,Island Lake,IL,Mchenry County,64.0
+60143,Itasca,IL,Dupage County,61.0
+61851,Ivesdale,IL,Champaign County,97.0
+62650,Jacksonville,IL,Morgan County,97.0
+62651,Jacksonville,IL,Morgan County,97.0
+60901,Kankakee,IL,Kankakee County,97.0
+61933,Kansas,IL,Edgar County,97.0
+60946,Kempton,IL,Ford County,97.0
+60043,Kenilworth,IL,Cook County,64.0
+61749,Kenney,IL,De Witt County,97.0
+62655,Kilbourne,IL,Mason County,97.0
+62540,Kincaid,IL,Christian County,97.0
+62345,Kinderhook,IL,Pike County,97.0
+61539,Kingston Mines,IL,Peoria County,97.0
+60437,Kinsman,IL,Grundy County,97.0
+61448,Knoxville,IL,Knox County,97.0
+61449,La Fayette,IL,Stark County,97.0
+60525,La Grange,IL,Cook County,61.0
+60526,La Grange Park,IL,Cook County,61.0
+61450,La Harpe,IL,Hancock County,97.0
+61936,La Place,IL,Piatt County,97.0
+62346,La Prairie,IL,Adams County,97.0
+61541,La Rose,IL,Marshall County,97.0
+61301,La Salle,IL,Lasalle County,97.0
+61540,Lacon,IL,Marshall County,97.0
+60044,Lake Bluff,IL,Lake County,64.0
+60045,Lake Forest,IL,Lake County,64.0
+62541,Lake Fork,IL,Logan County,97.0
+60047,Lake Zurich,IL,Lake County,64.0
+60049,Lake Zurich,IL,Lake County,46.0
+62438,Lakewood,IL,Shelby County,97.0
+61750,Lane,IL,De Witt County,97.0
+62543,Latham,IL,Logan County,97.0
+61451,Laura,IL,Peoria County,97.0
+61751,Lawndale,IL,Logan County,97.0
+61752,Le Roy,IL,Mclean County,97.0
+60439,Lemont,IL,Cook County,61.0
+61332,Leonore,IL,Lasalle County,97.0
+62440,Lerna,IL,Coles County,97.0
+61542,Lewistown,IL,Fulton County,97.0
+61753,Lexington,IL,Mclean County,97.0
+62347,Liberty,IL,Adams County,97.0
+60048,Libertyville,IL,Lake County,64.0
+62348,Lima,IL,Adams County,97.0
+62656,Lincoln,IL,Logan County,97.0
+62659,Lincolns New Salem,IL,Menard County,97.0
+60069,Lincolnshire,IL,Lake County,64.0
+60712,Lincolnwood,IL,Cook County,46.0
+60532,Lisle,IL,Dupage County,61.0
+62660,Literberry,IL,Morgan County,97.0
+61452,Littleton,IL,Schuyler County,97.0
+61543,Liverpool,IL,Fulton County,97.0
+62661,Loami,IL,Sangamon County,97.0
+60441,Lockport,IL,Will County,61.0
+60948,Loda,IL,Iroquois County,97.0
+60148,Lombard,IL,Dupage County,61.0
+61544,London Mills,IL,Fulton County,97.0
+61333,Long Point,IL,Livingston County,97.0
+61852,Longview,IL,Champaign County,97.0
+62349,Loraine,IL,Adams County,97.0
+61334,Lostant,IL,Lasalle County,97.0
+61937,Lovington,IL,Moultrie County,97.0
+62662,Lowder,IL,Sangamon County,97.0
+61545,Lowpoint,IL,Woodford County,97.0
+60949,Ludlow,IL,Champaign County,97.0
+60534,Lyons,IL,Cook County,61.0
+61755,Mackinaw,IL,Tazewell County,97.0
+61455,Macomb,IL,Mcdonough County,127.0
+62544,Macon,IL,Macon County,97.0
+61336,Magnolia,IL,Putnam County,97.0
+61853,Mahomet,IL,Champaign County,97.0
+62663,Manchester,IL,Scott County,97.0
+61546,Manito,IL,Mason County,97.0
+61854,Mansfield,IL,Piatt County,97.0
+60950,Manteno,IL,Kankakee County,97.0
+61547,Mapleton,IL,Peoria County,97.0
+61458,Maquon,IL,Knox County,97.0
+61459,Marietta,IL,Fulton County,97.0
+61340,Mark,IL,Putnam County,97.0
+61756,Maroa,IL,Macon County,97.0
+61341,Marseilles,IL,Lasalle County,97.0
+60951,Martinton,IL,Iroquois County,97.0
+62443,Mason,IL,Effingham County,97.0
+62664,Mason City,IL,Mason County,97.0
+61938,Mattoon,IL,Coles County,97.0
+60153,Maywood,IL,Cook County,61.0
+60444,Mazon,IL,Grundy County,97.0
+61754,McLean,IL,Mclean County,97.0
+61335,McNabb,IL,Putnam County,97.0
+62545,Mechanicsburg,IL,Sangamon County,97.0
+60157,Medinah,IL,Dupage County,61.0
+60160,Melrose Park,IL,Cook County,61.0
+60164,Melrose Park,IL,Cook County,61.0
+60952,Melvin,IL,Ford County,97.0
+62351,Mendon,IL,Adams County,97.0
+61342,Mendota,IL,Lasalle County,97.0
+62665,Meredosia,IL,Morgan County,97.0
+61758,Merna,IL,Mclean County,97.0
+61548,Metamora,IL,Woodford County,97.0
+61940,Metcalf,IL,Edgar County,97.0
+62666,Middletown,IL,Logan County,97.0
+60953,Milford,IL,Iroquois County,97.0
+61855,Milmine,IL,Piatt County,97.0
+62352,Milton,IL,Pike County,97.0
+61759,Minier,IL,Tazewell County,97.0
+61760,Minonk,IL,Woodford County,97.0
+62444,Mode,IL,Shelby County,97.0
+62667,Modesto,IL,Macoupin County,97.0
+60954,Momence,IL,Kankakee County,97.0
+61462,Monmouth,IL,Warren County,131.5
+61856,Monticello,IL,Piatt County,97.0
+60450,Morris,IL,Grundy County,97.0
+62546,Morrisonville,IL,Christian County,97.0
+61550,Morton,IL,Tazewell County,97.0
+60053,Morton Grove,IL,Cook County,64.0
+61552,Mossville,IL,Peoria County,97.0
+62547,Mount Auburn,IL,Christian County,97.0
+60056,Mount Prospect,IL,Cook County,64.0
+62548,Mount Pulaski,IL,Logan County,97.0
+62353,Mount Sterling,IL,Brown County,97.0
+62550,Moweaqua,IL,Shelby County,97.0
+62549,Mt Zion,IL,Macon County,97.0
+61857,Muncie,IL,Vermilion County,97.0
+60060,Mundelein,IL,Lake County,64.0
+61941,Murdock,IL,Douglas County,97.0
+62668,Murrayville,IL,Morgan County,97.0
+60540,Naperville,IL,Dupage County,64.0
+60563,Naperville,IL,Dupage County,61.0
+60564,Naperville,IL,Will County,61.0
+60565,Naperville,IL,Dupage County,61.0
+60566,Naperville,IL,Dupage County,61.0
+60567,Naperville,IL,Dupage County,61.0
+62354,Nauvoo,IL,Hancock County,97.0
+62355,Nebo,IL,Pike County,97.0
+62447,Neoga,IL,Cumberland County,97.0
+62670,New Berlin,IL,Sangamon County,97.0
+62356,New Canton,IL,Pike County,97.0
+62671,New Holland,IL,Logan County,97.0
+62357,New Salem,IL,Pike County,97.0
+61942,Newman,IL,Douglas County,97.0
+62551,Niantic,IL,Macon County,97.0
+60714,Niles,IL,Cook County,64.0
+62672,Nilwood,IL,Macoupin County,97.0
+62358,Niota,IL,Hancock County,97.0
+62075,Nokomis,IL,Montgomery County,97.0
+61761,Normal,IL,Mclean County,97.0
+61790,Normal,IL,Mclean County,97.0
+61553,Norris,IL,Fulton County,97.0
+60062,Northbrook,IL,Cook County,64.0
+60523,Oak Brook,IL,Dupage County,61.0
+60301,Oak Park,IL,Cook County,61.0
+60302,Oak Park,IL,Cook County,61.0
+60304,Oak Park,IL,Cook County,61.0
+62673,Oakford,IL,Menard County,97.0
+61943,Oakland,IL,Coles County,97.0
+61858,Oakwood,IL,Vermilion County,97.0
+62553,Oconee,IL,Shelby County,97.0
+60460,Odell,IL,Livingston County,97.0
+61859,Ogden,IL,Champaign County,97.0
+61348,Oglesby,IL,Lasalle County,97.0
+62076,Ohlman,IL,Montgomery County,97.0
+60955,Onarga,IL,Iroquois County,97.0
+61467,Oneida,IL,Knox County,97.0
+62554,Oreana,IL,Macon County,97.0
+61350,Ottawa,IL,Lasalle County,97.0
+62555,Owaneco,IL,Christian County,97.0
+60038,Palatine,IL,Cook County,64.0
+60067,Palatine,IL,Cook County,64.0
+60074,Palatine,IL,Cook County,64.0
+62556,Palmer,IL,Christian County,97.0
+62674,Palmyra,IL,Macoupin County,97.0
+62359,Paloma,IL,Adams County,97.0
+62557,Pana,IL,Christian County,97.0
+60956,Papineau,IL,Iroquois County,97.0
+61944,Paris,IL,Edgar County,97.0
+60068,Park Ridge,IL,Cook County,64.0
+62558,Pawnee,IL,Sangamon County,97.0
+60957,Paxton,IL,Ford County,97.0
+62360,Payson,IL,Adams County,97.0
+62361,Pearl,IL,Pike County,97.0
+61554,Pekin,IL,Tazewell County,97.0
+61555,Pekin,IL,Tazewell County,97.0
+61558,Pekin,IL,Tazewell County,97.0
+60958,Pembroke Township,IL,Kankakee County,97.0
+61862,Penfield,IL,Champaign County,97.0
+61601,Peoria,IL,Peoria County,97.0
+61602,Peoria,IL,Peoria County,97.0
+61603,Peoria,IL,Peoria County,97.0
+61604,Peoria,IL,Peoria County,97.0
+61605,Peoria,IL,Peoria County,97.0
+61606,Peoria,IL,Peoria County,97.0
+61607,Peoria,IL,Peoria County,97.0
+61612,Peoria,IL,Peoria County,97.0
+61613,Peoria,IL,Peoria County,97.0
+61614,Peoria,IL,Peoria County,97.0
+61615,Peoria,IL,Peoria County,97.0
+61625,Peoria,IL,Peoria County,97.0
+61629,Peoria,IL,Peoria County,97.0
+61630,Peoria,IL,Peoria County,97.0
+61633,Peoria,IL,Peoria County,97.0
+61634,Peoria,IL,Peoria County,97.0
+61636,Peoria,IL,Peoria County,97.0
+61637,Peoria,IL,Peoria County,97.0
+61638,Peoria,IL,Peoria County,97.0
+61639,Peoria,IL,Peoria County,97.0
+61641,Peoria,IL,Peoria County,97.0
+61643,Peoria,IL,Peoria County,97.0
+61650,Peoria,IL,Peoria County,97.0
+61651,Peoria,IL,Peoria County,97.0
+61652,Peoria,IL,Peoria County,97.0
+61653,Peoria,IL,Peoria County,97.0
+61654,Peoria,IL,Peoria County,97.0
+61655,Peoria,IL,Peoria County,97.0
+61656,Peoria,IL,Peoria County,97.0
+61616,Peoria Heights,IL,Peoria County,97.0
+62362,Perry,IL,Pike County,97.0
+61354,Peru,IL,Lasalle County,97.0
+61863,Pesotum,IL,Champaign County,97.0
+62675,Petersburg,IL,Menard County,97.0
+61864,Philo,IL,Champaign County,97.0
+60959,Piper City,IL,Ford County,97.0
+62363,Pittsfield,IL,Pike County,97.0
+60544,Plainfield,IL,Will County,61.0
+62365,Plainville,IL,Adams County,97.0
+62366,Pleasant Hill,IL,Pike County,97.0
+62677,Pleasant Plains,IL,Sangamon County,97.0
+62367,Plymouth,IL,Hancock County,97.0
+61764,Pontiac,IL,Livingston County,97.0
+61865,Potomac,IL,Vermilion County,97.0
+61470,Prairie City,IL,Mcdonough County,97.0
+61559,Princeville,IL,Peoria County,97.0
+60070,Prospect Heights,IL,Cook County,64.0
+61560,Putnam,IL,Putnam County,97.0
+62301,Quincy,IL,Adams County,127.0
+62305,Quincy,IL,Adams County,97.0
+62306,Quincy,IL,Adams County,97.0
+60960,Rankin,IL,Vermilion County,97.0
+60470,Ransom,IL,Lasalle County,97.0
+61866,Rantoul,IL,Champaign County,97.0
+60961,Reddick,IL,Kankakee County,97.0
+61949,Redmon,IL,Edgar County,97.0
+61870,Ridge Farm,IL,Vermilion County,97.0
+61472,Rio,IL,Knox County,97.0
+60305,River Forest,IL,Cook County,61.0
+60171,River Grove,IL,Cook County,61.0
+60546,Riverside,IL,Cook County,61.0
+62561,Riverton,IL,Sangamon County,97.0
+61561,Roanoke,IL,Woodford County,97.0
+60962,Roberts,IL,Ford County,97.0
+62563,Rochester,IL,Sangamon County,97.0
+62370,Rockport,IL,Pike County,97.0
+60008,Rolling Meadows,IL,Cook County,64.0
+61562,Rome,IL,Peoria County,97.0
+60446,Romeoville,IL,Will County,61.0
+62083,Rosamond,IL,Christian County,97.0
+60172,Roselle,IL,Dupage County,61.0
+60963,Rossville,IL,Vermilion County,97.0
+61871,Royal,IL,Champaign County,97.0
+62681,Rushville,IL,Schuyler County,97.0
+61358,Rutland,IL,Lasalle County,97.0
+61872,Sadorus,IL,Champaign County,97.0
+60964,Saint Anne,IL,Kankakee County,97.0
+61474,Saint Augustine,IL,Knox County,97.0
+60174,Saint Charles,IL,Kane County,61.0
+61563,Saint David,IL,Fulton County,97.0
+61873,Saint Joseph,IL,Champaign County,97.0
+62682,San Jose,IL,Mason County,97.0
+61769,Saunemin,IL,Livingston County,97.0
+61874,Savoy,IL,Champaign County,97.0
+61770,Saybrook,IL,Mclean County,97.0
+60159,Schaumburg,IL,Cook County,64.0
+60173,Schaumburg,IL,Cook County,64.0
+60193,Schaumburg,IL,Cook County,64.0
+60194,Schaumburg,IL,Cook County,64.0
+60195,Schaumburg,IL,Cook County,64.0
+60196,Schaumburg,IL,Cook County,64.0
+60176,Schiller Park,IL,Cook County,61.0
+61475,Sciota,IL,Mcdonough County,97.0
+62683,Scottville,IL,Macoupin County,97.0
+61771,Secor,IL,Woodford County,97.0
+61360,Seneca,IL,Lasalle County,97.0
+60549,Serena,IL,Lasalle County,97.0
+61875,Seymour,IL,Champaign County,97.0
+62565,Shelbyville,IL,Shelby County,97.0
+60966,Sheldon,IL,Iroquois County,97.0
+62684,Sherman,IL,Sangamon County,97.0
+61772,Shirley,IL,Mclean County,97.0
+62461,Shumway,IL,Effingham County,97.0
+61773,Sibley,IL,Ford County,97.0
+61876,Sidell,IL,Vermilion County,97.0
+61877,Sidney,IL,Champaign County,97.0
+62462,Sigel,IL,Shelby County,97.0
+60076,Skokie,IL,Cook County,64.0
+60077,Skokie,IL,Cook County,64.0
+61477,Smithfield,IL,Fulton County,97.0
+60177,South Elgin,IL,Kane County,61.0
+61564,South Pekin,IL,Tazewell County,97.0
+60474,South Wilmington,IL,Grundy County,97.0
+61565,Sparland,IL,Marshall County,97.0
+61479,Speer,IL,Stark County,97.0
+62701,Springfield,IL,Sangamon County,97.0
+62702,Springfield,IL,Sangamon County,97.0
+62703,Springfield,IL,Sangamon County,97.0
+62704,Springfield,IL,Sangamon County,97.0
+62705,Springfield,IL,Sangamon County,97.0
+62706,Springfield,IL,Sangamon County,97.0
+62707,Springfield,IL,Sangamon County,97.0
+62708,Springfield,IL,Sangamon County,97.0
+62711,Springfield,IL,Sangamon County,97.0
+62712,Springfield,IL,Sangamon County,97.0
+62715,Springfield,IL,Sangamon County,97.0
+62716,Springfield,IL,Sangamon County,97.0
+62719,Springfield,IL,Sangamon County,97.0
+62722,Springfield,IL,Sangamon County,97.0
+62723,Springfield,IL,Sangamon County,97.0
+62726,Springfield,IL,Sangamon County,97.0
+62736,Springfield,IL,Sangamon County,97.0
+62739,Springfield,IL,Sangamon County,97.0
+62756,Springfield,IL,Sangamon County,97.0
+62757,Springfield,IL,Sangamon County,97.0
+62761,Springfield,IL,Sangamon County,97.0
+62762,Springfield,IL,Sangamon County,97.0
+62763,Springfield,IL,Sangamon County,97.0
+62764,Springfield,IL,Sangamon County,97.0
+62765,Springfield,IL,Sangamon County,97.0
+62766,Springfield,IL,Sangamon County,97.0
+62767,Springfield,IL,Sangamon County,97.0
+62769,Springfield,IL,Sangamon County,97.0
+62776,Springfield,IL,Sangamon County,97.0
+62777,Springfield,IL,Sangamon County,97.0
+62781,Springfield,IL,Sangamon County,97.0
+62786,Springfield,IL,Sangamon County,97.0
+62791,Springfield,IL,Sangamon County,97.0
+62794,Springfield,IL,Sangamon County,97.0
+62796,Springfield,IL,Sangamon County,97.0
+61363,Standard,IL,Putnam County,97.0
+61774,Stanford,IL,Mclean County,97.0
+62463,Stewardson,IL,Shelby County,97.0
+60967,Stockland,IL,Iroquois County,97.0
+60165,Stone Park,IL,Cook County,61.0
+62567,Stonington,IL,Christian County,97.0
+62465,Strasburg,IL,Shelby County,97.0
+61775,Strawn,IL,Livingston County,97.0
+60107,Streamwood,IL,Cook County,64.0
+61364,Streator,IL,Lasalle County,97.0
+61951,Sullivan,IL,Moultrie County,97.0
+62373,Sutter,IL,Hancock County,97.0
+61482,Table Grove,IL,Fulton County,97.0
+62688,Tallula,IL,Menard County,97.0
+62568,Taylorville,IL,Christian County,97.0
+60082,Techny,IL,Cook County,64.0
+62374,Tennessee,IL,Mcdonough County,97.0
+62467,Teutopolis,IL,Effingham County,97.0
+60968,Thawville,IL,Iroquois County,97.0
+62689,Thayer,IL,Sangamon County,97.0
+61878,Thomasboro,IL,Champaign County,97.0
+61833,Tilton,IL,Vermilion County,97.0
+62375,Timewell,IL,Brown County,97.0
+62468,Toledo,IL,Cumberland County,97.0
+61880,Tolono,IL,Champaign County,97.0
+61369,Toluca,IL,Marshall County,97.0
+61370,Tonica,IL,Lasalle County,97.0
+61567,Topeka,IL,Mason County,97.0
+61483,Toulon,IL,Stark County,97.0
+62570,Tovey,IL,Christian County,97.0
+61776,Towanda,IL,Mclean County,97.0
+62571,Tower Hill,IL,Shelby County,97.0
+61568,Tremont,IL,Tazewell County,97.0
+62469,Trilla,IL,Cumberland County,97.0
+61371,Triumph,IL,Lasalle County,97.0
+61569,Trivoli,IL,Peoria County,97.0
+61372,Troy Grove,IL,Lasalle County,97.0
+61953,Tuscola,IL,Douglas County,97.0
+60969,Union Hill,IL,Kankakee County,97.0
+61801,Urbana,IL,Champaign County,97.0
+61802,Urbana,IL,Champaign County,97.0
+61803,Urbana,IL,Champaign County,97.0
+62376,Ursa,IL,Adams County,97.0
+61373,Utica,IL,Lasalle County,97.0
+61375,Varna,IL,Marshall County,97.0
+61955,Vermilion,IL,Edgar County,97.0
+61484,Vermont,IL,Fulton County,97.0
+60061,Vernon Hills,IL,Lake County,64.0
+60479,Verona,IL,Grundy County,97.0
+62378,Versailles,IL,Brown County,97.0
+61485,Victoria,IL,Knox County,97.0
+61956,Villa Grove,IL,Douglas County,97.0
+60181,Villa Park,IL,Dupage County,61.0
+62690,Virden,IL,Macoupin County,97.0
+62691,Virginia,IL,Cass County,97.0
+62572,Waggoner,IL,Montgomery County,97.0
+61777,Wapella,IL,De Witt County,97.0
+62573,Warrensburg,IL,Macon County,97.0
+60555,Warrenville,IL,Dupage County,61.0
+62379,Warsaw,IL,Hancock County,97.0
+61570,Washburn,IL,Woodford County,97.0
+61571,Washington,IL,Tazewell County,97.0
+61488,Wataga,IL,Knox County,97.0
+60970,Watseka,IL,Iroquois County,97.0
+62473,Watson,IL,Effingham County,97.0
+60084,Wauconda,IL,Lake County,64.0
+62692,Waverly,IL,Morgan County,97.0
+60184,Wayne,IL,Dupage County,61.0
+61778,Waynesville,IL,De Witt County,97.0
+61882,Weldon,IL,De Witt County,97.0
+60973,Wellington,IL,Iroquois County,97.0
+61377,Wenona,IL,Marshall County,97.0
+60185,West Chicago,IL,Dupage County,61.0
+60186,West Chicago,IL,Dupage County,61.0
+62380,West Point,IL,Hancock County,97.0
+60154,Westchester,IL,Cook County,61.0
+60558,Western Springs,IL,Cook County,61.0
+62474,Westfield,IL,Clark County,97.0
+60559,Westmont,IL,Dupage County,61.0
+61883,Westville,IL,Vermilion County,97.0
+60187,Wheaton,IL,Dupage County,61.0
+60189,Wheaton,IL,Dupage County,61.0
+60090,Wheeling,IL,Cook County,64.0
+61884,White Heath,IL,Piatt County,97.0
+61489,Williamsfield,IL,Knox County,97.0
+62693,Williamsville,IL,Sangamon County,97.0
+60480,Willow Springs,IL,Cook County,61.0
+60527,Willowbrook,IL,Dupage County,61.0
+60091,Wilmette,IL,Cook County,64.0
+60481,Wilmington,IL,Will County,97.0
+62694,Winchester,IL,Scott County,97.0
+61957,Windsor,IL,Shelby County,97.0
+60190,Winfield,IL,Dupage County,61.0
+60093,Winnetka,IL,Cook County,64.0
+60191,Wood Dale,IL,Dupage County,61.0
+60974,Woodland,IL,Iroquois County,97.0
+60517,Woodridge,IL,Dupage County,61.0
+62695,Woodson,IL,Morgan County,97.0
+61491,Wyoming,IL,Stark County,97.0
+61572,Yates City,IL,Knox County,97.0

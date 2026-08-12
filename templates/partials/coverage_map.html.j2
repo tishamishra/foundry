@@ -1,0 +1,20 @@
+{# Scale-aware. On a 928-county footprint, listing them all on every page put
+   ~9,000 links on each one and pushed a 3,700-page build to 222 MB. This shows
+   the page's OWN county first, then its state, then links onward. #}
+{% set here = counties | selectattr('state_abbr', 'equalto', t.state_abbr) | list if t.state_abbr else [] %}
+{% set shown = (here or counties)[:9] %}
+<section class="sec">
+  <div class="wrap">
+    <h2 class="section-head">{% if t.state %}Where we work in {{ t.state }}{% else %}Where we work{% endif %}</h2>
+    <div class="cov">
+      {% for c in shown %}
+      <div class="cov-col reveal">
+        <h3><a href="/areas/{{ c.slug }}">{{ c.name }}</a></h3>
+        <ul>{% for city in c.cities[:8] %}<li><a href="/areas/{{ city.slug }}">{{ city.city }}</a></li>{% endfor %}</ul>
+        {% if c.cities|length > 8 %}<a class="more" href="/areas/{{ c.slug }}">+{{ c.cities|length - 8 }} more</a>{% endif %}
+      </div>
+      {% endfor %}
+    </div>
+    <p><a class="more" href="/areas">Every service area ({{ locations|length }} communities) &rarr;</a></p>
+  </div>
+</section>

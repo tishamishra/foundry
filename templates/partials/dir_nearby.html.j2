@@ -1,0 +1,13 @@
+{% if t.nearby %}
+<section class="sec">
+  <div class="wrap">
+    <h2 class="section-head">Nearby</h2>
+    <p class="lede">Same crews, same week. If {{ t.city }} is not quite right, these are next door.</p>
+    <div class="chips">
+      {% for c in locations if c.county == t.county and c.slug != t.slug %}
+      {% if loop.index <= 16 %}<a class="chip" href="/areas/{{ c.slug }}">{{ c.city }}</a>{% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}

@@ -1,0 +1,49 @@
+niche: garage-door
+label: Garage Doors
+schema_type: HomeAndConstructionBusiness
+services:
+- slug: garage-door-repair
+  name: Garage Door Repair
+  summary: Springs, cables and rollers — the parts that actually fail.
+- slug: opener-repair
+  name: Opener Repair & Installation
+  summary: Diagnosed before replacement.
+- slug: door-replacement
+  name: Door Replacement
+  summary: Measured, fitted and balanced.
+- slug: spring-replacement
+  name: Spring Replacement
+  summary: The single most common failure, and not a DIY job.
+- slug: track-alignment
+  name: Track Alignment
+  summary: A door that binds is a door that will break something else.
+- slug: safety-inspection
+  name: Safety Inspection
+  summary: Sensors, reversal and balance checked and recorded.
+seo:
+  home_title: '{company} | Garage Doors'
+  home_description: '{company} handles {niche_lower} work across the areas we serve. Assessment first,
+    written findings, then a price. Call {phone}.'
+  about_title: About {company} | Garage Doors Contractor
+  about_description: Who {company} is, how we work, what our written assessments cover, and what to expect
+    from first call to final check.
+  contact_title: Contact {company} | Call {phone}
+  contact_description: Call {company} on {phone} or request a callback. Tell us what you are seeing and
+    we will tell you what it usually means.
+  services_title: Garage Doors Services | {company}
+  services_description: Everything {company} does, what each job includes, and how the scope and the price
+    are arrived at.
+  areas_title: Garage Doors Service Areas | {company}
+  areas_description: Every community {company} covers for garage doors, listed by county. Find your town
+    and call {phone}.
+  service_title: '{service} | {company}'
+  service_description: '{service} from {company}. What the job includes, how the scope is agreed, and
+    what would change the price. Call {phone}.'
+  county_title: Garage Doors in {county}, {state_abbr} | {company}
+  county_description: '{company} covers every community in {county}, {state_abbr} for garage doors. Find
+    your town below, or call {phone} to speak to someone.'
+  location_title: '{niche} in {city}, {state_abbr} | {company}'
+  location_description: '{niche} in {city}, {state_abbr}[[ and nearby {nearby}]]. Call {company} on {phone}.'
+  location_service_title: '{service} in {city}, {state_abbr} | {company}'
+  location_service_description: '{service} for {city}, {state_abbr} property owners[[ in {county}]]. Call
+    {phone}.'

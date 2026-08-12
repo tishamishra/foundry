@@ -1,0 +1,501 @@
+zip,city,state,county,payout
+27006,Advance,NC,Davie County,64.58
+27201,Alamance,NC,Alamance County,77.17
+28001,Albemarle,NC,Stanly County,43.65
+28006,Alexis,NC,Gaston County,42.52
+27202,Altamahaw,NC,Alamance County,50.88
+27501,Angier,NC,Harnett County,35.44
+27502,Apex,NC,Wake County,58.27
+27523,Apex,NC,Wake County,58.27
+27539,Apex,NC,Wake County,63.0
+28420,Ash,NC,Brunswick County,64.75
+27203,Asheboro,NC,Randolph County,61.7
+27204,Asheboro,NC,Randolph County,56.38
+27205,Asheboro,NC,Randolph County,64.58
+28009,Badin,NC,Stanly County,39.9
+27503,Bahama,NC,Durham County,59.85
+28010,Barium Springs,NC,Iredell County,39.9
+27207,Bear Creek,NC,Chatham County,52.25
+27009,Belews Creek,NC,Forsyth County,58.27
+28012,Belmont,NC,Gaston County,57.75
+27504,Benson,NC,Johnston County,44.0
+28016,Bessemer City,NC,Gaston County,39.9
+27010,Bethania,NC,Forsyth County,50.88
+27813,Black Creek,NC,Wilson County,36.0
+27212,Blanch,NC,Caswell County,52.25
+28422,Bolivia,NC,Brunswick County,64.75
+27214,Browns Summit,NC,Guilford County,57.19
+27215,Burlington,NC,Alamance County,77.17
+27216,Burlington,NC,Alamance County,59.85
+27217,Burlington,NC,Alamance County,59.85
+27228,Bynum,NC,Chatham County,39.5
+28467,Calabash,NC,Brunswick County,64.75
+28715,Candler,NC,Buncombe County,33.68
+28428,Carolina Beach,NC,New Hanover County,35.42
+27510,Carrboro,NC,Orange County,59.85
+27511,Cary,NC,Wake County,58.27
+27512,Cary,NC,Wake County,35.44
+27513,Cary,NC,Wake County,63.0
+27518,Cary,NC,Wake County,58.27
+27519,Cary,NC,Wake County,63.0
+27816,Castalia,NC,Nash County,34.62
+28429,Castle Hayne,NC,New Hanover County,35.42
+27230,Cedar Falls,NC,Randolph County,39.88
+27231,Cedar Grove,NC,Orange County,57.19
+27514,Chapel Hill,NC,Orange County,59.85
+27515,Chapel Hill,NC,Orange County,54.93
+27516,Chapel Hill,NC,Orange County,59.85
+27517,Chapel Hill,NC,Orange County,59.85
+27599,Chapel Hill,NC,Orange County,52.25
+28201,Charlotte,NC,Mecklenburg County,57.75
+28202,Charlotte,NC,Mecklenburg County,57.75
+28203,Charlotte,NC,Mecklenburg County,57.75
+28204,Charlotte,NC,Mecklenburg County,57.75
+28205,Charlotte,NC,Mecklenburg County,57.75
+28206,Charlotte,NC,Mecklenburg County,57.75
+28207,Charlotte,NC,Mecklenburg County,57.75
+28208,Charlotte,NC,Mecklenburg County,57.75
+28209,Charlotte,NC,Mecklenburg County,57.75
+28210,Charlotte,NC,Mecklenburg County,50.4
+28211,Charlotte,NC,Mecklenburg County,50.4
+28212,Charlotte,NC,Mecklenburg County,55.13
+28213,Charlotte,NC,Mecklenburg County,57.75
+28214,Charlotte,NC,Mecklenburg County,57.75
+28215,Charlotte,NC,Mecklenburg County,55.13
+28216,Charlotte,NC,Mecklenburg County,57.75
+28217,Charlotte,NC,Mecklenburg County,57.75
+28218,Charlotte,NC,Mecklenburg County,57.75
+28219,Charlotte,NC,Mecklenburg County,57.75
+28220,Charlotte,NC,Mecklenburg County,57.75
+28221,Charlotte,NC,Mecklenburg County,57.75
+28222,Charlotte,NC,Mecklenburg County,57.75
+28223,Charlotte,NC,Mecklenburg County,57.75
+28224,Charlotte,NC,Mecklenburg County,57.75
+28226,Charlotte,NC,Mecklenburg County,57.75
+28227,Charlotte,NC,Mecklenburg County,53.9
+28228,Charlotte,NC,Mecklenburg County,36.0
+28229,Charlotte,NC,Mecklenburg County,36.0
+28230,Charlotte,NC,Mecklenburg County,57.75
+28231,Charlotte,NC,Mecklenburg County,57.75
+28232,Charlotte,NC,Mecklenburg County,57.75
+28233,Charlotte,NC,Mecklenburg County,57.75
+28234,Charlotte,NC,Mecklenburg County,57.75
+28235,Charlotte,NC,Mecklenburg County,57.75
+28236,Charlotte,NC,Mecklenburg County,57.75
+28237,Charlotte,NC,Mecklenburg County,57.75
+28241,Charlotte,NC,Mecklenburg County,57.75
+28242,Charlotte,NC,Mecklenburg County,57.75
+28243,Charlotte,NC,Mecklenburg County,57.75
+28244,Charlotte,NC,Mecklenburg County,57.75
+28246,Charlotte,NC,Mecklenburg County,57.75
+28247,Charlotte,NC,Mecklenburg County,36.0
+28250,Charlotte,NC,Mecklenburg County,36.0
+28253,Charlotte,NC,Mecklenburg County,57.75
+28254,Charlotte,NC,Mecklenburg County,57.75
+28255,Charlotte,NC,Mecklenburg County,57.75
+28256,Charlotte,NC,Mecklenburg County,57.75
+28258,Charlotte,NC,Mecklenburg County,57.75
+28260,Charlotte,NC,Mecklenburg County,57.75
+28262,Charlotte,NC,Mecklenburg County,57.75
+28263,Charlotte,NC,Mecklenburg County,57.75
+28265,Charlotte,NC,Mecklenburg County,57.75
+28266,Charlotte,NC,Mecklenburg County,57.75
+28269,Charlotte,NC,Mecklenburg County,57.75
+28270,Charlotte,NC,Mecklenburg County,50.4
+28271,Charlotte,NC,Mecklenburg County,36.0
+28272,Charlotte,NC,Mecklenburg County,57.75
+28273,Charlotte,NC,Mecklenburg County,57.75
+28274,Charlotte,NC,Mecklenburg County,57.75
+28275,Charlotte,NC,Mecklenburg County,57.75
+28277,Charlotte,NC,Mecklenburg County,50.4
+28278,Charlotte,NC,Mecklenburg County,57.75
+28280,Charlotte,NC,Mecklenburg County,57.75
+28281,Charlotte,NC,Mecklenburg County,57.75
+28282,Charlotte,NC,Mecklenburg County,57.75
+28284,Charlotte,NC,Mecklenburg County,57.75
+28285,Charlotte,NC,Mecklenburg County,57.75
+28287,Charlotte,NC,Mecklenburg County,36.0
+28288,Charlotte,NC,Mecklenburg County,57.75
+28289,Charlotte,NC,Mecklenburg County,57.75
+28290,Charlotte,NC,Mecklenburg County,57.75
+28296,Charlotte,NC,Mecklenburg County,57.75
+28297,Charlotte,NC,Mecklenburg County,57.75
+28299,Charlotte,NC,Mecklenburg County,57.75
+28021,Cherryville,NC,Gaston County,39.9
+28023,China Grove,NC,Rowan County,41.23
+28610,Claremont,NC,Catawba County,39.9
+27520,Clayton,NC,Johnston County,63.0
+27527,Clayton,NC,Johnston County,61.6
+27528,Clayton,NC,Johnston County,58.27
+27012,Clemmons,NC,Forsyth County,64.58
+27013,Cleveland,NC,Rowan County,41.23
+27233,Climax,NC,Randolph County,58.27
+27235,Colfax,NC,Guilford County,77.17
+28025,Concord,NC,Cabarrus County,50.4
+28026,Concord,NC,Cabarrus County,36.0
+28027,Concord,NC,Cabarrus County,50.4
+28613,Conover,NC,Catawba County,41.23
+27014,Cooleemee,NC,Davie County,47.25
+28031,Cornelius,NC,Mecklenburg County,48.72
+28032,Cramerton,NC,Gaston County,47.0
+28033,Crouse,NC,Lincoln County,39.9
+28331,Cumberland,NC,Cumberland County,39.5
+28034,Dallas,NC,Gaston County,47.0
+28035,Davidson,NC,Mecklenburg County,39.9
+28036,Davidson,NC,Mecklenburg County,41.23
+28525,Deep Run,NC,Lenoir County,36.5
+27239,Denton,NC,Davidson County,48.83
+28037,Denver,NC,Lincoln County,39.9
+27017,Dobson,NC,Surry County,32.6
+28333,Dudley,NC,Wayne County,36.85
+28334,Dunn,NC,Harnett County,36.23
+28335,Dunn,NC,Harnett County,35.42
+27701,Durham,NC,Durham County,59.85
+27702,Durham,NC,Durham County,59.85
+27703,Durham,NC,Durham County,59.85
+27704,Durham,NC,Durham County,59.85
+27705,Durham,NC,Durham County,59.85
+27706,Durham,NC,Durham County,57.94
+27707,Durham,NC,Durham County,59.85
+27708,Durham,NC,Durham County,57.94
+27709,Durham,NC,Durham County,54.93
+27710,Durham,NC,Durham County,57.94
+27711,Durham,NC,Durham County,52.25
+27712,Durham,NC,Durham County,59.85
+27713,Durham,NC,Durham County,59.85
+27715,Durham,NC,Durham County,57.94
+27717,Durham,NC,Durham County,57.94
+27722,Durham,NC,Durham County,57.94
+28038,Earl,NC,Cleveland County,39.9
+28039,East Spencer,NC,Rowan County,39.88
+27288,Eden,NC,Rockingham County,64.58
+27243,Efland,NC,Orange County,52.25
+28621,Elkin,NC,Surry County,32.6
+27822,Elm City,NC,Wilson County,36.0
+27244,Elon,NC,Alamance County,59.85
+28341,Faison,NC,Duplin County,34.62
+28041,Faith,NC,Rowan County,41.23
+28342,Falcon,NC,Cumberland County,39.5
+28301,Fayetteville,NC,Cumberland County,39.5
+28302,Fayetteville,NC,Cumberland County,39.5
+28303,Fayetteville,NC,Cumberland County,39.5
+28304,Fayetteville,NC,Cumberland County,39.5
+28305,Fayetteville,NC,Cumberland County,39.5
+28306,Fayetteville,NC,Cumberland County,39.5
+28309,Fayetteville,NC,Cumberland County,39.5
+28311,Fayetteville,NC,Cumberland County,39.5
+28312,Fayetteville,NC,Cumberland County,39.5
+28314,Fayetteville,NC,Cumberland County,39.5
+28307,Fort Bragg,NC,Cumberland County,39.5
+28310,Fort Bragg,NC,Cumberland County,39.5
+27524,Four Oaks,NC,Johnston County,44.0
+27248,Franklinville,NC,Randolph County,56.38
+27830,Fremont,NC,Wayne County,36.5
+27526,Fuquay Varina,NC,Wake County,58.27
+27529,Garner,NC,Wake County,63.0
+28052,Gastonia,NC,Gaston County,50.4
+28053,Gastonia,NC,Gaston County,50.4
+28054,Gastonia,NC,Gaston County,47.0
+28055,Gastonia,NC,Gaston County,36.0
+28056,Gastonia,NC,Gaston County,47.0
+27019,Germanton,NC,Stokes County,42.0
+27249,Gibsonville,NC,Guilford County,59.85
+28344,Godwin,NC,Sampson County,35.42
+27530,Goldsboro,NC,Wayne County,45.67
+27531,Goldsboro,NC,Wayne County,36.5
+27532,Goldsboro,NC,Wayne County,36.5
+27533,Goldsboro,NC,Wayne County,36.5
+27534,Goldsboro,NC,Wayne County,36.5
+27253,Graham,NC,Alamance County,59.85
+27401,Greensboro,NC,Guilford County,75.46
+27402,Greensboro,NC,Guilford County,59.85
+27403,Greensboro,NC,Guilford County,75.46
+27404,Greensboro,NC,Guilford County,56.98
+27405,Greensboro,NC,Guilford County,77.17
+27406,Greensboro,NC,Guilford County,75.46
+27407,Greensboro,NC,Guilford County,75.46
+27408,Greensboro,NC,Guilford County,58.27
+27409,Greensboro,NC,Guilford County,75.46
+27410,Greensboro,NC,Guilford County,75.46
+27411,Greensboro,NC,Guilford County,52.25
+27412,Greensboro,NC,Guilford County,50.88
+27413,Greensboro,NC,Guilford County,58.27
+27415,Greensboro,NC,Guilford County,50.88
+27416,Greensboro,NC,Guilford County,52.25
+27417,Greensboro,NC,Guilford County,57.19
+27419,Greensboro,NC,Guilford County,50.88
+27420,Greensboro,NC,Guilford County,58.27
+27425,Greensboro,NC,Guilford County,50.88
+27427,Greensboro,NC,Guilford County,50.88
+27429,Greensboro,NC,Guilford County,55.69
+27435,Greensboro,NC,Guilford County,58.27
+27438,Greensboro,NC,Guilford County,55.69
+27455,Greensboro,NC,Guilford County,58.27
+27495,Greensboro,NC,Guilford County,58.27
+27497,Greensboro,NC,Guilford County,50.88
+27498,Greensboro,NC,Guilford County,50.88
+27499,Greensboro,NC,Guilford County,50.88
+27858,Greenville,NC,Pitt County,70.0
+28634,Harmony,NC,Iredell County,42.52
+28075,Harrisburg,NC,Cabarrus County,47.0
+27258,Haw River,NC,Alamance County,75.46
+28601,Hickory,NC,Catawba County,41.23
+27260,High Point,NC,Guilford County,63.0
+27261,High Point,NC,Guilford County,58.27
+27262,High Point,NC,Guilford County,58.27
+27263,High Point,NC,Randolph County,58.27
+27264,High Point,NC,Guilford County,58.27
+27265,High Point,NC,Guilford County,77.17
+27268,High Point,NC,Guilford County,58.27
+28077,High Shoals,NC,Gaston County,36.0
+27278,Hillsborough,NC,Orange County,59.85
+27540,Holly Springs,NC,Wake County,58.27
+28538,Hookerton,NC,Greene County,34.62
+28348,Hope Mills,NC,Cumberland County,39.5
+28070,Huntersville,NC,Mecklenburg County,57.75
+28078,Huntersville,NC,Mecklenburg County,57.75
+27541,Hurdle Mills,NC,Person County,52.25
+28079,Indian Trail,NC,Union County,47.25
+28080,Iron Station,NC,Lincoln County,41.23
+27282,Jamestown,NC,Guilford County,58.27
+27283,Julian,NC,Guilford County,59.85
+28081,Kannapolis,NC,Cabarrus County,47.0
+28082,Kannapolis,NC,Cabarrus County,36.0
+28083,Kannapolis,NC,Cabarrus County,47.0
+27542,Kenly,NC,Johnston County,44.0
+27284,Kernersville,NC,Forsyth County,61.6
+27285,Kernersville,NC,Forsyth County,58.27
+27021,King,NC,Stokes County,64.58
+28086,Kings Mountain,NC,Cleveland County,41.23
+28501,Kinston,NC,Lenoir County,36.5
+28502,Kinston,NC,Lenoir County,36.5
+28503,Kinston,NC,Lenoir County,36.5
+28504,Kinston,NC,Lenoir County,36.5
+27545,Knightdale,NC,Wake County,70.0
+28449,Kure Beach,NC,New Hanover County,35.42
+28551,La Grange,NC,Lenoir County,36.5
+28090,Lawndale,NC,Cleveland County,41.23
+27291,Leasburg,NC,Caswell County,59.85
+28451,Leland,NC,Brunswick County,35.42
+27023,Lewisville,NC,Forsyth County,64.58
+27292,Lexington,NC,Davidson County,64.58
+27293,Lexington,NC,Davidson County,45.67
+27294,Lexington,NC,Davidson County,46.66
+27295,Lexington,NC,Davidson County,64.58
+27298,Liberty,NC,Randolph County,59.85
+28092,Lincolnton,NC,Lincoln County,47.25
+28093,Lincolnton,NC,Lincoln County,39.9
+28356,Linden,NC,Cumberland County,39.5
+27299,Linwood,NC,Davidson County,47.25
+28097,Locust,NC,Stanly County,39.9
+28452,Longwood,NC,Brunswick County,64.75
+27549,Louisburg,NC,Franklin County,45.67
+28098,Lowell,NC,Gaston County,47.0
+27851,Lucama,NC,Wilson County,36.0
+27025,Madison,NC,Rockingham County,58.27
+28751,Maggie Valley,NC,Haywood County,35.7
+28650,Maiden,NC,Catawba County,41.23
+28103,Marshville,NC,Union County,36.0
+28104,Matthews,NC,Union County,47.25
+28105,Matthews,NC,Mecklenburg County,50.4
+28106,Matthews,NC,Mecklenburg County,36.0
+27027,Mayodan,NC,Rockingham County,56.98
+27301,Mc Leansville,NC,Guilford County,59.85
+28101,McAdenville,NC,Gaston County,47.0
+27302,Mebane,NC,Alamance County,75.46
+27555,Micro,NC,Johnston County,58.27
+28107,Midland,NC,Cabarrus County,47.0
+28108,Mineral Springs,NC,Union County,47.0
+27028,Mocksville,NC,Davie County,49.88
+28110,Monroe,NC,Union County,48.16
+28111,Monroe,NC,Union County,47.25
+28112,Monroe,NC,Union County,48.16
+28115,Mooresville,NC,Iredell County,49.28
+28117,Mooresville,NC,Iredell County,50.4
+27560,Morrisville,NC,Wake County,58.27
+27306,Mount Gilead,NC,Montgomery County,35.91
+28120,Mount Holly,NC,Gaston County,57.75
+28123,Mount Mourne,NC,Iredell County,36.0
+28365,Mount Olive,NC,Wayne County,36.5
+28124,Mount Pleasant,NC,Cabarrus County,36.0
+28125,Mount Ulla,NC,Rowan County,41.23
+27856,Nashville,NC,Nash County,43.65
+27562,New Hill,NC,Wake County,46.2
+28127,New London,NC,Stanly County,45.67
+28126,Newell,NC,Mecklenburg County,57.75
+28658,Newton,NC,Catawba County,41.23
+28128,Norwood,NC,Stanly County,33.25
+28465,Oak Island,NC,Brunswick County,35.42
+27310,Oak Ridge,NC,Guilford County,58.27
+28469,Ocean Isle Beach,NC,Brunswick County,64.75
+28660,Olin,NC,Iredell County,36.0
+28130,Paw Creek,NC,Mecklenburg County,57.75
+28133,Peachland,NC,Anson County,39.9
+27040,Pfafftown,NC,Forsyth County,64.58
+27863,Pikeville,NC,Wayne County,36.5
+27042,Pine Hall,NC,Stokes County,50.88
+27568,Pine Level,NC,Johnston County,58.27
+27864,Pinetops,NC,Edgecombe County,45.67
+28134,Pineville,NC,Mecklenburg County,57.75
+27312,Pittsboro,NC,Chatham County,59.85
+27313,Pleasant Garden,NC,Guilford County,75.46
+28308,Pope Army Airfield,NC,Cumberland County,39.5
+27569,Princeton,NC,Johnston County,44.0
+27314,Prospect Hill,NC,Caswell County,59.85
+28376,Raeford,NC,Hoke County,34.62
+27601,Raleigh,NC,Wake County,58.27
+27602,Raleigh,NC,Wake County,58.27
+27603,Raleigh,NC,Wake County,58.27
+27604,Raleigh,NC,Wake County,58.27
+27605,Raleigh,NC,Wake County,58.27
+27606,Raleigh,NC,Wake County,58.27
+27607,Raleigh,NC,Wake County,60.2
+27608,Raleigh,NC,Wake County,58.27
+27609,Raleigh,NC,Wake County,58.27
+27610,Raleigh,NC,Wake County,63.0
+27611,Raleigh,NC,Wake County,44.0
+27612,Raleigh,NC,Wake County,58.27
+27613,Raleigh,NC,Wake County,58.27
+27614,Raleigh,NC,Wake County,63.0
+27615,Raleigh,NC,Wake County,63.0
+27616,Raleigh,NC,Wake County,58.27
+27617,Raleigh,NC,Wake County,63.0
+27619,Raleigh,NC,Wake County,44.0
+27620,Raleigh,NC,Wake County,44.0
+27621,Raleigh,NC,Wake County,44.0
+27622,Raleigh,NC,Wake County,55.13
+27623,Raleigh,NC,Wake County,44.0
+27624,Raleigh,NC,Wake County,55.13
+27625,Raleigh,NC,Wake County,44.0
+27626,Raleigh,NC,Wake County,44.0
+27627,Raleigh,NC,Wake County,44.0
+27628,Raleigh,NC,Wake County,44.0
+27629,Raleigh,NC,Wake County,58.27
+27636,Raleigh,NC,Wake County,44.0
+27650,Raleigh,NC,Wake County,44.0
+27658,Raleigh,NC,Wake County,44.0
+27661,Raleigh,NC,Wake County,44.0
+27675,Raleigh,NC,Wake County,44.0
+27676,Raleigh,NC,Wake County,63.0
+27690,Raleigh,NC,Wake County,44.0
+27316,Ramseur,NC,Randolph County,39.5
+27317,Randleman,NC,Randolph County,58.27
+27320,Reidsville,NC,Rockingham County,56.98
+27323,Reidsville,NC,Rockingham County,50.88
+28137,Richfield,NC,Stanly County,35.91
+28138,Rockwell,NC,Rowan County,41.23
+27801,Rocky Mount,NC,Edgecombe County,45.67
+27803,Rocky Mount,NC,Nash County,44.66
+27804,Rocky Mount,NC,Nash County,36.23
+27571,Rolesville,NC,Wake County,58.27
+28382,Roseboro,NC,Sampson County,34.62
+27572,Rougemont,NC,Person County,44.0
+27573,Roxboro,NC,Person County,59.85
+27574,Roxboro,NC,Person County,59.85
+27045,Rural Hall,NC,Forsyth County,64.58
+28144,Salisbury,NC,Rowan County,42.52
+28145,Salisbury,NC,Rowan County,39.9
+28146,Salisbury,NC,Rowan County,55.13
+28147,Salisbury,NC,Rowan County,41.23
+27873,Saratoga,NC,Wilson County,36.0
+27340,Saxapahaw,NC,Alamance County,59.85
+28699,Scotts,NC,Alexander County,36.0
+27342,Sedalia,NC,Guilford County,50.88
+27576,Selma,NC,Johnston County,45.67
+28578,Seven Springs,NC,Wayne County,36.5
+28470,Shallotte,NC,Brunswick County,35.42
+28150,Shelby,NC,Cleveland County,41.23
+28151,Shelby,NC,Cleveland County,35.91
+28152,Shelby,NC,Cleveland County,41.23
+28673,Sherrills Ford,NC,Catawba County,39.9
+27344,Siler City,NC,Chatham County,47.25
+27880,Sims,NC,Wilson County,36.0
+27577,Smithfield,NC,Johnston County,44.0
+27349,Snow Camp,NC,Alamance County,57.19
+28580,Snow Hill,NC,Greene County,35.42
+27350,Sophia,NC,Randolph County,61.7
+27351,Southmont,NC,Davidson County,47.25
+28461,Southport,NC,Brunswick County,35.42
+28159,Spencer,NC,Rowan County,39.9
+28390,Spring Lake,NC,Harnett County,36.23
+27355,Staley,NC,Randolph County,57.19
+28164,Stanley,NC,Gaston County,57.75
+27883,Stantonsburg,NC,Wilson County,36.23
+28625,Statesville,NC,Iredell County,41.23
+28677,Statesville,NC,Iredell County,41.23
+28687,Statesville,NC,Iredell County,41.23
+28391,Stedman,NC,Cumberland County,39.5
+27357,Stokesdale,NC,Rockingham County,58.27
+27048,Stoneville,NC,Rockingham County,43.0
+28678,Stony Point,NC,Alexander County,41.23
+27358,Summerfield,NC,Guilford County,58.27
+28468,Sunset Beach,NC,Brunswick County,64.75
+28462,Supply,NC,Brunswick County,64.75
+27359,Swepsonville,NC,Alamance County,52.25
+27886,Tarboro,NC,Edgecombe County,34.62
+28682,Terrell,NC,Catawba County,41.23
+27360,Thomasville,NC,Davidson County,58.27
+27361,Thomasville,NC,Davidson County,58.27
+27583,Timberlake,NC,Person County,59.85
+27050,Tobaccoville,NC,Forsyth County,56.38
+27370,Trinity,NC,Randolph County,55.69
+28166,Troutman,NC,Iredell County,41.23
+27371,Troy,NC,Montgomery County,35.7
+28393,Turkey,NC,Sampson County,34.62
+28688,Turnersburg,NC,Iredell County,36.0
+28689,Union Grove,NC,Iredell County,36.0
+28168,Vale,NC,Lincoln County,41.23
+28395,Wade,NC,Cumberland County,39.5
+27587,Wake Forest,NC,Wake County,63.0
+27051,Walkertown,NC,Forsyth County,58.27
+27373,Wallburg,NC,Davidson County,50.88
+27052,Walnut Cove,NC,Stokes County,64.58
+28398,Warsaw,NC,Duplin County,34.62
+28173,Waxhaw,NC,Union County,49.98
+27374,Welcome,NC,Davidson County,41.5
+27591,Wendell,NC,Wake County,60.2
+27377,Whitsett,NC,Guilford County,59.85
+27592,Willow Spring,NC,Wake County,58.27
+28401,Wilmington,NC,New Hanover County,35.42
+28403,Wilmington,NC,New Hanover County,35.42
+28405,Wilmington,NC,New Hanover County,35.42
+28409,Wilmington,NC,New Hanover County,35.42
+28411,Wilmington,NC,New Hanover County,35.42
+28412,Wilmington,NC,New Hanover County,35.42
+27893,Wilson,NC,Wilson County,36.23
+27894,Wilson,NC,Wilson County,36.0
+27895,Wilson,NC,Wilson County,36.0
+27896,Wilson,NC,Wilson County,36.0
+27593,Wilsons Mills,NC,Johnston County,44.0
+28174,Wingate,NC,Union County,41.23
+27102,Winston Salem,NC,Forsyth County,50.88
+27108,Winston Salem,NC,Forsyth County,50.88
+27109,Winston Salem,NC,Forsyth County,50.88
+27110,Winston Salem,NC,Forsyth County,50.88
+27111,Winston Salem,NC,Forsyth County,50.88
+27114,Winston Salem,NC,Forsyth County,50.88
+27115,Winston Salem,NC,Forsyth County,50.88
+27116,Winston Salem,NC,Forsyth County,50.88
+27117,Winston Salem,NC,Forsyth County,50.88
+27198,Winston Salem,NC,Forsyth County,50.88
+27101,Winston-Salem,NC,Forsyth County,61.6
+27103,Winston-Salem,NC,Forsyth County,58.27
+27104,Winston-Salem,NC,Forsyth County,63.0
+27105,Winston-Salem,NC,Forsyth County,58.27
+27106,Winston-Salem,NC,Forsyth County,58.27
+27107,Winston-Salem,NC,Forsyth County,61.6
+27113,Winston-Salem,NC,Forsyth County,58.27
+27120,Winston-Salem,NC,Forsyth County,58.27
+27127,Winston-Salem,NC,Forsyth County,63.0
+27130,Winston-Salem,NC,Forsyth County,55.69
+27150,Winston-Salem,NC,Forsyth County,58.27
+27152,Winston-Salem,NC,Forsyth County,55.69
+27155,Winston-Salem,NC,Forsyth County,58.27
+27157,Winston-Salem,NC,Forsyth County,58.27
+27199,Winston-Salem,NC,Forsyth County,55.69
+28590,Winterville,NC,Pitt County,36.04
+28480,Wrightsville Beach,NC,New Hanover County,35.42
+27055,Yadkinville,NC,Yadkin County,32.6
+27379,Yanceyville,NC,Caswell County,58.52
+27596,Youngsville,NC,Franklin County,58.27
+27597,Zebulon,NC,Wake County,58.27

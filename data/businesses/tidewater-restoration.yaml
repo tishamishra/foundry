@@ -1,0 +1,21 @@
+slug: tidewater-restoration
+company: Tidewater Restoration
+brand: Tidewater Restoration
+phone: "+1 555 640 2200"
+email: help@tidewaterrestoration.com
+address: {street: "", city: Tampa, state: Florida, zip: ""}
+facts:
+  years_in_business: false
+  hours: "Mon-Sat 7:00-19:00"
+  free_estimates: true
+  licensed: false
+  insured: false
+  emergency_24_7: false
+  warranty_years: false
+  financing: false
+  family_owned: false
+  bbb_rating: null
+  rating: null
+  awards: null
+  certifications: null
+  volume_claims: null

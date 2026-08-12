@@ -1,0 +1,9 @@
+<section class="sec">
+  <div class="wrap prose">
+    <h2>Serving {{ county.name }}, {{ county.state_abbr }}</h2>
+    <p>{{ biz.company }} covers {{ county.cities|length }} communities across {{ county.name }}. Pick your town below, or call {{ t.phone }} and we will route you to the nearest available crew.</p>
+    <div class="chips">
+      {% for c in county.cities %}<a class="chip" href="/areas/{{ c.slug }}">{{ c.city }}</a>{% endfor %}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,15 @@
+site_id: ironvaleroofing-com
+business: ironvale-roofing
+niche: roofing
+domain: ironvaleroofing.com
+theme: navy
+style: premium
+skeleton: showcase
+composition_seed: 55
+coverage:
+  states:
+  - GA
+render:
+  mode: hybrid
+  prerender_top_n: 10
+  location_variants: 4

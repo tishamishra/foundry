@@ -1,0 +1,271 @@
+zip,city,state,county,payout
+03601,Acworth,NH,Sullivan County,45.85
+03602,Alstead,NH,Cheshire County,45.85
+03809,Alton,NH,Belknap County,45.85
+03810,Alton Bay,NH,Belknap County,45.85
+03031,Amherst,NH,Hillsborough County,56.0
+03216,Andover,NH,Merrimack County,52.67
+03440,Antrim,NH,Hillsborough County,45.85
+03217,Ashland,NH,Grafton County,33.25
+03441,Ashuelot,NH,Cheshire County,45.85
+03811,Atkinson,NH,Rockingham County,56.0
+03032,Auburn,NH,Rockingham County,56.0
+03218,Barnstead,NH,Belknap County,45.85
+03825,Barrington,NH,Strafford County,53.9
+03812,Bartlett,NH,Carroll County,33.25
+03740,Bath,NH,Grafton County,33.25
+03110,Bedford,NH,Hillsborough County,56.0
+03220,Belmont,NH,Belknap County,45.85
+03442,Bennington,NH,Hillsborough County,45.85
+03574,Bethlehem,NH,Grafton County,33.25
+03304,Bow,NH,Merrimack County,45.85
+03221,Bradford,NH,Merrimack County,45.85
+03575,Bretton Woods,NH,Coos County,33.25
+03222,Bristol,NH,Grafton County,45.85
+03033,Brookline,NH,Hillsborough County,56.0
+03223,Campton,NH,Grafton County,33.25
+03741,Canaan,NH,Grafton County,33.25
+03034,Candia,NH,Rockingham County,56.0
+03224,Canterbury,NH,Merrimack County,45.85
+03225,Center Barnstead,NH,Belknap County,45.85
+03813,Center Conway,NH,Carroll County,33.25
+03226,Center Harbor,NH,Belknap County,45.85
+03814,Center Ossipee,NH,Carroll County,33.25
+03227,Center Sandwich,NH,Carroll County,33.25
+03815,Center Strafford,NH,Strafford County,45.85
+03816,Center Tuftonboro,NH,Carroll County,33.25
+03603,Charlestown,NH,Sullivan County,45.85
+03036,Chester,NH,Rockingham County,56.0
+03443,Chesterfield,NH,Cheshire County,45.85
+03258,Chichester,NH,Merrimack County,45.85
+03817,Chocorua,NH,Carroll County,33.25
+03743,Claremont,NH,Sullivan County,45.85
+03301,Concord,NH,Merrimack County,53.9
+03302,Concord,NH,Merrimack County,45.85
+03303,Concord,NH,Merrimack County,45.85
+03305,Concord,NH,Merrimack County,45.85
+03229,Contoocook,NH,Merrimack County,45.85
+03818,Conway,NH,Carroll County,33.25
+03745,Cornish,NH,Sullivan County,45.85
+03746,Cornish Flat,NH,Sullivan County,45.85
+03230,Danbury,NH,Merrimack County,45.85
+03819,Danville,NH,Rockingham County,56.0
+03037,Deerfield,NH,Rockingham County,52.67
+03038,Derry,NH,Rockingham County,56.0
+03820,Dover,NH,Strafford County,52.67
+03821,Dover,NH,Strafford County,45.85
+03822,Dover,NH,Strafford County,45.85
+03604,Drewsville,NH,Cheshire County,45.85
+03444,Dublin,NH,Cheshire County,45.85
+03046,Dunbarton,NH,Merrimack County,45.85
+03824,Durham,NH,Strafford County,45.85
+03231,East Andover,NH,Merrimack County,45.85
+03040,East Candia,NH,Rockingham County,56.0
+03041,East Derry,NH,Rockingham County,56.0
+03826,East Hampstead,NH,Rockingham County,56.0
+03827,East Kingston,NH,Rockingham County,56.0
+03830,East Wakefield,NH,Carroll County,33.25
+03832,Eaton Center,NH,Carroll County,33.25
+03882,Effingham,NH,Carroll County,33.25
+03233,Elkins,NH,Merrimack County,45.85
+03748,Enfield,NH,Grafton County,33.25
+03749,Enfield Center,NH,Grafton County,45.85
+03042,Epping,NH,Rockingham County,56.0
+03234,Epsom,NH,Merrimack County,45.85
+03750,Etna,NH,Grafton County,33.25
+03833,Exeter,NH,Rockingham County,56.0
+03835,Farmington,NH,Strafford County,52.67
+03447,Fitzwilliam,NH,Cheshire County,45.85
+03043,Francestown,NH,Hillsborough County,56.0
+03580,Franconia,NH,Grafton County,33.25
+03235,Franklin,NH,Merrimack County,52.67
+03836,Freedom,NH,Carroll County,33.25
+03044,Fremont,NH,Rockingham County,56.0
+03751,Georges Mills,NH,Sullivan County,45.85
+03249,Gilford,NH,Belknap County,45.85
+03237,Gilmanton,NH,Belknap County,45.85
+03837,Gilmanton Iron Works,NH,Belknap County,45.85
+03448,Gilsum,NH,Cheshire County,45.85
+03838,Glen,NH,Carroll County,33.25
+03238,Glencliff,NH,Grafton County,33.25
+03045,Goffstown,NH,Hillsborough County,56.0
+03581,Gorham,NH,Coos County,33.25
+03752,Goshen,NH,Sullivan County,45.85
+03240,Grafton,NH,Grafton County,45.85
+03753,Grantham,NH,Sullivan County,45.85
+03047,Greenfield,NH,Hillsborough County,56.0
+03840,Greenland,NH,Rockingham County,56.0
+03048,Greenville,NH,Hillsborough County,56.0
+03754,Guild,NH,Sullivan County,45.85
+03841,Hampstead,NH,Rockingham County,56.0
+03842,Hampton,NH,Rockingham County,56.0
+03843,Hampton,NH,Rockingham County,45.85
+03844,Hampton Falls,NH,Rockingham County,56.0
+03449,Hancock,NH,Hillsborough County,45.85
+03755,Hanover,NH,Grafton County,33.25
+03450,Harrisville,NH,Cheshire County,45.85
+03765,Haverhill,NH,Grafton County,33.25
+03241,Hebron,NH,Grafton County,33.25
+03242,Henniker,NH,Merrimack County,45.85
+03243,Hill,NH,Merrimack County,45.85
+03244,Hillsborough,NH,Hillsborough County,52.67
+03451,Hinsdale,NH,Cheshire County,45.85
+03245,Holderness,NH,Grafton County,33.25
+03049,Hollis,NH,Hillsborough County,56.0
+03106,Hooksett,NH,Merrimack County,56.0
+03051,Hudson,NH,Hillsborough County,56.0
+03845,Intervale,NH,Carroll County,33.25
+03846,Jackson,NH,Carroll County,33.25
+03452,Jaffrey,NH,Cheshire County,45.85
+03847,Kearsarge,NH,Carroll County,33.25
+03431,Keene,NH,Cheshire County,45.85
+03435,Keene,NH,Cheshire County,45.85
+03848,Kingston,NH,Rockingham County,56.0
+03246,Laconia,NH,Belknap County,52.67
+03247,Laconia,NH,Belknap County,45.85
+03766,Lebanon,NH,Grafton County,33.25
+03861,Lee,NH,Strafford County,45.85
+03605,Lempster,NH,Sullivan County,45.85
+03251,Lincoln,NH,Grafton County,33.25
+03585,Lisbon,NH,Grafton County,33.25
+03052,Litchfield,NH,Hillsborough County,56.0
+03561,Littleton,NH,Grafton County,33.25
+03252,Lochmere,NH,Belknap County,45.85
+03053,Londonderry,NH,Rockingham County,56.0
+03307,Loudon,NH,Merrimack County,45.85
+03768,Lyme,NH,Grafton County,33.25
+03082,Lyndeborough,NH,Hillsborough County,56.0
+03823,Madbury,NH,Strafford County,45.85
+03849,Madison,NH,Carroll County,33.25
+03101,Manchester,NH,Hillsborough County,56.0
+03102,Manchester,NH,Hillsborough County,56.0
+03103,Manchester,NH,Hillsborough County,56.0
+03104,Manchester,NH,Hillsborough County,56.0
+03105,Manchester,NH,Hillsborough County,45.85
+03107,Manchester,NH,Hillsborough County,45.85
+03108,Manchester,NH,Hillsborough County,45.85
+03109,Manchester,NH,Hillsborough County,56.0
+03111,Manchester,NH,Hillsborough County,45.85
+03455,Marlborough,NH,Cheshire County,45.85
+03456,Marlow,NH,Cheshire County,45.85
+03850,Melvin Village,NH,Carroll County,45.85
+03253,Meredith,NH,Belknap County,45.85
+03770,Meriden,NH,Sullivan County,33.25
+03054,Merrimack,NH,Hillsborough County,56.0
+03055,Milford,NH,Hillsborough County,56.0
+03851,Milton,NH,Strafford County,45.85
+03852,Milton Mills,NH,Strafford County,45.85
+03853,Mirror Lake,NH,Carroll County,45.85
+03771,Monroe,NH,Grafton County,33.25
+03057,Mont Vernon,NH,Hillsborough County,56.0
+03254,Moultonborough,NH,Carroll County,45.85
+03060,Nashua,NH,Hillsborough County,56.0
+03061,Nashua,NH,Hillsborough County,53.9
+03062,Nashua,NH,Hillsborough County,56.0
+03063,Nashua,NH,Hillsborough County,56.0
+03064,Nashua,NH,Hillsborough County,56.0
+03457,Nelson,NH,Cheshire County,45.85
+03070,New Boston,NH,Hillsborough County,56.0
+03854,New Castle,NH,Rockingham County,45.85
+03855,New Durham,NH,Strafford County,45.85
+03256,New Hampton,NH,Belknap County,45.85
+03071,New Ipswich,NH,Hillsborough County,56.0
+03257,New London,NH,Merrimack County,45.85
+03255,Newbury,NH,Merrimack County,45.85
+03856,Newfields,NH,Rockingham County,56.0
+03805,Newington,NH,Rockingham County,45.85
+03857,Newmarket,NH,Rockingham County,56.0
+03773,Newport,NH,Sullivan County,45.85
+03858,Newton,NH,Rockingham County,56.0
+03859,Newton Junction,NH,Rockingham County,56.0
+03860,North Conway,NH,Carroll County,33.25
+03862,North Hampton,NH,Rockingham County,56.0
+03774,North Haverhill,NH,Grafton County,33.25
+03073,North Salem,NH,Rockingham County,56.0
+03259,North Sandwich,NH,Carroll County,33.25
+03260,North Sutton,NH,Merrimack County,45.85
+03609,North Walpole,NH,Cheshire County,45.85
+03262,North Woodstock,NH,Grafton County,33.25
+03261,Northwood,NH,Rockingham County,45.85
+03290,Nottingham,NH,Rockingham County,56.0
+03777,Orford,NH,Grafton County,33.25
+03864,Ossipee,NH,Carroll County,33.25
+03076,Pelham,NH,Hillsborough County,56.0
+03458,Peterborough,NH,Hillsborough County,56.0
+03779,Piermont,NH,Grafton County,33.25
+03780,Pike,NH,Grafton County,33.25
+03263,Pittsfield,NH,Merrimack County,45.85
+03781,Plainfield,NH,Sullivan County,33.25
+03865,Plaistow,NH,Rockingham County,56.0
+03264,Plymouth,NH,Grafton County,52.67
+03801,Portsmouth,NH,Rockingham County,53.9
+03802,Portsmouth,NH,Rockingham County,45.85
+03803,Portsmouth,NH,Rockingham County,45.85
+03804,Portsmouth,NH,Rockingham County,45.85
+03593,Randolph,NH,Coos County,33.25
+03077,Raymond,NH,Rockingham County,56.0
+03461,Rindge,NH,Cheshire County,56.0
+03839,Rochester,NH,Strafford County,52.67
+03866,Rochester,NH,Strafford County,45.85
+03867,Rochester,NH,Strafford County,45.85
+03868,Rochester,NH,Strafford County,45.85
+03869,Rollinsford,NH,Strafford County,45.85
+03266,Rumney,NH,Grafton County,33.25
+03870,Rye,NH,Rockingham County,45.85
+03871,Rye Beach,NH,Rockingham County,56.0
+03079,Salem,NH,Rockingham County,56.0
+03268,Salisbury,NH,Merrimack County,45.85
+03269,Sanbornton,NH,Belknap County,53.9
+03872,Sanbornville,NH,Carroll County,45.85
+03873,Sandown,NH,Rockingham County,56.0
+03874,Seabrook,NH,Rockingham County,56.0
+03875,Silver Lake,NH,Carroll County,33.25
+03878,Somersworth,NH,Strafford County,45.85
+03607,South Acworth,NH,Sullivan County,45.85
+03272,South Newbury,NH,Merrimack County,45.85
+03273,South Sutton,NH,Merrimack County,45.85
+03883,South Tamworth,NH,Carroll County,33.25
+03462,Spofford,NH,Cheshire County,45.85
+03284,Springfield,NH,Sullivan County,45.85
+03464,Stoddard,NH,Cheshire County,45.85
+03884,Strafford,NH,Strafford County,45.85
+03885,Stratham,NH,Rockingham County,56.0
+03586,Sugar Hill,NH,Grafton County,33.25
+03445,Sullivan,NH,Cheshire County,45.85
+03782,Sunapee,NH,Sullivan County,45.85
+03275,Suncook,NH,Merrimack County,52.67
+03446,Swanzey,NH,Cheshire County,45.85
+03886,Tamworth,NH,Carroll County,33.25
+03084,Temple,NH,Hillsborough County,56.0
+03285,Thornton,NH,Grafton County,33.25
+03276,Tilton,NH,Merrimack County,53.9
+03298,Tilton,NH,Belknap County,45.85
+03299,Tilton,NH,Belknap County,45.85
+03465,Troy,NH,Cheshire County,45.85
+03595,Twin Mountain,NH,Coos County,33.25
+03887,Union,NH,Strafford County,45.85
+03608,Walpole,NH,Cheshire County,45.85
+03278,Warner,NH,Merrimack County,45.85
+03279,Warren,NH,Grafton County,33.25
+03280,Washington,NH,Sullivan County,45.85
+03215,Waterville Valley,NH,Grafton County,33.25
+03281,Weare,NH,Hillsborough County,45.85
+03282,Wentworth,NH,Grafton County,33.25
+03466,West Chesterfield,NH,Cheshire County,45.85
+03784,West Lebanon,NH,Grafton County,33.25
+03291,West Nottingham,NH,Rockingham County,45.85
+03890,West Ossipee,NH,Carroll County,33.25
+03468,West Peterborough,NH,Hillsborough County,45.85
+03469,West Swanzey,NH,Cheshire County,45.85
+03467,Westmoreland,NH,Cheshire County,45.85
+03598,Whitefield,NH,Coos County,33.25
+03287,Wilmot,NH,Merrimack County,45.85
+03086,Wilton,NH,Hillsborough County,56.0
+03470,Winchester,NH,Cheshire County,45.85
+03087,Windham,NH,Rockingham County,56.0
+03289,Winnisquam,NH,Belknap County,45.85
+03894,Wolfeboro,NH,Carroll County,45.85
+03896,Wolfeboro Falls,NH,Carroll County,45.85
+03897,Wonalancet,NH,Carroll County,33.25
+03293,Woodstock,NH,Grafton County,33.25
+03785,Woodsville,NH,Grafton County,33.25

@@ -1,0 +1,21 @@
+<section class="sec showcase">
+  <div class="wrap">
+    <h2 class="section-head">{% if t.city %}What we do in {{ t.city }}{% else %}What we do{% endif %}</h2>
+    <div class="show-list">
+      {% for s in services %}
+      <article class="show-row{{ ' has-art' if imgs.showcase.get(s.slug) }}">
+        {% if imgs.showcase.get(s.slug) %}
+        <div class="show-pic"><img src="{{ imgs.showcase[s.slug] }}" alt="{{ s.name }}" loading="lazy" width="640" height="420"></div>
+        {% else %}
+        <div class="show-art"><span class="show-num">{{ '%02d'|format(loop.index) }}</span></div>
+        {% endif %}
+        <div class="show-copy">
+          <h3>{{ s.name }}</h3>
+          <p>{{ s.summary }}</p>
+          <a class="more" href="{% if t.city and not single_service %}/services/{{ s.slug }}/{{ t.slug }}{% else %}/services/{{ s.slug }}{% endif %}">Read about {{ s.name|lower }} &rarr;</a>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>

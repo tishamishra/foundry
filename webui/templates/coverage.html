@@ -1,0 +1,83 @@
+{% extends "base.html" %}{% block body %}
+<div class="head"><h1>Coverage</h1>
+  <p class="sub">A lead buyer's payable-ZIP footprint. This is a compliance constraint, not a
+  preference — the build <strong>refuses</strong> to publish a location outside it.</p></div>
+
+<form method="post" enctype="multipart/form-data" class="card">
+  <input type="hidden" name="mode" value="feed">
+  <h2>Import the multi-niche feed</h2>
+  <p class="sub">One wide CSV covering every vertical:
+  <code>zip,city,state,vertical,net_payout</code>. Rows arriving with no city and no state are
+  <strong>recovered from their ZIP</strong> using the bundled crosswalk rather than dropped, and
+  every row gets the county the feed does not carry.</p>
+  <label>Feed CSV<input type="file" name="feed_file" accept=".csv" required></label>
+  <p class="note">Leave the boxes below unticked to import every vertical. Each niche is
+  <strong>replaced wholesale</strong>, never merged.</p>
+  <div class="checks">
+    {% for v in verticals %}
+    <label class="chk"><input type="checkbox" name="only" value="{{ v }}"> {{ v }}</label>
+    {% endfor %}
+  </div>
+  <div class="foot"><button class="btn">Import feed</button></div>
+</form>
+
+{% if feed %}
+<div class="card">
+  <h2>Feed result</h2>
+  <p>{{ feed.summary() }}</p>
+  <table class="grid">
+    <thead><tr><th>Niche</th><th>Cities</th><th>Counties</th><th>States</th><th>Median $</th><th>Total $</th></tr></thead>
+    <tbody>
+    {% for n, i in feed.per_niche|dictsort(by='value', reverse=true) %}
+    <tr><td class="mono">{{ n }}</td><td>{{ '{:,}'.format(i.cities) }}</td>
+      <td>{{ '{:,}'.format(i.counties) }}</td><td>{{ i.states|length }}</td>
+      <td>{{ '%.0f'|format(i.payout_median) }}</td>
+      <td>{{ '{:,.0f}'.format(i.payout_total) }}</td></tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  {% for v, n in feed.unknown_vertical.items() %}
+  <p class="warn-text">unknown vertical {{ v }} ({{ '{:,}'.format(n) }} rows) — add it to VERTICALS in core/feed.py</p>
+  {% endfor %}
+</div>
+{% endif %}
+
+<div class="cols">
+<form method="post" enctype="multipart/form-data" class="card">
+  <h2>Import one niche</h2>
+  <label>Niche
+    <select name="niche">{% for n in NICHES %}<option value="{{ n }}">{{ n }}</option>{% endfor %}</select>
+  </label>
+  <label>Paste the buyer's report
+    <textarea name="text" rows="12" placeholder="GEORGIA (GA)
+Fulton County
+Atlanta: 30301, 30302, 30303
+Roswell: 30075"></textarea>
+  </label>
+  <label>…or upload a file<input type="file" name="file"></label>
+  <p class="note"><strong>The niche is replaced, never merged.</strong> A buyer publishes a complete
+  footprint; merging a new list into an old one keeps dropped ZIPs alive, and publishing a ZIP the
+  buyer has dropped is exactly the failure the list exists to prevent.</p>
+  <div class="foot"><button class="btn">Import</button></div>
+</form>
+
+<div class="card">
+  <h2>Loaded</h2>
+  {% for niche, info in loaded.items() %}
+    <h3 class="mini-h">{{ niche }}</h3>
+    {% if info %}
+      <p>{{ info.cities }} cities · {{ info.counties }} counties · {{ info.states|join(', ') }}</p>
+      {% if info.rep.duplicate_zips %}<p class="dim">{{ info.rep.duplicate_zips }} duplicate ZIP(s) dropped on load</p>{% endif %}
+      {% for note in info.rep.skipped %}<p class="warn-text">skipped: {{ note }}</p>{% endfor %}
+    {% else %}<p class="warn-text">no list loaded — sites in this niche cannot be built</p>{% endif %}
+  {% endfor %}
+
+  {% if report %}
+  <h3 class="mini-h">Last import — {{ report.niche }}</h3>
+  <p>{{ report.rep.rows_kept }} kept of {{ report.rep.rows_in }} · {{ report.rep.duplicate_zips }} duplicates dropped</p>
+  {% for note in report.rep.skipped %}<p class="warn-text">{{ note }}</p>{% endfor %}
+  <p class="dim mono">{% for st, n in report.written.items() %}{{ st }}={{ n }} {% endfor %}</p>
+  {% endif %}
+</div>
+</div>
+{% endblock %}

@@ -1,0 +1,65 @@
+{% extends "base.html" %}{% block body %}
+<div class="head"><h1>Prompts &amp; content</h1>
+  <div class="actions"><a class="btn ghost" href="{{ url_for('prompts_global') }}">Master CSV (all niches)</a>
+  <a class="btn ghost" href="{{ url_for('prompts_intel') }}">Content intelligence</a></div>
+  <p class="sub">Get a ready ChatGPT prompt for any block type, then paste the result — or a CSV —
+  straight into this niche's pool. The prompt already carries the exact format, the allowed tokens,
+  and the banned claims, so what ChatGPT returns drops in without reformatting.</p></div>
+
+<form method="get" class="card row-form">
+  <label>Niche<select name="niche" onchange="this.form.submit()">
+    {% for x in NICHES %}<option value="{{ x }}" {{ 'selected' if x == niche }}>{{ x }}</option>{% endfor %}
+  </select></label>
+  <label>Block type<select name="kind" onchange="this.form.submit()">
+    {% for k in kinds %}<option value="{{ k }}" {{ 'selected' if k == kind }}>{{ k }}</option>{% endfor %}
+  </select></label>
+  <label>How many<input name="n" type="number" min="1" max="50" value="{{ n }}" style="width:5rem"
+    onchange="this.form.submit()"></label>
+  <span class="dim">{{ pool_count }} <strong>{{ kind }}</strong> already in the {{ niche }} pool</span>
+</form>
+
+<div class="card">
+  <h2>1 · Copy this into ChatGPT</h2>
+  <p class="sub">It asks for {{ n }} <strong>{{ kind }}</strong> blocks in the exact shape the library
+  uses. Copy the whole reply and paste it in step 2.</p>
+  <div class="prompt-wrap">
+    <button type="button" class="btn sm ghost" data-copy>Copy prompt</button>
+    <pre class="prompt mono" data-prompt>{{ prompt }}</pre>
+  </div>
+</div>
+
+<form method="post" enctype="multipart/form-data" class="card">
+  <input type="hidden" name="niche" value="{{ niche }}">
+  <input type="hidden" name="kind" value="{{ kind }}">
+  <h2>2 · Paste the result — or upload a file</h2>
+  <p class="sub">It does not matter which format. All three of these work and are saved to the
+  <strong>{{ niche }}</strong> pool for <strong>{{ kind }}</strong>:</p>
+  <ul class="fmt">
+    <li>ChatGPT's <strong>YAML list</strong> (what the prompt asks for)</li>
+    <li>a <strong>CSV</strong> — columns <code>{{ csv_cols|join(', ') }}</code>{% if 'paras' in csv_cols %}, paragraphs separated by <code>||</code>{% endif %} — <a href="{{ url_for('prompts_template', kind=kind) }}">download a template</a></li>
+    {% if csv_cols == ['text'] %}<li><strong>one block per line</strong> — quoted or not, exactly what you had</li>{% endif %}
+  </ul>
+  <textarea name="content" rows="12" class="mono" placeholder="Paste YAML, CSV rows, or one block per line…"></textarea>
+  <label class="upload">…or upload a .csv / .txt / .yaml file<input type="file" name="file" accept=".csv,.txt,.yaml,.yml"></label>
+  <div class="foot"><button class="btn">Save to {{ niche }} pool</button></div>
+</form>
+
+<script>
+(function () {
+  var btn = document.querySelector("[data-copy]");
+  var pre = document.querySelector("[data-prompt]");
+  if (btn && pre) btn.addEventListener("click", function () {
+    var text = pre.textContent;
+    function done() { btn.textContent = "Copied ✓"; setTimeout(function(){ btn.textContent = "Copy prompt"; }, 1600); }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(done, done);
+    } else {
+      var r = document.createRange(); r.selectNode(pre);
+      var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+      try { document.execCommand("copy"); } catch (e) {}
+      s.removeAllRanges(); done();
+    }
+  });
+})();
+</script>
+{% endblock %}

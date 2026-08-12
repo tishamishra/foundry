@@ -1,0 +1,49 @@
+niche: fire-damage
+label: Fire & Smoke Damage Restoration
+schema_type: GeneralContractor
+services:
+- slug: emergency-board-up
+  name: Emergency Board-Up
+  summary: The building secured and weatherproofed the same day.
+- slug: smoke-soot-removal
+  name: Smoke & Soot Removal
+  summary: Surface-by-surface cleaning matched to what actually burned.
+- slug: odour-treatment
+  name: Odour Treatment
+  summary: Sealing and treatment of the materials holding the smell, not just the air.
+- slug: contents-cleaning
+  name: Contents Cleaning
+  summary: Salvageable belongings inventoried, cleaned and returned.
+- slug: structural-repair
+  name: Structural Repair
+  summary: Rebuild of what the fire and the water used to fight it took out.
+- slug: damage-assessment
+  name: Damage Assessment
+  summary: A written, photographed assessment written the way an adjuster needs to read it.
+seo:
+  home_title: '{company} | Fire & Smoke Damage Restoration'
+  home_description: '{company} handles {niche_lower} work across the areas we serve. Assessment first,
+    written findings, then a price. Call {phone}.'
+  about_title: About {company} | Fire & Smoke Damage Restoration Contractor
+  about_description: Who {company} is, how we work, what our written assessments cover, and what to expect
+    from first call to final check.
+  contact_title: Contact {company} | Call {phone}
+  contact_description: Call {company} on {phone} or request a callback. Tell us what you are seeing and
+    we will tell you what it usually means.
+  services_title: Fire & Smoke Damage Restoration Services | {company}
+  services_description: Everything {company} does, what each job includes, and how the scope and the price
+    are arrived at.
+  areas_title: Fire & Smoke Damage Restoration Service Areas | {company}
+  areas_description: Every community {company} covers for fire & smoke damage restoration, listed by county.
+    Find your town and call {phone}.
+  service_title: '{service} | {company}'
+  service_description: '{service} from {company}. What the job includes, how the scope is agreed, and
+    what would change the price. Call {phone}.'
+  county_title: Fire & Smoke Damage Restoration in {county}, {state_abbr} | {company}
+  county_description: '{company} covers every community in {county}, {state_abbr} for fire & smoke damage
+    restoration. Find your town below, or call {phone} to speak to someone.'
+  location_title: '{niche} in {city}, {state_abbr} | {company}'
+  location_description: '{niche} in {city}, {state_abbr}[[ and nearby {nearby}]]. Call {company} on {phone}.'
+  location_service_title: '{service} in {city}, {state_abbr} | {company}'
+  location_service_description: '{service} for {city}, {state_abbr} property owners[[ in {county}]]. Call
+    {phone}.'

@@ -1,0 +1,588 @@
+zip,city,state,county,payout
+98520,Aberdeen,WA,Grays Harbor County,32.5
+98220,Acme,WA,Whatcom County,42.5
+99101,Addy,WA,Stevens County,32.5
+98522,Adna,WA,Lewis County,42.5
+99001,Airway Heights,WA,Spokane County,32.5
+98524,Allyn,WA,Mason County,42.5
+98526,Amanda Park,WA,Grays Harbor County,32.5
+98601,Amboy,WA,Clark County,32.5
+98221,Anacortes,WA,Skagit County,42.5
+98303,Anderson Island,WA,Pierce County,42.5
+98603,Ariel,WA,Cowlitz County,32.5
+98223,Arlington,WA,Snohomish County,42.5
+98304,Ashford,WA,Pierce County,42.5
+98001,Auburn,WA,King County,42.5
+98002,Auburn,WA,King County,42.5
+98071,Auburn,WA,King County,32.5
+98092,Auburn,WA,King County,42.5
+98110,Bainbridge Island,WA,Kitsap County,42.5
+98224,Baring,WA,King County,42.5
+98604,Battle Ground,WA,Clark County,32.5
+98527,Bay Center,WA,Pacific County,32.5
+98305,Beaver,WA,Clallam County,32.5
+98528,Belfair,WA,Mason County,42.5
+98004,Bellevue,WA,King County,42.5
+98005,Bellevue,WA,King County,42.5
+98006,Bellevue,WA,King County,42.5
+98007,Bellevue,WA,King County,42.5
+98008,Bellevue,WA,King County,42.5
+98009,Bellevue,WA,King County,42.5
+98015,Bellevue,WA,King County,32.5
+98225,Bellingham,WA,Whatcom County,42.5
+98226,Bellingham,WA,Whatcom County,42.5
+98227,Bellingham,WA,Whatcom County,42.5
+98228,Bellingham,WA,Whatcom County,32.5
+98229,Bellingham,WA,Whatcom County,42.5
+99321,Beverly,WA,Grant County,32.5
+98605,Bingen,WA,Klickitat County,32.5
+98010,Black Diamond,WA,King County,42.5
+98230,Blaine,WA,Whatcom County,42.5
+98231,Blaine,WA,Whatcom County,32.5
+98222,Blakely Island,WA,San Juan County,42.5
+98391,Bonney Lake,WA,Pierce County,42.5
+98011,Bothell,WA,King County,42.5
+98012,Bothell,WA,Snohomish County,42.5
+98021,Bothell,WA,Snohomish County,42.5
+98041,Bothell,WA,King County,42.5
+98232,Bow,WA,Skagit County,42.5
+98310,Bremerton,WA,Kitsap County,42.5
+98311,Bremerton,WA,Kitsap County,42.5
+98312,Bremerton,WA,Kitsap County,42.5
+98314,Bremerton,WA,Kitsap County,32.5
+98337,Bremerton,WA,Kitsap County,42.5
+98812,Brewster,WA,Okanogan County,32.5
+98320,Brinnon,WA,Jefferson County,42.5
+98920,Brownstown,WA,Yakima County,32.5
+98606,Brush Prairie,WA,Clark County,32.5
+98321,Buckley,WA,Pierce County,42.5
+98530,Bucoda,WA,Thurston County,42.5
+98921,Buena,WA,Yakima County,32.5
+98322,Burley,WA,Kitsap County,42.5
+98233,Burlington,WA,Skagit County,42.5
+98013,Burton,WA,King County,42.5
+98282,Camano Island,WA,Island County,42.5
+98607,Camas,WA,Clark County,32.5
+98430,Camp Murray,WA,Pierce County,32.5
+98323,Carbonado,WA,Pierce County,42.5
+98324,Carlsborg,WA,Clallam County,42.5
+98014,Carnation,WA,King County,42.5
+98609,Carrolls,WA,Cowlitz County,32.5
+98610,Carson,WA,Skamania County,32.5
+98611,Castle Rock,WA,Cowlitz County,32.5
+98612,Cathlamet,WA,Wahkiakum County,32.5
+98613,Centerville,WA,Klickitat County,32.5
+98531,Centralia,WA,Lewis County,42.5
+99003,Chattaroy,WA,Spokane County,32.5
+98532,Chehalis,WA,Lewis County,42.5
+98816,Chelan,WA,Chelan County,32.5
+98817,Chelan Falls,WA,Chelan County,32.5
+99004,Cheney,WA,Spokane County,32.5
+99109,Chewelah,WA,Stevens County,32.5
+98325,Chimacum,WA,Jefferson County,42.5
+98614,Chinook,WA,Pacific County,32.5
+98533,Cinebar,WA,Lewis County,42.5
+98326,Clallam Bay,WA,Clallam County,32.5
+99403,Clarkston,WA,Asotin County,32.5
+99110,Clayton,WA,Stevens County,32.5
+98922,Cle Elum,WA,Kittitas County,32.5
+98235,Clearlake,WA,Skagit County,42.5
+98236,Clinton,WA,Island County,42.5
+99005,Colbert,WA,Spokane County,32.5
+99114,Colville,WA,Stevens County,32.5
+98237,Concrete,WA,Skagit County,42.5
+98238,Conway,WA,Skagit County,42.5
+98535,Copalis Beach,WA,Grays Harbor County,42.5
+98536,Copalis Crossing,WA,Grays Harbor County,32.5
+98537,Cosmopolis,WA,Grays Harbor County,32.5
+98616,Cougar,WA,Cowlitz County,32.5
+99115,Coulee City,WA,Grant County,32.5
+99116,Coulee Dam,WA,Okanogan County,32.5
+98239,Coupeville,WA,Island County,42.5
+98538,Curtis,WA,Lewis County,42.5
+98240,Custer,WA,Whatcom County,42.5
+98617,Dallesport,WA,Klickitat County,32.5
+98241,Darrington,WA,Snohomish County,42.5
+99122,Davenport,WA,Lincoln County,32.5
+99006,Deer Park,WA,Spokane County,32.5
+98244,Deming,WA,Whatcom County,42.5
+98539,Doty,WA,Lewis County,32.5
+98327,Dupont,WA,Pierce County,42.5
+98019,Duvall,WA,King County,42.5
+98540,East Olympia,WA,Thurston County,42.5
+98802,East Wenatchee,WA,Douglas County,32.5
+98925,Easton,WA,Kittitas County,32.5
+98328,Eatonville,WA,Pierce County,42.5
+98020,Edmonds,WA,Snohomish County,42.5
+98026,Edmonds,WA,Snohomish County,42.5
+99008,Edwall,WA,Lincoln County,32.5
+98330,Elbe,WA,Pierce County,42.5
+99123,Electric City,WA,Grant County,32.5
+99009,Elk,WA,Spokane County,32.5
+98926,Ellensburg,WA,Kittitas County,32.5
+98541,Elma,WA,Grays Harbor County,32.5
+99124,Elmer City,WA,Okanogan County,32.5
+98022,Enumclaw,WA,King County,42.5
+98823,Ephrata,WA,Grant County,32.5
+98542,Ethel,WA,Lewis County,42.5
+98201,Everett,WA,Snohomish County,42.5
+98203,Everett,WA,Snohomish County,42.5
+98204,Everett,WA,Snohomish County,42.5
+98205,Everett,WA,Snohomish County,42.5
+98206,Everett,WA,Snohomish County,42.5
+98207,Everett,WA,Snohomish County,42.5
+98208,Everett,WA,Snohomish County,42.5
+98213,Everett,WA,Snohomish County,32.5
+98247,Everson,WA,Whatcom County,42.5
+99011,Fairchild Air Force Base,WA,Spokane County,32.5
+99012,Fairfield,WA,Spokane County,32.5
+98024,Fall City,WA,King County,42.5
+99128,Farmington,WA,Whitman County,32.5
+98003,Federal Way,WA,King County,42.5
+98023,Federal Way,WA,King County,42.5
+98063,Federal Way,WA,King County,32.5
+98093,Federal Way,WA,King County,32.5
+98248,Ferndale,WA,Whatcom County,42.5
+98424,Fife,WA,Pierce County,42.5
+99013,Ford,WA,Stevens County,32.5
+98331,Forks,WA,Clallam County,32.5
+99014,Four Lakes,WA,Spokane County,32.5
+98333,Fox Island,WA,Pierce County,42.5
+98249,Freeland,WA,Island County,42.5
+99129,Fruitland,WA,Stevens County,32.5
+98544,Galvin,WA,Lewis County,32.5
+99130,Garfield,WA,Whitman County,32.5
+98329,Gig Harbor,WA,Pierce County,42.5
+98332,Gig Harbor,WA,Pierce County,42.5
+98335,Gig Harbor,WA,Pierce County,42.5
+98336,Glenoma,WA,Lewis County,42.5
+98251,Gold Bar,WA,Snohomish County,42.5
+98338,Graham,WA,Pierce County,42.5
+99133,Grand Coulee,WA,Grant County,32.5
+98252,Granite Falls,WA,Snohomish County,42.5
+98546,Grapeview,WA,Mason County,42.5
+98547,Grayland,WA,Grays Harbor County,32.5
+98621,Grays River,WA,Wahkiakum County,32.5
+99016,Greenacres,WA,Spokane County,32.5
+98253,Greenbank,WA,Island County,42.5
+98255,Hamilton,WA,Skagit County,42.5
+98340,Hansville,WA,Kitsap County,42.5
+98622,Heisson,WA,Clark County,32.5
+98025,Hobart,WA,King County,42.5
+98548,Hoodsport,WA,Mason County,42.5
+98550,Hoquiam,WA,Grays Harbor County,32.5
+98552,Humptulips,WA,Grays Harbor County,32.5
+98623,Husum,WA,Klickitat County,32.5
+98624,Ilwaco,WA,Pacific County,32.5
+98256,Index,WA,Snohomish County,42.5
+98342,Indianola,WA,Kitsap County,42.5
+98027,Issaquah,WA,King County,42.5
+98029,Issaquah,WA,King County,42.5
+98343,Joyce,WA,Clallam County,42.5
+98625,Kalama,WA,Cowlitz County,32.5
+98344,Kapowsin,WA,Pierce County,42.5
+99140,Keller,WA,Ferry County,32.5
+98626,Kelso,WA,Cowlitz County,32.5
+98028,Kenmore,WA,King County,42.5
+98030,Kent,WA,King County,42.5
+98031,Kent,WA,King County,42.5
+98032,Kent,WA,King County,42.5
+98035,Kent,WA,King County,32.5
+98042,Kent,WA,King County,42.5
+98064,Kent,WA,King County,32.5
+98089,Kent,WA,King County,32.5
+98345,Keyport,WA,Kitsap County,42.5
+98346,Kingston,WA,Kitsap County,42.5
+98033,Kirkland,WA,King County,42.5
+98034,Kirkland,WA,King County,42.5
+98083,Kirkland,WA,King County,42.5
+98934,Kittitas,WA,Kittitas County,32.5
+98628,Klickitat,WA,Klickitat County,32.5
+98629,La Center,WA,Clark County,32.5
+98257,La Conner,WA,Skagit County,42.5
+98348,La Grande,WA,Thurston County,42.5
+98350,La Push,WA,Clallam County,32.5
+98503,Lacey,WA,Thurston County,42.5
+98509,Lacey,WA,Thurston County,32.5
+98258,Lake Stevens,WA,Snohomish County,42.5
+98349,Lakebay,WA,Pierce County,42.5
+98439,Lakewood,WA,Pierce County,42.5
+98496,Lakewood,WA,Pierce County,32.5
+98497,Lakewood,WA,Pierce County,32.5
+98498,Lakewood,WA,Pierce County,42.5
+98499,Lakewood,WA,Pierce County,42.5
+99017,Lamont,WA,Whitman County,32.5
+98260,Langley,WA,Island County,42.5
+99018,Latah,WA,Spokane County,32.5
+98826,Leavenworth,WA,Chelan County,32.5
+98554,Lebam,WA,Pacific County,32.5
+99019,Liberty Lake,WA,Spokane County,32.5
+98555,Lilliwaup,WA,Mason County,42.5
+98556,Littlerock,WA,Thurston County,42.5
+98631,Long Beach,WA,Pacific County,32.5
+98351,Longbranch,WA,Pierce County,42.5
+98397,Longmire,WA,Pierce County,42.5
+98632,Longview,WA,Cowlitz County,32.5
+99148,Loon Lake,WA,Stevens County,32.5
+98262,Lummi Island,WA,Whatcom County,32.5
+98635,Lyle,WA,Klickitat County,32.5
+98263,Lyman,WA,Skagit County,42.5
+98264,Lynden,WA,Whatcom County,42.5
+98036,Lynnwood,WA,Snohomish County,42.5
+98037,Lynnwood,WA,Snohomish County,42.5
+98046,Lynnwood,WA,Snohomish County,32.5
+98087,Lynnwood,WA,Snohomish County,42.5
+99149,Malden,WA,Whitman County,32.5
+98559,Malone,WA,Grays Harbor County,32.5
+98353,Manchester,WA,Kitsap County,42.5
+98831,Manson,WA,Chelan County,32.5
+98266,Maple Falls,WA,Whatcom County,42.5
+98038,Maple Valley,WA,King County,42.5
+98267,Marblemount,WA,Skagit County,32.5
+99020,Marshall,WA,Spokane County,32.5
+98270,Marysville,WA,Snohomish County,42.5
+98271,Marysville,WA,Snohomish County,42.5
+98560,Matlock,WA,Mason County,42.5
+99349,Mattawa,WA,Grant County,32.5
+98438,Mcchord Afb,WA,Pierce County,42.5
+98557,Mccleary,WA,Grays Harbor County,32.5
+98558,Mckenna,WA,Pierce County,42.5
+99021,Mead,WA,Spokane County,32.5
+99022,Medical Lake,WA,Spokane County,32.5
+98039,Medina,WA,King County,42.5
+98561,Menlo,WA,Pacific County,32.5
+98040,Mercer Island,WA,King County,42.5
+99023,Mica,WA,Spokane County,32.5
+98082,Mill Creek,WA,Washington Statewide,32.5
+98354,Milton,WA,Pierce County,42.5
+98355,Mineral,WA,Lewis County,42.5
+98562,Moclips,WA,Grays Harbor County,32.5
+98272,Monroe,WA,Snohomish County,42.5
+98563,Montesano,WA,Grays Harbor County,32.5
+98356,Morton,WA,Lewis County,42.5
+98837,Moses Lake,WA,Grant County,32.5
+98564,Mossyrock,WA,Lewis County,42.5
+98273,Mount Vernon,WA,Skagit County,42.5
+98274,Mount Vernon,WA,Skagit County,42.5
+98043,Mountlake Terrace,WA,Snohomish County,42.5
+98275,Mukilteo,WA,Snohomish County,42.5
+98637,Nahcotta,WA,Pacific County,32.5
+98565,Napavine,WA,Lewis County,42.5
+98638,Naselle,WA,Pacific County,32.5
+98357,Neah Bay,WA,Clallam County,32.5
+98566,Neilton,WA,Grays Harbor County,32.5
+99155,Nespelem,WA,Okanogan County,32.5
+99025,Newman Lake,WA,Spokane County,32.5
+99156,Newport,WA,Pend Oreille County,32.5
+99026,Nine Mile Falls,WA,Stevens County,32.5
+98276,Nooksack,WA,Whatcom County,42.5
+98358,Nordland,WA,Jefferson County,32.5
+98045,North Bend,WA,King County,42.5
+98639,North Bonneville,WA,Skamania County,32.5
+98259,North Lakewood,WA,Snohomish County,42.5
+98277,Oak Harbor,WA,Island County,42.5
+98278,Oak Harbor,WA,Island County,42.5
+99158,Oakesdale,WA,Whitman County,32.5
+98568,Oakville,WA,Grays Harbor County,42.5
+98640,Ocean Park,WA,Pacific County,32.5
+98569,Ocean Shores,WA,Grays Harbor County,32.5
+99159,Odessa,WA,Lincoln County,32.5
+98840,Okanogan,WA,Okanogan County,32.5
+98359,Olalla,WA,Kitsap County,42.5
+98279,Olga,WA,San Juan County,42.5
+98501,Olympia,WA,Thurston County,42.5
+98502,Olympia,WA,Thurston County,42.5
+98504,Olympia,WA,Thurston County,42.5
+98505,Olympia,WA,Thurston County,42.5
+98506,Olympia,WA,Thurston County,42.5
+98507,Olympia,WA,Thurston County,32.5
+98508,Olympia,WA,Thurston County,42.5
+98512,Olympia,WA,Thurston County,42.5
+98513,Olympia,WA,Thurston County,42.5
+98516,Olympia,WA,Thurston County,42.5
+98599,Olympia,WA,Thurston County,32.5
+98841,Omak,WA,Okanogan County,32.5
+98570,Onalaska,WA,Lewis County,42.5
+98360,Orting,WA,Pierce County,42.5
+99344,Othello,WA,Adams County,32.5
+99027,Otis Orchards,WA,Spokane County,32.5
+98641,Oysterville,WA,Pacific County,32.5
+98047,Pacific,WA,King County,42.5
+98571,Pacific Beach,WA,Grays Harbor County,32.5
+98361,Packwood,WA,Lewis County,42.5
+98398,Paradise Inn,WA,Lewis County,32.5
+98939,Parker,WA,Yakima County,32.5
+99302,Pasco,WA,Franklin County,32.5
+98846,Pateros,WA,Okanogan County,32.5
+98572,Pe Ell,WA,Lewis County,42.5
+98281,Point Roberts,WA,Whatcom County,32.5
+98362,Port Angeles,WA,Clallam County,42.5
+98363,Port Angeles,WA,Clallam County,32.5
+98364,Port Gamble,WA,Kitsap County,42.5
+98339,Port Hadlock,WA,Jefferson County,42.5
+98365,Port Ludlow,WA,Jefferson County,42.5
+98366,Port Orchard,WA,Kitsap County,42.5
+98367,Port Orchard,WA,Kitsap County,42.5
+98368,Port Townsend,WA,Jefferson County,42.5
+98370,Poulsbo,WA,Kitsap County,42.5
+98050,Preston,WA,King County,42.5
+98371,Puyallup,WA,Pierce County,42.5
+98372,Puyallup,WA,Pierce County,42.5
+98373,Puyallup,WA,Pierce County,42.5
+98374,Puyallup,WA,Pierce County,42.5
+98375,Puyallup,WA,Pierce County,42.5
+98376,Quilcene,WA,Jefferson County,42.5
+98575,Quinault,WA,Grays Harbor County,32.5
+98848,Quincy,WA,Grant County,32.5
+98576,Rainier,WA,Thurston County,42.5
+98377,Randle,WA,Lewis County,42.5
+98051,Ravensdale,WA,King County,42.5
+98577,Raymond,WA,Pacific County,32.5
+99029,Reardan,WA,Lincoln County,32.5
+98052,Redmond,WA,King County,42.5
+98053,Redmond,WA,King County,42.5
+98073,Redmond,WA,King County,32.5
+98055,Renton,WA,King County,42.5
+98056,Renton,WA,King County,42.5
+98057,Renton,WA,King County,42.5
+98058,Renton,WA,King County,42.5
+98059,Renton,WA,King County,42.5
+98378,Retsil,WA,Kitsap County,42.5
+98642,Ridgefield,WA,Clark County,32.5
+98579,Rochester,WA,Thurston County,42.5
+99030,Rockford,WA,Spokane County,32.5
+98283,Rockport,WA,Skagit County,32.5
+98061,Rollingbay,WA,Kitsap County,32.5
+98940,Ronald,WA,Kittitas County,32.5
+99170,Rosalia,WA,Whitman County,32.5
+98643,Rosburg,WA,Wahkiakum County,32.5
+98941,Roslyn,WA,Kittitas County,32.5
+98580,Roy,WA,Pierce County,42.5
+99357,Royal City,WA,Grant County,32.5
+98581,Ryderwood,WA,Cowlitz County,32.5
+99171,Saint John,WA,Whitman County,32.5
+98582,Salkum,WA,Lewis County,42.5
+98074,Sammamish,WA,King County,42.5
+98075,Sammamish,WA,King County,42.5
+98583,Satsop,WA,Grays Harbor County,32.5
+98380,Seabeck,WA,Kitsap County,42.5
+98062,Seahurst,WA,King County,32.5
+98101,Seattle,WA,King County,42.5
+98102,Seattle,WA,King County,42.5
+98103,Seattle,WA,King County,42.5
+98104,Seattle,WA,King County,42.5
+98105,Seattle,WA,King County,42.5
+98106,Seattle,WA,King County,42.5
+98107,Seattle,WA,King County,42.5
+98108,Seattle,WA,King County,42.5
+98109,Seattle,WA,King County,42.5
+98111,Seattle,WA,King County,32.5
+98112,Seattle,WA,King County,42.5
+98113,Seattle,WA,King County,32.5
+98114,Seattle,WA,King County,42.5
+98115,Seattle,WA,King County,42.5
+98116,Seattle,WA,King County,42.5
+98117,Seattle,WA,King County,42.5
+98118,Seattle,WA,King County,42.5
+98119,Seattle,WA,King County,42.5
+98121,Seattle,WA,King County,42.5
+98122,Seattle,WA,King County,42.5
+98124,Seattle,WA,King County,42.5
+98125,Seattle,WA,King County,42.5
+98126,Seattle,WA,King County,42.5
+98127,Seattle,WA,King County,42.5
+98129,Seattle,WA,King County,32.5
+98131,Seattle,WA,King County,32.5
+98132,Seattle,WA,King County,32.5
+98133,Seattle,WA,King County,42.5
+98134,Seattle,WA,King County,42.5
+98136,Seattle,WA,King County,42.5
+98138,Seattle,WA,King County,32.5
+98139,Seattle,WA,King County,32.5
+98141,Seattle,WA,King County,32.5
+98144,Seattle,WA,King County,42.5
+98145,Seattle,WA,King County,32.5
+98146,Seattle,WA,King County,42.5
+98148,Seattle,WA,King County,42.5
+98154,Seattle,WA,King County,32.5
+98155,Seattle,WA,King County,42.5
+98158,Seattle,WA,King County,32.5
+98160,Seattle,WA,King County,32.5
+98161,Seattle,WA,King County,32.5
+98164,Seattle,WA,King County,32.5
+98165,Seattle,WA,King County,42.5
+98166,Seattle,WA,King County,42.5
+98168,Seattle,WA,King County,42.5
+98170,Seattle,WA,King County,32.5
+98174,Seattle,WA,King County,32.5
+98175,Seattle,WA,King County,32.5
+98177,Seattle,WA,King County,42.5
+98178,Seattle,WA,King County,42.5
+98181,Seattle,WA,King County,32.5
+98184,Seattle,WA,King County,42.5
+98185,Seattle,WA,King County,32.5
+98188,Seattle,WA,King County,42.5
+98190,Seattle,WA,King County,32.5
+98191,Seattle,WA,King County,32.5
+98194,Seattle,WA,King County,32.5
+98195,Seattle,WA,King County,42.5
+98198,Seattle,WA,King County,42.5
+98199,Seattle,WA,King County,42.5
+98644,Seaview,WA,Pacific County,32.5
+98284,Sedro Woolley,WA,Skagit County,42.5
+98381,Sekiu,WA,Clallam County,32.5
+98382,Sequim,WA,Clallam County,42.5
+98584,Shelton,WA,Mason County,42.5
+98287,Silvana,WA,Snohomish County,42.5
+98585,Silver Creek,WA,Lewis County,42.5
+98315,Silverdale,WA,Kitsap County,42.5
+98383,Silverdale,WA,Kitsap County,42.5
+98645,Silverlake,WA,Cowlitz County,32.5
+98288,Skykomish,WA,King County,42.5
+98290,Snohomish,WA,Snohomish County,42.5
+98291,Snohomish,WA,Snohomish County,32.5
+98296,Snohomish,WA,Snohomish County,42.5
+98065,Snoqualmie,WA,King County,42.5
+98068,Snoqualmie Pass,WA,Kittitas County,42.5
+98851,Soap Lake,WA,Grant County,32.5
+98586,South Bend,WA,Pacific County,32.5
+98943,South Cle Elum,WA,Kittitas County,32.5
+98384,South Colby,WA,Kitsap County,42.5
+98385,South Prairie,WA,Pierce County,42.5
+98386,Southworth,WA,Kitsap County,42.5
+98387,Spanaway,WA,Pierce County,42.5
+99031,Spangle,WA,Spokane County,32.5
+99201,Spokane,WA,Spokane County,32.5
+99202,Spokane,WA,Spokane County,32.5
+99203,Spokane,WA,Spokane County,32.5
+99204,Spokane,WA,Spokane County,32.5
+99205,Spokane,WA,Spokane County,32.5
+99206,Spokane,WA,Spokane County,32.5
+99207,Spokane,WA,Spokane County,32.5
+99208,Spokane,WA,Spokane County,32.5
+99209,Spokane,WA,Spokane County,32.5
+99210,Spokane,WA,Spokane County,32.5
+99211,Spokane,WA,Spokane County,32.5
+99212,Spokane,WA,Spokane County,32.5
+99213,Spokane,WA,Spokane County,32.5
+99214,Spokane,WA,Spokane County,32.5
+99215,Spokane,WA,Spokane County,32.5
+99216,Spokane,WA,Spokane County,32.5
+99217,Spokane,WA,Spokane County,32.5
+99218,Spokane,WA,Spokane County,32.5
+99219,Spokane,WA,Spokane County,32.5
+99220,Spokane,WA,Spokane County,32.5
+99223,Spokane,WA,Spokane County,32.5
+99224,Spokane,WA,Spokane County,32.5
+99228,Spokane,WA,Spokane County,32.5
+99251,Spokane,WA,Spokane County,32.5
+99252,Spokane,WA,Spokane County,32.5
+99256,Spokane,WA,Spokane County,32.5
+99258,Spokane,WA,Spokane County,32.5
+99260,Spokane,WA,Spokane County,32.5
+99032,Sprague,WA,Lincoln County,32.5
+99173,Springdale,WA,Stevens County,32.5
+98292,Stanwood,WA,Snohomish County,42.5
+98293,Startup,WA,Snohomish County,42.5
+98388,Steilacoom,WA,Pierce County,42.5
+99174,Steptoe,WA,Whitman County,32.5
+98648,Stevenson,WA,Skamania County,32.5
+98853,Stratford,WA,Grant County,32.5
+98294,Sultan,WA,Snohomish County,42.5
+98295,Sumas,WA,Whatcom County,42.5
+98352,Sumner,WA,Pierce County,42.5
+98390,Sumner,WA,Pierce County,42.5
+98392,Suquamish,WA,Kitsap County,42.5
+98401,Tacoma,WA,Pierce County,42.5
+98402,Tacoma,WA,Pierce County,42.5
+98403,Tacoma,WA,Pierce County,42.5
+98404,Tacoma,WA,Pierce County,42.5
+98405,Tacoma,WA,Pierce County,42.5
+98406,Tacoma,WA,Pierce County,42.5
+98407,Tacoma,WA,Pierce County,42.5
+98408,Tacoma,WA,Pierce County,42.5
+98409,Tacoma,WA,Pierce County,42.5
+98411,Tacoma,WA,Pierce County,42.5
+98412,Tacoma,WA,Pierce County,32.5
+98413,Tacoma,WA,Pierce County,32.5
+98415,Tacoma,WA,Pierce County,32.5
+98416,Tacoma,WA,Pierce County,32.5
+98417,Tacoma,WA,Pierce County,32.5
+98418,Tacoma,WA,Pierce County,42.5
+98419,Tacoma,WA,Pierce County,32.5
+98421,Tacoma,WA,Pierce County,42.5
+98422,Tacoma,WA,Pierce County,42.5
+98431,Tacoma,WA,Pierce County,32.5
+98433,Tacoma,WA,Pierce County,42.5
+98443,Tacoma,WA,Pierce County,42.5
+98444,Tacoma,WA,Pierce County,42.5
+98445,Tacoma,WA,Pierce County,42.5
+98446,Tacoma,WA,Pierce County,42.5
+98447,Tacoma,WA,Pierce County,42.5
+98448,Tacoma,WA,Pierce County,32.5
+98464,Tacoma,WA,Pierce County,32.5
+98465,Tacoma,WA,Pierce County,42.5
+98466,Tacoma,WA,Pierce County,42.5
+98471,Tacoma,WA,Pierce County,32.5
+98481,Tacoma,WA,Pierce County,32.5
+98490,Tacoma,WA,Pierce County,32.5
+98492,Tacoma,WA,Pierce County,42.5
+98493,Tacoma,WA,Pierce County,32.5
+98587,Taholah,WA,Grays Harbor County,32.5
+98588,Tahuya,WA,Mason County,42.5
+99033,Tekoa,WA,Whitman County,32.5
+98589,Tenino,WA,Thurston County,42.5
+99176,Thornton,WA,Whitman County,32.5
+98590,Tokeland,WA,Pacific County,32.5
+98591,Toledo,WA,Lewis County,42.5
+98649,Toutle,WA,Cowlitz County,32.5
+98393,Tracyton,WA,Kitsap County,42.5
+99034,Tumtum,WA,Stevens County,32.5
+98511,Tumwater,WA,Thurston County,32.5
+98651,Underwood,WA,Skamania County,32.5
+98592,Union,WA,Mason County,42.5
+98467,University Place,WA,Pierce County,42.5
+99180,Usk,WA,Pend Oreille County,32.5
+98593,Vader,WA,Lewis County,32.5
+99181,Valley,WA,Stevens County,32.5
+99036,Valleyford,WA,Spokane County,32.5
+98660,Vancouver,WA,Clark County,32.5
+98661,Vancouver,WA,Clark County,32.5
+98662,Vancouver,WA,Clark County,32.5
+98663,Vancouver,WA,Clark County,32.5
+98664,Vancouver,WA,Clark County,32.5
+98665,Vancouver,WA,Clark County,32.5
+98666,Vancouver,WA,Clark County,32.5
+98667,Vancouver,WA,Clark County,32.5
+98668,Vancouver,WA,Clark County,32.5
+98682,Vancouver,WA,Clark County,32.5
+98683,Vancouver,WA,Clark County,32.5
+98684,Vancouver,WA,Clark County,32.5
+98685,Vancouver,WA,Clark County,32.5
+98686,Vancouver,WA,Clark County,32.5
+98687,Vancouver,WA,Clark County,32.5
+98070,Vashon,WA,King County,42.5
+98394,Vaughn,WA,Pierce County,42.5
+99037,Veradale,WA,Spokane County,32.5
+98297,Waldron,WA,San Juan County,42.5
+98857,Warden,WA,Grant County,32.5
+98671,Washougal,WA,Clark County,32.5
+98395,Wauna,WA,Pierce County,42.5
+99039,Waverly,WA,Spokane County,32.5
+99040,Wellpinit,WA,Stevens County,32.5
+98801,Wenatchee,WA,Chelan County,32.5
+98807,Wenatchee,WA,Chelan County,32.5
+98595,Westport,WA,Grays Harbor County,32.5
+98672,White Salmon,WA,Klickitat County,32.5
+99185,Wilbur,WA,Lincoln County,32.5
+98396,Wilkeson,WA,Pierce County,42.5
+98596,Winlock,WA,Lewis County,42.5
+98673,Wishram,WA,Klickitat County,32.5
+98072,Woodinville,WA,King County,42.5
+98077,Woodinville,WA,King County,42.5
+98674,Woodland,WA,Cowlitz County,32.5
+98675,Yacolt,WA,Clark County,32.5
+98904,Yakima,WA,Yakima County,32.5
+98907,Yakima,WA,Yakima County,32.5
+98909,Yakima,WA,Yakima County,32.5
+98597,Yelm,WA,Thurston County,42.5

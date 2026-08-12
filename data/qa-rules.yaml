@@ -1,0 +1,18 @@
+# Operator-editable severities. Each rule carries a `why` in plain English so a
+# blocker can be argued with rather than merely obeyed.
+#
+#   blocker  stops the build
+#   warning  reported, does not stop
+#   off      not run, and DECLARED as a blind spot in the report
+#
+# Defaults live in core/verify.py:DEFAULT_RULES; anything here overrides them.
+
+layout-overflow:
+  severity: "off"
+  why: >-
+    Horizontal overflow at narrow widths. Needs a headless browser, so it is
+    reported as a blind spot rather than silently skipped. Turn it on once
+    `foundry sweep` has a browser available.
+
+thin-pages:
+  severity: warning

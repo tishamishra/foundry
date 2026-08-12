@@ -1,0 +1,823 @@
+zip,city,state,county,payout
+50601,Ackley,IA,Hardin County,32.5
+50001,Ackworth,IA,Warren County,32.5
+50002,Adair,IA,Adair County,32.5
+50003,Adel,IA,Dallas County,32.5
+50830,Afton,IA,Union County,32.5
+52530,Agency,IA,Wapello County,32.5
+52201,Ainsworth,IA,Washington County,32.5
+52531,Albia,IA,Monroe County,32.5
+50005,Albion,IA,Marshall County,32.5
+52202,Alburnett,IA,Linn County,32.5
+50006,Alden,IA,Hardin County,32.5
+50007,Alleman,IA,Polk County,32.5
+50008,Allerton,IA,Wayne County,32.5
+50602,Allison,IA,Butler County,32.5
+50603,Alta Vista,IA,Chickasaw County,32.5
+50009,Altoona,IA,Polk County,32.5
+52203,Amana,IA,Iowa County,32.5
+52204,Amana,IA,Iowa County,32.5
+50010,Ames,IA,Story County,32.5
+50011,Ames,IA,Story County,32.5
+50012,Ames,IA,Story County,32.5
+50013,Ames,IA,Story County,32.5
+50014,Ames,IA,Story County,32.5
+52205,Anamosa,IA,Jones County,32.5
+52701,Andover,IA,Clinton County,32.5
+52030,Andrew,IA,Jackson County,32.5
+50021,Ankeny,IA,Polk County,32.5
+50023,Ankeny,IA,Polk County,32.5
+50604,Aplington,IA,Butler County,32.5
+50605,Aredale,IA,Butler County,32.5
+52619,Argyle,IA,Lee County,32.5
+50831,Arispe,IA,Union County,32.5
+50606,Arlington,IA,Fayette County,32.5
+52720,Atalissa,IA,Muscatine County,32.5
+52206,Atkins,IA,Benton County,32.5
+50022,Atlantic,IA,Cass County,32.5
+50025,Audubon,IA,Audubon County,32.5
+50607,Aurora,IA,Buchanan County,32.5
+50608,Austinville,IA,Butler County,32.5
+51521,Avoca,IA,Pottawattamie County,32.5
+50516,Badger,IA,Webster County,32.5
+50026,Bagley,IA,Guthrie County,32.5
+52207,Baldwin,IA,Jackson County,32.5
+50027,Barnes City,IA,Mahaska County,32.5
+50518,Barnum,IA,Webster County,32.5
+52533,Batavia,IA,Jefferson County,32.5
+50028,Baxter,IA,Jasper County,32.5
+50029,Bayard,IA,Guthrie County,32.5
+52534,Beacon,IA,Mahaska County,32.5
+50609,Beaman,IA,Grundy County,32.5
+50031,Beaver,IA,Boone County,32.5
+50833,Bedford,IA,Taylor County,32.5
+52208,Belle Plaine,IA,Benton County,32.5
+52031,Bellevue,IA,Jackson County,32.5
+52721,Bennett,IA,Cedar County,32.5
+50835,Benton,IA,Ringgold County,32.5
+52032,Bernard,IA,Dubuque County,32.5
+50032,Berwick,IA,Polk County,32.5
+52722,Bettendorf,IA,Scott County,32.5
+50033,Bevington,IA,Madison County,32.5
+52535,Birmingham,IA,Van Buren County,32.5
+50034,Blairsburg,IA,Hamilton County,32.5
+52209,Blairstown,IA,Benton County,32.5
+52536,Blakesburg,IA,Wapello County,32.5
+51630,Blanchard,IA,Page County,32.5
+50836,Blockton,IA,Taylor County,32.5
+52537,Bloomfield,IA,Davis County,32.5
+52726,Blue Grass,IA,Scott County,32.5
+52620,Bonaparte,IA,Van Buren County,32.5
+50035,Bondurant,IA,Polk County,32.5
+50036,Boone,IA,Boone County,32.5
+50037,Boone,IA,Boone County,32.5
+50950,Boone,IA,Polk County,32.5
+50038,Booneville,IA,Dallas County,32.5
+50039,Bouton,IA,Dallas County,32.5
+50040,Boxholm,IA,Boone County,32.5
+51631,Braddyville,IA,Page County,32.5
+50041,Bradford,IA,Franklin County,32.5
+52210,Brandon,IA,Buchanan County,32.5
+50042,Brayton,IA,Audubon County,32.5
+50837,Bridgewater,IA,Adair County,32.5
+52540,Brighton,IA,Washington County,32.5
+50611,Bristow,IA,Butler County,32.5
+52211,Brooklyn,IA,Poweshiek County,32.5
+52727,Bryant,IA,Clinton County,32.5
+50043,Buckeye,IA,Hardin County,32.5
+50612,Buckingham,IA,Tama County,32.5
+52728,Buffalo,IA,Scott County,32.5
+52601,Burlington,IA,Des Moines County,32.5
+50521,Burnside,IA,Webster County,32.5
+50044,Bussey,IA,Marion County,32.5
+52729,Calamus,IA,Clinton County,32.5
+50523,Callender,IA,Webster County,32.5
+52132,Calmar,IA,Winneshiek County,32.5
+52730,Camanche,IA,Clinton County,32.5
+50046,Cambridge,IA,Story County,32.5
+52542,Cantril,IA,Van Buren County,32.5
+50839,Carbon,IA,Adams County,32.5
+50047,Carlisle,IA,Warren County,32.5
+50426,Carpenter,IA,Mitchell County,32.5
+51525,Carson,IA,Pottawattamie County,32.5
+51510,Carter Lake,IA,Pottawattamie County,32.5
+52033,Cascade,IA,Dubuque County,32.5
+50048,Casey,IA,Guthrie County,32.5
+52133,Castalia,IA,Winneshiek County,32.5
+52543,Cedar,IA,Mahaska County,32.5
+50613,Cedar Falls,IA,Black Hawk County,32.5
+50614,Cedar Falls,IA,Black Hawk County,32.5
+52401,Cedar Rapids,IA,Linn County,32.5
+52402,Cedar Rapids,IA,Linn County,32.5
+52403,Cedar Rapids,IA,Linn County,32.5
+52404,Cedar Rapids,IA,Linn County,32.5
+52405,Cedar Rapids,IA,Linn County,32.5
+52406,Cedar Rapids,IA,Linn County,32.5
+52407,Cedar Rapids,IA,Linn County,32.5
+52408,Cedar Rapids,IA,Linn County,32.5
+52409,Cedar Rapids,IA,Linn County,32.5
+52410,Cedar Rapids,IA,Linn County,32.5
+52411,Cedar Rapids,IA,Linn County,32.5
+52497,Cedar Rapids,IA,Linn County,32.5
+52498,Cedar Rapids,IA,Linn County,32.5
+52499,Cedar Rapids,IA,Linn County,32.5
+52212,Center Junction,IA,Jones County,32.5
+52213,Center Point,IA,Linn County,32.5
+52544,Centerville,IA,Appanoose County,32.5
+52214,Central City,IA,Linn County,32.5
+50427,Chapin,IA,Franklin County,32.5
+50049,Chariton,IA,Lucas County,32.5
+50616,Charles City,IA,Floyd County,32.5
+52731,Charlotte,IA,Clinton County,32.5
+52215,Chelsea,IA,Tama County,32.5
+52134,Chester,IA,Howard County,32.5
+52548,Chillicothe,IA,Wapello County,32.5
+50050,Churdan,IA,Greene County,32.5
+52549,Cincinnati,IA,Appanoose County,32.5
+50524,Clare,IA,Webster County,32.5
+52216,Clarence,IA,Cedar County,32.5
+51632,Clarinda,IA,Page County,32.5
+50619,Clarksville,IA,Butler County,32.5
+50428,Clear Lake,IA,Cerro Gordo County,32.5
+50840,Clearfield,IA,Taylor County,32.5
+50051,Clemons,IA,Marshall County,32.5
+52135,Clermont,IA,Fayette County,32.5
+52732,Clinton,IA,Clinton County,32.5
+52733,Clinton,IA,Clinton County,32.5
+52734,Clinton,IA,Clinton County,32.5
+52736,Clinton,IA,Clinton County,32.5
+50052,Clio,IA,Wayne County,32.5
+50325,Clive,IA,Polk County,32.5
+52217,Clutier,IA,Tama County,32.5
+52218,Coggon,IA,Linn County,32.5
+51636,Coin,IA,Page County,32.5
+52035,Colesburg,IA,Delaware County,32.5
+50054,Colfax,IA,Jasper County,32.5
+51637,College Springs,IA,Page County,32.5
+50055,Collins,IA,Story County,32.5
+50056,Colo,IA,Story County,32.5
+50057,Columbia,IA,Marion County,32.5
+52737,Columbus City,IA,Louisa County,32.5
+52738,Columbus Junction,IA,Louisa County,32.5
+50620,Colwell,IA,Floyd County,32.5
+52739,Conesville,IA,Muscatine County,32.5
+50621,Conrad,IA,Grundy County,32.5
+52220,Conroy,IA,Iowa County,32.5
+50059,Cooper,IA,Greene County,32.5
+52241,Coralville,IA,Johnson County,32.5
+50841,Corning,IA,Adams County,32.5
+50060,Corydon,IA,Wayne County,32.5
+51501,Council Bluffs,IA,Pottawattamie County,32.5
+51502,Council Bluffs,IA,Pottawattamie County,32.5
+51503,Council Bluffs,IA,Pottawattamie County,32.5
+52621,Crawfordsville,IA,Washington County,32.5
+51526,Crescent,IA,Pottawattamie County,32.5
+52136,Cresco,IA,Howard County,32.5
+50801,Creston,IA,Union County,32.5
+50842,Cromwell,IA,Union County,32.5
+50843,Cumberland,IA,Cass County,32.5
+50061,Cumming,IA,Warren County,32.5
+50063,Dallas Center,IA,Dallas County,32.5
+50064,Dana,IA,Greene County,32.5
+52623,Danville,IA,Des Moines County,32.5
+52801,Davenport,IA,Scott County,32.5
+52802,Davenport,IA,Scott County,32.5
+52803,Davenport,IA,Scott County,32.5
+52804,Davenport,IA,Scott County,32.5
+52805,Davenport,IA,Scott County,32.5
+52806,Davenport,IA,Scott County,32.5
+52807,Davenport,IA,Scott County,32.5
+52808,Davenport,IA,Scott County,32.5
+52809,Davenport,IA,Scott County,32.5
+50065,Davis City,IA,Decatur County,32.5
+50066,Dawson,IA,Dallas County,32.5
+50530,Dayton,IA,Webster County,32.5
+50069,De Soto,IA,Dallas County,32.5
+52742,De Witt,IA,Clinton County,32.5
+50067,Decatur,IA,Decatur County,32.5
+52101,Decorah,IA,Winneshiek County,32.5
+52222,Deep River,IA,Poweshiek County,32.5
+51527,Defiance,IA,Shelby County,32.5
+52036,Delaware,IA,Delaware County,32.5
+52223,Delhi,IA,Delaware County,32.5
+52037,Delmar,IA,Clinton County,32.5
+52550,Delta,IA,Keokuk County,32.5
+52624,Denmark,IA,Lee County,32.5
+50622,Denver,IA,Bremer County,32.5
+50068,Derby,IA,Lucas County,32.5
+50301,Des Moines,IA,Polk County,32.5
+50302,Des Moines,IA,Polk County,32.5
+50303,Des Moines,IA,Polk County,32.5
+50304,Des Moines,IA,Polk County,32.5
+50305,Des Moines,IA,Polk County,32.5
+50306,Des Moines,IA,Polk County,32.5
+50307,Des Moines,IA,Polk County,32.5
+50308,Des Moines,IA,Polk County,32.5
+50309,Des Moines,IA,Polk County,32.5
+50310,Des Moines,IA,Polk County,32.5
+50311,Des Moines,IA,Polk County,32.5
+50312,Des Moines,IA,Polk County,32.5
+50313,Des Moines,IA,Polk County,32.5
+50314,Des Moines,IA,Polk County,32.5
+50315,Des Moines,IA,Polk County,32.5
+50316,Des Moines,IA,Polk County,32.5
+50317,Des Moines,IA,Polk County,32.5
+50318,Des Moines,IA,Polk County,32.5
+50319,Des Moines,IA,Polk County,32.5
+50320,Des Moines,IA,Polk County,32.5
+50321,Des Moines,IA,Polk County,32.5
+50328,Des Moines,IA,Polk County,32.5
+50329,Des Moines,IA,Polk County,32.5
+50330,Des Moines,IA,Polk County,32.5
+50331,Des Moines,IA,Polk County,32.5
+50332,Des Moines,IA,Polk County,32.5
+50333,Des Moines,IA,Polk County,32.5
+50334,Des Moines,IA,Polk County,32.5
+50335,Des Moines,IA,Polk County,32.5
+50336,Des Moines,IA,Polk County,32.5
+50339,Des Moines,IA,Polk County,32.5
+50340,Des Moines,IA,Polk County,32.5
+50359,Des Moines,IA,Polk County,32.5
+50360,Des Moines,IA,Polk County,32.5
+50361,Des Moines,IA,Polk County,32.5
+50362,Des Moines,IA,Polk County,32.5
+50363,Des Moines,IA,Polk County,32.5
+50364,Des Moines,IA,Polk County,32.5
+50367,Des Moines,IA,Polk County,32.5
+50368,Des Moines,IA,Polk County,32.5
+50369,Des Moines,IA,Polk County,32.5
+50380,Des Moines,IA,Polk County,32.5
+50381,Des Moines,IA,Polk County,32.5
+50391,Des Moines,IA,Polk County,32.5
+50392,Des Moines,IA,Polk County,32.5
+50393,Des Moines,IA,Polk County,32.5
+50394,Des Moines,IA,Polk County,32.5
+50395,Des Moines,IA,Polk County,32.5
+50396,Des Moines,IA,Polk County,32.5
+50936,Des Moines,IA,Polk County,32.5
+50940,Des Moines,IA,Polk County,32.5
+50947,Des Moines,IA,Polk County,32.5
+50980,Des Moines,IA,Polk County,32.5
+50981,Des Moines,IA,Polk County,32.5
+50623,Dewar,IA,Black Hawk County,32.5
+50070,Dexter,IA,Dallas County,32.5
+50845,Diagonal,IA,Ringgold County,32.5
+50624,Dike,IA,Grundy County,32.5
+52745,Dixon,IA,Scott County,32.5
+52746,Donahue,IA,Scott County,32.5
+52625,Donnellson,IA,Lee County,32.5
+52140,Dorchester,IA,Allamakee County,32.5
+52551,Douds,IA,Van Buren County,32.5
+50433,Dougherty,IA,Cerro Gordo County,32.5
+52552,Drakesville,IA,Davis County,32.5
+52001,Dubuque,IA,Dubuque County,32.5
+52002,Dubuque,IA,Dubuque County,32.5
+52003,Dubuque,IA,Dubuque County,32.5
+52004,Dubuque,IA,Dubuque County,32.5
+52099,Dubuque,IA,Dubuque County,32.5
+50625,Dumont,IA,Butler County,32.5
+50532,Duncombe,IA,Webster County,32.5
+52038,Dundee,IA,Delaware County,32.5
+50626,Dunkerton,IA,Black Hawk County,32.5
+51529,Dunlap,IA,Harrison County,32.5
+52039,Durango,IA,Dubuque County,32.5
+52747,Durant,IA,Cedar County,32.5
+52040,Dyersville,IA,Dubuque County,32.5
+52224,Dysart,IA,Tama County,32.5
+50072,Earlham,IA,Madison County,32.5
+51530,Earling,IA,Shelby County,32.5
+52041,Earlville,IA,Delaware County,32.5
+52553,Eddyville,IA,Wapello County,32.5
+52042,Edgewood,IA,Clayton County,32.5
+52225,Elberon,IA,Tama County,32.5
+52554,Eldon,IA,Wapello County,32.5
+50627,Eldora,IA,Hardin County,32.5
+52748,Eldridge,IA,Scott County,32.5
+52141,Elgin,IA,Fayette County,32.5
+51531,Elk Horn,IA,Shelby County,32.5
+52043,Elkader,IA,Clayton County,32.5
+50073,Elkhart,IA,Polk County,32.5
+52044,Elkport,IA,Clayton County,32.5
+51532,Elliott,IA,Montgomery County,32.5
+50074,Ellston,IA,Ringgold County,32.5
+50075,Ellsworth,IA,Hamilton County,32.5
+50628,Elma,IA,Howard County,32.5
+52227,Ely,IA,Linn County,32.5
+51533,Emerson,IA,Mills County,32.5
+52045,Epworth,IA,Dubuque County,32.5
+51638,Essex,IA,Page County,32.5
+50707,Evansdale,IA,Black Hawk County,32.5
+50076,Exira,IA,Audubon County,32.5
+52555,Exline,IA,Appanoose County,32.5
+50629,Fairbank,IA,Buchanan County,32.5
+52228,Fairfax,IA,Linn County,32.5
+52556,Fairfield,IA,Jefferson County,32.5
+52557,Fairfield,IA,Jefferson County,32.5
+52046,Farley,IA,Dubuque County,32.5
+52047,Farmersburg,IA,Clayton County,32.5
+52626,Farmington,IA,Van Buren County,32.5
+51639,Farragut,IA,Fremont County,32.5
+52142,Fayette,IA,Fayette County,32.5
+50078,Ferguson,IA,Marshall County,32.5
+52560,Floris,IA,Davis County,32.5
+50435,Floyd,IA,Floyd County,32.5
+50846,Fontanelle,IA,Adair County,32.5
+52144,Fort Atkinson,IA,Winneshiek County,32.5
+50501,Fort Dodge,IA,Webster County,32.5
+52627,Fort Madison,IA,Lee County,32.5
+50630,Fredericksburg,IA,Chickasaw County,32.5
+50631,Frederika,IA,Bremer County,32.5
+52561,Fremont,IA,Mahaska County,32.5
+52749,Fruitland,IA,Muscatine County,32.5
+52048,Garber,IA,Clayton County,32.5
+50102,Garden City,IA,Hardin County,32.5
+50103,Garden Grove,IA,Decatur County,32.5
+52049,Garnavillo,IA,Clayton County,32.5
+52229,Garrison,IA,Benton County,32.5
+50632,Garwin,IA,Tama County,32.5
+50633,Geneva,IA,Franklin County,32.5
+50104,Gibson,IA,Keokuk County,32.5
+50259,Gifford,IA,Hardin County,32.5
+50105,Gilbert,IA,Story County,32.5
+50634,Gilbertville,IA,Black Hawk County,32.5
+50106,Gilman,IA,Marshall County,32.5
+50635,Gladbrook,IA,Tama County,32.5
+51534,Glenwood,IA,Mills County,32.5
+52750,Goose Lake,IA,Clinton County,32.5
+50543,Gowrie,IA,Webster County,32.5
+50440,Grafton,IA,Worth County,32.5
+50107,Grand Junction,IA,Greene County,32.5
+52751,Grand Mound,IA,Clinton County,32.5
+50108,Grand River,IA,Decatur County,32.5
+52752,Grandview,IA,Louisa County,32.5
+50109,Granger,IA,Polk County,32.5
+50847,Grant,IA,Montgomery County,32.5
+50848,Gravity,IA,Taylor County,32.5
+50110,Gray,IA,Audubon County,32.5
+52050,Greeley,IA,Delaware County,32.5
+50636,Greene,IA,Butler County,32.5
+50849,Greenfield,IA,Adair County,32.5
+50111,Grimes,IA,Polk County,32.5
+50112,Grinnell,IA,Poweshiek County,32.5
+51535,Griswold,IA,Cass County,32.5
+50638,Grundy Center,IA,Grundy County,32.5
+52221,Guernsey,IA,Poweshiek County,32.5
+50115,Guthrie Center,IA,Guthrie County,32.5
+52052,Guttenberg,IA,Clayton County,32.5
+51640,Hamburg,IA,Fremont County,32.5
+50116,Hamilton,IA,Marion County,32.5
+50117,Hamlin,IA,Audubon County,32.5
+50441,Hampton,IA,Franklin County,32.5
+51536,Hancock,IA,Pottawattamie County,32.5
+50544,Harcourt,IA,Webster County,32.5
+51537,Harlan,IA,Shelby County,32.5
+51593,Harlan,IA,Shelby County,32.5
+52231,Harper,IA,Keokuk County,32.5
+52146,Harpers Ferry,IA,Allamakee County,32.5
+50118,Hartford,IA,Warren County,32.5
+52232,Hartwick,IA,Poweshiek County,32.5
+50119,Harvey,IA,Marion County,32.5
+51540,Hastings,IA,Mills County,32.5
+50120,Haverhill,IA,Marshall County,32.5
+52147,Hawkeye,IA,Fayette County,32.5
+52562,Hayesville,IA,Keokuk County,32.5
+50641,Hazleton,IA,Buchanan County,32.5
+52563,Hedrick,IA,Keokuk County,32.5
+51541,Henderson,IA,Mills County,32.5
+52233,Hiawatha,IA,Linn County,32.5
+52149,Highlandville,IA,Winneshiek County,32.5
+52235,Hills,IA,Johnson County,32.5
+52630,Hillsboro,IA,Henry County,32.5
+50642,Holland,IA,Grundy County,32.5
+52053,Holy Cross,IA,Dubuque County,32.5
+52236,Homestead,IA,Iowa County,32.5
+51542,Honey Creek,IA,Pottawattamie County,32.5
+52237,Hopkinton,IA,Delaware County,32.5
+52631,Houghton,IA,Lee County,32.5
+50122,Hubbard,IA,Hardin County,32.5
+50643,Hudson,IA,Black Hawk County,32.5
+50123,Humeston,IA,Wayne County,32.5
+50124,Huxley,IA,Story County,32.5
+51645,Imogene,IA,Fremont County,32.5
+50644,Independence,IA,Buchanan County,32.5
+50125,Indianola,IA,Warren County,32.5
+50645,Ionia,IA,Chickasaw County,32.5
+52240,Iowa City,IA,Johnson County,32.5
+52242,Iowa City,IA,Johnson County,32.5
+52243,Iowa City,IA,Johnson County,32.5
+52244,Iowa City,IA,Johnson County,32.5
+52245,Iowa City,IA,Johnson County,32.5
+52246,Iowa City,IA,Johnson County,32.5
+50126,Iowa Falls,IA,Hardin County,32.5
+50127,Ira,IA,Jasper County,32.5
+51446,Irwin,IA,Shelby County,32.5
+50128,Jamaica,IA,Guthrie County,32.5
+50647,Janesville,IA,Bremer County,32.5
+50129,Jefferson,IA,Greene County,32.5
+50648,Jesup,IA,Buchanan County,32.5
+50130,Jewell,IA,Hamilton County,32.5
+50131,Johnston,IA,Polk County,32.5
+52247,Kalona,IA,Washington County,32.5
+50132,Kamrar,IA,Hamilton County,32.5
+50133,Kellerton,IA,Ringgold County,32.5
+50134,Kelley,IA,Story County,32.5
+50135,Kellogg,IA,Jasper County,32.5
+50448,Kensett,IA,Worth County,32.5
+52632,Keokuk,IA,Lee County,32.5
+52565,Keosauqua,IA,Van Buren County,32.5
+52248,Keota,IA,Keokuk County,32.5
+50649,Kesley,IA,Butler County,32.5
+50136,Keswick,IA,Keokuk County,32.5
+52249,Keystone,IA,Benton County,32.5
+50137,Killduff,IA,Jasper County,32.5
+51543,Kimballton,IA,Audubon County,32.5
+51447,Kirkman,IA,Shelby County,32.5
+52566,Kirkville,IA,Wapello County,32.5
+50138,Knoxville,IA,Marion County,32.5
+52054,La Motte,IA,Jackson County,32.5
+50651,La Porte City,IA,Black Hawk County,32.5
+50139,Lacona,IA,Warren County,32.5
+52251,Ladora,IA,Iowa County,32.5
+50140,Lamoni,IA,Decatur County,32.5
+50650,Lamont,IA,Buchanan County,32.5
+52252,Langworthy,IA,Jones County,32.5
+52151,Lansing,IA,Allamakee County,32.5
+50141,Laurel,IA,Marshall County,32.5
+52154,Lawler,IA,Chickasaw County,32.5
+52753,Le Claire,IA,Scott County,32.5
+50142,Le Grand,IA,Marshall County,32.5
+50557,Lehigh,IA,Webster County,32.5
+50143,Leighton,IA,Mahaska County,32.5
+50851,Lenox,IA,Taylor County,32.5
+50144,Leon,IA,Decatur County,32.5
+52754,Letts,IA,Louisa County,32.5
+51544,Lewis,IA,Cass County,32.5
+50145,Liberty Center,IA,Warren County,32.5
+52567,Libertyville,IA,Jefferson County,32.5
+52155,Lime Springs,IA,Howard County,32.5
+50652,Lincoln,IA,Tama County,32.5
+50146,Linden,IA,Dallas County,32.5
+50147,Lineville,IA,Wayne County,32.5
+52253,Lisbon,IA,Linn County,32.5
+50148,Liscomb,IA,Marshall County,32.5
+50454,Little Cedar,IA,Mitchell County,32.5
+51545,Little Sioux,IA,Harrison County,32.5
+52635,Lockridge,IA,Jefferson County,32.5
+51546,Logan,IA,Harrison County,32.5
+52755,Lone Tree,IA,Johnson County,32.5
+52756,Long Grove,IA,Scott County,32.5
+50149,Lorimor,IA,Union County,32.5
+52254,Lost Nation,IA,Clinton County,32.5
+50150,Lovilia,IA,Monroe County,32.5
+52757,Low Moor,IA,Clinton County,32.5
+52255,Lowden,IA,Cedar County,32.5
+52156,Luana,IA,Clayton County,32.5
+50151,Lucas,IA,Lucas County,32.5
+50152,Luther,IA,Boone County,32.5
+52056,Luxemburg,IA,Dubuque County,32.5
+52257,Luzerne,IA,Benton County,32.5
+50153,Lynnville,IA,Jasper County,32.5
+51549,Macedonia,IA,Pottawattamie County,32.5
+50155,Macksburg,IA,Madison County,32.5
+50156,Madrid,IA,Boone County,32.5
+51550,Magnolia,IA,Harrison County,32.5
+50157,Malcom,IA,Poweshiek County,32.5
+51551,Malvern,IA,Mills County,32.5
+52057,Manchester,IA,Delaware County,32.5
+50456,Manly,IA,Worth County,32.5
+52060,Maquoketa,IA,Jackson County,32.5
+50653,Marble Rock,IA,Floyd County,32.5
+52301,Marengo,IA,Iowa County,32.5
+52302,Marion,IA,Linn County,32.5
+51552,Marne,IA,Cass County,32.5
+52158,Marquette,IA,Clayton County,32.5
+50158,Marshalltown,IA,Marshall County,32.5
+52305,Martelle,IA,Jones County,32.5
+50160,Martensdale,IA,Warren County,32.5
+52568,Martinsburg,IA,Keokuk County,32.5
+50401,Mason City,IA,Cerro Gordo County,32.5
+50402,Mason City,IA,Cerro Gordo County,32.5
+50654,Masonville,IA,Delaware County,32.5
+50853,Massena,IA,Cass County,32.5
+50161,Maxwell,IA,Story County,32.5
+50655,Maynard,IA,Fayette County,32.5
+50154,McCallsburg,IA,Story County,32.5
+52758,McCausland,IA,Scott County,32.5
+51548,McClelland,IA,Pottawattamie County,32.5
+52157,McGregor,IA,Clayton County,32.5
+50455,McIntire,IA,Mitchell County,32.5
+52306,Mechanicsville,IA,Cedar County,32.5
+52637,Mediapolis,IA,Des Moines County,32.5
+50162,Melbourne,IA,Marshall County,32.5
+50062,Melcher Dallas,IA,Marion County,32.5
+50163,Melcher Dallas,IA,Marion County,32.5
+52569,Melrose,IA,Monroe County,32.5
+50164,Menlo,IA,Guthrie County,32.5
+52307,Middle Amana,IA,Iowa County,32.5
+52638,Middletown,IA,Des Moines County,32.5
+52064,Miles,IA,Jackson County,32.5
+52308,Millersburg,IA,Iowa County,32.5
+50165,Millerton,IA,Wayne County,32.5
+50166,Milo,IA,Warren County,32.5
+52570,Milton,IA,Van Buren County,32.5
+50167,Minburn,IA,Dallas County,32.5
+51553,Minden,IA,Pottawattamie County,32.5
+51554,Mineola,IA,Mills County,32.5
+50168,Mingo,IA,Jasper County,32.5
+51555,Missouri Valley,IA,Harrison County,32.5
+50169,Mitchellville,IA,Polk County,32.5
+51556,Modale,IA,Harrison County,32.5
+51557,Mondamin,IA,Harrison County,32.5
+52309,Monmouth,IA,Jackson County,32.5
+52159,Monona,IA,Clayton County,32.5
+50170,Monroe,IA,Jasper County,32.5
+50171,Montezuma,IA,Poweshiek County,32.5
+52310,Monticello,IA,Jones County,32.5
+50173,Montour,IA,Tama County,32.5
+52759,Montpelier,IA,Muscatine County,32.5
+52639,Montrose,IA,Lee County,32.5
+50566,Moorland,IA,Webster County,32.5
+52571,Moravia,IA,Appanoose County,32.5
+52312,Morley,IA,Jones County,32.5
+52640,Morning Sun,IA,Louisa County,32.5
+50657,Morrison,IA,Grundy County,32.5
+52760,Moscow,IA,Muscatine County,32.5
+52572,Moulton,IA,Appanoose County,32.5
+52313,Mount Auburn,IA,Benton County,32.5
+50854,Mount Ayr,IA,Ringgold County,32.5
+52641,Mount Pleasant,IA,Henry County,32.5
+52573,Mount Sterling,IA,Van Buren County,32.5
+52644,Mount Union,IA,Henry County,32.5
+52314,Mount Vernon,IA,Linn County,32.5
+50174,Murray,IA,Clarke County,32.5
+52761,Muscatine,IA,Muscatine County,32.5
+52574,Mystic,IA,Appanoose County,32.5
+50658,Nashua,IA,Chickasaw County,32.5
+51559,Neola,IA,Pottawattamie County,32.5
+50201,Nevada,IA,Story County,32.5
+52160,New Albin,IA,Allamakee County,32.5
+50659,New Hampton,IA,Chickasaw County,32.5
+50660,New Hartford,IA,Butler County,32.5
+52765,New Liberty,IA,Scott County,32.5
+52645,New London,IA,Henry County,32.5
+51646,New Market,IA,Taylor County,32.5
+50206,New Providence,IA,Hardin County,32.5
+50207,New Sharon,IA,Mahaska County,32.5
+52065,New Vienna,IA,Dubuque County,32.5
+50210,New Virginia,IA,Warren County,32.5
+52315,Newhall,IA,Benton County,32.5
+50208,Newton,IA,Jasper County,32.5
+52766,Nichols,IA,Muscatine County,32.5
+50857,Nodaway,IA,Adams County,32.5
+50458,Nora Springs,IA,Floyd County,32.5
+52066,North Buena Vista,IA,Clayton County,32.5
+52316,North English,IA,Iowa County,32.5
+52317,North Liberty,IA,Johnson County,32.5
+50661,North Washington,IA,Chickasaw County,32.5
+51647,Northboro,IA,Page County,32.5
+50459,Northwood,IA,Worth County,32.5
+50211,Norwalk,IA,Warren County,32.5
+52318,Norway,IA,Benton County,32.5
+52319,Oakdale,IA,Johnson County,32.5
+51560,Oakland,IA,Pottawattamie County,32.5
+52646,Oakville,IA,Louisa County,32.5
+50662,Oelwein,IA,Fayette County,32.5
+50212,Ogden,IA,Boone County,32.5
+52647,Olds,IA,Henry County,32.5
+52320,Olin,IA,Jones County,32.5
+52576,Ollie,IA,Keokuk County,32.5
+52321,Onslow,IA,Jones County,32.5
+50664,Oran,IA,Fayette County,32.5
+50460,Orchard,IA,Mitchell County,32.5
+50858,Orient,IA,Adair County,32.5
+50461,Osage,IA,Mitchell County,32.5
+50213,Osceola,IA,Clarke County,32.5
+52577,Oskaloosa,IA,Mahaska County,32.5
+52161,Ossian,IA,Winneshiek County,32.5
+50569,Otho,IA,Webster County,32.5
+50214,Otley,IA,Marion County,32.5
+52501,Ottumwa,IA,Wapello County,32.5
+52322,Oxford,IA,Johnson County,32.5
+52323,Oxford Junction,IA,Jones County,32.5
+51561,Pacific Junction,IA,Mills County,32.5
+52580,Packwood,IA,Jefferson County,32.5
+52324,Palo,IA,Linn County,32.5
+51562,Panama,IA,Shelby County,32.5
+50216,Panora,IA,Guthrie County,32.5
+50665,Parkersburg,IA,Butler County,32.5
+52325,Parnell,IA,Iowa County,32.5
+50217,Paton,IA,Greene County,32.5
+50218,Patterson,IA,Madison County,32.5
+50219,Pella,IA,Marion County,32.5
+52068,Peosta,IA,Dubuque County,32.5
+51648,Percival,IA,Fremont County,32.5
+50220,Perry,IA,Dallas County,32.5
+51563,Persia,IA,Harrison County,32.5
+50222,Peru,IA,Madison County,32.5
+52648,Pilot Grove,IA,Lee County,32.5
+50223,Pilot Mound,IA,Boone County,32.5
+51564,Pisgah,IA,Harrison County,32.5
+50666,Plainfield,IA,Bremer County,32.5
+52581,Plano,IA,Appanoose County,32.5
+50327,Pleasant Hill,IA,Polk County,32.5
+52767,Pleasant Valley,IA,Scott County,32.5
+50225,Pleasantville,IA,Marion County,32.5
+50464,Plymouth,IA,Cerro Gordo County,32.5
+50226,Polk City,IA,Polk County,32.5
+51565,Portsmouth,IA,Shelby County,32.5
+52162,Postville,IA,Allamakee County,32.5
+50228,Prairie City,IA,Jasper County,32.5
+52219,Prairieburg,IA,Linn County,32.5
+50859,Prescott,IA,Adams County,32.5
+52069,Preston,IA,Jackson County,32.5
+52768,Princeton,IA,Scott County,32.5
+50229,Prole,IA,Warren County,32.5
+52583,Promise City,IA,Wayne County,32.5
+52163,Protivin,IA,Howard County,32.5
+52584,Pulaski,IA,Davis County,32.5
+52326,Quasqueton,IA,Buchanan County,32.5
+50230,Radcliffe,IA,Hardin County,32.5
+52164,Randalia,IA,Fayette County,32.5
+50231,Randall,IA,Hamilton County,32.5
+51649,Randolph,IA,Fremont County,32.5
+50667,Raymond,IA,Black Hawk County,32.5
+50668,Readlyn,IA,Bremer County,32.5
+50232,Reasnor,IA,Jasper County,32.5
+51566,Red Oak,IA,Montgomery County,32.5
+51591,Red Oak,IA,Montgomery County,32.5
+50860,Redding,IA,Ringgold County,32.5
+50233,Redfield,IA,Dallas County,32.5
+50669,Reinbeck,IA,Grundy County,32.5
+50234,Rhodes,IA,Marshall County,32.5
+50466,Riceville,IA,Mitchell County,32.5
+52585,Richland,IA,Keokuk County,32.5
+52165,Ridgeway,IA,Winneshiek County,32.5
+50235,Rippey,IA,Greene County,32.5
+52327,Riverside,IA,Washington County,32.5
+51650,Riverton,IA,Fremont County,32.5
+52328,Robins,IA,Linn County,32.5
+50467,Rock Falls,IA,Cerro Gordo County,32.5
+50468,Rockford,IA,Floyd County,32.5
+50469,Rockwell,IA,Cerro Gordo County,32.5
+50236,Roland,IA,Story County,32.5
+52642,Rome,IA,Henry County,32.5
+52586,Rose Hill,IA,Mahaska County,32.5
+52329,Rowley,IA,Buchanan County,32.5
+50471,Rudd,IA,Floyd County,32.5
+50237,Runnells,IA,Polk County,32.5
+50238,Russell,IA,Lucas County,32.5
+52330,Ryan,IA,Delaware County,32.5
+52070,Sabula,IA,Jackson County,32.5
+50472,Saint Ansgar,IA,Mitchell County,32.5
+50239,Saint Anthony,IA,Marshall County,32.5
+50240,Saint Charles,IA,Madison County,32.5
+52071,Saint Donatus,IA,Jackson County,32.5
+52166,Saint Lucas,IA,Fayette County,32.5
+50241,Saint Marys,IA,Warren County,32.5
+52072,Saint Olaf,IA,Clayton County,32.5
+52657,Saint Paul,IA,Lee County,32.5
+52649,Salem,IA,Henry County,32.5
+51462,Scranton,IA,Greene County,32.5
+50242,Searsboro,IA,Poweshiek County,32.5
+52588,Selma,IA,Van Buren County,32.5
+52590,Seymour,IA,Wayne County,32.5
+51651,Shambaugh,IA,Page County,32.5
+50861,Shannon City,IA,Union County,32.5
+50862,Sharpsburg,IA,Taylor County,32.5
+50475,Sheffield,IA,Franklin County,32.5
+51570,Shelby,IA,Shelby County,32.5
+50243,Sheldahl,IA,Polk County,32.5
+50670,Shell Rock,IA,Butler County,32.5
+52332,Shellsburg,IA,Benton County,32.5
+51601,Shenandoah,IA,Page County,32.5
+51603,Shenandoah,IA,Page County,32.5
+52073,Sherrill,IA,Dubuque County,32.5
+51652,Sidney,IA,Fremont County,32.5
+52591,Sigourney,IA,Keokuk County,32.5
+51571,Silver City,IA,Mills County,32.5
+50244,Slater,IA,Story County,32.5
+52333,Solon,IA,Johnson County,32.5
+50586,Somers,IA,Calhoun County,32.5
+52334,South Amana,IA,Iowa County,32.5
+52335,South English,IA,Keokuk County,32.5
+52650,Sperry,IA,Des Moines County,32.5
+52168,Spillville,IA,Winneshiek County,32.5
+52074,Spragueville,IA,Jackson County,32.5
+52075,Springbrook,IA,Jackson County,32.5
+52336,Springville,IA,Linn County,32.5
+50476,Stacyville,IA,Mitchell County,32.5
+50246,Stanhope,IA,Hamilton County,32.5
+50671,Stanley,IA,Buchanan County,32.5
+51573,Stanton,IA,Montgomery County,32.5
+52337,Stanwood,IA,Cedar County,32.5
+50247,State Center,IA,Marshall County,32.5
+50672,Steamboat Rock,IA,Hardin County,32.5
+52651,Stockport,IA,Van Buren County,32.5
+52769,Stockton,IA,Muscatine County,32.5
+50248,Story City,IA,Story County,32.5
+50673,Stout,IA,Grundy County,32.5
+50249,Stratford,IA,Hamilton County,32.5
+52076,Strawberry Point,IA,Clayton County,32.5
+50250,Stuart,IA,Guthrie County,32.5
+50251,Sully,IA,Jasper County,32.5
+50674,Sumner,IA,Bremer County,32.5
+50477,Swaledale,IA,Cerro Gordo County,32.5
+50252,Swan,IA,Marion County,32.5
+52652,Swedesburg,IA,Henry County,32.5
+52338,Swisher,IA,Johnson County,32.5
+51653,Tabor,IA,Fremont County,32.5
+52339,Tama,IA,Tama County,32.5
+52771,Teeds Grove,IA,Clinton County,32.5
+50254,Thayer,IA,Union County,32.5
+50255,Thornburg,IA,Keokuk County,32.5
+51654,Thurman,IA,Fremont County,32.5
+52340,Tiffin,IA,Johnson County,32.5
+50863,Tingley,IA,Ringgold County,32.5
+52772,Tipton,IA,Cedar County,32.5
+52341,Toddville,IA,Linn County,32.5
+50481,Toeterville,IA,Mitchell County,32.5
+52342,Toledo,IA,Tama County,32.5
+50256,Tracy,IA,Marion County,32.5
+50675,Traer,IA,Tama County,32.5
+51575,Treynor,IA,Pottawattamie County,32.5
+50676,Tripoli,IA,Bremer County,32.5
+52344,Troy Mills,IA,Linn County,32.5
+50257,Truro,IA,Madison County,32.5
+52593,Udell,IA,Appanoose County,32.5
+51576,Underwood,IA,Pottawattamie County,32.5
+50258,Union,IA,Hardin County,32.5
+52594,Unionville,IA,Appanoose County,32.5
+52595,University Park,IA,Mahaska County,32.5
+52345,Urbana,IA,Benton County,32.5
+50322,Urbandale,IA,Polk County,32.5
+50323,Urbandale,IA,Dallas County,32.5
+50398,Urbandale,IA,Polk County,32.5
+52346,Van Horne,IA,Benton County,32.5
+50261,Van Meter,IA,Dallas County,32.5
+50262,Van Wert,IA,Decatur County,32.5
+52347,Victor,IA,Iowa County,32.5
+50864,Villisca,IA,Montgomery County,32.5
+50594,Vincent,IA,Webster County,32.5
+52348,Vining,IA,Tama County,32.5
+52349,Vinton,IA,Benton County,32.5
+52350,Viola,IA,Linn County,32.5
+52077,Volga,IA,Clayton County,32.5
+52169,Wadena,IA,Fayette County,32.5
+52773,Walcott,IA,Scott County,32.5
+52351,Walford,IA,Benton County,32.5
+52352,Walker,IA,Linn County,32.5
+51577,Walnut,IA,Pottawattamie County,32.5
+52653,Wapello,IA,Louisa County,32.5
+52353,Washington,IA,Washington County,32.5
+50701,Waterloo,IA,Black Hawk County,32.5
+50702,Waterloo,IA,Black Hawk County,32.5
+50703,Waterloo,IA,Black Hawk County,32.5
+50704,Waterloo,IA,Black Hawk County,32.5
+50706,Waterloo,IA,Black Hawk County,32.5
+52170,Waterville,IA,Allamakee County,32.5
+52354,Watkins,IA,Benton County,32.5
+52171,Waucoma,IA,Fayette County,32.5
+50263,Waukee,IA,Dallas County,32.5
+52172,Waukon,IA,Allamakee County,32.5
+50677,Waverly,IA,Bremer County,32.5
+52654,Wayland,IA,Henry County,32.5
+52355,Webster,IA,Keokuk County,32.5
+50595,Webster City,IA,Hamilton County,32.5
+50264,Weldon,IA,Decatur County,32.5
+52356,Wellman,IA,Washington County,32.5
+50680,Wellsburg,IA,Grundy County,32.5
+52774,Welton,IA,Clinton County,32.5
+52358,West Branch,IA,Cedar County,32.5
+52655,West Burlington,IA,Des Moines County,32.5
+52359,West Chester,IA,Washington County,32.5
+50265,West Des Moines,IA,Polk County,32.5
+50266,West Des Moines,IA,Dallas County,32.5
+52538,West Grove,IA,Davis County,32.5
+52776,West Liberty,IA,Muscatine County,32.5
+52656,West Point,IA,Lee County,32.5
+52175,West Union,IA,Fayette County,32.5
+50681,Westgate,IA,Fayette County,32.5
+51578,Westphalia,IA,Shelby County,32.5
+52658,Wever,IA,Lee County,32.5
+50268,What Cheer,IA,Keokuk County,32.5
+52777,Wheatland,IA,Clinton County,32.5
+50269,Whitten,IA,Hardin County,32.5
+50271,Williams,IA,Hamilton County,32.5
+52361,Williamsburg,IA,Iowa County,32.5
+50272,Williamson,IA,Lucas County,32.5
+52778,Wilton,IA,Muscatine County,32.5
+50324,Windsor Heights,IA,Polk County,32.5
+52659,Winfield,IA,Henry County,32.5
+50273,Winterset,IA,Madison County,32.5
+50682,Winthrop,IA,Buchanan County,32.5
+50274,Wiota,IA,Cass County,32.5
+51579,Woodbine,IA,Harrison County,32.5
+50275,Woodburn,IA,Clarke County,32.5
+50276,Woodward,IA,Dallas County,32.5
+52078,Worthington,IA,Dubuque County,32.5
+52362,Wyoming,IA,Jones County,32.5
+50277,Yale,IA,Guthrie County,32.5
+52660,Yarmouth,IA,Des Moines County,32.5
+51656,Yorktown,IA,Page County,32.5
+50278,Zearing,IA,Story County,32.5
+52079,Zwingle,IA,Jackson County,32.5

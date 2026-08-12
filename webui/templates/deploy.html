@@ -1,0 +1,126 @@
+{% extends "base.html" %}{% block body %}
+<div class="head"><h1>Deploy</h1>
+  <p class="sub">A site deploys only if it is <strong>shipped</strong> — it passed the QA gate
+  and the SEO gate in the same build. Preview never asks that; deploy always does.</p></div>
+
+<div class="card">
+  <h2>Credentials</h2>
+  <p class="sub">Global — one GitHub account, one Cloudflare account. Written to
+  <code>data/secrets.yaml</code> at 0600, added to <code>.gitignore</code>, and redacted out of every
+  command line and log line this page shows. They are never rendered back here, so a field
+  reads <em>set</em> or <em>not set</em> and nothing more.</p>
+  <form method="post" action="{{ url_for('deploy_credentials') }}">
+    {% for key, label in secret_keys.items() %}
+    <label>{{ label }}
+      <span class="pill {{ 'good' if secrets_set[key] else '' }}">{{ 'set' if secrets_set[key] else 'not set' }}</span>
+      <input type="password" name="{{ key }}" autocomplete="off"
+             placeholder="{{ 'leave blank to keep — type __clear__ to remove' if secrets_set[key] else 'paste here' }}">
+    </label>
+    {% endfor %}
+    <p class="note">An environment variable of the same name in capitals wins over the file, so a
+    machine that should not hold credentials on disk does not have to.</p>
+    <div class="foot"><button class="btn">Save credentials</button></div>
+  </form>
+</div>
+
+<form method="post" action="{{ url_for('deploy_run') }}" class="card">
+  <h2>Run</h2>
+  <label>Target<select name="target">
+    {% for t in targets %}<option value="{{ t }}">{{ t }}</option>{% endfor %}
+  </select></label>
+
+  <div class="picklist">
+    {% for r in rows %}
+    {% set ready = r.built and r.shipped %}
+    <label class="pick {{ '' if ready else 'off' }}">
+      <input type="checkbox" name="site" value="{{ r.site_id }}" {{ 'disabled' if not ready }}>
+      <span class="who">{{ r.site_id }}</span>
+      <span class="dim">{{ r.raw.domain }}</span>
+      {% if not r.built %}<span class="pill">not built</span>
+      {% elif not r.shipped %}<span class="pill bad">not shipped</span>
+      {% else %}<span class="pill good">ready</span>{% endif %}
+      {% for t in targets %}{% if cfg.get(r.site_id, {}).get(t) %}<span class="pill">{{ t }}</span>{% endif %}{% endfor %}
+    </label>
+    {% endfor %}
+  </div>
+
+  <label class="inline"><input type="checkbox" name="dry" checked> Dry run — run every
+    check and print the exact commands, execute none of them</label>
+  <p class="note">Leave dry run on the first time you use a target. It is the only way to read the
+  <code>rsync --delete</code> line <em>before</em> it runs rather than after.</p>
+  <div class="foot"><button class="btn">Deploy</button></div>
+</form>
+
+<div class="card">
+  <h2>Per-site settings</h2>
+  <p class="sub">Settings are per site because two sites almost never share a repo or a server path.
+  Only the target you fill in is used.</p>
+
+  {% for r in rows %}
+  <details class="site-deploy" {{ 'open' if request.args.get('site') == r.site_id }}>
+    <summary>{{ r.site_id }} <span class="dim">{{ r.raw.domain }}</span></summary>
+
+    <form method="post" action="{{ url_for('deploy_settings') }}" class="sub-form">
+      <input type="hidden" name="site_id" value="{{ r.site_id }}">
+      <input type="hidden" name="target" value="github">
+      <h3>GitHub</h3>
+      {% set g = cfg.get(r.site_id, {}).get('github', {}) %}
+      <label>Repo URL<input name="f_repo" value="{{ g.repo or '' }}"
+        placeholder="https://github.com/you/{{ r.raw.domain }}.git"></label>
+      <label>Branch<input name="f_branch" value="{{ g.branch or 'main' }}"></label>
+      <label>Public URL <span class="dim">optional</span><input name="f_url" value="{{ g.url or '' }}"></label>
+      <label class="inline"><input type="checkbox" name="pages" {{ 'checked' if g.get('pages', True) }}>
+        GitHub Pages — writes CNAME and .nojekyll</label>
+      <label class="inline"><input type="checkbox" name="force" {{ 'checked' if g.force }}>
+        Force push</label>
+      <p class="note">A working clone is kept in <code>.deploy/{{ r.site_id }}/github</code>, so the second
+      deploy of a large site pushes the diff, not every file again.</p>
+      <div class="foot"><button class="btn sm">Save GitHub</button></div>
+    </form>
+
+    <form method="post" action="{{ url_for('deploy_settings') }}" class="sub-form">
+      <input type="hidden" name="site_id" value="{{ r.site_id }}">
+      <input type="hidden" name="target" value="cloudflare">
+      <h3>Cloudflare</h3>
+      {% set c = cfg.get(r.site_id, {}).get('cloudflare', {}) %}
+      <label>Mode<select name="f_mode">
+        {% for m in ['auto', 'worker', 'pages'] %}
+        <option value="{{ m }}" {{ 'selected' if (c.mode or 'auto') == m }}>{{ m }}</option>{% endfor %}
+      </select></label>
+      <label>Pages project <span class="dim">pages mode only</span><input name="f_project" value="{{ c.project or '' }}"></label>
+      <label>Public URL <span class="dim">optional</span><input name="f_url" value="{{ c.url or '' }}"></label>
+      <p class="note">This is the only target that can serve an edge-rendered site. If the build
+      emitted <code>worker.js</code>, auto deploys the Worker and its assets together.</p>
+      <div class="foot"><button class="btn sm">Save Cloudflare</button></div>
+    </form>
+
+    <form method="post" action="{{ url_for('deploy_settings') }}" class="sub-form">
+      <input type="hidden" name="site_id" value="{{ r.site_id }}">
+      <input type="hidden" name="target" value="server">
+      <h3>Your server</h3>
+      {% set s = cfg.get(r.site_id, {}).get('server', {}) %}
+      <label>Host<input name="f_host" value="{{ s.host or '' }}" placeholder="203.0.113.10"></label>
+      <label>User<input name="f_user" value="{{ s.user or '' }}" placeholder="deploy"></label>
+      <label>Path<input name="f_path" value="{{ s.path or '' }}" placeholder="/var/www/{{ r.raw.domain }}"></label>
+      <label>SSH port <span class="dim">optional</span><input name="f_port" value="{{ s.port or '' }}"></label>
+      <label>SSH key <span class="dim">optional</span><input name="f_key" value="{{ s.key or '' }}" placeholder="~/.ssh/id_ed25519"></label>
+      <p class="note">rsync runs with <code>--delete</code>: anything at that path which is not part of
+      this build is removed. The filesystem root and the usual system directories are refused
+      outright. SSH runs in batch mode, so a missing key fails immediately instead of waiting
+      at a password prompt nobody is watching.</p>
+      <div class="foot"><button class="btn sm">Save server</button></div>
+    </form>
+  </details>
+  {% endfor %}
+</div>
+
+{% if recent %}
+<div class="card">
+  <h2>Recent deploys</h2>
+  {% for j in recent %}
+  <p><a href="{{ url_for('job_status', job_id=j.id) }}">{{ j.id }}</a>
+    <span class="dim">{{ j.targets|join(', ') }} — {{ j.passed }}/{{ j.targets|length }} ok</span></p>
+  {% endfor %}
+</div>
+{% endif %}
+{% endblock %}

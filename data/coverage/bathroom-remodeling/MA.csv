@@ -1,0 +1,160 @@
+zip,city,state,county,payout
+01220,Adams,MA,Berkshire County,34.02
+01001,Agawam,MA,Hampden County,44.63
+01002,Amherst,MA,Hampshire County,44.63
+01810,Andover,MA,Essex County,33.0
+02475,Arlington Heights,MA,Middlesex County,34.02
+01330,Ashfield,MA,Franklin County,44.63
+01331,Athol,MA,Worcester County,33.0
+02322,Avon,MA,Norfolk County,33.0
+01223,Becket,MA,Berkshire County,44.63
+01007,Belchertown,MA,Hampshire County,44.63
+02019,Bellingham,MA,Norfolk County,33.0
+01337,Bernardston,MA,Franklin County,44.63
+01915,Beverly,MA,Essex County,33.0
+01008,Blandford,MA,Hampden County,44.63
+01009,Bondsville,MA,Hampden County,44.63
+02115,Boston,MA,Suffolk County,34.02
+02184,Braintree,MA,Norfolk County,33.0
+02631,Brewster,MA,Barnstable County,33.0
+02324,Bridgewater,MA,Plymouth County,33.0
+01010,Brimfield,MA,Hampden County,44.63
+02301,Brockton,MA,Plymouth County,33.0
+01506,Brookfield,MA,Worcester County,33.0
+02446,Brookline,MA,Norfolk County,33.0
+01338,Buckland,MA,Franklin County,44.63
+01922,Byfield,MA,Essex County,33.0
+02141,Cambridge,MA,Middlesex County,34.02
+02021,Canton,MA,Norfolk County,33.0
+02330,Carver,MA,Plymouth County,33.0
+01011,Chester,MA,Hampden County,44.63
+01012,Chesterfield,MA,Hampshire County,44.63
+01013,Chicopee,MA,Hampden County,34.02
+01020,Chicopee,MA,Hampden County,44.63
+01340,Colrain,MA,Franklin County,44.63
+01341,Conway,MA,Franklin County,44.63
+01026,Cummington,MA,Hampshire County,44.63
+01226,Dalton,MA,Berkshire County,44.63
+01923,Danvers,MA,Essex County,33.0
+02125,Dorchester,MA,Suffolk County,33.0
+02228,East Boston,MA,Suffolk County,34.02
+02641,East Dennis,MA,Barnstable County,33.0
+02536,East Falmouth,MA,Barnstable County,33.0
+01028,East Longmeadow,MA,Hampden County,44.63
+01438,East Templeton,MA,Worcester County,44.63
+02032,East Walpole,MA,Norfolk County,33.0
+02642,Eastham,MA,Barnstable County,33.0
+01027,Easthampton,MA,Hampshire County,44.63
+02540,Falmouth,MA,Barnstable County,33.0
+01030,Feeding Hills,MA,Hampden County,44.63
+01420,Fitchburg,MA,Worcester County,33.0
+02035,Foxboro,MA,Norfolk County,33.0
+01701,Framingham,MA,Middlesex County,33.0
+01930,Gloucester,MA,Essex County,33.0
+01033,Granby,MA,Hampshire County,44.63
+01034,Granville,MA,Hampden County,44.63
+01230,Great Barrington,MA,Berkshire County,44.63
+01301,Greenfield,MA,Franklin County,44.63
+02338,Halifax,MA,Plymouth County,33.0
+01036,Hampden,MA,Hampden County,44.63
+02341,Hanson,MA,Plymouth County,33.0
+01038,Hatfield,MA,Hampshire County,44.63
+01835,Haverhill,MA,Essex County,33.0
+01235,Hinsdale,MA,Berkshire County,44.63
+02343,Holbrook,MA,Norfolk County,33.0
+01520,Holden,MA,Worcester County,33.0
+01746,Holliston,MA,Middlesex County,33.0
+01040,Holyoke,MA,Hampden County,34.02
+02045,Hull,MA,Plymouth County,33.0
+01050,Huntington,MA,Hampshire County,44.63
+02136,Hyde Park,MA,Suffolk County,33.0
+02364,Kingston,MA,Plymouth County,33.0
+02347,Lakeville,MA,Plymouth County,33.0
+01238,Lee,MA,Berkshire County,44.63
+01240,Lenox,MA,Berkshire County,44.63
+01106,Longmeadow,MA,Hampden County,44.63
+01116,Longmeadow,MA,Hampden County,44.63
+01851,Lowell,MA,Middlesex County,33.0
+01056,Ludlow,MA,Hampden County,44.63
+01944,Manchester,MA,Essex County,33.0
+02048,Mansfield,MA,Bristol County,33.0
+01752,Marlborough,MA,Middlesex County,33.0
+02050,Marshfield,MA,Plymouth County,33.0
+02649,Mashpee,MA,Barnstable County,33.0
+01754,Maynard,MA,Middlesex County,33.0
+02155,Medford,MA,Middlesex County,33.0
+01860,Merrimac,MA,Essex County,33.0
+01844,Methuen,MA,Essex County,33.0
+01949,Middleton,MA,Essex County,33.0
+01757,Milford,MA,Worcester County,33.0
+01349,Millers Falls,MA,Franklin County,44.63
+01057,Monson,MA,Hampden County,44.63
+01351,Montague,MA,Franklin County,44.63
+01245,Monterey,MA,Berkshire County,44.63
+01760,Natick,MA,Middlesex County,33.0
+02494,Needham Heights,MA,Norfolk County,33.0
+02745,New Bedford,MA,Bristol County,33.0
+01355,New Salem,MA,Franklin County,44.63
+01845,North Andover,MA,Essex County,33.0
+02191,North Weymouth,MA,Norfolk County,33.0
+01060,Northampton,MA,Hampshire County,44.63
+01360,Northfield,MA,Franklin County,44.63
+02766,Norton,MA,Bristol County,33.0
+01253,Otis,MA,Berkshire County,44.63
+01069,Palmer,MA,Hampden County,44.63
+01612,Paxton,MA,Worcester County,33.0
+02359,Pembroke,MA,Plymouth County,33.0
+01201,Pittsfield,MA,Berkshire County,44.63
+02360,Plymouth,MA,Plymouth County,33.0
+02367,Plympton,MA,Plymouth County,33.0
+02559,Pocasset,MA,Barnstable County,33.0
+02169,Quincy,MA,Norfolk County,33.0
+02171,Quincy,MA,Norfolk County,33.0
+02368,Randolph,MA,Norfolk County,33.0
+01867,Reading,MA,Middlesex County,33.0
+01254,Richmond,MA,Berkshire County,44.63
+02370,Rockland,MA,Plymouth County,33.0
+02131,Roslindale,MA,Suffolk County,33.0
+01071,Russell,MA,Hampden County,44.63
+01952,Salisbury,MA,Essex County,33.0
+01255,Sandisfield,MA,Berkshire County,44.63
+02563,Sandwich,MA,Barnstable County,33.0
+01906,Saugus,MA,Essex County,33.0
+02066,Scituate,MA,Plymouth County,33.0
+02771,Seekonk,MA,Bristol County,33.0
+01370,Shelburne Falls,MA,Franklin County,44.63
+02144,Somerville,MA,Middlesex County,33.0
+01373,South Deerfield,MA,Franklin County,44.63
+01075,South Hadley,MA,Hampshire County,44.63
+02664,South Yarmouth,MA,Barnstable County,33.0
+01077,Southwick,MA,Hampden County,44.63
+01103,Springfield,MA,Hampden County,34.02
+01105,Springfield,MA,Hampden County,34.02
+01119,Springfield,MA,Hampden County,44.63
+01262,Stockbridge,MA,Berkshire County,44.63
+02180,Stoneham,MA,Middlesex County,33.0
+02072,Stoughton,MA,Norfolk County,33.0
+01776,Sudbury,MA,Middlesex County,33.0
+02777,Swansea,MA,Bristol County,33.0
+01468,Templeton,MA,Worcester County,33.0
+01376,Turners Falls,MA,Franklin County,44.63
+02453,Waltham,MA,Middlesex County,33.0
+01082,Ware,MA,Hampshire County,44.63
+01083,Warren,MA,Worcester County,44.63
+02472,Watertown,MA,Middlesex County,33.0
+02482,Wellesley,MA,Norfolk County,33.0
+01084,West Chesterfield,MA,Hampshire County,44.63
+02574,West Falmouth,MA,Barnstable County,33.0
+01089,West Springfield,MA,Hampden County,44.63
+01474,West Townsend,MA,Middlesex County,33.0
+02673,West Yarmouth,MA,Barnstable County,33.0
+01581,Westborough,MA,Worcester County,33.0
+01085,Westfield,MA,Hampden County,44.63
+01093,Whately,MA,Franklin County,44.63
+02382,Whitman,MA,Plymouth County,33.0
+01095,Wilbraham,MA,Hampden County,44.63
+01096,Williamsburg,MA,Hampshire County,44.63
+02152,Winthrop,MA,Suffolk County,33.0
+01602,Worcester,MA,Worcester County,33.0
+01606,Worcester,MA,Worcester County,33.0
+01098,Worthington,MA,Hampshire County,44.63

@@ -1,0 +1,526 @@
+zip,city,state,county,payout
+85320,Aguila,AZ,Maricopa County,497.5
+85321,Ajo,AZ,Pima County,507.0
+85920,Alpine,AZ,Apache County,177.0
+85645,Amado,AZ,Pima County,177.0
+85117,Apache Junction,AZ,Pinal County,497.0
+85119,Apache Junction,AZ,Pinal County,497.0
+85120,Apache Junction,AZ,Pinal County,497.0
+85178,Apache Junction,AZ,Pinal County,497.0
+85601,Arivaca,AZ,Pima County,507.0
+85123,Arizona City,AZ,Pinal County,497.0
+85322,Arlington,AZ,Maricopa County,497.5
+86320,Ash Fork,AZ,Coconino County,192.5
+85323,Avondale,AZ,Maricopa County,497.5
+85392,Avondale,AZ,Maricopa County,497.5
+86321,Bagdad,AZ,Yavapai County,192.5
+85121,Bapchule,AZ,Pinal County,497.0
+86015,Bellemont,AZ,Coconino County,239.0
+85602,Benson,AZ,Cochise County,177.0
+85603,Bisbee,AZ,Cochise County,177.0
+85324,Black Canyon City,AZ,Yavapai County,192.5
+86520,Blue Gap,AZ,Navajo County,177.0
+85325,Bouse,AZ,La Paz County,162.5
+85605,Bowie,AZ,Cochise County,177.0
+85326,Buckeye,AZ,Maricopa County,497.5
+85396,Buckeye,AZ,Maricopa County,497.5
+86429,Bullhead City,AZ,Mohave County,177.0
+86430,Bullhead City,AZ,Mohave County,177.0
+86439,Bullhead City,AZ,Mohave County,177.0
+86442,Bullhead City,AZ,Mohave County,177.0
+85530,Bylas,AZ,Graham County,177.0
+86020,Cameron,AZ,Coconino County,239.0
+86322,Camp Verde,AZ,Yavapai County,192.5
+85377,Carefree,AZ,Maricopa County,497.5
+85122,Casa Grande,AZ,Pinal County,497.0
+85130,Casa Grande,AZ,Pinal County,497.0
+85193,Casa Grande,AZ,Pinal County,497.0
+85194,Casa Grande,AZ,Pinal County,497.0
+85329,Cashion,AZ,Maricopa County,497.5
+85738,Catalina,AZ,Pima County,507.0
+85327,Cave Creek,AZ,Maricopa County,497.5
+85331,Cave Creek,AZ,Maricopa County,497.5
+85531,Central,AZ,Graham County,177.0
+86502,Chambers,AZ,Apache County,177.0
+85224,Chandler,AZ,Maricopa County,497.5
+85225,Chandler,AZ,Maricopa County,497.5
+85226,Chandler,AZ,Maricopa County,497.5
+85244,Chandler,AZ,Maricopa County,497.5
+85246,Chandler,AZ,Maricopa County,497.5
+85248,Chandler,AZ,Maricopa County,497.5
+85249,Chandler,AZ,Maricopa County,497.5
+85286,Chandler,AZ,Maricopa County,497.5
+85127,Chandler Heights,AZ,Maricopa County,497.5
+86503,Chinle,AZ,Apache County,177.0
+86323,Chino Valley,AZ,Yavapai County,192.5
+86431,Chloride,AZ,Mohave County,177.0
+85911,Cibecue,AZ,Navajo County,177.0
+85328,Cibola,AZ,La Paz County,162.5
+86324,Clarkdale,AZ,Yavapai County,192.5
+85923,Clay Springs,AZ,Navajo County,177.0
+85532,Claypool,AZ,Gila County,177.0
+85606,Cochise,AZ,Cochise County,177.0
+86021,Colorado City,AZ,Mohave County,177.0
+85924,Concho,AZ,Apache County,177.0
+85332,Congress,AZ,Yavapai County,192.5
+85128,Coolidge,AZ,Pinal County,497.0
+86325,Cornville,AZ,Yavapai County,192.5
+85652,Cortaro,AZ,Pima County,507.0
+86326,Cottonwood,AZ,Yavapai County,192.5
+86343,Crown King,AZ,Yavapai County,192.5
+85333,Dateland,AZ,Yuma County,165.5
+86535,Dennehotso,AZ,Apache County,177.0
+86327,Dewey,AZ,Yavapai County,192.5
+86441,Dolan Springs,AZ,Mohave County,177.0
+85607,Douglas,AZ,Cochise County,177.0
+85608,Douglas,AZ,Cochise County,177.0
+85655,Douglas,AZ,Cochise County,177.0
+85609,Dragoon,AZ,Cochise County,177.0
+85925,Eagar,AZ,Apache County,177.0
+85535,Eden,AZ,Graham County,177.0
+85334,Ehrenberg,AZ,La Paz County,162.5
+85335,El Mirage,AZ,Maricopa County,497.5
+85610,Elfrida,AZ,Cochise County,177.0
+85611,Elgin,AZ,Santa Cruz County,177.0
+85131,Eloy,AZ,Pinal County,497.0
+86001,Flagstaff,AZ,Coconino County,239.0
+86002,Flagstaff,AZ,Coconino County,239.0
+86003,Flagstaff,AZ,Coconino County,239.0
+86004,Flagstaff,AZ,Coconino County,239.0
+86005,Flagstaff,AZ,Coconino County,239.0
+86011,Flagstaff,AZ,Coconino County,239.0
+85132,Florence,AZ,Pinal County,497.0
+85931,Forest Lakes,AZ,Coconino County,239.0
+85926,Fort Apache,AZ,Navajo County,177.0
+86504,Fort Defiance,AZ,Apache County,177.0
+85613,Fort Huachuca,AZ,Cochise County,177.0
+85670,Fort Huachuca,AZ,Cochise County,177.0
+85264,Fort Mcdowell,AZ,Maricopa County,497.5
+86426,Fort Mohave,AZ,Mohave County,177.0
+86427,Fort Mohave,AZ,Mohave County,177.0
+85536,Fort Thomas,AZ,Graham County,177.0
+85268,Fountain Hills,AZ,Maricopa County,497.5
+85269,Fountain Hills,AZ,Maricopa County,497.5
+86022,Fredonia,AZ,Coconino County,239.0
+86505,Ganado,AZ,Apache County,177.0
+85337,Gila Bend,AZ,Maricopa County,497.5
+85233,Gilbert,AZ,Maricopa County,497.5
+85234,Gilbert,AZ,Maricopa County,497.5
+85295,Gilbert,AZ,Maricopa County,497.5
+85296,Gilbert,AZ,Maricopa County,497.5
+85297,Gilbert,AZ,Maricopa County,497.5
+85298,Gilbert,AZ,Maricopa County,497.5
+85299,Gilbert,AZ,Maricopa County,497.5
+85301,Glendale,AZ,Maricopa County,497.5
+85302,Glendale,AZ,Maricopa County,497.5
+85303,Glendale,AZ,Maricopa County,497.5
+85304,Glendale,AZ,Maricopa County,497.5
+85305,Glendale,AZ,Maricopa County,497.5
+85306,Glendale,AZ,Maricopa County,497.5
+85307,Glendale,AZ,Maricopa County,497.5
+85308,Glendale,AZ,Maricopa County,497.5
+85310,Glendale,AZ,Maricopa County,497.5
+85311,Glendale,AZ,Maricopa County,497.5
+85312,Glendale,AZ,Maricopa County,497.5
+85318,Glendale,AZ,Maricopa County,497.5
+85501,Globe,AZ,Gila County,177.0
+85502,Globe,AZ,Gila County,177.0
+85118,Gold Canyon,AZ,Pinal County,497.0
+86413,Golden Valley,AZ,Mohave County,177.0
+85338,Goodyear,AZ,Maricopa County,497.5
+85395,Goodyear,AZ,Maricopa County,497.5
+86023,Grand Canyon,AZ,Coconino County,239.0
+86016,Gray Mountain,AZ,Coconino County,239.0
+85614,Green Valley,AZ,Pima County,507.0
+85622,Green Valley,AZ,Pima County,507.0
+85927,Greer,AZ,Apache County,177.0
+86411,Hackberry,AZ,Mohave County,177.0
+86024,Happy Jack,AZ,Coconino County,239.0
+85135,Hayden,AZ,Gila County,177.0
+85928,Heber,AZ,Navajo County,177.0
+85615,Hereford,AZ,Cochise County,177.0
+85236,Higley,AZ,Maricopa County,497.5
+86025,Holbrook,AZ,Navajo County,177.0
+86030,Hotevilla,AZ,Navajo County,177.0
+86506,Houck,AZ,Apache County,177.0
+85616,Huachuca City,AZ,Cochise County,177.0
+86412,Hualapai,AZ,Mohave County,177.0
+86329,Humboldt,AZ,Yavapai County,192.5
+86031,Indian Wells,AZ,Navajo County,177.0
+86331,Jerome,AZ,Yavapai County,192.5
+86032,Joseph City,AZ,Navajo County,177.0
+86053,Kaibeto,AZ,Coconino County,239.0
+86033,Kayenta,AZ,Navajo County,177.0
+86034,Keams Canyon,AZ,Navajo County,177.0
+85137,Kearny,AZ,Pinal County,497.0
+86401,Kingman,AZ,Mohave County,177.0
+86402,Kingman,AZ,Mohave County,177.0
+86409,Kingman,AZ,Mohave County,177.0
+86332,Kirkland,AZ,Yavapai County,192.5
+86039,Kykotsmovi Village,AZ,Navajo County,177.0
+86403,Lake Havasu City,AZ,Mohave County,177.0
+86404,Lake Havasu City,AZ,Mohave County,177.0
+86405,Lake Havasu City,AZ,Mohave County,177.0
+86406,Lake Havasu City,AZ,Mohave County,177.0
+86342,Lake Montezuma,AZ,Yavapai County,192.5
+85929,Lakeside,AZ,Navajo County,177.0
+85339,Laveen,AZ,Maricopa County,497.5
+86035,Leupp,AZ,Coconino County,239.0
+85340,Litchfield Park,AZ,Maricopa County,497.5
+86432,Littlefield,AZ,Mohave County,177.0
+86507,Lukachukai,AZ,Apache County,177.0
+85309,Luke Air Force Base,AZ,Maricopa County,497.5
+85341,Lukeville,AZ,Pima County,507.0
+86508,Lupton,AZ,Apache County,177.0
+85618,Mammoth,AZ,Pinal County,497.0
+86538,Many Farms,AZ,Apache County,177.0
+85653,Marana,AZ,Pima County,507.0
+85658,Marana,AZ,Pima County,497.0
+86036,Marble Canyon,AZ,Coconino County,239.0
+85138,Maricopa,AZ,Pinal County,497.0
+85139,Maricopa,AZ,Pinal County,497.0
+86333,Mayer,AZ,Yavapai County,192.5
+85617,McNeal,AZ,Cochise County,177.0
+85930,Mcnary,AZ,Navajo County,177.0
+86444,Meadview,AZ,Mohave County,177.0
+85201,Mesa,AZ,Maricopa County,497.5
+85202,Mesa,AZ,Maricopa County,497.5
+85203,Mesa,AZ,Maricopa County,497.5
+85204,Mesa,AZ,Maricopa County,497.5
+85205,Mesa,AZ,Maricopa County,497.5
+85206,Mesa,AZ,Maricopa County,497.5
+85207,Mesa,AZ,Maricopa County,497.5
+85208,Mesa,AZ,Maricopa County,497.5
+85209,Mesa,AZ,Maricopa County,497.5
+85210,Mesa,AZ,Maricopa County,497.5
+85211,Mesa,AZ,Maricopa County,497.5
+85212,Mesa,AZ,Maricopa County,497.5
+85213,Mesa,AZ,Maricopa County,497.5
+85214,Mesa,AZ,Maricopa County,497.5
+85215,Mesa,AZ,Maricopa County,497.5
+85216,Mesa,AZ,Maricopa County,497.5
+85274,Mesa,AZ,Maricopa County,497.5
+85275,Mesa,AZ,Maricopa County,497.5
+85277,Mesa,AZ,Maricopa County,497.5
+85539,Miami,AZ,Gila County,177.0
+86440,Mohave Valley,AZ,Mohave County,177.0
+86446,Mohave Valley,AZ,Mohave County,177.0
+86038,Mormon Lake,AZ,Coconino County,239.0
+85342,Morristown,AZ,Maricopa County,497.5
+85619,Mount Lemmon,AZ,Pima County,507.0
+86017,Munds Park,AZ,Coconino County,239.0
+85620,Naco,AZ,Cochise County,177.0
+86540,Nazlini,AZ,Apache County,177.0
+85087,New River,AZ,Maricopa County,497.5
+85621,Nogales,AZ,Santa Cruz County,177.0
+85628,Nogales,AZ,Santa Cruz County,177.0
+85662,Nogales,AZ,Santa Cruz County,177.0
+86052,North Rim,AZ,Coconino County,239.0
+85932,Nutrioso,AZ,Apache County,177.0
+86433,Oatman,AZ,Mohave County,177.0
+85623,Oracle,AZ,Pinal County,497.0
+85933,Overgaard,AZ,Navajo County,177.0
+86040,Page,AZ,Coconino County,239.0
+85343,Palo Verde,AZ,Maricopa County,497.5
+85253,Paradise Valley,AZ,Maricopa County,497.5
+85344,Parker,AZ,La Paz County,162.5
+86018,Parks,AZ,Coconino County,239.0
+85624,Patagonia,AZ,Santa Cruz County,177.0
+86334,Paulden,AZ,Yavapai County,192.5
+85541,Payson,AZ,Gila County,177.0
+85547,Payson,AZ,Gila County,177.0
+86434,Peach Springs,AZ,Mohave County,177.0
+85625,Pearce,AZ,Cochise County,177.0
+85345,Peoria,AZ,Maricopa County,497.5
+85380,Peoria,AZ,Maricopa County,497.5
+85381,Peoria,AZ,Maricopa County,497.5
+85382,Peoria,AZ,Maricopa County,497.5
+85383,Peoria,AZ,Maricopa County,497.5
+85385,Peoria,AZ,Maricopa County,497.5
+85542,Peridot,AZ,Graham County,177.0
+86028,Petrified Forest Natl Pk,AZ,Apache County,177.0
+85001,Phoenix,AZ,Maricopa County,497.5
+85002,Phoenix,AZ,Maricopa County,497.5
+85003,Phoenix,AZ,Maricopa County,497.5
+85004,Phoenix,AZ,Maricopa County,497.5
+85005,Phoenix,AZ,Maricopa County,497.5
+85006,Phoenix,AZ,Maricopa County,497.5
+85007,Phoenix,AZ,Maricopa County,497.5
+85008,Phoenix,AZ,Maricopa County,497.5
+85009,Phoenix,AZ,Maricopa County,497.5
+85010,Phoenix,AZ,Maricopa County,497.5
+85011,Phoenix,AZ,Maricopa County,497.5
+85012,Phoenix,AZ,Maricopa County,497.5
+85013,Phoenix,AZ,Maricopa County,497.5
+85014,Phoenix,AZ,Maricopa County,497.5
+85015,Phoenix,AZ,Maricopa County,497.5
+85016,Phoenix,AZ,Maricopa County,497.5
+85017,Phoenix,AZ,Maricopa County,497.5
+85018,Phoenix,AZ,Maricopa County,497.5
+85019,Phoenix,AZ,Maricopa County,497.5
+85020,Phoenix,AZ,Maricopa County,497.5
+85021,Phoenix,AZ,Maricopa County,497.5
+85022,Phoenix,AZ,Maricopa County,497.5
+85023,Phoenix,AZ,Maricopa County,497.5
+85024,Phoenix,AZ,Maricopa County,497.5
+85025,Phoenix,AZ,Maricopa County,497.5
+85026,Phoenix,AZ,Maricopa County,497.5
+85027,Phoenix,AZ,Maricopa County,497.5
+85028,Phoenix,AZ,Maricopa County,497.5
+85029,Phoenix,AZ,Maricopa County,497.5
+85030,Phoenix,AZ,Maricopa County,497.5
+85031,Phoenix,AZ,Maricopa County,497.5
+85032,Phoenix,AZ,Maricopa County,497.5
+85033,Phoenix,AZ,Maricopa County,497.5
+85034,Phoenix,AZ,Maricopa County,497.5
+85035,Phoenix,AZ,Maricopa County,497.5
+85036,Phoenix,AZ,Maricopa County,497.5
+85037,Phoenix,AZ,Maricopa County,497.5
+85038,Phoenix,AZ,Maricopa County,497.5
+85039,Phoenix,AZ,Maricopa County,497.5
+85040,Phoenix,AZ,Maricopa County,497.5
+85041,Phoenix,AZ,Maricopa County,497.5
+85042,Phoenix,AZ,Maricopa County,497.5
+85043,Phoenix,AZ,Maricopa County,497.5
+85044,Phoenix,AZ,Maricopa County,497.5
+85045,Phoenix,AZ,Maricopa County,497.5
+85046,Phoenix,AZ,Maricopa County,497.5
+85048,Phoenix,AZ,Maricopa County,497.5
+85050,Phoenix,AZ,Maricopa County,497.5
+85051,Phoenix,AZ,Maricopa County,497.5
+85053,Phoenix,AZ,Maricopa County,497.5
+85054,Phoenix,AZ,Maricopa County,497.5
+85060,Phoenix,AZ,Maricopa County,497.5
+85061,Phoenix,AZ,Maricopa County,497.5
+85062,Phoenix,AZ,Maricopa County,497.5
+85063,Phoenix,AZ,Maricopa County,497.5
+85064,Phoenix,AZ,Maricopa County,497.5
+85065,Phoenix,AZ,Maricopa County,497.5
+85066,Phoenix,AZ,Maricopa County,497.5
+85067,Phoenix,AZ,Maricopa County,497.5
+85068,Phoenix,AZ,Maricopa County,497.5
+85069,Phoenix,AZ,Maricopa County,497.5
+85070,Phoenix,AZ,Maricopa County,497.5
+85071,Phoenix,AZ,Maricopa County,497.5
+85072,Phoenix,AZ,Maricopa County,497.5
+85073,Phoenix,AZ,Maricopa County,497.5
+85074,Phoenix,AZ,Maricopa County,497.5
+85075,Phoenix,AZ,Maricopa County,497.5
+85076,Phoenix,AZ,Maricopa County,497.5
+85078,Phoenix,AZ,Maricopa County,497.5
+85079,Phoenix,AZ,Maricopa County,497.5
+85080,Phoenix,AZ,Maricopa County,497.5
+85082,Phoenix,AZ,Maricopa County,497.5
+85083,Phoenix,AZ,Maricopa County,497.5
+85085,Phoenix,AZ,Maricopa County,497.5
+85086,Phoenix,AZ,Maricopa County,497.5
+85097,Phoenix,AZ,Maricopa County,497.5
+85098,Phoenix,AZ,Maricopa County,497.5
+85141,Picacho,AZ,Pinal County,497.0
+85543,Pima,AZ,Graham County,177.0
+85544,Pine,AZ,Gila County,177.0
+85934,Pinedale,AZ,Navajo County,177.0
+85935,Pinetop,AZ,Navajo County,177.0
+86510,Pinon,AZ,Navajo County,177.0
+85626,Pirtleville,AZ,Cochise County,177.0
+86042,Polacca,AZ,Navajo County,177.0
+85627,Pomerene,AZ,Cochise County,177.0
+85371,Poston,AZ,La Paz County,162.5
+86301,Prescott,AZ,Yavapai County,192.5
+86302,Prescott,AZ,Yavapai County,192.5
+86303,Prescott,AZ,Yavapai County,192.5
+86304,Prescott,AZ,Yavapai County,192.5
+86305,Prescott,AZ,Yavapai County,192.5
+86313,Prescott,AZ,Yavapai County,192.5
+86312,Prescott Valley,AZ,Yavapai County,192.5
+86314,Prescott Valley,AZ,Yavapai County,192.5
+86315,Prescott Valley,AZ,Yavapai County,192.5
+85346,Quartzsite,AZ,La Paz County,162.5
+85359,Quartzsite,AZ,La Paz County,162.5
+85142,Queen Creek,AZ,Maricopa County,497.5
+85144,Queen Creek,AZ,Pinal County,497.0
+85145,Red Rock,AZ,Pinal County,497.0
+86544,Red Valley,AZ,Apache County,177.0
+85654,Rillito,AZ,Pima County,507.0
+86335,Rimrock,AZ,Yavapai County,192.5
+85648,Rio Rico,AZ,Santa Cruz County,177.0
+85263,Rio Verde,AZ,Maricopa County,497.5
+86545,Rock Point,AZ,Apache County,177.0
+85347,Roll,AZ,Yuma County,165.5
+85545,Roosevelt,AZ,Gila County,177.0
+86547,Round Rock,AZ,Apache County,177.0
+85147,Sacaton,AZ,Pinal County,497.0
+85546,Safford,AZ,Graham County,177.0
+85548,Safford,AZ,Graham County,177.0
+85629,Sahuarita,AZ,Pima County,507.0
+85630,Saint David,AZ,Cochise County,177.0
+85936,Saint Johns,AZ,Apache County,177.0
+86511,Saint Michaels,AZ,Apache County,177.0
+85348,Salome,AZ,La Paz County,162.5
+85550,San Carlos,AZ,Gila County,177.0
+85336,San Luis,AZ,Yuma County,165.5
+85349,San Luis,AZ,Yuma County,165.5
+85631,San Manuel,AZ,Pinal County,497.0
+85632,San Simon,AZ,Cochise County,177.0
+85140,San Tan Valley,AZ,Pinal County,497.5
+85143,San Tan Valley,AZ,Pinal County,497.5
+86512,Sanders,AZ,Apache County,177.0
+85633,Sasabe,AZ,Pima County,507.0
+85250,Scottsdale,AZ,Maricopa County,497.5
+85251,Scottsdale,AZ,Maricopa County,497.5
+85252,Scottsdale,AZ,Maricopa County,497.5
+85254,Scottsdale,AZ,Maricopa County,497.5
+85255,Scottsdale,AZ,Maricopa County,497.5
+85256,Scottsdale,AZ,Maricopa County,497.5
+85257,Scottsdale,AZ,Maricopa County,497.5
+85258,Scottsdale,AZ,Maricopa County,497.5
+85259,Scottsdale,AZ,Maricopa County,497.5
+85260,Scottsdale,AZ,Maricopa County,497.5
+85261,Scottsdale,AZ,Maricopa County,497.5
+85262,Scottsdale,AZ,Maricopa County,497.5
+85266,Scottsdale,AZ,Maricopa County,497.5
+85267,Scottsdale,AZ,Maricopa County,497.5
+85271,Scottsdale,AZ,Maricopa County,497.5
+86043,Second Mesa,AZ,Navajo County,177.0
+86336,Sedona,AZ,Yavapai County,192.5
+86339,Sedona,AZ,Yavapai County,239.0
+86340,Sedona,AZ,Yavapai County,192.5
+86341,Sedona,AZ,Yavapai County,192.5
+86351,Sedona,AZ,Yavapai County,192.5
+86337,Seligman,AZ,Yavapai County,192.5
+85634,Sells,AZ,Pima County,507.0
+86054,Shonto,AZ,Navajo County,177.0
+85901,Show Low,AZ,Navajo County,177.0
+85902,Show Low,AZ,Navajo County,177.0
+85635,Sierra Vista,AZ,Cochise County,177.0
+85636,Sierra Vista,AZ,Cochise County,177.0
+85650,Sierra Vista,AZ,Cochise County,177.0
+85671,Sierra Vista,AZ,Cochise County,177.0
+86338,Skull Valley,AZ,Yavapai County,192.5
+85937,Snowflake,AZ,Navajo County,177.0
+85551,Solomon,AZ,Graham County,177.0
+85350,Somerton,AZ,Yuma County,165.5
+85637,Sonoita,AZ,Santa Cruz County,177.0
+85938,Springerville,AZ,Apache County,177.0
+85172,Stanfield,AZ,Pinal County,497.0
+85351,Sun City,AZ,Maricopa County,497.5
+85372,Sun City,AZ,Maricopa County,497.5
+85373,Sun City,AZ,Maricopa County,497.5
+85375,Sun City West,AZ,Maricopa County,497.5
+85376,Sun City West,AZ,Maricopa County,497.5
+86029,Sun Valley,AZ,Navajo County,177.0
+86435,Supai,AZ,Coconino County,239.0
+85173,Superior,AZ,Pinal County,497.0
+85374,Surprise,AZ,Maricopa County,497.5
+85378,Surprise,AZ,Maricopa County,497.5
+85379,Surprise,AZ,Maricopa County,497.5
+85387,Surprise,AZ,Maricopa County,497.5
+85388,Surprise,AZ,Maricopa County,497.5
+85352,Tacna,AZ,Yuma County,165.5
+85939,Taylor,AZ,Navajo County,177.0
+86514,Teec Nos Pos,AZ,Apache County,177.0
+85280,Tempe,AZ,Maricopa County,497.5
+85281,Tempe,AZ,Maricopa County,497.5
+85282,Tempe,AZ,Maricopa County,497.5
+85283,Tempe,AZ,Maricopa County,497.5
+85284,Tempe,AZ,Maricopa County,497.5
+85285,Tempe,AZ,Maricopa County,497.5
+85287,Tempe,AZ,Maricopa County,497.5
+86443,Temple Bar Marina,AZ,Mohave County,177.0
+85552,Thatcher,AZ,Graham County,177.0
+85353,Tolleson,AZ,Maricopa County,497.5
+85638,Tombstone,AZ,Cochise County,177.0
+86044,Tonalea,AZ,Coconino County,239.0
+85354,Tonopah,AZ,Maricopa County,497.5
+85553,Tonto Basin,AZ,Gila County,177.0
+85639,Topawa,AZ,Pima County,507.0
+86436,Topock,AZ,Mohave County,177.0
+85190,Tortilla Flat,AZ,Maricopa County,497.5
+86556,Tsaile,AZ,Apache County,177.0
+86045,Tuba City,AZ,Coconino County,239.0
+85646,Tubac,AZ,Santa Cruz County,177.0
+85701,Tucson,AZ,Pima County,507.0
+85702,Tucson,AZ,Pima County,507.0
+85703,Tucson,AZ,Pima County,507.0
+85704,Tucson,AZ,Pima County,507.0
+85705,Tucson,AZ,Pima County,507.0
+85706,Tucson,AZ,Pima County,507.0
+85707,Tucson,AZ,Pima County,507.0
+85708,Tucson,AZ,Pima County,507.0
+85709,Tucson,AZ,Pima County,507.0
+85710,Tucson,AZ,Pima County,507.0
+85711,Tucson,AZ,Pima County,507.0
+85712,Tucson,AZ,Pima County,507.0
+85713,Tucson,AZ,Pima County,507.0
+85714,Tucson,AZ,Pima County,507.0
+85715,Tucson,AZ,Pima County,507.0
+85716,Tucson,AZ,Pima County,507.0
+85717,Tucson,AZ,Pima County,507.0
+85718,Tucson,AZ,Pima County,507.0
+85719,Tucson,AZ,Pima County,507.0
+85720,Tucson,AZ,Pima County,507.0
+85721,Tucson,AZ,Pima County,507.0
+85722,Tucson,AZ,Pima County,507.0
+85723,Tucson,AZ,Pima County,507.0
+85724,Tucson,AZ,Pima County,507.0
+85725,Tucson,AZ,Pima County,507.0
+85726,Tucson,AZ,Pima County,507.0
+85728,Tucson,AZ,Pima County,507.0
+85730,Tucson,AZ,Pima County,507.0
+85731,Tucson,AZ,Pima County,507.0
+85732,Tucson,AZ,Pima County,507.0
+85733,Tucson,AZ,Pima County,507.0
+85734,Tucson,AZ,Pima County,507.0
+85735,Tucson,AZ,Pima County,507.0
+85736,Tucson,AZ,Pima County,507.0
+85737,Tucson,AZ,Pima County,507.0
+85739,Tucson,AZ,Pinal County,507.0
+85740,Tucson,AZ,Pima County,507.0
+85741,Tucson,AZ,Pima County,507.0
+85742,Tucson,AZ,Pima County,507.0
+85743,Tucson,AZ,Pima County,507.0
+85744,Tucson,AZ,Pima County,507.0
+85745,Tucson,AZ,Pima County,507.0
+85746,Tucson,AZ,Pima County,507.0
+85747,Tucson,AZ,Pima County,507.0
+85748,Tucson,AZ,Pima County,507.0
+85749,Tucson,AZ,Pima County,507.0
+85750,Tucson,AZ,Pima County,507.0
+85751,Tucson,AZ,Pima County,507.0
+85752,Tucson,AZ,Pima County,507.0
+85754,Tucson,AZ,Pima County,507.0
+85755,Tucson,AZ,Pima County,507.0
+85756,Tucson,AZ,Pima County,507.0
+85757,Tucson,AZ,Pima County,507.0
+85775,Tucson,AZ,Pima County,507.0
+85640,Tumacacori,AZ,Santa Cruz County,177.0
+85641,Vail,AZ,Pima County,507.0
+86437,Valentine,AZ,Mohave County,177.0
+85191,Valley Farms,AZ,Pinal County,497.0
+85940,Vernon,AZ,Apache County,177.0
+85355,Waddell,AZ,Maricopa County,497.5
+85356,Wellton,AZ,Yuma County,165.5
+85357,Wenden,AZ,La Paz County,162.5
+85912,White Mountain Lake,AZ,Navajo County,177.0
+85941,Whiteriver,AZ,Navajo County,177.0
+85358,Wickenburg,AZ,Maricopa County,497.5
+85390,Wickenburg,AZ,Maricopa County,497.5
+85360,Wikieup,AZ,Mohave County,177.0
+85643,Willcox,AZ,Cochise County,177.0
+85644,Willcox,AZ,Cochise County,177.0
+86046,Williams,AZ,Coconino County,239.0
+86445,Willow Beach,AZ,Mohave County,177.0
+86515,Window Rock,AZ,Apache County,177.0
+85192,Winkelman,AZ,Pinal County,177.0
+86047,Winslow,AZ,Navajo County,177.0
+85361,Wittmann,AZ,Maricopa County,497.5
+85942,Woodruff,AZ,Navajo County,177.0
+85362,Yarnell,AZ,Yavapai County,192.5
+85554,Young,AZ,Gila County,177.0
+85363,Youngtown,AZ,Maricopa County,497.5
+86438,Yucca,AZ,Mohave County,177.0
+85364,Yuma,AZ,Yuma County,165.5
+85365,Yuma,AZ,Yuma County,165.5
+85366,Yuma,AZ,Yuma County,165.5
+85367,Yuma,AZ,Yuma County,165.5
+85369,Yuma,AZ,Yuma County,165.5

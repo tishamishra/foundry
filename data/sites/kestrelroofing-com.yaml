@@ -1,0 +1,16 @@
+site_id: kestrelroofing-com
+business: kestrel-roofing
+niche: roofing
+domain: kestrelroofing.com
+theme: navy
+style: civic
+skeleton: local
+composition_seed: 141
+coverage:
+  states:
+  - GA
+render:
+  mode: hybrid
+  prerender_top_n: 10
+  location_variants: 4
+css_engine: tailwind

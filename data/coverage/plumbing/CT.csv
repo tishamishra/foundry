@@ -1,0 +1,327 @@
+zip,city,state,county,payout
+06230,Abington,CT,Windham County,64.75
+06231,Amston,CT,Tolland County,43.75
+06232,Andover,CT,Tolland County,64.75
+06278,Ashford,CT,Windham County,64.75
+06001,Avon,CT,Hartford County,43.75
+06233,Ballouville,CT,Windham County,43.75
+06330,Baltic,CT,New London County,43.75
+06063,Barkhamsted,CT,Litchfield County,43.75
+06403,Beacon Falls,CT,New Haven County,42.5
+06037,Berlin,CT,Hartford County,43.75
+06524,Bethany,CT,New Haven County,42.5
+06002,Bloomfield,CT,Hartford County,43.75
+06043,Bolton,CT,Tolland County,64.75
+06334,Bozrah,CT,New London County,43.75
+06405,Branford,CT,New Haven County,43.75
+06752,Bridgewater,CT,Litchfield County,41.5
+06010,Bristol,CT,Hartford County,43.75
+06011,Bristol,CT,Hartford County,43.75
+06016,Broad Brook,CT,Hartford County,64.75
+06234,Brooklyn,CT,Windham County,64.75
+06013,Burlington,CT,Hartford County,43.75
+06018,Canaan,CT,Litchfield County,41.5
+06331,Canterbury,CT,Windham County,64.75
+06019,Canton,CT,Hartford County,43.75
+06020,Canton Center,CT,Hartford County,41.0
+06409,Centerbrook,CT,Middlesex County,43.75
+06332,Central Village,CT,Windham County,64.75
+06235,Chaplin,CT,Windham County,64.75
+06408,Cheshire,CT,New Haven County,43.75
+06410,Cheshire,CT,New Haven County,43.75
+06411,Cheshire,CT,New Haven County,43.75
+06412,Chester,CT,Middlesex County,43.75
+06413,Clinton,CT,Middlesex County,43.75
+06414,Cobalt,CT,Middlesex County,41.0
+06415,Colchester,CT,New London County,43.75
+06021,Colebrook,CT,Litchfield County,41.5
+06237,Columbia,CT,Tolland County,43.75
+06753,Cornwall,CT,Litchfield County,41.5
+06754,Cornwall Bridge,CT,Litchfield County,41.5
+06238,Coventry,CT,Tolland County,64.75
+06416,Cromwell,CT,Middlesex County,43.75
+06239,Danielson,CT,Windham County,64.75
+06241,Dayville,CT,Windham County,64.75
+06417,Deep River,CT,Middlesex County,43.75
+06422,Durham,CT,Middlesex County,43.75
+06023,East Berlin,CT,Hartford County,41.0
+06024,East Canaan,CT,Litchfield County,41.5
+06026,East Granby,CT,Hartford County,43.75
+06423,East Haddam,CT,Middlesex County,43.75
+06424,East Hampton,CT,Middlesex County,43.75
+06108,East Hartford,CT,Hartford County,64.75
+06118,East Hartford,CT,Hartford County,64.75
+06128,East Hartford,CT,Hartford County,43.75
+06138,East Hartford,CT,Hartford County,43.75
+06027,East Hartland,CT,Hartford County,43.75
+06243,East Killingly,CT,Windham County,64.75
+06333,East Lyme,CT,New London County,43.75
+06088,East Windsor,CT,Hartford County,64.75
+06244,East Woodstock,CT,Windham County,41.0
+06242,Eastford,CT,Windham County,64.75
+06029,Ellington,CT,Tolland County,64.75
+06082,Enfield,CT,Hartford County,64.75
+06083,Enfield,CT,Hartford County,43.75
+06426,Essex,CT,Middlesex County,43.75
+06245,Fabyan,CT,Windham County,41.0
+06031,Falls Village,CT,Litchfield County,41.5
+06030,Farmington,CT,Hartford County,43.75
+06032,Farmington,CT,Hartford County,43.75
+06034,Farmington,CT,Hartford County,43.75
+06335,Gales Ferry,CT,New London County,64.75
+06755,Gaylordsville,CT,Litchfield County,41.5
+06336,Gilman,CT,New London County,41.0
+06033,Glastonbury,CT,Hartford County,43.75
+06756,Goshen,CT,Litchfield County,41.5
+06035,Granby,CT,Hartford County,43.75
+06831,Greenwich,CT,Fairfield County,49.5
+06246,Grosvenor Dale,CT,Windham County,41.0
+06340,Groton,CT,New London County,64.75
+06349,Groton,CT,New London County,64.75
+06437,Guilford,CT,New Haven County,43.75
+06438,Haddam,CT,Middlesex County,43.75
+06439,Hadlyme,CT,New London County,41.0
+06514,Hamden,CT,New Haven County,42.5
+06517,Hamden,CT,New Haven County,42.5
+06518,Hamden,CT,New Haven County,42.5
+06247,Hampton,CT,Windham County,64.75
+06350,Hanover,CT,New London County,43.75
+06101,Hartford,CT,Hartford County,43.75
+06102,Hartford,CT,Hartford County,43.75
+06103,Hartford,CT,Hartford County,43.75
+06104,Hartford,CT,Hartford County,43.75
+06105,Hartford,CT,Hartford County,43.75
+06106,Hartford,CT,Hartford County,43.75
+06112,Hartford,CT,Hartford County,43.75
+06114,Hartford,CT,Hartford County,43.75
+06115,Hartford,CT,Hartford County,43.75
+06120,Hartford,CT,Hartford County,43.75
+06123,Hartford,CT,Hartford County,43.75
+06126,Hartford,CT,Hartford County,43.75
+06132,Hartford,CT,Hartford County,43.75
+06134,Hartford,CT,Hartford County,43.75
+06140,Hartford,CT,Hartford County,43.75
+06141,Hartford,CT,Hartford County,43.75
+06142,Hartford,CT,Hartford County,43.75
+06143,Hartford,CT,Hartford County,43.75
+06144,Hartford,CT,Hartford County,43.75
+06145,Hartford,CT,Hartford County,43.75
+06146,Hartford,CT,Hartford County,43.75
+06147,Hartford,CT,Hartford County,43.75
+06150,Hartford,CT,Hartford County,43.75
+06151,Hartford,CT,Hartford County,43.75
+06152,Hartford,CT,Hartford County,43.75
+06153,Hartford,CT,Hartford County,43.75
+06154,Hartford,CT,Hartford County,43.75
+06155,Hartford,CT,Hartford County,43.75
+06156,Hartford,CT,Hartford County,43.75
+06160,Hartford,CT,Hartford County,43.75
+06161,Hartford,CT,Hartford County,43.75
+06167,Hartford,CT,Hartford County,43.75
+06176,Hartford,CT,Hartford County,43.75
+06180,Hartford,CT,Hartford County,43.75
+06183,Hartford,CT,Hartford County,43.75
+06199,Hartford,CT,Hartford County,43.75
+06791,Harwinton,CT,Litchfield County,41.5
+06248,Hebron,CT,Tolland County,43.75
+06441,Higganum,CT,Middlesex County,41.0
+06442,Ivoryton,CT,Middlesex County,43.75
+06351,Jewett City,CT,New London County,64.75
+06757,Kent,CT,Litchfield County,41.5
+06419,Killingworth,CT,Middlesex County,43.75
+06758,Lakeside,CT,Litchfield County,41.5
+06039,Lakeville,CT,Litchfield County,41.5
+06249,Lebanon,CT,New London County,43.75
+06339,Ledyard,CT,New London County,64.75
+06443,Madison,CT,New Haven County,43.75
+06040,Manchester,CT,Hartford County,64.75
+06041,Manchester,CT,Hartford County,64.75
+06042,Manchester,CT,Hartford County,64.75
+06045,Manchester,CT,Hartford County,43.75
+06250,Mansfield Center,CT,Tolland County,64.75
+06251,Mansfield Depot,CT,Tolland County,43.75
+06444,Marion,CT,Hartford County,41.0
+06447,Marlborough,CT,Hartford County,43.75
+06338,Mashantucket,CT,New London County,64.75
+06450,Meriden,CT,New Haven County,43.75
+06451,Meriden,CT,New Haven County,43.75
+06456,Middle Haddam,CT,Middlesex County,41.0
+06762,Middlebury,CT,New Haven County,42.5
+06455,Middlefield,CT,Middlesex County,43.75
+06457,Middletown,CT,Middlesex County,43.75
+06459,Middletown,CT,Middlesex County,43.75
+06467,Milldale,CT,Hartford County,41.0
+06353,Montville,CT,New London County,43.75
+06469,Moodus,CT,Middlesex County,41.0
+06354,Moosup,CT,Windham County,64.75
+06763,Morris,CT,Litchfield County,41.5
+06355,Mystic,CT,New London County,64.75
+06770,Naugatuck,CT,New Haven County,43.75
+06050,New Britain,CT,Hartford County,43.75
+06051,New Britain,CT,Hartford County,43.75
+06052,New Britain,CT,Hartford County,43.75
+06053,New Britain,CT,Hartford County,43.75
+06057,New Hartford,CT,Litchfield County,43.75
+06501,New Haven,CT,New Haven County,42.5
+06502,New Haven,CT,New Haven County,42.5
+06503,New Haven,CT,New Haven County,42.5
+06504,New Haven,CT,New Haven County,42.5
+06505,New Haven,CT,New Haven County,42.5
+06506,New Haven,CT,New Haven County,42.5
+06507,New Haven,CT,New Haven County,42.5
+06508,New Haven,CT,New Haven County,42.5
+06509,New Haven,CT,New Haven County,42.5
+06510,New Haven,CT,New Haven County,42.5
+06511,New Haven,CT,New Haven County,42.5
+06512,New Haven,CT,New Haven County,47.2
+06513,New Haven,CT,New Haven County,42.5
+06515,New Haven,CT,New Haven County,42.5
+06519,New Haven,CT,New Haven County,42.5
+06520,New Haven,CT,New Haven County,42.5
+06521,New Haven,CT,New Haven County,42.5
+06530,New Haven,CT,New Haven County,42.5
+06531,New Haven,CT,New Haven County,42.5
+06532,New Haven,CT,New Haven County,42.5
+06533,New Haven,CT,New Haven County,42.5
+06534,New Haven,CT,New Haven County,42.5
+06535,New Haven,CT,New Haven County,42.5
+06536,New Haven,CT,New Haven County,42.5
+06537,New Haven,CT,New Haven County,42.5
+06538,New Haven,CT,New Haven County,42.5
+06540,New Haven,CT,New Haven County,42.5
+06320,New London,CT,New London County,64.75
+06111,Newington,CT,Hartford County,43.75
+06131,Newington,CT,Hartford County,43.75
+06357,Niantic,CT,New London County,64.75
+06058,Norfolk,CT,Litchfield County,41.5
+06471,North Branford,CT,New Haven County,43.75
+06059,North Canton,CT,Hartford County,41.0
+06254,North Franklin,CT,New London County,43.75
+06060,North Granby,CT,Hartford County,43.75
+06255,North Grosvenordale,CT,Windham County,64.75
+06473,North Haven,CT,New Haven County,42.5
+06359,North Stonington,CT,New London County,64.75
+06474,North Westchester,CT,New London County,41.0
+06256,North Windham,CT,Windham County,64.75
+06472,Northford,CT,New Haven County,42.5
+06360,Norwich,CT,New London County,43.75
+06370,Oakdale,CT,New London County,64.75
+06779,Oakville,CT,Litchfield County,41.5
+06371,Old Lyme,CT,New London County,64.75
+06372,Old Mystic,CT,New London County,41.0
+06475,Old Saybrook,CT,Middlesex County,64.75
+06373,Oneco,CT,Windham County,64.75
+06477,Orange,CT,New Haven County,42.5
+06379,Pawcatuck,CT,New London County,64.75
+06781,Pequabuck,CT,Litchfield County,43.75
+06061,Pine Meadow,CT,Litchfield County,43.75
+06374,Plainfield,CT,Windham County,64.75
+06062,Plainville,CT,Hartford County,43.75
+06479,Plantsville,CT,Hartford County,41.0
+06782,Plymouth,CT,Litchfield County,43.75
+06258,Pomfret,CT,Windham County,43.75
+06259,Pomfret Center,CT,Windham County,64.75
+06480,Portland,CT,Middlesex County,43.75
+06365,Preston,CT,New London County,64.75
+06712,Prospect,CT,New Haven County,43.75
+06260,Putnam,CT,Windham County,64.75
+06375,Quaker Hill,CT,New London County,64.75
+06262,Quinebaug,CT,Windham County,64.75
+06065,Riverton,CT,Hartford County,43.75
+06481,Rockfall,CT,Middlesex County,41.0
+06067,Rocky Hill,CT,Hartford County,43.75
+06263,Rogers,CT,Windham County,64.75
+06420,Salem,CT,New London County,43.75
+06068,Salisbury,CT,Litchfield County,41.5
+06264,Scotland,CT,Windham County,43.75
+06070,Simsbury,CT,Hartford County,43.75
+06071,Somers,CT,Tolland County,64.75
+06072,Somersville,CT,Tolland County,41.0
+06487,South Britain,CT,New Haven County,42.5
+06073,South Glastonbury,CT,Hartford County,41.0
+06785,South Kent,CT,Litchfield County,41.5
+06376,South Lyme,CT,New London County,41.0
+06265,South Willington,CT,Tolland County,41.0
+06266,South Windham,CT,Windham County,41.0
+06074,South Windsor,CT,Hartford County,64.75
+06267,South Woodstock,CT,Windham County,41.0
+06489,Southington,CT,Hartford County,43.75
+06075,Stafford,CT,Tolland County,43.75
+06076,Stafford Springs,CT,Tolland County,64.75
+06077,Staffordville,CT,Tolland County,43.75
+06377,Sterling,CT,Windham County,64.75
+06378,Stonington,CT,New London County,64.75
+06268,Storrs Mansfield,CT,Tolland County,64.75
+06269,Storrs Mansfield,CT,Tolland County,64.75
+06078,Suffield,CT,Hartford County,43.75
+06080,Suffield,CT,Hartford County,43.75
+06079,Taconic,CT,Litchfield County,41.5
+06380,Taftville,CT,New London County,41.0
+06081,Tariffville,CT,Hartford County,41.0
+06786,Terryville,CT,Litchfield County,43.75
+06787,Thomaston,CT,Litchfield County,41.5
+06277,Thompson,CT,Windham County,64.75
+06084,Tolland,CT,Tolland County,64.75
+06790,Torrington,CT,Litchfield County,43.75
+06792,Torrington,CT,Litchfield County,43.75
+06382,Uncasville,CT,New London County,64.75
+06085,Unionville,CT,Hartford County,41.0
+06066,Vernon Rockville,CT,Tolland County,64.75
+06383,Versailles,CT,New London County,43.75
+06384,Voluntown,CT,New London County,64.75
+06492,Wallingford,CT,New Haven County,43.75
+06493,Wallingford,CT,New Haven County,42.5
+06494,Wallingford,CT,New Haven County,43.75
+06495,Wallingford,CT,New Haven County,43.75
+06793,Washington,CT,Litchfield County,41.5
+06794,Washington Depot,CT,Litchfield County,41.5
+06701,Waterbury,CT,New Haven County,43.75
+06702,Waterbury,CT,New Haven County,43.75
+06703,Waterbury,CT,New Haven County,43.75
+06704,Waterbury,CT,New Haven County,43.75
+06705,Waterbury,CT,New Haven County,43.75
+06706,Waterbury,CT,New Haven County,43.75
+06708,Waterbury,CT,New Haven County,43.75
+06710,Waterbury,CT,New Haven County,43.75
+06720,Waterbury,CT,New Haven County,43.75
+06721,Waterbury,CT,New Haven County,43.75
+06722,Waterbury,CT,New Haven County,43.75
+06723,Waterbury,CT,New Haven County,43.75
+06724,Waterbury,CT,New Haven County,43.75
+06725,Waterbury,CT,New Haven County,43.75
+06726,Waterbury,CT,New Haven County,43.75
+06749,Waterbury,CT,New Haven County,43.75
+06385,Waterford,CT,New London County,64.75
+06795,Watertown,CT,Litchfield County,41.5
+06387,Wauregan,CT,Windham County,43.75
+06089,Weatogue,CT,Hartford County,41.0
+06090,West Granby,CT,Hartford County,41.0
+06107,West Hartford,CT,Hartford County,43.75
+06110,West Hartford,CT,Hartford County,43.75
+06117,West Hartford,CT,Hartford County,43.75
+06119,West Hartford,CT,Hartford County,43.75
+06127,West Hartford,CT,Hartford County,43.75
+06133,West Hartford,CT,Hartford County,43.75
+06137,West Hartford,CT,Hartford County,43.75
+06091,West Hartland,CT,Hartford County,43.75
+06516,West Haven,CT,New Haven County,42.5
+06388,West Mystic,CT,New London County,41.0
+06092,West Simsbury,CT,Hartford County,41.0
+06093,West Suffield,CT,Hartford County,43.75
+06498,Westbrook,CT,Middlesex County,43.75
+06109,Wethersfield,CT,Hartford County,43.75
+06129,Wethersfield,CT,Hartford County,43.75
+06226,Willimantic,CT,Windham County,43.75
+06279,Willington,CT,Tolland County,64.75
+06897,Wilton,CT,Fairfield County,33.65
+06094,Winchester Center,CT,Litchfield County,41.5
+06280,Windham,CT,Windham County,43.75
+06006,Windsor,CT,Hartford County,43.75
+06095,Windsor,CT,Hartford County,43.75
+06096,Windsor Locks,CT,Hartford County,43.75
+06098,Winsted,CT,Litchfield County,43.75
+06716,Wolcott,CT,New Haven County,43.75
+06525,Woodbridge,CT,New Haven County,42.5
+06281,Woodstock,CT,Windham County,64.75
+06282,Woodstock Valley,CT,Windham County,64.75
+06389,Yantic,CT,New London County,41.0

@@ -1,0 +1,479 @@
+zip,city,state,county,payout
+19001,Abington,PA,Montgomery County,195.0
+16401,Albion,PA,Erie County,210.5
+16475,Albion,PA,Erie County,210.5
+15101,Allison Park,PA,Allegheny County,210.5
+19002,Ambler,PA,Montgomery County,195.0
+19003,Ardmore,PA,Montgomery County,195.0
+19014,Aston,PA,Delaware County,195.0
+19310,Atglen,PA,Chester County,195.0
+19407,Audubon,PA,Montgomery County,195.0
+19311,Avondale,PA,Chester County,195.0
+15006,Bairdford,PA,Allegheny County,210.5
+15007,Bakerstown,PA,Allegheny County,210.5
+19004,Bala Cynwyd,PA,Montgomery County,195.0
+19020,Bensalem,PA,Bucks County,195.0
+19312,Berwyn,PA,Chester County,195.0
+15102,Bethel Park,PA,Allegheny County,210.5
+19421,Birchrunville,PA,Chester County,195.0
+15014,Brackenridge,PA,Allegheny County,210.5
+15104,Braddock,PA,Allegheny County,210.5
+15015,Bradfordwoods,PA,Allegheny County,210.5
+19316,Brandamore,PA,Chester County,195.0
+19405,Bridgeport,PA,Montgomery County,195.0
+15017,Bridgeville,PA,Allegheny County,210.5
+19007,Bristol,PA,Bucks County,195.0
+19015,Brookhaven,PA,Delaware County,195.0
+19008,Broomall,PA,Delaware County,195.0
+19009,Bryn Athyn,PA,Montgomery County,195.0
+19010,Bryn Mawr,PA,Delaware County,195.0
+18912,Buckingham,PA,Bucks County,195.0
+15018,Buena Vista,PA,Allegheny County,210.5
+15020,Bunola,PA,Allegheny County,210.5
+15106,Carnegie,PA,Allegheny County,210.5
+18913,Carversville,PA,Bucks County,195.0
+19423,Cedars,PA,Montgomery County,195.0
+19317,Chadds Ford,PA,Delaware County,195.0
+18914,Chalfont,PA,Bucks County,195.0
+19318,Chatham,PA,Chester County,195.0
+19012,Cheltenham,PA,Montgomery County,195.0
+19013,Chester,PA,Delaware County,195.0
+19016,Chester,PA,Delaware County,195.0
+19017,Chester Heights,PA,Delaware County,195.0
+19425,Chester Springs,PA,Chester County,195.0
+15024,Cheswick,PA,Allegheny County,210.5
+19319,Cheyney,PA,Delaware County,195.0
+15025,Clairton,PA,Allegheny County,210.5
+19018,Clifton Heights,PA,Delaware County,195.0
+19320,Coatesville,PA,Chester County,195.0
+19330,Cochranville,PA,Chester County,195.0
+19426,Collegeville,PA,Montgomery County,195.0
+18915,Colmar,PA,Montgomery County,195.0
+19331,Concordville,PA,Delaware County,195.0
+19339,Concordville,PA,Delaware County,195.0
+19340,Concordville,PA,Delaware County,195.0
+15108,Coraopolis,PA,Allegheny County,210.5
+16407,Corry,PA,Erie County,210.5
+15028,Coulters,PA,Allegheny County,210.5
+16410,Cranesville,PA,Erie County,210.5
+19430,Creamery,PA,Montgomery County,195.0
+15030,Creighton,PA,Allegheny County,210.5
+15046,Crescent,PA,Allegheny County,210.5
+19021,Croydon,PA,Bucks County,195.0
+19022,Crum Lynne,PA,Delaware County,195.0
+15031,Cuddy,PA,Allegheny County,210.5
+15032,Curtisville,PA,Allegheny County,210.5
+18916,Danboro,PA,Bucks County,195.0
+19023,Darby,PA,Delaware County,195.0
+19432,Devault,PA,Chester County,195.0
+19333,Devon,PA,Chester County,195.0
+19335,Downingtown,PA,Chester County,195.0
+18901,Doylestown,PA,Bucks County,195.0
+18902,Doylestown,PA,Bucks County,195.0
+15034,Dravosburg,PA,Allegheny County,210.5
+19025,Dresher,PA,Montgomery County,195.0
+19026,Drexel Hill,PA,Delaware County,195.0
+18917,Dublin,PA,Bucks County,195.0
+15110,Duquesne,PA,Allegheny County,210.5
+19408,Eagleville,PA,Montgomery County,195.0
+19415,Eagleville,PA,Montgomery County,195.0
+15035,East McKeesport,PA,Allegheny County,210.5
+15112,East Pittsburgh,PA,Allegheny County,210.5
+16411,East Springfield,PA,Erie County,210.5
+19028,Edgemont,PA,Delaware County,195.0
+16412,Edinboro,PA,Erie County,210.5
+16444,Edinboro,PA,Erie County,210.5
+16413,Elgin,PA,Erie County,210.5
+15037,Elizabeth,PA,Allegheny County,210.5
+19027,Elkins Park,PA,Montgomery County,195.0
+19520,Elverson,PA,Chester County,195.0
+16501,Erie,PA,Erie County,210.5
+16502,Erie,PA,Erie County,210.5
+16503,Erie,PA,Erie County,210.5
+16504,Erie,PA,Erie County,210.5
+16505,Erie,PA,Erie County,210.5
+16506,Erie,PA,Erie County,210.5
+16507,Erie,PA,Erie County,210.5
+16508,Erie,PA,Erie County,210.5
+16509,Erie,PA,Erie County,210.5
+16510,Erie,PA,Erie County,210.5
+16511,Erie,PA,Erie County,210.5
+16512,Erie,PA,Erie County,210.5
+16514,Erie,PA,Erie County,210.5
+16515,Erie,PA,Erie County,210.5
+16522,Erie,PA,Erie County,210.5
+16530,Erie,PA,Erie County,210.5
+16531,Erie,PA,Erie County,210.5
+16534,Erie,PA,Erie County,210.5
+16538,Erie,PA,Erie County,210.5
+16541,Erie,PA,Erie County,210.5
+16544,Erie,PA,Erie County,210.5
+16546,Erie,PA,Erie County,210.5
+16550,Erie,PA,Erie County,210.5
+16553,Erie,PA,Erie County,210.5
+16563,Erie,PA,Erie County,210.5
+19029,Essington,PA,Delaware County,195.0
+19341,Exton,PA,Chester County,195.0
+19030,Fairless Hills,PA,Bucks County,195.0
+16415,Fairview,PA,Erie County,210.5
+19409,Fairview Village,PA,Montgomery County,195.0
+19053,Feasterville Trevose,PA,Bucks County,195.0
+19031,Flourtown,PA,Montgomery County,195.0
+19032,Folcroft,PA,Delaware County,195.0
+19033,Folsom,PA,Delaware County,195.0
+18922,Forest Grove,PA,Bucks County,195.0
+19034,Fort Washington,PA,Montgomery County,195.0
+19048,Fort Washington,PA,Montgomery County,195.0
+19049,Fort Washington,PA,Montgomery County,195.0
+18923,Fountainville,PA,Bucks County,195.0
+19435,Frederick,PA,Montgomery County,195.0
+18925,Furlong,PA,Bucks County,195.0
+19060,Garnet Valley,PA,Delaware County,195.0
+15044,Gibsonia,PA,Allegheny County,210.5
+16417,Girard,PA,Erie County,210.5
+19035,Gladwyne,PA,Montgomery County,195.0
+15045,Glassport,PA,Allegheny County,210.5
+19342,Glen Mills,PA,Delaware County,195.0
+19037,Glen Riddle Lima,PA,Delaware County,195.0
+19343,Glenmoore,PA,Chester County,195.0
+19036,Glenolden,PA,Delaware County,195.0
+15116,Glenshaw,PA,Allegheny County,210.5
+19038,Glenside,PA,Montgomery County,195.0
+19039,Gradyville,PA,Delaware County,195.0
+15047,Greenock,PA,Allegheny County,210.5
+16421,Harborcreek,PA,Erie County,210.5
+15049,Harwick,PA,Allegheny County,210.5
+19040,Hatboro,PA,Montgomery County,195.0
+19041,Haverford,PA,Delaware County,195.0
+19083,Havertown,PA,Delaware County,195.0
+18927,Hilltown,PA,Bucks County,195.0
+18928,Holicong,PA,Bucks County,195.0
+19043,Holmes,PA,Delaware County,195.0
+19098,Holmes,PA,Delaware County,195.0
+15120,Homestead,PA,Allegheny County,210.5
+19344,Honey Brook,PA,Chester County,195.0
+19044,Horsham,PA,Montgomery County,195.0
+19006,Huntingdon Valley,PA,Montgomery County,195.0
+19345,Immaculata,PA,Chester County,195.0
+15126,Imperial,PA,Allegheny County,210.5
+15051,Indianola,PA,Allegheny County,210.5
+15127,Ingomar,PA,Allegheny County,210.5
+18929,Jamison,PA,Bucks County,195.0
+19046,Jenkintown,PA,Montgomery County,195.0
+19346,Kelton,PA,Chester County,195.0
+19347,Kemblesville,PA,Chester County,195.0
+19348,Kennett Square,PA,Chester County,195.0
+19442,Kimberton,PA,Chester County,195.0
+19406,King Of Prussia,PA,Montgomery County,195.0
+19443,Kulpsville,PA,Montgomery County,195.0
+18931,Lahaska,PA,Bucks County,195.0
+16423,Lake City,PA,Erie County,210.5
+19350,Landenberg,PA,Chester County,195.0
+19047,Langhorne,PA,Bucks County,195.0
+19050,Lansdowne,PA,Delaware County,195.0
+15056,Leetsdale,PA,Allegheny County,210.5
+19052,Lenni,PA,Delaware County,195.0
+19054,Levittown,PA,Bucks County,195.0
+19055,Levittown,PA,Bucks County,195.0
+19056,Levittown,PA,Bucks County,195.0
+19057,Levittown,PA,Bucks County,195.0
+19058,Levittown,PA,Bucks County,195.0
+19351,Lewisville,PA,Chester County,195.0
+19352,Lincoln University,PA,Chester County,195.0
+18932,Line Lexington,PA,Bucks County,195.0
+19353,Lionville,PA,Chester County,195.0
+18933,Lumberville,PA,Bucks County,195.0
+19354,Lyndell,PA,Chester County,195.0
+19355,Malvern,PA,Chester County,195.0
+19061,Marcus Hook,PA,Delaware County,195.0
+16426,McKean,PA,Erie County,210.5
+15136,McKees Rocks,PA,Allegheny County,210.5
+15131,Mckeesport,PA,Allegheny County,210.5
+15132,Mckeesport,PA,Allegheny County,210.5
+15133,Mckeesport,PA,Allegheny County,210.5
+15134,Mckeesport,PA,Allegheny County,210.5
+15135,Mckeesport,PA,Allegheny County,210.5
+18934,Mechanicsville,PA,Bucks County,195.0
+19063,Media,PA,Delaware County,195.0
+19065,Media,PA,Delaware County,195.0
+19091,Media,PA,Delaware County,195.0
+19357,Mendenhall,PA,Chester County,195.0
+19066,Merion Station,PA,Montgomery County,195.0
+16427,Mill Village,PA,Erie County,210.5
+19358,Modena,PA,Chester County,195.0
+15146,Monroeville,PA,Allegheny County,210.5
+19453,Mont Clare,PA,Montgomery County,195.0
+18936,Montgomeryville,PA,Montgomery County,195.0
+15064,Morgan,PA,Allegheny County,210.5
+19067,Morrisville,PA,Bucks County,195.0
+19070,Morton,PA,Delaware County,195.0
+19072,Narberth,PA,Montgomery County,195.0
+15065,Natrona Heights,PA,Allegheny County,210.5
+18938,New Hope,PA,Bucks County,195.0
+19360,New London,PA,Chester County,195.0
+18940,Newtown,PA,Bucks County,195.0
+19073,Newtown Square,PA,Delaware County,195.0
+19401,Norristown,PA,Montgomery County,195.0
+19403,Norristown,PA,Montgomery County,195.0
+19404,Norristown,PA,Montgomery County,195.0
+16428,North East,PA,Erie County,210.5
+16430,North Springfield,PA,Erie County,210.5
+15137,North Versailles,PA,Allegheny County,210.5
+19074,Norwood,PA,Delaware County,195.0
+19362,Nottingham,PA,Chester County,195.0
+15071,Oakdale,PA,Allegheny County,210.5
+15139,Oakmont,PA,Allegheny County,210.5
+19456,Oaks,PA,Montgomery County,195.0
+19075,Oreland,PA,Montgomery County,195.0
+19363,Oxford,PA,Chester County,195.0
+19301,Paoli,PA,Chester County,195.0
+19457,Parker Ford,PA,Chester County,195.0
+19365,Parkesburg,PA,Chester County,195.0
+18943,Penns Park,PA,Bucks County,195.0
+19019,Philadelphia,PA,Philadelphia County,195.0
+19092,Philadelphia,PA,Philadelphia County,195.0
+19093,Philadelphia,PA,Philadelphia County,195.0
+19099,Philadelphia,PA,Philadelphia County,195.0
+19101,Philadelphia,PA,Philadelphia County,195.0
+19102,Philadelphia,PA,Philadelphia County,195.0
+19103,Philadelphia,PA,Philadelphia County,195.0
+19104,Philadelphia,PA,Philadelphia County,195.0
+19105,Philadelphia,PA,Philadelphia County,195.0
+19106,Philadelphia,PA,Philadelphia County,195.0
+19107,Philadelphia,PA,Philadelphia County,195.0
+19108,Philadelphia,PA,Philadelphia County,195.0
+19109,Philadelphia,PA,Philadelphia County,195.0
+19110,Philadelphia,PA,Philadelphia County,195.0
+19111,Philadelphia,PA,Philadelphia County,195.0
+19112,Philadelphia,PA,Philadelphia County,195.0
+19113,Philadelphia,PA,Delaware County,195.0
+19114,Philadelphia,PA,Philadelphia County,195.0
+19115,Philadelphia,PA,Philadelphia County,195.0
+19116,Philadelphia,PA,Philadelphia County,195.0
+19118,Philadelphia,PA,Philadelphia County,195.0
+19119,Philadelphia,PA,Philadelphia County,195.0
+19120,Philadelphia,PA,Philadelphia County,195.0
+19121,Philadelphia,PA,Philadelphia County,195.0
+19122,Philadelphia,PA,Philadelphia County,195.0
+19123,Philadelphia,PA,Philadelphia County,195.0
+19124,Philadelphia,PA,Philadelphia County,195.0
+19125,Philadelphia,PA,Philadelphia County,195.0
+19126,Philadelphia,PA,Philadelphia County,195.0
+19127,Philadelphia,PA,Philadelphia County,195.0
+19128,Philadelphia,PA,Philadelphia County,195.0
+19129,Philadelphia,PA,Philadelphia County,195.0
+19130,Philadelphia,PA,Philadelphia County,195.0
+19131,Philadelphia,PA,Philadelphia County,195.0
+19132,Philadelphia,PA,Philadelphia County,195.0
+19133,Philadelphia,PA,Philadelphia County,195.0
+19134,Philadelphia,PA,Philadelphia County,195.0
+19135,Philadelphia,PA,Philadelphia County,195.0
+19136,Philadelphia,PA,Philadelphia County,195.0
+19137,Philadelphia,PA,Philadelphia County,195.0
+19138,Philadelphia,PA,Philadelphia County,195.0
+19139,Philadelphia,PA,Philadelphia County,195.0
+19140,Philadelphia,PA,Philadelphia County,195.0
+19141,Philadelphia,PA,Philadelphia County,195.0
+19142,Philadelphia,PA,Philadelphia County,195.0
+19143,Philadelphia,PA,Philadelphia County,195.0
+19144,Philadelphia,PA,Philadelphia County,195.0
+19145,Philadelphia,PA,Philadelphia County,195.0
+19146,Philadelphia,PA,Philadelphia County,195.0
+19147,Philadelphia,PA,Philadelphia County,195.0
+19148,Philadelphia,PA,Philadelphia County,195.0
+19149,Philadelphia,PA,Philadelphia County,195.0
+19150,Philadelphia,PA,Philadelphia County,195.0
+19151,Philadelphia,PA,Philadelphia County,195.0
+19152,Philadelphia,PA,Philadelphia County,195.0
+19153,Philadelphia,PA,Philadelphia County,195.0
+19154,Philadelphia,PA,Philadelphia County,195.0
+19155,Philadelphia,PA,Philadelphia County,195.0
+19160,Philadelphia,PA,Philadelphia County,195.0
+19161,Philadelphia,PA,Philadelphia County,195.0
+19162,Philadelphia,PA,Philadelphia County,195.0
+19170,Philadelphia,PA,Philadelphia County,195.0
+19171,Philadelphia,PA,Philadelphia County,195.0
+19172,Philadelphia,PA,Philadelphia County,195.0
+19173,Philadelphia,PA,Philadelphia County,195.0
+19175,Philadelphia,PA,Philadelphia County,195.0
+19176,Philadelphia,PA,Philadelphia County,195.0
+19177,Philadelphia,PA,Philadelphia County,195.0
+19178,Philadelphia,PA,Philadelphia County,195.0
+19179,Philadelphia,PA,Philadelphia County,195.0
+19181,Philadelphia,PA,Philadelphia County,195.0
+19182,Philadelphia,PA,Philadelphia County,195.0
+19183,Philadelphia,PA,Philadelphia County,195.0
+19184,Philadelphia,PA,Philadelphia County,195.0
+19185,Philadelphia,PA,Philadelphia County,195.0
+19187,Philadelphia,PA,Philadelphia County,195.0
+19188,Philadelphia,PA,Philadelphia County,195.0
+19190,Philadelphia,PA,Philadelphia County,195.0
+19191,Philadelphia,PA,Philadelphia County,195.0
+19192,Philadelphia,PA,Philadelphia County,195.0
+19193,Philadelphia,PA,Philadelphia County,195.0
+19194,Philadelphia,PA,Philadelphia County,195.0
+19195,Philadelphia,PA,Philadelphia County,195.0
+19196,Philadelphia,PA,Philadelphia County,195.0
+19197,Philadelphia,PA,Philadelphia County,195.0
+19244,Philadelphia,PA,Philadelphia County,195.0
+19255,Philadelphia,PA,Philadelphia County,195.0
+19460,Phoenixville,PA,Chester County,195.0
+18946,Pineville,PA,Bucks County,195.0
+15140,Pitcairn,PA,Allegheny County,210.5
+15201,Pittsburgh,PA,Allegheny County,210.5
+15202,Pittsburgh,PA,Allegheny County,210.5
+15203,Pittsburgh,PA,Allegheny County,210.5
+15204,Pittsburgh,PA,Allegheny County,210.5
+15205,Pittsburgh,PA,Allegheny County,210.5
+15206,Pittsburgh,PA,Allegheny County,210.5
+15207,Pittsburgh,PA,Allegheny County,210.5
+15208,Pittsburgh,PA,Allegheny County,210.5
+15209,Pittsburgh,PA,Allegheny County,210.5
+15210,Pittsburgh,PA,Allegheny County,210.5
+15211,Pittsburgh,PA,Allegheny County,210.5
+15212,Pittsburgh,PA,Allegheny County,210.5
+15213,Pittsburgh,PA,Allegheny County,210.5
+15214,Pittsburgh,PA,Allegheny County,210.5
+15215,Pittsburgh,PA,Allegheny County,210.5
+15216,Pittsburgh,PA,Allegheny County,210.5
+15217,Pittsburgh,PA,Allegheny County,210.5
+15218,Pittsburgh,PA,Allegheny County,210.5
+15219,Pittsburgh,PA,Allegheny County,210.5
+15220,Pittsburgh,PA,Allegheny County,210.5
+15221,Pittsburgh,PA,Allegheny County,210.5
+15222,Pittsburgh,PA,Allegheny County,210.5
+15223,Pittsburgh,PA,Allegheny County,210.5
+15224,Pittsburgh,PA,Allegheny County,210.5
+15225,Pittsburgh,PA,Allegheny County,210.5
+15226,Pittsburgh,PA,Allegheny County,210.5
+15227,Pittsburgh,PA,Allegheny County,210.5
+15228,Pittsburgh,PA,Allegheny County,210.5
+15229,Pittsburgh,PA,Allegheny County,210.5
+15230,Pittsburgh,PA,Allegheny County,210.5
+15231,Pittsburgh,PA,Allegheny County,210.5
+15232,Pittsburgh,PA,Allegheny County,210.5
+15233,Pittsburgh,PA,Allegheny County,210.5
+15234,Pittsburgh,PA,Allegheny County,210.5
+15235,Pittsburgh,PA,Allegheny County,210.5
+15236,Pittsburgh,PA,Allegheny County,210.5
+15237,Pittsburgh,PA,Allegheny County,210.5
+15238,Pittsburgh,PA,Allegheny County,210.5
+15239,Pittsburgh,PA,Allegheny County,210.5
+15240,Pittsburgh,PA,Allegheny County,210.5
+15241,Pittsburgh,PA,Allegheny County,210.5
+15242,Pittsburgh,PA,Allegheny County,210.5
+15243,Pittsburgh,PA,Allegheny County,210.5
+15244,Pittsburgh,PA,Allegheny County,210.5
+15250,Pittsburgh,PA,Allegheny County,210.5
+15251,Pittsburgh,PA,Allegheny County,210.5
+15252,Pittsburgh,PA,Allegheny County,210.5
+15253,Pittsburgh,PA,Allegheny County,210.5
+15254,Pittsburgh,PA,Allegheny County,210.5
+15255,Pittsburgh,PA,Allegheny County,210.5
+15257,Pittsburgh,PA,Allegheny County,210.5
+15258,Pittsburgh,PA,Allegheny County,210.5
+15259,Pittsburgh,PA,Allegheny County,210.5
+15260,Pittsburgh,PA,Allegheny County,210.5
+15261,Pittsburgh,PA,Allegheny County,210.5
+15262,Pittsburgh,PA,Allegheny County,210.5
+15264,Pittsburgh,PA,Allegheny County,210.5
+15265,Pittsburgh,PA,Allegheny County,210.5
+15267,Pittsburgh,PA,Allegheny County,210.5
+15268,Pittsburgh,PA,Allegheny County,210.5
+15270,Pittsburgh,PA,Allegheny County,210.5
+15272,Pittsburgh,PA,Allegheny County,210.5
+15274,Pittsburgh,PA,Allegheny County,210.5
+15275,Pittsburgh,PA,Allegheny County,210.5
+15276,Pittsburgh,PA,Allegheny County,210.5
+15277,Pittsburgh,PA,Allegheny County,210.5
+15278,Pittsburgh,PA,Allegheny County,210.5
+15279,Pittsburgh,PA,Allegheny County,210.5
+15281,Pittsburgh,PA,Allegheny County,210.5
+15282,Pittsburgh,PA,Allegheny County,210.5
+15283,Pittsburgh,PA,Allegheny County,210.5
+15286,Pittsburgh,PA,Allegheny County,210.5
+15289,Pittsburgh,PA,Allegheny County,210.5
+15290,Pittsburgh,PA,Allegheny County,210.5
+15295,Pittsburgh,PA,Allegheny County,210.5
+18949,Plumsteadville,PA,Bucks County,195.0
+19366,Pocopson,PA,Chester County,195.0
+18950,Point Pleasant,PA,Bucks County,195.0
+19367,Pomeroy,PA,Chester County,195.0
+19464,Pottstown,PA,Montgomery County,195.0
+19465,Pottstown,PA,Chester County,195.0
+15142,Presto,PA,Allegheny County,210.5
+19076,Prospect Park,PA,Delaware County,195.0
+18954,Richboro,PA,Bucks County,195.0
+19078,Ridley Park,PA,Delaware County,195.0
+19468,Royersford,PA,Montgomery County,195.0
+15075,Rural Ridge,PA,Allegheny County,210.5
+18956,Rushland,PA,Bucks County,195.0
+15076,Russellton,PA,Allegheny County,210.5
+19369,Sadsburyville,PA,Chester County,195.0
+19470,Saint Peters,PA,Chester County,195.0
+19472,Sassamansville,PA,Montgomery County,195.0
+19473,Schwenksville,PA,Montgomery County,195.0
+15143,Sewickley,PA,Allegheny County,210.5
+19079,Sharon Hill,PA,Delaware County,195.0
+19474,Skippack,PA,Montgomery County,195.0
+18963,Solebury,PA,Bucks County,195.0
+15129,South Park,PA,Allegheny County,210.5
+18966,Southampton,PA,Bucks County,195.0
+19397,Southeastern,PA,Chester County,195.0
+19398,Southeastern,PA,Chester County,195.0
+19399,Southeastern,PA,Chester County,195.0
+19475,Spring City,PA,Chester County,195.0
+15144,Springdale,PA,Allegheny County,210.5
+19064,Springfield,PA,Delaware County,195.0
+15082,Sturgeon,PA,Allegheny County,210.5
+19371,Suplee,PA,Chester County,195.0
+19081,Swarthmore,PA,Delaware County,195.0
+15084,Tarentum,PA,Allegheny County,210.5
+19372,Thorndale,PA,Chester County,195.0
+19373,Thornton,PA,Delaware County,195.0
+19374,Toughkenamon,PA,Chester County,195.0
+15145,Turtle Creek,PA,Allegheny County,210.5
+16438,Union City,PA,Erie County,210.5
+19375,Unionville,PA,Chester County,195.0
+19082,Upper Darby,PA,Delaware County,195.0
+19480,Uwchland,PA,Chester County,195.0
+19481,Valley Forge,PA,Montgomery County,195.0
+19482,Valley Forge,PA,Montgomery County,195.0
+19493,Valley Forge,PA,Montgomery County,195.0
+19494,Valley Forge,PA,Montgomery County,195.0
+19495,Valley Forge,PA,Montgomery County,195.0
+19496,Valley Forge,PA,Montgomery County,195.0
+15147,Verona,PA,Allegheny County,210.5
+19085,Villanova,PA,Delaware County,195.0
+19376,Wagontown,PA,Chester County,195.0
+19086,Wallingford,PA,Delaware County,195.0
+18974,Warminster,PA,Bucks County,195.0
+15086,Warrendale,PA,Allegheny County,210.5
+15095,Warrendale,PA,Allegheny County,210.5
+15096,Warrendale,PA,Allegheny County,210.5
+18976,Warrington,PA,Bucks County,195.0
+18977,Washington Crossing,PA,Bucks County,195.0
+16441,Waterford,PA,Erie County,210.5
+16442,Wattsburg,PA,Erie County,210.5
+19080,Wayne,PA,Delaware County,195.0
+19087,Wayne,PA,Chester County,195.0
+19088,Wayne,PA,Delaware County,195.0
+19089,Wayne,PA,Delaware County,195.0
+19380,West Chester,PA,Chester County,195.0
+19381,West Chester,PA,Chester County,195.0
+19382,West Chester,PA,Chester County,195.0
+19383,West Chester,PA,Chester County,195.0
+15088,West Elizabeth,PA,Allegheny County,210.5
+19390,West Grove,PA,Chester County,195.0
+15122,West Mifflin,PA,Allegheny County,210.5
+15123,West Mifflin,PA,Allegheny County,210.5
+16443,West Springfield,PA,Erie County,210.5
+19395,Westtown,PA,Chester County,195.0
+15090,Wexford,PA,Allegheny County,210.5
+15091,Wildwood,PA,Allegheny County,210.5
+19090,Willow Grove,PA,Montgomery County,195.0
+15148,Wilmerding,PA,Allegheny County,210.5
+19094,Woodlyn,PA,Delaware County,195.0
+18980,Wycombe,PA,Bucks County,195.0
+19095,Wyncote,PA,Montgomery County,195.0
+19096,Wynnewood,PA,Montgomery County,195.0

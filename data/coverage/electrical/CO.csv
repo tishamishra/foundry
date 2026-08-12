@@ -1,0 +1,269 @@
+zip,city,state,county,payout
+80510,Allenspark,CO,Boulder County,37.95
+80001,Arvada,CO,Jefferson County,39.2
+80002,Arvada,CO,Jefferson County,44.34
+80003,Arvada,CO,Jefferson County,38.5
+80004,Arvada,CO,Jefferson County,43.47
+80005,Arvada,CO,Jefferson County,38.5
+80006,Arvada,CO,Jefferson County,38.5
+80007,Arvada,CO,Jefferson County,50.4
+80610,Ault,CO,Weld County,37.95
+80010,Aurora,CO,Arapahoe County,50.4
+80011,Aurora,CO,Arapahoe County,43.75
+80012,Aurora,CO,Arapahoe County,50.4
+80013,Aurora,CO,Arapahoe County,43.75
+80014,Aurora,CO,Arapahoe County,50.4
+80015,Aurora,CO,Arapahoe County,43.75
+80016,Aurora,CO,Arapahoe County,43.75
+80017,Aurora,CO,Arapahoe County,43.75
+80018,Aurora,CO,Arapahoe County,43.75
+80019,Aurora,CO,Adams County,43.75
+80040,Aurora,CO,Arapahoe County,43.75
+80041,Aurora,CO,Arapahoe County,43.75
+80042,Aurora,CO,Arapahoe County,43.75
+80044,Aurora,CO,Arapahoe County,43.75
+80045,Aurora,CO,Adams County,43.75
+80046,Aurora,CO,Arapahoe County,43.75
+80047,Aurora,CO,Arapahoe County,43.75
+80513,Berthoud,CO,Larimer County,37.95
+80422,Black Hawk,CO,Gilpin County,37.95
+80301,Boulder,CO,Boulder County,38.5
+80302,Boulder,CO,Boulder County,37.95
+80303,Boulder,CO,Boulder County,38.5
+80304,Boulder,CO,Boulder County,38.5
+80305,Boulder,CO,Boulder County,38.5
+80306,Boulder,CO,Boulder County,38.5
+80307,Boulder,CO,Boulder County,38.5
+80308,Boulder,CO,Boulder County,38.5
+80309,Boulder,CO,Boulder County,38.5
+80310,Boulder,CO,Boulder County,38.5
+80314,Boulder,CO,Boulder County,38.5
+80601,Brighton,CO,Adams County,50.4
+80602,Brighton,CO,Adams County,43.75
+80603,Brighton,CO,Weld County,38.5
+80020,Broomfield,CO,Broomfield County,50.4
+80021,Broomfield,CO,Jefferson County,38.5
+80023,Broomfield,CO,Broomfield County,50.4
+80038,Broomfield,CO,Broomfield County,38.5
+80103,Byers,CO,Arapahoe County,43.75
+81212,Canon City,CO,Fremont County,37.13
+80809,Cascade,CO,El Paso County,44.1
+80104,Castle Rock,CO,Douglas County,50.4
+80108,Castle Rock,CO,Douglas County,44.34
+80109,Castle Rock,CO,Douglas County,44.34
+80903,Colorado Springs,CO,El Paso County,44.1
+80904,Colorado Springs,CO,El Paso County,44.1
+80905,Colorado Springs,CO,El Paso County,44.1
+80906,Colorado Springs,CO,El Paso County,44.1
+80907,Colorado Springs,CO,El Paso County,44.1
+80908,Colorado Springs,CO,El Paso County,44.1
+80909,Colorado Springs,CO,El Paso County,44.1
+80910,Colorado Springs,CO,El Paso County,44.1
+80911,Colorado Springs,CO,El Paso County,44.1
+80912,Colorado Springs,CO,El Paso County,44.1
+80914,Colorado Springs,CO,El Paso County,44.1
+80915,Colorado Springs,CO,El Paso County,44.1
+80916,Colorado Springs,CO,El Paso County,44.1
+80917,Colorado Springs,CO,El Paso County,44.1
+80918,Colorado Springs,CO,El Paso County,44.1
+80919,Colorado Springs,CO,El Paso County,44.1
+80920,Colorado Springs,CO,El Paso County,44.1
+80921,Colorado Springs,CO,El Paso County,44.1
+80922,Colorado Springs,CO,El Paso County,44.1
+80923,Colorado Springs,CO,El Paso County,44.1
+80924,Colorado Springs,CO,El Paso County,44.1
+80925,Colorado Springs,CO,El Paso County,44.1
+80926,Colorado Springs,CO,El Paso County,44.1
+80927,Colorado Springs,CO,El Paso County,44.1
+80928,Colorado Springs,CO,El Paso County,44.1
+80929,Colorado Springs,CO,El Paso County,44.1
+80930,Colorado Springs,CO,El Paso County,44.1
+80938,Colorado Springs,CO,El Paso County,44.1
+80939,Colorado Springs,CO,El Paso County,44.1
+80950,Colorado Springs,CO,El Paso County,37.13
+80951,Colorado Springs,CO,El Paso County,44.1
+80022,Commerce City,CO,Adams County,43.75
+80037,Commerce City,CO,Adams County,43.75
+80433,Conifer,CO,Jefferson County,37.95
+80514,Dacono,CO,Weld County,38.5
+80105,Deer Trail,CO,Arapahoe County,43.75
+80201,Denver,CO,Denver County,50.4
+80202,Denver,CO,Denver County,50.4
+80203,Denver,CO,Denver County,50.4
+80204,Denver,CO,Denver County,50.4
+80205,Denver,CO,Denver County,43.75
+80206,Denver,CO,Denver County,43.75
+80207,Denver,CO,Denver County,44.34
+80208,Denver,CO,Denver County,43.75
+80209,Denver,CO,Denver County,50.4
+80210,Denver,CO,Denver County,50.4
+80211,Denver,CO,Denver County,50.4
+80212,Denver,CO,Denver County,44.34
+80214,Denver,CO,Jefferson County,44.34
+80215,Denver,CO,Jefferson County,44.34
+80216,Denver,CO,Denver County,43.75
+80217,Denver,CO,Denver County,43.75
+80218,Denver,CO,Denver County,44.34
+80219,Denver,CO,Denver County,50.4
+80220,Denver,CO,Denver County,50.4
+80221,Denver,CO,Adams County,43.75
+80222,Denver,CO,Denver County,44.34
+80223,Denver,CO,Denver County,44.34
+80224,Denver,CO,Denver County,44.34
+80225,Denver,CO,Denver County,38.5
+80226,Denver,CO,Jefferson County,50.4
+80227,Denver,CO,Jefferson County,44.34
+80228,Denver,CO,Jefferson County,50.4
+80229,Denver,CO,Adams County,50.4
+80230,Denver,CO,Denver County,44.34
+80231,Denver,CO,Denver County,44.34
+80232,Denver,CO,Jefferson County,44.34
+80233,Denver,CO,Adams County,50.4
+80234,Denver,CO,Adams County,43.75
+80235,Denver,CO,Jefferson County,50.4
+80236,Denver,CO,Denver County,43.75
+80237,Denver,CO,Denver County,44.34
+80238,Denver,CO,Denver County,50.4
+80239,Denver,CO,Denver County,50.4
+80243,Denver,CO,Denver County,43.75
+80244,Denver,CO,Denver County,43.75
+80246,Denver,CO,Denver County,44.34
+80247,Denver,CO,Arapahoe County,44.34
+80248,Denver,CO,Denver County,43.75
+80249,Denver,CO,Denver County,43.75
+80250,Denver,CO,Denver County,43.75
+80251,Denver,CO,Denver County,43.75
+80252,Denver,CO,Denver County,43.75
+80256,Denver,CO,Denver County,43.75
+80257,Denver,CO,Denver County,43.75
+80259,Denver,CO,Denver County,43.75
+80260,Denver,CO,Adams County,43.75
+80261,Denver,CO,Denver County,43.75
+80262,Denver,CO,Denver County,43.75
+80263,Denver,CO,Denver County,43.75
+80264,Denver,CO,Denver County,43.75
+80265,Denver,CO,Denver County,43.75
+80266,Denver,CO,Denver County,43.75
+80271,Denver,CO,Denver County,43.75
+80273,Denver,CO,Denver County,43.75
+80274,Denver,CO,Denver County,43.75
+80281,Denver,CO,Denver County,43.75
+80290,Denver,CO,Denver County,43.75
+80291,Denver,CO,Denver County,43.75
+80293,Denver,CO,Denver County,43.75
+80294,Denver,CO,Denver County,43.75
+80295,Denver,CO,Denver County,43.75
+80299,Denver,CO,Denver County,43.75
+80024,Dupont,CO,Adams County,43.75
+80614,Eastlake,CO,Adams County,43.75
+80615,Eaton,CO,Weld County,37.95
+80106,Elbert,CO,El Paso County,44.1
+80025,Eldorado Springs,CO,Boulder County,38.5
+80107,Elizabeth,CO,Elbert County,38.5
+80110,Englewood,CO,Arapahoe County,50.4
+80111,Englewood,CO,Arapahoe County,50.4
+80112,Englewood,CO,Arapahoe County,44.34
+80113,Englewood,CO,Arapahoe County,50.4
+80150,Englewood,CO,Arapahoe County,43.75
+80151,Englewood,CO,Arapahoe County,43.75
+80155,Englewood,CO,Arapahoe County,43.75
+80516,Erie,CO,Weld County,39.2
+80620,Evans,CO,Weld County,50.4
+80437,Evergreen,CO,Jefferson County,38.5
+80439,Evergreen,CO,Jefferson County,50.4
+80520,Firestone,CO,Weld County,38.5
+81226,Florence,CO,Fremont County,37.13
+80521,Fort Collins,CO,Larimer County,50.4
+80524,Fort Collins,CO,Larimer County,37.95
+80525,Fort Collins,CO,Larimer County,43.47
+80526,Fort Collins,CO,Larimer County,43.47
+80528,Fort Collins,CO,Larimer County,37.95
+80621,Fort Lupton,CO,Weld County,50.4
+80701,Fort Morgan,CO,Morgan County,37.95
+80817,Fountain,CO,El Paso County,44.1
+80116,Franktown,CO,Douglas County,44.1
+80530,Frederick,CO,Weld County,38.5
+80401,Golden,CO,Jefferson County,50.4
+80402,Golden,CO,Jefferson County,38.5
+80403,Golden,CO,Jefferson County,37.95
+80419,Golden,CO,Jefferson County,38.5
+80631,Greeley,CO,Weld County,37.95
+80634,Greeley,CO,Weld County,37.95
+80819,Green Mountain Falls,CO,El Paso County,44.1
+80640,Henderson,CO,Adams County,43.75
+80642,Hudson,CO,Weld County,38.5
+80453,Idledale,CO,Jefferson County,38.5
+80454,Indian Hills,CO,Jefferson County,38.5
+80455,Jamestown,CO,Boulder County,37.95
+80534,Johnstown,CO,Weld County,43.47
+80643,Keenesburg,CO,Weld County,39.2
+80644,Kersey,CO,Weld County,37.95
+80117,Kiowa,CO,Elbert County,38.5
+80457,Kittredge,CO,Jefferson County,38.5
+80645,La Salle,CO,Weld County,37.95
+80026,Lafayette,CO,Boulder County,39.06
+80118,Larkspur,CO,Douglas County,44.1
+80120,Littleton,CO,Arapahoe County,44.34
+80121,Littleton,CO,Arapahoe County,44.34
+80122,Littleton,CO,Arapahoe County,44.34
+80123,Littleton,CO,Jefferson County,50.4
+80125,Littleton,CO,Douglas County,44.34
+80126,Littleton,CO,Douglas County,44.34
+80127,Littleton,CO,Jefferson County,44.34
+80128,Littleton,CO,Jefferson County,44.34
+80129,Littleton,CO,Douglas County,44.34
+80130,Littleton,CO,Douglas County,44.34
+80160,Littleton,CO,Arapahoe County,43.75
+80161,Littleton,CO,Arapahoe County,43.75
+80162,Littleton,CO,Arapahoe County,38.5
+80163,Littleton,CO,Arapahoe County,38.5
+80165,Littleton,CO,Arapahoe County,43.75
+80166,Littleton,CO,Arapahoe County,43.75
+80124,Lone Tree,CO,Douglas County,50.4
+80501,Longmont,CO,Boulder County,50.4
+80502,Longmont,CO,Boulder County,38.5
+80503,Longmont,CO,Boulder County,50.4
+80504,Longmont,CO,Boulder County,50.4
+80027,Louisville,CO,Boulder County,50.4
+80131,Louviers,CO,Douglas County,44.1
+80537,Loveland,CO,Larimer County,37.95
+80538,Loveland,CO,Larimer County,37.95
+80539,Loveland,CO,Larimer County,39.2
+80540,Lyons,CO,Boulder County,37.95
+80829,Manitou Springs,CO,El Paso County,44.1
+80542,Mead,CO,Weld County,37.95
+80543,Milliken,CO,Weld County,37.95
+80132,Monument,CO,El Paso County,44.1
+80465,Morrison,CO,Jefferson County,38.5
+80466,Nederland,CO,Boulder County,37.95
+80544,Niwot,CO,Boulder County,38.5
+80133,Palmer Lake,CO,El Paso County,44.1
+80134,Parker,CO,Douglas County,50.4
+80138,Parker,CO,Douglas County,44.1
+80831,Peyton,CO,El Paso County,44.1
+80650,Pierce,CO,Weld County,37.95
+80471,Pinecliffe,CO,Boulder County,37.95
+80651,Platteville,CO,Weld County,37.95
+81001,Pueblo,CO,Pueblo County,44.1
+81003,Pueblo,CO,Pueblo County,44.1
+81005,Pueblo,CO,Pueblo County,44.1
+81006,Pueblo,CO,Pueblo County,44.1
+81007,Pueblo,CO,Pueblo County,44.1
+81008,Pueblo,CO,Pueblo County,44.1
+80652,Roggen,CO,Weld County,37.95
+80135,Sedalia,CO,Douglas County,50.4
+80546,Severance,CO,Weld County,37.95
+80136,Strasburg,CO,Adams County,43.75
+80241,Thornton,CO,Adams County,43.75
+80547,Timnath,CO,Larimer County,37.95
+80481,Ward,CO,Boulder County,37.95
+80137,Watkins,CO,Arapahoe County,43.75
+80030,Westminster,CO,Adams County,50.4
+80031,Westminster,CO,Adams County,50.4
+80035,Westminster,CO,Jefferson County,43.75
+80036,Westminster,CO,Jefferson County,43.75
+80033,Wheat Ridge,CO,Jefferson County,44.34
+80034,Wheat Ridge,CO,Jefferson County,38.5
+80654,Wiggins,CO,Morgan County,37.95
+80550,Windsor,CO,Weld County,37.95
+80863,Woodland Park,CO,Teller County,44.1

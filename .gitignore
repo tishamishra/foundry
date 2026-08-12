@@ -1,0 +1,11 @@
+# Runtime data lives on the Dokploy volume, not in git:
+data/library/user/
+data/shipped.json
+dist/
+.deploy/
+data/secrets.yaml
+data/deploy.yaml
+node_modules/
+__pycache__/
+*.pyc
+.foundry-trash-*

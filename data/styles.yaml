@@ -1,0 +1,218 @@
+# STYLE PACKS — how a page LOOKS. Nothing here decides what sections exist or in
+# what order; that is the skeleton's job (data/skeletons.yaml).
+#
+# Splitting the two is what makes them multiply. Sixteen packs x six skeletons
+# x ten themes is 960 combinations over one hand-authored stylesheet, and none
+# of them needs a template or a build step.
+#
+#   hero      split | stacked | banner | overlay | minimal | slab | card | frame
+#   cards     outline | raised | flat | edge | line | tint | soft | plate
+#   headline  serif | condensed | display | grotesk | mono | slab | light | wide
+#   accent    none | underline | bar | highlight | dot | slash | box
+#   rhythm    tight | comfortable | airy
+
+classic:
+  label: Classic
+  hero: split
+  cards: outline
+  headline: serif
+  accent: none
+  rhythm: comfortable
+  radius: "14px"
+  display_font: "'Fraunces', Georgia, serif"
+  body_font: "'Inter', system-ui, sans-serif"
+  fonts_url: "https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap"
+
+bold:
+  label: Bold
+  hero: banner
+  cards: raised
+  headline: condensed
+  accent: highlight
+  rhythm: tight
+  radius: "6px"
+  display_font: "'Archivo', 'Arial Narrow', sans-serif"
+  body_font: "'Archivo', system-ui, sans-serif"
+  fonts_url: "https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;800;900&display=swap"
+
+editorial:
+  label: Editorial
+  hero: stacked
+  cards: flat
+  headline: display
+  accent: underline
+  rhythm: airy
+  radius: "0px"
+  display_font: "'Playfair Display', Georgia, serif"
+  body_font: "'Source Sans 3', system-ui, sans-serif"
+  fonts_url: "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Source+Sans+3:wght@400;500;600&display=swap"
+
+civic:
+  label: Civic
+  hero: split
+  cards: edge
+  headline: grotesk
+  accent: bar
+  rhythm: comfortable
+  radius: "4px"
+  display_font: "'IBM Plex Sans', system-ui, sans-serif"
+  body_font: "'IBM Plex Sans', system-ui, sans-serif"
+  fonts_url: "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+
+compact:
+  label: Compact
+  hero: banner
+  cards: flat
+  headline: grotesk
+  accent: none
+  rhythm: tight
+  radius: "8px"
+  display_font: "'Manrope', system-ui, sans-serif"
+  body_font: "'Manrope', system-ui, sans-serif"
+  fonts_url: "https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;800&display=swap"
+
+premium:
+  label: Premium
+  hero: overlay
+  cards: raised
+  headline: condensed
+  accent: highlight
+  rhythm: airy
+  radius: "18px"
+  display_font: "'Bricolage Grotesque', system-ui, sans-serif"
+  body_font: "'Inter', system-ui, sans-serif"
+  fonts_url: "https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Inter:wght@400;500;600&display=swap"
+
+# ---- the ten new packs ----------------------------------------------------
+
+ledger:
+  label: Ledger
+  hero: minimal
+  cards: line
+  headline: mono
+  accent: slash
+  rhythm: comfortable
+  radius: "2px"
+  display_font: "'IBM Plex Mono', ui-monospace, monospace"
+  body_font: "'IBM Plex Sans', system-ui, sans-serif"
+  fonts_url: "https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+
+almanac:
+  label: Almanac
+  hero: slab
+  cards: plate
+  headline: slab
+  accent: box
+  rhythm: comfortable
+  radius: "3px"
+  display_font: "'Roboto Slab', Georgia, serif"
+  body_font: "'Roboto', system-ui, sans-serif"
+  fonts_url: "https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600;700;800&family=Roboto:wght@400;500;700&display=swap"
+
+atlas:
+  label: Atlas
+  hero: card
+  cards: tint
+  headline: wide
+  accent: dot
+  rhythm: comfortable
+  radius: "10px"
+  display_font: "'Space Grotesk', system-ui, sans-serif"
+  body_font: "'Inter', system-ui, sans-serif"
+  fonts_url: "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
+
+quiet:
+  label: Quiet
+  hero: minimal
+  cards: soft
+  headline: light
+  accent: none
+  rhythm: airy
+  radius: "16px"
+  display_font: "'Lora', Georgia, serif"
+  body_font: "'Karla', system-ui, sans-serif"
+  fonts_url: "https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Karla:wght@400;500;700&display=swap"
+
+signal:
+  label: Signal
+  hero: slab
+  cards: raised
+  headline: wide
+  accent: box
+  rhythm: tight
+  radius: "5px"
+  display_font: "'Barlow Condensed', 'Arial Narrow', sans-serif"
+  body_font: "'Barlow', system-ui, sans-serif"
+  fonts_url: "https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600&display=swap"
+
+trade:
+  label: Trade
+  hero: frame
+  cards: edge
+  headline: condensed
+  accent: bar
+  rhythm: comfortable
+  radius: "0px"
+  display_font: "'Oswald', 'Arial Narrow', sans-serif"
+  body_font: "'Public Sans', system-ui, sans-serif"
+  fonts_url: "https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Public+Sans:wght@400;500;600&display=swap"
+
+harbor:
+  label: Harbor
+  hero: card
+  cards: soft
+  headline: serif
+  accent: underline
+  rhythm: airy
+  radius: "20px"
+  display_font: "'Newsreader', Georgia, serif"
+  body_font: "'Figtree', system-ui, sans-serif"
+  fonts_url: "https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,700&family=Figtree:wght@400;500;600&display=swap"
+
+grid:
+  label: Grid
+  hero: minimal
+  cards: plate
+  headline: grotesk
+  accent: dot
+  rhythm: tight
+  radius: "0px"
+  display_font: "'Archivo', system-ui, sans-serif"
+  body_font: "'Archivo', system-ui, sans-serif"
+  fonts_url: "https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&display=swap"
+
+dispatch:
+  label: Dispatch
+  hero: banner
+  cards: line
+  headline: slab
+  accent: slash
+  rhythm: comfortable
+  radius: "4px"
+  display_font: "'Zilla Slab', Georgia, serif"
+  body_font: "'Work Sans', system-ui, sans-serif"
+  fonts_url: "https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@600;700&family=Work+Sans:wght@400;500;600&display=swap"
+
+meridian:
+  label: Meridian
+  hero: frame
+  cards: tint
+  headline: display
+  accent: box
+  rhythm: airy
+  radius: "12px"
+  display_font: "'DM Serif Display', Georgia, serif"
+  body_font: "'DM Sans', system-ui, sans-serif"
+  fonts_url: "https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap"
+
+foreman:
+  label: Foreman
+  hero: slab
+  cards: outline
+  headline: condensed
+  accent: highlight
+  rhythm: tight
+  radius: "2px"
+  display_font: "'Anton', 'Arial Narrow', sans-serif"
+  body_font: "'Roboto', system-ui, sans-serif"
+  fonts_url: "https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@400;500;700&display=swap"

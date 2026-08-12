@@ -1,0 +1,21 @@
+slug: statewide-pest
+company: Statewide Pest Solutions
+brand: Statewide Pest Solutions
+phone: "+1 555 310 4400"
+email: book@statewidepest.com
+address: {street: "", city: Pittsburgh, state: Pennsylvania, zip: ""}
+facts:
+  years_in_business: false
+  hours: "Mon-Sat 7:00-19:00"
+  free_estimates: true
+  licensed: false
+  insured: false
+  emergency_24_7: false
+  warranty_years: false
+  financing: false
+  family_owned: false
+  bbb_rating: null
+  rating: null
+  awards: null
+  certifications: null
+  volume_claims: null

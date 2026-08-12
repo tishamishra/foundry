@@ -1,0 +1,15 @@
+site_id: summitlineroofing-com
+business: summit-line-roofing
+niche: roofing
+domain: summitlineroofing.com
+theme: navy
+style: bold
+skeleton: conversion
+composition_seed: 192
+coverage:
+  states:
+  - GA
+render:
+  mode: hybrid
+  prerender_top_n: 10
+  location_variants: 4

@@ -1,0 +1,31 @@
+slug: bennett-roofers
+company: Bennett Roofers
+brand: Bennett Roofers
+phone: "+1 833 963 0669"
+email: info@bennettroofers.com
+address:
+  street: 4827 Oak Ridge Drive
+  city: Marietta
+  state: Georgia
+  zip: "30060"
+
+# THE FACT BLOCK — the closed world.
+#
+# Anything not listed here does not exist. Library blocks that assert a fact
+# missing or false here are removed from the pool BEFORE selection, so the
+# composer cannot fabricate a credential even by accident.
+facts:
+  years_in_business: 15
+  hours: "Mon-Fri 8:00-18:00, Sat 9:00-14:00"
+  free_estimates: true
+  licensed: false
+  insured: false
+  emergency_24_7: false
+  warranty_years: null
+  financing: false
+  family_owned: false
+  bbb_rating: null
+  rating: null
+  awards: null
+  certifications: null
+  volume_claims: null

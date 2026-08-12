@@ -1,0 +1,804 @@
+zip,city,state,county,payout
+43802,Adamsville,OH,Muskingum County,42.0
+45001,Addyston,OH,Hamilton County,43.12
+43101,Adelphi,OH,Ross County,37.13
+44301,Akron,OH,Summit County,44.0
+44302,Akron,OH,Summit County,44.0
+44303,Akron,OH,Summit County,44.0
+44304,Akron,OH,Summit County,44.0
+44305,Akron,OH,Summit County,44.0
+44306,Akron,OH,Summit County,44.0
+44307,Akron,OH,Summit County,44.0
+44308,Akron,OH,Summit County,44.0
+44309,Akron,OH,Summit County,44.0
+44310,Akron,OH,Summit County,44.0
+44311,Akron,OH,Summit County,44.0
+44312,Akron,OH,Summit County,44.0
+44313,Akron,OH,Summit County,44.0
+44314,Akron,OH,Summit County,44.0
+44315,Akron,OH,Summit County,44.0
+44316,Akron,OH,Summit County,44.0
+44317,Akron,OH,Summit County,44.0
+44319,Akron,OH,Summit County,44.0
+44320,Akron,OH,Summit County,44.0
+44321,Akron,OH,Summit County,44.0
+44325,Akron,OH,Summit County,44.0
+44326,Akron,OH,Summit County,44.0
+44328,Akron,OH,Summit County,44.0
+44333,Akron,OH,Summit County,44.0
+44372,Akron,OH,Summit County,44.0
+44396,Akron,OH,Summit County,44.0
+44398,Akron,OH,Summit County,44.0
+43001,Alexandria,OH,Licking County,45.81
+44601,Alliance,OH,Stark County,43.0
+45301,Alpha,OH,Greene County,48.0
+43102,Amanda,OH,Fairfield County,43.0
+45102,Amelia,OH,Clermont County,43.12
+44001,Amherst,OH,Lorain County,36.0
+43002,Amlin,OH,Franklin County,45.85
+45302,Anna,OH,Shelby County,37.13
+45303,Ansonia,OH,Darke County,37.13
+44606,Apple Creek,OH,Wayne County,37.13
+45304,Arcanum,OH,Darke County,48.0
+44805,Ashland,OH,Ashland County,42.52
+43003,Ashley,OH,Delaware County,49.0
+44004,Ashtabula,OH,Ashtabula County,38.81
+43103,Ashville,OH,Pickaway County,42.0
+45701,Athens,OH,Athens County,35.36
+44202,Aurora,OH,Portage County,35.36
+43711,Ava,OH,Noble County,37.13
+44011,Avon,OH,Lorain County,38.06
+44012,Avon Lake,OH,Lorain County,37.67
+45612,Bainbridge,OH,Ross County,36.0
+43804,Baltic,OH,Holmes County,37.13
+43105,Baltimore,OH,Fairfield County,45.81
+44203,Barberton,OH,Summit County,44.0
+45103,Batavia,OH,Clermont County,43.12
+44210,Bath,OH,Summit County,44.0
+44140,Bay Village,OH,Cuyahoga County,44.0
+44608,Beach City,OH,Stark County,43.0
+44122,Beachwood,OH,Cuyahoga County,44.0
+44146,Bedford,OH,Cuyahoga County,44.0
+45305,Bellbrook,OH,Greene County,48.0
+43310,Belle Center,OH,Logan County,36.0
+43717,Belle Valley,OH,Noble County,37.13
+43311,Bellefontaine,OH,Logan County,36.0
+44813,Bellville,OH,Richland County,37.13
+44017,Berea,OH,Cuyahoga County,44.0
+44401,Berlin Center,OH,Mahoning County,43.0
+45106,Bethel,OH,Clermont County,54.18
+44611,Big Prairie,OH,Holmes County,37.13
+43004,Blacklick,OH,Franklin County,45.85
+43005,Bladensburg,OH,Knox County,37.13
+45107,Blanchester,OH,Clinton County,48.0
+43805,Blissfield,OH,Coshocton County,37.13
+43106,Bloomingburg,OH,Fayette County,35.0
+43720,Blue Rock,OH,Muskingum County,42.0
+45306,Botkins,OH,Shelby County,37.13
+45617,Bourneville,OH,Ross County,40.95
+45307,Bowersville,OH,Greene County,48.0
+45308,Bradford,OH,Darke County,37.63
+44141,Brecksville,OH,Cuyahoga County,44.0
+43107,Bremen,OH,Fairfield County,43.0
+44613,Brewster,OH,Stark County,43.0
+43109,Brice,OH,Franklin County,45.85
+43006,Brinkhaven,OH,Holmes County,37.13
+44147,Broadview Heights,OH,Cuyahoga County,44.0
+43007,Broadway,OH,Union County,42.0
+44403,Brookfield,OH,Trumbull County,43.0
+44142,Brookpark,OH,Cuyahoga County,44.0
+45309,Brookville,OH,Montgomery County,48.0
+43721,Brownsville,OH,Licking County,43.0
+44212,Brunswick,OH,Medina County,43.0
+43008,Buckeye Lake,OH,Licking County,45.81
+44820,Bucyrus,OH,Crawford County,50.12
+43722,Buffalo,OH,Guernsey County,37.13
+44021,Burton,OH,Geauga County,37.65
+44822,Butler,OH,Richland County,37.13
+43723,Byesville,OH,Guernsey County,37.13
+43009,Cable,OH,Champaign County,44.03
+43724,Caldwell,OH,Noble County,41.11
+43314,Caledonia,OH,Marion County,37.13
+43725,Cambridge,OH,Guernsey County,40.63
+45311,Camden,OH,Preble County,48.0
+45111,Camp Dennison,OH,Hamilton County,54.18
+44405,Campbell,OH,Mahoning County,43.0
+44614,Canal Fulton,OH,Stark County,43.0
+43110,Canal Winchester,OH,Franklin County,45.85
+44406,Canfield,OH,Mahoning County,43.0
+44701,Canton,OH,Stark County,43.0
+44702,Canton,OH,Stark County,43.0
+44703,Canton,OH,Stark County,43.0
+44704,Canton,OH,Stark County,43.0
+44705,Canton,OH,Stark County,43.0
+44706,Canton,OH,Stark County,43.0
+44707,Canton,OH,Stark County,43.0
+44708,Canton,OH,Stark County,43.0
+44709,Canton,OH,Stark County,43.0
+44710,Canton,OH,Stark County,43.0
+44711,Canton,OH,Stark County,43.0
+44714,Canton,OH,Stark County,43.0
+44718,Canton,OH,Stark County,43.0
+44721,Canton,OH,Stark County,43.0
+44735,Canton,OH,Stark County,43.0
+44750,Canton,OH,Stark County,43.0
+44767,Canton,OH,Stark County,43.0
+44799,Canton,OH,Stark County,43.0
+43111,Carbon Hill,OH,Hocking County,35.0
+43315,Cardington,OH,Morrow County,42.0
+43112,Carroll,OH,Fairfield County,43.0
+45312,Casstown,OH,Miami County,44.03
+43010,Catawba,OH,Clark County,42.0
+45314,Cedarville,OH,Greene County,48.0
+43011,Centerburg,OH,Knox County,52.45
+44022,Chagrin Falls,OH,Cuyahoga County,44.0
+44023,Chagrin Falls,OH,Geauga County,37.71
+43727,Chandlersville,OH,Muskingum County,42.0
+44024,Chardon,OH,Geauga County,38.81
+44825,Chatfield,OH,Crawford County,37.13
+43728,Chesterhill,OH,Morgan County,38.27
+44026,Chesterland,OH,Geauga County,37.67
+43317,Chesterville,OH,Morrow County,42.0
+45601,Chillicothe,OH,Ross County,40.04
+44215,Chippewa Lake,OH,Medina County,43.0
+45389,Christiansburg,OH,Champaign County,36.0
+45202,Cincinnati,OH,Hamilton County,54.18
+45204,Cincinnati,OH,Hamilton County,56.7
+45206,Cincinnati,OH,Hamilton County,40.04
+45208,Cincinnati,OH,Hamilton County,40.04
+45209,Cincinnati,OH,Hamilton County,43.12
+45211,Cincinnati,OH,Hamilton County,56.7
+45212,Cincinnati,OH,Hamilton County,56.7
+45213,Cincinnati,OH,Hamilton County,40.04
+45214,Cincinnati,OH,Hamilton County,56.7
+45215,Cincinnati,OH,Hamilton County,48.0
+45216,Cincinnati,OH,Hamilton County,40.04
+45219,Cincinnati,OH,Hamilton County,43.12
+45223,Cincinnati,OH,Hamilton County,56.7
+45224,Cincinnati,OH,Hamilton County,54.18
+45226,Cincinnati,OH,Hamilton County,56.7
+45227,Cincinnati,OH,Hamilton County,56.7
+45230,Cincinnati,OH,Hamilton County,43.12
+45231,Cincinnati,OH,Hamilton County,54.18
+45232,Cincinnati,OH,Hamilton County,43.12
+45233,Cincinnati,OH,Hamilton County,55.44
+45236,Cincinnati,OH,Hamilton County,43.12
+45237,Cincinnati,OH,Hamilton County,43.12
+45238,Cincinnati,OH,Hamilton County,55.44
+45239,Cincinnati,OH,Hamilton County,43.12
+45240,Cincinnati,OH,Hamilton County,48.0
+45241,Cincinnati,OH,Hamilton County,54.18
+45242,Cincinnati,OH,Hamilton County,43.12
+45243,Cincinnati,OH,Hamilton County,43.12
+45244,Cincinnati,OH,Hamilton County,43.12
+45245,Cincinnati,OH,Clermont County,43.12
+45246,Cincinnati,OH,Hamilton County,56.7
+45247,Cincinnati,OH,Hamilton County,43.12
+45248,Cincinnati,OH,Hamilton County,43.12
+45249,Cincinnati,OH,Hamilton County,43.12
+45251,Cincinnati,OH,Hamilton County,40.04
+45255,Cincinnati,OH,Hamilton County,40.04
+43113,Circleville,OH,Pickaway County,42.52
+43115,Clarksburg,OH,Ross County,37.13
+45113,Clarksville,OH,Clinton County,43.12
+45315,Clayton,OH,Montgomery County,48.0
+44101,Cleveland,OH,Cuyahoga County,44.0
+44102,Cleveland,OH,Cuyahoga County,44.0
+44103,Cleveland,OH,Cuyahoga County,44.0
+44104,Cleveland,OH,Cuyahoga County,44.0
+44105,Cleveland,OH,Cuyahoga County,44.0
+44106,Cleveland,OH,Cuyahoga County,44.0
+44108,Cleveland,OH,Cuyahoga County,44.0
+44109,Cleveland,OH,Cuyahoga County,44.0
+44110,Cleveland,OH,Cuyahoga County,44.0
+44111,Cleveland,OH,Cuyahoga County,44.0
+44112,Cleveland,OH,Cuyahoga County,44.0
+44113,Cleveland,OH,Cuyahoga County,44.0
+44114,Cleveland,OH,Cuyahoga County,44.0
+44115,Cleveland,OH,Cuyahoga County,44.0
+44118,Cleveland,OH,Cuyahoga County,44.0
+44119,Cleveland,OH,Cuyahoga County,44.0
+44120,Cleveland,OH,Cuyahoga County,44.0
+44121,Cleveland,OH,Cuyahoga County,44.0
+44124,Cleveland,OH,Cuyahoga County,44.0
+44125,Cleveland,OH,Cuyahoga County,44.0
+44126,Cleveland,OH,Cuyahoga County,44.0
+44127,Cleveland,OH,Cuyahoga County,44.0
+44128,Cleveland,OH,Cuyahoga County,44.0
+44129,Cleveland,OH,Cuyahoga County,44.0
+44130,Cleveland,OH,Cuyahoga County,44.0
+44134,Cleveland,OH,Cuyahoga County,44.0
+44135,Cleveland,OH,Cuyahoga County,44.0
+44143,Cleveland,OH,Cuyahoga County,44.0
+44144,Cleveland,OH,Cuyahoga County,44.0
+44181,Cleveland,OH,Cuyahoga County,44.0
+44188,Cleveland,OH,Cuyahoga County,44.0
+44190,Cleveland,OH,Cuyahoga County,44.0
+44191,Cleveland,OH,Cuyahoga County,44.0
+44192,Cleveland,OH,Cuyahoga County,44.0
+44193,Cleveland,OH,Cuyahoga County,44.0
+44194,Cleveland,OH,Cuyahoga County,44.0
+44195,Cleveland,OH,Cuyahoga County,44.0
+44197,Cleveland,OH,Cuyahoga County,44.0
+44198,Cleveland,OH,Cuyahoga County,44.0
+44199,Cleveland,OH,Cuyahoga County,44.0
+45002,Cleves,OH,Hamilton County,43.12
+45316,Clifton,OH,Greene County,48.0
+44216,Clinton,OH,Summit County,44.0
+45003,College Corner,OH,Preble County,36.0
+45004,Collinsville,OH,Butler County,44.0
+44028,Columbia Station,OH,Lorain County,36.0
+43085,Columbus,OH,Franklin County,45.85
+43201,Columbus,OH,Franklin County,45.85
+43202,Columbus,OH,Franklin County,45.85
+43203,Columbus,OH,Franklin County,45.85
+43204,Columbus,OH,Franklin County,45.85
+43205,Columbus,OH,Franklin County,45.85
+43206,Columbus,OH,Franklin County,45.85
+43207,Columbus,OH,Franklin County,45.85
+43209,Columbus,OH,Franklin County,45.85
+43210,Columbus,OH,Franklin County,45.85
+43211,Columbus,OH,Franklin County,45.85
+43212,Columbus,OH,Franklin County,45.85
+43213,Columbus,OH,Franklin County,45.85
+43214,Columbus,OH,Franklin County,45.85
+43215,Columbus,OH,Franklin County,45.85
+43216,Columbus,OH,Franklin County,45.85
+43217,Columbus,OH,Franklin County,45.85
+43218,Columbus,OH,Franklin County,45.85
+43219,Columbus,OH,Franklin County,45.85
+43220,Columbus,OH,Franklin County,45.85
+43221,Columbus,OH,Franklin County,45.85
+43222,Columbus,OH,Franklin County,45.85
+43223,Columbus,OH,Franklin County,45.85
+43224,Columbus,OH,Franklin County,45.85
+43226,Columbus,OH,Franklin County,45.85
+43227,Columbus,OH,Franklin County,45.85
+43228,Columbus,OH,Franklin County,45.85
+43229,Columbus,OH,Franklin County,45.85
+43230,Columbus,OH,Franklin County,45.85
+43231,Columbus,OH,Franklin County,45.85
+43232,Columbus,OH,Franklin County,45.85
+43234,Columbus,OH,Franklin County,45.85
+43235,Columbus,OH,Franklin County,45.85
+43236,Columbus,OH,Franklin County,45.85
+43240,Columbus,OH,Delaware County,49.0
+43251,Columbus,OH,Franklin County,45.85
+43260,Columbus,OH,Franklin County,45.85
+43266,Columbus,OH,Franklin County,45.85
+43268,Columbus,OH,Franklin County,45.85
+43270,Columbus,OH,Franklin County,45.85
+43271,Columbus,OH,Franklin County,45.85
+43272,Columbus,OH,Franklin County,45.85
+43279,Columbus,OH,Franklin County,45.85
+43287,Columbus,OH,Franklin County,45.85
+43291,Columbus,OH,Franklin County,45.85
+43116,Commercial Point,OH,Pickaway County,42.0
+43811,Conesville,OH,Coshocton County,37.13
+44030,Conneaut,OH,Ashtabula County,36.85
+45317,Conover,OH,Miami County,37.13
+43730,Corning,OH,Perry County,40.95
+44410,Cortland,OH,Trumbull County,35.36
+43812,Coshocton,OH,Coshocton County,42.52
+45318,Covington,OH,Miami County,36.0
+44827,Crestline,OH,Crawford County,37.13
+44217,Creston,OH,Wayne County,37.13
+43731,Crooksville,OH,Perry County,40.04
+43013,Croton,OH,Licking County,43.12
+43732,Cumberland,OH,Guernsey County,37.13
+44221,Cuyahoga Falls,OH,Summit County,44.0
+44222,Cuyahoga Falls,OH,Summit County,44.0
+44223,Cuyahoga Falls,OH,Summit County,44.0
+44618,Dalton,OH,Wayne County,37.13
+44619,Damascus,OH,Mahoning County,43.0
+43014,Danville,OH,Knox County,50.12
+45401,Dayton,OH,Montgomery County,44.0
+45402,Dayton,OH,Montgomery County,44.0
+45403,Dayton,OH,Montgomery County,48.0
+45404,Dayton,OH,Montgomery County,48.0
+45405,Dayton,OH,Montgomery County,44.0
+45406,Dayton,OH,Montgomery County,44.0
+45409,Dayton,OH,Montgomery County,48.0
+45410,Dayton,OH,Montgomery County,48.0
+45412,Dayton,OH,Montgomery County,44.0
+45413,Dayton,OH,Montgomery County,44.0
+45414,Dayton,OH,Montgomery County,48.0
+45415,Dayton,OH,Montgomery County,48.0
+45416,Dayton,OH,Montgomery County,48.0
+45417,Dayton,OH,Montgomery County,48.0
+45419,Dayton,OH,Montgomery County,48.0
+45420,Dayton,OH,Montgomery County,48.0
+45422,Dayton,OH,Montgomery County,44.0
+45423,Dayton,OH,Montgomery County,44.0
+45424,Dayton,OH,Montgomery County,48.0
+45426,Dayton,OH,Montgomery County,48.0
+45428,Dayton,OH,Montgomery County,44.0
+45429,Dayton,OH,Montgomery County,48.0
+45430,Dayton,OH,Greene County,48.0
+45431,Dayton,OH,Greene County,48.0
+45432,Dayton,OH,Greene County,48.0
+45433,Dayton,OH,Greene County,48.0
+45434,Dayton,OH,Greene County,48.0
+45435,Dayton,OH,Greene County,48.0
+45437,Dayton,OH,Montgomery County,44.0
+45439,Dayton,OH,Montgomery County,48.0
+45440,Dayton,OH,Montgomery County,48.0
+45441,Dayton,OH,Montgomery County,44.0
+45448,Dayton,OH,Montgomery County,44.0
+45449,Dayton,OH,Montgomery County,48.0
+45458,Dayton,OH,Montgomery County,48.0
+45459,Dayton,OH,Montgomery County,48.0
+45469,Dayton,OH,Montgomery County,44.0
+45470,Dayton,OH,Montgomery County,44.0
+45475,Dayton,OH,Montgomery County,48.0
+45479,Dayton,OH,Montgomery County,44.0
+45481,Dayton,OH,Montgomery County,44.0
+45482,Dayton,OH,Montgomery County,44.0
+45490,Dayton,OH,Montgomery County,44.0
+43318,De Graff,OH,Logan County,36.0
+44411,Deerfield,OH,Portage County,39.5
+43015,Delaware,OH,Delaware County,49.0
+43117,Derby,OH,Pickaway County,42.0
+45727,Dexter City,OH,Noble County,37.13
+44412,Diamond,OH,Portage County,39.5
+45319,Donnelsville,OH,Clark County,48.0
+44230,Doylestown,OH,Wayne County,37.13
+43821,Dresden,OH,Muskingum County,42.0
+43016,Dublin,OH,Franklin County,45.85
+43017,Dublin,OH,Franklin County,45.85
+43734,Duncan Falls,OH,Muskingum County,42.0
+44730,East Canton,OH,Stark County,43.0
+44033,East Claridon,OH,Geauga County,36.0
+43735,East Fultonham,OH,Muskingum County,42.0
+43319,East Liberty,OH,Logan County,36.0
+44626,East Sparta,OH,Stark County,43.0
+44095,Eastlake,OH,Lake County,39.5
+44097,Eastlake,OH,Lake County,39.5
+45320,Eaton,OH,Preble County,48.0
+43320,Edison,OH,Morrow County,37.13
+45321,Eldorado,OH,Preble County,37.63
+44416,Ellsworth,OH,Mahoning County,43.0
+44035,Elyria,OH,Lorain County,44.35
+44036,Elyria,OH,Lorain County,36.0
+45322,Englewood,OH,Montgomery County,48.0
+45323,Enon,OH,Clark County,48.0
+43018,Etna,OH,Licking County,45.85
+44117,Euclid,OH,Cuyahoga County,44.0
+44123,Euclid,OH,Cuyahoga County,44.0
+44132,Euclid,OH,Cuyahoga County,44.0
+45324,Fairborn,OH,Greene County,48.0
+45014,Fairfield,OH,Butler County,54.18
+45018,Fairfield,OH,Butler County,44.0
+44334,Fairlawn,OH,Summit County,44.0
+45325,Farmersville,OH,Montgomery County,48.0
+45326,Fletcher,OH,Miami County,41.65
+45845,Fort Loramie,OH,Shelby County,37.13
+45628,Frankfort,OH,Ross County,39.13
+45005,Franklin,OH,Warren County,56.7
+43822,Frazeysburg,OH,Muskingum County,42.0
+44627,Fredericksburg,OH,Wayne County,37.13
+43019,Fredericktown,OH,Knox County,52.45
+43824,Fresno,OH,Coshocton County,37.13
+43321,Fulton,OH,Morrow County,42.0
+43738,Fultonham,OH,Muskingum County,42.0
+43021,Galena,OH,Delaware County,49.0
+44833,Galion,OH,Crawford County,37.13
+43119,Galloway,OH,Franklin County,43.0
+43022,Gambier,OH,Knox County,52.45
+44231,Garrettsville,OH,Portage County,35.36
+44040,Gates Mills,OH,Cuyahoga County,44.0
+45327,Germantown,OH,Montgomery County,48.0
+45328,Gettysburg,OH,Darke County,37.13
+44420,Girard,OH,Trumbull County,43.0
+43739,Glenford,OH,Perry County,40.95
+44628,Glenmont,OH,Holmes County,37.13
+44044,Grafton,OH,Lorain County,36.0
+44045,Grand River,OH,Lake County,39.5
+43023,Granville,OH,Licking County,45.81
+43740,Gratiot,OH,Licking County,43.0
+45330,Gratis,OH,Preble County,36.0
+44232,Green,OH,Summit County,44.0
+43322,Green Camp,OH,Marion County,42.0
+44422,Greenford,OH,Mahoning County,43.0
+44630,Greentown,OH,Stark County,43.0
+45331,Greenville,OH,Darke County,36.0
+44837,Greenwich,OH,Huron County,37.13
+43123,Grove City,OH,Franklin County,45.85
+43125,Groveport,OH,Franklin County,45.85
+43195,Groveport,OH,Franklin County,45.85
+43199,Groveport,OH,Franklin County,45.85
+45633,Hallsville,OH,Ross County,36.0
+45011,Hamilton,OH,Butler County,56.7
+45012,Hamilton,OH,Butler County,44.0
+45013,Hamilton,OH,Butler County,56.7
+45015,Hamilton,OH,Butler County,48.0
+43126,Harrisburg,OH,Franklin County,43.0
+45030,Harrison,OH,Hamilton County,43.12
+44632,Hartville,OH,Stark County,43.0
+45032,Harveysburg,OH,Warren County,48.0
+43127,Haydenville,OH,Hocking County,35.0
+44838,Hayesville,OH,Ashland County,37.13
+43056,Heath,OH,Licking County,45.81
+43025,Hebron,OH,Licking County,45.81
+43026,Hilliard,OH,Franklin County,45.85
+45133,Hillsboro,OH,Highland County,56.7
+44233,Hinckley,OH,Medina County,43.0
+45332,Hollansburg,OH,Darke County,37.13
+44633,Holmesville,OH,Holmes County,37.13
+43027,Homer,OH,Licking County,43.0
+44235,Homerville,OH,Medina County,43.0
+44634,Homeworth,OH,Columbiana County,34.16
+43746,Hopewell,OH,Muskingum County,42.0
+45333,Houston,OH,Shelby County,37.13
+43028,Howard,OH,Knox County,52.45
+44425,Hubbard,OH,Trumbull County,43.0
+44236,Hudson,OH,Summit County,44.0
+44237,Hudson,OH,Summit County,44.0
+44046,Huntsburg,OH,Geauga County,36.0
+43324,Huntsville,OH,Logan County,36.0
+43325,Iberia,OH,Morrow County,36.0
+44131,Independence,OH,Cuyahoga County,44.0
+43029,Irwin,OH,Madison County,42.0
+45334,Jackson Center,OH,Shelby County,37.13
+43030,Jacksontown,OH,Licking County,43.0
+45335,Jamestown,OH,Greene County,48.0
+44047,Jefferson,OH,Ashtabula County,37.67
+43128,Jeffersonville,OH,Fayette County,40.95
+44840,Jeromesville,OH,Ashland County,37.13
+43031,Johnstown,OH,Licking County,45.85
+43748,Junction City,OH,Perry County,35.0
+44240,Kent,OH,Portage County,36.85
+44243,Kent,OH,Portage County,37.66
+45336,Kettlersville,OH,Shelby County,37.13
+43032,Kilbourne,OH,Delaware County,49.0
+44637,Killbuck,OH,Holmes County,37.13
+43749,Kimbolton,OH,Guernsey County,40.19
+45034,Kings Mills,OH,Warren County,43.12
+45644,Kingston,OH,Ross County,37.13
+43750,Kipling,OH,Guernsey County,37.13
+44049,Kipton,OH,Lorain County,36.0
+43033,Kirkersville,OH,Licking County,45.81
+43332,La Rue,OH,Marion County,37.13
+44050,Lagrange,OH,Lorain County,45.36
+44429,Lake Milton,OH,Mahoning County,43.0
+44250,Lakemore,OH,Summit County,44.0
+43331,Lakeview,OH,Logan County,36.0
+44638,Lakeville,OH,Holmes County,37.13
+44107,Lakewood,OH,Cuyahoga County,44.0
+43130,Lancaster,OH,Fairfield County,43.0
+45337,Laura,OH,Miami County,48.0
+43135,Laurelville,OH,Hocking County,37.13
+44430,Leavittsburg,OH,Trumbull County,43.0
+45036,Lebanon,OH,Warren County,48.0
+43035,Lewis Center,OH,Delaware County,49.0
+45338,Lewisburg,OH,Preble County,48.0
+43333,Lewistown,OH,Logan County,36.0
+44640,Limaville,OH,Stark County,43.0
+44253,Litchfield,OH,Medina County,43.0
+43136,Lithopolis,OH,Fairfield County,43.0
+43137,Lockbourne,OH,Franklin County,43.0
+43194,Lockbourne,OH,Franklin County,43.0
+44254,Lodi,OH,Medina County,43.0
+43138,Logan,OH,Hocking County,40.95
+43140,London,OH,Madison County,45.67
+45647,Londonderry,OH,Ross County,40.95
+44052,Lorain,OH,Lorain County,45.36
+44053,Lorain,OH,Lorain County,36.0
+44055,Lorain,OH,Lorain County,37.67
+43755,Lore City,OH,Guernsey County,37.13
+44842,Loudonville,OH,Ashland County,37.13
+44641,Louisville,OH,Stark County,43.0
+45140,Loveland,OH,Clermont County,48.0
+44436,Lowellville,OH,Mahoning County,43.0
+44843,Lucas,OH,Richland County,37.13
+45339,Ludlow Falls,OH,Miami County,36.0
+44056,Macedonia,OH,Summit County,44.0
+44057,Madison,OH,Lake County,39.5
+43036,Magnetic Springs,OH,Union County,42.0
+44643,Magnolia,OH,Stark County,43.0
+45039,Maineville,OH,Warren County,48.0
+43758,Malta,OH,Morgan County,37.13
+44901,Mansfield,OH,Richland County,39.13
+44902,Mansfield,OH,Richland County,40.95
+44903,Mansfield,OH,Richland County,37.13
+44904,Mansfield,OH,Richland County,37.13
+44905,Mansfield,OH,Richland County,50.12
+44906,Mansfield,OH,Richland County,39.13
+44907,Mansfield,OH,Richland County,52.45
+44137,Maple Heights,OH,Cuyahoga County,44.0
+45340,Maplewood,OH,Shelby County,37.13
+43334,Marengo,OH,Morrow County,42.0
+43301,Marion,OH,Marion County,36.0
+43302,Marion,OH,Marion County,42.52
+44645,Marshallville,OH,Wayne County,37.13
+43335,Martel,OH,Marion County,36.0
+43037,Martinsburg,OH,Knox County,42.52
+43040,Marysville,OH,Union County,45.81
+43041,Marysville,OH,Union County,39.5
+45040,Mason,OH,Warren County,56.7
+44646,Massillon,OH,Stark County,43.0
+44647,Massillon,OH,Stark County,43.0
+44648,Massillon,OH,Stark County,43.0
+44438,Masury,OH,Trumbull County,43.0
+44650,Maximo,OH,Stark County,43.0
+45651,Mc Arthur,OH,Vinton County,39.13
+44437,McDonald,OH,Trumbull County,43.0
+43756,Mcconnelsville,OH,Morgan County,42.52
+43044,Mechanicsburg,OH,Champaign County,44.03
+44256,Medina,OH,Medina County,43.0
+44258,Medina,OH,Medina County,43.0
+45341,Medway,OH,Clark County,48.0
+44060,Mentor,OH,Lake County,39.5
+44061,Mentor,OH,Lake County,39.5
+45342,Miamisburg,OH,Montgomery County,48.0
+45343,Miamisburg,OH,Montgomery County,44.0
+44652,Middlebranch,OH,Stark County,43.0
+43336,Middleburg,OH,Logan County,36.0
+44062,Middlefield,OH,Geauga County,37.68
+45042,Middletown,OH,Butler County,48.0
+45044,Middletown,OH,Butler County,56.7
+45150,Milford,OH,Clermont County,54.18
+43045,Milford Center,OH,Union County,42.0
+43142,Milledgeville,OH,Fayette County,40.95
+44654,Millersburg,OH,Holmes County,37.13
+43046,Millersport,OH,Fairfield County,45.81
+44440,Mineral Ridge,OH,Trumbull County,43.0
+44657,Minerva,OH,Stark County,43.0
+43047,Mingo,OH,Champaign County,44.03
+44260,Mogadore,OH,Portage County,44.0
+45050,Monroe,OH,Butler County,48.0
+44064,Montville,OH,Geauga County,36.0
+43337,Morral,OH,Marion County,36.0
+45152,Morrow,OH,Warren County,48.0
+44659,Mount Eaton,OH,Wayne County,37.13
+43338,Mount Gilead,OH,Morrow County,42.0
+44660,Mount Hope,OH,Holmes County,37.13
+43048,Mount Liberty,OH,Knox County,42.0
+45154,Mount Orab,OH,Brown County,56.7
+43760,Mount Perry,OH,Perry County,37.13
+43143,Mount Sterling,OH,Madison County,42.0
+43050,Mount Vernon,OH,Knox County,52.45
+43761,Moxahala,OH,Perry County,35.0
+44262,Munroe Falls,OH,Summit County,44.0
+43144,Murray City,OH,Hocking County,35.0
+43830,Nashport,OH,Muskingum County,42.0
+44661,Nashville,OH,Holmes County,37.13
+44662,Navarre,OH,Stark County,43.0
+45764,Nelsonville,OH,Athens County,39.13
+44849,Nevada,OH,Wyandot County,40.95
+43054,New Albany,OH,Franklin County,45.85
+43341,New Bloomington,OH,Marion County,37.13
+45344,New Carlisle,OH,Clark County,48.0
+43762,New Concord,OH,Muskingum County,42.0
+43145,New Holland,OH,Pickaway County,39.13
+45345,New Lebanon,OH,Montgomery County,48.0
+43764,New Lexington,OH,Perry County,40.95
+45346,New Madison,OH,Darke County,37.13
+44442,New Middletown,OH,Mahoning County,43.0
+45347,New Paris,OH,Preble County,37.63
+45157,New Richmond,OH,Clermont County,43.12
+44443,New Springfield,OH,Mahoning County,43.0
+43766,New Straitsville,OH,Perry County,35.0
+44854,New Washington,OH,Crawford County,37.13
+45348,New Weston,OH,Darke County,37.13
+43055,Newark,OH,Licking County,45.81
+43058,Newark,OH,Licking County,43.0
+43093,Newark,OH,Licking County,43.0
+44065,Newbury,OH,Geauga County,37.67
+44444,Newton Falls,OH,Trumbull County,43.0
+44446,Niles,OH,Trumbull County,43.0
+45052,North Bend,OH,Hamilton County,40.04
+44449,North Benton,OH,Mahoning County,43.0
+44720,North Canton,OH,Stark County,43.0
+45349,North Hampton,OH,Clark County,48.0
+44451,North Jackson,OH,Mahoning County,43.0
+44666,North Lawrence,OH,Stark County,43.0
+43060,North Lewisburg,OH,Champaign County,42.0
+44452,North Lima,OH,Mahoning County,43.0
+44070,North Olmsted,OH,Cuyahoga County,44.0
+44039,North Ridgeville,OH,Lorain County,36.85
+44133,North Royalton,OH,Cuyahoga County,44.0
+45350,North Star,OH,Darke County,37.13
+44067,Northfield,OH,Summit County,44.0
+43767,Norwich,OH,Muskingum County,42.0
+44859,Nova,OH,Ashland County,37.13
+44072,Novelty,OH,Geauga County,36.85
+44073,Novelty,OH,Geauga County,36.0
+45873,Oakwood,OH,Paulding County,33.18
+44074,Oberlin,OH,Lorain County,36.0
+45053,Okeana,OH,Butler County,44.0
+43768,Old Washington,OH,Guernsey County,37.13
+44138,Olmsted Falls,OH,Cuyahoga County,44.0
+44862,Ontario,OH,Richland County,36.0
+45054,Oregonia,OH,Warren County,48.0
+43146,Orient,OH,Pickaway County,42.0
+44667,Orrville,OH,Wayne County,37.13
+45351,Osgood,OH,Darke County,37.13
+43061,Ostrander,OH,Delaware County,49.0
+45055,Overpeck,OH,Butler County,44.0
+45056,Oxford,OH,Butler County,44.0
+44077,Painesville,OH,Lake County,39.5
+45352,Palestine,OH,Darke County,37.13
+44669,Paris,OH,Stark County,43.0
+44080,Parkman,OH,Geauga County,36.0
+43062,Pataskala,OH,Licking County,45.85
+45353,Pemberton,OH,Shelby County,37.13
+44264,Peninsula,OH,Summit County,44.0
+44081,Perry,OH,Lake County,39.5
+44864,Perrysville,OH,Ashland County,39.59
+44454,Petersburg,OH,Mahoning County,43.0
+45354,Phillipsburg,OH,Montgomery County,44.0
+43771,Philo,OH,Muskingum County,42.0
+43147,Pickerington,OH,Fairfield County,45.85
+45356,Piqua,OH,Miami County,48.0
+45358,Pitsburg,OH,Darke County,37.13
+43064,Plain City,OH,Union County,45.81
+43836,Plainfield,OH,Coshocton County,37.13
+43772,Pleasant City,OH,Guernsey County,37.13
+45359,Pleasant Hill,OH,Miami County,48.0
+45162,Pleasant Plain,OH,Warren County,43.12
+43148,Pleasantville,OH,Fairfield County,45.81
+44865,Plymouth,OH,Huron County,36.0
+44866,Polk,OH,Ashland County,37.13
+45360,Port Jefferson,OH,Shelby County,37.13
+45361,Potsdam,OH,Miami County,36.0
+43065,Powell,OH,Delaware County,49.0
+43342,Prospect,OH,Marion County,42.0
+43773,Quaker City,OH,Guernsey County,37.13
+43343,Quincy,OH,Logan County,36.0
+43066,Radnor,OH,Delaware County,49.0
+44266,Ravenna,OH,Portage County,35.36
+43067,Raymond,OH,Union County,42.0
+43068,Reynoldsburg,OH,Franklin County,45.85
+43069,Reynoldsburg,OH,Franklin County,45.85
+44286,Richfield,OH,Summit County,44.0
+45673,Richmond Dale,OH,Ross County,36.0
+43344,Richwood,OH,Union County,42.0
+44670,Robertsville,OH,Stark County,43.0
+43149,Rockbridge,OH,Hocking County,35.0
+44116,Rocky River,OH,Cuyahoga County,44.0
+44272,Rootstown,OH,Portage County,37.69
+43777,Roseville,OH,Muskingum County,42.0
+43070,Rosewood,OH,Champaign County,41.65
+45061,Ross,OH,Butler County,44.0
+45362,Rossburg,OH,Darke County,37.13
+43347,Rushsylvania,OH,Logan County,36.0
+43150,Rushville,OH,Fairfield County,43.0
+43348,Russells Point,OH,Logan County,36.0
+45363,Russia,OH,Shelby County,37.13
+43071,Saint Louisville,OH,Licking County,43.0
+43072,Saint Paris,OH,Champaign County,44.03
+43778,Salesville,OH,Guernsey County,37.13
+43779,Sarahsville,OH,Noble County,37.13
+44874,Savannah,OH,Ashland County,37.13
+43151,Sedalia,OH,Madison County,39.59
+43780,Senecaville,OH,Guernsey County,37.13
+45062,Seven Mile,OH,Butler County,44.0
+44273,Seville,OH,Medina County,43.0
+45063,Shandon,OH,Butler County,44.0
+44274,Sharon Center,OH,Medina County,43.0
+43349,Shauck,OH,Morrow County,36.0
+43782,Shawnee,OH,Perry County,39.13
+44054,Sheffield Lake,OH,Lorain County,37.63
+44875,Shelby,OH,Richland County,50.12
+44878,Shiloh,OH,Richland County,37.13
+44676,Shreve,OH,Wayne County,37.13
+45365,Sidney,OH,Shelby County,48.0
+44677,Smithville,OH,Wayne County,37.13
+44139,Solon,OH,Cuyahoga County,44.0
+43783,Somerset,OH,Perry County,40.95
+45064,Somerville,OH,Butler County,48.0
+43152,South Bloomingville,OH,Hocking County,39.13
+45368,South Charleston,OH,Clark County,48.0
+45065,South Lebanon,OH,Warren County,48.0
+45681,South Salem,OH,Ross County,36.0
+43153,South Solon,OH,Madison County,36.0
+45369,South Vienna,OH,Clark County,48.0
+43350,Sparta,OH,Morrow County,42.0
+44275,Spencer,OH,Medina County,43.0
+45370,Spring Valley,OH,Greene County,48.0
+45066,Springboro,OH,Warren County,56.7
+45501,Springfield,OH,Clark County,44.03
+45502,Springfield,OH,Clark County,48.0
+45503,Springfield,OH,Clark County,48.0
+45504,Springfield,OH,Clark County,48.0
+45505,Springfield,OH,Clark County,48.0
+45506,Springfield,OH,Clark County,48.0
+44276,Sterling,OH,Wayne County,37.13
+43154,Stoutsville,OH,Fairfield County,43.0
+44224,Stow,OH,Summit County,44.0
+44136,Strongsville,OH,Cuyahoga County,44.0
+44149,Strongsville,OH,Cuyahoga County,44.0
+44471,Struthers,OH,Mahoning County,43.0
+43155,Sugar Grove,OH,Fairfield County,43.0
+44880,Sullivan,OH,Ashland County,37.13
+43073,Summit Station,OH,Licking County,45.85
+43074,Sunbury,OH,Delaware County,49.0
+44278,Tallmadge,OH,Summit County,44.0
+43156,Tarlton,OH,Pickaway County,37.13
+45174,Terrace Park,OH,Hamilton County,43.12
+44086,Thompson,OH,Geauga County,36.0
+43076,Thornville,OH,Perry County,45.81
+43157,Thurston,OH,Fairfield County,43.0
+45371,Tipp City,OH,Miami County,48.0
+44887,Tiro,OH,Crawford County,37.13
+43620,Toledo,OH,Lucas County,35.36
+45372,Tremont City,OH,Clark County,44.03
+45067,Trenton,OH,Butler County,48.0
+43842,Trinway,OH,Muskingum County,42.0
+45373,Troy,OH,Miami County,48.0
+45374,Troy,OH,Miami County,36.0
+44087,Twinsburg,OH,Summit County,44.0
+45390,Union City,OH,Darke County,40.63
+43158,Union Furnace,OH,Hocking County,35.0
+44685,Uniontown,OH,Summit County,43.0
+43077,Unionville Center,OH,Union County,42.0
+43078,Urbana,OH,Champaign County,45.67
+43080,Utica,OH,Licking County,43.0
+44280,Valley City,OH,Medina County,43.0
+45377,Vandalia,OH,Montgomery County,48.0
+44089,Vermilion,OH,Erie County,38.81
+45378,Verona,OH,Preble County,36.0
+45380,Versailles,OH,Darke County,37.13
+44473,Vienna,OH,Trumbull County,43.0
+44281,Wadsworth,OH,Medina County,43.0
+44282,Wadsworth,OH,Medina County,43.0
+43356,Waldo,OH,Marion County,45.81
+43843,Walhonding,OH,Coshocton County,37.13
+44481,Warren,OH,Trumbull County,43.0
+44483,Warren,OH,Trumbull County,43.0
+44484,Warren,OH,Trumbull County,43.0
+44485,Warren,OH,Trumbull County,43.0
+43844,Warsaw,OH,Coshocton County,37.13
+43160,Washington Court House,OH,Fayette County,40.95
+44688,Waynesburg,OH,Stark County,43.0
+45068,Waynesville,OH,Warren County,56.7
+44090,Wellington,OH,Lorain County,36.0
+45381,West Alexandria,OH,Preble County,36.96
+45069,West Chester,OH,Butler County,48.0
+45071,West Chester,OH,Butler County,44.0
+45070,West Elkton,OH,Preble County,36.0
+43162,West Jefferson,OH,Madison County,42.0
+43845,West Lafayette,OH,Coshocton County,37.13
+43357,West Liberty,OH,Logan County,36.0
+45382,West Manchester,OH,Preble County,36.0
+43358,West Mansfield,OH,Logan County,37.13
+45383,West Milton,OH,Miami County,48.0
+44287,West Salem,OH,Wayne County,37.13
+43081,Westerville,OH,Franklin County,45.85
+43082,Westerville,OH,Delaware County,49.0
+43086,Westerville,OH,Franklin County,45.85
+44251,Westfield Center,OH,Medina County,43.0
+44145,Westlake,OH,Cuyahoga County,44.0
+43083,Westville,OH,Champaign County,39.88
+43791,White Cottage,OH,Muskingum County,42.0
+44092,Wickliffe,OH,Lake County,39.5
+45384,Wilberforce,OH,Greene County,48.0
+43164,Williamsport,OH,Pickaway County,42.0
+44094,Willoughby,OH,Lake County,39.5
+44096,Willoughby,OH,Lake County,39.5
+45177,Wilmington,OH,Clinton County,54.18
+44288,Windham,OH,Portage County,37.68
+44099,Windsor,OH,Ashtabula County,37.66
+44690,Winesburg,OH,Holmes County,37.13
+43084,Woodstock,OH,Champaign County,44.03
+44691,Wooster,OH,Wayne County,37.13
+45385,Xenia,OH,Greene County,48.0
+45387,Yellow Springs,OH,Greene County,48.0
+45388,Yorkshire,OH,Darke County,37.13
+44501,Youngstown,OH,Mahoning County,43.0
+44504,Youngstown,OH,Mahoning County,43.0
+44505,Youngstown,OH,Mahoning County,43.0
+44506,Youngstown,OH,Mahoning County,43.0
+44507,Youngstown,OH,Mahoning County,43.0
+44509,Youngstown,OH,Mahoning County,43.0
+44510,Youngstown,OH,Mahoning County,43.0
+44511,Youngstown,OH,Mahoning County,43.0
+44512,Youngstown,OH,Mahoning County,43.0
+44513,Youngstown,OH,Mahoning County,43.0
+44514,Youngstown,OH,Mahoning County,43.0
+44515,Youngstown,OH,Mahoning County,43.0
+44555,Youngstown,OH,Mahoning County,43.0
+43360,Zanesfield,OH,Logan County,36.0
+43701,Zanesville,OH,Muskingum County,42.0
+43702,Zanesville,OH,Muskingum County,42.0

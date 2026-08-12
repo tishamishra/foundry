@@ -1,0 +1,12 @@
+{
+  "name": "foundry-css",
+  "private": true,
+  "description": "OPTIONAL. The default stylesheet is hand-authored and needs none of this.",
+  "devDependencies": {
+    "tailwindcss": "^4.3.0",
+    "@tailwindcss/cli": "^4.3.0"
+  },
+  "scripts": {
+    "css": "tailwindcss -i tailwind/src.css -o assets/css/site.tailwind.css --minify"
+  }
+}

@@ -1,0 +1,13 @@
+<section class="sec">
+  <div class="wrap">
+    <h2 class="section-head">How the job runs</h2>
+    <ol class="tl">
+      {% for step in (lc.process if lc is defined else content.process) %}
+      <li class="tl-item reveal">
+        <span class="tl-dot">{{ loop.index }}</span>
+        <div class="tl-body"><h3>{{ step.title }}</h3><p>{{ step.text }}</p></div>
+      </li>
+      {% endfor %}
+    </ol>
+  </div>
+</section>

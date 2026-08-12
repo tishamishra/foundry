@@ -1,0 +1,496 @@
+zip,city,state,county,payout
+29620,Abbeville,SC,Abbeville County,49.7
+29426,Adams Run,SC,Charleston County,42.0
+29801,Aiken,SC,Aiken County,58.45
+29802,Aiken,SC,Aiken County,49.7
+29803,Aiken,SC,Aiken County,58.45
+29804,Aiken,SC,Aiken County,42.0
+29805,Aiken,SC,Aiken County,42.0
+29808,Aiken,SC,Aiken County,45.67
+29001,Alcolu,SC,Clarendon County,49.7
+29810,Allendale,SC,Allendale County,36.62
+29621,Anderson,SC,Anderson County,61.25
+29622,Anderson,SC,Anderson County,42.0
+29623,Anderson,SC,Anderson County,42.0
+29624,Anderson,SC,Anderson County,61.25
+29625,Anderson,SC,Anderson County,41.25
+29626,Anderson,SC,Anderson County,49.7
+29510,Andrews,SC,Georgetown County,53.55
+29320,Arcadia,SC,Spartanburg County,42.0
+29002,Ballentine,SC,Richland County,58.45
+29003,Bamberg,SC,Bamberg County,49.7
+29812,Barnwell,SC,Barnwell County,49.7
+29006,Batesburg,SC,Lexington County,58.45
+29816,Bath,SC,Aiken County,49.7
+29901,Beaufort,SC,Beaufort County,58.45
+29902,Beaufort,SC,Beaufort County,49.7
+29903,Beaufort,SC,Beaufort County,42.0
+29904,Beaufort,SC,Beaufort County,42.0
+29906,Beaufort,SC,Beaufort County,49.7
+29907,Beaufort,SC,Beaufort County,42.0
+29842,Beech Island,SC,Aiken County,49.7
+29627,Belton,SC,Anderson County,42.0
+29512,Bennettsville,SC,Marlboro County,49.7
+29009,Bethune,SC,Kershaw County,42.0
+29010,Bishopville,SC,Lee County,58.45
+29702,Blacksburg,SC,Cherokee County,58.45
+29014,Blackstock,SC,Chester County,46.11
+29817,Blackville,SC,Barnwell County,49.7
+29015,Blair,SC,Fairfield County,42.0
+29516,Blenheim,SC,Marlboro County,42.0
+29910,Bluffton,SC,Beaufort County,42.0
+29016,Blythewood,SC,Richland County,44.15
+29316,Boiling Springs,SC,Spartanburg County,42.0
+29431,Bonneau,SC,Berkeley County,42.0
+29703,Bowling Green,SC,York County,42.0
+29018,Bowman,SC,Orangeburg County,45.67
+29819,Bradley,SC,Greenwood County,42.0
+29432,Branchville,SC,Orangeburg County,45.67
+29321,Buffalo,SC,Union County,49.7
+29518,Cades,SC,Williamsburg County,42.0
+29628,Calhoun Falls,SC,Abbeville County,35.0
+29020,Camden,SC,Kershaw County,49.7
+29021,Camden,SC,Kershaw County,42.0
+29030,Cameron,SC,Calhoun County,58.45
+29322,Campobello,SC,Spartanburg County,42.0
+29433,Canadys,SC,Colleton County,42.0
+29031,Carlisle,SC,Union County,58.45
+29032,Cassatt,SC,Kershaw County,42.0
+29704,Catawba,SC,York County,49.7
+29033,Cayce,SC,Lexington County,42.0
+29630,Central,SC,Pickens County,42.0
+29036,Chapin,SC,Lexington County,58.45
+29037,Chappells,SC,Newberry County,42.0
+29401,Charleston,SC,Charleston County,53.55
+29402,Charleston,SC,Charleston County,42.0
+29403,Charleston,SC,Charleston County,53.55
+29406,Charleston,SC,Charleston County,42.0
+29407,Charleston,SC,Charleston County,42.0
+29409,Charleston,SC,Charleston County,42.0
+29412,Charleston,SC,Charleston County,42.0
+29413,Charleston,SC,Charleston County,42.0
+29414,Charleston,SC,Charleston County,53.55
+29416,Charleston,SC,Charleston County,42.0
+29417,Charleston,SC,Charleston County,42.0
+29422,Charleston,SC,Charleston County,42.0
+29423,Charleston,SC,Charleston County,42.0
+29424,Charleston,SC,Charleston County,42.0
+29425,Charleston,SC,Charleston County,42.0
+29492,Charleston,SC,Berkeley County,42.0
+29404,Charleston Afb,SC,Charleston County,42.0
+29520,Cheraw,SC,Chesterfield County,42.0
+29323,Chesnee,SC,Spartanburg County,42.0
+29706,Chester,SC,Chester County,49.7
+29709,Chesterfield,SC,Chesterfield County,42.0
+29821,Clarks Hill,SC,Mccormick County,42.0
+29822,Clearwater,SC,Aiken County,42.0
+29631,Clemson,SC,Pickens County,41.25
+29632,Clemson,SC,Pickens County,42.0
+29633,Clemson,SC,Pickens County,42.0
+29634,Clemson,SC,Pickens County,42.0
+29635,Cleveland,SC,Greenville County,42.0
+29324,Clifton,SC,Spartanburg County,42.0
+29325,Clinton,SC,Laurens County,42.0
+29525,Clio,SC,Marlboro County,42.0
+29710,Clover,SC,York County,58.45
+29201,Columbia,SC,Richland County,58.45
+29202,Columbia,SC,Richland County,42.0
+29203,Columbia,SC,Richland County,58.45
+29204,Columbia,SC,Richland County,58.45
+29205,Columbia,SC,Richland County,58.45
+29206,Columbia,SC,Richland County,49.7
+29207,Columbia,SC,Richland County,42.0
+29208,Columbia,SC,Richland County,42.0
+29209,Columbia,SC,Richland County,58.45
+29210,Columbia,SC,Richland County,58.45
+29211,Columbia,SC,Richland County,49.7
+29212,Columbia,SC,Lexington County,44.15
+29214,Columbia,SC,Richland County,42.0
+29215,Columbia,SC,Richland County,42.0
+29216,Columbia,SC,Richland County,42.0
+29217,Columbia,SC,Richland County,42.0
+29218,Columbia,SC,Richland County,42.0
+29219,Columbia,SC,Richland County,49.7
+29220,Columbia,SC,Richland County,42.0
+29221,Columbia,SC,Richland County,42.0
+29222,Columbia,SC,Richland County,42.0
+29223,Columbia,SC,Richland County,58.45
+29224,Columbia,SC,Richland County,42.0
+29225,Columbia,SC,Richland County,42.0
+29226,Columbia,SC,Richland County,42.0
+29227,Columbia,SC,Richland County,42.0
+29228,Columbia,SC,Richland County,42.0
+29229,Columbia,SC,Richland County,42.0
+29230,Columbia,SC,Richland County,42.0
+29240,Columbia,SC,Richland County,42.0
+29250,Columbia,SC,Richland County,42.0
+29260,Columbia,SC,Richland County,42.0
+29290,Columbia,SC,Richland County,42.0
+29292,Columbia,SC,Richland County,42.0
+29636,Conestee,SC,Greenville County,42.0
+29329,Converse,SC,Spartanburg County,42.0
+29038,Cope,SC,Orangeburg County,49.7
+29434,Cordesville,SC,Berkeley County,42.0
+29039,Cordova,SC,Orangeburg County,42.0
+29435,Cottageville,SC,Colleton County,42.0
+29530,Coward,SC,Florence County,42.0
+29330,Cowpens,SC,Spartanburg County,44.63
+29436,Cross,SC,Berkeley County,42.0
+29331,Cross Anchor,SC,Spartanburg County,42.0
+29332,Cross Hill,SC,Laurens County,42.0
+29914,Dale,SC,Beaufort County,42.0
+29040,Dalzell,SC,Sumter County,49.7
+29532,Darlington,SC,Darlington County,44.15
+29540,Darlington,SC,Darlington County,58.45
+29915,Daufuskie Island,SC,Beaufort County,42.0
+29041,Davis Station,SC,Clarendon County,42.0
+29042,Denmark,SC,Bamberg County,58.45
+29536,Dillon,SC,Dillon County,58.45
+29638,Donalds,SC,Abbeville County,42.0
+29437,Dorchester,SC,Dorchester County,42.0
+29333,Drayton,SC,Spartanburg County,42.0
+29639,Due West,SC,Abbeville County,42.0
+29334,Duncan,SC,Spartanburg County,42.0
+29916,Early Branch,SC,Hampton County,58.45
+29640,Easley,SC,Pickens County,42.0
+29641,Easley,SC,Pickens County,42.0
+29642,Easley,SC,Pickens County,58.45
+29044,Eastover,SC,Richland County,49.7
+29824,Edgefield,SC,Edgefield County,58.45
+29712,Edgemoor,SC,Chester County,42.0
+29438,Edisto Island,SC,Charleston County,36.61
+29541,Effingham,SC,Florence County,51.77
+29081,Ehrhardt,SC,Bamberg County,42.0
+29045,Elgin,SC,Kershaw County,49.7
+29826,Elko,SC,Barnwell County,42.0
+29046,Elliott,SC,Lee County,42.0
+29047,Elloree,SC,Orangeburg County,43.14
+29335,Enoree,SC,Spartanburg County,42.0
+29918,Estill,SC,Hampton County,58.45
+29048,Eutawville,SC,Orangeburg County,49.7
+29643,Fair Play,SC,Oconee County,35.0
+29827,Fairfax,SC,Allendale County,36.55
+29336,Fairforest,SC,Spartanburg County,42.0
+29338,Fingerville,SC,Spartanburg County,42.0
+29501,Florence,SC,Florence County,58.45
+29502,Florence,SC,Florence County,42.0
+29503,Florence,SC,Florence County,42.0
+29504,Florence,SC,Florence County,42.0
+29505,Florence,SC,Florence County,42.0
+29506,Florence,SC,Florence County,49.7
+29439,Folly Beach,SC,Charleston County,42.0
+29714,Fort Lawn,SC,Chester County,49.7
+29707,Fort Mill,SC,Lancaster County,49.7
+29708,Fort Mill,SC,York County,55.04
+29715,Fort Mill,SC,York County,49.7
+29716,Fort Mill,SC,York County,42.0
+29644,Fountain Inn,SC,Greenville County,42.0
+29051,Gable,SC,Sumter County,49.7
+29052,Gadsden,SC,Richland County,42.0
+29340,Gaffney,SC,Cherokee County,42.0
+29341,Gaffney,SC,Cherokee County,42.0
+29342,Gaffney,SC,Cherokee County,42.0
+29053,Gaston,SC,Lexington County,58.45
+29440,Georgetown,SC,Georgetown County,36.6
+29054,Gilbert,SC,Lexington County,42.0
+29346,Glendale,SC,Spartanburg County,42.0
+29828,Gloverville,SC,Aiken County,42.0
+29445,Goose Creek,SC,Berkeley County,42.0
+29348,Gramling,SC,Spartanburg County,42.0
+29829,Graniteville,SC,Aiken County,49.7
+29645,Gray Court,SC,Laurens County,42.0
+29055,Great Falls,SC,Chester County,42.0
+29056,Greeleyville,SC,Williamsburg County,42.0
+29601,Greenville,SC,Greenville County,49.7
+29602,Greenville,SC,Greenville County,42.0
+29603,Greenville,SC,Greenville County,42.0
+29604,Greenville,SC,Greenville County,42.0
+29605,Greenville,SC,Greenville County,42.0
+29606,Greenville,SC,Greenville County,42.0
+29607,Greenville,SC,Greenville County,47.25
+29608,Greenville,SC,Greenville County,42.0
+29609,Greenville,SC,Greenville County,49.7
+29610,Greenville,SC,Greenville County,42.0
+29611,Greenville,SC,Greenville County,49.7
+29612,Greenville,SC,Greenville County,42.0
+29613,Greenville,SC,Greenville County,42.0
+29614,Greenville,SC,Greenville County,42.0
+29615,Greenville,SC,Greenville County,42.0
+29616,Greenville,SC,Greenville County,42.0
+29617,Greenville,SC,Greenville County,42.0
+29646,Greenwood,SC,Greenwood County,58.45
+29647,Greenwood,SC,Greenwood County,42.0
+29648,Greenwood,SC,Greenwood County,42.0
+29649,Greenwood,SC,Greenwood County,42.0
+29650,Greer,SC,Greenville County,61.25
+29651,Greer,SC,Greenville County,42.0
+29652,Greer,SC,Spartanburg County,42.0
+29447,Grover,SC,Dorchester County,42.0
+29547,Hamer,SC,Dillon County,42.0
+29924,Hampton,SC,Hampton County,58.45
+29410,Hanahan,SC,Berkeley County,42.0
+29927,Hardeeville,SC,Jasper County,40.25
+29448,Harleyville,SC,Dorchester County,42.0
+29550,Hartsville,SC,Darlington County,58.45
+29551,Hartsville,SC,Darlington County,42.0
+29058,Heath Springs,SC,Lancaster County,42.0
+29554,Hemingway,SC,Williamsburg County,39.52
+29717,Hickory Grove,SC,York County,49.7
+29813,Hilda,SC,Barnwell County,42.0
+29925,Hilton Head Island,SC,Beaufort County,42.0
+29926,Hilton Head Island,SC,Beaufort County,42.0
+29928,Hilton Head Island,SC,Beaufort County,49.7
+29938,Hilton Head Island,SC,Beaufort County,42.0
+29653,Hodges,SC,Greenwood County,42.0
+29695,Hodges,SC,Greenwood County,42.0
+29059,Holly Hill,SC,Orangeburg County,42.0
+29654,Honea Path,SC,Anderson County,42.0
+29061,Hopkins,SC,Richland County,49.7
+29062,Horatio,SC,Sumter County,42.0
+29349,Inman,SC,Spartanburg County,47.25
+29063,Irmo,SC,Richland County,44.15
+29929,Islandton,SC,Colleton County,42.0
+29655,Iva,SC,Anderson County,45.67
+29831,Jackson,SC,Aiken County,58.45
+29452,Jacksonboro,SC,Colleton County,51.77
+29453,Jamestown,SC,Berkeley County,36.63
+29718,Jefferson,SC,Chesterfield County,42.0
+29065,Jenkinsville,SC,Fairfield County,45.67
+29351,Joanna,SC,Laurens County,42.0
+29455,Johns Island,SC,Charleston County,42.0
+29457,Johns Island,SC,Charleston County,42.0
+29832,Johnston,SC,Edgefield County,49.7
+29353,Jonesville,SC,Union County,42.0
+29395,Jonesville,SC,Union County,42.0
+29067,Kershaw,SC,Lancaster County,42.0
+29355,Kinards,SC,Laurens County,42.0
+29556,Kingstree,SC,Williamsburg County,42.0
+29656,La France,SC,Anderson County,42.0
+29456,Ladson,SC,Dorchester County,42.0
+29560,Lake City,SC,Florence County,42.0
+29069,Lamar,SC,Darlington County,42.0
+29720,Lancaster,SC,Lancaster County,58.45
+29721,Lancaster,SC,Lancaster County,42.0
+29722,Lancaster,SC,Lancaster County,42.0
+29724,Lando,SC,Chester County,42.0
+29356,Landrum,SC,Spartanburg County,47.2
+29564,Lane,SC,Williamsburg County,42.0
+29834,Langley,SC,Aiken County,42.0
+29565,Latta,SC,Dillon County,42.0
+29360,Laurens,SC,Laurens County,58.45
+29070,Leesville,SC,Lexington County,42.0
+29071,Lexington,SC,Lexington County,58.45
+29072,Lexington,SC,Lexington County,49.7
+29073,Lexington,SC,Lexington County,58.45
+29657,Liberty,SC,Pickens County,42.0
+29074,Liberty Hill,SC,Kershaw County,42.0
+29075,Little Mountain,SC,Newberry County,42.0
+29566,Little River,SC,Horry County,33.0
+29567,Little Rock,SC,Dillon County,42.0
+29931,Lobeco,SC,Beaufort County,42.0
+29364,Lockhart,SC,Union County,42.0
+29082,Lodge,SC,Colleton County,42.0
+29658,Long Creek,SC,Oconee County,35.0
+29078,Lugoff,SC,Kershaw County,42.0
+29932,Luray,SC,Hampton County,36.56
+29079,Lydia,SC,Darlington County,42.0
+29365,Lyman,SC,Spartanburg County,42.0
+29080,Lynchburg,SC,Lee County,49.7
+29102,Manning,SC,Clarendon County,58.45
+29661,Marietta,SC,Greenville County,42.0
+29571,Marion,SC,Marion County,49.7
+29836,Martin,SC,Allendale County,42.0
+29662,Mauldin,SC,Greenville County,42.0
+29104,Mayesville,SC,Sumter County,42.0
+29368,Mayo,SC,Spartanburg County,42.0
+29101,Mc Bee,SC,Chesterfield County,42.0
+29458,Mc Clellanville,SC,Charleston County,36.49
+29570,Mc Coll,SC,Marlboro County,42.0
+29726,Mc Connells,SC,York County,42.0
+29835,Mc Cormick,SC,Mccormick County,49.7
+29899,Mc Cormick,SC,Mccormick County,42.0
+29933,Miley,SC,Hampton County,42.0
+29838,Modoc,SC,Mccormick County,42.0
+29461,Moncks Corner,SC,Berkeley County,42.0
+29105,Monetta,SC,Aiken County,42.0
+29839,Montmorenci,SC,Aiken County,42.0
+29369,Moore,SC,Spartanburg County,49.7
+29727,Mount Croghan,SC,Chesterfield County,42.0
+29464,Mount Pleasant,SC,Charleston County,42.0
+29465,Mount Pleasant,SC,Charleston County,42.0
+29466,Mount Pleasant,SC,Charleston County,36.53
+29664,Mountain Rest,SC,Oconee County,35.0
+29370,Mountville,SC,Laurens County,42.0
+29574,Mullins,SC,Marion County,58.45
+29576,Murrells Inlet,SC,Horry County,44.1
+29572,Myrtle Beach,SC,Horry County,42.63
+29577,Myrtle Beach,SC,Horry County,49.7
+29579,Myrtle Beach,SC,Horry County,49.7
+29588,Myrtle Beach,SC,Horry County,58.45
+29107,Neeses,SC,Orangeburg County,42.0
+29809,New Ellenton,SC,Aiken County,58.45
+29111,New Zion,SC,Clarendon County,42.0
+29108,Newberry,SC,Newberry County,58.45
+29665,Newry,SC,Oconee County,42.0
+29666,Ninety Six,SC,Greenwood County,42.0
+29667,Norris,SC,Pickens County,42.0
+29112,North,SC,Orangeburg County,49.7
+29841,North Augusta,SC,Aiken County,58.45
+29860,North Augusta,SC,Edgefield County,58.45
+29861,North Augusta,SC,Aiken County,49.7
+29405,North Charleston,SC,Charleston County,53.55
+29415,North Charleston,SC,Charleston County,42.0
+29418,North Charleston,SC,Charleston County,42.0
+29419,North Charleston,SC,Charleston County,42.0
+29420,North Charleston,SC,Dorchester County,42.0
+29582,North Myrtle Beach,SC,Horry County,58.45
+29113,Norway,SC,Orangeburg County,58.45
+29909,Okatie,SC,Beaufort County,40.25
+29114,Olanta,SC,Florence County,42.0
+29843,Olar,SC,Bamberg County,58.45
+29115,Orangeburg,SC,Orangeburg County,58.45
+29116,Orangeburg,SC,Orangeburg County,42.0
+29117,Orangeburg,SC,Orangeburg County,42.0
+29118,Orangeburg,SC,Orangeburg County,58.45
+29372,Pacolet,SC,Spartanburg County,42.0
+29373,Pacolet Mills,SC,Spartanburg County,42.0
+29728,Pageland,SC,Chesterfield County,49.7
+29583,Pamplico,SC,Florence County,42.0
+29844,Parksville,SC,Mccormick County,42.0
+29905,Parris Island,SC,Beaufort County,42.0
+29584,Patrick,SC,Chesterfield County,49.7
+29374,Pauline,SC,Spartanburg County,42.0
+29585,Pawleys Island,SC,Georgetown County,36.62
+29122,Peak,SC,Newberry County,42.0
+29123,Pelion,SC,Lexington County,58.45
+29669,Pelzer,SC,Greenville County,49.7
+29670,Pendleton,SC,Anderson County,42.0
+29671,Pickens,SC,Pickens County,42.0
+29673,Piedmont,SC,Greenville County,42.0
+29934,Pineland,SC,Jasper County,33.0
+29468,Pineville,SC,Berkeley County,42.0
+29125,Pinewood,SC,Sumter County,43.14
+29469,Pinopolis,SC,Berkeley County,42.0
+29845,Plum Branch,SC,Mccormick County,58.45
+29126,Pomaria,SC,Newberry County,42.0
+29935,Port Royal,SC,Beaufort County,42.0
+29127,Prosperity,SC,Newberry County,49.7
+29470,Ravenel,SC,Charleston County,42.0
+29471,Reevesville,SC,Dorchester County,42.0
+29375,Reidville,SC,Spartanburg County,42.0
+29128,Rembert,SC,Sumter County,42.0
+29729,Richburg,SC,Chester County,49.7
+29675,Richland,SC,Oconee County,58.45
+29129,Ridge Spring,SC,Aiken County,49.7
+29936,Ridgeland,SC,Jasper County,40.25
+29472,Ridgeville,SC,Dorchester County,42.0
+29130,Ridgeway,SC,Fairfield County,58.45
+29132,Rion,SC,Fairfield County,42.0
+29730,Rock Hill,SC,York County,58.45
+29731,Rock Hill,SC,York County,42.0
+29732,Rock Hill,SC,York County,58.45
+29733,Rock Hill,SC,York County,42.0
+29734,Rock Hill,SC,York County,42.0
+29376,Roebuck,SC,Spartanburg County,42.0
+29474,Round O,SC,Colleton County,42.0
+29133,Rowesville,SC,Orangeburg County,42.0
+29741,Ruby,SC,Chesterfield County,42.0
+29475,Ruffin,SC,Colleton County,42.0
+29476,Russellville,SC,Berkeley County,42.0
+29477,Saint George,SC,Dorchester County,42.0
+29920,Saint Helena Island,SC,Beaufort County,42.0
+29135,Saint Matthews,SC,Calhoun County,45.67
+29479,Saint Stephen,SC,Berkeley County,42.0
+29676,Salem,SC,Oconee County,36.89
+29137,Salley,SC,Aiken County,58.45
+29590,Salters,SC,Williamsburg County,42.0
+29138,Saluda,SC,Saluda County,42.0
+29677,Sandy Springs,SC,Anderson County,42.0
+29142,Santee,SC,Orangeburg County,49.7
+29143,Sardinia,SC,Clarendon County,42.0
+29591,Scranton,SC,Florence County,50.58
+29940,Seabrook,SC,Beaufort County,42.0
+29592,Sellers,SC,Dillon County,42.0
+29672,Seneca,SC,Oconee County,35.0
+29678,Seneca,SC,Oconee County,49.7
+29679,Seneca,SC,Oconee County,42.0
+29742,Sharon,SC,York County,58.45
+29152,Shaw Afb,SC,Sumter County,58.45
+29941,Sheldon,SC,Beaufort County,42.0
+29145,Silverstreet,SC,Newberry County,42.0
+29680,Simpsonville,SC,Greenville County,42.0
+29681,Simpsonville,SC,Greenville County,48.83
+29682,Six Mile,SC,Pickens County,41.25
+29683,Slater,SC,Greenville County,42.0
+29481,Smoaks,SC,Colleton County,42.0
+29743,Smyrna,SC,York County,42.0
+29593,Society Hill,SC,Darlington County,42.0
+29301,Spartanburg,SC,Spartanburg County,61.25
+29302,Spartanburg,SC,Spartanburg County,42.0
+29303,Spartanburg,SC,Spartanburg County,61.25
+29304,Spartanburg,SC,Spartanburg County,42.0
+29305,Spartanburg,SC,Spartanburg County,42.0
+29306,Spartanburg,SC,Spartanburg County,42.0
+29307,Spartanburg,SC,Spartanburg County,42.0
+29319,Spartanburg,SC,Spartanburg County,42.0
+29146,Springfield,SC,Orangeburg County,58.45
+29684,Starr,SC,Anderson County,35.0
+29377,Startex,SC,Spartanburg County,42.0
+29147,State Park,SC,Richland County,42.0
+29148,Summerton,SC,Clarendon County,42.0
+29483,Summerville,SC,Dorchester County,42.0
+29484,Summerville,SC,Dorchester County,42.0
+29485,Summerville,SC,Dorchester County,42.0
+29486,Summerville,SC,Berkeley County,42.0
+29150,Sumter,SC,Sumter County,58.45
+29151,Sumter,SC,Sumter County,42.0
+29153,Sumter,SC,Sumter County,49.7
+29154,Sumter,SC,Sumter County,42.0
+29685,Sunset,SC,Pickens County,42.0
+29160,Swansea,SC,Lexington County,58.45
+29846,Sycamore,SC,Allendale County,42.0
+29686,Tamassee,SC,Oconee County,36.89
+29594,Tatum,SC,Marlboro County,42.0
+29687,Taylors,SC,Greenville County,49.7
+29688,Tigerville,SC,Greenville County,42.0
+29943,Tillman,SC,Jasper County,33.0
+29161,Timmonsville,SC,Florence County,42.0
+29689,Townville,SC,Anderson County,49.7
+29690,Travelers Rest,SC,Greenville County,42.0
+29847,Trenton,SC,Edgefield County,58.45
+29848,Troy,SC,Greenwood County,42.0
+29162,Turbeville,SC,Clarendon County,42.0
+29849,Ulmer,SC,Allendale County,42.0
+29378,Una,SC,Spartanburg County,42.0
+29379,Union,SC,Union County,61.25
+29744,Van Wyck,SC,Lancaster County,42.0
+29163,Vance,SC,Orangeburg County,42.0
+29850,Vaucluse,SC,Aiken County,42.0
+29164,Wagener,SC,Aiken County,42.0
+29691,Walhalla,SC,Oconee County,35.0
+29596,Wallace,SC,Marlboro County,42.0
+29488,Walterboro,SC,Colleton County,50.58
+29166,Ward,SC,Saluda County,42.0
+29692,Ware Shoals,SC,Laurens County,42.0
+29851,Warrenville,SC,Aiken County,58.45
+29384,Waterloo,SC,Laurens County,42.0
+29168,Wedgefield,SC,Sumter County,42.0
+29385,Wellford,SC,Spartanburg County,42.0
+29169,West Columbia,SC,Lexington County,58.45
+29170,West Columbia,SC,Lexington County,42.0
+29171,West Columbia,SC,Lexington County,42.0
+29172,West Columbia,SC,Lexington County,42.0
+29696,West Union,SC,Oconee County,35.0
+29693,Westminster,SC,Oconee County,35.0
+29175,Westville,SC,Kershaw County,42.0
+29177,White Rock,SC,Richland County,42.0
+29386,White Stone,SC,Spartanburg County,42.0
+29178,Whitmire,SC,Newberry County,48.83
+29493,Williams,SC,Colleton County,42.0
+29697,Williamston,SC,Anderson County,42.0
+29853,Williston,SC,Barnwell County,42.0
+29856,Windsor,SC,Aiken County,42.0
+29180,Winnsboro,SC,Fairfield County,58.45
+29388,Woodruff,SC,Spartanburg County,42.0
+29945,Yemassee,SC,Hampton County,33.0
+29745,York,SC,York County,58.45

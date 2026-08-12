@@ -1,0 +1,26 @@
+# Foundry — Dokploy / docker-compose deployment.
+#
+# The named volume `foundry_data` is the whole point: it holds everything you
+# create — imported blocks, sites, businesses, coverage, shipped record — and it
+# survives every redeploy. Update the image all you like; this volume is not
+# touched.
+services:
+  foundry:
+    build: .
+    # or, once you push an image:  image: your-registry/foundry:latest
+    restart: unless-stopped
+    environment:
+      # CHANGE THIS. It is the panel login password.
+      FOUNDRY_PASSWORD: "${FOUNDRY_PASSWORD:-change-me}"
+      # Stable secret so logins survive restarts (any long random string).
+      FOUNDRY_SECRET: "${FOUNDRY_SECRET:-please-change-this-to-a-long-random-string}"
+      PORT: "8080"
+    volumes:
+      - foundry_data:/app/data          # <-- your content lives here, permanently
+      - foundry_dist:/app/dist          # built sites (optional to persist)
+    ports:
+      - "8080:8080"                     # Dokploy maps your subdomain to this
+
+volumes:
+  foundry_data:
+  foundry_dist:

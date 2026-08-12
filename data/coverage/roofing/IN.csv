@@ -1,0 +1,377 @@
+zip,city,state,county,payout
+46001,Alexandria,IN,Madison County,40.16
+46103,Amo,IN,Hendricks County,37.13
+46011,Anderson,IN,Madison County,45.72
+46012,Anderson,IN,Madison County,48.83
+46013,Anderson,IN,Madison County,37.13
+46016,Anderson,IN,Madison County,48.83
+46017,Anderson,IN,Madison County,47.3
+46030,Arcadia,IN,Hamilton County,37.13
+46031,Atlanta,IN,Hamilton County,49.0
+47001,Aurora,IN,Dearborn County,51.98
+46123,Avon,IN,Hendricks County,49.0
+46106,Bargersville,IN,Johnson County,42.63
+47006,Batesville,IN,Ripley County,45.38
+47010,Bath,IN,Franklin County,45.38
+46107,Beech Grove,IN,Marion County,49.0
+47011,Bennington,IN,Switzerland County,45.38
+46301,Beverly Shores,IN,Porter County,38.5
+47424,Bloomfield,IN,Greene County,37.13
+47401,Bloomington,IN,Monroe County,46.11
+47403,Bloomington,IN,Monroe County,42.63
+47404,Bloomington,IN,Monroe County,49.0
+47405,Bloomington,IN,Monroe County,37.13
+47406,Bloomington,IN,Monroe County,37.13
+47408,Bloomington,IN,Monroe County,46.11
+46110,Boggstown,IN,Shelby County,37.13
+46302,Boone Grove,IN,Porter County,38.5
+47601,Boonville,IN,Warrick County,43.75
+47324,Boston,IN,Wayne County,43.16
+47833,Bowling Green,IN,Owen County,37.13
+46111,Brooklyn,IN,Morgan County,37.13
+47012,Brookville,IN,Franklin County,51.98
+46112,Brownsburg,IN,Hendricks County,49.0
+47325,Brownsville,IN,Union County,43.75
+47647,Buckskin,IN,Gibson County,43.75
+46914,Bunker Hill,IN,Miami County,35.48
+46915,Burlington,IN,Carroll County,35.48
+47327,Cambridge City,IN,Wayne County,37.68
+46113,Camby,IN,Marion County,49.0
+46032,Carmel,IN,Hamilton County,42.63
+46033,Carmel,IN,Hamilton County,49.0
+47016,Cedar Grove,IN,Franklin County,45.38
+46303,Cedar Lake,IN,Lake County,43.75
+47330,Centerville,IN,Wayne County,45.38
+47610,Chandler,IN,Warrick County,43.75
+46304,Chesterton,IN,Porter County,38.5
+47611,Chrisney,IN,Spencer County,40.25
+46034,Cicero,IN,Hamilton County,42.63
+46118,Clayton,IN,Hendricks County,37.13
+46120,Cloverdale,IN,Putnam County,44.67
+47427,Coal City,IN,Owen County,37.13
+47845,Coalmont,IN,Clay County,37.13
+46121,Coatesville,IN,Putnam County,37.13
+46725,Columbia City,IN,Whitley County,35.48
+47201,Columbus,IN,Bartholomew County,42.63
+47203,Columbus,IN,Bartholomew County,42.63
+47933,Crawfordsville,IN,Montgomery County,44.67
+47017,Cross Plains,IN,Ripley County,45.38
+46307,Crown Point,IN,Lake County,47.12
+46308,Crown Point,IN,Lake County,43.75
+47612,Cynthiana,IN,Posey County,43.75
+47523,Dale,IN,Spencer County,40.25
+47334,Daleville,IN,Delaware County,37.13
+46122,Danville,IN,Hendricks County,42.63
+47524,Decker,IN,Knox County,40.25
+46310,Demotte,IN,Jasper County,38.5
+47018,Dillsboro,IN,Dearborn County,45.38
+47335,Dublin,IN,Wayne County,37.68
+46311,Dyer,IN,Lake County,43.75
+46312,East Chicago,IN,Lake County,47.12
+47338,Eaton,IN,Delaware County,44.67
+47339,Economy,IN,Wayne County,37.68
+47613,Elberfeld,IN,Warrick County,43.75
+46514,Elkhart,IN,Elkhart County,35.17
+47429,Ellettsville,IN,Monroe County,42.63
+46036,Elwood,IN,Madison County,42.52
+46125,Eminence,IN,Morgan County,37.13
+47531,Evanston,IN,Spencer County,40.25
+47701,Evansville,IN,Vanderburgh County,43.75
+47702,Evansville,IN,Vanderburgh County,43.75
+47703,Evansville,IN,Vanderburgh County,43.75
+47704,Evansville,IN,Vanderburgh County,43.75
+47705,Evansville,IN,Vanderburgh County,43.75
+47706,Evansville,IN,Vanderburgh County,43.75
+47708,Evansville,IN,Vanderburgh County,43.75
+47710,Evansville,IN,Vanderburgh County,43.75
+47711,Evansville,IN,Vanderburgh County,43.75
+47712,Evansville,IN,Vanderburgh County,43.75
+47713,Evansville,IN,Vanderburgh County,43.75
+47714,Evansville,IN,Vanderburgh County,43.75
+47715,Evansville,IN,Vanderburgh County,43.75
+47716,Evansville,IN,Vanderburgh County,43.75
+47719,Evansville,IN,Vanderburgh County,43.75
+47720,Evansville,IN,Vanderburgh County,43.75
+47721,Evansville,IN,Vanderburgh County,43.75
+47722,Evansville,IN,Vanderburgh County,43.75
+47724,Evansville,IN,Vanderburgh County,43.75
+47725,Evansville,IN,Vanderburgh County,43.75
+47728,Evansville,IN,Vanderburgh County,43.75
+47730,Evansville,IN,Vanderburgh County,43.75
+47731,Evansville,IN,Vanderburgh County,43.75
+47732,Evansville,IN,Vanderburgh County,43.75
+47733,Evansville,IN,Vanderburgh County,43.75
+47734,Evansville,IN,Vanderburgh County,43.75
+47735,Evansville,IN,Vanderburgh County,43.75
+47736,Evansville,IN,Vanderburgh County,43.75
+47737,Evansville,IN,Vanderburgh County,43.75
+47740,Evansville,IN,Vanderburgh County,43.75
+47747,Evansville,IN,Vanderburgh County,43.75
+47750,Evansville,IN,Vanderburgh County,43.75
+46126,Fairland,IN,Shelby County,37.13
+46928,Fairmount,IN,Grant County,37.13
+47532,Ferdinand,IN,Dubois County,40.25
+46037,Fishers,IN,Hamilton County,49.0
+46038,Fishers,IN,Hamilton County,49.0
+47020,Florence,IN,Switzerland County,45.38
+46039,Forest,IN,Clinton County,37.13
+47648,Fort Branch,IN,Gibson County,43.75
+46802,Fort Wayne,IN,Allen County,35.48
+46803,Fort Wayne,IN,Allen County,35.48
+46040,Fortville,IN,Hamilton County,49.0
+47341,Fountain City,IN,Wayne County,37.68
+46130,Fountaintown,IN,Shelby County,37.13
+46930,Fowlerton,IN,Grant County,37.13
+47649,Francisco,IN,Gibson County,40.25
+46041,Frankfort,IN,Clinton County,42.52
+46131,Franklin,IN,Johnson County,49.0
+46044,Frankton,IN,Madison County,37.13
+47431,Freedom,IN,Owen County,37.13
+47536,Fulda,IN,Spencer County,40.25
+46932,Galveston,IN,Cass County,38.5
+46401,Gary,IN,Lake County,43.75
+46402,Gary,IN,Lake County,43.75
+46403,Gary,IN,Lake County,43.75
+46404,Gary,IN,Lake County,43.75
+46406,Gary,IN,Lake County,43.75
+46407,Gary,IN,Lake County,43.75
+46408,Gary,IN,Lake County,43.75
+46409,Gary,IN,Lake County,43.75
+46933,Gas City,IN,Grant County,37.13
+47342,Gaston,IN,Delaware County,42.52
+47537,Gentryville,IN,Spencer County,40.25
+46045,Goldsmith,IN,Tipton County,37.13
+47433,Gosport,IN,Owen County,49.0
+47615,Grandview,IN,Spencer County,40.25
+46135,Greencastle,IN,Putnam County,47.3
+46140,Greenfield,IN,Hancock County,42.63
+47345,Greens Fork,IN,Wayne County,41.72
+47240,Greensburg,IN,Decatur County,42.63
+46142,Greenwood,IN,Johnson County,49.0
+46143,Greenwood,IN,Johnson County,49.0
+47616,Griffin,IN,Posey County,40.25
+46319,Griffith,IN,Lake County,43.75
+47022,Guilford,IN,Dearborn County,45.38
+47346,Hagerstown,IN,Wayne County,37.68
+46320,Hammond,IN,Lake County,43.75
+46323,Hammond,IN,Lake County,43.75
+46324,Hammond,IN,Lake County,43.75
+46325,Hammond,IN,Lake County,43.75
+46327,Hammond,IN,Lake County,43.75
+47617,Hatfield,IN,Spencer County,43.75
+47639,Haubstadt,IN,Gibson County,43.75
+47640,Hazleton,IN,Gibson County,40.25
+46341,Hebron,IN,Porter County,38.5
+47435,Helmsburg,IN,Brown County,37.13
+46937,Hemlock,IN,Howard County,37.13
+46322,Highland,IN,Lake County,43.75
+46342,Hobart,IN,Lake County,43.75
+46047,Hobbs,IN,Tipton County,37.13
+47541,Holland,IN,Dubois County,40.25
+47542,Huntingburg,IN,Dubois County,40.25
+46201,Indianapolis,IN,Marion County,49.0
+46202,Indianapolis,IN,Marion County,48.83
+46203,Indianapolis,IN,Marion County,49.0
+46204,Indianapolis,IN,Marion County,42.63
+46205,Indianapolis,IN,Marion County,49.0
+46206,Indianapolis,IN,Marion County,42.63
+46207,Indianapolis,IN,Marion County,42.63
+46208,Indianapolis,IN,Marion County,42.63
+46214,Indianapolis,IN,Marion County,37.13
+46216,Indianapolis,IN,Marion County,37.13
+46217,Indianapolis,IN,Marion County,49.0
+46218,Indianapolis,IN,Marion County,49.0
+46219,Indianapolis,IN,Marion County,49.0
+46220,Indianapolis,IN,Marion County,49.0
+46221,Indianapolis,IN,Marion County,49.0
+46222,Indianapolis,IN,Marion County,42.63
+46224,Indianapolis,IN,Marion County,46.11
+46225,Indianapolis,IN,Marion County,49.0
+46226,Indianapolis,IN,Marion County,49.0
+46227,Indianapolis,IN,Marion County,49.0
+46228,Indianapolis,IN,Marion County,42.63
+46229,Indianapolis,IN,Marion County,49.0
+46231,Indianapolis,IN,Marion County,42.63
+46234,Indianapolis,IN,Marion County,49.0
+46235,Indianapolis,IN,Marion County,42.63
+46236,Indianapolis,IN,Marion County,42.63
+46237,Indianapolis,IN,Marion County,42.63
+46239,Indianapolis,IN,Marion County,49.0
+46240,Indianapolis,IN,Marion County,42.63
+46241,Indianapolis,IN,Marion County,49.0
+46250,Indianapolis,IN,Marion County,42.63
+46254,Indianapolis,IN,Marion County,42.63
+46256,Indianapolis,IN,Marion County,42.63
+46259,Indianapolis,IN,Marion County,47.2
+46260,Indianapolis,IN,Marion County,51.98
+46268,Indianapolis,IN,Marion County,42.63
+46278,Indianapolis,IN,Marion County,37.13
+46280,Indianapolis,IN,Hamilton County,37.13
+46290,Indianapolis,IN,Hamilton County,37.13
+46298,Indianapolis,IN,Marion County,42.63
+46048,Ingalls,IN,Madison County,37.13
+47618,Inglefield,IN,Vanderburgh County,43.75
+46147,Jamestown,IN,Boone County,47.3
+47438,Jasonville,IN,Greene County,37.13
+46938,Jonesboro,IN,Grant County,37.13
+46049,Kempton,IN,Tipton County,42.52
+46345,Kingsbury,IN,Laporte County,38.5
+46346,Kingsford Heights,IN,Laporte County,38.5
+46050,Kirklin,IN,Clinton County,41.11
+46148,Knightstown,IN,Henry County,47.3
+46901,Kokomo,IN,Howard County,49.0
+46902,Kokomo,IN,Howard County,49.0
+46347,Kouts,IN,Porter County,38.5
+46348,La Crosse,IN,Laporte County,38.5
+46350,La Porte,IN,Laporte County,38.5
+46352,La Porte,IN,La Porte County,38.5
+47901,Lafayette,IN,Tippecanoe County,35.48
+47904,Lafayette,IN,Tippecanoe County,35.48
+46405,Lake Station,IN,Lake County,43.75
+47550,Lamar,IN,Spencer County,40.25
+46051,Lapel,IN,Madison County,47.3
+47024,Laurel,IN,Franklin County,43.75
+47025,Lawrenceburg,IN,Dearborn County,45.38
+46052,Lebanon,IN,Boone County,50.4
+46355,Leroy,IN,Lake County,38.5
+47353,Liberty,IN,Union County,45.38
+47552,Lincoln City,IN,Spencer County,40.25
+47441,Linton,IN,Greene County,37.13
+46356,Lowell,IN,Lake County,38.5
+47619,Lynnville,IN,Warrick County,43.75
+47443,Lyons,IN,Greene County,37.13
+47654,Mackey,IN,Gibson County,43.75
+47556,Mariah Hill,IN,Spencer County,40.25
+46952,Marion,IN,Grant County,42.52
+46953,Marion,IN,Grant County,49.0
+46056,Markleville,IN,Madison County,37.13
+46151,Martinsville,IN,Morgan County,49.0
+46957,Matthews,IN,Grant County,37.13
+46154,Maxwell,IN,Hancock County,37.13
+46055,McCordsville,IN,Hancock County,42.63
+46410,Merrillville,IN,Lake County,43.75
+46411,Merrillville,IN,Lake County,43.75
+47030,Metamora,IN,Franklin County,45.38
+46360,Michigan City,IN,Laporte County,38.5
+46361,Michigan City,IN,La Porte County,38.5
+46057,Michigantown,IN,Clinton County,46.11
+47356,Middletown,IN,Henry County,41.11
+47445,Midland,IN,Greene County,37.13
+47031,Milan,IN,Ripley County,45.38
+46365,Mill Creek,IN,Laporte County,38.5
+47357,Milton,IN,Wayne County,37.68
+46157,Monrovia,IN,Morgan County,42.63
+47960,Monticello,IN,White County,35.48
+47032,Moores Hill,IN,Dearborn County,45.38
+46158,Mooresville,IN,Morgan County,49.0
+46160,Morgantown,IN,Brown County,42.63
+47620,Mount Vernon,IN,Posey County,40.25
+47302,Muncie,IN,Delaware County,48.83
+47303,Muncie,IN,Delaware County,47.2
+47304,Muncie,IN,Delaware County,42.63
+47305,Muncie,IN,Delaware County,48.83
+47306,Muncie,IN,Delaware County,37.13
+46321,Munster,IN,Lake County,43.75
+47448,Nashville,IN,Brown County,42.63
+46162,Needham,IN,Johnson County,37.13
+47631,New Harmony,IN,Posey County,40.25
+46163,New Palestine,IN,Hancock County,42.63
+47449,Newberry,IN,Greene County,37.13
+47629,Newburgh,IN,Warrick County,43.75
+47630,Newburgh,IN,Warrick County,43.75
+46164,Nineveh,IN,Brown County,37.13
+46060,Noblesville,IN,Hamilton County,47.2
+46062,Noblesville,IN,Hamilton County,42.63
+46965,Oakford,IN,Howard County,37.13
+47660,Oakland City,IN,Gibson County,40.25
+47367,Oakville,IN,Delaware County,37.13
+47036,Oldenburg,IN,Franklin County,45.38
+46063,Orestes,IN,Madison County,37.13
+47037,Osgood,IN,Ripley County,45.38
+47453,Owensburg,IN,Greene County,37.13
+47665,Owensville,IN,Gibson County,40.25
+46166,Paragon,IN,Morgan County,47.3
+47666,Patoka,IN,Gibson County,40.25
+47455,Patricksburg,IN,Owen County,37.13
+47038,Patriot,IN,Switzerland County,45.38
+46064,Pendleton,IN,Madison County,42.52
+47370,Pershing,IN,Wayne County,37.68
+46970,Peru,IN,Miami County,35.48
+47567,Petersburg,IN,Pike County,40.25
+46167,Pittsboro,IN,Hendricks County,42.63
+46168,Plainfield,IN,Hendricks County,49.0
+47868,Poland,IN,Owen County,37.13
+46368,Portage,IN,Porter County,38.5
+47633,Poseyville,IN,Posey County,43.75
+47670,Princeton,IN,Gibson County,40.25
+46170,Putnamville,IN,Putnam County,37.13
+47456,Quincy,IN,Owen County,37.13
+47634,Richland,IN,Spencer County,40.25
+47374,Richmond,IN,Wayne County,43.16
+47375,Richmond,IN,Wayne County,43.16
+47040,Rising Sun,IN,Ohio County,45.38
+47635,Rockport,IN,Spencer County,40.25
+46371,Rolling Prairie,IN,Laporte County,38.5
+46173,Rushville,IN,Rush County,47.3
+46373,Saint John,IN,Lake County,43.75
+47577,Saint Meinrad,IN,Spencer County,40.25
+47579,Santa Claus,IN,Spencer County,40.25
+46375,Schererville,IN,Lake County,43.75
+46376,Schneider,IN,Lake County,38.5
+47457,Scotland,IN,Greene County,37.13
+46068,Sharpsville,IN,Tipton County,49.0
+46377,Shelby,IN,Lake County,38.5
+46176,Shelbyville,IN,Shelby County,49.0
+46069,Sheridan,IN,Hamilton County,42.63
+47459,Solsberry,IN,Greene County,37.13
+47683,Somerville,IN,Gibson County,40.25
+46601,South Bend,IN,St. Joseph County,34.65
+46614,South Bend,IN,St. Joseph County,34.36
+46617,South Bend,IN,St. Joseph County,36.38
+47460,Spencer,IN,Owen County,37.13
+47386,Springport,IN,Henry County,37.13
+47584,Spurgeon,IN,Pike County,40.25
+47585,Stendal,IN,Pike County,40.25
+46180,Stilesville,IN,Hendricks County,37.13
+47464,Stinesville,IN,Monroe County,37.13
+46379,Sumava Resorts,IN,Newton County,36.75
+46070,Summitville,IN,Madison County,37.13
+47041,Sunman,IN,Ripley County,45.38
+46986,Swayzee,IN,Grant County,37.13
+46987,Sweetser,IN,Grant County,37.13
+47465,Switz City,IN,Greene County,37.13
+47637,Tennyson,IN,Warrick County,40.25
+46381,Thayer,IN,Newton County,36.75
+46072,Tipton,IN,Tipton County,49.0
+46181,Trafalgar,IN,Johnson County,42.63
+47588,Troy,IN,Perry County,40.25
+46382,Union Mills,IN,Laporte County,38.5
+47468,Unionville,IN,Monroe County,37.13
+46989,Upland,IN,Grant County,37.13
+46383,Valparaiso,IN,Porter County,38.5
+46384,Valparaiso,IN,Porter County,38.5
+46385,Valparaiso,IN,Porter County,38.5
+47590,Velpen,IN,Pike County,40.25
+47042,Versailles,IN,Ripley County,45.38
+47043,Vevay,IN,Switzerland County,45.38
+47638,Wadesville,IN,Posey County,43.75
+46390,Wanatah,IN,Laporte County,38.5
+46793,Waterloo,IN,Dekalb County,35.48
+47989,Waveland,IN,Montgomery County,33.25
+47392,Webster,IN,Wayne County,37.68
+47003,West College Corner,IN,Union County,45.38
+47060,West Harrison,IN,Dearborn County,45.38
+47906,West Lafayette,IN,Tippecanoe County,35.48
+46183,West Newton,IN,Marion County,37.13
+46074,Westfield,IN,Hamilton County,42.63
+46393,Wheeler,IN,Porter County,38.5
+46184,Whiteland,IN,Johnson County,42.63
+46075,Whitestown,IN,Boone County,37.13
+46394,Whiting,IN,Lake County,43.75
+46186,Wilkinson,IN,Hancock County,45.72
+47393,Williamsburg,IN,Wayne County,37.68
+46076,Windfall,IN,Tipton County,37.13
+47598,Winslow,IN,Pike County,40.25
+47471,Worthington,IN,Greene County,37.13
+47396,Yorktown,IN,Delaware County,48.83
+46077,Zionsville,IN,Boone County,42.63

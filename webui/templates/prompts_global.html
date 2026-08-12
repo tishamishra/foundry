@@ -1,0 +1,75 @@
+{% extends "base.html" %}{% block body %}
+<div class="head"><h1>Master content file</h1>
+  <p class="sub">One CSV for every niche and every block type. Each row is one block, tagged with its
+  <code>niche</code> and <code>kind</code>. Keep one growing file — re-upload it any time, and only
+  the rows you have added since last time land. Duplicates are always skipped.</p>
+  <div class="actions">
+    <a class="btn" href="{{ url_for('prompts_global_template') }}">Download the master CSV</a>
+    <a class="btn ghost" href="{{ url_for('prompts') }}">Per-type prompts</a>
+  </div>
+</div>
+
+<div class="card">
+  <h2>How it works</h2>
+  <ol class="fmt">
+    <li>Download the master CSV — it has the full header and a few example rows.</li>
+    <li>Paste it into ChatGPT with your prompts and ask it to <strong>fill more rows for one niche</strong>
+      (one block per row). It keeps the same columns.</li>
+    <li>Add the new rows to your file and upload it back here. Import routes each row to its niche's pool,
+      skips anything already there, and reports what changed.</li>
+  </ol>
+  <p class="note">Columns: <code>{{ columns|join(', ') }}</code>. A row fills only the columns its
+  <code>kind</code> needs — a <code>faqs</code> row uses <code>question,answer</code>; a
+  <code>reviews</code> row uses <code>name,text</code>; a text block uses <code>text</code>;
+  an <code>about_paras</code> row puts paragraphs in <code>paras</code> separated by <code>||</code>.</p>
+  <details>
+    <summary>Valid niches ({{ niche_list|length }}) and kinds ({{ kinds|length }})</summary>
+    <p class="note"><strong>niches:</strong> {{ niche_list|join(', ') }}</p>
+    <p class="note"><strong>kinds:</strong> {{ kinds|join(', ') }}</p>
+  </details>
+</div>
+
+<form method="post" enctype="multipart/form-data" class="card">
+  <h2>Import the master file</h2>
+  <label class="upload">Upload your .csv<input type="file" name="file" accept=".csv,.txt"></label>
+  <p class="note">…or paste its contents:</p>
+  <textarea name="content" rows="8" class="mono" placeholder="{{ columns|join(',') }}"></textarea>
+  <div class="foot"><button class="btn">Import all</button></div>
+</form>
+
+{% if result %}
+<div class="card">
+  <h2>Imported — {{ result.added }} added, {{ result.skipped }} skipped</h2>
+  {% if result.report.unknown_niche %}<div class="finding warning">Unknown niche(s), skipped:
+    {{ result.report.unknown_niche|join(', ') }}</div>{% endif %}
+  {% if result.report.unknown_kind %}<div class="finding warning">Unknown kind(s), skipped:
+    {{ result.report.unknown_kind|join(', ') }}</div>{% endif %}
+  {% if result.report.empty_rows %}<div class="finding warning">{{ result.report.empty_rows }}
+    row(s) missing a required field, skipped.</div>{% endif %}
+  {% if result.unknown_tokens %}<div class="finding warning">Unrecognised token(s) —
+    these will show literally on the page and block the build until fixed:
+    {% for t in result.unknown_tokens %}<code>{{ '{' }}{{ t }}{{ '}' }}</code> {% endfor %}</div>{% endif %}
+
+  {% if result.summary %}
+  <h3>By niche</h3>
+  <p class="dim queue">
+    {% for s in result.summary %}
+    <span class="q {{ 'done' if s.added else '' }}">{{ s.niche }}
+      {% if s.added %}+{{ s.added }}{% else %}·{% endif %}</span>
+    {% endfor %}
+  </p>
+  {% endif %}
+
+  <h3>By niche and block type</h3>
+  <table class="grid">
+    <thead><tr><th>Niche</th><th>Block type</th><th>Added</th><th>Skipped</th><th>Now in pool</th></tr></thead>
+    <tbody>
+      {% for r in result.rows %}
+      <tr><td>{{ r.niche }}</td><td>{{ r.kind }}</td>
+        <td>{{ r.added }}</td><td class="dim">{{ r.skipped }}</td><td>{{ r.total }}</td></tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endif %}
+{% endblock %}

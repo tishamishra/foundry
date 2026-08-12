@@ -1,0 +1,49 @@
+niche: siding
+label: Siding
+schema_type: GeneralContractor
+services:
+- slug: siding-replacement
+  name: Siding Replacement
+  summary: Full replacement with the sheathing inspected once it is open.
+- slug: siding-repair
+  name: Siding Repair
+  summary: Sectional repairs where the rest of the elevation has life left.
+- slug: storm-damage-siding
+  name: Storm Damage Repair
+  summary: Impact and wind damage, documented for a claim.
+- slug: trim-fascia
+  name: Trim & Fascia
+  summary: The details that fail first and let water behind everything else.
+- slug: soffit-repair
+  name: Soffit Repair
+  summary: Ventilation restored, not just covered over.
+- slug: exterior-inspection
+  name: Exterior Inspection
+  summary: A written condition report on the whole envelope.
+seo:
+  home_title: '{company} | Siding'
+  home_description: '{company} handles {niche_lower} work across the areas we serve. Assessment first,
+    written findings, then a price. Call {phone}.'
+  about_title: About {company} | Siding Contractor
+  about_description: Who {company} is, how we work, what our written assessments cover, and what to expect
+    from first call to final check.
+  contact_title: Contact {company} | Call {phone}
+  contact_description: Call {company} on {phone} or request a callback. Tell us what you are seeing and
+    we will tell you what it usually means.
+  services_title: Siding Services | {company}
+  services_description: Everything {company} does, what each job includes, and how the scope and the price
+    are arrived at.
+  areas_title: Siding Service Areas | {company}
+  areas_description: Every community {company} covers for siding, listed by county. Find your town and
+    call {phone}.
+  service_title: '{service} | {company}'
+  service_description: '{service} from {company}. What the job includes, how the scope is agreed, and
+    what would change the price. Call {phone}.'
+  county_title: Siding in {county}, {state_abbr} | {company}
+  county_description: '{company} covers every community in {county}, {state_abbr} for siding. Find your
+    town below, or call {phone} to speak to someone.'
+  location_title: '{niche} in {city}, {state_abbr} | {company}'
+  location_description: '{niche} in {city}, {state_abbr}[[ and nearby {nearby}]]. Call {company} on {phone}.'
+  location_service_title: '{service} in {city}, {state_abbr} | {company}'
+  location_service_description: '{service} for {city}, {state_abbr} property owners[[ in {county}]]. Call
+    {phone}.'

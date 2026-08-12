@@ -1,0 +1,10 @@
+<section class="sec sec-alt">
+  <div class="wrap">
+    <h2 class="section-head">{{ service.name }} by area</h2>
+    <p class="lede">{{ locations|length }} communities. Pick yours for the local page.</p>
+    <div class="chips">
+      {% for c in locations[:60] %}<a class="chip" href="{% if single_service %}/areas/{{ c.slug }}{% else %}/services/{{ service.slug }}/{{ c.slug }}{% endif %}">{{ c.city }}</a>{% endfor %}
+    </div>
+    {% if locations|length > 60 %}<p><a class="more" href="/areas">All {{ locations|length }} communities &rarr;</a></p>{% endif %}
+  </div>
+</section>

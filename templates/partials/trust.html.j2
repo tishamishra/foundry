@@ -1,0 +1,10 @@
+<section class="band">
+  <div class="wrap grid grid-4">
+    {% for point in content.trust %}
+    <div class="tile">
+      <h3>{{ point.title }}</h3>
+      {% if point.get('text') %}<p>{{ point.text }}</p>{% endif %}
+    </div>
+    {% endfor %}
+  </div>
+</section>

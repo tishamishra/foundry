@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{% block title %}Foundry{% endblock %}</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='admin.css') }}">
+{% block head %}{% endblock %}
+</head><body>
+{% if session.get('in') %}
+<header class="top">
+  <div class="bar">
+    <a class="logo" href="{{ url_for('dashboard') }}">Foundry</a>
+    <nav>
+      <a href="{{ url_for('dashboard') }}">Dashboard</a>
+      <a href="{{ url_for('site_form') }}">New site</a>
+      <a href="{{ url_for('bulk') }}">Bulk</a>
+      <a href="{{ url_for('coverage') }}">Coverage</a>
+      <a href="{{ url_for('library') }}">Library</a>
+      <a href="{{ url_for('prompts') }}">Prompts</a>
+      <a href="{{ url_for('prompts_intel') }}">Intel</a>
+      <a href="{{ url_for('images') }}">Images</a>
+      <a href="{{ url_for('deploy_home') }}">Deploy</a>
+    </nav>
+    <div class="right">
+      <form method="get" action="{{ url_for('build') }}"><button class="btn sm">Build all</button></form>
+      <a class="quiet" href="{{ url_for('backup') }}" title="Download all your content as a zip">Backup</a>
+      <a class="quiet" href="{{ url_for('logout') }}">Sign out</a>
+    </div>
+  </div>
+</header>
+{% endif %}
+<main class="page">
+  {% with msgs = get_flashed_messages(with_categories=true) %}
+    {% for cat, msg in msgs %}<div class="flash {{ cat }}">{{ msg }}</div>{% endfor %}
+  {% endwith %}
+  {% block body %}{% endblock %}
+</main>
+</body></html>

@@ -1,0 +1,16 @@
+site_id: tidewater-com
+business: tidewater-restoration
+niche: water-damage
+domain: tidewaterrestoration.com
+theme: teal
+style: ledger
+skeleton: directory
+composition_seed: 11
+coverage:
+  states:
+  - FL
+  cities: []
+render:
+  mode: hybrid
+  prerender_top_n: 30
+  location_variants: 6

@@ -1,0 +1,32 @@
+{# A-Z index of covered places, grouped by county, filterable by the search
+   above. Alphabetical rather than by payout, because a visitor looking for
+   their own town does not care what it is worth. #}
+<section class="sec sec-alt">
+  <div class="wrap">
+    <h2 class="section-head">Every area we cover</h2>
+    {# Bounded on purpose. At the real operating scale (one to three states,
+       roughly thirty to seventy counties) every county shows and this cap never
+       bites. It only engages at national scale, where an unbounded index put
+       2,700+ links and 265 KB onto one page — a page-weight blocker and an AEO
+       liability. The full list always lives at /areas. #}
+    <div class="dir-index" id="dir-index">
+      {% for county in counties[:80] %}
+      <div class="dir-col" data-dir-group="{{ county.name }}">
+        <h3><a href="/areas/{{ county.slug }}">{{ county.name }}</a>
+          <span class="dimcount">{{ county.cities|length }}</span></h3>
+        <ul>
+          {% for c in county.cities[:14] %}
+          <li data-dir-item="{{ c.city|lower }} {{ county.name|lower }}"><a href="/areas/{{ c.slug }}">{{ c.city }}</a></li>
+          {% endfor %}
+        </ul>
+        {% if county.cities|length > 14 %}<a class="more" href="/areas/{{ county.slug }}">+{{ county.cities|length - 14 }} more</a>{% endif %}
+      </div>
+      {% endfor %}
+    </div>
+    {% if counties|length > 80 %}
+    <p><a class="more" href="/areas">See all {{ counties|length }} counties &rarr;</a></p>
+    {% endif %}
+    <p class="dir-empty" data-dir-empty hidden>Nothing matches that. Call {{ t.phone }} and ask —
+    the coverage list changes, and we would rather tell you than have you assume.</p>
+  </div>
+</section>

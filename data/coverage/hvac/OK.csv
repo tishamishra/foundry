@@ -1,0 +1,136 @@
+zip,city,state,county,payout
+73002,Alex,OK,Grady County,44.1
+73004,Amber,OK,Grady County,40.25
+73007,Arcadia,OK,Oklahoma County,55.0
+73008,Bethany,OK,Oklahoma County,55.0
+73010,Blanchard,OK,Mcclain County,44.1
+73011,Bradley,OK,Grady County,44.1
+74012,Broken Arrow,OK,Tulsa County,33.08
+74730,Calera,OK,Bryan County,33.25
+73020,Choctaw,OK,Oklahoma County,55.0
+73027,Coyle,OK,Logan County,37.8
+73028,Crescent,OK,Logan County,37.8
+74023,Cushing,OK,Payne County,37.8
+74701,Durant,OK,Bryan County,33.25
+73003,Edmond,OK,Oklahoma County,55.0
+73012,Edmond,OK,Oklahoma County,55.0
+73013,Edmond,OK,Oklahoma County,55.0
+73025,Edmond,OK,Oklahoma County,55.0
+73034,Edmond,OK,Oklahoma County,55.0
+73083,Edmond,OK,Oklahoma County,34.3
+73036,El Reno,OK,Canadian County,40.25
+74032,Glencoe,OK,Payne County,37.8
+73044,Guthrie,OK,Logan County,37.8
+73045,Harrah,OK,Oklahoma County,34.3
+73049,Jones,OK,Oklahoma County,55.0
+73050,Langston,OK,Logan County,37.8
+73051,Lexington,OK,Cleveland County,44.1
+73052,Lindsay,OK,Garvin County,44.1
+73054,Luther,OK,Oklahoma County,37.8
+73057,Maysville,OK,Garvin County,44.1
+73058,Meridian,OK,Logan County,37.8
+73063,Mulhall,OK,Logan County,37.8
+73064,Mustang,OK,Canadian County,44.1
+74857,Newalla,OK,Cleveland County,44.1
+73065,Newcastle,OK,Mcclain County,44.1
+73066,Nicoma Park,OK,Oklahoma County,44.1
+73068,Noble,OK,Cleveland County,44.1
+73019,Norman,OK,Cleveland County,44.1
+73026,Norman,OK,Cleveland County,44.1
+73069,Norman,OK,Cleveland County,44.1
+73070,Norman,OK,Cleveland County,34.3
+73071,Norman,OK,Cleveland County,44.1
+73072,Norman,OK,Cleveland County,44.1
+73101,Oklahoma City,OK,Oklahoma County,34.3
+73102,Oklahoma City,OK,Oklahoma County,55.0
+73103,Oklahoma City,OK,Oklahoma County,55.0
+73104,Oklahoma City,OK,Oklahoma County,44.1
+73105,Oklahoma City,OK,Oklahoma County,55.0
+73106,Oklahoma City,OK,Oklahoma County,55.0
+73107,Oklahoma City,OK,Oklahoma County,55.0
+73108,Oklahoma City,OK,Oklahoma County,55.0
+73109,Oklahoma City,OK,Oklahoma County,55.0
+73110,Oklahoma City,OK,Oklahoma County,55.0
+73111,Oklahoma City,OK,Oklahoma County,55.0
+73112,Oklahoma City,OK,Oklahoma County,55.0
+73113,Oklahoma City,OK,Oklahoma County,34.3
+73114,Oklahoma City,OK,Oklahoma County,55.0
+73115,Oklahoma City,OK,Oklahoma County,55.0
+73116,Oklahoma City,OK,Oklahoma County,55.0
+73117,Oklahoma City,OK,Oklahoma County,55.0
+73118,Oklahoma City,OK,Oklahoma County,55.0
+73119,Oklahoma City,OK,Oklahoma County,55.0
+73120,Oklahoma City,OK,Oklahoma County,55.0
+73121,Oklahoma City,OK,Oklahoma County,55.0
+73122,Oklahoma City,OK,Oklahoma County,55.0
+73123,Oklahoma City,OK,Oklahoma County,34.3
+73124,Oklahoma City,OK,Oklahoma County,34.3
+73125,Oklahoma City,OK,Oklahoma County,34.3
+73126,Oklahoma City,OK,Oklahoma County,34.3
+73127,Oklahoma City,OK,Oklahoma County,55.0
+73128,Oklahoma City,OK,Canadian County,55.0
+73129,Oklahoma City,OK,Oklahoma County,55.0
+73130,Oklahoma City,OK,Oklahoma County,55.0
+73131,Oklahoma City,OK,Oklahoma County,55.0
+73132,Oklahoma City,OK,Oklahoma County,55.0
+73134,Oklahoma City,OK,Oklahoma County,55.0
+73135,Oklahoma City,OK,Oklahoma County,55.0
+73136,Oklahoma City,OK,Oklahoma County,34.3
+73137,Oklahoma City,OK,Oklahoma County,34.3
+73139,Oklahoma City,OK,Oklahoma County,55.0
+73140,Oklahoma City,OK,Oklahoma County,34.3
+73141,Oklahoma City,OK,Oklahoma County,55.0
+73142,Oklahoma City,OK,Oklahoma County,55.0
+73143,Oklahoma City,OK,Oklahoma County,34.3
+73144,Oklahoma City,OK,Oklahoma County,34.3
+73145,Oklahoma City,OK,Oklahoma County,55.0
+73146,Oklahoma City,OK,Oklahoma County,34.3
+73147,Oklahoma City,OK,Oklahoma County,34.3
+73148,Oklahoma City,OK,Oklahoma County,34.3
+73149,Oklahoma City,OK,Oklahoma County,55.0
+73150,Oklahoma City,OK,Oklahoma County,55.0
+73151,Oklahoma City,OK,Oklahoma County,55.0
+73152,Oklahoma City,OK,Oklahoma County,34.3
+73153,Oklahoma City,OK,Oklahoma County,34.3
+73154,Oklahoma City,OK,Oklahoma County,34.3
+73155,Oklahoma City,OK,Oklahoma County,55.0
+73156,Oklahoma City,OK,Oklahoma County,34.3
+73157,Oklahoma City,OK,Oklahoma County,34.3
+73159,Oklahoma City,OK,Oklahoma County,55.0
+73160,Oklahoma City,OK,Cleveland County,44.1
+73162,Oklahoma City,OK,Oklahoma County,55.0
+73163,Oklahoma City,OK,Oklahoma County,34.3
+73164,Oklahoma City,OK,Oklahoma County,34.3
+73165,Oklahoma City,OK,Cleveland County,44.1
+73167,Oklahoma City,OK,Oklahoma County,34.3
+73169,Oklahoma City,OK,Oklahoma County,55.0
+73170,Oklahoma City,OK,Cleveland County,44.1
+73172,Oklahoma City,OK,Oklahoma County,34.3
+73173,Oklahoma City,OK,Cleveland County,55.0
+73178,Oklahoma City,OK,Oklahoma County,34.3
+73179,Oklahoma City,OK,Oklahoma County,55.0
+73185,Oklahoma City,OK,Oklahoma County,34.3
+73189,Oklahoma City,OK,Oklahoma County,34.3
+73190,Oklahoma City,OK,Oklahoma County,34.3
+73195,Oklahoma City,OK,Oklahoma County,34.3
+73196,Oklahoma City,OK,Oklahoma County,34.3
+73073,Orlando,OK,Logan County,37.8
+73074,Paoli,OK,Garvin County,44.1
+74059,Perkins,OK,Payne County,37.8
+73078,Piedmont,OK,Canadian County,55.0
+73080,Purcell,OK,Mcclain County,44.1
+74062,Ripley,OK,Payne County,37.8
+74066,Sapulpa,OK,Creek County,33.08
+73084,Spencer,OK,Oklahoma County,55.0
+74074,Stillwater,OK,Payne County,37.8
+74075,Stillwater,OK,Payne County,37.8
+74077,Stillwater,OK,Payne County,37.8
+74078,Stillwater,OK,Payne County,37.8
+74126,Tulsa,OK,Tulsa County,33.08
+73089,Tuttle,OK,Grady County,44.1
+73090,Union City,OK,Canadian County,40.25
+73093,Washington,OK,Mcclain County,44.1
+73095,Wayne,OK,Mcclain County,44.1
+73097,Wheatland,OK,Oklahoma County,55.0
+74085,Yale,OK,Payne County,37.8
+73099,Yukon,OK,Canadian County,55.0

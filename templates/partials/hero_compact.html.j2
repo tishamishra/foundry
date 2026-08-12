@@ -1,0 +1,23 @@
+{# A short hero for index-first skeletons. The page's job is to route, not to
+   sell twice, so the marketing spine sits lower down. #}
+<main id="main">
+<section class="hero hero-compact">
+  <div class="wrap">
+    <p class="eyebrow">
+      {%- if t.city %}{{ t.city }}, {{ t.state_abbr }}{% if t.county %} &middot; {{ t.county }}{% endif %}
+      {%- else %}{{ niche.label }} &middot; {{ locations|length }} communities{% endif -%}
+    </p>
+    <h1 class="hero-h1">
+      {%- if kind == 'location_service' %}{{ t.service }} in <em>{{ t.city }}</em>, {{ t.state_abbr }}
+      {%- elif kind == 'location' %}{{ niche.label }} in <em>{{ t.city }}</em>, {{ t.state_abbr }}
+      {%- elif kind == 'service' %}{{ t.service }}
+      {%- else %}{{ content.tagline }}{% endif -%}
+    </h1>
+    <p class="lede">{{ content.hero_intro }}</p>
+    <div class="cta-row">
+      <a class="btn btn-accent btn-lg" href="tel:{{ t.phone_link }}">{{ content.hero_cta }}</a>
+      <a class="btn btn-ghost btn-lg" href="#quote">Request a callback</a>
+    </div>
+    <p class="micro">Call {{ t.phone }}{% if t.hours %} &middot; {{ t.hours }}{% endif %}</p>
+  </div>
+</section>

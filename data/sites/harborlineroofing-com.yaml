@@ -1,0 +1,15 @@
+site_id: harborlineroofing-com
+business: harborline-roofing
+niche: roofing
+domain: harborlineroofing.com
+theme: forest
+style: editorial
+skeleton: longform
+composition_seed: 23
+coverage:
+  states:
+  - GA
+render:
+  mode: static
+  prerender_top_n: null
+  location_variants: 4

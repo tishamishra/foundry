@@ -1,0 +1,8 @@
+<section class="sec">
+  <div class="wrap prose">
+    <h2>{{ service.name }}{% if t.city %} in {{ t.city }}, {{ t.state_abbr }}{% endif %}</h2>
+    {% for para in svc.intro.paras %}<p>{{ para }}</p>{% endfor %}
+    <h3>What the job includes</h3>
+    <ul class="bullets">{% for b in svc.bullets %}<li>{{ b }}</li>{% endfor %}</ul>
+  </div>
+</section>

@@ -1,0 +1,442 @@
+zip,city,state,county,payout
+04406,Abbot,ME,Piscataquis County,189.5
+04001,Acton,ME,York County,193.0
+04606,Addison,ME,Washington County,189.5
+04910,Albion,ME,Kennebec County,189.5
+04002,Alfred,ME,York County,193.0
+04535,Alna,ME,Lincoln County,189.5
+04216,Andover,ME,Oxford County,189.5
+04911,Anson,ME,Somerset County,189.5
+04912,Athens,ME,Somerset County,189.5
+04210,Auburn,ME,Androscoggin County,189.5
+04211,Auburn,ME,Androscoggin County,189.5
+04212,Auburn,ME,Androscoggin County,189.5
+04330,Augusta,ME,Kennebec County,189.5
+04332,Augusta,ME,Kennebec County,189.5
+04333,Augusta,ME,Kennebec County,189.5
+04336,Augusta,ME,Kennebec County,189.5
+04338,Augusta,ME,Kennebec County,189.5
+04408,Aurora,ME,Hancock County,189.5
+04003,Bailey Island,ME,Cumberland County,193.0
+04694,Baileyville,ME,Washington County,189.5
+04401,Bangor,ME,Penobscot County,189.5
+04402,Bangor,ME,Penobscot County,189.5
+04609,Bar Harbor,ME,Hancock County,189.5
+04004,Bar Mills,ME,York County,193.0
+04653,Bass Harbor,ME,Hancock County,189.5
+04530,Bath,ME,Sagadahoc County,189.5
+04611,Beals,ME,Washington County,189.5
+04915,Belfast,ME,Waldo County,189.5
+04917,Belgrade,ME,Kennebec County,189.5
+04918,Belgrade Lakes,ME,Kennebec County,189.5
+04612,Bernard,ME,Hancock County,189.5
+03901,Berwick,ME,York County,193.0
+04217,Bethel,ME,Oxford County,189.5
+04005,Biddeford,ME,York County,193.0
+04007,Biddeford,ME,York County,193.0
+04006,Biddeford Pool,ME,York County,193.0
+04920,Bingham,ME,Somerset County,189.5
+04613,Birch Harbor,ME,Hancock County,189.5
+04614,Blue Hill,ME,Hancock County,189.5
+04537,Boothbay,ME,Lincoln County,189.5
+04538,Boothbay Harbor,ME,Lincoln County,189.5
+04287,Bowdoin,ME,Sagadahoc County,189.5
+04008,Bowdoinham,ME,Sagadahoc County,189.5
+04410,Bradford,ME,Penobscot County,189.5
+04411,Bradley,ME,Penobscot County,189.5
+04551,Bremen,ME,Lincoln County,189.5
+04412,Brewer,ME,Penobscot County,189.5
+04009,Bridgton,ME,Cumberland County,193.0
+04539,Bristol,ME,Lincoln County,189.5
+04616,Brooklin,ME,Hancock County,189.5
+04921,Brooks,ME,Waldo County,189.5
+04617,Brooksville,ME,Hancock County,189.5
+04413,Brookton,ME,Washington County,189.5
+04010,Brownfield,ME,Oxford County,189.5
+04414,Brownville,ME,Piscataquis County,189.5
+04415,Brownville Junction,ME,Piscataquis County,189.5
+04011,Brunswick,ME,Cumberland County,193.0
+04219,Bryant Pond,ME,Oxford County,189.5
+04220,Buckfield,ME,Oxford County,189.5
+04416,Bucksport,ME,Hancock County,189.5
+04417,Burlington,ME,Penobscot County,189.5
+04922,Burnham,ME,Waldo County,189.5
+04013,Bustins Island,ME,Cumberland County,193.0
+04093,Buxton,ME,York County,193.0
+04619,Calais,ME,Washington County,189.5
+04923,Cambridge,ME,Somerset County,189.5
+04843,Camden,ME,Knox County,189.5
+04924,Canaan,ME,Somerset County,189.5
+04221,Canton,ME,Oxford County,189.5
+04107,Cape Elizabeth,ME,Cumberland County,193.0
+03902,Cape Neddick,ME,York County,193.0
+04014,Cape Porpoise,ME,York County,193.0
+04925,Caratunk,ME,Somerset County,189.5
+04419,Carmel,ME,Penobscot County,189.5
+04015,Casco,ME,Cumberland County,193.0
+04420,Castine,ME,Hancock County,189.5
+04421,Castine,ME,Hancock County,189.5
+04016,Center Lovell,ME,Oxford County,189.5
+04541,Chamberlain,ME,Lincoln County,189.5
+04422,Charleston,ME,Penobscot County,189.5
+04017,Chebeague Island,ME,Cumberland County,193.0
+04622,Cherryfield,ME,Washington County,189.5
+04926,China Village,ME,Kennebec County,189.5
+04019,Cliff Island,ME,Cumberland County,193.0
+04927,Clinton,ME,Kennebec County,189.5
+04623,Columbia Falls,ME,Washington County,189.5
+04341,Coopers Mills,ME,Lincoln County,189.5
+04624,Corea,ME,Hancock County,189.5
+04928,Corinna,ME,Penobscot County,189.5
+04427,Corinth,ME,Penobscot County,189.5
+04020,Cornish,ME,York County,193.0
+04625,Cranberry Isles,ME,Hancock County,189.5
+04021,Cumberland Center,ME,Cumberland County,193.0
+04110,Cumberland Foreside,ME,Cumberland County,193.0
+04563,Cushing,ME,Knox County,189.5
+04626,Cutler,ME,Washington County,189.5
+04543,Damariscotta,ME,Lincoln County,189.5
+04424,Danforth,ME,Washington County,189.5
+04223,Danville,ME,Androscoggin County,189.5
+04627,Deer Isle,ME,Hancock County,189.5
+04022,Denmark,ME,Oxford County,189.5
+04628,Dennysville,ME,Washington County,189.5
+04929,Detroit,ME,Somerset County,189.5
+04930,Dexter,ME,Penobscot County,189.5
+04224,Dixfield,ME,Oxford County,189.5
+04932,Dixmont,ME,Penobscot County,189.5
+04426,Dover Foxcroft,ME,Piscataquis County,189.5
+04342,Dresden,ME,Lincoln County,189.5
+04225,Dryden,ME,Franklin County,189.5
+04222,Durham,ME,Androscoggin County,189.5
+04226,East Andover,ME,Oxford County,189.5
+04024,East Baldwin,ME,Cumberland County,193.0
+04629,East Blue Hill,ME,Hancock County,189.5
+04544,East Boothbay,ME,Lincoln County,189.5
+04227,East Dixfield,ME,Oxford County,189.5
+04228,East Livermore,ME,Androscoggin County,189.5
+04630,East Machias,ME,Washington County,189.5
+04430,East Millinocket,ME,Penobscot County,189.5
+04933,East Newport,ME,Penobscot County,189.5
+04431,East Orland,ME,Hancock County,189.5
+04028,East Parsonsfield,ME,York County,193.0
+04230,East Poland,ME,Androscoggin County,189.5
+04935,East Vassalboro,ME,Kennebec County,189.5
+04030,East Waterboro,ME,York County,193.0
+04234,East Wilton,ME,Franklin County,189.5
+04343,East Winthrop,ME,Kennebec County,189.5
+04631,Eastport,ME,Washington County,189.5
+04428,Eddington,ME,Penobscot County,189.5
+04556,Edgecomb,ME,Lincoln County,189.5
+03903,Eliot,ME,York County,193.0
+04605,Ellsworth,ME,Hancock County,189.5
+04434,Etna,ME,Penobscot County,189.5
+04936,Eustis,ME,Franklin County,189.5
+04435,Exeter,ME,Penobscot County,189.5
+04937,Fairfield,ME,Somerset County,189.5
+04105,Falmouth,ME,Cumberland County,193.0
+04344,Farmingdale,ME,Kennebec County,189.5
+04938,Farmington,ME,Franklin County,189.5
+04940,Farmington Falls,ME,Franklin County,189.5
+04438,Frankfort,ME,Waldo County,189.5
+04634,Franklin,ME,Hancock County,189.5
+04941,Freedom,ME,Waldo County,189.5
+04032,Freeport,ME,Cumberland County,193.0
+04033,Freeport,ME,Cumberland County,193.0
+04034,Freeport,ME,Cumberland County,193.0
+04635,Frenchboro,ME,Hancock County,189.5
+04547,Friendship,ME,Knox County,189.5
+04037,Fryeburg,ME,Oxford County,189.5
+04345,Gardiner,ME,Kennebec County,189.5
+04939,Garland,ME,Penobscot County,189.5
+04548,Georgetown,ME,Sagadahoc County,189.5
+04038,Gorham,ME,Cumberland County,193.0
+04607,Gouldsboro,ME,Hancock County,189.5
+04637,Grand Lake Stream,ME,Washington County,189.5
+04039,Gray,ME,Cumberland County,193.0
+04418,Greenbush,ME,Penobscot County,189.5
+04236,Greene,ME,Androscoggin County,189.5
+04441,Greenville,ME,Piscataquis County,189.5
+04442,Greenville Junction,ME,Piscataquis County,189.5
+04255,Greenwood,ME,Oxford County,189.5
+04443,Guilford,ME,Piscataquis County,189.5
+04347,Hallowell,ME,Kennebec County,189.5
+04444,Hampden,ME,Penobscot County,189.5
+04640,Hancock,ME,Hancock County,189.5
+04237,Hanover,ME,Oxford County,189.5
+04642,Harborside,ME,Hancock County,189.5
+04942,Harmony,ME,Somerset County,189.5
+04079,Harpswell,ME,Cumberland County,193.0
+04643,Harrington,ME,Washington County,189.5
+04040,Harrison,ME,Cumberland County,193.0
+04943,Hartland,ME,Somerset County,189.5
+04238,Hebron,ME,Oxford County,189.5
+04944,Hinckley,ME,Somerset County,189.5
+04041,Hiram,ME,Oxford County,189.5
+04429,Holden,ME,Penobscot County,189.5
+04042,Hollis Center,ME,York County,193.0
+04847,Hope,ME,Knox County,189.5
+04448,Howland,ME,Penobscot County,189.5
+04449,Hudson,ME,Penobscot County,189.5
+04644,Hulls Cove,ME,Hancock County,189.5
+04645,Isle Au Haut,ME,Knox County,189.5
+04549,Isle Of Springs,ME,Lincoln County,189.5
+04848,Islesboro,ME,Waldo County,189.5
+04646,Islesford,ME,Hancock County,189.5
+04945,Jackman,ME,Somerset County,189.5
+04239,Jay,ME,Franklin County,189.5
+04348,Jefferson,ME,Lincoln County,189.5
+04648,Jonesboro,ME,Washington County,189.5
+04649,Jonesport,ME,Washington County,189.5
+04450,Kenduskeag,ME,Penobscot County,189.5
+04043,Kennebunk,ME,York County,193.0
+04046,Kennebunkport,ME,York County,193.0
+04349,Kents Hill,ME,Kennebec County,189.5
+04947,Kingfield,ME,Franklin County,189.5
+04451,Kingman,ME,Penobscot County,189.5
+03904,Kittery,ME,York County,193.0
+03905,Kittery Point,ME,York County,193.0
+04453,Lagrange,ME,Penobscot County,189.5
+04454,Lambert Lake,ME,Washington County,189.5
+04027,Lebanon,ME,York County,193.0
+04455,Lee,ME,Penobscot County,189.5
+04263,Leeds,ME,Androscoggin County,189.5
+04456,Levant,ME,Penobscot County,189.5
+04240,Lewiston,ME,Androscoggin County,189.5
+04241,Lewiston,ME,Androscoggin County,189.5
+04243,Lewiston,ME,Androscoggin County,189.5
+04949,Liberty,ME,Waldo County,189.5
+04048,Limerick,ME,York County,193.0
+04049,Limington,ME,York County,193.0
+04457,Lincoln,ME,Penobscot County,189.5
+04849,Lincolnville,ME,Waldo County,189.5
+04850,Lincolnville Center,ME,Waldo County,189.5
+04250,Lisbon,ME,Androscoggin County,189.5
+04252,Lisbon Falls,ME,Androscoggin County,189.5
+04350,Litchfield,ME,Kennebec County,189.5
+04650,Little Deer Isle,ME,Hancock County,189.5
+04253,Livermore,ME,Androscoggin County,189.5
+04254,Livermore Falls,ME,Androscoggin County,189.5
+04050,Long Island,ME,Cumberland County,193.0
+04051,Lovell,ME,Oxford County,189.5
+04652,Lubec,ME,Washington County,189.5
+04654,Machias,ME,Washington County,189.5
+04655,Machiasport,ME,Washington County,189.5
+04950,Madison,ME,Somerset County,189.5
+04351,Manchester,ME,Kennebec County,189.5
+04851,Matinicus,ME,Knox County,189.5
+04459,Mattawamkeag,ME,Penobscot County,189.5
+04256,Mechanic Falls,ME,Androscoggin County,189.5
+04657,Meddybemps,ME,Washington County,189.5
+04460,Medway,ME,Penobscot County,189.5
+04257,Mexico,ME,Oxford County,189.5
+04658,Milbridge,ME,Washington County,189.5
+04461,Milford,ME,Penobscot County,189.5
+04462,Millinocket,ME,Penobscot County,189.5
+04463,Milo,ME,Piscataquis County,189.5
+04258,Minot,ME,Androscoggin County,189.5
+04852,Monhegan,ME,Lincoln County,189.5
+04259,Monmouth,ME,Kennebec County,189.5
+04951,Monroe,ME,Waldo County,189.5
+04464,Monson,ME,Piscataquis County,189.5
+04054,Moody,ME,York County,193.0
+04952,Morrill,ME,Waldo County,189.5
+04660,Mount Desert,ME,Hancock County,189.5
+04352,Mount Vernon,ME,Kennebec County,189.5
+04055,Naples,ME,Cumberland County,193.0
+04260,New Gloucester,ME,Cumberland County,193.0
+04554,New Harbor,ME,Lincoln County,189.5
+04954,New Portland,ME,Somerset County,189.5
+04961,New Portland,ME,Somerset County,189.5
+04955,New Sharon,ME,Franklin County,189.5
+04956,New Vineyard,ME,Franklin County,189.5
+04553,Newcastle,ME,Lincoln County,189.5
+04056,Newfield,ME,York County,193.0
+04953,Newport,ME,Penobscot County,189.5
+04261,Newry,ME,Oxford County,189.5
+04555,Nobleboro,ME,Lincoln County,189.5
+04957,Norridgewock,ME,Somerset County,189.5
+04958,North Anson,ME,Somerset County,189.5
+03906,North Berwick,ME,York County,193.0
+04057,North Bridgton,ME,Cumberland County,193.0
+04853,North Haven,ME,Knox County,189.5
+04262,North Jay,ME,Franklin County,189.5
+04265,North Monmouth,ME,Kennebec County,189.5
+04266,North Turner,ME,Androscoggin County,189.5
+04962,North Vassalboro,ME,Kennebec County,189.5
+04061,North Waterboro,ME,York County,193.0
+04267,North Waterford,ME,Oxford County,189.5
+04097,North Yarmouth,ME,Cumberland County,193.0
+04662,Northeast Harbor,ME,Hancock County,189.5
+04268,Norway,ME,Oxford County,189.5
+04963,Oakland,ME,Kennebec County,189.5
+04063,Ocean Park,ME,York County,193.0
+03907,Ogunquit,ME,York County,193.0
+04064,Old Orchard Beach,ME,York County,193.0
+04468,Old Town,ME,Penobscot County,189.5
+04964,Oquossoc,ME,Franklin County,189.5
+04472,Orland,ME,Hancock County,189.5
+04469,Orono,ME,Penobscot County,189.5
+04473,Orono,ME,Penobscot County,189.5
+04474,Orrington,ME,Penobscot County,189.5
+04066,Orrs Island,ME,Cumberland County,193.0
+04854,Owls Head,ME,Knox County,189.5
+04270,Oxford,ME,Oxford County,189.5
+04354,Palermo,ME,Waldo County,189.5
+04965,Palmyra,ME,Somerset County,189.5
+04271,Paris,ME,Oxford County,189.5
+04047,Parsonsfield,ME,York County,193.0
+04475,Passadumkeag,ME,Penobscot County,189.5
+04765,Patten,ME,Penobscot County,189.5
+04108,Peaks Island,ME,Cumberland County,193.0
+04558,Pemaquid,ME,Lincoln County,189.5
+04666,Pembroke,ME,Washington County,189.5
+04476,Penobscot,ME,Hancock County,189.5
+04667,Perry,ME,Washington County,189.5
+04290,Peru,ME,Oxford County,189.5
+04966,Phillips,ME,Franklin County,189.5
+04562,Phippsburg,ME,Sagadahoc County,189.5
+04967,Pittsfield,ME,Somerset County,189.5
+04969,Plymouth,ME,Penobscot County,189.5
+04274,Poland,ME,Androscoggin County,189.5
+04855,Port Clyde,ME,Knox County,189.5
+04068,Porter,ME,Oxford County,189.5
+04101,Portland,ME,Cumberland County,193.0
+04102,Portland,ME,Cumberland County,193.0
+04103,Portland,ME,Cumberland County,193.0
+04104,Portland,ME,Cumberland County,193.0
+04109,Portland,ME,Cumberland County,193.0
+04112,Portland,ME,Cumberland County,193.0
+04122,Portland,ME,Cumberland County,193.0
+04123,Portland,ME,Cumberland County,193.0
+04124,Portland,ME,Cumberland County,193.0
+04069,Pownal,ME,Cumberland County,193.0
+04668,Princeton,ME,Washington County,189.5
+04669,Prospect Harbor,ME,Hancock County,189.5
+04346,Randolph,ME,Kennebec County,189.5
+04970,Rangeley,ME,Franklin County,189.5
+04071,Raymond,ME,Cumberland County,193.0
+04355,Readfield,ME,Kennebec County,189.5
+04357,Richmond,ME,Sagadahoc County,189.5
+04671,Robbinston,ME,Washington County,189.5
+04841,Rockland,ME,Knox County,189.5
+04856,Rockport,ME,Knox County,189.5
+04478,Rockwood,ME,Somerset County,189.5
+04564,Round Pond,ME,Lincoln County,189.5
+04275,Roxbury,ME,Oxford County,189.5
+04276,Rumford,ME,Oxford County,189.5
+04280,Sabattus,ME,Androscoggin County,189.5
+04072,Saco,ME,York County,193.0
+04971,Saint Albans,ME,Somerset County,189.5
+04672,Salsbury Cove,ME,Hancock County,189.5
+04972,Sandy Point,ME,Waldo County,189.5
+04073,Sanford,ME,York County,193.0
+04479,Sangerville,ME,Piscataquis County,189.5
+04673,Sargentville,ME,Hancock County,189.5
+04070,Scarborough,ME,Cumberland County,193.0
+04074,Scarborough,ME,Cumberland County,193.0
+04674,Seal Cove,ME,Hancock County,189.5
+04675,Seal Harbor,ME,Hancock County,189.5
+04973,Searsmont,ME,Waldo County,189.5
+04974,Searsport,ME,Waldo County,189.5
+04029,Sebago,ME,Cumberland County,193.0
+04565,Sebasco Estates,ME,Sagadahoc County,189.5
+04481,Sebec,ME,Piscataquis County,189.5
+04676,Sedgwick,ME,Hancock County,189.5
+04076,Shapleigh,ME,York County,193.0
+04975,Shawmut,ME,Somerset County,189.5
+04485,Shirley Mills,ME,Piscataquis County,189.5
+04976,Skowhegan,ME,Somerset County,189.5
+04978,Smithfield,ME,Somerset County,189.5
+04979,Solon,ME,Somerset County,189.5
+04677,Sorrento,ME,Hancock County,189.5
+03908,South Berwick,ME,York County,193.0
+04568,South Bristol,ME,Lincoln County,189.5
+04077,South Casco,ME,Cumberland County,193.0
+04358,South China,ME,Kennebec County,189.5
+04078,South Freeport,ME,Cumberland County,193.0
+04359,South Gardiner,ME,Kennebec County,189.5
+04281,South Paris,ME,Oxford County,189.5
+04106,South Portland,ME,Cumberland County,193.0
+04116,South Portland,ME,Cumberland County,193.0
+04858,South Thomaston,ME,Knox County,189.5
+04082,South Windham,ME,Cumberland County,193.0
+04576,Southport,ME,Lincoln County,189.5
+04679,Southwest Harbor,ME,Hancock County,189.5
+04487,Springfield,ME,Penobscot County,189.5
+04083,Springvale,ME,York County,193.0
+04859,Spruce Head,ME,Knox County,189.5
+04570,Squirrel Island,ME,Lincoln County,189.5
+04777,Stacyville,ME,Penobscot County,189.5
+04084,Standish,ME,Cumberland County,193.0
+04085,Steep Falls,ME,Cumberland County,193.0
+04488,Stetson,ME,Penobscot County,189.5
+04680,Steuben,ME,Washington County,189.5
+04489,Stillwater,ME,Penobscot County,189.5
+04981,Stockton Springs,ME,Waldo County,189.5
+04231,Stoneham,ME,Oxford County,189.5
+04681,Stonington,ME,Hancock County,189.5
+04982,Stratton,ME,Franklin County,189.5
+04983,Strong,ME,Franklin County,189.5
+04664,Sullivan,ME,Hancock County,189.5
+04292,Sumner,ME,Oxford County,189.5
+04683,Sunset,ME,Hancock County,189.5
+04684,Surry,ME,Hancock County,189.5
+04685,Swans Island,ME,Hancock County,189.5
+04984,Temple,ME,Franklin County,189.5
+04860,Tenants Harbor,ME,Knox County,189.5
+04861,Thomaston,ME,Knox County,189.5
+04986,Thorndike,ME,Waldo County,189.5
+04490,Topsfield,ME,Washington County,189.5
+04086,Topsham,ME,Sagadahoc County,189.5
+04571,Trevett,ME,Lincoln County,189.5
+04987,Troy,ME,Waldo County,189.5
+04282,Turner,ME,Androscoggin County,189.5
+04862,Union,ME,Knox County,189.5
+04988,Unity,ME,Waldo County,189.5
+04491,Vanceboro,ME,Washington County,189.5
+04989,Vassalboro,ME,Kennebec County,189.5
+04360,Vienna,ME,Kennebec County,189.5
+04863,Vinalhaven,ME,Knox County,189.5
+04492,Waite,ME,Washington County,189.5
+04572,Waldoboro,ME,Lincoln County,189.5
+04573,Walpole,ME,Lincoln County,189.5
+04864,Warren,ME,Knox County,189.5
+04574,Washington,ME,Knox County,189.5
+04087,Waterboro,ME,York County,193.0
+04088,Waterford,ME,Oxford County,189.5
+04901,Waterville,ME,Kennebec County,189.5
+04903,Waterville,ME,Kennebec County,189.5
+04284,Wayne,ME,Kennebec County,189.5
+04285,Weld,ME,Franklin County,189.5
+04090,Wells,ME,York County,193.0
+04686,Wesley,ME,Washington County,189.5
+04091,West Baldwin,ME,Cumberland County,193.0
+04286,West Bethel,ME,Oxford County,189.5
+04575,West Boothbay Harbor,ME,Lincoln County,189.5
+04493,West Enfield,ME,Penobscot County,189.5
+04992,West Farmington,ME,Franklin County,189.5
+04985,West Forks,ME,Somerset County,189.5
+04094,West Kennebunk,ME,York County,193.0
+04288,West Minot,ME,Androscoggin County,189.5
+04095,West Newfield,ME,York County,193.0
+04289,West Paris,ME,Oxford County,189.5
+04291,West Poland,ME,Androscoggin County,189.5
+04865,West Rockport,ME,Knox County,189.5
+04092,Westbrook,ME,Cumberland County,193.0
+04098,Westbrook,ME,Cumberland County,193.0
+04353,Whitefield,ME,Lincoln County,189.5
+04691,Whiting,ME,Washington County,189.5
+04294,Wilton,ME,Franklin County,189.5
+04062,Windham,ME,Cumberland County,193.0
+04363,Windsor,ME,Kennebec County,189.5
+04495,Winn,ME,Penobscot County,189.5
+04693,Winter Harbor,ME,Hancock County,189.5
+04496,Winterport,ME,Waldo County,189.5
+04364,Winthrop,ME,Kennebec County,189.5
+04578,Wiscasset,ME,Lincoln County,189.5
+04579,Woolwich,ME,Sagadahoc County,189.5
+04096,Yarmouth,ME,Cumberland County,193.0
+03909,York,ME,York County,193.0
+03910,York Beach,ME,York County,193.0
+03911,York Harbor,ME,York County,193.0

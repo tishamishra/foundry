@@ -1,0 +1,201 @@
+zip,city,state,county,payout
+30101,Acworth,GA,Cobb County,37.8
+30102,Acworth,GA,Cherokee County,34.3
+30004,Alpharetta,GA,Fulton County,53.55
+30005,Alpharetta,GA,Fulton County,37.13
+30009,Alpharetta,GA,Fulton County,42.52
+30022,Alpharetta,GA,Fulton County,37.13
+30601,Athens,GA,Clarke County,39.38
+30602,Athens,GA,Clarke County,39.38
+30605,Athens,GA,Clarke County,39.38
+30606,Athens,GA,Clarke County,39.38
+30607,Athens,GA,Clarke County,39.38
+30609,Athens,GA,Clarke County,39.38
+30303,Atlanta,GA,Fulton County,42.52
+30305,Atlanta,GA,Fulton County,37.13
+30306,Atlanta,GA,Fulton County,37.13
+30307,Atlanta,GA,Dekalb County,37.13
+30308,Atlanta,GA,Fulton County,37.13
+30309,Atlanta,GA,Fulton County,42.52
+30310,Atlanta,GA,Fulton County,34.3
+30311,Atlanta,GA,Fulton County,34.3
+30312,Atlanta,GA,Fulton County,42.52
+30313,Atlanta,GA,Fulton County,37.13
+30314,Atlanta,GA,Fulton County,37.13
+30316,Atlanta,GA,Dekalb County,37.13
+30317,Atlanta,GA,Dekalb County,37.13
+30318,Atlanta,GA,Fulton County,37.13
+30319,Atlanta,GA,Dekalb County,37.13
+30320,Atlanta,GA,Clayton County,34.3
+30322,Atlanta,GA,Dekalb County,37.13
+30324,Atlanta,GA,Fulton County,37.13
+30326,Atlanta,GA,Fulton County,37.13
+30327,Atlanta,GA,Fulton County,37.13
+30328,Atlanta,GA,Fulton County,42.52
+30329,Atlanta,GA,Dekalb County,37.13
+30331,Atlanta,GA,Fulton County,34.3
+30332,Atlanta,GA,Fulton County,34.3
+30333,Atlanta,GA,Fulton County,34.3
+30334,Atlanta,GA,Fulton County,34.3
+30336,Atlanta,GA,Fulton County,34.3
+30337,Atlanta,GA,Fulton County,37.13
+30338,Atlanta,GA,Dekalb County,37.13
+30339,Atlanta,GA,Cobb County,37.13
+30340,Atlanta,GA,Dekalb County,42.52
+30341,Atlanta,GA,Dekalb County,37.13
+30342,Atlanta,GA,Fulton County,37.13
+30344,Atlanta,GA,Fulton County,37.13
+30345,Atlanta,GA,Dekalb County,37.13
+30346,Atlanta,GA,Dekalb County,37.13
+30350,Atlanta,GA,Fulton County,37.13
+30354,Atlanta,GA,Fulton County,36.85
+30356,Atlanta,GA,Fulton County,34.3
+30359,Atlanta,GA,Fulton County,34.3
+30360,Atlanta,GA,Dekalb County,37.13
+30361,Atlanta,GA,Fulton County,34.3
+30362,Atlanta,GA,Fulton County,34.3
+30363,Atlanta,GA,Fulton County,34.3
+30366,Atlanta,GA,Fulton County,34.3
+30368,Atlanta,GA,Fulton County,34.3
+30375,Atlanta,GA,Fulton County,34.3
+31119,Atlanta,GA,Fulton County,34.3
+31141,Atlanta,GA,Fulton County,34.3
+31145,Atlanta,GA,Fulton County,34.3
+31146,Atlanta,GA,Fulton County,34.3
+39901,Atlanta,GA,Fulton County,34.3
+30002,Avondale Estates,GA,Dekalb County,37.13
+30622,Bogart,GA,Oconee County,39.38
+30205,Brooks,GA,Fayette County,34.3
+30518,Buford,GA,Gwinnett County,34.3
+30114,Canton,GA,Cherokee County,34.3
+30115,Canton,GA,Cherokee County,34.3
+30120,Cartersville,GA,Bartow County,53.55
+30707,Chickamauga,GA,Walker County,68.75
+30111,Clarkdale,GA,Cobb County,34.3
+30021,Clarkston,GA,Dekalb County,37.13
+30710,Cohutta,GA,Whitfield County,68.75
+30288,Conley,GA,Clayton County,42.52
+30012,Conyers,GA,Rockdale County,34.3
+30013,Conyers,GA,Rockdale County,34.3
+30094,Conyers,GA,Rockdale County,34.3
+30040,Cumming,GA,Forsyth County,53.55
+30019,Dacula,GA,Gwinnett County,34.3
+30132,Dallas,GA,Paulding County,34.3
+30157,Dallas,GA,Paulding County,34.3
+30720,Dalton,GA,Whitfield County,68.75
+30721,Dalton,GA,Whitfield County,78.75
+30722,Dalton,GA,Whitfield County,68.75
+30534,Dawsonville,GA,Dawson County,33.47
+30030,Decatur,GA,Dekalb County,37.13
+30031,Decatur,GA,Dekalb County,34.3
+30032,Decatur,GA,Dekalb County,42.52
+30033,Decatur,GA,Dekalb County,37.13
+30034,Decatur,GA,Dekalb County,37.13
+30035,Decatur,GA,Dekalb County,37.13
+30036,Decatur,GA,Dekalb County,34.3
+30037,Decatur,GA,Dekalb County,34.3
+30133,Douglasville,GA,Douglas County,34.3
+30154,Douglasville,GA,Douglas County,34.3
+30096,Duluth,GA,Gwinnett County,34.3
+30097,Duluth,GA,Fulton County,34.3
+30294,Ellenwood,GA,Dekalb County,42.52
+30213,Fairburn,GA,Fulton County,34.3
+30214,Fayetteville,GA,Fayette County,34.3
+30215,Fayetteville,GA,Fayette County,34.3
+30725,Flintstone,GA,Walker County,68.75
+30297,Forest Park,GA,Clayton County,37.13
+30298,Forest Park,GA,Clayton County,34.3
+30742,Fort Oglethorpe,GA,Catoosa County,68.75
+30501,Gainesville,GA,Hall County,33.47
+30507,Gainesville,GA,Hall County,53.55
+30220,Grantville,GA,Coweta County,34.3
+30017,Grayson,GA,Gwinnett County,34.3
+30228,Hampton,GA,Henry County,34.3
+30229,Haralson,GA,Coweta County,34.3
+30141,Hiram,GA,Paulding County,34.3
+30143,Jasper,GA,Pickens County,53.55
+30236,Jonesboro,GA,Clayton County,34.3
+30237,Jonesboro,GA,Clayton County,34.3
+30238,Jonesboro,GA,Clayton County,34.3
+30152,Kennesaw,GA,Cobb County,56.7
+30156,Kennesaw,GA,Cobb County,34.3
+30160,Kennesaw,GA,Cobb County,34.3
+30728,La Fayette,GA,Walker County,68.75
+30042,Lawrenceville,GA,Gwinnett County,33.47
+30043,Lawrenceville,GA,Gwinnett County,34.3
+30044,Lawrenceville,GA,Gwinnett County,34.3
+30045,Lawrenceville,GA,Gwinnett County,34.3
+30046,Lawrenceville,GA,Gwinnett County,34.3
+30047,Lilburn,GA,Gwinnett County,34.3
+30122,Lithia Springs,GA,Douglas County,34.3
+30038,Lithonia,GA,Dekalb County,37.13
+30058,Lithonia,GA,Dekalb County,37.13
+30248,Locust Grove,GA,Henry County,34.3
+30052,Loganville,GA,Gwinnett County,39.38
+30750,Lookout Mountain,GA,Walker County,68.75
+30250,Lovejoy,GA,Clayton County,34.3
+30006,Marietta,GA,Cobb County,34.3
+30007,Marietta,GA,Cobb County,34.3
+30061,Marietta,GA,Cobb County,34.3
+30062,Marietta,GA,Cobb County,37.8
+30063,Marietta,GA,Cobb County,34.3
+30065,Marietta,GA,Cobb County,34.3
+30066,Marietta,GA,Cobb County,36.85
+30067,Marietta,GA,Cobb County,53.55
+30068,Marietta,GA,Cobb County,37.13
+30090,Marietta,GA,Cobb County,34.3
+30252,Mcdonough,GA,Henry County,34.3
+30253,Mcdonough,GA,Henry County,34.3
+30655,Monroe,GA,Walton County,39.38
+30656,Monroe,GA,Walton County,39.38
+30259,Moreland,GA,Coweta County,34.3
+30260,Morrow,GA,Clayton County,34.3
+30287,Morrow,GA,Clayton County,34.3
+30263,Newnan,GA,Coweta County,34.3
+30264,Newnan,GA,Coweta County,34.3
+30265,Newnan,GA,Coweta County,34.3
+30271,Newnan,GA,Coweta County,34.3
+30071,Norcross,GA,Gwinnett County,34.3
+30093,Norcross,GA,Gwinnett County,34.3
+30268,Palmetto,GA,Fulton County,34.3
+30269,Peachtree City,GA,Fayette County,34.3
+30270,Peachtree City,GA,Fayette County,34.3
+31169,Peachtree City,GA,Fayette County,34.3
+30092,Peachtree Corners,GA,Gwinnett County,34.3
+30072,Pine Lake,GA,Dekalb County,34.3
+30127,Powder Springs,GA,Cobb County,37.8
+30074,Redan,GA,Dekalb County,34.3
+30273,Rex,GA,Clayton County,34.3
+30736,Ringgold,GA,Catoosa County,68.75
+30738,Rising Fawn,GA,Dade County,68.75
+30274,Riverdale,GA,Clayton County,34.3
+30296,Riverdale,GA,Clayton County,34.3
+30739,Rock Spring,GA,Walker County,68.75
+30740,Rocky Face,GA,Whitfield County,68.75
+30741,Rossville,GA,Walker County,68.75
+30075,Roswell,GA,Fulton County,37.13
+30076,Roswell,GA,Fulton County,37.13
+31562,Saint George,GA,Charlton County,34.65
+30275,Sargent,GA,Coweta County,34.3
+30079,Scottdale,GA,Dekalb County,37.13
+30276,Senoia,GA,Coweta County,34.3
+30277,Sharpsburg,GA,Coweta County,34.3
+30081,Smyrna,GA,Cobb County,34.3
+30039,Snellville,GA,Gwinnett County,34.3
+30078,Snellville,GA,Gwinnett County,34.3
+30281,Stockbridge,GA,Henry County,34.3
+30083,Stone Mountain,GA,Dekalb County,42.52
+30086,Stone Mountain,GA,Dekalb County,34.3
+30087,Stone Mountain,GA,Dekalb County,37.13
+30088,Stone Mountain,GA,Dekalb County,37.13
+30024,Suwanee,GA,Gwinnett County,34.3
+30752,Trenton,GA,Dade County,68.75
+30084,Tucker,GA,Dekalb County,37.13
+30085,Tucker,GA,Dekalb County,34.3
+30755,Tunnel Hill,GA,Whitfield County,68.75
+30289,Turin,GA,Coweta County,34.3
+30290,Tyrone,GA,Fayette County,34.3
+30757,Wildwood,GA,Dade County,68.75
+30683,Winterville,GA,Clarke County,39.38
+30188,Woodstock,GA,Cherokee County,56.7
+30189,Woodstock,GA,Cherokee County,34.3

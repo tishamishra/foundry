@@ -1,0 +1,20 @@
+url,slot,tags,status,file,note
+http://127.0.0.1:49867/photo00.jpg,hero,test,ok,be4bd16f3735854f.jpg,2400x1600
+http://127.0.0.1:49867/photo01.jpg,hero,test,ok,36e0263aa962abcc.jpg,2400x1600
+http://127.0.0.1:49867/photo02.jpg,hero,test,ok,53280aaa0c6737b8.jpg,2400x1600
+http://127.0.0.1:49867/photo03.jpg,hero,test,ok,41c3620ffb912813.jpg,2400x1600
+http://127.0.0.1:49867/photo04.jpg,showcase,test,ok,6c991e2c5dfd5ccd.jpg,2400x1600
+http://127.0.0.1:49867/photo05.jpg,showcase,test,ok,c0c49f5dfe59408b.jpg,2400x1600
+http://127.0.0.1:49867/photo06.jpg,showcase,test,ok,dc9fa5e8c7e4d3eb.jpg,2400x1600
+http://127.0.0.1:49867/photo07.jpg,showcase,test,ok,f90793db42cf074f.jpg,2400x1600
+http://127.0.0.1:49867/photo08.jpg,showcase,test,ok,0ddac742c9f8c2f8.jpg,2400x1600
+http://127.0.0.1:49867/photo09.jpg,gallery,test,ok,3fbf5075e3f9d1f1.jpg,2400x1600
+http://127.0.0.1:49867/photo10.jpg,gallery,test,ok,fc12f72f8c5f456e.jpg,2400x1600
+http://127.0.0.1:49867/photo11.jpg,gallery,test,ok,993a20400884159b.jpg,2400x1600
+http://127.0.0.1:49867/photo12.jpg,gallery,test,ok,c3ea6bf71ddd652c.jpg,2400x1600
+http://127.0.0.1:49867/photo13.jpg,gallery,test,ok,c453378dc78388b5.jpg,2400x1600
+http://127.0.0.1:49867/photo14.jpg,gallery,test,ok,e09fc6258112b341.jpg,2400x1600
+http://127.0.0.1:49867/photo15.jpg,about,test,ok,793e56c89a821869.jpg,2400x1600
+http://127.0.0.1:49867/photo16.jpg,about,test,ok,1a41d7d3d6574f18.jpg,2400x1600
+http://127.0.0.1:49867/photo17.jpg,cta,test,ok,93801b8219039f88.jpg,2400x1600
+http://127.0.0.1:49867/share-link.jpg,hero,broken-on-purpose,failed,,"not an image (content-type text/html, body is HTML — probably a share/login page)"

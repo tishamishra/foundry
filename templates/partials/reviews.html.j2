@@ -1,0 +1,13 @@
+<section class="sec">
+  <div class="wrap">
+    <h2>What customers say</h2>
+    <div class="grid grid-3">
+      {% for r in (lc.reviews if lc is defined else content.reviews) %}
+      <figure class="quote">
+        <blockquote>{{ r.text }}</blockquote>
+        <figcaption>{{ r.name }}{% if t.city %} &middot; {{ t.city }}, {{ t.state_abbr }}{% endif %}</figcaption>
+      </figure>
+      {% endfor %}
+    </div>
+  </div>
+</section>

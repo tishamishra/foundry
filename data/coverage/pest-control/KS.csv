@@ -1,0 +1,327 @@
+zip,city,state,county,payout
+67510,Abbyville,KS,Reno County,32.5
+67330,Altamont,KS,Labette County,32.5
+67001,Andale,KS,Sedgwick County,32.5
+67002,Andover,KS,Butler County,32.5
+67003,Anthony,KS,Harper County,32.5
+66711,Arcadia,KS,Crawford County,32.5
+67004,Argonia,KS,Sumner County,32.5
+67005,Arkansas City,KS,Cowley County,32.5
+67514,Arlington,KS,Reno County,32.5
+66712,Arma,KS,Crawford County,32.5
+67831,Ashland,KS,Clark County,32.5
+66002,Atchison,KS,Atchison County,42.5
+67008,Atlanta,KS,Cowley County,32.5
+67009,Attica,KS,Harper County,32.5
+67010,Augusta,KS,Butler County,32.5
+66006,Baldwin City,KS,Douglas County,42.5
+67332,Bartlett,KS,Labette County,32.5
+66007,Basehor,KS,Leavenworth County,42.5
+66713,Baxter Springs,KS,Cherokee County,32.5
+67012,Beaumont,KS,Butler County,32.5
+67013,Belle Plaine,KS,Sumner County,32.5
+66714,Benedict,KS,Wilson County,32.5
+67016,Bentley,KS,Sedgwick County,32.5
+67017,Benton,KS,Butler County,32.5
+66010,Blue Mound,KS,Linn County,42.5
+67018,Bluff City,KS,Harper County,32.5
+66012,Bonner Springs,KS,Wyandotte County,42.5
+66716,Bronson,KS,Bourbon County,32.5
+67834,Bucklin,KS,Ford County,32.5
+66013,Bucyrus,KS,Johnson County,42.5
+66717,Buffalo,KS,Wilson County,32.5
+67522,Buhler,KS,Reno County,32.5
+67019,Burden,KS,Cowley County,32.5
+66840,Burns,KS,Marion County,32.5
+67020,Burrton,KS,Harvey County,32.5
+67021,Byers,KS,Pratt County,32.5
+67022,Caldwell,KS,Sumner County,32.5
+67023,Cambridge,KS,Cowley County,32.5
+67333,Caney,KS,Montgomery County,32.5
+67428,Canton,KS,Mcpherson County,32.5
+66842,Cassoday,KS,Butler County,32.5
+67024,Cedar Vale,KS,Chautauqua County,32.5
+67334,Chautauqua,KS,Chautauqua County,32.5
+67025,Cheney,KS,Sedgwick County,32.5
+66724,Cherokee,KS,Crawford County,32.5
+67335,Cherryvale,KS,Montgomery County,32.5
+67336,Chetopa,KS,Labette County,32.5
+66019,Clearview City,KS,Johnson County,32.5
+67026,Clearwater,KS,Sedgwick County,32.5
+67028,Coats,KS,Pratt County,32.5
+67337,Coffeyville,KS,Montgomery County,32.5
+67029,Coldwater,KS,Comanche County,32.5
+66725,Columbus,KS,Cherokee County,32.5
+67030,Colwich,KS,Sedgwick County,32.5
+67031,Conway Springs,KS,Sumner County,32.5
+66728,Crestline,KS,Cherokee County,32.5
+67035,Cunningham,KS,Kingman County,32.5
+67036,Danville,KS,Harper County,32.5
+66018,De Soto,KS,Johnson County,42.5
+67340,Dearing,KS,Montgomery County,32.5
+67341,Dennis,KS,Labette County,32.5
+66017,Denton,KS,Doniphan County,42.5
+67037,Derby,KS,Sedgwick County,32.5
+67038,Dexter,KS,Cowley County,32.5
+67039,Douglass,KS,Butler County,32.5
+66020,Easton,KS,Leavenworth County,42.5
+66021,Edgerton,KS,Johnson County,42.5
+67342,Edna,KS,Labette County,32.5
+66113,Edwardsville,KS,Wyandotte County,32.5
+67042,El Dorado,KS,Butler County,32.5
+67041,Elbing,KS,Butler County,32.5
+67344,Elk City,KS,Montgomery County,32.5
+67345,Elk Falls,KS,Elk County,32.5
+66732,Elsmore,KS,Allen County,32.5
+66024,Elwood,KS,Doniphan County,42.5
+66733,Erie,KS,Neosho County,32.5
+66025,Eudora,KS,Douglas County,42.5
+67045,Eureka,KS,Greenwood County,32.5
+67047,Fall River,KS,Greenwood County,32.5
+66734,Farlington,KS,Crawford County,32.5
+66851,Florence,KS,Marion County,32.5
+66026,Fontana,KS,Miami County,42.5
+66027,Fort Leavenworth,KS,Leavenworth County,42.5
+66701,Fort Scott,KS,Bourbon County,42.5
+66735,Franklin,KS,Crawford County,32.5
+66736,Fredonia,KS,Wilson County,32.5
+67049,Freeport,KS,Harper County,32.5
+66763,Frontenac,KS,Crawford County,32.5
+66738,Fulton,KS,Bourbon County,42.5
+66739,Galena,KS,Cherokee County,32.5
+66740,Galesburg,KS,Neosho County,32.5
+67050,Garden Plain,KS,Sedgwick County,32.5
+66030,Gardner,KS,Johnson County,42.5
+66741,Garland,KS,Bourbon County,32.5
+66742,Gas,KS,Allen County,32.5
+67051,Geuda Springs,KS,Sumner County,32.5
+66743,Girard,KS,Crawford County,32.5
+67052,Goddard,KS,Sedgwick County,32.5
+67053,Goessel,KS,Marion County,32.5
+67054,Greensburg,KS,Kiowa County,32.5
+67055,Greenwich,KS,Sedgwick County,32.5
+67346,Grenola,KS,Elk County,32.5
+67056,Halstead,KS,Harvey County,32.5
+66853,Hamilton,KS,Greenwood County,32.5
+67057,Hardtner,KS,Barber County,32.5
+67058,Harper,KS,Harper County,32.5
+67347,Havana,KS,Montgomery County,32.5
+67543,Haven,KS,Reno County,32.5
+67059,Haviland,KS,Kiowa County,32.5
+67060,Haysville,KS,Sedgwick County,32.5
+67061,Hazelton,KS,Barber County,32.5
+66746,Hepler,KS,Crawford County,32.5
+67062,Hesston,KS,Harvey County,32.5
+67063,Hillsboro,KS,Marion County,32.5
+66036,Hillsdale,KS,Miami County,32.5
+67349,Howard,KS,Elk County,32.5
+66748,Humboldt,KS,Allen County,42.5
+67301,Independence,KS,Montgomery County,32.5
+67065,Isabel,KS,Barber County,32.5
+67066,Iuka,KS,Pratt County,32.5
+66101,Kansas City,KS,Wyandotte County,42.5
+66102,Kansas City,KS,Wyandotte County,42.5
+66103,Kansas City,KS,Wyandotte County,42.5
+66104,Kansas City,KS,Wyandotte County,42.5
+66105,Kansas City,KS,Wyandotte County,42.5
+66106,Kansas City,KS,Wyandotte County,42.5
+66109,Kansas City,KS,Wyandotte County,42.5
+66110,Kansas City,KS,Wyandotte County,32.5
+66111,Kansas City,KS,Wyandotte County,42.5
+66112,Kansas City,KS,Wyandotte County,42.5
+66115,Kansas City,KS,Wyandotte County,42.5
+66117,Kansas City,KS,Wyandotte County,32.5
+66118,Kansas City,KS,Wyandotte County,42.5
+66119,Kansas City,KS,Wyandotte County,32.5
+66160,Kansas City,KS,Wyandotte County,42.5
+67067,Kechi,KS,Sedgwick County,32.5
+67068,Kingman,KS,Kingman County,32.5
+67070,Kiowa,KS,Barber County,32.5
+66040,La Cygne,KS,Linn County,42.5
+66751,La Harpe,KS,Allen County,32.5
+67071,Lake City,KS,Barber County,32.5
+66855,Lamont,KS,Greenwood County,32.5
+66041,Lancaster,KS,Atchison County,32.5
+66043,Lansing,KS,Leavenworth County,42.5
+67072,Latham,KS,Butler County,32.5
+66044,Lawrence,KS,Douglas County,42.5
+66046,Lawrence,KS,Douglas County,42.5
+66047,Lawrence,KS,Douglas County,42.5
+66049,Lawrence,KS,Douglas County,42.5
+66048,Leavenworth,KS,Leavenworth County,42.5
+66206,Leawood,KS,Johnson County,42.5
+66209,Leawood,KS,Johnson County,42.5
+66211,Leawood,KS,Johnson County,42.5
+67073,Lehigh,KS,Marion County,32.5
+66215,Lenexa,KS,Johnson County,42.5
+66219,Lenexa,KS,Johnson County,42.5
+66220,Lenexa,KS,Johnson County,42.5
+66227,Lenexa,KS,Johnson County,42.5
+66250,Lenexa,KS,Johnson County,42.5
+66276,Lenexa,KS,Johnson County,32.5
+66285,Lenexa,KS,Johnson County,32.5
+67074,Leon,KS,Butler County,32.5
+67351,Liberty,KS,Montgomery County,32.5
+66858,Lincolnville,KS,Marion County,32.5
+66052,Linwood,KS,Leavenworth County,42.5
+67352,Longton,KS,Elk County,32.5
+66859,Lost Springs,KS,Marion County,32.5
+66053,Louisburg,KS,Miami County,42.5
+66860,Madison,KS,Greenwood County,32.5
+67101,Maize,KS,Sedgwick County,32.5
+67102,Maple City,KS,Cowley County,32.5
+66754,Mapleton,KS,Bourbon County,42.5
+66861,Marion,KS,Marion County,32.5
+67103,Mayfield,KS,Sumner County,32.5
+66753,McCune,KS,Crawford County,32.5
+67221,Mcconnell Afb,KS,Sedgwick County,32.5
+67104,Medicine Lodge,KS,Barber County,32.5
+67105,Milan,KS,Sumner County,32.5
+67106,Milton,KS,Sumner County,32.5
+66201,Mission,KS,Johnson County,32.5
+66202,Mission,KS,Johnson County,42.5
+66205,Mission,KS,Johnson County,42.5
+66222,Mission,KS,Johnson County,32.5
+67353,Moline,KS,Elk County,32.5
+66755,Moran,KS,Allen County,42.5
+66056,Mound City,KS,Linn County,42.5
+67354,Mound Valley,KS,Labette County,32.5
+67107,Moundridge,KS,Mcpherson County,32.5
+67108,Mount Hope,KS,Sedgwick County,32.5
+66756,Mulberry,KS,Crawford County,32.5
+67109,Mullinville,KS,Kiowa County,32.5
+67110,Mulvane,KS,Sedgwick County,32.5
+67111,Murdock,KS,Kingman County,32.5
+67112,Nashville,KS,Kingman County,32.5
+66863,Neal,KS,Greenwood County,32.5
+66759,New Albany,KS,Elk County,32.5
+66031,New Century,KS,Johnson County,42.5
+67114,Newton,KS,Harvey County,32.5
+67355,Niotaze,KS,Chautauqua County,32.5
+67117,North Newton,KS,Harvey County,32.5
+67118,Norwich,KS,Kingman County,32.5
+66051,Olathe,KS,Johnson County,32.5
+66061,Olathe,KS,Johnson County,42.5
+66062,Olathe,KS,Johnson County,42.5
+66063,Olathe,KS,Johnson County,32.5
+66760,Opolis,KS,Crawford County,32.5
+66064,Osawatomie,KS,Miami County,42.5
+67356,Oswego,KS,Labette County,32.5
+66067,Ottawa,KS,Franklin County,42.5
+66204,Overland Park,KS,Johnson County,42.5
+66207,Overland Park,KS,Johnson County,42.5
+66210,Overland Park,KS,Johnson County,42.5
+66212,Overland Park,KS,Johnson County,42.5
+66213,Overland Park,KS,Johnson County,42.5
+66214,Overland Park,KS,Johnson County,42.5
+66221,Overland Park,KS,Johnson County,42.5
+66223,Overland Park,KS,Johnson County,42.5
+66224,Overland Park,KS,Johnson County,42.5
+66225,Overland Park,KS,Johnson County,32.5
+66251,Overland Park,KS,Johnson County,32.5
+66282,Overland Park,KS,Johnson County,32.5
+66283,Overland Park,KS,Johnson County,32.5
+67119,Oxford,KS,Sumner County,32.5
+66071,Paola,KS,Miami County,42.5
+66072,Parker,KS,Linn County,42.5
+67357,Parsons,KS,Labette County,32.5
+67566,Partridge,KS,Reno County,32.5
+66866,Peabody,KS,Marion County,32.5
+67120,Peck,KS,Sumner County,32.5
+67360,Peru,KS,Chautauqua County,32.5
+67122,Piedmont,KS,Greenwood County,32.5
+66762,Pittsburg,KS,Crawford County,32.5
+66075,Pleasanton,KS,Linn County,42.5
+67568,Plevna,KS,Reno County,32.5
+67123,Potwin,KS,Butler County,32.5
+66208,Prairie Village,KS,Johnson County,42.5
+67124,Pratt,KS,Pratt County,32.5
+66767,Prescott,KS,Linn County,42.5
+67570,Pretty Prairie,KS,Reno County,32.5
+66078,Princeton,KS,Franklin County,42.5
+67127,Protection,KS,Comanche County,32.5
+66769,Redfield,KS,Bourbon County,42.5
+66770,Riverton,KS,Cherokee County,32.5
+67131,Rock,KS,Cowley County,32.5
+67132,Rosalia,KS,Butler County,32.5
+67133,Rose Hill,KS,Butler County,32.5
+66771,Saint Paul,KS,Neosho County,32.5
+66772,Savonburg,KS,Allen County,32.5
+67134,Sawyer,KS,Pratt County,32.5
+66773,Scammon,KS,Cherokee County,32.5
+67361,Sedan,KS,Chautauqua County,32.5
+67135,Sedgwick,KS,Harvey County,32.5
+67137,Severy,KS,Greenwood County,32.5
+67138,Sharon,KS,Barber County,32.5
+66203,Shawnee,KS,Johnson County,42.5
+66216,Shawnee,KS,Johnson County,42.5
+66217,Shawnee,KS,Johnson County,42.5
+66218,Shawnee,KS,Johnson County,42.5
+66226,Shawnee,KS,Johnson County,42.5
+66286,Shawnee,KS,Johnson County,32.5
+67140,South Haven,KS,Sumner County,32.5
+67142,Spivey,KS,Kingman County,32.5
+66083,Spring Hill,KS,Johnson County,42.5
+66775,Stark,KS,Neosho County,42.5
+66085,Stilwell,KS,Johnson County,42.5
+67143,Sun City,KS,Barber County,32.5
+67363,Sycamore,KS,Montgomery County,32.5
+67581,Sylvia,KS,Reno County,32.5
+66776,Thayer,KS,Neosho County,32.5
+66086,Tonganoxie,KS,Leavenworth County,42.5
+66777,Toronto,KS,Woodson County,32.5
+67144,Towanda,KS,Butler County,32.5
+66778,Treece,KS,Cherokee County,32.5
+66087,Troy,KS,Doniphan County,42.5
+67583,Turon,KS,Reno County,32.5
+67364,Tyro,KS,Montgomery County,32.5
+67146,Udall,KS,Cowley County,32.5
+66779,Uniontown,KS,Bourbon County,42.5
+67147,Valley Center,KS,Sedgwick County,32.5
+67149,Viola,KS,Sedgwick County,32.5
+66870,Virgil,KS,Greenwood County,32.5
+67150,Waldron,KS,Harper County,32.5
+66780,Walnut,KS,Crawford County,32.5
+67151,Walton,KS,Harvey County,32.5
+66090,Wathena,KS,Doniphan County,42.5
+66781,Weir,KS,Cherokee County,32.5
+67152,Wellington,KS,Sumner County,32.5
+66092,Wellsville,KS,Franklin County,42.5
+66782,West Mineral,KS,Cherokee County,32.5
+67154,Whitewater,KS,Butler County,32.5
+67201,Wichita,KS,Sedgwick County,32.5
+67202,Wichita,KS,Sedgwick County,32.5
+67203,Wichita,KS,Sedgwick County,32.5
+67204,Wichita,KS,Sedgwick County,32.5
+67205,Wichita,KS,Sedgwick County,32.5
+67206,Wichita,KS,Sedgwick County,32.5
+67207,Wichita,KS,Sedgwick County,32.5
+67208,Wichita,KS,Sedgwick County,32.5
+67209,Wichita,KS,Sedgwick County,32.5
+67210,Wichita,KS,Sedgwick County,32.5
+67211,Wichita,KS,Sedgwick County,32.5
+67212,Wichita,KS,Sedgwick County,32.5
+67213,Wichita,KS,Sedgwick County,32.5
+67214,Wichita,KS,Sedgwick County,32.5
+67215,Wichita,KS,Sedgwick County,32.5
+67216,Wichita,KS,Sedgwick County,32.5
+67217,Wichita,KS,Sedgwick County,32.5
+67218,Wichita,KS,Sedgwick County,32.5
+67219,Wichita,KS,Sedgwick County,32.5
+67220,Wichita,KS,Sedgwick County,32.5
+67223,Wichita,KS,Sedgwick County,32.5
+67226,Wichita,KS,Sedgwick County,32.5
+67227,Wichita,KS,Sedgwick County,32.5
+67228,Wichita,KS,Sedgwick County,32.5
+67230,Wichita,KS,Sedgwick County,32.5
+67232,Wichita,KS,Sedgwick County,32.5
+67235,Wichita,KS,Sedgwick County,32.5
+67260,Wichita,KS,Sedgwick County,32.5
+67275,Wichita,KS,Sedgwick County,32.5
+67276,Wichita,KS,Sedgwick County,32.5
+67277,Wichita,KS,Sedgwick County,32.5
+67278,Wichita,KS,Sedgwick County,32.5
+67155,Wilmore,KS,Comanche County,32.5
+67156,Winfield,KS,Cowley County,32.5
+67585,Yoder,KS,Reno County,32.5
+67159,Zenda,KS,Kingman County,32.5

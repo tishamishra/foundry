@@ -1,0 +1,14 @@
+{# Every number here is derived from the coverage list or the fact block.
+   Nothing is invented — a stat with no supporting fact simply does not render. #}
+<section class="stats reveal">
+  <div class="wrap stats-in">
+    <div class="stat"><b class="count" data-to="{{ locations|length }}">0</b><span>communities covered</span></div>
+    <div class="stat"><b class="count" data-to="{{ counties|length }}">0</b><span>counties served</span></div>
+    <div class="stat"><b class="count" data-to="{{ services|length }}">0</b><span>services offered</span></div>
+    {% if facts.years_in_business %}
+    <div class="stat"><b class="count" data-to="{{ facts.years_in_business }}">0</b><span>years in business</span></div>
+    {% else %}
+    <div class="stat"><b>{{ t.phone }}</b><span>one number, one contact</span></div>
+    {% endif %}
+  </div>
+</section>

@@ -1,0 +1,15 @@
+site_id: bennettroofers-com
+business: bennett-roofers
+niche: roofing
+domain: bennettroofers.com
+theme: slate
+style: classic
+skeleton: standard
+composition_seed: 7
+coverage:
+  states:
+  - GA
+render:
+  mode: hybrid
+  prerender_top_n: 12
+  location_variants: 4

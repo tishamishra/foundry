@@ -1,0 +1,49 @@
+niche: windows
+label: Window Replacement
+schema_type: HomeAndConstructionBusiness
+services:
+- slug: window-replacement
+  name: Window Replacement
+  summary: Measured, ordered and fitted, with the opening made good.
+- slug: glass-repair
+  name: Glass Repair
+  summary: Failed units replaced without replacing the frame where the frame is sound.
+- slug: energy-efficient-windows
+  name: Energy Efficient Windows
+  summary: The honest trade between spend and saving for your building.
+- slug: storm-windows
+  name: Storm Windows
+  summary: Additional protection where exposure justifies it.
+- slug: patio-doors
+  name: Patio & Sliding Doors
+  summary: Fitted square and adjusted so they still run in a year.
+- slug: window-inspection
+  name: Window Inspection
+  summary: Which units are failing, which are simply old.
+seo:
+  home_title: '{company} | Window Replacement'
+  home_description: '{company} handles {niche_lower} work across the areas we serve. Assessment first,
+    written findings, then a price. Call {phone}.'
+  about_title: About {company} | Window Replacement Contractor
+  about_description: Who {company} is, how we work, what our written assessments cover, and what to expect
+    from first call to final check.
+  contact_title: Contact {company} | Call {phone}
+  contact_description: Call {company} on {phone} or request a callback. Tell us what you are seeing and
+    we will tell you what it usually means.
+  services_title: Window Replacement Services | {company}
+  services_description: Everything {company} does, what each job includes, and how the scope and the price
+    are arrived at.
+  areas_title: Window Replacement Service Areas | {company}
+  areas_description: Every community {company} covers for window replacement, listed by county. Find your
+    town and call {phone}.
+  service_title: '{service} | {company}'
+  service_description: '{service} from {company}. What the job includes, how the scope is agreed, and
+    what would change the price. Call {phone}.'
+  county_title: Window Replacement in {county}, {state_abbr} | {company}
+  county_description: '{company} covers every community in {county}, {state_abbr} for window replacement.
+    Find your town below, or call {phone} to speak to someone.'
+  location_title: '{niche} in {city}, {state_abbr} | {company}'
+  location_description: '{niche} in {city}, {state_abbr}[[ and nearby {nearby}]]. Call {company} on {phone}.'
+  location_service_title: '{service} in {city}, {state_abbr} | {company}'
+  location_service_description: '{service} for {city}, {state_abbr} property owners[[ in {county}]]. Call
+    {phone}.'

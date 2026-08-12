@@ -1,0 +1,87 @@
+{% extends "base.html" %}{% block body %}
+<div class="head"><h1>Bulk create</h1>
+  <p class="sub">One business per line. Each row gets its own business record, its own site, and its
+  own searched seed — measured against the rows created before it, not just against what already existed.</p></div>
+
+<form method="post" class="card">
+  <label>Rows
+    <textarea name="rows" rows="10" placeholder="Company, domain.com, +1 555 123 4567, email@domain.com, City, ST
+Summit Line Roofing, summitlineroofing.com, +1 555 200 3000, hi@summitlineroofing.com, Marietta, GA
+Kestrel Roofing, kestrelroofing.com, +1 555 200 3100, hi@kestrelroofing.com, Decatur, GA">{{ form.get('rows', '') }}</textarea>
+  </label>
+
+  <div class="two">
+    <label>Niche
+      <select name="niche">{% for n in NICHES %}<option value="{{ n }}" {{ 'selected' if form.get('niche') == n }}>{{ n }}</option>{% endfor %}</select>
+    </label>
+    <label>Theme
+      <select name="theme">{% for key, t in THEMES.items() %}<option value="{{ key }}" {{ 'selected' if form.get('theme') == key }}>{{ t.label }}</option>{% endfor %}</select>
+    </label>
+    <label>Style pack
+      <select name="style">
+        {% for key, st in STYLES.items() %}<option value="{{ key }}" {{ 'selected' if form.get('style') == key }}>{{ st.label }}</option>{% endfor %}
+      </select>
+    </label>
+    <label>Page skeleton
+      <select name="skeleton">
+        {% for key, sk in SKELETONS.items() %}<option value="{{ key }}" {{ 'selected' if form.get('skeleton') == key }}>{{ sk.label }}</option>{% endfor %}
+      </select>
+    </label>
+    <label>Render mode
+      <select name="mode">{% for m in ['hybrid','static','edge'] %}<option value="{{ m }}" {{ 'selected' if form.get('mode') == m }}>{{ m }}</option>{% endfor %}</select>
+    </label>
+    <label>Pre-render cities<input name="prerender_top_n" value="{{ form.get('prerender_top_n', '12') }}" placeholder="blank = all"></label>
+    <label>City-page variants<input name="location_variants" value="{{ form.get('location_variants', '4') }}"></label>
+    <label>Seed search depth<input name="search" value="{{ form.get('search', '200') }}"></label>
+  </div>
+
+  <h2>Coverage</h2>
+  <div class="checks">
+    {% for niche, states in cover.items() %}{% for st in states %}
+    <label class="chk"><input type="checkbox" name="states" value="{{ st }}"
+      {{ 'checked' if st in form.getlist('states') }}> {{ st }}</label>
+    {% endfor %}{% endfor %}
+  </div>
+
+  <div class="foot">
+    <button class="btn ghost" name="action" value="preview">Preview rows</button>
+    <button class="btn" name="action" value="create">Create them</button>
+  </div>
+</form>
+
+{% if rows and not results %}
+<div class="card">
+  <h2>{{ rows|selectattr('ok')|list|length }} of {{ rows|length }} rows are usable</h2>
+  <table class="grid">
+    <thead><tr><th>Company</th><th>Domain</th><th>Phone</th><th>Status</th></tr></thead>
+    <tbody>{% for r in rows %}
+    <tr><td>{{ r.company }}</td><td class="mono">{{ r.domain }}</td><td>{{ r.phone }}</td>
+      <td>{% if r.ok %}<span class="pill good">ok</span>{% else %}<span class="pill bad">{{ r.problem }}</span>{% endif %}</td></tr>
+    {% endfor %}</tbody>
+  </table>
+  <p class="note">An incomplete row is refused at the door with a reason, never accepted and filled
+  with a guess. Design defaults (theme, render mode) are filled in — facts about a real business are not.</p>
+</div>
+{% endif %}
+
+{% if results %}
+<div class="card">
+  <h2>Result</h2>
+  <table class="grid">
+    <thead><tr><th>Company</th><th>Site</th><th>Seed</th><th>Overlap</th><th>Detail</th></tr></thead>
+    <tbody>{% for r in results %}
+    <tr>
+      <td>{{ r.row.company }}</td>
+      <td class="mono">{{ r.get('site_id', '—') }}</td>
+      <td class="mono">{{ r.get('seed', '—') }}</td>
+      <td>{% if r.get('score') is not none and r.status == 'created' %}
+        <span class="pill {{ 'good' if r.score < WARN_AT else ('warn' if r.score < BLOCK_AT else 'bad') }}">{{ '%.0f%%'|format(r.score * 100) }}</span>
+        {% else %}—{% endif %}</td>
+      <td class="dim">{{ r.detail }}</td>
+    </tr>
+    {% endfor %}</tbody>
+  </table>
+  <p><a class="btn" href="{{ url_for('build') }}">Build everything</a></p>
+</div>
+{% endif %}
+{% endblock %}

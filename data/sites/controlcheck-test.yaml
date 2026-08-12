@@ -1,0 +1,15 @@
+site_id: controlcheck-test
+business: control-check
+niche: roofing
+domain: controlcheck.test
+theme: slate
+style: classic
+skeleton: standard
+composition_seed: 7
+coverage:
+  states:
+  - GA
+render:
+  mode: hybrid
+  prerender_top_n: 12
+  location_variants: 4

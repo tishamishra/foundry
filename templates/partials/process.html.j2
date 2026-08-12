@@ -1,0 +1,10 @@
+<section class="sec">
+  <div class="wrap">
+    <h2>How it works</h2>
+    <ol class="steps">
+      {% for step in content.process %}
+      <li><span class="num">{{ loop.index }}</span><div><h3>{{ step.title }}</h3><p>{{ step.text }}</p></div></li>
+      {% endfor %}
+    </ol>
+  </div>
+</section>

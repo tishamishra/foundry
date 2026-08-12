@@ -1,0 +1,32 @@
+{# Adaptive. At 6 counties this is a directory; at 928 it was a 567 KB page that
+   the SEO agent blocked on weight. Past the threshold it becomes a state index
+   and the county pages carry the cities — which is also the better crawl shape. #}
+{% set big = counties|length > 40 %}
+<section class="sec">
+  <div class="wrap">
+    {% if big %}
+    {% set by_state = counties|groupby('state_abbr') %}
+    <p class="lede">{{ locations|length }} communities across {{ counties|length }} counties in
+      {{ by_state|length }} states. Pick a state, then a county.</p>
+    {% for state, group in by_state %}
+    <div class="county">
+      <h2>{{ group[0].state }} <span class="dimcount">{{ group|length }} counties</span></h2>
+      <div class="chips">
+        {% for c in group %}<a class="chip" href="/areas/{{ c.slug }}">{{ c.name }}</a>{% endfor %}
+      </div>
+    </div>
+    {% endfor %}
+    {% else %}
+    {% for county in counties %}
+    <div class="county">
+      <h2><a href="/areas/{{ county.slug }}">{{ county.name }}, {{ county.state_abbr }}</a>
+        <span class="dimcount">{{ county.cities|length }}</span></h2>
+      <div class="chips">
+        {% for c in county.cities[:18] %}<a class="chip" href="/areas/{{ c.slug }}">{{ c.city }}</a>{% endfor %}
+        {% if county.cities|length > 18 %}<a class="chip more-chip" href="/areas/{{ county.slug }}">+{{ county.cities|length - 18 }} more</a>{% endif %}
+      </div>
+    </div>
+    {% endfor %}
+    {% endif %}
+  </div>
+</section>

@@ -1,0 +1,12 @@
+{# Client-side filter over the places this site actually covers. No backend,
+   no index — the list is already in the page, the input just hides rows. #}
+<section class="dir-search">
+  <div class="wrap">
+    <label class="dir-field">
+      <span>Find your town</span>
+      <input type="search" data-dir-filter placeholder="Start typing a town or county…"
+             autocomplete="off" aria-controls="dir-index">
+    </label>
+    <p class="micro" data-dir-count>{{ locations|length }} communities across {{ counties|length }} counties</p>
+  </div>
+</section>

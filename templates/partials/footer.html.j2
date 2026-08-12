@@ -1,0 +1,18 @@
+</main>
+<footer class="ftr">
+  <div class="wrap ftr-in">
+    <div>
+      <p class="mark">{{ biz.company }}</p>
+      <p><a href="tel:{{ t.phone_link }}">{{ t.phone }}</a>{% if t.email %} &middot; <a href="mailto:{{ t.email }}">{{ t.email }}</a>{% endif %}</p>
+      {% if t.address %}<p class="micro">{{ t.address }}</p>{% endif %}
+    </div>
+    <nav class="ftr-nav">
+      {% for s in services %}<a href="/services/{{ s.slug }}">{{ s.name }}</a>{% endfor %}
+      <a href="/areas">Service Areas</a><a href="/about">About</a><a href="/contact">Contact</a>
+    </nav>
+  </div>
+  <div class="wrap ftr-legal">
+    <p>{{ globals.footer.disclaimer }}</p>
+    <p class="micro">&copy; {{ t.year }} {{ biz.company }}. All rights reserved.</p>
+  </div>
+</footer>

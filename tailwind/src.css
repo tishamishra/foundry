@@ -1,0 +1,39 @@
+/* Foundry — Tailwind entry point.
+ *
+ * Compile with:  python3 foundry.py css tailwind
+ *
+ * Tailwind v4 is CSS-first: no tailwind.config.js, the theme lives in @theme.
+ */
+
+@import "tailwindcss";
+@source "../templates";
+@source "../webui/templates";
+
+/* The design tokens, as Tailwind theme values.
+ *
+ * Each one points at the SAME custom property the rendered page sets in its
+ * <head> from the chosen theme. That is deliberate: a utility (`bg-brand`) and
+ * a hand-written rule (`background: var(--brand)`) then resolve to one value,
+ * and switching theme still switches both. Hard-coding hexes here would create
+ * a second source of truth that silently disagrees with the first. */
+@theme {
+  --color-brand: var(--brand);
+  --color-brand-dark: var(--brand-dark);
+  --color-brand-light: var(--brand-light);
+  --color-accent: var(--accent);
+  --color-accent-text: var(--accent-text);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-surface: var(--surface);
+
+  --font-display: var(--font-display), Georgia, serif;
+  --font-body: var(--font-body), system-ui, sans-serif;
+
+  --radius-card: var(--radius);
+}
+
+/* Everything that already exists, kept whole. Skeletons, packs, variants and
+ * components are unchanged — Tailwind adds utilities alongside them rather
+ * than replacing anything. */
+@import "../assets/css/site.css" layer(components);
