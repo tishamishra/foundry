@@ -32,7 +32,7 @@ from typing import Any
 
 import yaml
 
-from .library import KINDS
+from .library import KINDS, SERVICE_SCOPED_KINDS
 from .verify import CLAIM_PATTERNS
 
 # The tokens a block may contain. Anything depending on a location token must be
@@ -79,6 +79,68 @@ META: dict[str, dict[str, Any]] = {
     "compare_rows":    {"about": "one row of a repair-vs-replace comparison", "words": "6-16 per cell"},
     "cost_factors":    {"about": "a factor that changes the price (title + text)", "words": "title 4-8, text 22-40"},
 }
+
+# Section-specific direction. `about` says WHAT a block is; GUIDE says HOW to
+# write a good one for THAT section — its angle, what to include, what to avoid —
+# so no two kinds get the same generic prompt. This is what makes each section's
+# copy read as written for that spot on the page rather than interchangeable.
+GUIDE: dict[str, str] = {
+    "taglines": "A punchy promise that sits under the H1. Lead with the outcome or the "
+        "trade-plus-place, not a full sentence — e.g. 'Roofing done right, {city}'. No period.",
+    "hero_intros": "The first thing a visitor reads. Open on the problem or the promise, name "
+        "the trade, and steer toward a call. Confident and benefit-led — not a company history.",
+    "hero_ctas": "A button label that says what happens next: an action plus its value, e.g. "
+        "'Get a free estimate' or 'Book an inspection'. No punctuation.",
+    "trust_points": "One reason to trust the business — a short label and one backing sentence. "
+        "This is where credentials belong: licensed & insured, 24/7 response, workmanship "
+        "warranty, years in business. Each point a different proof.",
+    "about_paras": "The story that builds confidence: who they are, how long they've worked, how "
+        "they operate, what they stand for. Concrete and specific — never generic filler.",
+    "why_us": "One differentiator that answers 'why call THEM' — a specific edge such as same-day "
+        "response, upfront pricing, in-house crews, or guaranteed clean-up. Every point a "
+        "distinct angle; never reword the same idea twice.",
+    "process_steps": "One step in how the job runs, in sequence from first call to finished work. "
+        "Set expectations and lower anxiety. Title = the step; text = what actually happens in it.",
+    "service_intros": "The opening of a service page: what the service is, when a customer needs "
+        "it, and how this business approaches it. Keyword-relevant and reassuring; it sets up the "
+        "detail below, so don't cram everything in.",
+    "service_heroes": "The banner lede on a service page. Name {service}, state the promise for "
+        "THAT service in a sentence or two, and nudge toward a call. Specific to the service — a "
+        "line that would fit any service is wrong here.",
+    "service_bullets": "One concrete thing the customer actually gets — a real inclusion or "
+        "deliverable ('full tear-off down to the deck', 'site magnet-swept for nails'), not a "
+        "vague benefit. Tangible and specific to this exact service.",
+    "faqs": "A real question a customer would type or ask on the phone, with a straight, helpful "
+        "answer that quietly reassures and ends pointing toward a call. Spread them across cost, "
+        "timing, process, warranty and emergencies.",
+    "reviews": "A believable customer story in their own voice: a specific problem, what the "
+        "business did, and the result. First name + last initial. Vary the situations — never a "
+        "generic 'great service, highly recommend'.",
+    "location_intros": "The body of a city page: tie the trade to THIS place — local weather, "
+        "housing stock, neighbourhoods, why local homeowners need it — so the page earns the city "
+        "rather than repeating the home page.",
+    "location_heroes": "The banner lede on a city page. Use {city}, make the business feel local "
+        "and already-here, in one or two confident sentences.",
+    "location_service_intros": "The opening of a service-in-city page: this service, in this "
+        "place. Blend the service promise with local relevance so it clones neither parent page.",
+    "cta_blocks": "The quote-band push near the foot of the page: a heading, a persuasive line or "
+        "two, and a button. Build urgency and lower friction — 'free', 'no obligation', 'fast "
+        "response'.",
+    "closing_paras": "A warm final paragraph that recaps the promise and asks for the call — the "
+        "last nudge before the visitor leaves. Confident, not desperate.",
+    "signs": "One warning sign that means 'call now' — a short title plus what it indicates and "
+        "why it matters. Educational and specific to the service; build urgency honestly, never "
+        "scare-monger.",
+    "compare_rows": "One row of the decision a customer weighs (e.g. repair vs replacement): a "
+        "factor, and the short honest value on each side. Help them self-diagnose which "
+        "conversation they're in.",
+    "cost_factors": "One thing that moves the price — a title and a plain explanation. Set honest "
+        "expectations without publishing a number, and position the business as straight-talking.",
+}
+
+
+def guide_for(kind: str) -> str:
+    return GUIDE.get(kind, META.get(kind, {}).get("about", kind))
 
 # The YAML shape for each block SHAPE, shown to ChatGPT and to the user.
 SHAPE_YAML = {
@@ -128,6 +190,8 @@ def build_prompt(kind: str, niche_label: str, n: int = 20) -> str:
 
     return f"""You are writing SEO-optimized website content blocks for a {niche_label} business.
 Produce {n} blocks of ONE type: {kind} — {meta['about']}.{words}
+
+HOW TO WRITE THIS SECTION: {guide_for(kind)}
 
 Write to rank and to convert: natural, keyword-relevant, benefit-led copy. Use the
 language a customer would search for, and mention the services and selling points
@@ -242,29 +306,57 @@ _CSV_EXAMPLE = {
 
 
 def intel_prompt(niche_slug: str, niche_label: str, kind: str, n: int,
-                 words: str | None = None) -> str:
+                 words: str | None = None,
+                 services: list[dict] | None = None) -> str:
     """The small, focused prompt the dashboard hands you for one weak section.
     It outputs rows in the MASTER-CSV format, so the result drops straight into
-    the bulk importer."""
+    the bulk importer.
+
+    For a service-scoped kind, the prompt is told to fill the `service` column
+    with the niche's own service slugs and to spread the blocks across them, so
+    filling a weak section also curates it per service rather than niche-wide."""
     shape = shape_of(kind)
     meta = META.get(kind, {"about": kind, "words": ""})
     words = words or meta.get("words", "")
-    cols = GLOBAL_COLUMNS
-    ex = {"niche": niche_slug, "kind": kind, **_CSV_EXAMPLE[shape]}
+    scoped = kind in SERVICE_SCOPED_KINDS
+    svc = [s for s in (services or []) if s.get("slug")] if scoped else []
+
     buf = io.StringIO()
-    wtr = csv.DictWriter(buf, fieldnames=cols, extrasaction="ignore")
+    wtr = csv.DictWriter(buf, fieldnames=GLOBAL_COLUMNS, extrasaction="ignore")
     wtr.writeheader()
-    wtr.writerow(ex)
+    if svc:
+        for s in svc[:2]:
+            wtr.writerow({"niche": niche_slug, "kind": kind,
+                          "service": s["slug"], **_CSV_EXAMPLE[shape]})
+    else:
+        wtr.writerow({"niche": niche_slug, "kind": kind, **_CSV_EXAMPLE[shape]})
     example_csv = buf.getvalue().strip()
     wc = f", about {words} words each" if words else ""
+
+    if svc:
+        slugs = ", ".join(s["slug"] for s in svc)
+        service_rule = (
+            f"This is a SERVICE-SPECIFIC block type: fill the 'service' column on every "
+            f"row with the service the block is about, using one of these exact slugs — "
+            f"{slugs}. Spread the {n} blocks across the services and make each block fit "
+            f"ONLY its own service (a block that would suit any service should leave "
+            f"'service' blank instead). ")
+    elif scoped:
+        service_rule = ("Fill the 'service' column only when a block is written for one "
+                        "specific service; otherwise leave it blank. ")
+    else:
+        service_rule = "Leave the 'service' column blank — this block type is not service-specific. "
+
     return (
         f"Write {n} SEO-optimized {kind} blocks for a {niche_label} business{wc}. "
         f"Each block is {meta['about']}.\n"
+        f"How to write this section: {guide_for(kind)}\n"
         f"Output ONLY CSV in this exact format — the same header, one block per row, "
         f"filling only the columns this block type uses:\n\n"
         f"{example_csv}\n\n"
         f"Rules: keep niche as \"{niche_slug}\" and kind as \"{kind}\" on every row. "
-        f"Use tokens {{company}}, {{city}}, {{phone}}, {{service}} where natural, and "
+        f"{service_rule}"
+        f"Use tokens {{company}}, {{city}}, {{phone}} where natural, and "
         f"wrap any {{city}}/{{county}}/{{nearby}} clause in [[ ... ]]. Every row distinct. "
         f"Return the CSV only.")
 
@@ -280,10 +372,76 @@ def intel_prompt(niche_slug: str, niche_label: str, kind: str, n: int,
 # rows you added since last time actually land.
 
 GLOBAL_COLUMNS = [
-    "niche", "kind",                                   # routing
+    "niche", "kind", "service",                         # routing (+ optional service tag)
     "text", "title", "question", "answer", "name",     # per-shape fields …
     "button", "heading", "factor", "repair", "replace", "paras",
 ]
+
+
+def _tag_block(block: Any, service: str) -> Any:
+    """Bind a block to one service. A text-kind block is a bare string, so it is
+    wrapped as {text, for}; every other shape is already a dict and just gains a
+    `for` key. Non-service kinds ignore the service column entirely."""
+    if isinstance(block, str):
+        return {"text": block, "for": service}
+    if isinstance(block, dict):
+        return {**block, "for": service}
+    return block
+
+
+# The service-scoped kinds in the order a service page reads top to bottom, so a
+# generated prompt fills a page's sections in a sensible sequence.
+SERVICE_PROMPT_KINDS = [
+    "service_heroes", "service_intros", "service_bullets",
+    "signs", "cost_factors", "compare_rows",
+]
+
+
+def service_prompt(niche_slug: str, niche_label: str, service_label: str,
+                   service_slug: str, n: int = 8,
+                   kinds: list[str] | None = None) -> str:
+    """A ready prompt that produces master-CSV rows for ONE service, already
+    tagged. Every row comes back with niche + service pre-filled, so pasting the
+    result into the global importer binds the copy to exactly that service — and
+    nowhere else. This is what makes a service page read as that service instead
+    of the trade in general."""
+    kinds = kinds or SERVICE_PROMPT_KINDS
+    rows = []
+    for k in kinds:
+        rows.append({"niche": niche_slug, "kind": k, "service": service_slug,
+                     **_CSV_EXAMPLE[shape_of(k)]})
+    buf = io.StringIO()
+    w = csv.DictWriter(buf, fieldnames=GLOBAL_COLUMNS, extrasaction="ignore")
+    w.writeheader()
+    for r in rows:
+        w.writerow(r)
+    example = buf.getvalue().strip()
+
+    kind_lines = "\n".join(
+        f"  - {k}"
+        f"{(' (~' + META[k]['words'] + ' words)') if META.get(k, {}).get('words') else ''}"
+        f": {guide_for(k)}"
+        for k in kinds)
+
+    return (
+        f"You are writing SEO-optimized website content for the \"{service_label}\" "
+        f"service offered by a {niche_label} business.\n"
+        f"CRITICAL: every block must be SPECIFIC to {service_label} — describe what "
+        f"{service_label} actually involves, its own signs, costs and trade-offs. Do "
+        f"NOT write about the trade in general, and do NOT write anything that would "
+        f"fit a different service.\n\n"
+        f"Write {n} DISTINCT blocks for EACH of these block types:\n{kind_lines}\n\n"
+        f"OUTPUT: return ONLY CSV with this exact header. On EVERY row keep "
+        f"niche=\"{niche_slug}\" and service=\"{service_slug}\", set kind to the block "
+        f"type, and fill only the columns that block type uses:\n\n"
+        f"{example}\n\n"
+        f"RULES: benefit-led, keyword-relevant copy in the language a customer would "
+        f"search. You may reference 24/7 response, licensed and insured work, free "
+        f"estimates and the like where they fit. Use tokens {{company}}, {{city}}, "
+        f"{{phone}} where natural, and wrap any {{city}}/{{county}}/{{nearby}} clause in "
+        f"[[ ... ]] so it disappears when empty. Every row must be distinct. Return the "
+        f"CSV only.")
+
 
 # which global columns each shape reads (the field names match SHAPE_CSV)
 _SHAPE_FIELDS = {
@@ -316,6 +474,10 @@ def global_template() -> str:
          "title": "24/7 emergency response", "text": "Storm damage does not wait, and neither do we."},
         {"niche": "roofing", "kind": "compare_rows",
          "factor": "What it addresses", "repair": "One failed detail", "replace": "A roof at end of life"},
+        {"niche": "roofing", "kind": "service_bullets", "service": "roof-replacement",
+         "text": "Full tear-off down to the deck, every old layer removed and hauled away"},
+        {"niche": "roofing", "kind": "service_bullets", "service": "gutter-installation",
+         "text": "Seamless gutters formed on site to the exact run length"},
         {"niche": "roofing", "kind": "about_paras",
          "paras": "First paragraph about the company.||Second paragraph about the work."},
         {"niche": "water-damage", "kind": "hero_intros",
@@ -363,6 +525,11 @@ def parse_global_csv(text: str, valid_niches: set[str]) -> dict[str, Any]:
         if block is None:
             report["empty_rows"] += 1
             continue
+        service = row.get("service", "")
+        if service and kind in SERVICE_SCOPED_KINDS:
+            block = _tag_block(block, service)
+            report.setdefault("tagged", 0)
+            report["tagged"] += 1
         result.setdefault((niche, kind), []).append(block)
         report["blocks"] += 1
 
