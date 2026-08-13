@@ -218,7 +218,10 @@ _FIELD_ALIASES: dict[str, tuple[str, ...]] = {
     "title":    ("title", "label", "heading", "headline"),
     "question": ("question", "q", "faq", "prompt"),
     "answer":   ("answer", "a", "response", "reply"),
-    "name":     ("name", "author", "reviewer", "customer"),
+    # `name` is requested only by the review shape, so the extra fall-backs here
+    # cannot affect any other block type. They rescue a reviewer name that a
+    # stray comma pushed one column to the right (into button/heading/title).
+    "name":     ("name", "author", "reviewer", "customer", "title", "heading", "button"),
     "button":   ("button", "button_text", "cta", "cta_text"),
     "heading":  ("heading", "headline", "title"),
     "factor":   ("factor", "feature", "aspect", "criteria"),
@@ -592,9 +595,25 @@ def parse_global_csv(text: str, valid_niches: set[str]) -> dict[str, Any]:
 
     # Header is line 1, so the first data row is line 2.
     for rownum, raw in enumerate(reader, start=2):
-        row = {(k or "").strip().lower(): (v or "").strip() for k, v in raw.items()}
+        # Normalise the row defensively. A row with MORE cells than the header
+        # (a stray trailing comma is the usual cause) lands its extras under a
+        # None key as a LIST — ignore those extra columns rather than crashing.
+        # A row with fewer cells leaves later fields as None. Either way we end
+        # with a clean {header: string} map.
+        row = {}
+        extras = 0
+        for k, v in raw.items():
+            if k is None:                        # cells beyond the header — extras
+                extras = len(v) if isinstance(v, list) else 1
+                continue
+            if isinstance(v, list):
+                v = v[0] if v else ""
+            row[(k or "").strip().lower()] = (v or "").strip()
         if not any(row.values()):
             continue
+        if extras:
+            report["problems"].append(
+                f"Row {rownum}: {extras} extra column(s) past the header were ignored.")
         report["rows"] += 1
         niche, kind = row.get("niche", ""), row.get("kind", "")
         if niche not in valid_niches:

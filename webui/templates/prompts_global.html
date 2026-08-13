@@ -60,7 +60,7 @@
     {{ result.report.unknown_kind|join(', ') }}</div>{% endif %}
   {% if result.problems %}
   <div class="finding warning">
-    <strong>{{ result.problems|length }} row(s) skipped</strong> — each names the exact field to fix:
+    <strong>{{ result.problems|length }} note(s)</strong> about your file — each says exactly what happened:
     <ul class="fmt" style="margin:.5rem 0 0">
       {% for p in result.problems[:30] %}<li>{{ p }}</li>{% endfor %}
       {% if result.problems|length > 30 %}<li class="dim">…and {{ result.problems|length - 30 }} more</li>{% endif %}

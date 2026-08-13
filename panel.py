@@ -705,7 +705,7 @@ def prompts_global():
                 flash(f"{result['added']} block(s) added, {result['skipped']} duplicate(s) "
                       f"skipped across {len(rows)} niche/kind group(s).", "good")
                 if problems:
-                    flash(f"{len(problems)} row(s) were skipped — see the details below.", "warn")
+                    flash(f"{len(problems)} note(s) about your file — see the details below.", "warn")
             elif problems:
                 # Say exactly which rows failed and why, not a blank "nothing imported".
                 shown = "  ".join(problems[:5])
