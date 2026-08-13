@@ -208,6 +208,35 @@ REQUIRED_SCHEMA: dict[str, list[str]] = {
 }
 
 
+# Common header synonyms, so a natural CSV imports without column-name pedantry.
+# The canonical field is tried first, then these — the first non-empty wins. This
+# is what lets ChatGPT put a service_intros body in a `text` column (with `||`)
+# instead of `paras` and still have it land correctly.
+_FIELD_ALIASES: dict[str, tuple[str, ...]] = {
+    "text":     ("text", "body", "content", "paras", "paragraph", "paragraphs"),
+    "paras":    ("paras", "text", "body", "content", "paragraph", "paragraphs"),
+    "title":    ("title", "label", "heading", "headline"),
+    "question": ("question", "q", "faq", "prompt"),
+    "answer":   ("answer", "a", "response", "reply"),
+    "name":     ("name", "author", "reviewer", "customer"),
+    "button":   ("button", "button_text", "cta", "cta_text"),
+    "heading":  ("heading", "headline", "title"),
+    "factor":   ("factor", "feature", "aspect", "criteria"),
+    "repair":   ("repair", "option_a", "left", "a"),
+    "replace":  ("replace", "replacement", "option_b", "right", "b"),
+}
+
+
+def _resolve(row: dict, field: str) -> str:
+    """Fetch a field's value by canonical name or a known synonym — first
+    non-empty wins. Keys in `row` are already lower-cased and trimmed."""
+    for alias in _FIELD_ALIASES.get(field, (field,)):
+        v = (row.get(alias) or "").strip()
+        if v:
+            return v
+    return ""
+
+
 def _missing_required(kind: str, getter) -> list[str]:
     """Which required field-groups a row leaves unfilled. Empty list = valid.
     `getter(name)` returns the row's value for a header name (or "")."""
@@ -576,7 +605,7 @@ def parse_global_csv(text: str, valid_niches: set[str]) -> dict[str, Any]:
             report["unknown_kind"].add(kind or "(blank)")
             report["problems"].append(f'Row {rownum}: unknown kind "{kind or "(blank)"}".')
             continue
-        getter = lambda name, r=row: r.get(name, "")
+        getter = lambda name, r=row: _resolve(r, name)
         missing = _missing_required(kind, getter)
         if missing:
             fields = ", ".join(chr(34) + m + chr(34) for m in missing)
@@ -694,27 +723,33 @@ def csv_to_blocks(kind: str, text: str) -> list[Any]:
     if not rows:
         return []
 
-    # Header present? Match if the first row is exactly the expected columns
-    # (case-insensitive, trimmed). Otherwise assume positional.
+    # A header row is one whose cells name known fields (canonical OR a synonym)
+    # for this shape — so columns match by NAME, in any order, and `text` is
+    # accepted where `paras` is expected. Otherwise the cells are positional.
     head = [c.strip().lower() for c in rows[0]]
-    has_header = set(head) >= set(cols) or head[:len(cols)] == cols
-    if has_header:
-        index = {c: head.index(c) for c in cols if c in head}
-        body = rows[1:]
-    else:
-        index = {c: i for i, c in enumerate(cols)}
-        body = rows
+    known = {"niche", "kind", "service"}
+    for c in cols:
+        known |= set(_FIELD_ALIASES.get(c, (c,)))
+    has_header = any(h in known for h in head)
 
     out: list[Any] = []
-    for row in body:
-        if not any(cell.strip() for cell in row):
-            continue
-        def cell(name: str) -> str:
-            i = index.get(name)
-            return (row[i].strip() if i is not None and i < len(row) else "")
-        block = _assemble(shape, cell)
-        if block is not None:
-            out.append(block)
+    if has_header:
+        body = rows[1:]
+        for row in body:
+            if not any((c or "").strip() for c in row):
+                continue
+            rowmap = {head[i]: row[i] for i in range(min(len(head), len(row)))}
+            block = _assemble(shape, lambda name, m=rowmap: _resolve(m, name))
+            if block is not None:
+                out.append(block)
+    else:
+        for row in rows:
+            if not any((c or "").strip() for c in row):
+                continue
+            pos = {cols[i]: row[i] for i in range(min(len(cols), len(row)))}
+            block = _assemble(shape, lambda name, m=pos: (m.get(name, "") or "").strip())
+            if block is not None:
+                out.append(block)
     return out
 
 
