@@ -37,10 +37,10 @@ from core.jobs import RUNNER  # noqa: E402
 from core.graph import (FoundryError, STATES, list_sites, load_coverage,  # noqa: E402
                         load_graph, parse_coverage_text, save_coverage)
 from core.library import KINDS, add_many, load_library, source_counts  # noqa: E402
-from core.prompts import (GLOBAL_COLUMNS, SHAPE_CSV, build_prompt,  # noqa: E402
-                          coverage as content_coverage, csv_template,
+from core.prompts import (GLOBAL_COLUMNS, REQUIRED_SCHEMA, SHAPE_CSV,  # noqa: E402
+                          build_prompt, coverage as content_coverage, csv_template,
                           global_template, intel_prompt, parse_global_csv,
-                          service_prompt, shape_of, smart_parse)
+                          required_fields, service_prompt, shape_of, smart_parse)
 from core.tokens import unknown_tokens  # noqa: E402
 from core.preview import PreviewPool, free_port, load_asset  # noqa: E402
 from core.render import build_site  # noqa: E402
@@ -591,9 +591,10 @@ def prompts():
             blocks = smart_parse(kind, raw)
             if not blocks:
                 raise ValueError(
-                    "nothing recognised. Paste ChatGPT's YAML list, a CSV with the "
-                    f"columns {', '.join(SHAPE_CSV[shape_of(kind)])}, or — for this "
-                    "block type — one block per line.")
+                    f"nothing recognised for {kind}. A {kind} block needs "
+                    f"{', '.join(required_fields(kind)) or 'text'}. Paste ChatGPT's YAML "
+                    f"list, a CSV with the columns {', '.join(SHAPE_CSV[shape_of(kind)])}, "
+                    "or — for this block type — one block per line.")
             stats = add_many(ROOT, niche, kind, blocks)
             flash(f"{stats['added']} added to the {niche} pool, "
                   f"{stats['skipped_duplicate']} duplicate(s) skipped, "
@@ -695,17 +696,26 @@ def prompts_global():
                 b["kinds"] += 1 if r["added"] else 0
             summary = sorted(({"niche": n, **v} for n, v in by_niche.items()),
                              key=lambda x: (-x["added"], x["niche"]))
+            problems = rep.get("problems") or []
             result = {"rows": rows, "report": rep, "summary": summary,
-                      "unknown_tokens": sorted(bad_tokens),
+                      "unknown_tokens": sorted(bad_tokens), "problems": problems,
                       "added": sum(r["added"] for r in rows),
                       "skipped": sum(r["skipped"] for r in rows)}
             if rows:
                 flash(f"{result['added']} block(s) added, {result['skipped']} duplicate(s) "
                       f"skipped across {len(rows)} niche/kind group(s).", "good")
+                if problems:
+                    flash(f"{len(problems)} row(s) were skipped — see the details below.", "warn")
+            elif problems:
+                # Say exactly which rows failed and why, not a blank "nothing imported".
+                shown = "  ".join(problems[:5])
+                more = f"  (+{len(problems) - 5} more)" if len(problems) > 5 else ""
+                flash(f"Nothing imported — {len(problems)} row(s) had problems: {shown}{more}", "bad")
             else:
-                flash("No importable rows found. Check the niche and kind columns.", "warn")
+                flash("No rows found. Make sure the file has a header row plus at least one data row.", "warn")
     return render_template("prompts_global.html", columns=GLOBAL_COLUMNS,
-                           kinds=sorted(KINDS), niche_list=niches(), result=result)
+                           kinds=sorted(KINDS), niche_list=niches(), result=result,
+                           required_schema=REQUIRED_SCHEMA)
 
 
 @app.route("/prompts/template/<kind>.csv")

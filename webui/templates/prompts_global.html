@@ -22,6 +22,20 @@
   <code>kind</code> needs — a <code>faqs</code> row uses <code>question,answer</code>; a
   <code>reviews</code> row uses <code>name,text</code>; a text block uses <code>text</code>;
   an <code>about_paras</code> row puts paragraphs in <code>paras</code> separated by <code>||</code>.</p>
+  <p class="note">Columns are matched by <strong>name</strong>, not position — any order works, extra
+  columns are ignored, and you only need the columns a row actually uses. Headers are trimmed and
+  case-insensitive.</p>
+  <details>
+    <summary>Required fields per block type</summary>
+    <table class="grid" style="margin-top:.6rem">
+      <thead><tr><th>Block type</th><th>Required columns</th></tr></thead>
+      <tbody>
+        {% for k in kinds %}
+        <tr><td><code>{{ k }}</code></td><td class="mono dim">{{ required_schema[k]|join(', ') }}</td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </details>
   <details>
     <summary>Valid niches ({{ niche_list|length }}) and kinds ({{ kinds|length }})</summary>
     <p class="note"><strong>niches:</strong> {{ niche_list|join(', ') }}</p>
@@ -44,8 +58,15 @@
     {{ result.report.unknown_niche|join(', ') }}</div>{% endif %}
   {% if result.report.unknown_kind %}<div class="finding warning">Unknown kind(s), skipped:
     {{ result.report.unknown_kind|join(', ') }}</div>{% endif %}
-  {% if result.report.empty_rows %}<div class="finding warning">{{ result.report.empty_rows }}
-    row(s) missing a required field, skipped.</div>{% endif %}
+  {% if result.problems %}
+  <div class="finding warning">
+    <strong>{{ result.problems|length }} row(s) skipped</strong> — each names the exact field to fix:
+    <ul class="fmt" style="margin:.5rem 0 0">
+      {% for p in result.problems[:30] %}<li>{{ p }}</li>{% endfor %}
+      {% if result.problems|length > 30 %}<li class="dim">…and {{ result.problems|length - 30 }} more</li>{% endif %}
+    </ul>
+  </div>
+  {% endif %}
   {% if result.unknown_tokens %}<div class="finding warning">Unrecognised token(s) —
     these will show literally on the page and block the build until fixed:
     {% for t in result.unknown_tokens %}<code>{{ '{' }}{{ t }}{{ '}' }}</code> {% endfor %}</div>{% endif %}

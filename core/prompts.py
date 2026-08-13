@@ -175,6 +175,50 @@ def shape_of(kind: str) -> str:
 
 
 # --------------------------------------------------------------------------
+# what each block type actually REQUIRES
+# --------------------------------------------------------------------------
+#
+# The importer matches columns by header NAME (never position), so a CSV may
+# carry any subset of columns in any order. Whether a row is valid depends on
+# the BLOCK TYPE, not the CSV width: a `service_heroes` row needs only `text`,
+# a `faqs` row needs `question` and `answer`. This table is the single source of
+# truth for that — it drives both the validation errors and the required-field
+# hint shown in the UI. Each entry is a list of field-GROUPS; a group is a tuple
+# of interchangeable names ("one of these must be filled").
+_SHAPE_REQUIRED: dict[str, list[tuple[str, ...]]] = {
+    "text":    [("text",)],
+    "titled":  [("title", "text")],          # a title or a body — at least one
+    "paras":   [("paras",)],
+    "qa":      [("question",), ("answer",)],
+    "review":  [("text",)],                   # name is optional
+    "cta":     [("text",)],                   # button/heading optional
+    "compare": [("factor",), ("repair",), ("replace",)],
+}
+
+
+def required_fields(kind: str) -> list[str]:
+    """Human labels for the fields a kind needs (niche + kind always implied)."""
+    return [" or ".join(group) for group in _SHAPE_REQUIRED.get(shape_of(kind), [])]
+
+
+# The per-kind schema the importer validates against — exactly the shape asked
+# for: required = niche, kind, plus that block type's own required fields.
+REQUIRED_SCHEMA: dict[str, list[str]] = {
+    k: ["niche", "kind"] + required_fields(k) for k in KINDS
+}
+
+
+def _missing_required(kind: str, getter) -> list[str]:
+    """Which required field-groups a row leaves unfilled. Empty list = valid.
+    `getter(name)` returns the row's value for a header name (or "")."""
+    missing = []
+    for group in _SHAPE_REQUIRED.get(shape_of(kind), []):
+        if not any((getter(name) or "").strip() for name in group):
+            missing.append(" or ".join(group))
+    return missing
+
+
+# --------------------------------------------------------------------------
 # the prompt
 # --------------------------------------------------------------------------
 
@@ -493,36 +537,56 @@ def global_template() -> str:
 
 def parse_global_csv(text: str, valid_niches: set[str]) -> dict[str, Any]:
     """Turn a master CSV into {(niche, kind): [blocks]} plus a report of what was
-    skipped and why. Unknown niche or kind is reported, not guessed."""
+    skipped and why.
+
+    Columns are matched by HEADER NAME, never by position: any order, any subset,
+    extra unknown columns ignored, headers trimmed and case-insensitive, UTF-8 and
+    a leading BOM tolerated. A row is judged by its BLOCK TYPE's required fields —
+    not the CSV's width — and every rejection is reported with its row number and
+    the exact field that was missing, so a valid short CSV never fails silently."""
     text = (text or "").strip("﻿ \n\r\t")
     result: dict[tuple[str, str], list[Any]] = {}
     report = {"rows": 0, "blocks": 0, "unknown_niche": set(), "unknown_kind": set(),
-              "empty_rows": 0}
+              "empty_rows": 0, "problems": []}
     if not text:
         return {"grouped": result, "report": report}
 
     reader = csv.DictReader(io.StringIO(text))
     have = {(c or "").strip().lower() for c in (reader.fieldnames or [])}
     if "niche" not in have or "kind" not in have:
-        report["error"] = ("the file needs at least a 'niche' and a 'kind' column. "
-                           "Download the template to get the right header.")
+        missing = [c for c in ("niche", "kind") if c not in have]
+        report["error"] = (
+            f"the header is missing the {' and '.join(chr(34)+m+chr(34) for m in missing)} "
+            f"column{'s' if len(missing) > 1 else ''}. Every row needs a niche and a kind. "
+            f"Found: {', '.join(sorted(have)) or '(no header row)'}.")
         return {"grouped": result, "report": report}
 
-    for row in reader:
-        row = {(k or "").strip().lower(): (v or "").strip() for k, v in row.items()}
+    # Header is line 1, so the first data row is line 2.
+    for rownum, raw in enumerate(reader, start=2):
+        row = {(k or "").strip().lower(): (v or "").strip() for k, v in raw.items()}
         if not any(row.values()):
             continue
         report["rows"] += 1
         niche, kind = row.get("niche", ""), row.get("kind", "")
         if niche not in valid_niches:
             report["unknown_niche"].add(niche or "(blank)")
+            report["problems"].append(f'Row {rownum}: unknown niche "{niche or "(blank)"}".')
             continue
         if kind not in KINDS:
             report["unknown_kind"].add(kind or "(blank)")
+            report["problems"].append(f'Row {rownum}: unknown kind "{kind or "(blank)"}".')
             continue
-        shape = KINDS[kind]
-        block = _assemble(shape, lambda name, r=row: r.get(name, ""))
-        if block is None:
+        getter = lambda name, r=row: r.get(name, "")
+        missing = _missing_required(kind, getter)
+        if missing:
+            fields = ", ".join(chr(34) + m + chr(34) for m in missing)
+            report["problems"].append(
+                f'Row {rownum} ({kind}): missing required field {fields}.')
+            report["empty_rows"] += 1
+            continue
+        block = _assemble(KINDS[kind], getter)
+        if block is None:                        # defensive — should not happen now
+            report["problems"].append(f'Row {rownum} ({kind}): could not read the row.')
             report["empty_rows"] += 1
             continue
         service = row.get("service", "")
