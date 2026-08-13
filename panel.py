@@ -42,7 +42,7 @@ from core.prompts import (GLOBAL_COLUMNS, SHAPE_CSV, build_prompt,  # noqa: E402
                           global_template, intel_prompt, parse_global_csv,
                           shape_of, smart_parse)
 from core.tokens import unknown_tokens  # noqa: E402
-from core.preview import PreviewPool, free_port  # noqa: E402
+from core.preview import PreviewPool, free_port, load_asset  # noqa: E402
 from core.render import build_site  # noqa: E402
 from core.seo import audit as seo_audit  # noqa: E402
 from core.spawn import (BLOCK_AT, WARN_AT, capacity, create_from_rows,  # noqa: E402
@@ -903,19 +903,34 @@ def job_status(job_id: str):
     return render_template(template, job=job, results=job.done)
 
 
-@app.route("/preview/<site_id>")
+@app.route("/preview/<site_id>/", defaults={"subpath": ""})
+@app.route("/preview/<site_id>/<path:subpath>")
 @guard
-def preview(site_id: str):
+def preview(site_id: str, subpath: str):
+    """Serve a built site THROUGH the panel, on the panel's own origin.
+
+    The old preview redirected to a per-site http://127.0.0.1:<port>/ server.
+    That only works when the panel and the browser are the same machine. Hosted
+    on a server, 127.0.0.1 is the visitor's laptop, so it "refused to connect".
+    Here the panel serves the site's files itself and re-roots every absolute
+    link/asset under /preview/<id>/, so the whole site is browsable on-domain.
+    """
+    from flask import Response, abort
     try:
         domain = load_graph(ROOT, site_id).site["domain"]
     except FoundryError as exc:
         flash(str(exc), "bad")
         return redirect(url_for("dashboard"))
-    url = PREVIEW.url_for(domain)
-    if not url:
+    site_root = ROOT / "dist" / domain
+    if not (site_root / "index.html").is_file():
         flash(f"{site_id} has not been built yet.", "warn")
         return redirect(url_for("dashboard"))
-    return redirect(url)
+    body, ctype = load_asset(site_root, subpath, f"/preview/{site_id}")
+    if body is None:
+        abort(404)
+    resp = Response(body, content_type=ctype)
+    resp.headers["Cache-Control"] = "no-store"
+    return resp
 
 
 def main() -> int:

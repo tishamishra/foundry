@@ -30,6 +30,8 @@ from __future__ import annotations
 
 import http.server
 import json
+import mimetypes
+import re
 import socket
 import socketserver
 import threading
@@ -37,6 +39,104 @@ from pathlib import Path
 from urllib.parse import unquote, urlparse
 
 SENTINELS = ("city", "state", "state_abbr", "county", "zips_short", "nearby")
+
+
+# ---------------------------------------------------------------------------
+# Edge rendering + in-panel serving.
+#
+# These module-level helpers are shared by two callers:
+#   * SiteHandler below — the DESKTOP preview (one localhost server per site).
+#   * panel.py's /preview/<id>/ route — the HOSTED preview, which serves the
+#     built site THROUGH the admin app on the same origin, because on a server
+#     `http://127.0.0.1:<port>/` points at the visitor's own laptop, not the
+#     box, so the old per-site localhost servers are unreachable.
+# ---------------------------------------------------------------------------
+
+def load_edge_index(site_root: Path) -> dict:
+    path = site_root / "_masters" / "index.json"
+    return json.loads(path.read_text(encoding="utf-8")) if path.is_file() else {}
+
+
+def edge_page(site_root: Path, url_path: str, idx: dict | None = None) -> bytes | None:
+    """Reproduce worker.js's edge render for a city/service page not on disk."""
+    idx = load_edge_index(site_root) if idx is None else idx
+    locations = idx.get("locations") or {}
+    parts = [p for p in unquote(url_path).strip("/").split("/") if p]
+
+    master = slug = None
+    if len(parts) == 2 and parts[0] == "areas" and parts[1] in locations:
+        slug = parts[1]
+        master = f"location-{locations[slug][6]}"
+    elif (len(parts) == 3 and parts[0] == "services"
+          and parts[1] in (idx.get("services") or []) and parts[2] in locations):
+        slug = parts[2]
+        master = f"location_service-{locations[slug][6]}-{parts[1]}"
+    if not master:
+        return None
+
+    source = site_root / "_masters" / f"{master}.html"
+    if not source.is_file():
+        return None
+
+    row = locations[slug]
+    html = source.read_text(encoding="utf-8")
+    for i, name in enumerate(SENTINELS):
+        html = html.replace(f"%%{name}%%", row[i])
+    html = html.replace("%%slug%%", slug)
+    html = html.replace("%%city_slug%%", slug.rsplit("-", 1)[0])
+    return html.encode("utf-8")
+
+
+# Root-relative  href/src/action="/..."  — but NOT protocol-relative "//...".
+# A site's links and assets are absolute ("/assets/js/site.js", "/areas/x")
+# because in production each site owns its domain root. Served under the panel
+# at /preview/<id>/ those would resolve against the PANEL root and 404, so we
+# re-root every such reference under the prefix. Absolute https:// links
+# (canonical, JSON-LD) are deliberately left alone.
+_ROOT_ATTR = re.compile(
+    r'''(\b(?:href|src|action|poster|data-src|data-href|formaction)\s*=\s*["'])/(?!/)''')
+
+
+def rewrite_html(html: str, prefix: str) -> str:
+    return _ROOT_ATTR.sub(rf"\1{prefix}/", html)
+
+
+def load_asset(site_root: Path, subpath: str, prefix: str):
+    """Serve one file (or an edge-rendered page) from a built site, with every
+    root-relative reference re-rooted under `prefix`. Returns
+    (body: bytes, content_type: str) or (None, None) if there is nothing there."""
+    rel = unquote(subpath.split("?", 1)[0].split("#", 1)[0]).strip("/")
+    base = site_root.resolve()
+    target = (site_root / rel).resolve()
+    if target != base and base not in target.parents:
+        return None, None                       # path traversal — refuse
+
+    file = None
+    if rel == "":
+        cand = site_root / "index.html"
+        file = cand if cand.is_file() else None
+    elif target.is_file():
+        file = target
+    elif target.is_dir():
+        cand = target / "index.html"
+        file = cand if cand.is_file() else None
+    else:                                        # pretty URL: /areas/x -> /areas/x/index.html
+        cand = site_root / rel / "index.html"
+        file = cand if cand.is_file() else None
+
+    if file is None:                            # last resort: the edge renderer
+        body = edge_page(site_root, "/" + rel)
+        if body is None:
+            return None, None
+        return rewrite_html(body.decode("utf-8"), prefix).encode("utf-8"), \
+            "text/html; charset=utf-8"
+
+    data = file.read_bytes()
+    if file.suffix.lower() in (".html", ".htm"):
+        return rewrite_html(data.decode("utf-8"), prefix).encode("utf-8"), \
+            "text/html; charset=utf-8"
+    ctype = mimetypes.guess_type(str(file))[0] or "application/octet-stream"
+    return data, ctype
 
 
 def free_port(start: int = 8000, tries: int = 200) -> int:
@@ -68,38 +168,12 @@ class SiteHandler(http.server.SimpleHTTPRequestHandler):
     def _index(self) -> dict:
         cache = getattr(type(self), "_edge_index", None)
         if cache is None:
-            path = self.site_root / "_masters" / "index.json"
-            cache = json.loads(path.read_text(encoding="utf-8")) if path.is_file() else {}
+            cache = load_edge_index(self.site_root)
             type(self)._edge_index = cache
         return cache
 
     def _edge_page(self, url_path: str) -> bytes | None:
-        idx = self._index()
-        locations = idx.get("locations") or {}
-        parts = [p for p in unquote(url_path).strip("/").split("/") if p]
-
-        master = slug = None
-        if len(parts) == 2 and parts[0] == "areas" and parts[1] in locations:
-            slug = parts[1]
-            master = f"location-{locations[slug][6]}"
-        elif (len(parts) == 3 and parts[0] == "services"
-              and parts[1] in (idx.get("services") or []) and parts[2] in locations):
-            slug = parts[2]
-            master = f"location_service-{locations[slug][6]}-{parts[1]}"
-        if not master:
-            return None
-
-        source = self.site_root / "_masters" / f"{master}.html"
-        if not source.is_file():
-            return None
-
-        row = locations[slug]
-        html = source.read_text(encoding="utf-8")
-        for i, name in enumerate(SENTINELS):
-            html = html.replace(f"%%{name}%%", row[i])
-        html = html.replace("%%slug%%", slug)
-        html = html.replace("%%city_slug%%", slug.rsplit("-", 1)[0])
-        return html.encode("utf-8")
+        return edge_page(self.site_root, url_path, self._index())
 
     def do_GET(self):                      # noqa: N802
         path = urlparse(self.path).path
