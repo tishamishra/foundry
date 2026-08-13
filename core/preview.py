@@ -82,6 +82,10 @@ def edge_page(site_root: Path, url_path: str, idx: dict | None = None) -> bytes 
     html = source.read_text(encoding="utf-8")
     for i, name in enumerate(SENTINELS):
         html = html.replace(f"%%{name}%%", row[i])
+    # primary_zip is derived from zips_short (index 4) rather than stored, matching
+    # worker.js, so an edge city page shows a single ZIP not the whole list.
+    zips_short = row[4] if len(row) > 4 else ""
+    html = html.replace("%%primary_zip%%", zips_short.split(",")[0].strip())
     html = html.replace("%%slug%%", slug)
     html = html.replace("%%city_slug%%", slug.rsplit("-", 1)[0])
     return html.encode("utf-8")

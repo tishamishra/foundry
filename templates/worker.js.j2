@@ -36,6 +36,7 @@ function fill(html, slug, row) {
   const map = new Map([
     ["%%city%%", row[0]], ["%%state%%", row[1]], ["%%state_abbr%%", row[2]],
     ["%%county%%", row[3]], ["%%zips_short%%", row[4]], ["%%nearby%%", row[5]],
+    ["%%primary_zip%%", (row[4].split(",")[0] || "").trim()],
     ["%%slug%%", slug], ["%%city_slug%%", slug.replace(/-[a-z]{2}$/, "")]
   ]);
   let out = html;

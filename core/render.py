@@ -42,7 +42,8 @@ from .library import (GENERIC, Composer, interpolate, load_library,
 EDGE = {
     "city": "%%city%%", "city_slug": "%%city_slug%%", "state": "%%state%%",
     "state_abbr": "%%state_abbr%%", "county": "%%county%%",
-    "zips_short": "%%zips_short%%", "nearby": "%%nearby%%", "slug": "%%slug%%",
+    "zips_short": "%%zips_short%%", "primary_zip": "%%primary_zip%%",
+    "nearby": "%%nearby%%", "slug": "%%slug%%",
 }
 
 IMAGE_MAGIC = {
@@ -143,7 +144,7 @@ def base_context(g: Graph) -> dict[str, Any]:
         "niche_lower": g.niche.get("label", g.site["niche"]).lower(),
         # location + service tokens default to empty so [[ ... ]] clauses drop
         "city": "", "city_slug": "", "state": "", "state_abbr": "",
-        "county": "", "zips_short": "", "nearby": "", "slug": "",
+        "county": "", "zips_short": "", "primary_zip": "", "nearby": "", "slug": "",
         "service": "", "service_slug": "", "service_lower": "",
     }
 
@@ -155,6 +156,9 @@ def location_context(base: dict, loc: Location, g: Graph) -> dict:
         "city": loc.city, "city_slug": slugify(loc.city), "state": loc.state,
         "state_abbr": loc.state_abbr, "county": loc.county, "slug": loc.slug,
         "zips_short": loc.zips_short(),
+        # One ZIP for this city — shown once in the hero. A single natural number,
+        # never the whole list, so a city page reads as local rather than stuffed.
+        "primary_zip": loc.zips[0] if loc.zips else "",
         "nearby": ", ".join(l.city for l in near),
     })
     return ctx
@@ -536,6 +540,10 @@ def build_site(root: Path, site_id: str, out_root: Path | None = None) -> BuildR
             "title": title, "description": desc, "edge": edge,
             "counties": g.counties, "locations": g.locations, "imgs": images,
             "single_service": len(g.services) == 1,
+            # ZIP is shown once in the hero and (for multi-ZIP cities) a capped
+            # list — set show_zips: false on a site, or globally, to hide both.
+            "show_zips": bool(site.get("show_zips",
+                                       g.globals.get("show_zips", True))),
             **extra,
         }
         html = interpolate(tpl.render(**payload), ctx)

@@ -126,6 +126,8 @@ body.nav-open .nav-cta{display:block;margin-top:.7rem;border-bottom:0}
 .eyebrow,.hero-h1,.lede{overflow-wrap:anywhere}
 .eyebrow{text-transform:uppercase;letter-spacing:.12em;font-size:.74rem;font-weight:800;
   color:var(--brand-dark);margin:0 0 .8rem}
+.hero-zip{margin:.5rem 0 0;font-size:.92rem;font-weight:600;color:var(--muted);
+  letter-spacing:.01em}
 .ticks{list-style:none;padding:0;margin:1.4rem 0;display:grid;gap:.5rem}
 .ticks li{position:relative;padding-left:1.7rem;font-weight:600;min-width:0}
 .ticks li::before{content:"";position:absolute;left:0;top:.5em;width:.72rem;height:.42rem;
@@ -158,7 +160,7 @@ body[data-hero=banner] .hero .hero-copy{color:#fff;max-width:56rem}
 body[data-hero=banner] .hero h1,body[data-hero=banner] .hero .hero-chip strong{color:#fff}
 body[data-hero=banner] .hero .lede{color:rgba(255,255,255,.86)}
 body[data-hero=banner] .hero .eyebrow{color:var(--accent)}
-body[data-hero=banner] .hero .micro{color:rgba(255,255,255,.7)}
+body[data-hero=banner] .hero .micro,body[data-hero=banner] .hero .hero-zip{color:rgba(255,255,255,.7)}
 body[data-hero=banner] .hero .ticks li::before{border-color:var(--accent)}
 body[data-hero=banner] .hero .btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.5)}
 body[data-hero=overlay] .hero{background:#0d1420;padding:calc(var(--pad) * 1.3) 0}
@@ -169,7 +171,7 @@ body[data-hero=overlay] .hero .hero-copy{color:#fff;max-width:44rem}
 body[data-hero=overlay] .hero h1{color:#fff}
 body[data-hero=overlay] .hero .lede{color:rgba(255,255,255,.85)}
 body[data-hero=overlay] .hero .eyebrow{color:var(--accent)}
-body[data-hero=overlay] .hero .micro{color:rgba(255,255,255,.68)}
+body[data-hero=overlay] .hero .micro,body[data-hero=overlay] .hero .hero-zip{color:rgba(255,255,255,.68)}
 body[data-hero=overlay] .hero .ticks li::before{border-color:var(--accent)}
 body[data-hero=overlay] .hero .btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.5)}
 
@@ -463,6 +465,7 @@ body:has(.sticky-call:not([hidden])) .ftr{padding-bottom:5rem}
 
 .zips .zip{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.82rem;
   letter-spacing:.02em;background:#fff}
+.zips .zip.more{font-family:inherit;letter-spacing:0;color:var(--muted);border-style:dashed}
 
 /* image pool sections */
 .show-row.has-art{grid-template-columns:1fr}
@@ -501,7 +504,7 @@ body[data-hero=slab] .hero .hero-copy{color:#fff}
 body[data-hero=slab] .hero h1{color:#fff}
 body[data-hero=slab] .hero .lede{color:rgba(255,255,255,.86)}
 body[data-hero=slab] .hero .eyebrow{color:var(--accent)}
-body[data-hero=slab] .hero .micro{color:rgba(255,255,255,.7)}
+body[data-hero=slab] .hero .micro,body[data-hero=slab] .hero .hero-zip{color:rgba(255,255,255,.7)}
 body[data-hero=slab] .hero .ticks li::before{border-color:var(--accent)}
 body[data-hero=slab] .hero .btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.45)}
 body[data-hero=slab] .hero-art img{border-color:rgba(255,255,255,.18)}

@@ -18,6 +18,9 @@
         {%- elif kind == 'service' %}{{ t.service }}
         {%- else %}{{ content.tagline }}{% endif -%}
       </h1>
+      {%- if show_zips and kind in ('location', 'location_service') and t.primary_zip %}
+      <p class="hero-zip">{{ t.city }}, {{ t.state_abbr }} &middot; {{ t.primary_zip }}</p>
+      {%- endif %}
       <p class="lede">
         {%- if kind in ('location', 'location_service') and lc is defined and lc.hero %}{{ lc.hero }}
         {%- elif kind == 'service' and svc is defined and svc.hero %}{{ svc.hero }}
