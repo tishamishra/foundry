@@ -4,7 +4,7 @@
     <p class="lede">The honest difference, so you can tell which conversation you are having.</p>
     <div class="cmp reveal">
       <div class="cmp-head"><span></span><span>Repair</span><span>Replacement</span></div>
-      {% for row in (lc.compare if lc is defined else content.compare) %}
+      {% for row in (svc.compare if svc is defined else (lc.compare if lc is defined else content.compare)) %}
       <div class="cmp-row"><span class="cmp-f">{{ row.factor }}</span><span data-l="Repair">{{ row.repair }}</span><span data-l="Replacement">{{ row.replace }}</span></div>
       {% endfor %}
     </div>

@@ -40,7 +40,7 @@ from core.library import KINDS, add_many, load_library, source_counts  # noqa: E
 from core.prompts import (GLOBAL_COLUMNS, SHAPE_CSV, build_prompt,  # noqa: E402
                           coverage as content_coverage, csv_template,
                           global_template, intel_prompt, parse_global_csv,
-                          shape_of, smart_parse)
+                          service_prompt, shape_of, smart_parse)
 from core.tokens import unknown_tokens  # noqa: E402
 from core.preview import PreviewPool, free_port, load_asset  # noqa: E402
 from core.render import build_site  # noqa: E402
@@ -570,6 +570,16 @@ def prompts():
     niche_def = read_yaml(ROOT / "data" / "niches" / f"{niche}.yaml") if niche else {}
     niche_label = niche_def.get("label") or niche.replace("-", " ").title()
 
+    # The niche's own service list drives the per-service prompt: pick one and the
+    # prompt is written for that service, its rows pre-tagged so the copy lands on
+    # that service's pages only.
+    svc_list = [s for s in (niche_def.get("services") or []) if s.get("slug")]
+    service_slug = request.values.get("service") or (svc_list[0]["slug"] if svc_list else "")
+    svc_label = next((s["name"] for s in svc_list if s["slug"] == service_slug),
+                     service_slug.replace("-", " ").title())
+    svc_prompt = (service_prompt(niche, niche_label, svc_label, service_slug, n)
+                  if service_slug else "")
+
     if request.method == "POST":
         try:
             raw = request.form.get("content", "").strip()
@@ -602,7 +612,9 @@ def prompts():
         niche_label=niche_label,
         prompt=build_prompt(kind, niche_label, n),
         csv_cols=SHAPE_CSV[shape_of(kind)],
-        pool_count=(lib.counts.get(kind, 0) if lib else 0))
+        pool_count=(lib.counts.get(kind, 0) if lib else 0),
+        services=svc_list, service=service_slug, svc_label=svc_label,
+        service_prompt=svc_prompt)
 
 
 @app.route("/prompts/intel")
@@ -624,9 +636,12 @@ def prompts_intel():
         split = source_counts(ROOT, niche)     # base / niche / yours per kind
         for r in cov:
             r["src"] = split.get(r["kind"], {"base": 0, "niche": 0, "user": 0})
-    # a ready small prompt for each weak section (fills the master-CSV format)
+    # a ready small prompt for each weak section (fills the master-CSV format);
+    # service-scoped kinds get the niche's own services so the prompt tags rows.
+    svc_list = [s for s in (niche_def.get("services") or []) if s.get("slug")]
     prompts = {r["kind"]: intel_prompt(niche, niche_label, r["kind"],
-                                       max(10, min(40, r["gap"] or 20)))
+                                       max(10, min(40, r["gap"] or 20)),
+                                       services=svc_list)
                for r in cov}
     return render_template("prompts_intel.html", niche=niche, niche_label=niche_label,
                            target=target, coverage=cov, weakest=weakest,

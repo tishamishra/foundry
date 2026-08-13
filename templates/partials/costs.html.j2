@@ -4,7 +4,7 @@
     <p class="lede">We do not publish a price list, because a number without a roof attached to it is
     marketing. These are the things that actually move it.</p>
     <div class="cost-grid">
-      {% for c in (lc.costs if lc is defined else content.costs) %}
+      {% for c in (svc.costs if svc is defined else (lc.costs if lc is defined else content.costs)) %}
       <div class="cost reveal"><span class="cost-n">{{ '%02d'|format(loop.index) }}</span>
         <h3>{{ c.title }}</h3><p>{{ c.text }}</p></div>
       {% endfor %}

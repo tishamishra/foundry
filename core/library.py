@@ -70,6 +70,50 @@ KINDS: dict[str, str] = {
     "cost_factors":         "titled",
 }
 
+# The kinds that describe ONE service and so may be tagged to a specific service
+# with a `for:` field. A block without `for` is GENERIC — eligible on every page
+# (any service, any city, the home page). A tagged block is eligible ONLY on its
+# own service's pages. This is what stops a roof-replacement bullet from landing
+# on the chimney-repair page, while a shallow pool still falls back to generic
+# copy so a page is never empty. The other 14 kinds ignore `for` entirely.
+SERVICE_SCOPED_KINDS: frozenset[str] = frozenset({
+    "service_intros", "service_heroes", "service_bullets",
+    "signs", "compare_rows", "cost_factors",
+})
+
+# Sentinel meaning "generic blocks only" — passed by the home/location composers
+# so a service-tagged block can never leak onto a page that is not that service.
+# A real service slug is kebab-case and can never equal this.
+GENERIC = "\x00generic\x00"
+
+
+def _tag(block: Any) -> str | None:
+    """The service a block is bound to, or None if it is generic."""
+    return block.get("for") if isinstance(block, dict) else None
+
+
+def _emit(kind: str, block: Any) -> Any:
+    """Normalise a stored block into what the template consumes: strip the `for`
+    tag, and unwrap a `{text, for}` wrapper back to a bare string for text kinds."""
+    if isinstance(block, dict):
+        if KINDS.get(kind) == "text":
+            return block.get("text", "")
+        if "for" in block:
+            return {k: v for k, v in block.items() if k != "for"}
+    return block
+
+
+def _emit_key(value: Any) -> str:
+    """A stable string key for an emitted block — used to avoid the same sentence
+    appearing twice when a tagged draw is topped up from the generic pool."""
+    if isinstance(value, str):
+        return value.strip().lower()
+    if isinstance(value, dict):
+        return "|".join(f"{k}={value[k]}" for k in sorted(value))
+    if isinstance(value, list):
+        return "|".join(_emit_key(v) for v in value)
+    return str(value)
+
 
 # --------------------------------------------------------------------------
 # deterministic randomness (portable — not `random`)
@@ -320,24 +364,70 @@ class Composer:
         h = _hash64(f"{kind}::{slot}")
         return Stream(h ^ ((self.seed + 1) * GOLDEN) ^ (offset * 0x27220A95)).below(size)
 
-    def one(self, kind: str, slot: str) -> Any:
-        pool = self.library.pool(kind)
-        if not pool:
-            raise EmptyPool(kind, self.library.filtered.get(kind, 0))
-        idx = self._index(kind, slot, len(pool))
-        self.used.setdefault(kind, []).append(idx)
-        return pool[idx]
+    def _split(self, kind: str, service: str | None) -> tuple[list[Any], list[Any]]:
+        """Return (primary, secondary) pools for a draw.
 
-    def many(self, kind: str, slot: str, count: int) -> list[Any]:
-        """Distinct picks — a site never draws the same block twice in one slot."""
+          service is None      -> (whole pool, [])          — unchanged legacy path
+          service is GENERIC    -> (generic only, [])         — home/location pages
+          service == <slug>     -> (tagged-for-slug, generic) — service pages, tagged
+                                    first and generic as top-up; if nothing is tagged
+                                    for the slug the generic pool becomes primary.
+
+        When a kind's pool carries no `for` tags at all, every branch collapses to
+        the whole pool, so composition stays byte-identical until tags are added.
+        """
         pool = self.library.pool(kind)
-        if not pool:
+        if service is None:
+            return pool, []
+        generic = [b for b in pool if _tag(b) is None]
+        if service == GENERIC:
+            return generic, []
+        tagged = [b for b in pool if _tag(b) == service]
+        if tagged:
+            return tagged, generic
+        return generic, []
+
+    def one(self, kind: str, slot: str, service: str | None = None) -> Any:
+        primary, secondary = self._split(kind, service)
+        src = primary or secondary
+        if not src:
             raise EmptyPool(kind, self.library.filtered.get(kind, 0))
+        idx = self._index(kind, slot, len(src))
+        self.used.setdefault(kind, []).append(idx)
+        return _emit(kind, src[idx])
+
+    def many(self, kind: str, slot: str, count: int,
+             service: str | None = None) -> list[Any]:
+        """Distinct picks — a site never draws the same block twice in one slot.
+
+        For a service draw, tagged blocks are exhausted first and the generic pool
+        tops up any shortfall, de-duplicated by emitted text so a sentence that
+        exists both tagged and generic can never appear twice on one page."""
+        primary, secondary = self._split(kind, service)
+        if not primary and not secondary:
+            raise EmptyPool(kind, self.library.filtered.get(kind, 0))
+
         order = Stream(_hash64(f"{kind}::{slot}") ^ ((self.seed + 1) * GOLDEN)) \
-            .shuffled(list(range(len(pool))))
-        picked = order[:max(0, min(count, len(pool)))]
+            .shuffled(list(range(len(primary))))
+        picked = order[:max(0, min(count, len(primary)))]
         self.used.setdefault(kind, []).extend(picked)
-        return [pool[i] for i in picked]
+        out = [_emit(kind, primary[i]) for i in picked]
+
+        if len(out) < count and secondary:
+            seen = {_emit_key(o) for o in out}
+            order2 = Stream(_hash64(f"{kind}::{slot}\x00g") ^ ((self.seed + 1) * GOLDEN)) \
+                .shuffled(list(range(len(secondary))))
+            for i in order2:
+                if len(out) >= count:
+                    break
+                emitted = _emit(kind, secondary[i])
+                key = _emit_key(emitted)
+                if key in seen:
+                    continue
+                seen.add(key)
+                out.append(emitted)
+                self.used.setdefault(kind, []).append(i)
+        return out
 
     def coverage_note(self) -> dict[str, Any]:
         """How much of each pool this composition actually consumed."""

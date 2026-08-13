@@ -15,8 +15,28 @@
   </select></label>
   <label>How many<input name="n" type="number" min="1" max="50" value="{{ n }}" style="width:5rem"
     onchange="this.form.submit()"></label>
+  {% if services %}
+  <label>Service<select name="service" onchange="this.form.submit()">
+    {% for s in services %}<option value="{{ s.slug }}" {{ 'selected' if s.slug == service }}>{{ s.name }}</option>{% endfor %}
+  </select></label>
+  {% endif %}
   <span class="dim">{{ pool_count }} <strong>{{ kind }}</strong> already in the {{ niche }} pool</span>
 </form>
+
+{% if service_prompt %}
+<div class="card" style="border-left:4px solid #2563eb">
+  <h2>Per-service prompt — {{ svc_label }} <span class="dim" style="font-weight:400">(recommended)</span></h2>
+  <p class="sub">This writes all six service-page sections
+  (<code>service_heroes, service_intros, service_bullets, signs, cost_factors, compare_rows</code>)
+  <strong>specifically for {{ svc_label }}</strong>. Every row comes back tagged, so the copy appears on
+  {{ svc_label }} pages only — never on another service or a city page. Paste the reply into the
+  <a href="{{ url_for('prompts_global') }}">Master CSV importer</a>.</p>
+  <div class="prompt-wrap">
+    <button type="button" class="btn sm ghost" data-copy>Copy {{ svc_label }} prompt</button>
+    <pre class="prompt mono" data-prompt>{{ service_prompt }}</pre>
+  </div>
+</div>
+{% endif %}
 
 <div class="card">
   <h2>1 · Copy this into ChatGPT</h2>
@@ -46,19 +66,22 @@
 
 <script>
 (function () {
-  var btn = document.querySelector("[data-copy]");
-  var pre = document.querySelector("[data-prompt]");
-  if (btn && pre) btn.addEventListener("click", function () {
-    var text = pre.textContent;
-    function done() { btn.textContent = "Copied ✓"; setTimeout(function(){ btn.textContent = "Copy prompt"; }, 1600); }
-    if (navigator.clipboard && navigator.clipboard.writeText) {
-      navigator.clipboard.writeText(text).then(done, done);
-    } else {
-      var r = document.createRange(); r.selectNode(pre);
-      var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
-      try { document.execCommand("copy"); } catch (e) {}
-      s.removeAllRanges(); done();
-    }
+  document.querySelectorAll("[data-copy]").forEach(function (btn) {
+    var pre = btn.parentNode.querySelector("[data-prompt]");
+    if (!pre) return;
+    var label = btn.textContent;
+    btn.addEventListener("click", function () {
+      var text = pre.textContent;
+      function done() { btn.textContent = "Copied ✓"; setTimeout(function(){ btn.textContent = label; }, 1600); }
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(done, done);
+      } else {
+        var r = document.createRange(); r.selectNode(pre);
+        var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+        try { document.execCommand("copy"); } catch (e) {}
+        s.removeAllRanges(); done();
+      }
+    });
   });
 })();
 </script>

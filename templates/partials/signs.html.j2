@@ -3,7 +3,7 @@
     <h2 class="section-head">Signs worth a phone call</h2>
     <p class="lede">None of these mean a new roof on its own. Together they tell you where you are.</p>
     <div class="signs">
-      {% for s in (lc.signs if lc is defined else content.signs) %}
+      {% for s in (svc.signs if svc is defined else (lc.signs if lc is defined else content.signs)) %}
       <div class="sign reveal"><h3>{{ s.title }}</h3><p>{{ s.text }}</p></div>
       {% endfor %}
     </div>

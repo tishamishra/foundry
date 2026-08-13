@@ -35,7 +35,8 @@ from jinja2 import Environment, FileSystemLoader, StrictUndefined
 
 from .graph import FoundryError, Graph, Location, load_graph, slugify
 from .images import (SLOTS, copy_into_site, pool_counts, pool_for)
-from .library import Composer, interpolate, load_library, unresolved_tokens
+from .library import (GENERIC, Composer, interpolate, load_library,
+                      unresolved_tokens)
 
 # Sentinels the edge Worker substitutes at request time.
 EDGE = {
@@ -188,9 +189,11 @@ def compose_site_content(g: Graph, comp: Composer) -> dict[str, Any]:
         "reviews":  comp.many("reviews", "site:reviews", counts.get("reviews", 5)),
         "cta":      comp.one("cta_blocks", "site:cta_block"),
         "closing":  comp.one("closing_paras", "site:closing"),
-        "signs":    comp.many("signs", "site:signs", counts.get("signs", 6)),
-        "compare":  comp.many("compare_rows", "site:compare", counts.get("compare_rows", 5)),
-        "costs":    comp.many("cost_factors", "site:costs", counts.get("cost_factors", 5)),
+        # GENERIC: the home page is not one service, so it draws only untagged
+        # signs/compare/costs — a service-tagged block must never surface here.
+        "signs":    comp.many("signs", "site:signs", counts.get("signs", 6), service=GENERIC),
+        "compare":  comp.many("compare_rows", "site:compare", counts.get("compare_rows", 5), service=GENERIC),
+        "costs":    comp.many("cost_factors", "site:costs", counts.get("cost_factors", 5), service=GENERIC),
     }
 
 
@@ -202,11 +205,24 @@ def compose_service_content(comp: Composer, slug: str, counts: dict | None = Non
         # service's OWN hero, keyed by slug, so roof-inspection and
         # gutter-installation open differently. Distinct pool from the body
         # intro, so the two are never the same paragraph on one page.
-        "hero":    comp.one("service_heroes", f"service:{slug}:hero"),
-        "intro":   comp.one("service_intros", f"service:{slug}"),
+        # service=slug: every service-scoped draw prefers blocks tagged `for: slug`
+        # and falls back to generic copy, so roof-replacement pages carry
+        # roof-replacement content and never another service's.
+        "hero":    comp.one("service_heroes", f"service:{slug}:hero", service=slug),
+        "intro":   comp.one("service_intros", f"service:{slug}", service=slug),
         "bullets": comp.many("service_bullets", f"service:{slug}:bullets",
-                             counts.get("service_bullets", 6)),
+                             counts.get("service_bullets", 6), service=slug),
         "faqs":    comp.many("faqs", f"service:{slug}:faq", counts.get("service_faqs", 7)),
+        # Shared sections, now service-aware. On a service page (and a
+        # service-in-city page) the template prefers these over the site-level /
+        # per-city ones, so the signs, comparison and cost drivers speak to THIS
+        # service rather than the trade in general.
+        "signs":   comp.many("signs", f"service:{slug}:signs",
+                             counts.get("service_signs", 6), service=slug),
+        "costs":   comp.many("cost_factors", f"service:{slug}:costs",
+                             counts.get("service_costs", 6), service=slug),
+        "compare": comp.many("compare_rows", f"service:{slug}:compare",
+                             counts.get("service_compare", 5), service=slug),
     }
 
 
@@ -238,12 +254,15 @@ def compose_location_content(comp: Composer, bucket: int,
         # has to rank, and if every city carried an identical signs/costs/compare
         # block the whole city set would read as one page repeated — which is
         # exactly the thin-content signal these sections were added to remove.
+        # GENERIC: a city page covers the whole trade in that place, not one
+        # service, so it draws only untagged signs/costs/compare — service-tagged
+        # blocks stay on their own service pages.
         "signs":         comp.many("signs", f"loc:{bucket}:signs",
-                                   counts.get("location_signs", 6)),
+                                   counts.get("location_signs", 6), service=GENERIC),
         "costs":         comp.many("cost_factors", f"loc:{bucket}:costs",
-                                   counts.get("location_costs", 6)),
+                                   counts.get("location_costs", 6), service=GENERIC),
         "compare":       comp.many("compare_rows", f"loc:{bucket}:compare",
-                                   counts.get("location_compare", 5)),
+                                   counts.get("location_compare", 5), service=GENERIC),
         "process":       comp.many("process_steps", f"loc:{bucket}:process",
                                    counts.get("location_process", 5)),
     }
