@@ -490,6 +490,43 @@ def tag_claims(block: Any) -> Any:
     return out
 
 
+def api_prompt(niche_slug: str, niche_label: str, kind: str, n: int,
+               services: list[dict] | None = None) -> str:
+    """The prompt used for the one-click OpenAI 'Generate' button.
+
+    It asks for a YAML list rather than CSV. CSV silently corrupts multi-paragraph
+    prose — an unquoted comma inside a `paras` cell splits the row and the field
+    ends up empty — whereas YAML carries commas and quotes natively. For a
+    service-scoped kind it also asks the model to tag each item with its service."""
+    base = build_prompt(kind, niche_label, n)
+    svc = [s for s in (services or []) if s.get("slug")] if kind in SERVICE_SCOPED_KINDS else []
+    if svc:
+        slugs = ", ".join(s["slug"] for s in svc)
+        base += (f"\n\nADD a `service:` field to EACH item, set to exactly one of these "
+                 f"slugs — {slugs} — the service that item is about, and spread the {n} "
+                 f"items across those services. Omit `service` only for a block that "
+                 f"genuinely suits every service.")
+    return base
+
+
+def finalize_ai_blocks(kind: str, blocks: list[Any]) -> list[Any]:
+    """Turn parsed AI output into storable blocks: fold an inline `service` field
+    into a `for` tag (service-scoped kinds only) and attach `requires` for any
+    claim, so generated copy self-filters and never blocks a build."""
+    out = []
+    for b in blocks:
+        b = normalize_block(kind, b)
+        if b is None:
+            continue
+        if isinstance(b, dict) and b.get("service"):
+            svc = str(b.get("service") or "").strip()
+            b = {k: v for k, v in b.items() if k != "service"}
+            if svc and kind in SERVICE_SCOPED_KINDS:
+                b = {**b, "for": svc}
+        out.append(tag_claims(b))
+    return out
+
+
 def _tag_block(block: Any, service: str) -> Any:
     """Bind a block to one service. A text-kind block is a bare string, so it is
     wrapped as {text, for}; every other shape is already a dict and just gains a
@@ -748,20 +785,65 @@ def smart_parse(kind: str, text: str) -> list[Any]:
     return out
 
 
-def _coerce(kind: str, items: list) -> list[Any]:
-    """A YAML list may hold plain strings for a text kind, or dicts. Keep dicts
-    as-is; wrap bare strings for the shape so both paste styles work."""
+def normalize_block(kind: str, item: Any) -> Any:
+    """Coerce ANY parsed item into the canonical shape the library and templates
+    expect — the single place that makes every section import from any reasonable
+    format. It accepts a bare string, a dict with synonym or mis-cased field names
+    ({question,answer}->{q,a}, text/body->paras), a `paras` value that is a list,
+    a `||`-joined string, or newline-separated prose, and it carries through any
+    `for` / `requires` / `service` tag. Returns None when there is no usable text."""
     shape = shape_of(kind)
+
+    if isinstance(item, str):
+        s = item.strip()
+        if not s:
+            return None
+        if shape == "text":
+            return s
+        if shape == "paras":
+            ps = [p.strip() for p in re.split(r"\|\||\n{2,}", s) if p.strip()]
+            return {"paras": ps} if ps else None
+        item = {"text": s}                 # a lone string for a multi-field shape
+
+    if not isinstance(item, dict):
+        return None
+
+    low = {(k or "").strip().lower(): v for k, v in item.items()}
+    # a flat, all-string view for the generic resolver (lists become `||` joins)
+    flat = {k: (PARA_SEP.join(str(x) for x in v) if isinstance(v, list)
+                else ("" if v is None else str(v))) for k, v in low.items()}
+    tags = {k: low[k] for k in ("for", "requires", "service") if low.get(k)}
+
+    if shape == "paras":
+        raw = next((low[a] for a in _FIELD_ALIASES["paras"] if low.get(a)), None)
+        if isinstance(raw, list):
+            ps = [str(p).strip() for p in raw if str(p).strip()]
+        else:
+            ps = [p.strip() for p in re.split(r"\|\||\n{2,}", str(raw or "")) if p.strip()]
+        block = {"paras": ps} if ps else None
+    elif shape == "text":
+        v = _resolve(flat, "text")
+        block = v or None
+    else:
+        block = _assemble(shape, lambda name: _resolve(flat, name))
+
+    if block is None:
+        return None
+    if isinstance(block, str):
+        return {"text": block, **tags} if tags else block
+    for k, v in tags.items():
+        block.setdefault(k, v)
+    return block
+
+
+def _coerce(kind: str, items: list) -> list[Any]:
+    """Normalise every item a YAML/JSON list yields into a storable block, so
+    synonym field names and mixed paragraph formats all import cleanly."""
     out = []
     for it in items:
-        if isinstance(it, dict):
-            out.append(it)
-        elif isinstance(it, str) and shape == "text":
-            out.append(it)
-        elif isinstance(it, str) and shape == "paras":
-            out.append({"paras": [it]})
-        elif isinstance(it, list) and shape == "paras":
-            out.append({"paras": [str(p) for p in it]})
+        block = normalize_block(kind, it)
+        if block is not None:
+            out.append(block)
     return out
 
 
