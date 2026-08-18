@@ -28,6 +28,7 @@ from __future__ import annotations
 
 import csv
 import io
+import re
 from typing import Any
 
 import yaml
@@ -454,6 +455,41 @@ GLOBAL_COLUMNS = [
 ]
 
 
+def _block_scan_text(block: Any) -> str:
+    """All the human text in a block, for claim detection."""
+    if isinstance(block, str):
+        return block
+    if isinstance(block, dict):
+        parts = []
+        for k, v in block.items():
+            if k in ("for", "requires"):
+                continue
+            if isinstance(v, str):
+                parts.append(v)
+            elif isinstance(v, list):
+                parts.extend(str(x) for x in v)
+        return " ".join(parts)
+    return ""
+
+
+def tag_claims(block: Any) -> Any:
+    """Auto-attach `requires` for any claim the copy makes (licensed, insured,
+    24/7, warranty, financing, …). The build's honest-claims gate then filters
+    the block out for a business that hasn't declared that fact — so imported or
+    AI-written copy can mention selling points freely without ever blocking a
+    build. A plain string is promoted to a dict so it can carry the tag; `_emit`
+    unwraps it back to a string for text kinds, and `requires` is excluded from
+    the dedup fingerprint, so tagging changes neither rendering nor de-duping."""
+    text = _block_scan_text(block)
+    facts = {fact for pattern, fact, _ in CLAIM_PATTERNS if re.search(pattern, text, re.I)}
+    if not facts:
+        return block
+    out = {"text": block} if isinstance(block, str) else dict(block)
+    existing = out.get("requires") or []
+    out["requires"] = sorted(set(existing) | facts)
+    return out
+
+
 def _tag_block(block: Any, service: str) -> Any:
     """Bind a block to one service. A text-kind block is a bare string, so it is
     wrapped as {text, for}; every other shape is already a dict and just gains a
@@ -642,6 +678,9 @@ def parse_global_csv(text: str, valid_niches: set[str]) -> dict[str, Any]:
             block = _tag_block(block, service)
             report.setdefault("tagged", 0)
             report["tagged"] += 1
+        # Any claim the copy makes gets a `requires` so it self-filters per
+        # business — imported selling points never block a build.
+        block = tag_claims(block)
         result.setdefault((niche, kind), []).append(block)
         report["blocks"] += 1
 

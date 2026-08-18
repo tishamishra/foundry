@@ -60,6 +60,16 @@
         <td colspan="10">
           <div class="prompt-wrap">
             <button type="button" class="btn sm ghost" data-copy="t-{{ r.kind }}">Copy</button>
+            {% if ai_ready %}
+            <form method="post" action="{{ url_for('prompts_intel_generate') }}" class="inline" data-gen>
+              <input type="hidden" name="niche" value="{{ niche }}">
+              <input type="hidden" name="kind" value="{{ r.kind }}">
+              <input type="hidden" name="n" value="20">
+              <button class="btn sm" data-genbtn>✨ Generate 20</button>
+            </form>
+            {% else %}
+            <span class="dim" title="Set FOUNDRY_OPENAI_KEY in the environment to enable one-click generation">✨ Generate — add an OpenAI key to enable</span>
+            {% endif %}
             <pre class="prompt mono" id="t-{{ r.kind }}">{{ prompts[r.kind] }}</pre>
           </div>
         </td>
@@ -78,6 +88,12 @@
     b.addEventListener("click", function () {
       var row = document.getElementById(b.getAttribute("data-toggle"));
       if (row) row.hidden = !row.hidden;
+    });
+  });
+  document.querySelectorAll("form[data-gen]").forEach(function (f) {
+    f.addEventListener("submit", function () {
+      var b = f.querySelector("[data-genbtn]");
+      if (b) { b.disabled = true; b.textContent = "✨ Generating…"; }
     });
   });
   document.querySelectorAll("[data-copy]").forEach(function (b) {

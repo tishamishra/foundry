@@ -40,7 +40,9 @@ from core.library import KINDS, add_many, load_library, source_counts  # noqa: E
 from core.prompts import (GLOBAL_COLUMNS, REQUIRED_SCHEMA, SHAPE_CSV,  # noqa: E402
                           build_prompt, coverage as content_coverage, csv_template,
                           global_template, intel_prompt, parse_global_csv,
-                          required_fields, service_prompt, shape_of, smart_parse)
+                          csv_to_blocks, required_fields, service_prompt, shape_of,
+                          smart_parse, tag_claims)
+from core import aiwrite  # noqa: E402
 from core.tokens import unknown_tokens  # noqa: E402
 from core.preview import PreviewPool, free_port, load_asset  # noqa: E402
 from core.render import build_site  # noqa: E402
@@ -647,7 +649,57 @@ def prompts_intel():
     return render_template("prompts_intel.html", niche=niche, niche_label=niche_label,
                            target=target, coverage=cov, weakest=weakest,
                            prompts=prompts, kinds=sorted(KINDS),
+                           ai_ready=aiwrite.have_key(),
                            sites_now=(min((r["sites"] for r in cov), default=0)))
+
+
+@app.route("/prompts/intel/generate", methods=["POST"])
+@guard
+def prompts_intel_generate():
+    """Run one section's Intel prompt through the OpenAI API and store the result
+    straight into that niche's pool — the button that removes the copy-paste."""
+    niche = request.form.get("niche", "")
+    kind = request.form.get("kind", "")
+    n = max(1, min(40, int(request.form.get("n") or 20)))
+    back = url_for("prompts_intel", niche=niche)
+
+    if kind not in KINDS or niche not in set(niches()):
+        flash("Unknown niche or block type.", "bad")
+        return redirect(back)
+    if not aiwrite.have_key():
+        flash("No OpenAI key set. Add FOUNDRY_OPENAI_KEY to the environment and redeploy.", "bad")
+        return redirect(back)
+
+    niche_def = read_yaml(ROOT / "data" / "niches" / f"{niche}.yaml")
+    niche_label = niche_def.get("label") or niche.replace("-", " ").title()
+    svc_list = [s for s in (niche_def.get("services") or []) if s.get("slug")]
+    prompt = intel_prompt(niche, niche_label, kind, n, services=svc_list)
+
+    try:
+        raw = aiwrite.generate(prompt)
+    except aiwrite.AIError as exc:
+        flash(str(exc), "bad")
+        return redirect(back)
+
+    raw = aiwrite.strip_fences(raw)                 # defensive: peel any ``` fences
+    parsed = parse_global_csv(raw, {niche})
+    blocks = parsed["grouped"].get((niche, kind), [])
+    # Tolerate a model that dropped the niche/kind columns and returned just the
+    # shape columns. csv_to_blocks matches by the shape's own headers, so it never
+    # turns a stray line into a junk block the way a line-splitter would.
+    if not blocks:
+        blocks = csv_to_blocks(kind, raw)
+    if not blocks:
+        problems = "; ".join(parsed["report"].get("problems", [])[:3])
+        flash(f"The model's reply had no importable {kind} rows. {problems}".strip(), "warn")
+        return redirect(back)
+
+    blocks = [tag_claims(b) for b in blocks]   # idempotent; covers the smart_parse fallback
+    stats = add_many(ROOT, niche, kind, blocks)
+    flash(f"Generated {len(blocks)} {kind} block(s): {stats['added']} added, "
+          f"{stats['skipped_duplicate']} duplicate(s) skipped — now {stats['total']} in the "
+          f"{niche} pool.", "good")
+    return redirect(back)
 
 
 @app.route("/prompts/global.csv")
