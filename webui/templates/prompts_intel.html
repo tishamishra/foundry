@@ -61,12 +61,17 @@
           <div class="prompt-wrap">
             <button type="button" class="btn sm ghost" data-copy="t-{{ r.kind }}">Copy</button>
             {% if ai_ready %}
-            <form method="post" action="{{ url_for('prompts_intel_generate') }}" class="inline" data-gen>
-              <input type="hidden" name="niche" value="{{ niche }}">
-              <input type="hidden" name="kind" value="{{ r.kind }}">
-              <input type="hidden" name="n" value="20">
-              <button class="btn sm" data-genbtn>✨ Generate 20</button>
-            </form>
+            <span class="gen-group" style="display:inline-flex;gap:.35rem;align-items:center">
+              <span class="dim">✨ Generate:</span>
+              {% for count in [20, 50, 100] %}
+              <form method="post" action="{{ url_for('prompts_intel_generate') }}" class="inline" data-gen>
+                <input type="hidden" name="niche" value="{{ niche }}">
+                <input type="hidden" name="kind" value="{{ r.kind }}">
+                <input type="hidden" name="n" value="{{ count }}">
+                <button class="btn sm" data-genbtn>{{ count }}</button>
+              </form>
+              {% endfor %}
+            </span>
             {% else %}
             <span class="dim" title="Set FOUNDRY_OPENAI_KEY in the environment to enable one-click generation">✨ Generate — add an OpenAI key to enable</span>
             {% endif %}
@@ -92,8 +97,10 @@
   });
   document.querySelectorAll("form[data-gen]").forEach(function (f) {
     f.addEventListener("submit", function () {
+      var wrap = f.closest(".prompt-wrap") || document;
+      wrap.querySelectorAll("[data-genbtn]").forEach(function (x) { x.disabled = true; });
       var b = f.querySelector("[data-genbtn]");
-      if (b) { b.disabled = true; b.textContent = "✨ Generating…"; }
+      if (b) { b.textContent = "✨ Generating " + b.textContent + "…"; }
     });
   });
   document.querySelectorAll("[data-copy]").forEach(function (b) {

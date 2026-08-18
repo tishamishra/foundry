@@ -38,9 +38,10 @@ from core.graph import (FoundryError, STATES, list_sites, load_coverage,  # noqa
                         load_graph, parse_coverage_text, save_coverage)
 from core.library import KINDS, add_many, load_library, source_counts  # noqa: E402
 from core.prompts import (GLOBAL_COLUMNS, REQUIRED_SCHEMA, SHAPE_CSV,  # noqa: E402
-                          build_prompt, coverage as content_coverage, csv_template,
+                          api_prompt, build_prompt, coverage as content_coverage,
+                          csv_template, csv_to_blocks, finalize_ai_blocks,
                           global_template, intel_prompt, parse_global_csv,
-                          csv_to_blocks, required_fields, service_prompt, shape_of,
+                          required_fields, service_prompt, shape_of,
                           smart_parse, tag_claims)
 from core import aiwrite  # noqa: E402
 from core.tokens import unknown_tokens  # noqa: E402
@@ -660,7 +661,7 @@ def prompts_intel_generate():
     straight into that niche's pool — the button that removes the copy-paste."""
     niche = request.form.get("niche", "")
     kind = request.form.get("kind", "")
-    n = max(1, min(40, int(request.form.get("n") or 20)))
+    n = max(1, min(100, int(request.form.get("n") or 20)))
     back = url_for("prompts_intel", niche=niche)
 
     if kind not in KINDS or niche not in set(niches()):
@@ -673,32 +674,53 @@ def prompts_intel_generate():
     niche_def = read_yaml(ROOT / "data" / "niches" / f"{niche}.yaml")
     niche_label = niche_def.get("label") or niche.replace("-", " ").title()
     svc_list = [s for s in (niche_def.get("services") or []) if s.get("slug")]
-    prompt = intel_prompt(niche, niche_label, kind, n, services=svc_list)
 
-    try:
-        raw = aiwrite.generate(prompt)
-    except aiwrite.AIError as exc:
-        flash(str(exc), "bad")
+    # A model can't reliably return 100 blocks in one reply — it truncates. So we
+    # ask in batches of BATCH and accumulate distinct blocks until we reach n
+    # (or a batch comes back empty / errors). YAML keeps prose comma-safe.
+    from core.library import fingerprint
+    BATCH = 20
+    collected: list = []
+    seen: set = set()
+    batches = 0
+    max_batches = (n + BATCH - 1) // BATCH + 2      # a little slack for duplicates
+    error = None
+    while len(collected) < n and batches < max_batches:
+        batches += 1
+        want = min(BATCH, n - len(collected))
+        prompt = api_prompt(niche, niche_label, kind, max(want, 8), services=svc_list)
+        try:
+            raw = aiwrite.strip_fences(aiwrite.generate(prompt, max_tokens=8000))
+        except aiwrite.AIError as exc:
+            error = str(exc)
+            break                                    # keep whatever we already have
+        blocks = (smart_parse(kind, raw)
+                  or parse_global_csv(raw, {niche})["grouped"].get((niche, kind), [])
+                  or csv_to_blocks(kind, raw))
+        blocks = finalize_ai_blocks(kind, blocks)
+        fresh = 0
+        for b in blocks:
+            fp = fingerprint(b)
+            if fp in seen:
+                continue
+            seen.add(fp)
+            collected.append(b)
+            fresh += 1
+            if len(collected) >= n:
+                break
+        if fresh == 0:                               # model repeating itself — stop
+            break
+
+    if not collected:
+        flash(error or (f"The model's reply had no importable {kind} blocks. Try "
+                        "again — occasionally the model returns an off-format answer."), "bad")
         return redirect(back)
 
-    raw = aiwrite.strip_fences(raw)                 # defensive: peel any ``` fences
-    parsed = parse_global_csv(raw, {niche})
-    blocks = parsed["grouped"].get((niche, kind), [])
-    # Tolerate a model that dropped the niche/kind columns and returned just the
-    # shape columns. csv_to_blocks matches by the shape's own headers, so it never
-    # turns a stray line into a junk block the way a line-splitter would.
-    if not blocks:
-        blocks = csv_to_blocks(kind, raw)
-    if not blocks:
-        problems = "; ".join(parsed["report"].get("problems", [])[:3])
-        flash(f"The model's reply had no importable {kind} rows. {problems}".strip(), "warn")
-        return redirect(back)
-
-    blocks = [tag_claims(b) for b in blocks]   # idempotent; covers the smart_parse fallback
-    stats = add_many(ROOT, niche, kind, blocks)
-    flash(f"Generated {len(blocks)} {kind} block(s): {stats['added']} added, "
-          f"{stats['skipped_duplicate']} duplicate(s) skipped — now {stats['total']} in the "
-          f"{niche} pool.", "good")
+    stats = add_many(ROOT, niche, kind, collected[:n])
+    note = f" (stopped early: {error})" if error else ""
+    flash(f"Generated {len(collected)} {kind} block(s) in {batches} batch(es): "
+          f"{stats['added']} added, {stats['skipped_duplicate']} duplicate(s) skipped — "
+          f"now {stats['total']} in the {niche} pool.{note}", "good")
     return redirect(back)
 
 
