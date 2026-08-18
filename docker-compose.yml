@@ -13,6 +13,9 @@ services:
     environment:
       FOUNDRY_PASSWORD: "${FOUNDRY_PASSWORD:-change-me}"
       FOUNDRY_SECRET: "${FOUNDRY_SECRET:-change-me-long-random}"
+      # Passes the OpenAI key set in Dokploy's Environment into the container so
+      # the Intel "Generate" button turns on. Empty default = button stays hidden.
+      FOUNDRY_OPENAI_KEY: "${FOUNDRY_OPENAI_KEY:-}"
       PORT: "8080"
     volumes:
       - foundry_data:/app/data
