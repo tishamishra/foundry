@@ -640,6 +640,33 @@ def prompts_intel():
         split = source_counts(ROOT, niche)     # base / niche / yours per kind
         for r in cov:
             r["src"] = split.get(r["kind"], {"base": 0, "niche": 0, "user": 0})
+    # Per-section completion: how full the pool is relative to what `target` sites
+    # need. Drives the coloured progress bars.
+    for r in cov:
+        r["pct"] = min(100, round(100 * r["pool"] / max(1, r["target_pool"])))
+    tally = {s: 0 for s in ("empty", "thin", "ok", "strong")}
+    for r in cov:
+        tally[r["strength"]] = tally.get(r["strength"], 0) + 1
+    niche_pct = round(sum(r["pct"] for r in cov) / len(cov)) if cov else 0
+
+    # All-niches overview — the birds-eye "which niche is still empty". Counting the
+    # operator's OWN blocks (niche + user files, skipping the shared base) is cheap
+    # and is what actually differs between niches; a full capacity pass over 24
+    # niches would re-merge the base each time and take seconds.
+    overview = []
+    libdir = ROOT / "data" / "library"
+    for x in niches():
+        own = 0
+        for p in (libdir / f"{x}.yaml", libdir / "user" / f"{x}.yaml"):
+            if p.is_file():
+                data = read_yaml(p) or {}
+                own += sum(len(v) for v in data.values() if isinstance(v, list))
+        overview.append({"niche": x, "own": own})
+    max_own = max((o["own"] for o in overview), default=0) or 1
+    for o in overview:
+        o["pct"] = round(100 * o["own"] / max_own)
+    overview.sort(key=lambda o: (-o["own"], o["niche"]))
+
     # a ready small prompt for each weak section (fills the master-CSV format);
     # service-scoped kinds get the niche's own services so the prompt tags rows.
     svc_list = [s for s in (niche_def.get("services") or []) if s.get("slug")]
@@ -650,7 +677,8 @@ def prompts_intel():
     return render_template("prompts_intel.html", niche=niche, niche_label=niche_label,
                            target=target, coverage=cov, weakest=weakest,
                            prompts=prompts, kinds=sorted(KINDS),
-                           ai_ready=aiwrite.have_key(),
+                           ai_ready=aiwrite.have_key(), niche_pct=niche_pct,
+                           tally=tally, overview=overview,
                            sites_now=(min((r["sites"] for r in cov), default=0)))
 
 
