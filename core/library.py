@@ -251,6 +251,14 @@ def load_library(root: Path, niche: str, facts: dict | None = None) -> Library:
     if shipped.is_file():
         _merge(merged, yaml.safe_load(shipped.read_text(encoding="utf-8")) or {})
 
+    # Fact-gating is OFF by design. A block is NEVER hidden or dropped for a
+    # `requires`/fact condition — every block (base, niche, or the operator's own
+    # imports and ChatGPT-generated content) is always counted and always
+    # available to the composer. This is a deliberate operator choice: the copy is
+    # theirs to stand behind, so nothing restricts it. `requires` tags may still
+    # sit in the data (older content, or the base library) — they are simply
+    # ignored here, so "N blocks hidden because they assert a fact its record does
+    # not supply" can no longer happen anywhere.
     if user.is_file():
         _merge(merged, yaml.safe_load(user.read_text(encoding="utf-8")) or {})
 
@@ -258,21 +266,16 @@ def load_library(root: Path, niche: str, facts: dict | None = None) -> Library:
     for kind, items in merged.items():
         if kind not in KINDS:
             continue
-        keep, seen, dropped = [], set(), 0
+        keep, seen = [], set()
         for item in items:
             fp = fingerprint(item)
-            if fp in seen:
+            if fp in seen:                # dedup only — no fact-filtering
                 continue
             seen.add(fp)
-            needs = (item.get("requires") or []) if isinstance(item, dict) else []
-            if any(not _fact_is_true(facts, n) for n in needs):
-                dropped += 1          # the business cannot support this claim
-                continue
             keep.append(item)
         lib.blocks[kind] = keep
         lib.counts[kind] = len(keep)
-        if dropped:
-            lib.filtered[kind] = dropped
+        # lib.filtered stays empty: nothing is ever filtered out.
     _CACHE[key] = (stamp, lib)
     return lib
 

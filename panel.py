@@ -44,6 +44,7 @@ from core.prompts import (GLOBAL_COLUMNS, REQUIRED_SCHEMA, SHAPE_CSV,  # noqa: E
                           required_fields, service_prompt, shape_of,
                           smart_parse, tag_claims)
 from core import aiwrite  # noqa: E402
+from core import bizcsv  # noqa: E402
 from core.tokens import unknown_tokens  # noqa: E402
 from core.preview import PreviewPool, free_port, load_asset  # noqa: E402
 from core.render import build_site  # noqa: E402
@@ -313,6 +314,66 @@ def business_save():
     except FoundryError as exc:
         flash(str(exc), "bad")
         return redirect(url_for("business_form"))
+
+
+def _payload_to_record(p: dict) -> dict:
+    """Shape a bizcsv payload (flat address) into the nested record the New
+    Business form renders for review."""
+    return {
+        "company": p.get("company"), "brand": p.get("brand"),
+        "phone": p.get("phone"), "email": p.get("email"),
+        "address": {"street": p.get("street"), "city": p.get("city"),
+                    "state": p.get("state"), "zip": p.get("zip")},
+        "facts": p.get("facts") or {},
+    }
+
+
+@app.route("/business/template.csv")
+@guard
+def business_template():
+    from flask import Response
+    return Response(bizcsv.template_csv(), mimetype="text/csv",
+                    headers={"Content-Disposition":
+                             'attachment; filename="foundry-businesses-template.csv"'})
+
+
+@app.route("/business/import", methods=["POST"])
+@guard
+def business_import():
+    """One entry point for both CSV paths. A single data row pre-fills the New
+    Business form so you can review it; many rows are created straight away."""
+    text = request.form.get("rows", "")
+    upload = request.files.get("file")
+    if upload and upload.filename:
+        text = upload.read().decode("utf-8", "replace")
+
+    payloads, problems = bizcsv.parse(text)
+
+    # A single row: pre-fill the form for review rather than saving blind.
+    if len(payloads) == 1 and request.form.get("mode") != "bulk":
+        for msg in problems:
+            flash(msg, "warn")
+        flash("Review the details below, then Save.", "good")
+        return render_template("business_form.html",
+                               b=_payload_to_record(payloads[0]), slug=None)
+
+    # Many rows (or the bulk box): create them all.
+    saved, failed = [], []
+    for p in payloads:
+        try:
+            slug = save_business(ROOT, {"slug": p.get("company"), **p})
+            saved.append(slug)
+        except FoundryError as exc:
+            failed.append(f"{p.get('company') or 'a row'}: {exc}")
+
+    if saved:
+        flash(f"Imported {len(saved)} business(es): {', '.join(saved[:8])}"
+              f"{' …' if len(saved) > 8 else ''}.", "good")
+    for msg in (problems + failed):
+        flash(msg, "warn" if saved else "bad")
+    if not saved and not payloads:
+        flash("Nothing was imported — check the column names against the template.", "bad")
+    return redirect(url_for("dashboard"))
 
 
 @app.route("/business/<slug>/delete", methods=["POST"])

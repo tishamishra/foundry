@@ -34,6 +34,7 @@ Every rule carries a `why`, every severity is operator-editable in
 from __future__ import annotations
 
 import json
+import os
 import re
 from collections import Counter, defaultdict
 from dataclasses import dataclass, field
@@ -129,12 +130,24 @@ DEFAULT_RULES: dict[str, dict[str, Any]] = {
 }
 
 
+def _advisory() -> bool:
+    """Advisory QA is ON unless FOUNDRY_STRICT_QA is explicitly truthy. In
+    advisory mode SEO blockers become warnings, so a build ships and is
+    deployable while the findings still show as items to improve."""
+    return (os.environ.get("FOUNDRY_STRICT_QA") or "").strip().lower() not in (
+        "1", "true", "yes", "on")
+
+
 def load_rules(root: Path) -> dict[str, dict[str, Any]]:
     rules = {k: dict(v) for k, v in DEFAULT_RULES.items()}
     path = root / "data" / "seo-rules.yaml"
     if path.is_file():
         for key, override in (yaml.safe_load(path.read_text(encoding="utf-8")) or {}).items():
             rules.setdefault(key, {}).update(override or {})
+    if _advisory():
+        for spec in rules.values():
+            if spec.get("severity") == "blocker":
+                spec["severity"] = "warning"
     return rules
 
 

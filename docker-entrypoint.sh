@@ -10,6 +10,18 @@ else
   echo "[foundry] existing data volume found — leaving your content untouched"
 fi
 
+# Design DEFINITIONS (themes, style packs, page skeletons) are code, not your
+# content — there is no UI that edits them, and new fonts/looks ship with the
+# image. So refresh just these three from the baked seed on every boot. Your
+# businesses, sites, imported library, coverage and images are never touched.
+# This is what makes a design update actually reach the live sites on redeploy.
+for f in themes.yaml styles.yaml skeletons.yaml; do
+  if [ -f "/seed-data/$f" ]; then
+    cp -f "/seed-data/$f" "/app/data/$f"
+    echo "[foundry] refreshed design config: $f"
+  fi
+done
+
 # One worker, many threads: the build runner and preview pool keep state in
 # memory, so multiple workers would not see each other's jobs. Threads give
 # concurrency without splitting that state.

@@ -32,6 +32,13 @@ from dataclasses import dataclass, field
 from typing import Any, Callable
 
 
+# A build should never take longer than this. Past it, the job is treated as
+# wedged and reaped so the next build can start — without this, one hung build
+# leaves the panel "stuck" forever, because every later build joins the dead one
+# instead of starting. Generous by design; a real build finishes far sooner.
+MAX_JOB_SECONDS = 1800
+
+
 @dataclass
 class Job:
     id: str
@@ -42,6 +49,7 @@ class Job:
     started: float = field(default_factory=time.time)
     finished: float | None = None
     error: str | None = None
+    thread: Any = field(default=None, repr=False)
 
     @property
     def running(self) -> bool:
@@ -71,13 +79,35 @@ class Runner:
         self._active: str | None = None
         self._keep = keep
 
+    def _reap(self, job: Job | None) -> None:
+        """Finalize a job that is wedged: its worker thread has died without
+        marking it finished (should not happen, but defends against it), or it
+        has run past MAX_JOB_SECONDS. Either way, stop treating it as running so
+        the next build is not blocked behind a corpse. Caller holds the lock."""
+        if not job or job.finished is not None:
+            return
+        dead = job.thread is not None and not job.thread.is_alive()
+        stale = (time.time() - job.started) > MAX_JOB_SECONDS
+        if dead or stale:
+            job.current = None
+            job.finished = time.time()
+            if not job.error:
+                job.error = ("The build worker stopped unexpectedly."
+                             if dead else
+                             f"The build exceeded {MAX_JOB_SECONDS // 60} minutes "
+                             "and was released so new builds can run.")
+
     def active(self) -> Job | None:
         with self._lock:
-            return self._jobs.get(self._active) if self._active else None
+            job = self._jobs.get(self._active) if self._active else None
+            self._reap(job)
+            return job
 
     def get(self, job_id: str) -> Job | None:
         with self._lock:
-            return self._jobs.get(job_id)
+            job = self._jobs.get(job_id)
+            self._reap(job)
+            return job
 
     def recent(self) -> list[Job]:
         with self._lock:
@@ -90,6 +120,7 @@ class Runner:
         directory that is being deleted underneath the upload."""
         with self._lock:
             running = self._jobs.get(self._active) if self._active else None
+            self._reap(running)                # release a wedged job first
             if running and running.running:
                 # Join the running job rather than racing it into the same dist/.
                 return running
@@ -114,7 +145,8 @@ class Runner:
                 job.current = None
                 job.finished = time.time()
 
-        threading.Thread(target=run, daemon=True, name=f"build-{job_id}").start()
+        job.thread = threading.Thread(target=run, daemon=True, name=f"build-{job_id}")
+        job.thread.start()
         return job
 
 

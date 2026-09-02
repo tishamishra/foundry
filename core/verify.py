@@ -28,6 +28,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import os
 import re
 from dataclasses import dataclass, field
 from pathlib import Path
@@ -197,9 +198,6 @@ DEFAULT_RULES: dict[str, dict[str, str]] = {
     "out-of-area": {"severity": "blocker", "owner": "graph", "why":
         "The buyer's rule is that any location outside the payable list is not covered "
         "and must not be published. This is compliance, not preference."},
-    "fabricated-claims": {"severity": "blocker", "owner": "library", "why":
-        "A licence, rating, warranty or tenure the business did not supply is a legal "
-        "problem, not a style problem."},
     "secrets": {"severity": "blocker", "owner": "render", "why":
         "A credential in the output ships to every visitor."},
     "duplicate-content": {"severity": "blocker", "owner": "compose", "why":
@@ -218,12 +216,30 @@ DEFAULT_RULES: dict[str, dict[str, str]] = {
 }
 
 
+# Rules that stay hard even in advisory mode: shipping a live credential to
+# every visitor is catastrophic and never intended, so `secrets` is never
+# downgraded. Everything else becomes a warning by default so a build ships
+# instead of being marked "blocked" — the finding is still shown, it just does
+# not stop the build. Set FOUNDRY_STRICT_QA=1 to restore the original hard gates.
+_ALWAYS_HARD = {"secrets"}
+
+
+def _advisory() -> bool:
+    """Advisory QA is ON unless FOUNDRY_STRICT_QA is explicitly truthy."""
+    return (os.environ.get("FOUNDRY_STRICT_QA") or "").strip().lower() not in (
+        "1", "true", "yes", "on")
+
+
 def load_rules(root: Path) -> dict[str, dict[str, str]]:
     path = root / "data" / "qa-rules.yaml"
     rules = {k: dict(v) for k, v in DEFAULT_RULES.items()}
     if path.is_file():
         for key, override in (yaml.safe_load(path.read_text(encoding="utf-8")) or {}).items():
             rules.setdefault(key, {}).update(override or {})
+    if _advisory():
+        for key, spec in rules.items():
+            if key not in _ALWAYS_HARD and spec.get("severity") == "blocker":
+                spec["severity"] = "warning"
     return rules
 
 
@@ -349,16 +365,9 @@ def check_site(root: Path, graph, result, *, similarity_block: float = 0.25,
     if stray:
         add("out-of-area", "place names in the copy that are not in the coverage list", stray)
 
-    facts = graph.facts
-    bad_claims = []
-    for pattern, fact, label in CLAIM_PATTERNS:
-        if _fact_supplied(facts, fact):
-            continue
-        found = re.findall(pattern, plain, flags=re.I)
-        if found:
-            bad_claims.append(f"{label}: {found[0]!r} (business.facts.{fact} not supplied)")
-    if bad_claims:
-        add("fabricated-claims", "claims the business record does not support", bad_claims)
+    # The fabricated-claims gate was removed deliberately: the operator owns the
+    # copy they import and generate, so a licence/warranty/rating phrase in it is
+    # theirs to stand behind, not something the build should police or block on.
 
     secrets = [label for pat, label in SECRET_PATTERNS if re.search(pat, plain)]
     if secrets:

@@ -29,6 +29,7 @@ exactly the input `foundry fill` consumes.
 from __future__ import annotations
 
 import re
+import time
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any, Iterable
@@ -68,9 +69,16 @@ class SeedResult:
 
 def find_seed(root: Path, graph: Graph, *, exclude: str | None = None,
               candidates: Iterable[int] = range(1, 400),
-              variants: int = 4) -> SeedResult:
-    """Pick the composition seed whose copy overlaps least with its siblings."""
+              variants: int = 4, time_budget: float | None = 8.0) -> SeedResult:
+    """Pick the composition seed whose copy overlaps least with its siblings.
+
+    `time_budget` (seconds) caps the search so an interactive "Save and build"
+    cannot hang the request: once the budget is spent, the best seed found so far
+    is returned. Composing text for hundreds of candidates against many siblings
+    is the slow part; the budget bounds it. Pass None for an exhaustive search
+    (batch spawning, where wall-clock is not user-facing)."""
     niche = graph.site["niche"]
+    deadline = (time.monotonic() + time_budget) if time_budget else None
 
     siblings: list[tuple[str, set[str]]] = []
     for site_id in list_sites(root):
@@ -107,6 +115,10 @@ def find_seed(root: Path, graph: Graph, *, exclude: str | None = None,
                               advice="first site of this niche — nothing to differ from yet")
             break
         if worst == 0.0:
+            break
+        if deadline is not None and time.monotonic() >= deadline:
+            # Budget spent — keep the best seed found so far rather than stalling
+            # the request. The remaining candidates rarely beat it.
             break
 
     best.ranked = sorted(ranked, key=lambda r: r[1])[:8]
@@ -327,7 +339,7 @@ def create_from_rows(root: Path, rows: list[BulkRow], *, niche: str, states: lis
             })
             graph = load_graph(root, site_id)
             seed = find_seed(root, graph, exclude=site_id, variants=variants,
-                             candidates=range(1, search_seeds + 1))
+                             candidates=range(1, search_seeds + 1), time_budget=None)
             save_site(root, {
                 "site_id": site_id, "business": slug, "niche": niche,
                 "domain": row.domain, "theme": theme, "style": style, "skeleton": skeleton,

@@ -26,7 +26,7 @@
     </label>
     <label>Style pack
       <select name="style">
-        {% for key, st in STYLES.items() %}<option value="{{ key }}" {{ 'selected' if s.style == key }}>{{ st.label }}</option>{% endfor %}
+        {% for key, st in STYLES.items() %}<option value="{{ key }}" {{ 'selected' if s.style == key or (not s.style and key == 'bold') }}>{{ st.label }}</option>{% endfor %}
       </select>
     </label>
     <label>Page skeleton

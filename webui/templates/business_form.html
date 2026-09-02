@@ -1,5 +1,25 @@
 {% extends "base.html" %}{% block body %}
 <div class="head"><h1>{{ 'Edit business' if slug else 'New business' }}</h1></div>
+
+{% if not slug %}
+<form method="post" action="{{ url_for('business_import') }}" enctype="multipart/form-data" class="card">
+  <h2>Upload a CSV</h2>
+  <p class="sub">Skip the typing. Columns can be in any order — Foundry matches them by name
+  (<code>company</code>, <code>phone</code>, <code>email</code>, <code>city</code>, <code>state</code>,
+  <code>warranty</code>, <code>licensed</code>, …) and ignores extras.
+  <strong>One row</strong> fills the form below for you to review; <strong>many rows</strong> create
+  every business at once.</p>
+  <label class="upload">CSV file<input type="file" name="file" accept=".csv,text/csv"></label>
+  <p class="sub" style="margin:.5rem 0 .3rem">…or paste rows here:</p>
+  <textarea name="rows" rows="4" placeholder="company,phone,city,state,warranty,licensed
+Control Check Roofing,+1 833 000 0001,Marietta,GA,10,yes" style="width:100%;font-family:ui-monospace,monospace;font-size:.85rem"></textarea>
+  <div class="foot" style="align-items:center;gap:.8rem">
+    <button class="btn">Upload CSV</button>
+    <a class="quiet" href="{{ url_for('business_template') }}">Download a template CSV ↓</a>
+  </div>
+</form>
+{% endif %}
+
 <form method="post" action="{{ url_for('business_save') }}" class="card">
   <input type="hidden" name="slug" value="{{ b.slug or '' }}">
   <div class="two">

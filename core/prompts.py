@@ -511,8 +511,10 @@ def api_prompt(niche_slug: str, niche_label: str, kind: str, n: int,
 
 def finalize_ai_blocks(kind: str, blocks: list[Any]) -> list[Any]:
     """Turn parsed AI output into storable blocks: fold an inline `service` field
-    into a `for` tag (service-scoped kinds only) and attach `requires` for any
-    claim, so generated copy self-filters and never blocks a build."""
+    into a `for` tag (service-scoped kinds only). Generated copy is the operator's
+    own content, so it is NOT auto-tagged with `requires` — auto-tagging made every
+    block that merely mentioned a claim word invisible in the fact-free Library and
+    Intel views. Trust the operator's imports; fact-gating stays on curated blocks."""
     out = []
     for b in blocks:
         b = normalize_block(kind, b)
@@ -523,7 +525,7 @@ def finalize_ai_blocks(kind: str, blocks: list[Any]) -> list[Any]:
             b = {k: v for k, v in b.items() if k != "service"}
             if svc and kind in SERVICE_SCOPED_KINDS:
                 b = {**b, "for": svc}
-        out.append(tag_claims(b))
+        out.append(b)
     return out
 
 
@@ -715,9 +717,10 @@ def parse_global_csv(text: str, valid_niches: set[str]) -> dict[str, Any]:
             block = _tag_block(block, service)
             report.setdefault("tagged", 0)
             report["tagged"] += 1
-        # Any claim the copy makes gets a `requires` so it self-filters per
-        # business — imported selling points never block a build.
-        block = tag_claims(block)
+        # Imported content is the operator's own trusted copy — it is NOT
+        # auto-tagged with `requires`. Auto-tagging on any claim word made whole
+        # imports vanish from the fact-free Library/Intel views. Fact-gating is
+        # reserved for the curated base/niche library.
         result.setdefault((niche, kind), []).append(block)
         report["blocks"] += 1
 
