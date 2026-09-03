@@ -9,3 +9,7 @@ node_modules/
 __pycache__/
 *.pyc
 .foundry-trash-*
+
+# Cowork-delivered files (screenshots, previews) — not part of the app
+Claude outputs/
+_to_delete/
