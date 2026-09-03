@@ -1,4 +1,43 @@
 {% extends "base.html" %}{% block body %}
+<style>
+  .theme-head{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:6px}
+  .theme-head h2{margin:0}
+  .spin-btn{display:inline-flex;align-items:center;gap:7px}
+  .spin-btn .dice{display:inline-block;font-size:15px;line-height:1}
+  .spin-btn.spinning .dice{animation:diceroll .5s linear infinite}
+  @keyframes diceroll{to{transform:rotate(360deg)}}
+
+  .theme-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(184px,1fr));gap:14px;margin:14px 0 8px}
+  .theme-card{position:relative;padding:0;border:2px solid #e2e6ee;border-radius:14px;background:#fff;
+    cursor:pointer;overflow:hidden;text-align:left;font:inherit;
+    transition:transform .12s ease,box-shadow .12s ease,border-color .12s ease}
+  .theme-card:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(15,23,42,.12)}
+  .theme-card.on{border-color:var(--tb);
+    box-shadow:0 0 0 3px color-mix(in srgb,var(--tb) 26%,transparent),0 10px 24px rgba(15,23,42,.14)}
+  .theme-card.flash{border-color:var(--tb);transform:translateY(-2px);
+    box-shadow:0 0 0 3px color-mix(in srgb,var(--tb) 34%,transparent),0 12px 26px rgba(15,23,42,.18)}
+
+  .tc-preview{display:block;background:var(--tsurf)}
+  .tc-bar{display:flex;align-items:center;gap:6px;background:var(--tb);padding:9px 11px}
+  .tc-logo{width:22px;height:8px;border-radius:3px;background:rgba(255,255,255,.92)}
+  .tc-nav{flex:1;height:6px;border-radius:3px;background:rgba(255,255,255,.4)}
+  .tc-body{display:block;padding:13px 12px 16px}
+  .tc-h1{display:block;height:9px;width:78%;border-radius:4px;background:var(--tink);margin-bottom:7px}
+  .tc-h2{display:block;height:7px;width:55%;border-radius:4px;background:var(--tmuted);margin-bottom:13px}
+  .tc-btn{display:inline-block;font-size:10px;font-weight:700;color:var(--tat);background:var(--ta);
+    padding:6px 12px;border-radius:7px;letter-spacing:.2px}
+
+  .tc-foot{display:flex;align-items:center;justify-content:space-between;gap:8px;
+    padding:10px 12px;border-top:1px solid var(--tline);background:#fff}
+  .tc-name{font-weight:700;font-size:13px;color:#0f172a}
+  .tc-dots{display:inline-flex;gap:4px}
+  .tc-dots i{width:11px;height:11px;border-radius:50%;display:inline-block;box-shadow:inset 0 0 0 1px rgba(0,0,0,.08)}
+
+  .tc-check{position:absolute;top:9px;right:9px;width:22px;height:22px;border-radius:50%;
+    background:var(--tb);color:#fff;font-size:13px;font-weight:800;line-height:1;
+    display:none;align-items:center;justify-content:center}
+  .theme-card.on .tc-check{display:flex}
+</style>
 <div class="head"><h1>{{ 'Edit site' if site_id else 'New site' }}</h1>
   <p class="sub">A site is a <em>placement</em>: this business, on this domain, over this coverage, with this composition.</p></div>
 
@@ -19,11 +58,6 @@
         {% for n in NICHES %}<option value="{{ n }}" {{ 'selected' if s.niche == n }}>{{ n }}</option>{% endfor %}
       </select>
     </label>
-    <label>Theme
-      <select name="theme">
-        {% for key, t in THEMES.items() %}<option value="{{ key }}" {{ 'selected' if s.theme == key }}>{{ t.label }}</option>{% endfor %}
-      </select>
-    </label>
     <label>Style pack
       <select name="style">
         {% for key, st in STYLES.items() %}<option value="{{ key }}" {{ 'selected' if s.style == key or (not s.style and key == 'bold') }}>{{ st.label }}</option>{% endfor %}
@@ -34,6 +68,44 @@
         {% for key, sk in SKELETONS.items() %}<option value="{{ key }}" {{ 'selected' if s.skeleton == key }}>{{ sk.label }}</option>{% endfor %}
       </select>
     </label>
+  </div>
+
+  {# ---- Colour theme: a visual picker over the full-palette themes ----
+     Each card is a miniature of the finished site — a branded header bar, a
+     headline, and an accent button on the theme's own surface — so the operator
+     picks by seeing the whole combination, not a colour name. The value posts
+     through the hidden <input name="theme">. The Spin button rolls a random
+     theme so every new site can look different without a decision. #}
+  <div class="theme-head">
+    <h2>Colour theme</h2>
+    <button type="button" class="btn sm ghost spin-btn" data-theme-spin>
+      <span class="dice">🎲</span> Spin a random theme
+    </button>
+  </div>
+  <p class="sub">Every card is the whole site — header, buttons, links and accents all move
+  together. Click one, or hit <strong>Spin</strong> and let it land on a look.</p>
+
+  <input type="hidden" name="theme" value="{{ s.theme or 'slate' }}" data-theme-input>
+  <div class="theme-grid" data-theme-grid>
+    {% for key, t in THEMES.items() %}
+    <button type="button" class="theme-card{{ ' on' if (s.theme or 'slate') == key }}"
+      data-theme-key="{{ key }}"
+      style="--tb:{{ t.brand }};--tbd:{{ t.brand_dark }};--tbl:{{ t.brand_light }};--ta:{{ t.accent }};--tat:{{ t.accent_text }};--tink:{{ t.ink }};--tsurf:{{ t.surface }};--tline:{{ t.line }};--tmuted:{{ t.muted }}">
+      <span class="tc-preview">
+        <span class="tc-bar"><span class="tc-logo"></span><span class="tc-nav"></span></span>
+        <span class="tc-body">
+          <span class="tc-h1"></span>
+          <span class="tc-h2"></span>
+          <span class="tc-btn">Get a quote</span>
+        </span>
+      </span>
+      <span class="tc-foot">
+        <span class="tc-name">{{ t.label }}</span>
+        <span class="tc-dots"><i style="background:{{ t.brand }}"></i><i style="background:{{ t.brand_dark }}"></i><i style="background:{{ t.accent }}"></i></span>
+      </span>
+      <span class="tc-check" aria-hidden="true">✓</span>
+    </button>
+    {% endfor %}
   </div>
 
   <h2>Services</h2>
@@ -313,6 +385,59 @@
     if (pending) cancelAnimationFrame(pending);
     pending = requestAnimationFrame(function () { pending = null; applyFilter(det, q); });
   });
+})();
+
+/* Colour theme: click a card to select it, or Spin to land on a random one.
+ * The selected key posts through the hidden <input name="theme">, so nothing
+ * about how the site is saved changes — this is just a nicer way to choose. */
+(function () {
+  var grid = document.querySelector("[data-theme-grid]");
+  if (!grid) return;
+  var input = document.querySelector("[data-theme-input]");
+  var spin  = document.querySelector("[data-theme-spin]");
+  var cards = Array.prototype.slice.call(grid.querySelectorAll(".theme-card"));
+
+  function select(card) {
+    cards.forEach(function (c) { c.classList.remove("on", "flash"); });
+    card.classList.add("on");
+    input.value = card.getAttribute("data-theme-key");
+  }
+
+  grid.addEventListener("click", function (e) {
+    var card = e.target.closest(".theme-card");
+    if (card) select(card);
+  });
+
+  if (spin) {
+    spin.addEventListener("click", function () {
+      if (spin.classList.contains("spinning") || cards.length < 2) return;
+      spin.classList.add("spinning");
+      // Land on a random theme other than the one already selected.
+      var current = input.value;
+      var pool = cards.filter(function (c) { return c.getAttribute("data-theme-key") !== current; });
+      var target = pool[Math.floor(Math.random() * pool.length)] || cards[0];
+
+      // A short roulette: flash cards in turn, decelerating, then settle on
+      // the target. Purely decorative — the result is `target` regardless.
+      var i = 0, ticks = 16 + Math.floor(Math.random() * 6), delay = 45;
+      cards.forEach(function (c) { c.classList.remove("on"); });
+      function step() {
+        cards.forEach(function (c) { c.classList.remove("flash"); });
+        if (i >= ticks) {
+          select(target);
+          target.scrollIntoView({ block: "nearest", behavior: "smooth" });
+          spin.classList.remove("spinning");
+          return;
+        }
+        var c = cards[i % cards.length];
+        c.classList.add("flash");
+        i++;
+        if (i > ticks - 6) delay += 32;        // slow down near the end
+        setTimeout(step, delay);
+      }
+      step();
+    });
+  }
 })();
 </script>
 {% endblock %}
