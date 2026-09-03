@@ -1,19 +1,31 @@
-<section class="sec">
+<section class="sec reviews-sec">
   <div class="wrap">
     <h2 class="section-head">{{ content.headings.reviews or 'What customers say' }}</h2>
     <div class="carousel" data-carousel>
       <div class="car-track">
         {% for r in (lc.reviews if lc is defined else content.reviews) %}
+        {% set np = r.name.split() %}
+        {% set initials = (np[0][0] if np else '?') ~ (np[1][0] if np|length > 1 else '') %}
         <figure class="car-slide">
+          <span class="car-mark" aria-hidden="true">&ldquo;</span>
+          <div class="car-stars" aria-label="5 out of 5 stars">
+            {% for _ in range(5) %}<svg viewBox="0 0 20 20" width="17" height="17" aria-hidden="true"><path d="M10 1.6l2.5 5 5.5.8-4 3.9.9 5.5L10 14.9 5.1 16.7l.9-5.5-4-3.9 5.5-.8z" fill="currentColor"/></svg>{% endfor %}
+          </div>
           <blockquote>{{ r.text }}</blockquote>
-          <figcaption>{{ r.name }}{% if t.city %} · {{ t.city }}, {{ t.state_abbr }}{% endif %}</figcaption>
+          <figcaption>
+            <span class="car-av" aria-hidden="true">{{ initials|upper }}</span>
+            <span class="car-who">
+              <span class="car-name">{{ r.name }}</span>
+              {% if t.city %}<span class="car-sub">{{ t.city }}, {{ t.state_abbr }}</span>{% endif %}
+            </span>
+          </figcaption>
         </figure>
         {% endfor %}
       </div>
       <div class="car-nav">
-        <button class="car-btn" data-car="prev" aria-label="Previous">&larr;</button>
+        <button class="car-btn" data-car="prev" aria-label="Previous review">&larr;</button>
         <div class="car-dots"></div>
-        <button class="car-btn" data-car="next" aria-label="Next">&rarr;</button>
+        <button class="car-btn" data-car="next" aria-label="Next review">&rarr;</button>
       </div>
     </div>
   </div>
