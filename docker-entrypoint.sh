@@ -31,6 +31,17 @@ if [ -f "/seed-data/library/_base.yaml" ]; then
   echo "[foundry] refreshed base library: _base.yaml"
 fi
 
+# Niche DEFINITIONS (the service list, schema type and SEO title/description
+# templates per trade) are shipped config, not your content — there is no UI
+# that edits them. Refresh them so service-list changes (e.g. plumbing's
+# expanded services) actually reach the panel and new builds on redeploy. The
+# services a given site SELECTS live in that site's own record and are never
+# touched here.
+if [ -d "/seed-data/niches" ]; then
+  cp -f /seed-data/niches/*.yaml /app/data/niches/ 2>/dev/null || true
+  echo "[foundry] refreshed niche definitions"
+fi
+
 # One worker, many threads: the build runner and preview pool keep state in
 # memory, so multiple workers would not see each other's jobs. Threads give
 # concurrency without splitting that state.

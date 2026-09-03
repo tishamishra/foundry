@@ -4,7 +4,9 @@
     <div class="grid grid-3">
       {% for s in services %}
       <a class="card" href="{% if t.city %}/services/{{ s.slug }}/{{ t.slug or (t.city|slug) + '-' + t.state_abbr|lower }}{% else %}/services/{{ s.slug }}{% endif %}">
-        <h3>{{ s.name }}</h3>
+        {# Localise the service name on place pages so the link text carries the
+           local keyword ("Leak Detection in Dallas"); stays plain elsewhere. #}
+        <h3>{{ s.name }}{% if t.city %} in {{ t.city }}{% elif t.county %} in {{ t.county }}{% endif %}</h3>
         <p>{{ s.summary }}</p>
         <span class="more">Learn more &rarr;</span>
       </a>
