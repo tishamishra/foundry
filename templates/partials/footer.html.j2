@@ -1,15 +1,33 @@
-</main>
 <footer class="ftr">
-  <div class="wrap ftr-in">
-    <div>
+  <div class="wrap ftr-grid">
+    <div class="ftr-brand">
       <p class="mark">{{ biz.company }}</p>
-      <p><a href="tel:{{ t.phone_link }}">{{ t.phone }}</a>{% if t.email %} &middot; <a href="mailto:{{ t.email }}">{{ t.email }}</a>{% endif %}</p>
+      <p class="ftr-blurb">{{ niche.label }} across {{ locations|length }} communities in
+        {{ counties|length }} counties. An on-site assessment and a written quote before any
+        work begins — nothing priced from the kerb.</p>
+      <p class="ftr-phone"><a href="tel:{{ t.phone_link }}">{{ t.phone }}</a></p>
+      {% if t.email %}<p class="micro"><a href="mailto:{{ t.email }}">{{ t.email }}</a></p>{% endif %}
       {% if t.address %}<p class="micro">{{ t.address }}</p>{% endif %}
     </div>
-    <nav class="ftr-nav">
-      {% for s in services %}<a href="/services/{{ s.slug }}">{{ s.name }}</a>{% endfor %}
-      <a href="/areas">Service Areas</a><a href="/about">About</a><a href="/contact">Contact</a>
-    </nav>
+    <div class="ftr-col">
+      <h3>Services</h3>
+      <ul>{% for s in services %}<li><a href="/services/{{ s.slug }}">{{ s.name }}</a></li>{% endfor %}</ul>
+    </div>
+    <div class="ftr-col">
+      <h3>Service Areas</h3>
+      <ul>
+        {% for c in locations[:5] %}<li><a href="/areas/{{ c.slug }}">{{ c.city }}</a></li>{% endfor %}
+        <li><a href="/areas">All service areas</a></li>
+      </ul>
+    </div>
+    <div class="ftr-col">
+      <h3>Company</h3>
+      <ul>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/areas">Service Areas</a></li>
+      </ul>
+    </div>
   </div>
   <div class="wrap ftr-legal">
     <p>{{ globals.footer.disclaimer }}</p>

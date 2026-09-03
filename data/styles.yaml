@@ -25,7 +25,7 @@ classic:
 
 bold:
   label: Bold
-  hero: banner
+  hero: split
   cards: raised
   headline: condensed
   accent: highlight

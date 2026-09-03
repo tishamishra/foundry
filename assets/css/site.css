@@ -647,3 +647,128 @@ body[data-shell=directory] .lede{max-width:70ch}
 .answer .wrap{padding:1.1rem 0}
 .answer-lead{margin:0;font-size:1.12rem;line-height:1.6;font-weight:500;color:var(--ink);max-width:60ch}
 @media (min-width:768px){.answer-lead{font-size:1.2rem}}
+
+/* ========================================================================
+   13. SLATE REVAMP LAYER  (premium baseline — appended so it wins)
+   Colour still comes from the theme vars; this upgrades the treatment.
+   ======================================================================== */
+:root{--deep:color-mix(in srgb,var(--brand-dark) 74%,#000)}
+
+/* --- premium hero: split / stacked become a blue-gradient hero + card --- */
+body[data-hero=split] .hero,
+body[data-hero=stacked] .hero{
+  background:radial-gradient(125% 135% at 88% -15%,
+    color-mix(in srgb,var(--brand) 80%,#fff) 0%, var(--brand) 34%,
+    var(--brand-dark) 72%, var(--deep) 100%);
+  border-bottom:0;overflow:hidden;color:#fff}
+body[data-hero=split] .hero::before,
+body[data-hero=stacked] .hero::before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;
+  background:radial-gradient(40% 55% at 92% 12%, color-mix(in srgb,var(--accent) 32%,transparent), transparent 70%)}
+body[data-hero=split] .hero .hero-in,
+body[data-hero=stacked] .hero .hero-in{position:relative;z-index:2}
+body[data-hero=split] .hero h1,body[data-hero=stacked] .hero h1{color:#fff}
+body[data-hero=split] .hero h1 em,body[data-hero=stacked] .hero h1 em{color:#ffce85;font-style:normal}
+body[data-hero=split] .hero .lede,body[data-hero=stacked] .hero .lede{color:rgba(255,255,255,.9)}
+body[data-hero=split] .hero .micro,body[data-hero=split] .hero .hero-zip,
+body[data-hero=stacked] .hero .micro,body[data-hero=stacked] .hero .hero-zip{color:rgba(255,255,255,.72)}
+body[data-hero=split] .hero .eyebrow,body[data-hero=stacked] .hero .eyebrow{
+  color:var(--accent);display:inline-flex;align-items:center;gap:.55rem}
+body[data-hero=split] .hero .eyebrow::before,body[data-hero=stacked] .hero .eyebrow::before{
+  content:"";width:24px;height:2px;background:var(--accent);border-radius:2px}
+body[data-hero=split] .hero .ticks,body[data-hero=stacked] .hero .ticks{
+  grid-template-columns:1fr 1fr;gap:.6rem 1.4rem;margin:1.6rem 0}
+@media(max-width:560px){body[data-hero=split] .hero .ticks{grid-template-columns:1fr}}
+body[data-hero=split] .hero .ticks li,body[data-hero=stacked] .hero .ticks li{color:#eaf1ff}
+body[data-hero=split] .hero .ticks li::before,body[data-hero=stacked] .hero .ticks li::before{border-color:var(--accent)}
+body[data-hero=split] .hero .btn-ghost,body[data-hero=stacked] .hero .btn-ghost{
+  background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.5);color:#fff}
+body[data-hero=split] .hero .btn-ghost:hover,body[data-hero=stacked] .hero .btn-ghost:hover{
+  background:rgba(255,255,255,.16);color:#fff}
+
+/* hero trust card */
+.hero-card{background:#fff;color:var(--ink);border-radius:18px;padding:1.6rem;
+  box-shadow:0 34px 70px -30px rgba(8,20,55,.55)}
+.hero-card .hc-rate{display:flex;align-items:center;gap:.5rem;font-size:.85rem;color:var(--muted);font-weight:600;margin:0}
+.hc-stars{color:var(--accent);letter-spacing:2px}
+.hero-card .hc-h{font-size:1.3rem;margin:.55rem 0 .2rem;color:var(--ink)}
+.hero-card .hc-sub{font-size:.92rem;color:var(--muted);margin:0 0 1rem}
+.hc-proof{list-style:none;padding:0;margin:0 0 1.1rem;display:grid;gap:.6rem}
+.hc-proof li{position:relative;padding-left:1.7rem;font-size:.93rem;font-weight:500;color:var(--ink)}
+.hc-proof li::before{content:"";position:absolute;left:.2rem;top:.42em;width:.6rem;height:.34rem;
+  border-left:2.5px solid var(--brand);border-bottom:2.5px solid var(--brand);transform:rotate(-45deg)}
+.hero-card .btn-accent{width:100%}
+.hc-assure{margin:.85rem 0 0;font-size:.8rem;color:var(--muted);text-align:center}
+
+/* hero map embed (local pages) */
+.mapembed{border-radius:16px;overflow:hidden;border:4px solid rgba(255,255,255,.22);
+  box-shadow:0 30px 60px -30px rgba(0,0,0,.45);line-height:0;background:#dbe7ff}
+.mapembed iframe{width:100%;height:340px;border:0;display:block}
+.maptag{margin:.6rem 0 0;font-size:.82rem;color:rgba(255,255,255,.75)}
+
+/* --- section headings get a small accent bar (the eyebrow feel) --- */
+.sec .wrap>h2,.sec .wrap>.section-head{position:relative;padding-top:1rem}
+.sec .wrap>h2::after,.sec .wrap>.section-head::after{}
+.sec .wrap>h2::before,.sec .wrap>.section-head::before{content:"";position:absolute;top:0;left:0;
+  width:2.4rem;height:3px;border-radius:3px;background:var(--accent)}
+
+/* --- stat band as a floating white card --- */
+.stats{background:var(--surface);color:inherit;padding:2.4rem 0}
+.stats-in{background:#fff;border:1px solid var(--line);border-radius:16px;gap:0;
+  box-shadow:0 24px 50px -34px rgba(8,20,55,.4);overflow:hidden}
+.stats .stat{padding:1.5rem 1rem;border-right:1px solid var(--line)}
+.stats .stat:last-child{border-right:0}
+.stats .stat b{color:var(--brand);font-size:clamp(1.7rem,3.6vw,2.2rem)}
+.stats .stat span{color:var(--muted)}
+@media(max-width:819px){.stats .stat:nth-child(2){border-right:0}
+  .stats .stat:nth-child(1),.stats .stat:nth-child(2){border-bottom:1px solid var(--line)}}
+
+/* --- CTA / quote bands go blue gradient --- */
+.cta,.qband{background:radial-gradient(125% 145% at 90% 0%,
+  color-mix(in srgb,var(--brand) 80%,#fff), var(--brand) 42%, var(--brand-dark) 82%, var(--deep))}
+
+/* --- fuller footer columns --- */
+.ftr-grid{display:grid;gap:1.8rem;grid-template-columns:1fr}
+@media(min-width:760px){.ftr-grid{grid-template-columns:1.5fr 1fr 1fr 1fr;gap:2rem}}
+.ftr-brand .mark{font-size:1.24rem}
+.ftr-blurb{font-size:.9rem;line-height:1.7;color:rgba(255,255,255,.7);margin:.5rem 0 .8rem;max-width:34ch}
+.ftr-phone a{color:#fff;font-weight:700;font-family:var(--font-display),serif}
+.ftr-col h3{color:#fff;font-size:.8rem;text-transform:uppercase;letter-spacing:.09em;margin:0 0 .85rem}
+.ftr-col ul{list-style:none;padding:0;margin:0;display:grid;gap:.5rem;font-size:.9rem}
+.ftr-col a{color:rgba(255,255,255,.76)}.ftr-col a:hover{color:#fff}
+
+/* --- service icon cards (What we do) --- */
+.svc-grid{display:grid;gap:1.2rem;grid-template-columns:1fr}
+@media(min-width:640px){.svc-grid{grid-template-columns:1fr 1fr}}
+@media(min-width:1000px){.svc-grid{grid-template-columns:repeat(3,1fr)}}
+.svc-card{display:block;background:#fff;border:1px solid var(--line);border-radius:16px;padding:1.6rem;
+  color:inherit;transition:transform .16s ease,box-shadow .2s ease,border-color .2s ease}
+.svc-card:hover{transform:translateY(-4px);box-shadow:0 24px 50px -34px rgba(8,20,55,.45);
+  border-color:color-mix(in srgb,var(--brand) 35%,var(--line));text-decoration:none}
+.svc-card .svg-ic{width:38px;height:38px;display:block;margin-bottom:1rem}
+.svc-card h3{font-size:1.16rem;margin-bottom:.4rem}
+.svc-card p{color:var(--muted);font-size:.95rem;margin-bottom:1rem}
+.svc-card .more{color:var(--brand);display:inline-flex;gap:.3rem;align-items:center}
+.svc-card:hover .more{gap:.55rem}
+.io-b{stroke:var(--brand);stroke-width:1.6;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.io-a{stroke:var(--accent);stroke-width:1.6;fill:none;stroke-linecap:round;stroke-linejoin:round}
+
+/* ========================================================================
+   14. anti-empty: content always visible + width-filling layouts
+   ======================================================================== */
+/* Reveal is now a no-op for visibility — content is ALWAYS shown, so a page
+   never looks empty without JS, and crawlers always see the copy. (The fade
+   was a nice-to-have that caused blank-looking sections.) */
+.reveal,.show-row,.sign,.cost,.tl-item,.cov-col{opacity:1!important;transform:none!important}
+
+/* Timeline becomes a filling grid of step cards instead of one narrow column */
+.tl{display:grid;grid-template-columns:1fr;gap:1rem;margin-top:1.3rem}
+.tl::before{display:none}
+.tl-item{display:block;background:#fff;border:1px solid var(--line);border-radius:14px;
+  padding:1.4rem;gap:0}
+.tl-dot{box-shadow:none;margin-bottom:.8rem}
+.tl-body{padding-top:0}
+@media(min-width:640px){.tl{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.tl{grid-template-columns:repeat(4,1fr)}}
+
+/* Prose sections read better centered than left-aligned with a big empty side */
+.sec .wrap>.prose{margin-inline:auto}

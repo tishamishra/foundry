@@ -1,7 +1,6 @@
 {# One markup, four shapes. The variant lives on <body data-hero> and the
    stylesheet carries a rule for each value, so a new hero is a CSS block and a
    line of YAML — never a new template. #}
-<main id="main">
 <section class="hero">
   {% if style.hero in ('overlay', 'banner') %}
   <div class="hero-bg" aria-hidden="true"><img src="{{ imgs.hero or '/assets/hero.svg' }}" alt="" width="1600" height="900" fetchpriority="high"></div>
@@ -36,9 +35,32 @@
       <p class="micro">Call {{ t.phone }}{% if t.hours %} &middot; {{ t.hours }}{% endif %}</p>
     </div>
     {% if style.hero in ('split', 'stacked') %}
+    {% set mapq = (t.city ~ ', ' ~ t.state_abbr) if t.city else ((t.county ~ ', ' ~ t.state_abbr) if t.county else (t.hq_city ~ ', ' ~ t.hq_state)) %}
     <div class="hero-art">
-      <img src="{{ imgs.hero or '/assets/hero.svg' }}" alt="{{ niche.label }} work by {{ biz.company }}" width="800" height="500" fetchpriority="high">
+      {% if kind in ('location', 'location_service', 'service', 'county') and mapq|trim(', ') %}
+      {# Local pages show the service-area map. Static HTML, no CSP to configure. #}
+      <div class="mapembed"><iframe title="Service area map — {{ mapq }}" loading="lazy"
+        src="https://maps.google.com/maps?q={{ mapq|urlencode }}&t=&z=11&ie=UTF8&iwloc=&output=embed"></iframe></div>
+      <p class="maptag">Serving {{ mapq }}</p>
+      {% elif imgs.hero %}
+      <img src="{{ imgs.hero }}" alt="{{ niche.label }} work by {{ biz.company }}" width="800" height="500" fetchpriority="high">
       <div class="hero-chip"><strong>{{ locations|length }}</strong><span>communities covered</span></div>
+      {% else %}
+      {# No photo yet — a trust/assessment card fills the space (and converts)
+         instead of an empty placeholder image. #}
+      <aside class="hero-card">
+        <p class="hc-rate"><span class="hc-stars" aria-hidden="true">★★★★★</span> Trusted by local homeowners</p>
+        <h2 class="hc-h">Book a free assessment</h2>
+        <p class="hc-sub">A written quote before anything starts — no price from the kerb.</p>
+        <ul class="hc-proof">
+          <li>Free on-site assessment</li>
+          <li>A written quote before any work</li>
+          <li>Honest, repair-first advice</li>
+        </ul>
+        <a class="btn btn-accent" href="tel:{{ t.phone_link }}">{{ content.hero_cta }}</a>
+        <p class="hc-assure">No obligation &middot; call {{ t.phone }}</p>
+      </aside>
+      {% endif %}
     </div>
     {% endif %}
   </div>

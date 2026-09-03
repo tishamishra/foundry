@@ -4,7 +4,6 @@ standard:
   note: The balanced marketing page. Good default for most trades.
   page_sections:
     home:
-    - header
     - hero
     - answer_first
     - logos
@@ -17,24 +16,24 @@ standard:
     - areas_teaser
     - faq
     - quote_band
-    - footer
     - sticky_call
     service:
-    - header
     - hero
     - answer_first
     - badges
     - service_body
     - signs
+    - costs
     - timeline
     - compare
+    - why_us
     - reviews_carousel
+    - services_grid
+    - areas_teaser
     - faq
     - quote_band
-    - footer
     - sticky_call
     location:
-    - header
     - hero
     - answer_first
     - stats
@@ -49,10 +48,8 @@ standard:
     - reviews_carousel
     - faq
     - quote_band
-    - footer
     - sticky_call
     location_service:
-    - header
     - hero
     - answer_first
     - badges
@@ -64,7 +61,6 @@ standard:
     - reviews_carousel
     - faq
     - quote_band
-    - footer
     - sticky_call
 conversion:
   label: Conversion
@@ -72,7 +68,6 @@ conversion:
   note: CTA-dense and short-sectioned. For paid traffic and urgent trades.
   page_sections:
     home:
-    - header
     - emergency
     - hero
     - answer_first
@@ -84,10 +79,8 @@ conversion:
     - reviews_carousel
     - cta
     - faq
-    - footer
     - sticky_call
     service:
-    - header
     - emergency
     - hero
     - answer_first
@@ -98,10 +91,8 @@ conversion:
     - reviews_carousel
     - cta
     - faq
-    - footer
     - sticky_call
     location:
-    - header
     - emergency
     - hero
     - answer_first
@@ -115,10 +106,8 @@ conversion:
     - reviews_carousel
     - cta
     - faq
-    - footer
     - sticky_call
     location_service:
-    - header
     - emergency
     - hero
     - answer_first
@@ -130,7 +119,6 @@ conversion:
     - reviews_carousel
     - cta
     - faq
-    - footer
     - sticky_call
 longform:
   label: Longform
@@ -138,7 +126,6 @@ longform:
   note: Content-led and prose-heavy. Fewer, deeper sections; best where the buyer researches.
   page_sections:
     home:
-    - header
     - hero
     - answer_first
     - about_body
@@ -151,10 +138,8 @@ longform:
     - faq
     - areas_teaser
     - quote_band
-    - footer
     - sticky_call
     service:
-    - header
     - hero
     - answer_first
     - service_body
@@ -166,10 +151,8 @@ longform:
     - reviews_carousel
     - faq
     - quote_band
-    - footer
     - sticky_call
     location:
-    - header
     - hero
     - answer_first
     - location_body
@@ -183,10 +166,8 @@ longform:
     - reviews_carousel
     - faq
     - quote_band
-    - footer
     - sticky_call
     location_service:
-    - header
     - hero
     - answer_first
     - location_service_body
@@ -197,7 +178,6 @@ longform:
     - reviews_carousel
     - faq
     - quote_band
-    - footer
     - sticky_call
 directory:
   label: Directory
@@ -208,7 +188,6 @@ directory:
     orphans.'
   page_sections:
     home:
-    - header
     - hero_compact
     - answer_first
     - dir_search
@@ -219,10 +198,8 @@ directory:
     - reviews_carousel
     - faq
     - quote_band
-    - footer
     - sticky_call
     service:
-    - header
     - hero_compact
     - answer_first
     - service_body
@@ -231,10 +208,8 @@ directory:
     - reviews_carousel
     - faq
     - quote_band
-    - footer
     - sticky_call
     location:
-    - header
     - hero_compact
     - answer_first
     - location_body
@@ -246,10 +221,8 @@ directory:
     - reviews_carousel
     - faq
     - quote_band
-    - footer
     - sticky_call
     location_service:
-    - header
     - hero_compact
     - answer_first
     - location_service_body
@@ -260,7 +233,6 @@ directory:
     - reviews_carousel
     - faq
     - quote_band
-    - footer
     - sticky_call
 local:
   label: Local-first
@@ -268,7 +240,6 @@ local:
   note: Geography leads. Coverage and place names above the marketing copy.
   page_sections:
     home:
-    - header
     - hero
     - answer_first
     - coverage_map
@@ -279,10 +250,8 @@ local:
     - reviews_carousel
     - faq
     - quote_band
-    - footer
     - sticky_call
     service:
-    - header
     - hero
     - answer_first
     - service_body
@@ -291,10 +260,8 @@ local:
     - reviews_carousel
     - faq
     - quote_band
-    - footer
     - sticky_call
     location:
-    - header
     - hero
     - answer_first
     - location_body
@@ -308,10 +275,8 @@ local:
     - reviews_carousel
     - faq
     - quote_band
-    - footer
     - sticky_call
     location_service:
-    - header
     - hero
     - answer_first
     - location_service_body
@@ -322,7 +287,6 @@ local:
     - reviews_carousel
     - faq
     - quote_band
-    - footer
     - sticky_call
 showcase:
   label: Showcase
@@ -330,7 +294,6 @@ showcase:
   note: Visual. Leans on the image pool — weakest of the six if the pool is thin.
   page_sections:
     home:
-    - header
     - hero
     - answer_first
     - gallery
@@ -342,10 +305,8 @@ showcase:
     - reviews_carousel
     - faq
     - quote_band
-    - footer
     - sticky_call
     service:
-    - header
     - hero
     - answer_first
     - gallery
@@ -355,10 +316,8 @@ showcase:
     - reviews_carousel
     - faq
     - quote_band
-    - footer
     - sticky_call
     location:
-    - header
     - hero
     - answer_first
     - gallery
@@ -372,10 +331,8 @@ showcase:
     - reviews_carousel
     - faq
     - quote_band
-    - footer
     - sticky_call
     location_service:
-    - header
     - hero
     - answer_first
     - location_service_body
@@ -387,5 +344,4 @@ showcase:
     - reviews_carousel
     - faq
     - quote_band
-    - footer
     - sticky_call

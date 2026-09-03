@@ -6,12 +6,12 @@ counts:
   trust: 4
   why_us: 6
   process: 4
-  faqs: 6
+  faqs: 8
   reviews: 3
-  service_faqs: 3
-  service_bullets: 4
-  location_faqs: 3
-  location_reviews: 2
+  service_faqs: 8
+  service_bullets: 6
+  location_faqs: 8
+  location_reviews: 3
   signs: 6
   compare_rows: 5
   cost_factors: 5
@@ -23,16 +23,16 @@ counts:
 # conversion decision living in data rather than in code, and it works for free
 # because sections are stateless.
 page_sections:
-  home:             [header, hero, trust, services_grid, why_us, process, reviews, areas_teaser, faq, cta, footer]
-  about:            [header, page_head, about_body, why_us, trust, cta, footer]
-  contact:          [header, page_head, contact_body, cta, footer]
-  services:         [header, page_head, services_grid, why_us, process, cta, footer]
-  areas:            [header, page_head, areas_list, cta, footer]
-  county:           [header, page_head, county_body, services_grid, cta, footer]
-  service:          [header, hero, trust, service_body, why_us, cta, process, reviews, faq, cta, footer]
-  location:         [header, hero, trust, location_body, services_grid, why_us, reviews, faq, cta, footer]
-  location_service: [header, hero, trust, location_service_body, cta, process, why_us, reviews, faq, cta, footer]
-  default:          [header, page_head, cta, footer]
+  home:             [hero, trust, services_grid, why_us, process, reviews, areas_teaser, faq, cta]
+  about:            [page_head, about_body, why_us, trust, cta]
+  contact:          [page_head, contact_body, cta]
+  services:         [page_head, services_grid, why_us, process, cta]
+  areas:            [page_head, areas_list, cta]
+  county:           [page_head, county_body, services_grid, why_us, coverage_map, faq, cta]
+  service:          [hero, service_body, signs, costs, timeline, compare, why_us, reviews, services_grid, areas_teaser, faq, cta]
+  location:         [hero, location_body, services_grid, why_us, signs, timeline, costs, coverage_map, reviews, faq, cta]
+  location_service: [hero, trust, location_service_body, cta, process, why_us, reviews, faq, cta]
+  default:          [page_head, cta]
 
 footer:
   disclaimer: >-

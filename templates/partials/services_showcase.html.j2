@@ -1,20 +1,15 @@
+{% from "partials/_svc_icons.html.j2" import icon %}
 <section class="sec showcase">
   <div class="wrap">
     <h2 class="section-head">{{ content.headings.services or ('What we do in ' ~ t.city if t.city else 'What we do') }}</h2>
-    <div class="show-list">
+    <div class="svc-grid">
       {% for s in services %}
-      <article class="show-row{{ ' has-art' if imgs.showcase.get(s.slug) }}">
-        {% if imgs.showcase.get(s.slug) %}
-        <div class="show-pic"><img src="{{ imgs.showcase[s.slug] }}" alt="{{ s.name }}" loading="lazy" width="640" height="420"></div>
-        {% else %}
-        <div class="show-art"><span class="show-num">{{ '%02d'|format(loop.index) }}</span></div>
-        {% endif %}
-        <div class="show-copy">
-          <h3>{{ s.name }}</h3>
-          <p>{{ s.summary }}</p>
-          <a class="more" href="{% if t.city and not single_service %}/services/{{ s.slug }}/{{ t.slug }}{% else %}/services/{{ s.slug }}{% endif %}">Read about {{ s.name|lower }} &rarr;</a>
-        </div>
-      </article>
+      <a class="svc-card" href="{% if t.city and not single_service %}/services/{{ s.slug }}/{{ t.slug }}{% else %}/services/{{ s.slug }}{% endif %}">
+        <span class="ic">{{ icon(s.name) }}</span>
+        <h3>{{ s.name }}{% if t.city %} in {{ t.city }}{% endif %}</h3>
+        <p>{{ s.summary }}</p>
+        <span class="more">Read about {{ s.name|lower }} &rarr;</span>
+      </a>
       {% endfor %}
     </div>
   </div>

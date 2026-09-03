@@ -85,9 +85,15 @@
       data-rhythm="{{ style.rhythm }}"
       data-skeleton="{{ skeleton.key }}"
       data-shell="{{ skeleton.shell }}">
+{# Header and footer live in the shell, NOT in the per-page section lists, so
+   they render on EVERY page unconditionally — no skeleton can drop them. #}
+{% include "partials/header.html.j2" %}
+<main id="main">
 {% for section in sections %}
 {% include "partials/" + section + ".html.j2" %}
 {% endfor %}
+</main>
+{% include "partials/footer.html.j2" %}
 <script src="/assets/js/site.js" defer></script>
 </body>
 </html>
