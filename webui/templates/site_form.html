@@ -113,7 +113,7 @@
 
   <h2>Composition</h2>
   <div class="two">
-    <label>Seed<input name="composition_seed" value="{{ s.composition_seed or 1 }}"></label>
+    <label>Seed<input name="composition_seed" value="{{ s.composition_seed or '' }}" placeholder="auto (from site identity)"></label>
     <label>Search depth<input name="search" value="250"></label>
   </div>
   <label class="chk big"><input type="checkbox" name="autoseed" checked>

@@ -445,7 +445,11 @@ def site_save():
         "site_id": f.get("site_id") or None,
         "business": f.get("business"), "niche": f.get("niche"),
         "domain": f.get("domain"), "theme": f.get("theme"), "style": f.get("style"), "skeleton": f.get("skeleton"),
-        "composition_seed": f.get("composition_seed") or 1,
+        # Empty seed box -> None, so save_site derives a distinct seed from the
+        # site's own identity instead of forcing every new site to seed 1
+        # (which made them all render byte-identical copy). An explicit seed the
+        # operator typed is still honoured.
+        "composition_seed": (f.get("composition_seed") or "").strip() or None,
         "states": f.getlist("states"),
         "cities": f.getlist("cities"),
         "mode": f.get("mode"),
