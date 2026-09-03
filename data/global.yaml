@@ -39,3 +39,45 @@ footer:
     {company} is an independent contractor serving the areas listed on this site.
     Service availability, scheduling and pricing depend on the job and the
     location. Nothing on this page is a quote.
+
+# ---------------------------------------------------------------------------
+# CANONICAL SEO — engine-wide title & meta-description templates.
+#
+# A niche's own `seo:` block (data/niches/<niche>.yaml) overrides any key here;
+# whatever it omits falls back to these, so every niche — including thin or
+# brand-new ones — ships keyword-first, location-aware, CTA-bearing metadata.
+#
+# Tokens: {company} {niche} {niche_lower} {service} {city} {state_abbr}
+#         {county} {hq_city} {hq_state} {phone} {nearby}. A [[ ... ]] block
+#         drops whole when a token inside it is empty (e.g. no HQ city).
+# Titles are auto-trimmed to SERP width (the brand suffix goes first); keep the
+# keyword and the place at the FRONT so they always survive the trim.
+# ---------------------------------------------------------------------------
+seo:
+  home_title: '[[{niche} in {hq_city}, {hq_state} | ]]{company}'
+  home_description: '{company} — {niche_lower} done properly: an assessment first, written
+    findings, then a price.[[ Serving {hq_city}, {hq_state} and the surrounding area.]] Call {phone}.'
+  about_title: 'About {company} | {niche}'
+  about_description: 'How {company} works — written assessments, an honest scope, and what
+    to expect from the first call to the final check. Call {phone}.'
+  contact_title: 'Contact {company} | Call {phone}'
+  contact_description: 'Call {company} on {phone} or request a callback. Tell us what you are
+    seeing and we will tell you what it usually means — no pressure, no call-out sales.'
+  services_title: '{niche} Services | {company}'
+  services_description: 'Every {niche_lower} job {company} takes on, what each one includes,
+    and how the scope and the price are agreed before work starts. Call {phone}.'
+  areas_title: '{niche} Service Areas | {company}'
+  areas_description: 'Every community {company} covers for {niche_lower}, listed by county.
+    Find your town and call {phone}.'
+  service_title: '{service} | {company}'
+  service_description: '{service} from {company}: what the job includes, how the scope is
+    agreed, and what would change the price. Call {phone} for a written quote.'
+  county_title: '{niche} in {county}, {state_abbr} | {company}'
+  county_description: '{company} covers every community in {county}, {state_abbr} for
+    {niche_lower}. Find your town below, or call {phone} to speak to someone.'
+  location_title: '{niche} in {city}, {state_abbr} | {company}'
+  location_description: 'Local {niche_lower} in {city}, {state_abbr}[[ and nearby {nearby}]].
+    {company} — assessment first, a written quote, then the work. Call {phone}.'
+  location_service_title: '{service} in {city}, {state_abbr} | {company}'
+  location_service_description: '{service} for {city}, {state_abbr} property owners[[ in
+    {county}]]. {company} gives a written quote before any work begins. Call {phone}.'

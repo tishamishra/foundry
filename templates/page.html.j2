@@ -20,12 +20,33 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+{# One place computes the absolute URL of this page and its share image; every
+   SEO tag below reuses them so canonical, Open Graph and JSON-LD never drift. #}
+{%- set page_url = 'https://' ~ site.domain ~ ('' if url == '/' else url) -%}
+{%- set og_image = imgs.get('hero') -%}
+{%- if og_image and not og_image.startswith('http') %}{% set og_image = 'https://' ~ site.domain ~ og_image %}{% endif -%}
+{%- set is_local = kind in ('location', 'location_service', 'county') -%}
 <title>{{ title }}</title>
 <meta name="description" content="{{ description }}">
-<link rel="canonical" href="https://{{ site.domain }}{{ '' if url == '/' else url }}">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<link rel="canonical" href="{{ page_url }}">
+{# --- Open Graph (Facebook, LinkedIn, WhatsApp, iMessage previews) --- #}
+<meta property="og:site_name" content="{{ biz.company }}">
 <meta property="og:title" content="{{ title }}">
 <meta property="og:description" content="{{ description }}">
-<meta property="og:type" content="website">
+<meta property="og:type" content="{{ 'business.business' if kind == 'home' else 'website' }}">
+<meta property="og:url" content="{{ page_url }}">
+<meta property="og:locale" content="en_US">
+{% if og_image %}<meta property="og:image" content="{{ og_image }}">
+<meta property="og:image:alt" content="{{ niche.label }} by {{ biz.company }}">{% endif %}
+{# --- Twitter / X card --- #}
+<meta name="twitter:card" content="{{ 'summary_large_image' if og_image else 'summary' }}">
+<meta name="twitter:title" content="{{ title }}">
+<meta name="twitter:description" content="{{ description }}">
+{% if og_image %}<meta name="twitter:image" content="{{ og_image }}">{% endif %}
+{# --- Local-SEO geo hints on place pages (help Google tie the page to a place) --- #}
+{% if is_local and t.state_abbr %}<meta name="geo.region" content="US-{{ t.state_abbr }}">
+<meta name="geo.placename" content="{{ t.city if t.get('city') else t.county }}, {{ t.state_abbr }}">{% endif %}
 <meta name="theme-color" content="{{ theme.brand }}">
 {% if style.fonts_url %}
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -47,13 +68,37 @@
 {
   "@context": "https://schema.org",
   "@type": "{{ niche.schema_type }}",
+  "@id": "https://{{ site.domain }}/#business",
   "name": "{{ biz.company }}",
   "telephone": "{{ t.phone }}",
-  "url": "https://{{ site.domain }}{{ '' if url == '/' else url }}",
+  {% if t.email %}"email": "{{ t.email }}",{% endif %}
+  "url": "https://{{ site.domain }}/",
+  {% if og_image %}"image": "{{ og_image }}",{% endif %}
+  {% if facts.get('hours') %}"openingHours": "{{ facts.hours }}",{% endif %}
+  {% set social = biz.get('social') or {} %}{% if social %}"sameAs": [{% for v in social.values() %}{{ v|tojson }}{{ "," if not loop.last }}{% endfor %}],{% endif %}
   {% if t.street %}"address": {"@type": "PostalAddress", "streetAddress": "{{ t.street }}", "addressLocality": "{{ t.hq_city }}", "addressRegion": "{{ t.hq_state }}", "postalCode": "{{ t.hq_zip }}", "addressCountry": "US"},{% endif %}
   "areaServed": [{% for c in counties[:12] %}{"@type": "AdministrativeArea", "name": "{{ c.name }}, {{ c.state_abbr }}"}{{ "," if not loop.last }}{% endfor %}]
 }
 </script>
+{# --- WebSite entity: names the site and ties pages back to one publisher. --- #}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":{{ biz.company|tojson }},"url":"https://{{ site.domain }}/","publisher":{"@id":"https://{{ site.domain }}/#business"}}
+</script>
+{# --- BreadcrumbList: gives Google the page's place in the site so the SERP
+   shows a breadcrumb trail instead of a bare URL. Built from the page kind. --- #}
+{%- set crumbs = [{'n':'Home','u':'/'}] -%}
+{%- if kind == 'service' and service is defined -%}{% set _ = crumbs.append({'n':'Services','u':'/services'}) %}{% set _ = crumbs.append({'n': service.name, 'u': url}) %}
+{%- elif kind == 'location_service' and service is defined -%}{% set _ = crumbs.append({'n':'Services','u':'/services'}) %}{% set _ = crumbs.append({'n': service.name, 'u':'/services/' ~ service.slug}) %}{% set _ = crumbs.append({'n': t.city ~ ', ' ~ t.state_abbr, 'u': url}) %}
+{%- elif kind == 'location' -%}{% set _ = crumbs.append({'n':'Service Areas','u':'/areas'}) %}{% set _ = crumbs.append({'n': t.city ~ ', ' ~ t.state_abbr, 'u': url}) %}
+{%- elif kind == 'county' -%}{% set _ = crumbs.append({'n':'Service Areas','u':'/areas'}) %}{% set _ = crumbs.append({'n': t.county ~ ', ' ~ t.state_abbr, 'u': url}) %}
+{%- elif kind == 'about' -%}{% set _ = crumbs.append({'n':'About','u':'/about'}) %}
+{%- elif kind == 'contact' -%}{% set _ = crumbs.append({'n':'Contact','u':'/contact'}) %}
+{%- elif kind == 'services' -%}{% set _ = crumbs.append({'n':'Services','u':'/services'}) %}
+{%- elif kind == 'areas' -%}{% set _ = crumbs.append({'n':'Service Areas','u':'/areas'}) %}
+{%- endif -%}
+{% if crumbs|length > 1 %}<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{% for c in crumbs %}{"@type":"ListItem","position":{{ loop.index }},"name":{{ c.n|tojson }},"item":"https://{{ site.domain }}{{ '' if c.u == '/' else c.u }}"}{{ "," if not loop.last }}{% endfor %}]}
+</script>{% endif %}
 {# --- AEO: the FAQs are already on the page; this makes them machine-readable.
    Answer engines (Google AI Overviews, Perplexity, ChatGPT) lift Q&A straight
    from FAQPage markup, so the same content earns citations it otherwise would

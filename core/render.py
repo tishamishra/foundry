@@ -557,7 +557,10 @@ def build_site(root: Path, site_id: str, out_root: Path | None = None) -> BuildR
     # architectures, rather than sixteen fused pairs.
     sections = dict(g.globals.get("page_sections") or {})
     sections.update(g.skeleton.get("page_sections") or {})
-    seo = g.niche.get("seo") or {}
+    # SEO title/description templates: the niche's own patterns win, but any key
+    # it omits falls back to the engine-wide canonical set in global.yaml, so a
+    # thin or brand-new niche still ships strong, keyword-first metadata.
+    seo = {**(g.globals.get("seo") or {}), **(g.niche.get("seo") or {})}
     result = BuildResult(site_id=site_id, domain=site["domain"], out_dir=out_dir)
     copy_parts: list[str] = []
 

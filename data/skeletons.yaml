@@ -67,7 +67,9 @@ standard:
 conversion:
   label: Conversion
   shell: single
-  note: CTA-dense and short-sectioned. For paid traffic and urgent trades.
+  note: CTA-dense but content-complete. Frequent calls-to-action interleaved with
+    the full body of trust, process, pricing and proof sections search engines
+    reward — built for paid traffic and urgent trades without going thin.
   page_sections:
     home:
     - emergency
@@ -79,7 +81,10 @@ conversion:
     - badges
     - services_tabs
     - why_us
+    - timeline
+    - signs
     - reviews_carousel
+    - areas_teaser
     - cta
     - faq
     - map_band
@@ -91,8 +96,14 @@ conversion:
     - quote_band
     - service_body
     - signs
+    - costs
+    - timeline
     - badges
+    - compare
+    - why_us
     - reviews_carousel
+    - services_grid
+    - areas_teaser
     - cta
     - faq
     - sticky_call
@@ -104,10 +115,13 @@ conversion:
     - stats
     - location_body
     - services_grid
+    - why_us
     - signs
     - timeline
     - costs
+    - compare
     - reviews_carousel
+    - areas_teaser
     - cta
     - faq
     - sticky_call
@@ -120,6 +134,8 @@ conversion:
     - signs
     - timeline
     - costs
+    - compare
+    - why_us
     - reviews_carousel
     - cta
     - faq
