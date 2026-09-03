@@ -67,13 +67,18 @@ body[data-accent=highlight] .section-head::after{content:"";display:block;height
 /* ========================================================================
    3. buttons
    ======================================================================== */
-.btn{display:inline-block;padding:.68rem 1.15rem;border-radius:var(--radius);font-weight:700;
-  font-size:.94rem;border:1.5px solid transparent;max-width:100%;text-align:center;
-  transition:transform .14s ease,box-shadow .14s ease,filter .14s ease;cursor:pointer}
-.btn:hover{text-decoration:none;transform:translateY(-1px)}
+/* Buttons carry a softer, rounder corner than the cards do — calc keeps them in
+   step with each pack (a sharp 0px pack still gets a gentle 8px button, a
+   rounded pack gets rounder still) while always reading friendlier than the
+   surrounding boxes. */
+.btn{display:inline-block;padding:.72rem 1.3rem;border-radius:calc(var(--radius) + 8px);
+  font-weight:700;font-size:.94rem;border:1.5px solid transparent;max-width:100%;text-align:center;
+  transition:transform .14s ease,box-shadow .18s ease,filter .14s ease;cursor:pointer}
+.btn:hover{text-decoration:none;transform:translateY(-2px)}
+.btn:active{transform:translateY(0)}
 .btn-accent{background:var(--accent);color:var(--accent-text);
-  box-shadow:0 6px 18px -8px color-mix(in srgb,var(--accent) 80%,transparent)}
-.btn-accent:hover{filter:brightness(.96);box-shadow:0 10px 24px -10px color-mix(in srgb,var(--accent) 80%,transparent)}
+  box-shadow:0 8px 22px -10px color-mix(in srgb,var(--accent) 70%,transparent)}
+.btn-accent:hover{filter:brightness(.97);box-shadow:0 14px 30px -12px color-mix(in srgb,var(--accent) 70%,transparent)}
 .btn-ghost{background:#fff;border-color:var(--line);color:var(--ink)}
 .btn-ghost:hover{border-color:var(--brand);color:var(--brand-dark)}
 .btn-lg{padding:.92rem 1.65rem;font-size:1.02rem}

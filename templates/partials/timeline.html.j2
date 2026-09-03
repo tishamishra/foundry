@@ -1,6 +1,6 @@
 <section class="sec">
   <div class="wrap">
-    <h2 class="section-head">How the job runs</h2>
+    <h2 class="section-head">{{ content.headings.process or 'How the job runs' }}</h2>
     <ol class="tl">
       {% for step in (lc.process if lc is defined else content.process) %}
       <li class="tl-item reveal">

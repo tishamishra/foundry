@@ -60,6 +60,8 @@ class Page:
     description: str
     html: str = ""
     prerendered: bool = True
+    disk_path: Path | None = None      # set once the page is written and its
+                                       # html is freed from memory (see build_site)
 
     @property
     def out_path(self) -> str:
@@ -68,6 +70,20 @@ class Page:
         if self.url.endswith(".xml") or self.url.endswith(".txt"):
             return self.url.lstrip("/")
         return self.url.strip("/") + "/index.html"
+
+    def read_html(self) -> str:
+        """The page's HTML — from memory if still held, otherwise re-read from
+        disk. build_site streams each page to disk and frees its html to keep
+        peak memory flat on large sites, so the QA and SEO passes read back
+        through here instead of holding every page in RAM at once."""
+        if self.html:
+            return self.html
+        if self.disk_path is not None:
+            try:
+                return self.disk_path.read_text(encoding="utf-8")
+            except OSError:
+                return ""
+        return ""
 
 
 @dataclass
@@ -193,6 +209,24 @@ def compose_site_content(g: Graph, comp: Composer) -> dict[str, Any]:
         "reviews":  comp.many("reviews", "site:reviews", counts.get("reviews", 5)),
         "cta":      comp.one("cta_blocks", "site:cta_block"),
         "closing":  comp.one("closing_paras", "site:closing"),
+        # Section headings (the H2 above each block), drawn once per site from
+        # their own pools. maybe_one returns "" when a pool is empty, and every
+        # partial falls back to its built-in wording in that case — so this is
+        # additive and safe on an older library. Tokens like [[ in {city}]]
+        # resolve per page, localising the heading on city pages and dropping
+        # cleanly on the home page.
+        "headings": {
+            "services": comp.maybe_one("heading_services", "site:h:services"),
+            "why":      comp.maybe_one("heading_why", "site:h:why"),
+            "areas":    comp.maybe_one("heading_areas", "site:h:areas"),
+            "gallery":  comp.maybe_one("heading_gallery", "site:h:gallery"),
+            "reviews":  comp.maybe_one("heading_reviews", "site:h:reviews"),
+            "process":  comp.maybe_one("heading_process", "site:h:process"),
+            "costs":    comp.maybe_one("heading_costs", "site:h:costs"),
+            "faqs":     comp.maybe_one("heading_faqs", "site:h:faqs"),
+            "signs":    comp.maybe_one("heading_signs", "site:h:signs"),
+            "compare":  comp.maybe_one("heading_compare", "site:h:compare"),
+        },
         # GENERIC: the home page is not one service, so it draws only untagged
         # signs/compare/costs — a service-tagged block must never surface here.
         "signs":    comp.many("signs", "site:signs", counts.get("signs", 6), service=GENERIC),
@@ -527,6 +561,40 @@ def build_site(root: Path, site_id: str, out_root: Path | None = None) -> BuildR
     result = BuildResult(site_id=site_id, domain=site["domain"], out_dir=out_dir)
     copy_parts: list[str] = []
 
+    # Gentle build. Two knobs, both env-tunable, both defaulting to "kind to a
+    # small box":
+    #   * every page is written to disk the moment it is rendered and its HTML is
+    #     freed from memory, so peak RAM is ~one page instead of the whole site.
+    #     Thousands of pages held at once is what exhausted memory and 502'd the
+    #     panel mid-build.
+    #   * a brief pause every N pages hands the CPU back so the single web worker
+    #     stays responsive and the proxy never times out. A build costs a little
+    #     more wall-clock and stops spiking the machine.
+    yield_every = max(0, int(os.environ.get("FOUNDRY_BUILD_YIELD_EVERY", "200")))
+    yield_ms = max(0.0, float(os.environ.get("FOUNDRY_BUILD_YIELD_MS", "4")))
+    seen_paths: set[str] = set()
+    written = 0
+
+    def emit(page: Page) -> None:
+        """Write a page to disk, free its HTML, and record it. One URL, one page
+        — a collision fails fast here instead of letting the second write win."""
+        nonlocal written
+        op = page.out_path
+        if op in seen_paths:
+            raise FoundryError(
+                f"URL generated more than once: {op}",
+                {"duplicate_url": True, "paths": [op]})
+        seen_paths.add(op)
+        target = out_dir / op
+        target.parent.mkdir(parents=True, exist_ok=True)
+        target.write_text(page.html, encoding="utf-8")
+        page.disk_path = target
+        page.html = ""                     # read_html() re-reads from disk if needed
+        result.pages.append(page)
+        written += 1
+        if yield_every and yield_ms and written % yield_every == 0:
+            time.sleep(yield_ms / 1000.0)
+
     def render(kind: str, url: str, ctx: dict, extra: dict, edge: bool = False) -> Page:
         title = fit_title(interpolate(seo.get(f"{kind}_title", "{company}"), ctx),
                           g.business.get("brand") or "")
@@ -556,22 +624,20 @@ def build_site(root: Path, site_id: str, out_root: Path | None = None) -> BuildR
     # ---- fixed pages ----
     for kind, url in (("home", "/"), ("about", "/about"), ("contact", "/contact"),
                       ("services", "/services"), ("areas", "/areas")):
-        result.pages.append(render(kind, url, base, {}))
+        emit(render(kind, url, base, {}))
 
     # ---- one page per service ----
     for svc in g.services:
         ctx = service_context(base, svc)
-        result.pages.append(
-            render("service", f"/services/{svc['slug']}", ctx,
-                   {"service": svc, "svc": svc_content[svc["slug"]]}))
+        emit(render("service", f"/services/{svc['slug']}", ctx,
+                    {"service": svc, "svc": svc_content[svc["slug"]]}))
 
     # ---- one page per county ----
     for county in g.counties:
         ctx = dict(base)
         ctx.update({"county": county["name"], "state": county["state"],
                     "state_abbr": county["state_abbr"]})
-        result.pages.append(
-            render("county", f"/areas/{county['slug']}", ctx, {"county": county}))
+        emit(render("county", f"/areas/{county['slug']}", ctx, {"county": county}))
 
     # ---- locations: prerender a prefix, edge-render the tail ----
     # Rank by PAYOUT first, then by ZIP count. When only some cities are
@@ -592,14 +658,12 @@ def build_site(root: Path, site_id: str, out_root: Path | None = None) -> BuildR
         lc = loc_content[b]
         if loc.slug in prerender:
             ctx = location_context(base, loc, g)
-            result.pages.append(
-                render("location", f"/areas/{loc.slug}", ctx, {"loc": loc, "lc": lc}))
+            emit(render("location", f"/areas/{loc.slug}", ctx, {"loc": loc, "lc": lc}))
             for svc in money_services:
                 sctx = service_context(ctx, svc)
-                result.pages.append(
-                    render("location_service", f"/services/{svc['slug']}/{loc.slug}",
-                           sctx, {"loc": loc, "lc": lc, "service": svc,
-                                  "svc": svc_content[svc["slug"]]}))
+                emit(render("location_service", f"/services/{svc['slug']}/{loc.slug}",
+                            sctx, {"loc": loc, "lc": lc, "service": svc,
+                                   "svc": svc_content[svc["slug"]]}))
         else:
             result.edge_pages += 1 + len(money_services)
 
@@ -610,34 +674,14 @@ def build_site(root: Path, site_id: str, out_root: Path | None = None) -> BuildR
                    seo, render, variants, ranked, prerender)
 
     # ---- machine files ----
-    result.pages.extend(_sitemaps(g, result, ranked))
-    result.pages.append(_robots(g))
-
-    # ---- one page, one URL ----
-    #
-    # This is the last thing checked before anything touches disk, and it is a
-    # refusal rather than a warning, because the failure it catches is silent by
-    # construction: two pages with the same path means the second write wins,
-    # the first page's content is gone, the sitemap lists the URL twice, and the
-    # only symptom downstream is the SEO agent reporting a duplicate title and
-    # blaming a missing {state} token. It cost an hour to trace once. It should
-    # cost a build error from now on.
-    seen: dict[str, int] = {}
-    for page in result.pages:
-        seen[page.out_path] = seen.get(page.out_path, 0) + 1
-    clashes = sorted(p for p, n in seen.items() if n > 1)
-    if clashes:
-        raise FoundryError(
-            f"{len(clashes)} URL(s) were generated more than once: "
-            f"{', '.join(clashes[:5])}"
-            f"{f' and {len(clashes) - 5} more' if len(clashes) > 5 else ''}",
-            {"duplicate_url": True, "paths": clashes[:20]})
-
-    # ---- write ----
-    for page in result.pages:
-        target = out_dir / page.out_path
-        target.parent.mkdir(parents=True, exist_ok=True)
-        target.write_text(page.html, encoding="utf-8")
+    # The sitemap needs the content URLs, which are all emitted by now (their
+    # html is freed but the Page objects with their URLs remain). emit() writes
+    # each of these and enforces one-URL-one-page inline, so there is no separate
+    # duplicate-check or write pass any more — pages went to disk as they were
+    # rendered, which is what keeps peak memory flat.
+    for smap in _sitemaps(g, result, ranked):
+        emit(smap)
+    emit(_robots(g))
 
     copied_imgs = copy_into_site(root, g.site["niche"], out_dir, image_files)
     result.assets_copied, result.placeholders, warns = _emit_assets(root, g, out_dir)

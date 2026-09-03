@@ -1,6 +1,6 @@
 <section class="sec sec-alt">
   <div class="wrap">
-    <h2>Where we work</h2>
+    <h2>{{ content.headings.areas or 'Where we work' }}</h2>
     <p class="lede">{{ locations|length }} communities across {{ counties|length }} counties.</p>
     <div class="chips">
       {% for c in locations[:24] %}<a class="chip" href="/areas/{{ c.slug }}">{{ c.city }}, {{ c.state_abbr }}</a>{% endfor %}

@@ -1,6 +1,6 @@
 <section class="sec sec-alt">
   <div class="wrap">
-    <h2 class="section-head">Signs worth a phone call</h2>
+    <h2 class="section-head">{{ content.headings.signs or 'Signs worth a phone call' }}</h2>
     <p class="lede">None of these mean a new roof on its own. Together they tell you where you are.</p>
     <div class="signs">
       {% for s in (svc.signs if svc is defined else (lc.signs if lc is defined else content.signs)) %}

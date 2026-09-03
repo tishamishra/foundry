@@ -273,7 +273,7 @@ def check_site(root: Path, graph, result, *, similarity_block: float = 0.25,
     def _flatten(html: str) -> str:
         return re.sub(r"<[^>]+>", " ¶ ", html)
 
-    plain = " ".join(_flatten(p.html) for p in text_pages)
+    plain = " ".join(_flatten(p.read_html()) for p in text_pages)
 
     # 1 — structural ------------------------------------------------------
     leaked: list[str] = []

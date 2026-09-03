@@ -261,7 +261,7 @@ def audit(root: Path, graph, result, *, link_sample: int = 400) -> SeoReport:
     ev: dict[str, list[str]] = defaultdict(list)
 
     for page in pages:
-        d = extract(page.html)
+        d = extract(page.read_html())
         url = page.url
 
         # --- metadata ---
@@ -467,7 +467,7 @@ def audit(root: Path, graph, result, *, link_sample: int = 400) -> SeoReport:
         "unique_descriptions": len(descs),
         "sitemap_urls": total_urls,
         "links_sampled": len(checked),
-        "avg_page_kb": round(sum(len(p.html.encode()) for p in pages) / max(1, len(pages)) / 1024, 1),
+        "avg_page_kb": round(sum(len(p.read_html().encode()) for p in pages) / max(1, len(pages)) / 1024, 1),
     }
     rep.not_verified += [
         f"{result.edge_pages:,} edge-rendered page(s) were not fetched — their master "

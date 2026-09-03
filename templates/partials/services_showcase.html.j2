@@ -1,6 +1,6 @@
 <section class="sec showcase">
   <div class="wrap">
-    <h2 class="section-head">{% if t.city %}What we do in {{ t.city }}{% else %}What we do{% endif %}</h2>
+    <h2 class="section-head">{{ content.headings.services or ('What we do in ' ~ t.city if t.city else 'What we do') }}</h2>
     <div class="show-list">
       {% for s in services %}
       <article class="show-row{{ ' has-art' if imgs.showcase.get(s.slug) }}">

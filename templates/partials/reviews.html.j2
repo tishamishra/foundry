@@ -1,6 +1,6 @@
 <section class="sec">
   <div class="wrap">
-    <h2>What customers say</h2>
+    <h2>{{ content.headings.reviews or 'What customers say' }}</h2>
     <div class="grid grid-3">
       {% for r in (lc.reviews if lc is defined else content.reviews) %}
       <figure class="quote">

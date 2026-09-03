@@ -1,6 +1,6 @@
 <section class="sec">
   <div class="wrap">
-    <h2 class="section-head">What customers say</h2>
+    <h2 class="section-head">{{ content.headings.reviews or 'What customers say' }}</h2>
     <div class="carousel" data-carousel>
       <div class="car-track">
         {% for r in (lc.reviews if lc is defined else content.reviews) %}

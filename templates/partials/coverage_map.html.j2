@@ -5,7 +5,7 @@
 {% set shown = (here or counties)[:9] %}
 <section class="sec">
   <div class="wrap">
-    <h2 class="section-head">{% if t.state %}Where we work in {{ t.state }}{% else %}Where we work{% endif %}</h2>
+    <h2 class="section-head">{{ content.headings.areas or ('Where we work in ' ~ t.state if t.state else 'Where we work') }}</h2>
     <div class="cov">
       {% for c in shown %}
       <div class="cov-col reveal">

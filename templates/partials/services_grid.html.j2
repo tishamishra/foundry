@@ -1,6 +1,6 @@
 <section class="sec">
   <div class="wrap">
-    <h2>{% if t.city %}Our services in {{ t.city }}{% else %}What we do{% endif %}</h2>
+    <h2>{{ content.headings.services or ('Our services in ' ~ t.city if t.city else 'What we do') }}</h2>
     <div class="grid grid-3">
       {% for s in services %}
       <a class="card" href="{% if t.city %}/services/{{ s.slug }}/{{ t.slug or (t.city|slug) + '-' + t.state_abbr|lower }}{% else %}/services/{{ s.slug }}{% endif %}">

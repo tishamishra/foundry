@@ -22,6 +22,15 @@ for f in themes.yaml styles.yaml skeletons.yaml; do
   fi
 done
 
+# The shared base library (_base.yaml) is shipped copy, not your data — your
+# imports live in data/library/<niche>.yaml and data/library/user/. Refresh it
+# from the image so base-copy updates (e.g. the new section-heading pools) reach
+# the live sites on redeploy. Your niche and user pools are left untouched.
+if [ -f "/seed-data/library/_base.yaml" ]; then
+  cp -f "/seed-data/library/_base.yaml" "/app/data/library/_base.yaml"
+  echo "[foundry] refreshed base library: _base.yaml"
+fi
+
 # One worker, many threads: the build runner and preview pool keep state in
 # memory, so multiple workers would not see each other's jobs. Threads give
 # concurrency without splitting that state.

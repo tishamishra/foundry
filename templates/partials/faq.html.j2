@@ -1,6 +1,6 @@
 <section class="sec sec-alt">
   <div class="wrap">
-    <h2>Common questions</h2>
+    <h2>{{ content.headings.faqs or 'Common questions' }}</h2>
     <div class="faq">
       {% for item in (lc.faqs if lc is defined else (svc.faqs if svc is defined else content.faqs)) %}
       <details>

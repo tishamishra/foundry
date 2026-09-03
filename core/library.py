@@ -68,6 +68,23 @@ KINDS: dict[str, str] = {
     "signs":                "titled",
     "compare_rows":         "compare",
     "cost_factors":         "titled",
+    # Section headings (the H2 above each block). These used to be hardcoded in
+    # the templates, so every site said the same "What we do" / "Common
+    # questions" — a wasted SEO lever and a duplicate-content signal across
+    # sites. Now they are library pools like any other copy: drawn per site,
+    # varied, and token-aware (use [[ in {city}]] to localise, dropped on pages
+    # with no city). A partial falls back to its old wording when the pool is
+    # empty, so this is fully backward compatible.
+    "heading_services":     "text",
+    "heading_why":          "text",
+    "heading_areas":        "text",
+    "heading_gallery":      "text",
+    "heading_reviews":      "text",
+    "heading_process":      "text",
+    "heading_costs":        "text",
+    "heading_faqs":         "text",
+    "heading_signs":        "text",
+    "heading_compare":      "text",
 }
 
 # The kinds that describe ONE service and so may be tagged to a specific service
@@ -398,6 +415,16 @@ class Composer:
         idx = self._index(kind, slot, len(src))
         self.used.setdefault(kind, []).append(idx)
         return _emit(kind, src[idx])
+
+    def maybe_one(self, kind: str, slot: str, service: str | None = None) -> Any:
+        """Like one(), but returns "" instead of raising when the pool is empty.
+        Used for OPTIONAL copy such as section headings: an absent pool simply
+        lets the template keep its built-in wording, so nothing breaks on a
+        library that predates the pool."""
+        try:
+            return self.one(kind, slot, service)
+        except EmptyPool:
+            return ""
 
     def many(self, kind: str, slot: str, count: int,
              service: str | None = None) -> list[Any]:

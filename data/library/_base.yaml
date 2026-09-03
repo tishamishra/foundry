@@ -6073,3 +6073,73 @@ why_us:
     questions on the spot, catches misunderstandings a written report alone would leave until it was too late to
     easily fix.
   title: A walkthrough before the invoice
+
+# ---------------------------------------------------------------------------
+# SECTION HEADINGS — the H2 above each block. Trade-agnostic, token-aware
+# ([[ ...]] segments drop on pages with no city/state). SEO-friendly and
+# human-readable; a partial falls back to its built-in wording if a pool is
+# empty. Add more per niche in data/library/<niche>.yaml or your user pool.
+# ---------------------------------------------------------------------------
+heading_services:
+- What we do
+- The {niche_lower} work we take on[[ in {city}]]
+- Services we provide[[ across {city}, {state}]]
+- '{niche} services from {company}'
+- What {company} handles[[ in {city}]]
+- Our {niche_lower} services[[ in {city}]]
+heading_why:
+- Why homeowners choose {company}
+- Why people call {company}[[ in {city}]]
+- What working with {company} is like
+- Why {company} for your {niche_lower}
+- What sets {company} apart
+- Reasons to call {company} first
+heading_areas:
+- Where we work
+- Areas we cover[[ across {state}]]
+- Service areas[[ near {city}]]
+- Communities {company} serves
+- The areas we cover[[ in {state}]]
+- '{niche} service areas[[ around {city}]]'
+heading_gallery:
+- Recent work
+- Recent {niche_lower} jobs[[ near {city}]]
+- Work we have completed
+- A look at recent projects
+- Recent projects[[ in {city}]]
+heading_reviews:
+- What customers say
+- What our customers tell us
+- Reviews from {niche_lower} customers
+- What people say about {company}
+- Customer reviews[[ in {city}]]
+heading_process:
+- How the job runs
+- How we work
+- What to expect, step by step
+- How {company} handles the job
+- From first call to finished work
+heading_costs:
+- What changes the price
+- What affects the cost[[ of {niche_lower}]]
+- What goes into your quote
+- What drives the price
+- How pricing is worked out
+heading_faqs:
+- Common questions
+- Questions we get asked
+- '{niche} questions, answered'
+- Frequently asked questions
+- Answers to common questions
+heading_signs:
+- Signs worth a phone call
+- When to call a {niche_lower}
+- Signs you should book a visit
+- When it is time to call {company}
+- Signs worth getting checked
+heading_compare:
+- Repair or replace
+- Repair or replace?
+- Weighing repair against replacement
+- Should you repair or replace?
+- Repair or replace — how to decide
