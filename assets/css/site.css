@@ -13,6 +13,10 @@
    1. base
    ======================================================================== */
 *,*::before,*::after{box-sizing:border-box}
+/* Review/rating stars are always a warm gold, independent of the theme accent,
+   so they read as stars on every palette (the inline :root from the template
+   overrides this with the theme's own value when present). */
+:root{--star:#f6b100}
 html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}
   *,*::before,*::after{animation-duration:.001ms!important;transition-duration:.001ms!important}}
@@ -166,7 +170,7 @@ body[data-hero=banner] .hero h1,body[data-hero=banner] .hero .hero-chip strong{c
 body[data-hero=banner] .hero .lede{color:rgba(255,255,255,.86)}
 body[data-hero=banner] .hero .eyebrow{color:var(--accent)}
 body[data-hero=banner] .hero .micro,body[data-hero=banner] .hero .hero-zip{color:rgba(255,255,255,.7)}
-body[data-hero=banner] .hero .ticks li::before{border-color:var(--accent)}
+body[data-hero=banner] .hero .ticks li::before{border-color:#ffce85}
 body[data-hero=banner] .hero .btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.5)}
 body[data-hero=overlay] .hero{background:#0d1420;padding:calc(var(--pad) * 1.3) 0}
 body[data-hero=overlay] .hero-bg{opacity:.4}
@@ -177,7 +181,7 @@ body[data-hero=overlay] .hero h1{color:#fff}
 body[data-hero=overlay] .hero .lede{color:rgba(255,255,255,.85)}
 body[data-hero=overlay] .hero .eyebrow{color:var(--accent)}
 body[data-hero=overlay] .hero .micro,body[data-hero=overlay] .hero .hero-zip{color:rgba(255,255,255,.68)}
-body[data-hero=overlay] .hero .ticks li::before{border-color:var(--accent)}
+body[data-hero=overlay] .hero .ticks li::before{border-color:#ffce85}
 body[data-hero=overlay] .hero .btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.5)}
 
 /* ========================================================================
@@ -274,8 +278,27 @@ body[data-cards=edge] .card:hover{border-left-width:9px}
 .tab{flex:0 0 auto;background:#fff;border:1px solid var(--line);border-radius:999px;
   padding:.45rem 1rem;font:inherit;font-size:.88rem;font-weight:650;cursor:pointer;color:var(--muted)}
 .tab[aria-selected=true]{background:var(--brand);border-color:var(--brand);color:#fff}
-.tab-panel{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:1.5rem}
-.tab-panel h3{font-size:1.25rem}
+/* Two-column panel: the pitch + CTA on the left, a check-list of benefits on
+   the right, so the card is filled and balanced instead of a sparse box. */
+.tab-panel{background:#fff;border:1px solid var(--line);border-radius:calc(var(--radius) + 12px);
+  padding:clamp(1.5rem,3.5vw,2.5rem);gap:1.8rem;grid-template-columns:1fr;align-items:start;
+  box-shadow:0 18px 44px -34px rgba(8,20,55,.42)}
+/* Only the visible panel becomes a grid — a plain display:grid would override
+   the [hidden] attribute and show every service panel stacked at once. */
+.tab-panel:not([hidden]){display:grid}
+.tab-panel[hidden]{display:none}
+@media(min-width:820px){.tab-panel:not([hidden]){grid-template-columns:.82fr 1.18fr;gap:clamp(2rem,4vw,3.2rem)}}
+.tab-panel h3{font-size:clamp(1.3rem,2.4vw,1.6rem);margin:0 0 .5rem;line-height:1.2}
+.tp-sum{color:var(--muted);font-size:1.02rem;line-height:1.6;margin:0 0 1.5rem;max-width:42ch}
+.tp-main .btn{margin-top:.2rem}
+.tp-points{list-style:none;margin:0;padding:0;display:grid;gap:.95rem;align-content:start}
+@media(min-width:560px){.tp-points{grid-template-columns:1fr 1fr;gap:1.05rem 1.8rem}}
+.tp-points li{display:flex;gap:.7rem;align-items:flex-start;font-weight:650;color:var(--ink);
+  font-size:.97rem;line-height:1.4;min-width:0}
+.tp-check{flex:none;width:1.55rem;height:1.55rem;border-radius:50%;margin-top:.02rem;
+  display:inline-flex;align-items:center;justify-content:center;color:var(--brand);
+  background:color-mix(in srgb,var(--brand) 13%,#fff);
+  box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--brand) 22%,transparent)}
 
 /* timeline */
 .tl{list-style:none;padding:0;margin:0;position:relative}
@@ -510,7 +533,7 @@ body[data-hero=slab] .hero h1{color:#fff}
 body[data-hero=slab] .hero .lede{color:rgba(255,255,255,.86)}
 body[data-hero=slab] .hero .eyebrow{color:var(--accent)}
 body[data-hero=slab] .hero .micro,body[data-hero=slab] .hero .hero-zip{color:rgba(255,255,255,.7)}
-body[data-hero=slab] .hero .ticks li::before{border-color:var(--accent)}
+body[data-hero=slab] .hero .ticks li::before{border-color:#ffce85}
 body[data-hero=slab] .hero .btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.45)}
 body[data-hero=slab] .hero-art img{border-color:rgba(255,255,255,.18)}
 body[data-hero=slab] .hero-chip{background:var(--brand);border-color:transparent}
@@ -679,7 +702,7 @@ body[data-hero=split] .hero .ticks,body[data-hero=stacked] .hero .ticks{
   grid-template-columns:1fr 1fr;gap:.6rem 1.4rem;margin:1.6rem 0}
 @media(max-width:560px){body[data-hero=split] .hero .ticks{grid-template-columns:1fr}}
 body[data-hero=split] .hero .ticks li,body[data-hero=stacked] .hero .ticks li{color:#eaf1ff}
-body[data-hero=split] .hero .ticks li::before,body[data-hero=stacked] .hero .ticks li::before{border-color:var(--accent)}
+body[data-hero=split] .hero .ticks li::before,body[data-hero=stacked] .hero .ticks li::before{border-color:#ffce85}
 body[data-hero=split] .hero .btn-ghost,body[data-hero=stacked] .hero .btn-ghost{
   background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.5);color:#fff}
 body[data-hero=split] .hero .btn-ghost:hover,body[data-hero=stacked] .hero .btn-ghost:hover{
@@ -689,7 +712,7 @@ body[data-hero=split] .hero .btn-ghost:hover,body[data-hero=stacked] .hero .btn-
 .hero-card{background:#fff;color:var(--ink);border-radius:18px;padding:1.6rem;
   box-shadow:0 34px 70px -30px rgba(8,20,55,.55)}
 .hero-card .hc-rate{display:flex;align-items:center;gap:.5rem;font-size:.85rem;color:var(--muted);font-weight:600;margin:0}
-.hc-stars{color:var(--accent);letter-spacing:2px}
+.hc-stars{color:var(--star);letter-spacing:2px}
 .hero-card .hc-h{font-size:1.3rem;margin:.55rem 0 .2rem;color:var(--ink)}
 .hero-card .hc-sub{font-size:.92rem;color:var(--muted);margin:0 0 1rem}
 .hc-proof{list-style:none;padding:0;margin:0 0 1.1rem;display:grid;gap:.6rem}
@@ -705,11 +728,13 @@ body[data-hero=split] .hero .btn-ghost:hover,body[data-hero=stacked] .hero .btn-
 .mapembed iframe{width:100%;height:340px;border:0;display:block}
 .maptag{margin:.6rem 0 0;font-size:.82rem;color:rgba(255,255,255,.75)}
 
-/* --- section headings get a small accent bar (the eyebrow feel) --- */
-.sec .wrap>h2,.sec .wrap>.section-head{position:relative;padding-top:1rem}
-.sec .wrap>h2::after,.sec .wrap>.section-head::after{}
-.sec .wrap>h2::before,.sec .wrap>.section-head::before{content:"";position:absolute;top:0;left:0;
-  width:2.4rem;height:3px;border-radius:3px;background:var(--accent)}
+/* --- plain section headings (those WITHOUT a style-pack .section-head accent)
+   get one small brand bar, so every heading is marked exactly once. Headings
+   that carry .section-head already get the pack's own accent (underline / bar /
+   dot …), so they are deliberately excluded here to avoid a doubled mark. --- */
+.sec .wrap>h2:not(.section-head){position:relative;padding-top:1rem}
+.sec .wrap>h2:not(.section-head)::before{content:"";position:absolute;top:0;left:0;
+  width:2.4rem;height:3px;border-radius:3px;background:var(--brand)}
 
 /* --- stat band as a floating white card --- */
 .stats{background:var(--surface);color:inherit;padding:2.4rem 0}
@@ -821,6 +846,13 @@ body[data-hero=split] .hero .btn-ghost:hover,body[data-hero=stacked] .hero .btn-
 .tick-t span{display:block;color:var(--muted);font-size:.93rem;margin-top:.15rem;line-height:1.5}
 
 .isplit-side{display:flex;flex-direction:column;gap:1.4rem}
+/* On desktop the side follows the eye as the (often longer) story scrolls, so
+   the call card never leaves a dead void beneath it when there is no photo. */
+@media(min-width:900px){.isplit-side{position:sticky;top:88px;align-self:start}}
+.isplit-rate{display:flex;align-items:center;gap:.5rem;color:rgba(255,255,255,.9);
+  font-size:.82rem;font-weight:700;margin:0 0 .9rem}
+.isplit-stars{color:var(--star);letter-spacing:1px;font-size:.95rem}
+.isplit-note{color:rgba(255,255,255,.85);font-size:.92rem;line-height:1.6;margin:0 0 1.2rem}
 .isplit-pic img{width:100%;height:auto;object-fit:cover;border-radius:calc(var(--radius) + 10px);
   border:1px solid var(--line);box-shadow:0 30px 60px -34px rgba(8,20,55,.5)}
 .isplit-cta{background:linear-gradient(150deg,var(--brand),var(--brand-dark));color:#fff;
@@ -872,7 +904,10 @@ body[data-hero=split] .hero .btn-ghost:hover,body[data-hero=stacked] .hero .btn-
 .car-track::-webkit-scrollbar{display:none}
 .car-slide{flex:0 0 min(33rem,88%);scroll-snap-align:center;margin:0;background:#fff;
   border:1px solid var(--line);border-radius:20px;padding:2.9rem 1.9rem 1.7rem;position:relative;
+  display:flex;flex-direction:column;
   box-shadow:0 20px 46px -32px rgba(8,20,55,.45);transition:transform .2s ease,box-shadow .2s ease}
+/* pin the author row to the bottom so cards of different quote lengths align */
+.car-slide figcaption{margin-top:auto}
 .car-slide:hover{transform:translateY(-3px);box-shadow:0 30px 58px -30px rgba(8,20,55,.55)}
 .car-mark{position:absolute;top:.55rem;left:1.3rem;font-family:Georgia,serif;font-size:4.6rem;
   line-height:1;color:color-mix(in srgb,var(--brand) 20%,transparent);pointer-events:none}
@@ -900,7 +935,7 @@ body[data-hero=split] .hero .btn-ghost:hover,body[data-hero=stacked] .hero .btn-
 .car-dot.on{width:1.6rem;border-radius:.4rem;background:var(--brand)}
 
 /* 17b. Review star row + quote-mark repositioned as a corner watermark. */
-.car-stars{display:flex;gap:.16rem;color:var(--accent);margin:.1rem 0 .95rem}
+.car-stars{display:flex;gap:.16rem;color:var(--star);margin:.1rem 0 .95rem}
 .car-mark{top:.3rem;left:auto;right:1.4rem;font-size:4rem;
   color:color-mix(in srgb,var(--brand) 14%,transparent)}
 
@@ -915,7 +950,7 @@ body[data-hero=split] .hero .btn-ghost:hover,body[data-hero=stacked] .hero .btn-
 .hv-scene{width:100%;height:auto;display:block;border-radius:18px;
   box-shadow:0 30px 60px -34px rgba(8,20,55,.5)}
 .hv-foot{display:flex;align-items:center;gap:.6rem;justify-content:center;margin-top:1.1rem;flex-wrap:wrap}
-.hv-stars{color:var(--accent);letter-spacing:2px;font-size:1.02rem}
+.hv-stars{color:var(--star);letter-spacing:2px;font-size:1.02rem}
 .hv-cap{font-size:.9rem;color:var(--muted);font-weight:700}
 
 /* 19. Full-width service-area map band (above the footer on the home page). */
@@ -944,5 +979,5 @@ body[data-hero=split] .hero .btn-ghost:hover,body[data-hero=stacked] .hero .btn-
   margin-bottom:1rem;box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--brand) 20%,transparent)}
 .why-card h3{margin:0 0 .5rem;font-size:1.07rem;line-height:1.25}
 .why-card p{color:var(--muted);margin:0;font-size:.95rem;line-height:1.62;
-  display:-webkit-box;-webkit-line-clamp:6;-webkit-box-orient:vertical;overflow:hidden}
+  display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
 .sec-alt .why-ico{background:#fff}

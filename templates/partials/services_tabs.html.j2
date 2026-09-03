@@ -9,10 +9,19 @@
       </div>
       {% for s in services %}
       <div class="tab-panel" data-panel="{{ s.slug }}" {{ '' if loop.first else 'hidden' }}>
-        <h3>{{ s.name }}</h3>
-        <p class="lede">{{ s.summary }}</p>
-        <ul class="bullets two-col">{% for b in content.trust %}<li>{{ b.title }}</li>{% endfor %}</ul>
-        <a class="btn btn-accent" href="{% if t.city and not single_service %}/services/{{ s.slug }}/{{ t.slug }}{% else %}/services/{{ s.slug }}{% endif %}">More on {{ s.name|lower }}</a>
+        <div class="tp-main">
+          <h3>{{ s.name }}{% if t.city %} in {{ t.city }}{% endif %}</h3>
+          <p class="tp-sum">{{ s.summary }}</p>
+          <a class="btn btn-accent" href="{% if t.city and not single_service %}/services/{{ s.slug }}/{{ t.slug }}{% else %}/services/{{ s.slug }}{% endif %}">More on {{ s.name|lower }} &rarr;</a>
+        </div>
+        <ul class="tp-points">
+          {% for b in content.trust %}
+          <li>
+            <span class="tp-check" aria-hidden="true"><svg viewBox="0 0 24 24" width="13" height="13"><path d="M5 12.5l4.2 4.3L19 7" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <span>{{ b.title }}</span>
+          </li>
+          {% endfor %}
+        </ul>
       </div>
       {% endfor %}
     </div>

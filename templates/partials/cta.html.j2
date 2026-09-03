@@ -1,8 +1,12 @@
-<section class="cta reveal" id="quote">
+{# Closing band. Deliberately uses the CLOSING copy pool, not content.cta —
+   the conversion skeleton also carries the quote_band (which owns content.cta),
+   and two bands with identical wording on one page reads as a bug. #}
+{% set close_text = (content.closing.paras[0] if content.get('closing') and content.closing.get('paras') else content.cta.text) %}
+<section class="cta reveal">
   <div class="wrap cta-in">
     <div>
-      <h2>{{ content.cta.heading }}</h2>
-      <p>{{ content.cta.text }}</p>
+      <h2>Talk it through with {{ biz.company }}</h2>
+      <p>{{ close_text }}</p>
     </div>
     <a class="btn btn-accent btn-lg" href="tel:{{ t.phone_link }}">{{ content.cta.button }}</a>
   </div>
