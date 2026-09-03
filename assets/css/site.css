@@ -909,3 +909,11 @@ body[data-hero=split] .hero .btn-ghost:hover,body[data-hero=stacked] .hero .btn-
 @media(min-width:680px){.rev-grid{grid-template-columns:repeat(2,1fr)}}
 @media(min-width:1000px){.rev-grid{grid-template-columns:repeat(3,1fr)}}
 .rev-grid .car-slide{flex:none;width:auto}
+
+/* 18. Hero no-photo fallback — a theme-coloured illustration, not a phone pitch. */
+.hero-visual{display:block}
+.hv-scene{width:100%;height:auto;display:block;border-radius:18px;
+  box-shadow:0 30px 60px -34px rgba(8,20,55,.5)}
+.hv-foot{display:flex;align-items:center;gap:.6rem;justify-content:center;margin-top:1.1rem;flex-wrap:wrap}
+.hv-stars{color:var(--accent);letter-spacing:2px;font-size:1.02rem}
+.hv-cap{font-size:.9rem;color:var(--muted);font-weight:700}

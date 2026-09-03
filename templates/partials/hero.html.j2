@@ -46,19 +46,45 @@
       <img src="{{ imgs.hero }}" alt="{{ niche.label }} work by {{ biz.company }}" width="800" height="500" fetchpriority="high">
       <div class="hero-chip"><strong>{{ locations|length }}</strong><span>communities covered</span></div>
       {% else %}
-      {# No photo yet — a trust/assessment card fills the space (and converts)
-         instead of an empty placeholder image. #}
-      <aside class="hero-card">
-        <p class="hc-rate"><span class="hc-stars" aria-hidden="true">★★★★★</span> Trusted by local homeowners</p>
-        <h2 class="hc-h">Book a free assessment</h2>
-        <p class="hc-sub">A written quote before anything starts — no price from the kerb.</p>
-        <ul class="hc-proof">
-          <li>Free on-site assessment</li>
-          <li>A written quote before any work</li>
-          <li>Honest, repair-first advice</li>
-        </ul>
-        <a class="btn btn-accent" href="tel:{{ t.phone_link }}">{{ content.hero_cta }}</a>
-        <p class="hc-assure">No obligation &middot; call {{ t.phone }}</p>
+      {# No photo uploaded yet — a theme-coloured illustration fills the space
+         instead of a phone-number pitch, so the hero stays image-led. A real
+         photo (added in the Images section) is preferred over this whenever the
+         site has one. #}
+      <aside class="hero-visual" aria-hidden="true">
+        <svg class="hv-scene" viewBox="0 0 440 330" role="img" xmlns="http://www.w3.org/2000/svg">
+          <!-- sky panel -->
+          <rect x="0" y="0" width="440" height="330" rx="20" fill="var(--brand-light)"/>
+          <!-- sun / accent glow -->
+          <circle cx="360" cy="78" r="34" fill="var(--accent)" opacity=".9"/>
+          <!-- distant house -->
+          <g opacity=".5">
+            <path d="M60 176 L110 138 L160 176 Z" fill="var(--brand-dark)"/>
+            <rect x="74" y="176" width="72" height="60" fill="var(--brand)"/>
+          </g>
+          <!-- main house -->
+          <rect x="150" y="150" width="180" height="128" rx="8" fill="#fff" stroke="var(--line)"/>
+          <path d="M138 156 L240 78 L342 156 Z" fill="var(--brand)"/>
+          <path d="M240 78 L342 156 L318 156 L240 96 Z" fill="var(--brand-dark)" opacity=".85"/>
+          <rect x="300" y="96" width="18" height="34" fill="var(--brand-dark)"/>
+          <!-- door -->
+          <rect x="222" y="214" width="44" height="64" rx="5" fill="var(--brand)"/>
+          <circle cx="258" cy="248" r="3" fill="#fff"/>
+          <!-- windows -->
+          <rect x="170" y="178" width="40" height="38" rx="5" fill="var(--brand-light)" stroke="var(--line)"/>
+          <rect x="286" y="178" width="40" height="38" rx="5" fill="var(--brand-light)" stroke="var(--line)"/>
+          <!-- ground -->
+          <rect x="20" y="278" width="400" height="12" rx="6" fill="var(--brand)" opacity=".18"/>
+          <!-- shrubs -->
+          <circle cx="128" cy="272" r="16" fill="var(--brand)" opacity=".55"/>
+          <circle cx="352" cy="272" r="20" fill="var(--brand)" opacity=".45"/>
+          <!-- guarantee badge with check -->
+          <circle cx="360" cy="210" r="40" fill="var(--accent)"/>
+          <path d="M343 210 l11 11 20 -22" fill="none" stroke="var(--accent-text)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <div class="hv-foot">
+          <span class="hv-stars" aria-hidden="true">★★★★★</span>
+          <span class="hv-cap">Trusted by local homeowners</span>
+        </div>
       </aside>
       {% endif %}
     </div>
