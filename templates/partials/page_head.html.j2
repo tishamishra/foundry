@@ -1,6 +1,10 @@
 <section class="page-head">
   <div class="wrap">
-    <h1>{{ title }}</h1>
-    <p class="lede">{{ description }}</p>
+    <h1>{{ title.split(' | ')[0] }}</h1>
+    {% if description %}<p class="lede">{{ description }}</p>{% endif %}
+    <div class="ph-cta">
+      <a class="btn btn-accent" href="tel:{{ t.phone_link }}">{{ content.hero_cta or 'Arrange a visit' }}</a>
+      <a class="btn btn-ghost-light" href="#quote">Request a callback</a>
+    </div>
   </div>
 </section>

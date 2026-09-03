@@ -24,9 +24,9 @@ counts:
 # because sections are stateless.
 page_sections:
   home:             [hero, trust, services_grid, why_us, process, reviews, areas_teaser, faq, cta]
-  about:            [page_head, about_body, why_us, trust, cta]
-  contact:          [page_head, contact_body, cta]
-  services:         [page_head, services_grid, why_us, process, cta]
+  about:            [page_head, about_body, stats, why_us, process, faq, cta]
+  contact:          [page_head, contact_body, faq, cta]
+  services:         [page_head, services_showcase, why_us, process, faq, areas_teaser, cta]
   areas:            [page_head, areas_list, cta]
   county:           [page_head, county_body, services_grid, why_us, coverage_map, faq, cta]
   service:          [hero, service_body, signs, costs, timeline, compare, why_us, reviews, services_grid, areas_teaser, faq, cta]

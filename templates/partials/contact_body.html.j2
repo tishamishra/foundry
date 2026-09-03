@@ -1,20 +1,43 @@
+{% set mapq = (t.hq_city ~ ', ' ~ t.hq_state) if t.hq_city else ((counties[0].name ~ ', ' ~ counties[0].state_abbr) if counties else '') %}
 <section class="sec">
   <div class="wrap contact-grid">
-    <div class="prose">
-      <h2>Talk to a person</h2>
-      <p>The fastest way to get an answer is a phone call. We will ask what is going on, roughly where you are, and when suits you.</p>
-      <p class="big-phone"><a href="tel:{{ t.phone_link }}">{{ t.phone }}</a></p>
-      {% if t.email %}<p>Email: <a href="mailto:{{ t.email }}">{{ t.email }}</a></p>{% endif %}
-      {% if t.hours %}<p>Hours: {{ t.hours }}</p>{% endif %}
-      {% if t.address %}<p>{{ t.address }}</p>{% endif %}
-    </div>
     <form class="form" method="post" action="#" novalidate>
+      <h3>Request a callback</h3>
+      <p class="form-sub">We reply within the hour during working hours.</p>
       <label>Name<input name="name" autocomplete="name" required></label>
       <label>Phone<input name="phone" type="tel" autocomplete="tel" required></label>
+      {% if t.email %}<label>Email <span class="opt">(optional)</span><input name="email" type="email" autocomplete="email"></label>{% endif %}
       <label>Town<input name="town" autocomplete="address-level2"></label>
       <label>What do you need?<textarea name="detail" rows="4"></textarea></label>
-      <button class="btn btn-accent btn-lg" type="submit">Request a callback</button>
+      <button class="btn btn-accent btn-lg" type="submit">Send request</button>
       <p class="micro">Or call {{ t.phone }} now.</p>
     </form>
+
+    <div class="cdetails">
+      <div class="crow">
+        <span class="ci"><svg viewBox="0 0 24 24"><path class="io-b" d="M5 4h4l2 5-3 2a11 11 0 0 0 5 5l2-3 5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/></svg></span>
+        <div><b><a href="tel:{{ t.phone_link }}">{{ t.phone }}</a></b><span>Call or text, seven days</span></div>
+      </div>
+      {% if t.hours %}
+      <div class="crow">
+        <span class="ci"><svg viewBox="0 0 24 24"><circle class="io-b" cx="12" cy="12" r="8.5"/><path class="io-a" d="M12 7.5V12l3 2"/></svg></span>
+        <div><b>{{ t.hours }}</b><span>Emergencies handled anytime</span></div>
+      </div>
+      {% endif %}
+      {% if t.email %}
+      <div class="crow">
+        <span class="ci"><svg viewBox="0 0 24 24"><path class="io-b" d="M4 6h16v12H4z"/><path class="io-a" d="m5 7 7 5 7-5"/></svg></span>
+        <div><b><a href="mailto:{{ t.email }}">{{ t.email }}</a></b><span>For quotes and documents</span></div>
+      </div>
+      {% endif %}
+      <div class="crow">
+        <span class="ci"><svg viewBox="0 0 24 24"><path class="io-b" d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11Z"/><circle class="io-a" cx="12" cy="10" r="2.4"/></svg></span>
+        <div><b>{% if t.address %}{{ t.address }}{% else %}Serving {{ mapq or 'the local area' }}{% endif %}</b><span>{{ locations|length }} communities &middot; {{ counties|length }} counties</span></div>
+      </div>
+      {% if mapq %}
+      <div class="mapembed light"><iframe title="Service area map — {{ mapq }}" loading="lazy"
+        src="https://maps.google.com/maps?q={{ mapq|urlencode }}&t=&z=11&ie=UTF8&iwloc=&output=embed"></iframe></div>
+      {% endif %}
+    </div>
   </div>
 </section>

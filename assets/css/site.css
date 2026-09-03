@@ -772,3 +772,32 @@ body[data-hero=split] .hero .btn-ghost:hover,body[data-hero=stacked] .hero .btn-
 
 /* Prose sections read better centered than left-aligned with a big empty side */
 .sec .wrap>.prose{margin-inline:auto}
+
+/* ========================================================================
+   15. premium page header (about / contact / services / areas) + contact cards
+   ======================================================================== */
+.page-head{position:relative;overflow:hidden;border-bottom:0;color:#fff;padding:3rem 0 3.3rem;
+  background:radial-gradient(125% 140% at 88% -20%,
+    color-mix(in srgb,var(--brand) 80%,#fff), var(--brand) 34%, var(--brand-dark) 72%, var(--deep))}
+.page-head::before{content:"";position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(40% 60% at 92% 10%, color-mix(in srgb,var(--accent) 28%,transparent), transparent 70%)}
+.page-head .wrap{position:relative}
+.page-head h1{color:#fff}
+.page-head .lede{color:rgba(255,255,255,.9);max-width:46rem}
+.page-head .ph-cta{display:flex;gap:.7rem;flex-wrap:wrap;margin-top:1.5rem}
+.page-head .btn-ghost-light{background:rgba(255,255,255,.08);border:2px solid rgba(255,255,255,.5);color:#fff}
+.page-head .btn-ghost-light:hover{background:rgba(255,255,255,.16);color:#fff}
+
+/* contact detail cards + light map */
+.form-sub{color:var(--muted);font-size:.92rem;margin:-.3rem 0 1rem}
+.form .opt{color:var(--muted);font-weight:400}
+.cdetails{display:grid;gap:1rem;align-content:start}
+.crow{display:flex;gap:.9rem;align-items:flex-start;background:#fff;border:1px solid var(--line);
+  border-radius:14px;padding:1.05rem}
+.crow .ci{flex:none;width:40px;height:40px;border-radius:11px;background:var(--surface);display:grid;place-items:center}
+.crow .ci svg{width:20px;height:20px}
+.crow b{display:block;font-family:var(--font-display),serif;font-size:.98rem}
+.crow b a{color:inherit}
+.crow span{font-size:.9rem;color:var(--muted)}
+.mapembed.light{border:1px solid var(--line);box-shadow:0 20px 40px -30px rgba(8,20,55,.4)}
+.mapembed.light iframe{height:240px}
