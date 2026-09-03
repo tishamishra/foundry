@@ -801,3 +801,35 @@ body[data-hero=split] .hero .btn-ghost:hover,body[data-hero=stacked] .hero .btn-
 .crow span{font-size:.9rem;color:var(--muted)}
 .mapembed.light{border:1px solid var(--line);box-shadow:0 20px 40px -30px rgba(8,20,55,.4)}
 .mapembed.light iframe{height:240px}
+
+/* 16. Intro split — business story + trust checklist on the left, photo and a
+   call card on the right. Sits right after the hero on the home page. */
+.intro-split{padding-top:clamp(2.2rem,5vw,3.6rem)}
+.isplit{display:grid;gap:2rem}
+.isplit>*{min-width:0}
+@media(min-width:900px){.isplit{grid-template-columns:1.06fr .94fr;gap:clamp(2.2rem,4vw,3.4rem);align-items:start}}
+.isplit-copy h2{margin:.15rem 0 1rem;font-size:clamp(1.6rem,3.2vw,2.3rem);line-height:1.12}
+.isplit-copy .prose{max-width:none;margin:0}
+.isplit-copy .prose p{color:var(--muted);margin:0 0 1rem}
+
+.tick-list{list-style:none;margin:1.6rem 0 0;padding:0;display:grid;gap:1.15rem}
+.tick{display:flex;gap:.85rem;align-items:flex-start}
+.tick-b{flex:0 0 auto;width:28px;height:28px;border-radius:50%;background:var(--brand);color:#fff;
+  display:inline-flex;align-items:center;justify-content:center;margin-top:.1rem;
+  box-shadow:0 6px 14px -6px color-mix(in srgb,var(--brand) 60%,transparent)}
+.tick-t b{display:block;font-family:var(--font-display),serif;font-size:1.02rem;color:var(--ink);line-height:1.25}
+.tick-t span{display:block;color:var(--muted);font-size:.93rem;margin-top:.15rem;line-height:1.5}
+
+.isplit-side{display:flex;flex-direction:column;gap:1.4rem}
+.isplit-pic img{width:100%;height:auto;object-fit:cover;border-radius:calc(var(--radius) + 10px);
+  border:1px solid var(--line);box-shadow:0 30px 60px -34px rgba(8,20,55,.5)}
+.isplit-cta{background:linear-gradient(150deg,var(--brand),var(--brand-dark));color:#fff;
+  border-radius:calc(var(--radius) + 10px);padding:clamp(1.4rem,2.5vw,2rem);
+  box-shadow:0 26px 50px -30px color-mix(in srgb,var(--brand) 70%,transparent)}
+.isplit-cta h3{color:#fff;margin:0 0 .9rem;font-size:1.3rem}
+.isplit-phone{display:inline-flex;align-items:center;gap:.55rem;color:#fff;font-family:var(--font-display),serif;
+  font-size:clamp(1.35rem,3vw,1.7rem);font-weight:700;text-decoration:none;margin-bottom:1.1rem}
+.isplit-phone:hover{text-decoration:none;opacity:.92}
+.isplit-phone svg{opacity:.85}
+.btn-light{background:#fff;color:var(--brand-dark);border-color:#fff}
+.btn-light:hover{background:#fff;filter:brightness(.97);box-shadow:0 14px 30px -14px rgba(0,0,0,.45)}

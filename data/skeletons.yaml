@@ -5,6 +5,7 @@ standard:
   page_sections:
     home:
     - hero
+    - intro_split
     - answer_first
     - logos
     - stats
@@ -70,6 +71,7 @@ conversion:
     home:
     - emergency
     - hero
+    - intro_split
     - answer_first
     - quote_band
     - stats
@@ -189,6 +191,7 @@ directory:
   page_sections:
     home:
     - hero_compact
+    - intro_split
     - answer_first
     - dir_search
     - dir_matrix
@@ -241,6 +244,7 @@ local:
   page_sections:
     home:
     - hero
+    - intro_split
     - answer_first
     - coverage_map
     - stats
@@ -295,6 +299,7 @@ showcase:
   page_sections:
     home:
     - hero
+    - intro_split
     - answer_first
     - gallery
     - stats

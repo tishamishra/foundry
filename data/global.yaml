@@ -23,7 +23,7 @@ counts:
 # conversion decision living in data rather than in code, and it works for free
 # because sections are stateless.
 page_sections:
-  home:             [hero, trust, services_grid, why_us, process, reviews, areas_teaser, faq, cta]
+  home:             [hero, intro_split, services_grid, why_us, process, reviews, areas_teaser, faq, cta]
   about:            [page_head, about_body, stats, why_us, process, faq, cta]
   contact:          [page_head, contact_body, faq, cta]
   services:         [page_head, services_showcase, why_us, process, faq, areas_teaser, cta]
