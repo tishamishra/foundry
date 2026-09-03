@@ -463,7 +463,7 @@ body[data-cards=edge] .card:hover{border-left-width:9px}
 .cta h2{color:#fff;margin-bottom:.3rem}
 .cta p{color:rgba(255,255,255,.9);margin:0}
 .cta-in{display:flex;flex-wrap:wrap;gap:1.3rem;align-items:center;justify-content:space-between}
-.ftr{background:#0e1520;color:rgba(255,255,255,.72);padding:2.8rem 0 1.8rem}
+.ftr{background:#0e1520;color:rgba(255,255,255,.72);padding:0 0 1.8rem}
 .ftr a{color:#fff}
 .ftr .mark{color:#fff;font-size:1.1rem;margin-bottom:.35rem;display:block}
 .ftr-in{display:grid;gap:1.8rem}
@@ -752,14 +752,39 @@ body[data-hero=split] .hero .btn-ghost:hover,body[data-hero=stacked] .hero .btn-
   color-mix(in srgb,var(--brand) 80%,#fff), var(--brand) 42%, var(--brand-dark) 82%, var(--deep))}
 
 /* --- fuller footer columns --- */
-.ftr-grid{display:grid;gap:1.8rem;grid-template-columns:1fr}
-@media(min-width:760px){.ftr-grid{grid-template-columns:1.5fr 1fr 1fr 1fr;gap:2rem}}
+.ftr-grid{display:grid;gap:1.8rem;grid-template-columns:1fr;padding-top:2.6rem}
+@media(min-width:760px){.ftr-grid{grid-template-columns:1.6fr 1fr 1fr 1fr;gap:2.4rem}}
 .ftr-brand .mark{font-size:1.24rem}
 .ftr-blurb{font-size:.9rem;line-height:1.7;color:rgba(255,255,255,.7);margin:.5rem 0 .8rem;max-width:34ch}
 .ftr-phone a{color:#fff;font-weight:700;font-family:var(--font-display),serif}
 .ftr-col h3{color:#fff;font-size:.8rem;text-transform:uppercase;letter-spacing:.09em;margin:0 0 .85rem}
 .ftr-col ul{list-style:none;padding:0;margin:0;display:grid;gap:.5rem;font-size:.9rem}
 .ftr-col a{color:rgba(255,255,255,.76)}.ftr-col a:hover{color:#fff}
+.ftr-more{color:var(--star)!important;font-weight:700}
+.ftr-more:hover{filter:brightness(1.1)}
+
+/* --- newsletter band at the top of the footer --- */
+.ftr-news{background:rgba(255,255,255,.04);border-bottom:1px solid rgba(255,255,255,.1)}
+.ftr-news-in{display:grid;gap:1.4rem 3rem;align-items:center;padding:2.1rem 0}
+@media(min-width:820px){.ftr-news-in{grid-template-columns:1.1fr .9fr}}
+.ftr-news-copy h3{color:#fff;font-size:1.16rem;margin:0 0 .3rem;font-family:var(--font-display),serif}
+.ftr-news-copy p{color:rgba(255,255,255,.68);font-size:.9rem;line-height:1.6;margin:0;max-width:46ch}
+.ftr-news-form{display:flex;gap:.6rem;flex-wrap:wrap}
+.ftr-news-form input{flex:1 1 12rem;min-width:0;font:inherit;font-size:.94rem;padding:.7rem .9rem;
+  border-radius:calc(var(--radius) + 8px);border:1px solid rgba(255,255,255,.2);
+  background:rgba(255,255,255,.06);color:#fff}
+.ftr-news-form input::placeholder{color:rgba(255,255,255,.5)}
+.ftr-news-form input:focus{outline:2px solid var(--accent);outline-offset:1px;background:rgba(255,255,255,.1)}
+.ftr-news-form .btn{flex:0 0 auto}
+
+/* --- social icon row --- */
+.ftr-social{display:flex;gap:.6rem;margin-top:1.15rem}
+.ftr-social a{display:inline-flex;align-items:center;justify-content:center;width:2.3rem;height:2.3rem;
+  border-radius:50%;background:rgba(255,255,255,.08);color:rgba(255,255,255,.85);
+  transition:background .15s ease,color .15s ease,transform .15s ease}
+.ftr-social a:hover{background:var(--accent);color:var(--accent-text);transform:translateY(-2px)}
+.visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;
+  clip:rect(0 0 0 0);white-space:nowrap;border:0}
 
 /* --- service icon cards (What we do) --- */
 .svc-grid{display:grid;gap:1.2rem;grid-template-columns:1fr}
