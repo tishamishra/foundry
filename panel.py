@@ -41,8 +41,8 @@ from core.prompts import (GLOBAL_COLUMNS, REQUIRED_SCHEMA, SHAPE_CSV,  # noqa: E
                           api_prompt, build_prompt, coverage as content_coverage,
                           csv_template, csv_to_blocks, finalize_ai_blocks,
                           global_template, intel_prompt, parse_global_csv,
-                          required_fields, service_prompt, shape_of,
-                          smart_parse, tag_claims)
+                          required_fields, section_prompt, SECTIONS, service_prompt,
+                          shape_of, smart_parse, tag_claims)
 from core import aiwrite  # noqa: E402
 from core import bizcsv  # noqa: E402
 from core.tokens import unknown_tokens  # noqa: E402
@@ -830,6 +830,15 @@ def prompts_global_template():
 @guard
 def prompts_global():
     result = None
+    # Section prompt: pick a website section + niche and get ONE ChatGPT prompt
+    # for the whole thing, in the master-CSV shape this page already imports.
+    sec_key = request.values.get("section") or "home_hero"
+    sec_niche = request.values.get("section_niche") or (niches()[0] if niches() else "")
+    sec_n = max(1, min(30, int(request.values.get("section_n") or 10)))
+    sec_def = read_yaml(ROOT / "data" / "niches" / f"{sec_niche}.yaml") if sec_niche else {}
+    sec_label = sec_def.get("label") or sec_niche.replace("-", " ").title()
+    the_section_prompt = (section_prompt(sec_key, sec_niche, sec_label, sec_n)
+                          if sec_niche and sec_key in SECTIONS else "")
     if request.method == "POST":
         raw = ""
         up = request.files.get("file")
@@ -882,7 +891,9 @@ def prompts_global():
                 flash("No rows found. Make sure the file has a header row plus at least one data row.", "warn")
     return render_template("prompts_global.html", columns=GLOBAL_COLUMNS,
                            kinds=sorted(KINDS), niche_list=niches(), result=result,
-                           required_schema=REQUIRED_SCHEMA)
+                           required_schema=REQUIRED_SCHEMA,
+                           sections=SECTIONS, section=sec_key, section_niche=sec_niche,
+                           section_n=sec_n, section_prompt=the_section_prompt)
 
 
 @app.route("/prompts/template/<kind>.csv")

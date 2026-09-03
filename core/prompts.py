@@ -92,9 +92,11 @@ GUIDE: dict[str, str] = {
         "the trade, and steer toward a call. Confident and benefit-led — not a company history.",
     "hero_ctas": "A button label that says what happens next: an action plus its value, e.g. "
         "'Get a free estimate' or 'Book an inspection'. No punctuation.",
-    "trust_points": "One reason to trust the business — a short label and one backing sentence. "
-        "This is where credentials belong: licensed & insured, 24/7 response, workmanship "
-        "warranty, years in business. Each point a different proof.",
+    "trust_points": "One reason to trust the business — a short label and one plain sentence "
+        "about HOW they work: they look before they quote, one crew per job, findings in "
+        "writing, reachable while the work runs, tidy site at the end. Keep it about conduct "
+        "and the work — NOT credentials (licences, insurance, hours come from the business's "
+        "real facts, not invented here). Each point a different, concrete proof.",
     "about_paras": "The story that builds confidence: who they are, how long they've worked, how "
         "they operate, what they stand for. Concrete and specific — never generic filler.",
     "why_us": "One differentiator that answers 'why call THEM' — a specific edge such as same-day "
@@ -255,6 +257,64 @@ def _missing_required(kind: str, getter) -> list[str]:
 # the prompt
 # --------------------------------------------------------------------------
 
+# --------------------------------------------------------------------------
+# HOUSE STYLE — the single most important part of every prompt.
+#
+# The whole point: content that reads as if a real tradesperson wrote it for a
+# real homeowner. Google ranks helpful, human copy; it demotes copy that reads
+# as machine-spun. So we tell the model, in plain terms, to drop the "AI voice",
+# stay concrete to the trade, keep the English simple, use the words people
+# actually search — and to STOP trying to be word-for-word unique every time.
+# The honesty clause matches the software's fact gate, so the model never
+# invents credentials that later get filtered out anyway.
+# --------------------------------------------------------------------------
+
+AI_TELLS = (
+    "elevate, unlock, seamless, unparalleled, cutting-edge, robust, "
+    "comprehensive solution, in today's world, when it comes to, rest assured, "
+    "look no further, nestled, boasts, delve, tapestry, testament, "
+    "navigate the complexities, peace of mind, top-notch, state-of-the-art, "
+    "we pride ourselves, we understand that, ensure"
+)
+
+
+def style_rules(niche_label: str) -> str:
+    trade = niche_label.lower()
+    return f"""HOUSE STYLE — follow this exactly. It matters more than anything else below.
+
+Write like someone who actually runs a {trade} business, explaining things plainly
+to a neighbour — NOT like a marketing brochure and NOT like an AI.
+
+Voice and language:
+- Plain, everyday English. Short, clear sentences. If a simpler word works, use it.
+  Aim for the reading level of a local newspaper, not an essay.
+- Sound like someone who actually does {trade} work. Talk about the real job — the
+  actual problems, the visit, the fix, the quote — in concrete terms a homeowner
+  recognises. Generic copy that could belong to any trade is wrong.
+- Contractions are good (we'll, you're, it's, don't). Write the way people talk.
+- Do NOT use this AI/marketing filler: {AI_TELLS}. No hype, no exclamation marks,
+  no dramatic dashes, no "in conclusion".
+
+SEO, done the natural way:
+- Use the exact words a customer would type — "{trade} in {{city}}", the service
+  names, everyday problem phrases — but woven into normal sentences. Never stuff
+  or repeat a keyword. One natural mention beats five forced ones.
+- Be genuinely helpful and specific. Answer the real question. That is what makes
+  Google (and a reader) treat it as human-written.
+
+Uniqueness — relax it:
+- Do NOT contort the wording just to be different every time. Natural variety is
+  plenty. It is completely fine if blocks share ordinary phrases a real business
+  would repeat. Clear and honest beats artificially unique.
+
+Honesty (the software enforces this — don't fight it):
+- Do NOT invent claims. Never say licensed, insured, 24/7, bonded, "X years",
+  warranty, guaranteed, award-winning, financing, family-owned, certified or any
+  rating unless the block is purely about the WORK itself. The business's real
+  facts are added separately; your job is the plain, useful copy, not credentials.
+- Never mention a specific price or a discount."""
+
+
 def build_prompt(kind: str, niche_label: str, n: int = 20) -> str:
     shape = shape_of(kind)
     meta = META.get(kind, {"about": kind, "words": ""})
@@ -265,30 +325,28 @@ def build_prompt(kind: str, niche_label: str, n: int = 20) -> str:
     optional = ", ".join(OPTIONAL_TOKENS)
     words = f" Aim for {meta['words']} words." if meta.get("words") else ""
 
-    return f"""You are writing SEO-optimized website content blocks for a {niche_label} business.
+    return f"""You are writing website content for a {niche_label} business.
 Produce {n} blocks of ONE type: {kind} — {meta['about']}.{words}
 
-HOW TO WRITE THIS SECTION: {guide_for(kind)}
+{style_rules(niche_label)}
 
-Write to rank and to convert: natural, keyword-relevant, benefit-led copy. Use the
-language a customer would search for, and mention the services and selling points
-that fit — 24/7 emergency response, licensed and insured work, warranties, free
-estimates, financing, experience, and so on — wherever they suit the business.
+HOW TO WRITE THIS SECTION: {guide_for(kind)}
 
 OUTPUT FORMAT — return ONLY a YAML list, nothing before or after it, {n} items:
 
 {_indent(yaml_shape)}
 
-FORMAT RULES (these keep the import working — they are technical, not editorial):
-1. Tokens you may use (they are filled in at build time, so leave them as-is,
-   do not replace them with real values):
+FORMAT RULES (technical, so the import works — not editorial):
+1. Tokens you may use (they are filled in at build time, so leave them exactly as
+   written — do not replace them with real values):
    {tokens}
 2. Any clause that depends on one of these OPTIONAL tokens ({optional}) MUST be
    wrapped in [[ ... ]] so it disappears cleanly when the token is empty. Example:
    "We cover {{city}}[[, including {{nearby}}]]." Without this you get a stray
    comma on pages where the token has no value.
-3. Every block must be DISTINCT from the others — a different angle or keyword
-   focus, not the same sentence reworded. Exact duplicates are dropped on import.
+3. Give a natural spread of angles across the {n} blocks — don't paste the same
+   sentence {n} times. But don't over-think it: exact duplicates are dropped on
+   import, and near-similar ones are fine.
 
 Return the YAML list only.
 
@@ -305,6 +363,154 @@ def _csv_hint(shape: str) -> str:
     if shape == "paras":
         return f"(put the paragraphs in one cell, separated by {PARA_SEP})"
     return "(one block per row)"
+
+
+# --------------------------------------------------------------------------
+# SECTION prompts — one prompt for a whole part of the site, one paste back.
+#
+# The library is stored as many small kinds, but an operator thinks in SECTIONS:
+# "the home hero", "the FAQs", "the reviews". A section prompt bundles the kinds
+# that make up one visible section, asks ChatGPT for all of them in ONE go, and
+# returns them in the master CSV format the global importer already accepts — so
+# the whole section goes in with a single copy, generate, paste. No block-by-block.
+# --------------------------------------------------------------------------
+
+# Which fields of the master CSV a given block shape fills. Everything else in a
+# row stays blank. This is what lets one CSV carry every kind at once.
+SHAPE_GLOBAL_FIELDS: dict[str, list[str]] = {
+    "text":    ["text"],
+    "titled":  ["title", "text"],
+    "paras":   ["paras"],
+    "qa":      ["question", "answer"],
+    "review":  ["name", "text"],
+    "cta":     ["button", "heading", "text"],
+    "compare": ["factor", "repair", "replace"],
+}
+
+# A website section -> (label, the kinds that fill it, in reading order).
+SECTIONS: dict[str, dict[str, Any]] = {
+    "home_hero": {
+        "label": "Home hero",
+        "blurb": "the top of the home page: the big headline, the line under it, "
+                 "the trust ticks, and the button labels",
+        "kinds": ["taglines", "hero_intros", "trust_points", "hero_ctas"],
+    },
+    "home_body": {
+        "label": "Home body (why-us, process, CTA, closing)",
+        "blurb": "the middle and end of the home page",
+        "kinds": ["why_us", "process_steps", "cta_blocks", "closing_paras"],
+    },
+    "services": {
+        "label": "Service pages",
+        "blurb": "the hero lede, the opening paragraphs, and the 'what's included' bullets on a service page",
+        "kinds": ["service_heroes", "service_intros", "service_bullets"],
+    },
+    "city_pages": {
+        "label": "City / area pages",
+        "blurb": "the hero lede and body paragraphs on a city page and a service-in-city page",
+        "kinds": ["location_heroes", "location_intros", "location_service_intros"],
+    },
+    "faqs": {
+        "label": "FAQs",
+        "blurb": "the questions and answers",
+        "kinds": ["faqs"],
+    },
+    "reviews": {
+        "label": "Customer reviews",
+        "blurb": "believable customer reviews",
+        "kinds": ["reviews"],
+    },
+    "about": {
+        "label": "About",
+        "blurb": "the 'about us' paragraphs",
+        "kinds": ["about_paras"],
+    },
+    "decision": {
+        "label": "Signs, costs & repair-vs-replace",
+        "blurb": "the 'signs worth a call', the cost factors, and the repair-vs-replace rows",
+        "kinds": ["signs", "cost_factors", "compare_rows"],
+    },
+    "headings": {
+        "label": "Section headings (the H2 above each block)",
+        "blurb": "the short H2 heading above each section",
+        "kinds": ["heading_services", "heading_why", "heading_areas", "heading_reviews",
+                  "heading_process", "heading_costs", "heading_faqs", "heading_signs",
+                  "heading_compare", "heading_gallery"],
+    },
+}
+
+
+def section_prompt(section_key: str, niche_slug: str, niche_label: str, n: int = 10) -> str:
+    """One ChatGPT prompt for a whole section, returned in the master CSV format
+    (parse_global_csv reads it back), so the operator pastes ONE block, not many."""
+    sec = SECTIONS[section_key]
+    kinds = sec["kinds"]
+    tokens = ", ".join(TOKENS)
+    optional = ", ".join(OPTIONAL_TOKENS)
+
+    parts, examples = [], []
+    for i, kind in enumerate(kinds, 1):
+        shape = shape_of(kind)
+        meta = META.get(kind, {"about": kind, "words": ""})
+        cols = SHAPE_GLOBAL_FIELDS[shape]
+        words = f" ({meta['words']} words)" if meta.get("words") else ""
+        parts.append(
+            f"{i}. kind = {kind} — {meta['about']}{words}\n"
+            f"   fill column(s): {', '.join(cols)}\n"
+            f"   how to write it: {guide_for(kind)}")
+        examples.append(_section_example_row(niche_slug, kind, shape))
+
+    header = ",".join(GLOBAL_COLUMNS)
+    body_parts = "\n\n".join(parts)
+    example_block = "\n".join([header] + examples)
+
+    return f"""You are writing website content for a {niche_label} business — specifically the
+{sec['label']} ({sec['blurb']}).
+
+{style_rules(niche_label)}
+
+WRITE {n} BLOCKS FOR EACH OF THESE PARTS:
+
+{body_parts}
+
+OUTPUT — return ONE CSV and nothing else (no intro, no code fences). The first
+line MUST be exactly this header:
+
+{header}
+
+Then one row per block. For every row:
+- niche = {niche_slug}
+- kind = one of: {', '.join(kinds)}
+- service = leave blank (unless a bullet is for one specific service, then put its slug)
+- fill ONLY the column(s) that kind uses (listed above); leave all the rest blank
+- for the paras column, separate paragraphs with {PARA_SEP}
+- keep the site tokens exactly as written — {tokens} — and wrap any clause that
+  depends on an optional token ({optional}) in [[ ... ]] so it drops cleanly.
+
+Example rows (match this shape, then continue for all {n} of each kind):
+
+{example_block}
+"""
+
+
+def _section_example_row(niche_slug: str, kind: str, shape: str) -> str:
+    """A single worked CSV row for one kind, aligned to the master header."""
+    vals = {c: "" for c in GLOBAL_COLUMNS}
+    vals["niche"] = niche_slug
+    vals["kind"] = kind
+    sample = {
+        "text":    {"text": "{company} keeps the water where it should be[[ across {city}]]"},
+        "titled":  {"title": "We look before we quote", "text": "Nobody prices a job from the driveway; the number comes after we've seen it."},
+        "paras":   {"paras": f"First short paragraph about the work.{PARA_SEP}A second about how it's done."},
+        "qa":      {"question": "How soon can someone come out?", "answer": "Call {phone} and we'll give you a straight position in the queue, not a sales pitch."},
+        "review":  {"name": "Dana R.", "text": "Turned up when they said, found the leak fast, and didn't try to sell me a whole new system."},
+        "cta":     {"button": "Book a visit", "heading": "Not sure what's wrong?", "text": "Tell us what you're seeing and we'll tell you what it usually means."},
+        "compare": {"factor": "What it fixes", "repair": "One worn part", "replace": "A system near the end of its life"},
+    }[shape]
+    vals.update(sample)
+    buf = io.StringIO()
+    csv.writer(buf).writerow([vals[c] for c in GLOBAL_COLUMNS])
+    return buf.getvalue().strip("\r\n")
 
 
 # --------------------------------------------------------------------------

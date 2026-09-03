@@ -10,6 +10,33 @@
 </div>
 
 <div class="card">
+  <h2>Generate a whole section — one prompt, one paste</h2>
+  <p class="sub">Pick a part of the site and a trade, copy the prompt into ChatGPT, then paste the CSV it
+  returns into the <strong>Import</strong> box below. The whole section goes in at once — no block-by-block.
+  The prompt already tells ChatGPT to write plain, human, trade-specific copy (no AI filler, no invented
+  claims, natural keywords) in the exact format this page imports.</p>
+  <form method="get" class="three">
+    <label>Section
+      <select name="section" onchange="this.form.submit()">
+        {% for key, s in sections.items() %}<option value="{{ key }}" {{ 'selected' if section == key }}>{{ s.label }}</option>{% endfor %}
+      </select>
+    </label>
+    <label>Trade (niche)
+      <select name="section_niche" onchange="this.form.submit()">
+        {% for nkey in niche_list %}<option value="{{ nkey }}" {{ 'selected' if section_niche == nkey }}>{{ nkey }}</option>{% endfor %}
+      </select>
+    </label>
+    <label>Blocks per part
+      <input name="section_n" type="number" min="1" max="30" value="{{ section_n }}">
+    </label>
+  </form>
+  {% if section_prompt %}
+  <p class="note" style="margin-top:.4rem">Copy this into ChatGPT (click to select all):</p>
+  <textarea class="mono" rows="16" readonly onclick="this.select()">{{ section_prompt }}</textarea>
+  {% endif %}
+</div>
+
+<div class="card">
   <h2>How it works</h2>
   <ol class="fmt">
     <li>Download the master CSV — it has the full header and a few example rows.</li>
