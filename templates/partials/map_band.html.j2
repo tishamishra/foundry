@@ -1,0 +1,18 @@
+{# Full-bleed service-area map above the footer. No .wrap, so it spans the whole
+   viewport. A city/region view (not the exact street address) reads as a
+   coverage map: HQ city/state first, then the first covered county or
+   community, then the state. Static HTML — no CSP to configure. #}
+{% set mapq = ((t.hq_city ~ ', ' ~ t.hq_state) if t.hq_city else '')
+   or ((counties[0].name ~ ', ' ~ counties[0].state_abbr) if counties else '')
+   or ((locations[0].city ~ ', ' ~ locations[0].state_abbr) if locations else '')
+   or (t.state if t.state else '') %}
+{% if mapq %}
+<section class="map-band" aria-label="Service area map">
+  <iframe title="Service area — {{ mapq }}" loading="lazy"
+    src="https://maps.google.com/maps?q={{ mapq|urlencode }}&t=&z=10&ie=UTF8&iwloc=&output=embed"></iframe>
+  <div class="map-band-tag">
+    <span class="mb-dot" aria-hidden="true"></span>
+    Serving {{ mapq }}{% if locations|length %} &amp; {{ locations|length }} communities nearby{% endif %}
+  </div>
+</section>
+{% endif %}

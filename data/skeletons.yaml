@@ -17,6 +17,7 @@ standard:
     - areas_teaser
     - faq
     - quote_band
+    - map_band
     - sticky_call
     service:
     - hero
@@ -81,6 +82,7 @@ conversion:
     - reviews_carousel
     - cta
     - faq
+    - map_band
     - sticky_call
     service:
     - emergency
@@ -140,6 +142,7 @@ longform:
     - faq
     - areas_teaser
     - quote_band
+    - map_band
     - sticky_call
     service:
     - hero
@@ -201,6 +204,7 @@ directory:
     - reviews_carousel
     - faq
     - quote_band
+    - map_band
     - sticky_call
     service:
     - hero_compact
@@ -254,6 +258,7 @@ local:
     - reviews_carousel
     - faq
     - quote_band
+    - map_band
     - sticky_call
     service:
     - hero
@@ -310,6 +315,7 @@ showcase:
     - reviews_carousel
     - faq
     - quote_band
+    - map_band
     - sticky_call
     service:
     - hero

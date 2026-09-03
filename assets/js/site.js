@@ -135,8 +135,34 @@
         d.classList.toggle("on", k === i);
       });
     }
-    root.querySelector('[data-car="prev"]').addEventListener("click", function () { go(i - 1); });
-    root.querySelector('[data-car="next"]').addEventListener("click", function () { go(i + 1); });
+    // Auto-advance: slide sideways on its own every few seconds. It pauses
+    // while the pointer is over it, while it has keyboard focus, and briefly
+    // after any manual interaction, so it never fights the reader. Respects
+    // prefers-reduced-motion (reduce) by not autoplaying at all.
+    var timer = null;
+    function stop() { if (timer) { clearInterval(timer); timer = null; } }
+    function play() {
+      stop();
+      if (reduce || slides.length < 2) return;
+      timer = setInterval(function () { go(i + 1); }, 5000);
+    }
+    function bump() { go(i + 1); play(); }      // manual next, then restart clock
+    function back() { go(i - 1); play(); }
+
+    root.querySelector('[data-car="prev"]').addEventListener("click", back);
+    root.querySelector('[data-car="next"]').addEventListener("click", bump);
+    Array.prototype.forEach.call(dots.children, function (d) {
+      d.addEventListener("click", play);         // reset the clock on a dot tap
+    });
+    root.addEventListener("mouseenter", stop);
+    root.addEventListener("mouseleave", play);
+    root.addEventListener("focusin", stop);
+    root.addEventListener("focusout", play);
+    root.addEventListener("touchstart", stop, { passive: true });
+    document.addEventListener("visibilitychange", function () {
+      if (document.hidden) stop(); else play();
+    });
+
     track.addEventListener("scroll", function () {
       var nearest = 0, best = Infinity;
       Array.prototype.forEach.call(slides, function (s, k) {
@@ -149,6 +175,7 @@
       });
     }, { passive: true });
     go(0);
+    play();
   });
 
   /* ---- smooth in-page links --------------------------------------------- */

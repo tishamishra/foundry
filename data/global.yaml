@@ -7,11 +7,11 @@ counts:
   why_us: 6
   process: 4
   faqs: 8
-  reviews: 3
+  reviews: 6
   service_faqs: 8
   service_bullets: 6
   location_faqs: 8
-  location_reviews: 3
+  location_reviews: 6
   signs: 6
   compare_rows: 5
   cost_factors: 5
@@ -23,7 +23,7 @@ counts:
 # conversion decision living in data rather than in code, and it works for free
 # because sections are stateless.
 page_sections:
-  home:             [hero, intro_split, services_grid, why_us, process, reviews, areas_teaser, faq, cta]
+  home:             [hero, intro_split, services_grid, why_us, process, reviews, areas_teaser, faq, cta, map_band]
   about:            [page_head, about_body, stats, why_us, process, faq, cta]
   contact:          [page_head, contact_body, faq, cta]
   services:         [page_head, services_showcase, why_us, process, faq, areas_teaser, cta]

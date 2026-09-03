@@ -13,3 +13,10 @@ __pycache__/
 # Cowork-delivered files (screenshots, previews) — not part of the app
 Claude outputs/
 _to_delete/
+
+# macOS cruft and empty sibling folders that are not part of the engine
+.DS_Store
+/cpasites/
+/foundry/
+/gmbscr/
+/search-console-dashboard/
