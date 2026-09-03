@@ -3,23 +3,77 @@ label: Plumbing
 schema_type: Plumber
 services:
 - slug: emergency-plumbing
-  name: Emergency Plumbing
-  summary: Burst pipes and active leaks, triaged by how much water is moving.
+  name: Emergency Plumber
+  summary: Burst pipes and active leaks, triaged by how much water is moving. Someone reachable around the clock.
 - slug: drain-cleaning
   name: Drain Cleaning
   summary: Cleared properly, with a look at why it blocked in the first place.
 - slug: water-heater
-  name: Water Heater Repair & Replacement
-  summary: Diagnosis before replacement — not every failure is the tank.
+  name: Water Heater Repair & Installation
+  summary: Repair or replacement, diagnosed first — not every failure is the tank.
+- slug: tankless-water-heater
+  name: Tankless Water Heater Installation
+  summary: Endless hot water, sized and fitted to the household's real demand rather than the biggest unit on the shelf.
 - slug: leak-detection
   name: Leak Detection
-  summary: Finding it without opening the whole wall.
+  summary: Finding the leak without opening the whole wall.
+- slug: slab-leak-repair
+  name: Slab Leak Repair
+  summary: Leaks under the slab located and fixed with the least floor disturbed.
+- slug: burst-pipe-repair
+  name: Burst & Frozen Pipe Repair
+  summary: Burst or frozen pipes stopped, dried, and repaired in the right order.
 - slug: repiping
-  name: Repiping
-  summary: Sectional or whole-house, quoted against what the inspection supports.
+  name: Repiping (PEX & Copper)
+  summary: Sectional or whole-house, quoted against what the inspection actually supports.
+- slug: water-line-repair
+  name: Water Line Repair & Replacement
+  summary: The main line to the house repaired or replaced, with the dig kept as small as the job allows.
+- slug: sewer-line-repair
+  name: Sewer Line Repair & Replacement
+  summary: A failing sewer line diagnosed on camera before anything is dug up.
+- slug: trenchless-sewer-repair
+  name: Trenchless Sewer Repair
+  summary: Sewer lines relined or replaced without trenching the whole yard.
+- slug: sewer-camera-inspection
+  name: Sewer Camera Inspection
+  summary: A camera down the line so you see the actual problem, not a guess.
+- slug: hydro-jetting
+  name: Hydro Jetting
+  summary: High-pressure water that clears grease and roots a snake only pushes through.
+- slug: toilet-repair
+  name: Toilet Repair & Installation
+  summary: Running, leaking or blocked toilets fixed — or replaced when that is the cheaper answer.
 - slug: fixture-installation
-  name: Fixture Installation
-  summary: Taps, toilets and valves fitted and pressure-tested.
+  name: Faucet & Fixture Installation
+  summary: Taps, sinks and valves fitted and pressure-tested.
+- slug: garbage-disposal
+  name: Garbage Disposal Repair & Installation
+  summary: Jammed or leaking disposals repaired, or a new one fitted the same visit.
+- slug: sump-pump
+  name: Sump Pump Repair & Installation
+  summary: The pump that keeps the basement dry, tested and replaced before the next storm.
+- slug: well-pump
+  name: Well Pump Repair & Installation
+  summary: Low pressure and dry taps traced to the pump, tank or switch — then fixed.
+- slug: gas-line
+  name: Gas Line Installation & Repair
+  summary: Gas lines run, extended or repaired and leak-tested to code.
+- slug: backflow-testing
+  name: Backflow Testing & Prevention
+  summary: Certified backflow testing and repair to keep the drinking supply protected.
+- slug: water-softener
+  name: Water Softener & Filtration
+  summary: Hard water and bad taste handled by the right softener or filter, not the biggest one.
+- slug: shower-tub-installation
+  name: Shower & Bathtub Installation
+  summary: Showers and tubs plumbed in, sealed, and checked for leaks before you use them.
+- slug: bathroom-plumbing
+  name: Bathroom Plumbing
+  summary: Every pipe, drain and fixture behind a bathroom, handled by one crew.
+- slug: plumbing-inspection
+  name: Plumbing Inspection
+  summary: A written check of the whole system before you buy, sell, or spend.
 seo:
   home_title: '{company} | Plumbing'
   home_description: '{company} handles {niche_lower} work across the areas we serve. Assessment first,
