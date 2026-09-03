@@ -15,7 +15,7 @@ fi
 # image. So refresh just these three from the baked seed on every boot. Your
 # businesses, sites, imported library, coverage and images are never touched.
 # This is what makes a design update actually reach the live sites on redeploy.
-for f in themes.yaml styles.yaml skeletons.yaml; do
+for f in themes.yaml styles.yaml skeletons.yaml global.yaml; do
   if [ -f "/seed-data/$f" ]; then
     cp -f "/seed-data/$f" "/app/data/$f"
     echo "[foundry] refreshed design config: $f"
