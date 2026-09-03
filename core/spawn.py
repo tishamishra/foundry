@@ -270,6 +270,43 @@ def save_site(root: Path, data: dict) -> str:
     return site_id
 
 
+def save_directory(root: Path, data: dict) -> str:
+    """Write a multi-business DIRECTORY site record (type: directory).
+
+    Unlike save_site this has no single business/niche/skeleton — a directory
+    lists many businesses. An optional `niche` filters the listing to providers
+    that have a site in that trade; omit it to list every business.
+    """
+    domain = (data.get("domain") or "").strip().lower()
+    for prefix in ("https://", "http://", "www."):
+        if domain.startswith(prefix):
+            domain = domain[len(prefix):]
+    domain = domain.strip("/")
+    if not domain:
+        raise FoundryError("a directory needs a domain",
+                           ctx={"incomplete_row": True, "field": "domain"})
+    site_id = data.get("site_id") or slugify(domain)
+
+    record = {
+        "site_id": site_id,
+        "type": "directory",
+        "domain": domain,
+        "title": (data.get("title") or "").strip(),
+        "tagline": (data.get("tagline") or "").strip(),
+        "theme": data.get("theme") or "slate",
+        "style": data.get("style") or "classic",
+    }
+    niche = (data.get("niche") or "").strip()
+    if niche:
+        record["niche"] = niche
+
+    folder = root / "data" / "sites"
+    folder.mkdir(parents=True, exist_ok=True)
+    (folder / f"{site_id}.yaml").write_text(
+        yaml.safe_dump(record, sort_keys=False, allow_unicode=True), encoding="utf-8")
+    return site_id
+
+
 def delete_site(root: Path, site_id: str) -> None:
     path = root / "data" / "sites" / f"{site_id}.yaml"
     if path.is_file():

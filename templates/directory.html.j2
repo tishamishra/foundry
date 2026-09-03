@@ -1,0 +1,256 @@
+{#- The DIRECTORY template. One file, three page modes (home / city / provider),
+    chosen by the `page` variable. Self-contained header and footer (the normal
+    site partials expect a single-business context this page does not have) and
+    it reuses site.css + the theme :root, so a directory matches the themes. -#}
+{%- set page_url = 'https://' ~ domain ~ ('' if url == '/' else url) -%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ title }}</title>
+<meta name="description" content="{{ description }}">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<link rel="canonical" href="{{ page_url }}">
+<meta property="og:site_name" content="{{ dir_title }}">
+<meta property="og:title" content="{{ title }}">
+<meta property="og:description" content="{{ description }}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ page_url }}">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="{{ title }}">
+<meta name="twitter:description" content="{{ description }}">
+<meta name="theme-color" content="{{ theme.brand }}">
+{% if style.fonts_url %}<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="{{ style.fonts_url }}">{% endif %}
+<link rel="stylesheet" href="/assets/css/site.css">
+<style>
+:root{
+--brand:{{ theme.brand }};--brand-dark:{{ theme.brand_dark }};--brand-light:{{ theme.brand_light }};
+--accent:{{ theme.accent }};--accent-text:{{ theme.accent_text }};--ink:{{ theme.ink }};
+--muted:{{ theme.muted }};--line:{{ theme.line }};--surface:{{ theme.surface }};
+--font-display:{{ style.display_font }};--font-body:{{ style.body_font }};
+--radius:{{ style.radius }};--star:{{ theme.get('star') or '#f6b100' }};
+}
+</style>
+{# --- WebSite + ItemList / LocalBusiness structured data --- #}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":{{ dir_title|tojson }},"url":"https://{{ domain }}/"}
+</script>
+{% if page in ('home', 'city') %}
+{% set listed = (city.providers if page == 'city' else providers) %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ItemList","itemListElement":[{% for prov in listed %}{"@type":"ListItem","position":{{ loop.index }},"item":{"@type":"LocalBusiness","name":{{ prov.name|tojson }}{% if prov.phone %},"telephone":{{ prov.phone|tojson }}{% endif %}{% if prov.place %},"areaServed":{{ prov.place|tojson }}{% endif %}{% if prov.website %},"url":{{ prov.website|tojson }}{% endif %}}}{{ "," if not loop.last }}{% endfor %}]}
+</script>
+{% elif page == 'provider' %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LocalBusiness","name":{{ prov.name|tojson }}{% if prov.phone %},"telephone":{{ prov.phone|tojson }}{% endif %}{% if prov.email %},"email":{{ prov.email|tojson }}{% endif %}{% if prov.website %},"url":{{ prov.website|tojson }}{% endif %}{% if prov.address_full %},"address":{{ prov.address_full|tojson }}{% endif %}{% if prov.hours %},"openingHours":{{ prov.hours|tojson }}{% endif %}}
+</script>
+{% endif %}
+<style>
+/* ---- directory-specific styling (rides on top of site.css + the theme) ---- */
+.dir-hdr{position:sticky;top:0;z-index:60;background:#fff;border-bottom:1px solid var(--line)}
+.dir-hdr .wrap{display:flex;align-items:center;gap:1rem;min-height:66px}
+.dir-brand{font-family:var(--font-display),serif;font-weight:800;font-size:1.16rem;color:var(--ink);flex:1}
+.dir-brand a{color:inherit}
+.dir-hdr nav{display:none;gap:1.3rem}
+.dir-hdr nav a{color:var(--muted);font-weight:600;font-size:.94rem}
+.dir-hdr nav a:hover{color:var(--brand-dark)}
+@media(min-width:760px){.dir-hdr nav{display:flex}}
+.dir-hero{background:linear-gradient(160deg,var(--brand-light),#fff);border-bottom:1px solid var(--line);
+  padding:clamp(2.4rem,6vw,4.2rem) 0}
+.dir-hero h1{font-size:clamp(1.9rem,5vw,3rem);line-height:1.1;margin:0 0 .6rem}
+.dir-hero p{color:var(--muted);font-size:1.08rem;max-width:56ch;margin:0}
+.dir-stat{display:flex;gap:1.4rem;flex-wrap:wrap;margin-top:1.1rem;color:var(--muted);font-size:.9rem;font-weight:600}
+.dir-stat b{color:var(--brand-dark);font-family:var(--font-display),serif}
+.dir-search{display:flex;gap:.6rem;margin-top:1.5rem;max-width:34rem}
+.dir-search input{flex:1;font:inherit;font-size:1rem;padding:.8rem 1rem;border:1px solid var(--line);
+  border-radius:calc(var(--radius) + 8px);background:#fff;appearance:none;-webkit-appearance:none}
+.dir-search input:focus-visible{outline:2px solid var(--brand);outline-offset:1px;border-color:var(--brand)}
+.dir-sec{padding:clamp(2rem,5vw,3.4rem) 0}
+.dir-sec h2{font-size:clamp(1.35rem,3vw,1.9rem);margin:0 0 1.3rem}
+.city-grid{display:grid;gap:.8rem;grid-template-columns:repeat(2,1fr)}
+@media(min-width:640px){.city-grid{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:1000px){.city-grid{grid-template-columns:repeat(4,1fr)}}
+.city-chip{display:flex;justify-content:space-between;align-items:center;gap:.6rem;background:#fff;
+  border:1px solid var(--line);border-radius:12px;padding:.85rem 1rem;color:var(--ink);font-weight:650}
+.city-chip:hover{border-color:var(--brand);color:var(--brand-dark);text-decoration:none;transform:translateY(-2px);transition:.15s}
+.city-chip .n{background:var(--brand-light);color:var(--brand-dark);font-size:.78rem;font-weight:800;
+  border-radius:99px;padding:.1rem .55rem}
+.prov-grid{display:grid;gap:1.2rem;grid-template-columns:1fr}
+@media(min-width:640px){.prov-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1040px){.prov-grid{grid-template-columns:repeat(3,1fr)}}
+.prov-card{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);
+  border-radius:16px;padding:1.4rem;box-shadow:0 16px 38px -30px rgba(8,20,55,.4);
+  transition:transform .16s ease,box-shadow .16s ease,border-color .16s ease}
+.prov-card:hover{transform:translateY(-3px);box-shadow:0 26px 48px -28px rgba(8,20,55,.5);border-color:color-mix(in srgb,var(--brand) 30%,var(--line))}
+.prov-card h3{font-size:1.14rem;margin:0 0 .2rem}
+.prov-card h3 a{color:var(--ink)}.prov-card h3 a:hover{color:var(--brand-dark);text-decoration:none}
+.prov-place{color:var(--muted);font-size:.88rem;font-weight:600;margin:0 0 .7rem;display:flex;align-items:center;gap:.35rem}
+.prov-rate{display:inline-flex;align-items:center;gap:.35rem;font-size:.86rem;font-weight:700;color:var(--ink);margin-bottom:.7rem}
+.prov-rate .stars{color:var(--star);letter-spacing:1px}
+.prov-rate .c{color:var(--muted);font-weight:600}
+.prov-tags{display:flex;flex-wrap:wrap;gap:.35rem;margin:0 0 1rem}
+.prov-tag{background:var(--surface);border:1px solid var(--line);border-radius:99px;padding:.18rem .6rem;font-size:.76rem;color:var(--muted);font-weight:600}
+.prov-foot{margin-top:auto;display:flex;gap:.5rem;flex-wrap:wrap;align-items:center}
+.prov-foot .btn{padding:.55rem 1rem;font-size:.9rem}
+.prov-phone{font-weight:800;color:var(--brand-dark);font-size:.95rem;white-space:nowrap}
+.dir-empty{color:var(--muted);background:var(--surface);border:1px dashed var(--line);border-radius:14px;padding:2rem;text-align:center}
+.crumbs{font-size:.86rem;color:var(--muted);margin:0 0 1rem;display:flex;gap:.4rem;flex-wrap:wrap}
+.crumbs a{color:var(--brand-dark);font-weight:600}
+.pv-head{background:linear-gradient(160deg,var(--brand-light),#fff);border-bottom:1px solid var(--line);padding:clamp(2rem,5vw,3rem) 0}
+.pv-head h1{font-size:clamp(1.7rem,4.4vw,2.6rem);margin:.2rem 0 .4rem}
+.pv-grid{display:grid;gap:2rem;padding:clamp(2rem,5vw,3rem) 0}
+@media(min-width:880px){.pv-grid{grid-template-columns:1.3fr .7fr;gap:3rem;align-items:start}}
+.pv-detail dl{display:grid;grid-template-columns:auto 1fr;gap:.7rem 1.2rem;margin:0 0 1.5rem}
+.pv-detail dt{color:var(--muted);font-weight:700;font-size:.86rem;text-transform:uppercase;letter-spacing:.05em}
+.pv-detail dd{margin:0;font-weight:600;min-width:0}
+.pv-detail dd a{color:var(--brand-dark)}
+.pv-side{background:#fff;border:1px solid var(--line);border-radius:16px;padding:1.5rem;box-shadow:0 18px 44px -34px rgba(8,20,55,.42)}
+.pv-side .btn{width:100%;margin-bottom:.6rem;text-align:center}
+.pv-map{border-radius:12px;overflow:hidden;border:1px solid var(--line);margin-top:1rem;line-height:0}
+.pv-map iframe{width:100%;height:230px;border:0;display:block}
+.dir-ftr{background:#0e1520;color:rgba(255,255,255,.72);padding:2.4rem 0 1.8rem;margin-top:2rem}
+.dir-ftr .wrap{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-between;align-items:center}
+.dir-ftr b{color:#fff;font-family:var(--font-display),serif;font-size:1.1rem}
+.dir-ftr p{margin:.3rem 0 0;font-size:.85rem;max-width:52ch}
+</style>
+</head>
+<body class="page-directory" data-style="{{ style.key }}" data-cards="{{ style.cards }}"
+      data-headline="{{ style.headline }}" data-accent="{{ style.accent }}">
+
+{%- macro rating(prov) -%}
+{%- if prov.rating -%}
+<span class="prov-rate"><span class="stars" aria-hidden="true">{% for i in range(5) %}{{ '★' if i < (prov.rating|round(0,'floor')|int) else '☆' }}{% endfor %}</span>{{ '%.1f'|format(prov.rating) }}</span>
+{%- endif -%}
+{%- endmacro -%}
+
+{%- macro card(prov) -%}
+<article class="prov-card" data-search="{{ (prov.name ~ ' ' ~ prov.place ~ ' ' ~ (prov.services|join(' ')))|lower }}">
+  <h3><a href="/provider/{{ prov.slug }}">{{ prov.name }}</a></h3>
+  <p class="prov-place">📍 {{ prov.place or 'Service area' }}</p>
+  {{ rating(prov) }}
+  {% if prov.services %}<div class="prov-tags">{% for s in prov.services[:3] %}<span class="prov-tag">{{ s }}</span>{% endfor %}</div>{% endif %}
+  <div class="prov-foot">
+    {% if prov.phone %}<a class="prov-phone" href="tel:{{ prov.phone_link }}">{{ prov.phone }}</a>{% endif %}
+    <a class="btn btn-accent" href="/provider/{{ prov.slug }}">View details</a>
+  </div>
+</article>
+{%- endmacro -%}
+
+<header class="dir-hdr">
+  <div class="wrap">
+    <span class="dir-brand"><a href="/">{{ dir_title }}</a></span>
+    <nav>
+      <a href="/">All businesses</a>
+      {% for c in cities[:5] %}<a href="/city/{{ c.slug }}">{{ c.city }}</a>{% endfor %}
+    </nav>
+  </div>
+</header>
+
+{% if page == 'home' %}
+<section class="dir-hero">
+  <div class="wrap">
+    <h1>{{ dir_title }}</h1>
+    <p>{{ tagline }}</p>
+    <div class="dir-stat"><span><b>{{ total }}</b> businesses listed</span><span><b>{{ cities|length }}</b> cities covered</span></div>
+    <div class="dir-search"><input type="search" id="dirq" placeholder="Search by name, city or service…" aria-label="Search businesses"></div>
+  </div>
+</section>
+
+{% set featured = providers|selectattr('featured')|list %}
+{% if featured %}
+<section class="dir-sec"><div class="wrap">
+  <h2>Featured businesses</h2>
+  <div class="prov-grid">{% for prov in featured[:6] %}{{ card(prov) }}{% endfor %}</div>
+</div></section>
+{% endif %}
+
+{% if cities %}
+<section class="dir-sec sec-alt" style="background:var(--surface)"><div class="wrap">
+  <h2>Browse by city</h2>
+  <div class="city-grid">
+    {% for c in cities %}<a class="city-chip" href="/city/{{ c.slug }}"><span>{{ c.place }}</span><span class="n">{{ c.count }}</span></a>{% endfor %}
+  </div>
+</div></section>
+{% endif %}
+
+<section class="dir-sec"><div class="wrap">
+  <h2>All businesses <span style="color:var(--muted);font-weight:600;font-size:.7em">({{ total }})</span></h2>
+  {% if providers %}
+  <div class="prov-grid" id="provlist">{% for prov in providers %}{{ card(prov) }}{% endfor %}</div>
+  <p class="dir-empty" id="noresult" hidden>No businesses match that search.</p>
+  {% else %}
+  <p class="dir-empty">No businesses are listed yet. Add businesses in the engine and they will appear here.</p>
+  {% endif %}
+</div></section>
+
+{% elif page == 'city' %}
+<section class="pv-head"><div class="wrap">
+  <p class="crumbs"><a href="/">{{ dir_title }}</a> <span>›</span> <span>{{ city.place }}</span></p>
+  <h1>{{ niche_label }} in {{ city.place }}</h1>
+  <p style="color:var(--muted);margin:0">{{ city.count }} {{ niche_label|lower }} {{ 'business' if city.count == 1 else 'businesses' }} listed in {{ city.place }}.</p>
+</div></section>
+<section class="dir-sec"><div class="wrap">
+  <div class="prov-grid">{% for prov in city.providers %}{{ card(prov) }}{% endfor %}</div>
+  <p style="margin-top:1.6rem"><a class="more" href="/">&larr; All cities</a></p>
+</div></section>
+
+{% elif page == 'provider' %}
+<section class="pv-head"><div class="wrap">
+  <p class="crumbs"><a href="/">{{ dir_title }}</a> <span>›</span> {% if prov.place %}<a href="/city/{{ prov.place|slug }}">{{ prov.place }}</a> <span>›</span> {% endif %}<span>{{ prov.name }}</span></p>
+  <h1>{{ prov.name }}</h1>
+  <p style="color:var(--muted);margin:0;font-weight:600">{{ niche_label }}{% if prov.place %} · {{ prov.place }}{% endif %}</p>
+  {{ rating(prov) }}
+</div></section>
+<div class="wrap pv-grid">
+  <div class="pv-detail">
+    <dl>
+      {% if prov.phone %}<dt>Phone</dt><dd><a href="tel:{{ prov.phone_link }}">{{ prov.phone }}</a></dd>{% endif %}
+      {% if prov.email %}<dt>Email</dt><dd><a href="mailto:{{ prov.email }}">{{ prov.email }}</a></dd>{% endif %}
+      {% if prov.address_full %}<dt>Address</dt><dd>{{ prov.address_full }}</dd>{% endif %}
+      {% if prov.hours %}<dt>Hours</dt><dd>{{ prov.hours }}</dd>{% endif %}
+      {% if prov.years %}<dt>Experience</dt><dd>{{ prov.years }} years in business</dd>{% endif %}
+    </dl>
+    {% if prov.services %}
+    <h2 style="font-size:1.1rem;margin:0 0 .7rem">Services</h2>
+    <div class="prov-tags">{% for s in prov.services %}<span class="prov-tag">{{ s }}</span>{% endfor %}</div>
+    {% endif %}
+    <p style="color:var(--muted);margin-top:1.3rem">{{ prov.name }} is a {{ niche_label|lower }} business{% if prov.place %} serving {{ prov.place }}{% endif %}. Contact them directly using the details above.</p>
+  </div>
+  <aside class="pv-side">
+    {% if prov.phone %}<a class="btn btn-accent btn-lg" href="tel:{{ prov.phone_link }}">Call {{ prov.phone }}</a>{% endif %}
+    {% if prov.website %}<a class="btn btn-ghost" href="{{ prov.website }}" target="_blank" rel="noopener">Visit website &rarr;</a>{% endif %}
+    {% set mapq = prov.address_full or prov.place %}
+    {% if mapq %}<div class="pv-map"><iframe title="Map — {{ prov.name }}" loading="lazy" src="https://maps.google.com/maps?q={{ mapq|urlencode }}&t=&z=12&ie=UTF8&iwloc=&output=embed"></iframe></div>{% endif %}
+  </aside>
+</div>
+{% endif %}
+
+<footer class="dir-ftr"><div class="wrap">
+  <div><b>{{ dir_title }}</b><p>{{ dir_title }} is an independent directory. Listings are shown for information only — contact each business directly to confirm services, availability and pricing.</p></div>
+  <p class="micro" style="color:rgba(255,255,255,.6)">&copy; 2026 {{ dir_title }}</p>
+</div></footer>
+
+{% if page == 'home' and providers %}
+<script>
+(function(){
+  var q=document.getElementById('dirq'), list=document.getElementById('provlist'),
+      none=document.getElementById('noresult');
+  if(!q||!list) return;
+  var cards=[].slice.call(list.querySelectorAll('.prov-card'));
+  q.addEventListener('input', function(){
+    var v=q.value.trim().toLowerCase(), shown=0;
+    cards.forEach(function(c){
+      var hit = !v || c.getAttribute('data-search').indexOf(v)>-1;
+      c.hidden = !hit; if(hit) shown++;
+    });
+    if(none) none.hidden = shown>0;
+  });
+})();
+</script>
+{% endif %}
+</body>
+</html>

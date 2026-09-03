@@ -120,6 +120,18 @@ def site_rows() -> list[dict]:
         built_dir = ROOT / "dist" / raw.get("domain", "-")
         row["built"] = (built_dir / "index.html").is_file()
         row["shipped"] = site_id in shipped
+        # A directory site lists many businesses — no single-business graph.
+        if raw.get("type") == "directory":
+            from core.directory import load_providers
+            row["is_directory"] = True
+            row["company"] = raw.get("title") or "Directory"
+            try:
+                provs = load_providers(ROOT, raw.get("niche") or None)
+                row["providers"] = len(provs)
+            except Exception:                                # noqa: BLE001
+                row["providers"] = 0
+            rows.append(row)
+            continue
         try:
             g = load_graph(ROOT, site_id)
             row["cities"] = len(g.locations)
@@ -133,6 +145,28 @@ def site_rows() -> list[dict]:
 
 def build_one(site_id: str) -> dict:
     started = time.time()
+    raw = read_yaml(ROOT / "data" / "sites" / f"{site_id}.yaml")
+    # A directory site has no single-business graph, so the graph-based QA
+    # gates (block audit, SEO audit) do not apply — build it and report.
+    if raw.get("type") == "directory":
+        try:
+            result = build_site(ROOT, site_id)
+            PREVIEW.drop(raw.get("domain", ""))
+            try:
+                record_shipped(ROOT, site_id, "directory",
+                               signature(""), signature(""))
+            except Exception:                                # noqa: BLE001
+                pass
+            return {"site_id": site_id, "ok": True, "report": None, "seo": None,
+                    "stats": {"static": len(result.pages), "edge": 0,
+                              "assets": 1, "total": len(result.pages)},
+                    "seconds": round(time.time() - started, 1),
+                    "domain": raw.get("domain"), "diag": None, "directory": True}
+        except Exception as exc:                             # noqa: BLE001
+            return {"site_id": site_id, "ok": False, "report": None, "seo": None,
+                    "stats": None, "seconds": round(time.time() - started, 1),
+                    "domain": None, "error": f"{type(exc).__name__}: {exc}",
+                    "diag": None, "trace": traceback.format_exc()[-1200:]}
     try:
         graph = load_graph(ROOT, site_id)
         result = build_site(ROOT, site_id)
@@ -476,6 +510,43 @@ def site_save():
     except FoundryError as exc:
         flash(str(exc), "bad")
         return redirect(url_for("site_form"))
+
+
+@app.route("/directory/new")
+@app.route("/directory/<site_id>/edit")
+@guard
+def directory_form(site_id: str | None = None):
+    record = read_yaml(ROOT / "data" / "sites" / f"{site_id}.yaml") if site_id else {}
+    niche_labels = {}
+    for n in niches():
+        raw = read_yaml(ROOT / "data" / "niches" / f"{n}.yaml")
+        niche_labels[n] = raw.get("label") or n.replace("-", " ").title()
+    return render_template("directory_form.html", s=record, site_id=site_id,
+                           niche_labels=niche_labels)
+
+
+@app.route("/directory/save", methods=["POST"])
+@guard
+def directory_save():
+    from core.spawn import save_directory
+    f = request.form
+    payload = {
+        "site_id": f.get("site_id") or None,
+        "domain": f.get("domain"),
+        "title": f.get("title"),
+        "tagline": f.get("tagline"),
+        "niche": f.get("niche"),
+        "theme": f.get("theme"),
+        "style": f.get("style"),
+    }
+    try:
+        site_id = save_directory(ROOT, payload)
+        flash(f"Saved directory {site_id}.", "good")
+        return redirect(url_for("build", site=site_id) if f.get("then") == "build"
+                        else url_for("dashboard"))
+    except FoundryError as exc:
+        flash(str(exc), "bad")
+        return redirect(url_for("directory_form"))
 
 
 @app.route("/site/<site_id>/delete", methods=["POST"])

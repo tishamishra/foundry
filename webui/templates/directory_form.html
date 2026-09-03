@@ -1,0 +1,49 @@
+{% extends "base.html" %}{% block body %}
+<div class="head"><h1>{{ 'Edit directory' if site_id else 'New directory' }}</h1>
+  <p class="sub">A directory is one site that lists <strong>many businesses</strong> you have already
+  added to the engine — grouped by city, each linking to its own site. Nothing is invented: only your
+  real businesses appear, so add them the usual way and they show up here automatically.</p>
+</div>
+
+<form method="post" action="{{ url_for('directory_save') }}" class="card">
+  <input type="hidden" name="site_id" value="{{ site_id or '' }}">
+
+  <label>Directory title *
+    <input name="title" value="{{ s.title or '' }}" placeholder="Alabama Plumbing Directory" required>
+  </label>
+
+  <label>Domain *
+    <input name="domain" value="{{ s.domain or '' }}" placeholder="alplumbingdirectory.com" required>
+  </label>
+
+  <label>Tagline
+    <input name="tagline" value="{{ s.tagline or '' }}" placeholder="Find and compare trusted local plumbers near you">
+  </label>
+
+  <label>Trade filter
+    <select name="niche">
+      <option value="">All businesses (every trade)</option>
+      {% for n in NICHES %}<option value="{{ n }}" {{ 'selected' if s.niche == n }}>{{ niche_labels[n] }}</option>{% endfor %}
+    </select>
+  </label>
+  <p class="note">Lists every business that has a site in the chosen trade — or every business you have
+  added, if you pick “All”.</p>
+
+  <label>Theme
+    <select name="theme">
+      {% for key, t in THEMES.items() %}<option value="{{ key }}" {{ 'selected' if (s.theme or 'slate') == key }}>{{ t.label }}</option>{% endfor %}
+    </select>
+  </label>
+
+  <label>Style pack
+    <select name="style">
+      {% for key, st in STYLES.items() %}<option value="{{ key }}" {{ 'selected' if (s.style or 'classic') == key }}>{{ st.label }}</option>{% endfor %}
+    </select>
+  </label>
+
+  <div class="foot">
+    <button class="btn" name="then" value="dash">Save</button>
+    <button class="btn ghost" name="then" value="build">Save and build</button>
+  </div>
+</form>
+{% endblock %}

@@ -19,6 +19,23 @@
 <thead><tr><th>Site</th><th>Business</th><th>Coverage</th><th>Seed</th><th>Mode</th><th>Status</th><th></th></tr></thead>
 <tbody>
 {% for r in rows %}
+{% if r.get('is_directory') %}
+<tr>
+  <td><strong>{{ r.raw.domain }}</strong><div class="mono dim">{{ r.site_id }}</div></td>
+  <td>{{ r.company }} <span class="pill">directory</span><div class="dim">{% if r.raw.niche %}{{ r.raw.niche }} · {% endif %}{{ r.raw.theme }}</div></td>
+  <td>{{ r.providers }} businesses</td>
+  <td class="mono">—</td>
+  <td class="dim">multi-business</td>
+  <td>{% if r.built %}<span class="pill good">built</span>{% else %}<span class="pill">not built</span>{% endif %}</td>
+  <td class="row-actions">
+    <a class="mini" href="{{ url_for('build', site=r.site_id) }}">Build</a>
+    {% if r.built %}<a class="mini" href="{{ url_for('preview', site_id=r.site_id) }}" target="_blank">Preview</a>
+    <a class="mini" href="{{ url_for('download_site', site_id=r.site_id) }}">Download</a>{% endif %}
+    <a class="mini" href="{{ url_for('directory_form', site_id=r.site_id) }}">Edit</a>
+    <form method="post" action="{{ url_for('site_delete', site_id=r.site_id) }}" class="inline"><button class="mini danger">Delete</button></form>
+  </td>
+</tr>
+{% else %}
 <tr>
   <td><strong>{{ r.raw.domain }}</strong><div class="mono dim">{{ r.site_id }}</div></td>
   <td>{{ r.company }}<div class="dim">{{ r.raw.niche }} · {{ r.raw.theme }}</div></td>
@@ -42,6 +59,7 @@
   </td>
 </tr>
 {% if r.error %}<tr class="detail"><td colspan="7"><span class="dim">{{ r.error }}</span></td></tr>{% endif %}
+{% endif %}
 {% endfor %}
 </tbody></table>
 {% endif %}

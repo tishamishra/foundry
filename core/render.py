@@ -33,7 +33,7 @@ from typing import Any
 
 from jinja2 import Environment, FileSystemLoader, StrictUndefined
 
-from .graph import FoundryError, Graph, Location, load_graph, slugify
+from .graph import FoundryError, Graph, Location, _read_yaml, load_graph, slugify
 from .images import (SLOTS, copy_into_site, pool_counts, pool_for)
 from .library import (GENERIC, Composer, interpolate, load_library,
                       unresolved_tokens)
@@ -529,6 +529,13 @@ def clear_output(out_dir: Path) -> None:
 
 
 def build_site(root: Path, site_id: str, out_root: Path | None = None) -> BuildResult:
+    # A directory site lists many businesses rather than marketing one, so it
+    # has no single business/niche graph — route it to its own builder.
+    site_probe = _read_yaml(root / "data" / "sites" / f"{site_id}.yaml")
+    if site_probe.get("type") == "directory":
+        from .directory import build_directory
+        return build_directory(root, site_probe, out_root)
+
     g = load_graph(root, site_id)
     site, niche_key = g.site, g.site["niche"]
     out_dir = (out_root or root / "dist") / site["domain"]
