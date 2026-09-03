@@ -37,12 +37,36 @@ from typing import Any, Iterable
 import yaml
 
 from .graph import FoundryError, Graph, list_sites, load_graph, slugify
+from .library import _hash64
 from .render import composition_text
 
 _WORD = re.compile(r"[a-z0-9']+")
 
 BLOCK_AT = 0.25
 WARN_AT = 0.15
+
+# The seed space the composer draws from. Any positive integer is a valid
+# composition seed; we keep the default well inside a large range so two
+# different sites almost never collide by chance.
+SEED_SPACE = 1_000_000
+
+
+def seed_from_identity(key: str) -> int:
+    """A stable, well-spread default seed derived from a site's own identity.
+
+    Why this exists: content selection is decided ENTIRELY by composition_seed
+    (`Stream(h ^ ((seed+1)*GOLDEN) ...)`). Two sites that share a seed draw
+    byte-identical blocks from the pool — only the business facts differ. The
+    old default was a hard-coded `1` for every site, and `find_seed` returned
+    `1` whenever a site had no siblings yet (the first site of a niche, or a
+    site rebuilt right after its only sibling was deleted). The result: every
+    such site got seed 1 and therefore identical copy.
+
+    Deriving the default from the site's own id/domain gives each site a
+    distinct seed the moment it is created — no sibling search required — so a
+    fresh build, or a delete-then-rebuild, varies its content on its own.
+    """
+    return (_hash64(key or "foundry") % SEED_SPACE) + 1
 
 
 def _shingles(text: str, n: int = 5) -> set[str]:
@@ -94,6 +118,21 @@ def find_seed(root: Path, graph: Graph, *, exclude: str | None = None,
         v = int((other.site.get("render") or {}).get("location_variants", 4))
         siblings.append((site_id, _shingles(composition_text(root, other, seed, v))))
 
+    # No siblings to differ from — the first site of a niche, or a site rebuilt
+    # right after its only sibling was deleted. EVERY seed scores a perfect 0
+    # here, so "search for the least-overlapping seed" is meaningless. The old
+    # code broke on the first candidate and returned seed 1 for all of them,
+    # which is exactly why fresh/rebuilt sites came out byte-identical. Instead
+    # derive the seed from the site's own identity: distinct per site, stable on
+    # rebuild, and already varied without anything to compare against.
+    if not siblings:
+        seed = seed_from_identity(graph.site["site_id"])
+        return SeedResult(seed=seed, score=0.0, nearest=None, tried=1,
+                          verdict="clear",
+                          advice="first site of this niche — seeded from its own "
+                                 "identity so its copy is already distinct.",
+                          ranked=[(seed, 0.0)])
+
     ranked: list[tuple[int, float]] = []
     best = SeedResult(seed=1, score=1.0, nearest=None, tried=0, verdict="clear")
 
@@ -106,14 +145,9 @@ def find_seed(root: Path, graph: Graph, *, exclude: str | None = None,
                 worst, who = score, site_id
         ranked.append((seed, worst))
         best.tried += 1
-        if worst < best.score or best.nearest is None and not siblings:
+        if worst < best.score:
             best = SeedResult(seed=seed, score=worst, nearest=who,
                               tried=best.tried, verdict="clear")
-        if not siblings:
-            best = SeedResult(seed=seed, score=0.0, nearest=None, tried=1,
-                              verdict="clear",
-                              advice="first site of this niche — nothing to differ from yet")
-            break
         if worst == 0.0:
             break
         if deadline is not None and time.monotonic() >= deadline:
@@ -217,7 +251,7 @@ def save_site(root: Path, data: dict) -> str:
         "theme": data.get("theme") or "slate",
         "style": data.get("style") or "classic",
         "skeleton": data.get("skeleton") or "standard",
-        "composition_seed": int(data.get("composition_seed") or 1),
+        "composition_seed": int(data.get("composition_seed") or seed_from_identity(site_id)),
         "coverage": {"states": data.get("states") or [],
                      "cities": data.get("cities") or []},
         "render": {
