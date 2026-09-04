@@ -98,8 +98,14 @@ def _niche_services(root: Path, niche_key: str) -> dict[str, str]:
     return out, (n.get("label") or niche_key.replace("-", " ").title())
 
 
-def load_providers(root: Path, niche_filter: str | None = None) -> list[dict]:
-    """Build the provider list from the engine's OWN business + site records."""
+def load_providers(root: Path, niche_filter: str | None = None,
+                   include_slugs: set | None = None) -> list[dict]:
+    """Build the provider list from the engine's OWN business + site records.
+
+    include_slugs, when given, is an explicit pick of business slugs to list —
+    exactly those businesses appear, regardless of niche. When it is None the
+    listing is every business (optionally filtered to one trade by niche_filter).
+    """
     site_index = _load_site_index(root)
     folder = root / "data" / "businesses"
     providers: list[dict] = []
@@ -112,14 +118,19 @@ def load_providers(root: Path, niche_filter: str | None = None) -> list[dict]:
         if not company:
             continue
         slug = biz.get("slug") or p.stem
+        # An explicit pick wins: include exactly the chosen businesses.
+        if include_slugs is not None and slug not in include_slugs:
+            continue
         sites = site_index.get(slug, [])
 
-        # The provider's category comes from the site(s) built for it. Filter to
-        # the directory's niche when one is set; skip businesses that don't match.
+        # The provider's category comes from the site(s) built for it. With no
+        # explicit pick, filter to the directory's niche when one is set.
         niches = [s.get("niche") for s in sites if s.get("niche")]
-        if niche_filter:
+        if niche_filter and include_slugs is None:
             if niche_filter not in niches:
                 continue
+            niche_key = niche_filter
+        elif niche_filter:
             niche_key = niche_filter
         else:
             niche_key = niches[0] if niches else None
@@ -219,8 +230,22 @@ def build_directory(root: Path, site: dict, out_root: Path | None = None):
     style["key"] = site.get("style") or "classic"
     globals_ = _read_yaml(root / "data" / "global.yaml")
 
-    providers = load_providers(root, site.get("niche") or None)
+    include = site.get("businesses") or None
+    providers = load_providers(root, site.get("niche") or None,
+                               include_slugs=set(include) if include else None)
     cities = _cities(providers)
+
+    # Optional cap: at most N businesses per city (highest-rated kept first).
+    try:
+        per_city = int(site.get("per_city_limit") or 0)
+    except (TypeError, ValueError):
+        per_city = 0
+    if per_city > 0:
+        for c in cities:
+            c["providers"] = c["providers"][:per_city]
+            c["count"] = len(c["providers"])
+        kept = {pr["slug"] for c in cities for pr in c["providers"]}
+        providers = [pr for pr in providers if not pr["place"] or pr["slug"] in kept]
     niche_label = site.get("niche_label") or (providers[0]["niche_label"] if providers else "") or "Local"
     dir_title = site.get("title") or (niche_label + " Directory")
 

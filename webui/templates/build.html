@@ -37,7 +37,7 @@
     {% if r.ok %}<a class="btn sm" href="{{ url_for('preview', site_id=r.site_id) }}" target="_blank">Preview</a>{% endif %}
   </div>
 
-  {% if r.stats %}
+  {% if r.stats and r.report %}
   <p class="dim">{{ '{:,}'.format(r.stats.static) }} static + {{ '{:,}'.format(r.stats.edge) }} edge pages ·
     {{ r.stats.assets }} assets · {{ r.report.stats.avg_words_per_page }} words/page</p>
   {% set sim = r.report.stats.similarity %}
@@ -46,6 +46,9 @@
     <span class="pill {{ 'good' if sim.score < WARN_AT else ('warn' if sim.score < BLOCK_AT else 'bad') }}">{{ '%.1f%%'|format(sim.score * 100) }}</span>
     <span class="dim">(composed copy alone {{ '%.1f%%'|format(sim.copy_only * 100) }})</span></p>
   {% endif %}
+  {% elif r.stats %}
+  {# directory build: no single-business report/similarity — just the page count #}
+  <p class="dim">{{ '{:,}'.format(r.stats.static) }} pages · {{ r.stats.assets }} asset(s) · multi-business directory</p>
   {% endif %}
 
   {% if r.report %}

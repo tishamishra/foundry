@@ -521,8 +521,19 @@ def directory_form(site_id: str | None = None):
     for n in niches():
         raw = read_yaml(ROOT / "data" / "niches" / f"{n}.yaml")
         niche_labels[n] = raw.get("label") or n.replace("-", " ").title()
+    # Businesses the operator can pick from, each with the city it will list under.
+    biz_rows = []
+    for b in businesses():
+        addr = b.get("address") or {}
+        biz_rows.append({
+            "slug": b.get("slug"),
+            "company": b.get("company") or b.get("brand") or b.get("slug"),
+            "place": ", ".join([x for x in (addr.get("city"), addr.get("state")) if x]),
+        })
+    biz_rows.sort(key=lambda x: (x["place"], x["company"]))
     return render_template("directory_form.html", s=record, site_id=site_id,
-                           niche_labels=niche_labels)
+                           niche_labels=niche_labels, biz_rows=biz_rows,
+                           picked=set(record.get("businesses") or []))
 
 
 @app.route("/directory/save", methods=["POST"])
@@ -538,6 +549,8 @@ def directory_save():
         "niche": f.get("niche"),
         "theme": f.get("theme"),
         "style": f.get("style"),
+        "businesses": f.getlist("businesses"),
+        "per_city_limit": (f.get("per_city_limit") or "").strip() or None,
     }
     try:
         site_id = save_directory(ROOT, payload)

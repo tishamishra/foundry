@@ -41,6 +41,29 @@
     </select>
   </label>
 
+  <label>Max businesses per city
+    <input name="per_city_limit" type="number" min="0" value="{{ s.per_city_limit or '' }}" placeholder="Leave blank for no limit">
+  </label>
+  <p class="note">Caps how many businesses are listed for each city (highest-rated kept first). Blank = list all.</p>
+
+  <fieldset style="border:1px solid #e2e6ee;border-radius:12px;padding:14px;margin:14px 0">
+    <legend style="font-weight:700;padding:0 6px">Businesses to include</legend>
+    <p class="note" style="margin-top:0">Tick specific businesses to list exactly those. Leave <strong>all unticked</strong> to include every business that matches the trade filter above.</p>
+    <div style="display:flex;gap:8px;margin:8px 0">
+      <button type="button" class="btn sm ghost" onclick="document.querySelectorAll('[name=businesses]').forEach(c=>c.checked=true)">Select all</button>
+      <button type="button" class="btn sm ghost" onclick="document.querySelectorAll('[name=businesses]').forEach(c=>c.checked=false)">Clear</button>
+    </div>
+    <div style="max-height:280px;overflow:auto;display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:6px">
+      {% for b in biz_rows %}
+      <label class="chk" style="display:flex;gap:8px;align-items:baseline;padding:4px 2px">
+        <input type="checkbox" name="businesses" value="{{ b.slug }}" {{ 'checked' if b.slug in picked }}>
+        <span>{{ b.company }}{% if b.place %} <span class="dim">· {{ b.place }}</span>{% endif %}</span>
+      </label>
+      {% endfor %}
+      {% if not biz_rows %}<p class="dim">No businesses added yet. Add businesses first, then they appear here.</p>{% endif %}
+    </div>
+  </fieldset>
+
   <div class="foot">
     <button class="btn" name="then" value="dash">Save</button>
     <button class="btn ghost" name="then" value="build">Save and build</button>

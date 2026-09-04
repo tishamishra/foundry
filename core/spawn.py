@@ -299,6 +299,17 @@ def save_directory(root: Path, data: dict) -> str:
     niche = (data.get("niche") or "").strip()
     if niche:
         record["niche"] = niche
+    # Optional explicit pick of businesses (slugs); empty = list all matching.
+    picked = [b for b in (data.get("businesses") or []) if b]
+    if picked:
+        record["businesses"] = picked
+    # Optional cap on how many businesses to list per city.
+    try:
+        limit = int(data.get("per_city_limit") or 0)
+    except (TypeError, ValueError):
+        limit = 0
+    if limit > 0:
+        record["per_city_limit"] = limit
 
     folder = root / "data" / "sites"
     folder.mkdir(parents=True, exist_ok=True)
