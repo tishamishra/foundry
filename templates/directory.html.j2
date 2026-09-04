@@ -309,6 +309,33 @@
   font-size:.72rem;font-weight:800;letter-spacing:.02em;padding:.2rem .6rem;border-radius:999px;
   box-shadow:0 8px 18px -8px color-mix(in srgb,var(--accent) 60%,transparent)}
 .rel-card.best{padding-top:1.4rem}
+
+/* professional listing rows (home directory + provider related) */
+.dir-list{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#fff;box-shadow:0 22px 48px -36px rgba(8,20,55,.42)}
+.dlrow{display:grid;grid-template-columns:auto 1fr auto auto;align-items:center;gap:1.1rem;
+  padding:1.05rem 1.35rem;border-top:1px solid var(--line);color:inherit;text-decoration:none;transition:background .14s ease}
+.dlrow:first-child{border-top:none}
+.dlrow:hover{background:color-mix(in srgb,var(--brand) 5%,#fff);text-decoration:none}
+.dlrow-rank{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;
+  background:color-mix(in srgb,var(--brand) 12%,#fff);color:var(--brand-dark);font-weight:800;font-size:1.08rem}
+.dlrow-main{min-width:0}
+.dlrow-name{display:flex;align-items:center;gap:.55rem;flex-wrap:wrap;font-weight:800;color:var(--ink);font-size:1.05rem;line-height:1.2}
+.dlrow-meta{display:flex;align-items:center;gap:.35rem;color:var(--muted);font-size:.86rem;font-weight:600;margin-top:.22rem}
+.dlrow-dot{opacity:.55}
+.dlrow-rate{color:var(--brand-dark);font-weight:800;font-size:.95rem;white-space:nowrap}
+.dlrow-act{display:flex;flex-direction:column;align-items:flex-end;gap:.12rem;white-space:nowrap}
+.dlrow-phone{font-weight:800;color:var(--ink);font-size:.94rem}
+.dlrow-view{color:var(--brand);font-weight:700;font-size:.8rem}
+.dlrow.is-sp{background:color-mix(in srgb,var(--accent) 7%,#fff);border-left:3px solid var(--accent)}
+.dlrow.is-sp:hover{background:color-mix(in srgb,var(--accent) 12%,#fff)}
+.dlrow-badge{background:var(--accent);color:var(--accent-text);font-size:.64rem;font-weight:800;
+  letter-spacing:.03em;text-transform:uppercase;padding:.18rem .5rem;border-radius:999px;white-space:nowrap}
+.dir-list-more{margin-top:1.6rem;text-align:center}
+.sec-lead{color:var(--muted);max-width:52ch;margin:.2rem 0 1.4rem;line-height:1.6}
+@media(max-width:620px){
+  .dlrow{grid-template-columns:auto 1fr auto;gap:.55rem .85rem;padding:.95rem 1.05rem}
+  .dlrow-act{grid-column:1 / -1;flex-direction:row;align-items:center;justify-content:space-between;width:100%;margin-top:.15rem}
+}
 </style>
 </head>
 <body class="page-directory" data-style="{{ style.key }}" data-cards="{{ style.cards }}"
@@ -341,6 +368,20 @@
   <span class="rel-name">{{ prov.name }}</span>
   <span class="rel-place">{{ pin }} {{ prov.place or 'Service area' }}</span>
   <span class="rel-foot">{% if prov.rating %}<span class="rel-rate">★ {{ '%.1f'|format(prov.rating) }}</span>{% endif %}{% if prov.phone %}<span class="rel-phone">{{ prov.phone }}</span>{% endif %}</span>
+</a>
+{%- endmacro -%}
+
+{#- One horizontal listing row — the professional list style used on the home
+    page and the provider "more companies" section. `badge` set = sponsored. -#}
+{%- macro list_row(prov, badge='') -%}
+<a class="dlrow{{ ' is-sp' if badge }}" href="/provider/{{ prov.slug }}">
+  <span class="dlrow-rank" aria-hidden="true">{{ (prov.name[:1]|upper) if prov.name else '•' }}</span>
+  <span class="dlrow-main">
+    <span class="dlrow-name">{{ prov.name }}{% if badge %}<span class="dlrow-badge">★ {{ badge }}</span>{% endif %}</span>
+    <span class="dlrow-meta">{{ pin }} {{ prov.place or 'Service area' }}{% if prov.services %} <span class="dlrow-dot">·</span> {{ prov.services[:2]|join(', ') }}{% endif %}</span>
+  </span>
+  {% if prov.rating %}<span class="dlrow-rate">★ {{ '%.1f'|format(prov.rating) }}</span>{% endif %}
+  <span class="dlrow-act">{% if prov.phone %}<span class="dlrow-phone">{{ prov.phone }}</span>{% endif %}<span class="dlrow-view">View details &rarr;</span></span>
 </a>
 {%- endmacro -%}
 
@@ -448,20 +489,20 @@
 </div></section>
 {% endif %}
 
-{# ---------- 6. the directory listing (search filters this) ---------- #}
+{# ---------- 6. the directory listing (professional list — 14 max, sponsored first) ---------- #}
 <section class="dir-sec sec-alt" style="background:var(--surface)" id="listings"><div class="wrap">
   <p class="sec-eyebrow">The directory</p>
-  <h2 class="sec-h2">{{ total }} {{ niche_label|lower }} {{ 'business' if total == 1 else 'businesses' }} listed</h2>
-  <div class="dir-search"><input type="search" id="dirq" placeholder="Search by name, city or service…" aria-label="Search businesses"></div>
-  {% if services %}
-  <div class="svc-chips">{% for s in services[:10] %}<button type="button" class="svc-chip" data-q="{{ s|lower }}">{{ s }}</button>{% endfor %}</div>
-  {% endif %}
+  <h2 class="sec-h2">Featured {{ niche_label|lower }} companies</h2>
+  <p class="sec-lead">A selection from our directory of {{ total }} {{ niche_label|lower }} {{ 'business' if total == 1 else 'businesses' }}{% if sponsored %} — our top-rated picks are highlighted{% endif %}. Browse the full list to compare every option.</p>
   {% if providers %}
-  {% set featured = providers|selectattr('featured')|list %}
-  <div class="prov-grid" id="provlist">
-    {% for prov in (featured + (providers|rejectattr('featured')|list)) %}{{ card(prov) }}{% endfor %}
+  {% set others = providers|rejectattr('slug', 'in', sponsored_slugs)|list %}
+  {% set home_list = (sponsored + others)[:14] %}
+  <div class="dir-list">
+    {% for prov in home_list %}{{ list_row(prov, sponsored_label if prov.slug in sponsored_slugs else '') }}{% endfor %}
   </div>
-  <p class="dir-empty" id="noresult" hidden>No businesses match that search.</p>
+  {% if total > home_list|length %}
+  <div class="dir-list-more"><a class="btn btn-accent btn-lg" href="/businesses">View all {{ total }} {{ niche_label|lower }} businesses &rarr;</a></div>
+  {% endif %}
   {% else %}
   <p class="dir-empty">No businesses are listed yet. Add businesses in the engine and they will appear here.</p>
   {% endif %}
@@ -586,8 +627,8 @@
 <section class="dir-sec sec-alt" style="background:var(--surface)"><div class="wrap">
   <p class="sec-eyebrow">Compare more options</p>
   <h2 class="sec-h2">More {{ niche_label|lower }} companies{% if prov.place %} near {{ prov.place }}{% endif %}</h2>
-  <div class="rel-list">
-    {% for rp in related %}{{ rel_card(rp, sponsored_label if rp.slug in sponsored_slugs else '') }}{% endfor %}
+  <div class="dir-list">
+    {% for rp in related[:6] %}{{ list_row(rp, sponsored_label if rp.slug in sponsored_slugs else '') }}{% endfor %}
   </div>
   <p style="margin-top:1.6rem"><a class="more" href="/businesses">See all {{ total }} {{ niche_label|lower }} businesses &rarr;</a></p>
 </div></section>
@@ -649,9 +690,9 @@
 (function(){
   var q=document.getElementById('dirq'), list=document.getElementById('provlist'),
       none=document.getElementById('noresult');
-  if(!list) return;
-  var cards=[].slice.call(list.querySelectorAll('.prov-card'));
   function apply(v){
+    if(!list) return;
+    var cards=[].slice.call(list.querySelectorAll('.prov-card'));
     var toks=(v||'').toLowerCase().split(/[\s,]+/).filter(Boolean), shown=0;
     cards.forEach(function(c){
       var d=c.getAttribute('data-search');
@@ -660,6 +701,25 @@
     });
     if(none) none.hidden=shown>0;
   }
+  // hero search form -> service + city. On the home page (no in-page list) send
+  // the visitor to the full /businesses list carrying the query; on /businesses
+  // filter in place and scroll to the results.
+  window.dirSearch=function(e){
+    e.preventDefault();
+    var s=document.getElementById('lh-service'), c=document.getElementById('lh-city');
+    var terms=[(s&&s.value)||'', (c&&c.value)||''].filter(Boolean);
+    var query=terms.join(' ').trim();
+    if(list){
+      if(q) q.value=query; apply(query);
+      var t=document.getElementById('listings'); if(t) t.scrollIntoView({behavior:'smooth'});
+    } else if(query){
+      window.location.href='/businesses#q=' + encodeURIComponent(query);
+    } else {
+      var t2=document.getElementById('listings'); if(t2) t2.scrollIntoView({behavior:'smooth'});
+    }
+    return false;
+  };
+  if(!list) return;
   if(q) q.addEventListener('input', function(){ apply(q.value); });
   // service quick-chips
   [].slice.call(document.querySelectorAll('.svc-chip')).forEach(function(ch){
@@ -670,17 +730,11 @@
       ch.classList.add('on');
     });
   });
-  // hero search form -> build a query from service + city, filter, scroll to listings
-  window.dirSearch=function(e){
-    e.preventDefault();
-    var s=document.getElementById('lh-service'), c=document.getElementById('lh-city');
-    var terms=[(s&&s.value)||'', (c&&c.value)||''].filter(Boolean);
-    var query=terms.join(' ').trim();
-    if(q) q.value=query; apply(query);
-    var target=document.getElementById('listings');
-    if(target) target.scrollIntoView({behavior:'smooth'});
-    return false;
-  };
+  // pick up a query passed from the home hero (/businesses#q=...)
+  if(location.hash.indexOf('#q=')===0){
+    var hv=decodeURIComponent(location.hash.slice(3));
+    if(q) q.value=hv; apply(hv);
+  }
 })();
 </script>
 {% endif %}
