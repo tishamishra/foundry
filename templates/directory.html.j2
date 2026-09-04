@@ -3,6 +3,49 @@
     site partials expect a single-business context this page does not have) and
     it reuses site.css + the theme :root, so a directory matches the themes. -#}
 {%- set page_url = 'https://' ~ domain ~ ('' if url == '/' else url) -%}
+{%- set social = site.get('social') or {} -%}
+{# --- FAQ data (single source for the visible accordion AND FAQPage schema) --- #}
+{%- set faqs = [] -%}
+{%- if page == 'city' -%}
+  {%- set _f = [] -%}
+  {%- set _ = _f.append({'q': 'How many ' ~ niche_label|lower ~ ' companies are listed in ' ~ city.city ~ '?', 'a': (city.count|string) ~ ' in ' ~ city.place ~ ' right now, and more are added as new local businesses join the directory.'}) -%}
+  {%- set _ = _f.append({'q': 'Are these ' ~ city.city ~ ' ' ~ niche_label|lower ~ ' companies vetted?', 'a': 'Listings are drawn from local ' ~ niche_label|lower ~ ' businesses serving ' ~ city.place ~ '. Always confirm licensing, insurance and recent reviews directly with a business before hiring.'}) -%}
+  {%- set _ = _f.append({'q': 'How do I contact a ' ~ niche_label|lower ~ ' company in ' ~ city.city ~ '?', 'a': 'Open any listing to see the phone number and, where available, email, website and a map, then reach out to the business directly.'}) -%}
+  {%- set _ = _f.append({'q': 'Is it free to use this directory?', 'a': 'Yes. Browsing and contacting ' ~ niche_label|lower ~ ' companies in ' ~ city.city ~ ' is completely free — you deal with each business directly, with no lead fees.'}) -%}
+  {%- set _ = _f.append({'q': 'How do I compare ' ~ niche_label|lower ~ ' companies in ' ~ city.city ~ '?', 'a': 'Look at the services each one offers, their ratings and how close they are to you, then shortlist two or three and contact them directly to talk through your job.'}) -%}
+  {%- set _ = _f.append({'q': 'Can I get quotes from more than one ' ~ niche_label|lower ~ ' company?', 'a': 'Yes, and it is worth doing. Reach out to a few ' ~ niche_label|lower ~ ' companies in ' ~ city.city ~ ' and ask each for a written quote so you can compare price and scope before deciding.'}) -%}
+  {%- set _ = _f.append({'q': 'What should I ask before hiring a ' ~ niche_label|lower ~ ' company?', 'a': 'Confirm they are licensed and insured, ask about experience with your type of job, get the price in writing, and check recent reviews before any work begins.'}) -%}
+  {%- set _ = _f.append({'q': 'Do these companies also serve areas near ' ~ city.city ~ '?', 'a': 'Many ' ~ niche_label|lower ~ ' companies listed in ' ~ city.city ~ ' also cover nearby towns and neighbourhoods. Confirm your exact address is in their service area when you get in touch.'}) -%}
+  {%- set _ = _f.append({'q': 'How often is the ' ~ city.city ~ ' listing updated?', 'a': 'New local ' ~ niche_label|lower ~ ' businesses appear here as they are added to the directory, so the ' ~ city.city ~ ' list grows over time.'}) -%}
+  {%- set _ = _f.append({'q': 'What information does each listing show?', 'a': 'Each listing shows the company name and phone number, plus email, website, address, a map and the services it covers where those details are available.'}) -%}
+  {%- set faqs = _f -%}
+{%- elif page == 'provider' -%}
+  {%- set plist = prov.services or services -%}
+  {%- set _f = [] -%}
+  {%- set _ = _f.append({'q': 'How do I contact ' ~ prov.name ~ '?', 'a': ('Call ' ~ prov.phone ~ '. ' if prov.phone else '') ~ ('Email ' ~ prov.email ~ '. ' if prov.email else '') ~ ('You can also find them at ' ~ prov.address_full ~ '.' if prov.address_full else 'Use the contact details on this page.')}) -%}
+  {%- set _ = _f.append({'q': 'Where is ' ~ prov.name ~ ' located?', 'a': (prov.name ~ ' is located at ' ~ prov.address_full ~ '.' if prov.address_full else prov.name ~ ' is based in ' ~ (prov.place or 'the local area') ~ '.') ~ ' Use the map on this page to see the exact area they work from.'}) -%}
+  {%- set _ = _f.append({'q': 'What areas does ' ~ prov.name ~ ' serve?', 'a': prov.name ~ ' is based in ' ~ (prov.place or 'the local area') ~ ' and serves ' ~ (prov.city or prov.place or 'the surrounding area') ~ ' and nearby communities. Confirm your address is covered when you get in touch.'}) -%}
+  {%- set _ = _f.append({'q': 'What ' ~ niche_label|lower ~ ' services does ' ~ prov.name ~ ' offer?', 'a': ('Typical services include ' ~ (plist[:6]|join(', ')) ~ '. ' if plist else '') ~ 'Contact ' ~ prov.name ~ ' to confirm they cover your specific job.'}) -%}
+  {%- set _ = _f.append({'q': 'Is ' ~ prov.name ~ ' licensed and insured?', 'a': 'Reputable ' ~ niche_label|lower ~ ' companies carry the right licensing and insurance for the work they do. Always ask ' ~ prov.name ~ ' to confirm their current credentials before hiring.'}) -%}
+  {%- if prov.hours -%}{%- set _ = _f.append({'q': 'What are ' ~ prov.name ~ "'s hours?", 'a': prov.name ~ ' lists these hours: ' ~ prov.hours ~ '. Call ahead to confirm availability, especially for urgent or after-hours work.'}) -%}{%- endif -%}
+  {%- set _ = _f.append({'q': 'How much does ' ~ prov.name ~ ' charge?', 'a': 'Prices depend on the job. Contact ' ~ prov.name ~ ' directly to describe your project and ask for a written quote — there is no cost to request one through this directory.'}) -%}
+  {%- set _ = _f.append({'q': 'How do I get a quote from ' ~ prov.name ~ '?', 'a': ('Call ' ~ prov.phone ~ ' or use ' if prov.phone else 'Use ') ~ 'the contact details on this page, describe your job and ask for a written estimate before any work starts.'}) -%}
+  {%- set _ = _f.append({'q': 'How do I choose between ' ~ niche_label|lower ~ ' companies?', 'a': 'Compare the services each one offers, their ratings and how close they are, then ask a couple for a written quote before deciding. The related companies on this page make it easy to line up options.'}) -%}
+  {%- set _ = _f.append({'q': 'Are there other ' ~ niche_label|lower ~ ' companies near ' ~ (prov.city or prov.place or 'here') ~ '?', 'a': 'Yes. Scroll to the related companies on this page to see other ' ~ niche_label|lower ~ ' businesses nearby, so you can compare a few before you hire.'}) -%}
+  {%- set faqs = _f -%}
+{%- elif page == 'home' -%}
+  {%- set _f = [] -%}
+  {%- set _ = _f.append({'q': 'How do I choose a ' ~ niche_label|lower ~ ' company?', 'a': 'Compare ratings, the services each one offers and how close they are, then contact a few directly to talk through your job and get a written quote before any work begins.'}) -%}
+  {%- set _ = _f.append({'q': 'Is it free to use this directory?', 'a': 'Yes. Browsing the listings and contacting any business is completely free — you deal with each company directly, with no lead fees or middleman.'}) -%}
+  {%- set _ = _f.append({'q': 'Are these ' ~ niche_label|lower ~ ' companies vetted?', 'a': 'Listings are drawn from local ' ~ niche_label|lower ~ ' businesses serving this area. Always confirm licensing, insurance and recent reviews directly with a business before hiring.'}) -%}
+  {%- set _ = _f.append({'q': 'How many ' ~ niche_label|lower ~ ' companies are listed?', 'a': (total|string) ~ ' across ' ~ (cities|length|string) ~ ' ' ~ ('city' if cities|length == 1 else 'cities') ~ ', and the list grows as more local businesses are added.'}) -%}
+  {%- set _ = _f.append({'q': 'How do I contact a business in the directory?', 'a': 'Open any listing to see the phone number and, where available, email, website and a map, then reach out to the company directly.'}) -%}
+  {%- set _ = _f.append({'q': 'What areas does this directory cover?', 'a': 'It covers ' ~ (cities|length|string) ~ ' ' ~ ('city' if cities|length == 1 else 'cities') ~ ' and the areas around them. Browse by city to see the ' ~ niche_label|lower ~ ' companies serving each one.'}) -%}
+  {%- set _ = _f.append({'q': 'How is this different from a lead-generation site?', 'a': 'You contact each ' ~ niche_label|lower ~ ' company directly using the details on its listing. We do not sell your information or charge lead fees — the directory simply helps you find and reach local businesses.'}) -%}
+  {%- set _ = _f.append({'q': 'How often are new companies added?', 'a': 'New local ' ~ niche_label|lower ~ ' businesses are added over time, so it is worth checking back as the directory continues to grow.'}) -%}
+  {%- set _ = _f.append({'q': 'What should I check before hiring a ' ~ niche_label|lower ~ ' company?', 'a': 'Confirm the company is licensed and insured, ask about experience with your type of job, get the price in writing, and read recent reviews before work begins.'}) -%}
+  {%- set faqs = _f -%}
+{%- endif -%}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,20 +78,38 @@
 --radius:{{ style.radius }};--star:{{ theme.get('star') or '#f6b100' }};
 }
 </style>
-{# --- WebSite + ItemList / LocalBusiness structured data --- #}
+{# --- Structured data: WebSite + Organization publisher (Bing & Google read
+   this to identify and link the site). sameAs lists any configured socials. --- #}
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","name":{{ dir_title|tojson }},"url":"https://{{ domain }}/"}
+{"@context":"https://schema.org","@type":"WebSite","@id":"https://{{ domain }}/#website","name":{{ dir_title|tojson }},"url":"https://{{ domain }}/","publisher":{"@id":"https://{{ domain }}/#org"}}
 </script>
-{% if page in ('home', 'city') %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","@id":"https://{{ domain }}/#org","name":{{ dir_title|tojson }},"url":"https://{{ domain }}/"{% if social %},"sameAs":[{% for v in social.values() %}{{ v|tojson }}{{ "," if not loop.last }}{% endfor %}]{% endif %}}
+</script>
+{# --- BreadcrumbList: gives search engines the page's place in the site. --- #}
+{%- set crumbs = [{'n': dir_title, 'u': '/'}] -%}
+{%- if page == 'all' -%}{% set _ = crumbs.append({'n':'All businesses','u':'/businesses'}) %}
+{%- elif page == 'city' -%}{% set _ = crumbs.append({'n':'All businesses','u':'/businesses'}) %}{% set _ = crumbs.append({'n': city.place, 'u': '/city/' ~ city.slug}) %}
+{%- elif page == 'provider' -%}{% if prov.place %}{% set _ = crumbs.append({'n': prov.place, 'u':'/city/' ~ (prov.place|slug)}) %}{% endif %}{% set _ = crumbs.append({'n': prov.name, 'u': url}) %}
+{%- endif -%}
+{% if crumbs|length > 1 %}<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{% for c in crumbs %}{"@type":"ListItem","position":{{ loop.index }},"name":{{ c.n|tojson }},"item":"https://{{ domain }}{{ '' if c.u == '/' else c.u }}"}{{ "," if not loop.last }}{% endfor %}]}
+</script>{% endif %}
+{# --- ItemList of the businesses on list pages (home / all / city). --- #}
+{% if page in ('home', 'all', 'city') %}
 {% set listed = (city.providers if page == 'city' else providers) %}
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"ItemList","itemListElement":[{% for prov in listed %}{"@type":"ListItem","position":{{ loop.index }},"item":{"@type":"LocalBusiness","name":{{ prov.name|tojson }}{% if prov.phone %},"telephone":{{ prov.phone|tojson }}{% endif %}{% if prov.place %},"areaServed":{{ prov.place|tojson }}{% endif %}{% if prov.website %},"url":{{ prov.website|tojson }}{% endif %}}}{{ "," if not loop.last }}{% endfor %}]}
+{"@context":"https://schema.org","@type":"ItemList","numberOfItems":{{ listed|length }},"itemListElement":[{% for prov in listed %}{"@type":"ListItem","position":{{ loop.index }},"url":"https://{{ domain }}/provider/{{ prov.slug }}","item":{"@type":"LocalBusiness","name":{{ prov.name|tojson }}{% if prov.phone %},"telephone":{{ prov.phone|tojson }}{% endif %}{% if prov.place %},"areaServed":{{ prov.place|tojson }}{% endif %}{% if prov.website %},"url":{{ prov.website|tojson }}{% endif %}{% if prov.rating %},"aggregateRating":{"@type":"AggregateRating","ratingValue":"{{ prov.rating }}","bestRating":"5"}{% endif %}}}{{ "," if not loop.last }}{% endfor %}]}
 </script>
 {% elif page == 'provider' %}
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"LocalBusiness","name":{{ prov.name|tojson }}{% if prov.phone %},"telephone":{{ prov.phone|tojson }}{% endif %}{% if prov.email %},"email":{{ prov.email|tojson }}{% endif %}{% if prov.website %},"url":{{ prov.website|tojson }}{% endif %}{% if prov.address_full %},"address":{{ prov.address_full|tojson }}{% endif %}{% if prov.hours %},"openingHours":{{ prov.hours|tojson }}{% endif %}}
+{"@context":"https://schema.org","@type":"LocalBusiness","@id":"{{ page_url }}#business","name":{{ prov.name|tojson }},"url":"{{ page_url }}"{% if prov.phone %},"telephone":{{ prov.phone|tojson }}{% endif %}{% if prov.email %},"email":{{ prov.email|tojson }}{% endif %}{% if prov.website %},"sameAs":[{{ prov.website|tojson }}]{% endif %}{% if prov.address_full %},"address":{"@type":"PostalAddress","streetAddress":{{ prov.address_full|tojson }}{% if prov.state_abbr %},"addressRegion":{{ prov.state_abbr|tojson }}{% endif %}{% if prov.city %},"addressLocality":{{ prov.city|tojson }}{% endif %},"addressCountry":"US"}{% endif %}{% if prov.place %},"areaServed":{{ prov.place|tojson }}{% endif %}{% if prov.hours %},"openingHours":{{ prov.hours|tojson }}{% endif %}{% if prov.rating %},"aggregateRating":{"@type":"AggregateRating","ratingValue":"{{ prov.rating }}","bestRating":"5"}{% endif %}}
 </script>
 {% endif %}
+{# --- FAQPage from the visible FAQ (city / provider pages). --- #}
+{% if faqs %}<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{% for f in faqs %}{"@type":"Question","name":{{ f.q|tojson }},"acceptedAnswer":{"@type":"Answer","text":{{ f.a|tojson }}}}{{ "," if not loop.last }}{% endfor %}]}
+</script>{% endif %}
 <style>
 /* ---- directory-specific styling (rides on top of site.css + the theme) ---- */
 .dir-hdr{position:sticky;top:0;z-index:60;background:#fff;border-bottom:1px solid var(--line)}
@@ -112,10 +173,36 @@
 .pv-side .btn{width:100%;margin-bottom:.6rem;text-align:center}
 .pv-map{border-radius:12px;overflow:hidden;border:1px solid var(--line);margin-top:1rem;line-height:0}
 .pv-map iframe{width:100%;height:230px;border:0;display:block}
-.dir-ftr{background:#0e1520;color:rgba(255,255,255,.72);padding:2.4rem 0 1.8rem;margin-top:2rem}
-.dir-ftr .wrap{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-between;align-items:center}
-.dir-ftr b{color:#fff;font-family:var(--font-display),serif;font-size:1.1rem}
-.dir-ftr p{margin:.3rem 0 0;font-size:.85rem;max-width:52ch}
+.dir-ftr{background:#0e1520;color:rgba(255,255,255,.72);margin-top:2rem}
+.visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+/* newsletter band */
+.dftr-news{background:rgba(255,255,255,.04);border-bottom:1px solid rgba(255,255,255,.1)}
+.dftr-news-in{display:grid;gap:1.3rem 3rem;align-items:center;padding:2.1rem 0}
+@media(min-width:820px){.dftr-news-in{grid-template-columns:1.1fr .9fr}}
+.dftr-news-copy h3{color:#fff;font-size:1.18rem;margin:0 0 .3rem;font-family:var(--font-display),serif}
+.dftr-news-copy p{color:rgba(255,255,255,.68);font-size:.9rem;line-height:1.6;margin:0;max-width:46ch}
+.dftr-news-form{display:flex;gap:.6rem;flex-wrap:wrap}
+.dftr-news-form input{flex:1 1 12rem;min-width:0;font:inherit;font-size:.94rem;padding:.7rem .9rem;
+  border-radius:calc(var(--radius) + 8px);border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.06);color:#fff}
+.dftr-news-form input::placeholder{color:rgba(255,255,255,.5)}
+.dftr-news-form input:focus-visible{outline:2px solid var(--accent);outline-offset:1px;background:rgba(255,255,255,.1)}
+/* main columns */
+.dftr-grid{display:grid;gap:2rem;grid-template-columns:1fr;padding:2.8rem 0 1.6rem}
+@media(min-width:760px){.dftr-grid{grid-template-columns:1.6fr 1fr 1fr 1fr;gap:2.4rem}}
+.dftr-brand b{color:#fff;font-family:var(--font-display),serif;font-size:1.24rem;display:block;margin-bottom:.5rem}
+.dftr-brand p{color:rgba(255,255,255,.7);font-size:.9rem;line-height:1.7;margin:0 0 1rem;max-width:38ch}
+.dftr-social{display:flex;gap:.6rem}
+.dftr-social a{display:inline-flex;align-items:center;justify-content:center;width:2.3rem;height:2.3rem;border-radius:50%;
+  background:rgba(255,255,255,.08);color:rgba(255,255,255,.85);transition:background .15s ease,color .15s ease,transform .15s ease}
+.dftr-social a:hover{background:var(--accent);color:var(--accent-text);transform:translateY(-2px)}
+.dftr-col h4{color:#fff;font-size:.8rem;text-transform:uppercase;letter-spacing:.09em;margin:0 0 .85rem}
+.dftr-col ul{list-style:none;padding:0;margin:0;display:grid;gap:.5rem;font-size:.9rem}
+.dftr-col a{color:rgba(255,255,255,.76)}.dftr-col a:hover{color:#fff}
+.dftr-more{color:var(--star)!important;font-weight:700}
+.dftr-legal{border-top:1px solid rgba(255,255,255,.12);padding:1.3rem 0 1.8rem;display:flex;flex-wrap:wrap;
+  gap:.5rem 1.5rem;justify-content:space-between;align-items:center}
+.dftr-legal p{margin:0;font-size:.82rem;color:rgba(255,255,255,.6);max-width:70ch}
+.dftr-copy{white-space:nowrap}
 
 /* ===== eLocal-style lead-gen home ===== */
 .sec-eyebrow{text-transform:uppercase;letter-spacing:.12em;font-size:.74rem;font-weight:800;color:var(--brand-dark);margin:0 0 .5rem}
@@ -384,10 +471,7 @@
 <section class="dir-sec"><div class="wrap dir-faq">
   <p class="sec-eyebrow">Good to know</p>
   <h2 class="sec-h2">{{ niche_label }} directory — questions answered</h2>
-  <details><summary>How do I choose a {{ niche_label|lower }} company?</summary><p>Compare ratings, the services each one offers and how close they are, then contact a few directly to talk through your job and get a written quote before any work begins.</p></details>
-  <details><summary>Is it free to use this directory?</summary><p>Yes. Browsing the listings and contacting any business is completely free — you deal with each company directly.</p></details>
-  <details><summary>Are these {{ niche_label|lower }} companies vetted?</summary><p>Listings are drawn from local {{ niche_label|lower }} businesses serving this area. Always confirm licensing, insurance and recent reviews directly with a business before hiring.</p></details>
-  <details><summary>How many {{ niche_label|lower }} companies are listed?</summary><p>{{ total }} across {{ cities|length }} {{ 'city' if cities|length == 1 else 'cities' }}, and the list grows as more local businesses are added.</p></details>
+  {% for f in faqs %}<details{{ ' open' if loop.first }}><summary>{{ f.q }}</summary><p>{{ f.a }}</p></details>{% endfor %}
 </div></section>
 
 {# ---------- 8. closing CTA ---------- #}
@@ -449,10 +533,7 @@
 <section class="dir-sec sec-alt" style="background:var(--surface)"><div class="wrap dir-faq">
   <p class="sec-eyebrow">Good to know</p>
   <h2 class="sec-h2">{{ niche_label }} in {{ city.city }} — questions answered</h2>
-  <details><summary>How many {{ niche_label|lower }} companies are listed in {{ city.city }}?</summary><p>{{ city.count }} in {{ city.place }} right now, and more are added as new local businesses join the directory.</p></details>
-  <details><summary>Are these {{ city.city }} {{ niche_label|lower }} companies vetted?</summary><p>Listings are drawn from local {{ niche_label|lower }} businesses serving {{ city.place }}. Always confirm licensing, insurance and recent reviews directly with a business before hiring.</p></details>
-  <details><summary>How do I contact a {{ niche_label|lower }} company in {{ city.city }}?</summary><p>Open any listing to see the phone number and, where available, email, website and a map — then reach out to the business directly.</p></details>
-  <details><summary>Is it free to use this directory?</summary><p>Yes. Browsing and contacting {{ niche_label|lower }} companies in {{ city.city }} is completely free.</p></details>
+  {% for f in faqs %}<details{{ ' open' if loop.first }}><summary>{{ f.q }}</summary><p>{{ f.a }}</p></details>{% endfor %}
 </div></section>
 {% if cities|length > 1 %}
 <section class="dir-sec"><div class="wrap">
@@ -490,10 +571,7 @@
     {% endif %}
     <h2 style="font-size:1.2rem;margin:1.6rem 0 .8rem">Frequently asked questions</h2>
     <div class="dir-faq">
-      <details open><summary>How do I contact {{ prov.name }}?</summary><p>{% if prov.phone %}Call {{ prov.phone }}{% if prov.email %} or email {{ prov.email }}{% endif %}.{% else %}Use the contact details listed above.{% endif %}{% if prov.address_full %} You can also find them at {{ prov.address_full }}.{% endif %}</p></details>
-      <details><summary>What areas does {{ prov.name }} serve?</summary><p>{{ prov.name }} is based in {{ prov.place or 'the local area' }} and serves {{ prov.city or prov.place or 'the surrounding area' }} and nearby communities. Confirm your address is covered when you get in touch.</p></details>
-      <details><summary>What {{ niche_label|lower }} services does {{ prov.name }} offer?</summary><p>{% if plist %}Typical services include {{ plist[:6]|join(', ') }}{% if plist|length > 6 %} and more{% endif %}. {% endif %}Contact {{ prov.name }} to confirm they cover your specific job.</p></details>
-      <details><summary>How do I choose between {{ niche_label|lower }} companies?</summary><p>Compare the services each one offers, their ratings and how close they are, then ask a couple for a written quote before deciding. The related companies below make it easy to line up a few options.</p></details>
+      {% for f in faqs %}<details{{ ' open' if loop.first }}><summary>{{ f.q }}</summary><p>{{ f.a }}</p></details>{% endfor %}
     </div>
   </div>
   <aside class="pv-side">
@@ -516,10 +594,55 @@
 {% endif %}
 {% endif %}
 
-<footer class="dir-ftr"><div class="wrap">
-  <div><b>{{ dir_title }}</b><p>{{ dir_title }} is an independent directory. Listings are shown for information only — contact each business directly to confirm services, availability and pricing.</p></div>
-  <p class="micro" style="color:rgba(255,255,255,.6)">&copy; 2026 {{ dir_title }}</p>
-</div></footer>
+<footer class="dir-ftr">
+  {# --- newsletter band --- #}
+  <div class="dftr-news"><div class="wrap dftr-news-in">
+    <div class="dftr-news-copy">
+      <h3>New {{ niche_label|lower }} companies, in your inbox</h3>
+      <p>Fresh listings and honest local tips, once in a while — no spam, unsubscribe anytime.</p>
+    </div>
+    <form class="dftr-news-form" method="post" action="#" novalidate>
+      <label class="visually-hidden" for="dftr-email">Email address</label>
+      <input id="dftr-email" name="email" type="email" placeholder="Your email address" autocomplete="email" required>
+      <button class="btn btn-accent" type="submit">Subscribe</button>
+    </form>
+  </div></div>
+
+  {# --- main columns --- #}
+  <div class="wrap dftr-grid">
+    <div class="dftr-brand">
+      <b>{{ dir_title }}</b>
+      <p>The independent directory of local {{ niche_label|lower }} businesses — compare ratings, services and contact details across {{ cities|length }} {{ 'city' if cities|length == 1 else 'cities' }}, and reach the right company directly.</p>
+      <div class="dftr-social" aria-label="Follow {{ dir_title }}">
+        <a href="{{ social.get('facebook') or 'https://facebook.com' }}" aria-label="Facebook" rel="noopener" target="_blank"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v2H7v3h3v6h3v-6h3l1-3h-4v-2a1 1 0 0 1 1-1Z"/></svg></a>
+        <a href="{{ social.get('instagram') or 'https://instagram.com' }}" aria-label="Instagram" rel="noopener" target="_blank"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M4 8a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4z"/><circle cx="12" cy="12" r="3.4" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17" cy="7" r="1.1" fill="currentColor"/></svg></a>
+        <a href="{{ social.get('x') or social.get('twitter') or 'https://x.com' }}" aria-label="X" rel="noopener" target="_blank"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M17.5 3h3l-6.6 7.6L22 21h-5.7l-4.4-5.8L6.8 21H3.7l7-8L2.5 3h5.8l4 5.3L17.5 3Zm-1 16h1.6L8 4.6H6.3L16.5 19Z"/></svg></a>
+        {% if social.get('youtube') %}<a href="{{ social.youtube }}" aria-label="YouTube" rel="noopener" target="_blank"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M22 12c0-2-.2-3-.5-3.6a2.4 2.4 0 0 0-1.7-1.7C18.7 6.4 12 6.4 12 6.4s-6.7 0-7.8.3A2.4 2.4 0 0 0 2.5 8.4C2.2 9 2 10 2 12s.2 3 .5 3.6a2.4 2.4 0 0 0 1.7 1.7c1.1.3 7.8.3 7.8.3s6.7 0 7.8-.3a2.4 2.4 0 0 0 1.7-1.7c.3-.6.5-1.6.5-3.6Zm-12 3V9l5 3-5 3Z"/></svg></a>{% endif %}
+        {% if social.get('linkedin') %}<a href="{{ social.linkedin }}" aria-label="LinkedIn" rel="noopener" target="_blank"><svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><path fill="currentColor" d="M6.5 8H4v10h2.5V8ZM5.2 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Zm5 4H8v10h2.4v-5.3c0-1.5 2.7-1.6 2.7 0V18H16v-6c0-3.7-4-3.5-5.4-1.7V8Z"/></svg></a>{% endif %}
+      </div>
+    </div>
+    {% if cities %}
+    <nav class="dftr-col"><h4>Popular cities</h4><ul>
+      {% for c in cities[:6] %}<li><a href="/city/{{ c.slug }}">{{ c.place }}</a></li>{% endfor %}
+      <li><a class="dftr-more" href="/businesses">All businesses &rarr;</a></li>
+    </ul></nav>
+    {% endif %}
+    {% if services %}
+    <nav class="dftr-col"><h4>Services</h4><ul>
+      {% for s in services[:6] %}<li><a href="/businesses">{{ s }}</a></li>{% endfor %}
+    </ul></nav>
+    {% endif %}
+    <nav class="dftr-col"><h4>Directory</h4><ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/businesses">All businesses</a></li>
+    </ul></nav>
+  </div>
+
+  <div class="wrap dftr-legal">
+    <p>{{ dir_title }} is an independent directory. Listings are shown for information only — always contact each business directly to confirm services, availability and pricing.</p>
+    <p class="dftr-copy">&copy; 2026 {{ dir_title }}. All rights reserved.</p>
+  </div>
+</footer>
 
 {% if page in ('home', 'all') and providers %}
 <script>
