@@ -1006,3 +1006,63 @@ body[data-hero=split] .hero .btn-ghost:hover,body[data-hero=stacked] .hero .btn-
 .why-card p{color:var(--muted);margin:0;font-size:.95rem;line-height:1.62;
   display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
 .sec-alt .why-ico{background:#fff}
+
+/* ========================================================================
+   21. CONVERSION — fancier hero + header (scoped to data-skeleton=conversion)
+   Only the CTA-dense conversion pages get this richer treatment; every other
+   skeleton keeps the standard header and hero.
+   ======================================================================== */
+
+/* --- utility top bar (rating · hours · phone) --- */
+.util-bar{background:var(--ink);color:rgba(255,255,255,.82);font-size:.82rem}
+.util-in{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:38px;flex-wrap:wrap}
+.util-rate{display:inline-flex;align-items:center;gap:.5rem;font-weight:600}
+.us-stars{color:var(--star);letter-spacing:1px}
+.util-right{display:inline-flex;align-items:center;gap:1.3rem}
+.util-hours,.util-phone{display:inline-flex;align-items:center;gap:.4rem}
+.util-phone{color:#fff;font-weight:700}
+.util-phone:hover{color:var(--star);text-decoration:none}
+@media(max-width:600px){.util-hours{display:none}.util-in{justify-content:center;gap:1rem}}
+
+/* --- richer hero background: soft warm glow + faint dot texture --- */
+body[data-skeleton=conversion] .hero{position:relative}
+body[data-skeleton=conversion] .hero::after{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;
+  background:
+    radial-gradient(40% 52% at 6% 94%, color-mix(in srgb,var(--star) 16%,transparent), transparent 72%),
+    radial-gradient(circle at 1px 1px, rgba(255,255,255,.09) 1px, transparent 0);
+  background-size:auto, 22px 22px}
+body[data-skeleton=conversion] .hero .hero-in{position:relative;z-index:2}
+
+/* --- eyebrow becomes a glass pill with a glowing dot --- */
+body[data-skeleton=conversion] .hero .eyebrow{display:inline-flex;align-items:center;gap:.55rem;
+  background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.24);
+  padding:.42rem .95rem;border-radius:999px;color:#fff;letter-spacing:.1em;
+  -webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+body[data-skeleton=conversion] .hero .eyebrow::before{content:"";width:.5rem;height:.5rem;border-radius:50%;
+  background:var(--star);box-shadow:0 0 0 4px color-mix(in srgb,var(--star) 30%,transparent);
+  flex:none;border:0;transform:none;position:static;margin:0}
+
+/* --- fancier CTAs --- */
+body[data-skeleton=conversion] .hero .btn-accent{
+  box-shadow:0 16px 34px -14px color-mix(in srgb,var(--accent) 60%,transparent)}
+.btn-ic{vertical-align:-3px;margin-right:.5rem}
+.btn-arrow{display:inline-block;transition:transform .15s ease}
+.btn-ghost:hover .btn-arrow{transform:translateX(3px)}
+.hdr-cta .btn-ic,.util-phone svg,.util-hours svg{flex:none}
+
+/* --- hero trust strip under the buttons --- */
+.hero-trust{display:flex;align-items:center;gap:.7rem 1rem;flex-wrap:wrap;margin:1.5rem 0 .2rem;
+  color:rgba(255,255,255,.92);font-size:.87rem;font-weight:600}
+.hero-trust .ht-item{display:inline-flex;align-items:center;gap:.42rem}
+.hero-trust .ht-item svg{color:var(--star)}
+.hero-trust .ht-stars{color:var(--star);letter-spacing:1px}
+.hero-trust strong{color:#fff}
+.ht-sep{width:1px;height:1rem;background:rgba(255,255,255,.28)}
+body[data-hero=stacked] .hero-trust{justify-content:center}
+@media(max-width:560px){.ht-sep{display:none}.hero-trust{gap:.5rem 1rem}}
+
+/* --- nav links: animated underline on hover --- */
+body[data-skeleton=conversion] .nav a:not(.btn){position:relative}
+body[data-skeleton=conversion] .nav a:not(.btn)::after{content:"";position:absolute;left:0;right:100%;bottom:-4px;
+  height:2px;background:var(--brand);border-radius:2px;transition:right .2s ease}
+body[data-skeleton=conversion] .nav a:not(.btn):hover::after{right:0}

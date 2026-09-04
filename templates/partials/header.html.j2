@@ -1,4 +1,15 @@
 <a class="skip" href="#main">Skip to content</a>
+{% if skeleton.key == 'conversion' %}
+<div class="util-bar">
+  <div class="wrap util-in">
+    <span class="util-rate"><span class="us-stars" aria-hidden="true">★★★★★</span> Rated by local homeowners</span>
+    <span class="util-right">
+      {% if t.hours %}<span class="util-hours"><svg viewBox="0 0 24 24" width="13" height="13" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 7v5l3.5 2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg> {{ t.hours }}</span>{% endif %}
+      <a class="util-phone" href="tel:{{ t.phone_link }}"><svg viewBox="0 0 24 24" width="13" height="13" aria-hidden="true"><path d="M5 4h4l2 5-3 2a11 11 0 0 0 5 5l2-3 5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z" fill="currentColor"/></svg> {{ t.phone }}</a>
+    </span>
+  </div>
+</div>
+{% endif %}
 <header class="hdr" data-header>
   <div class="wrap hdr-in">
     <a class="mark" href="/">{{ biz.company }}</a>
@@ -12,7 +23,7 @@
       <a href="/contact">Contact</a>
       <a class="btn btn-accent nav-cta" href="tel:{{ t.phone_link }}">{{ t.phone }}</a>
     </nav>
-    <a class="btn btn-accent hdr-cta" href="tel:{{ t.phone_link }}">{{ t.phone }}</a>
+    <a class="btn btn-accent hdr-cta" href="tel:{{ t.phone_link }}">{% if skeleton.key == 'conversion' %}<svg class="btn-ic" viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M5 4h4l2 5-3 2a11 11 0 0 0 5 5l2-3 5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z" fill="currentColor"/></svg>{% endif %}{{ t.phone }}</a>
   </div>
   <div class="hdr-progress" data-progress></div>
 </header>
