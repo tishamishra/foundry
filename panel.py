@@ -552,6 +552,7 @@ def directory_save():
         "style": f.get("style"),
         "businesses": f.getlist("businesses"),
         "per_city_limit": (f.get("per_city_limit") or "").strip() or None,
+        "max_total": (f.get("max_total") or "").strip() or None,
         "sponsored": f.getlist("sponsored"),
         "sponsored_label": (f.get("sponsored_label") or "").strip() or None,
     }

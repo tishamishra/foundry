@@ -37,6 +37,9 @@ def _norm(s: str) -> str:
 
 _add("company", "company", "companyname", "business", "businessname", "name")
 _add("brand", "brand", "dba", "tradingas", "tradename")
+_add("category", "category", "categories", "type", "businesstype", "niche",
+     "vertical", "industry", "maincategory", "primarycategory", "gmbcategory",
+     "googlecategory", "mapscategory", "servicetype", "trade")
 _add("phone", "phone", "telephone", "tel", "phonenumber", "contact", "mobile", "cell")
 _add("email", "email", "emailaddress", "mail")
 _add("street", "street", "address", "address1", "streetaddress", "addr", "addressline1")
@@ -79,6 +82,64 @@ def _digits(value: str) -> int | bool:
     return int(run) if run else False
 
 
+# Free-text business category (e.g. a scraped Google-Maps type like "Plumber",
+# "Roofing contractor", "Hair salon") -> the engine's niche slug. Ordered most-
+# specific first, matched as a substring of the lower-cased category. A category
+# that matches nothing maps to "" — the business still imports, but it is
+# UNCATEGORISED and will never appear on a trade directory (so a salon or a
+# dentist never lands on the plumbing directory). Declared, never guessed.
+_CATEGORY_NICHE: list[tuple[tuple[str, ...], str]] = [
+    (("bathroom remodel", "bath remodel"), "bathroom-remodeling"),
+    (("kitchen remodel",), "kitchen-remodeling"),
+    (("water damage", "water restoration", "water mitigation"), "water-damage"),
+    (("fire damage", "smoke damage", "fire restoration"), "fire-damage"),
+    (("mold",), "mold-removal"),
+    (("biohazard", "crime scene", "trauma clean"), "biohazard"),
+    (("foundation",), "foundation-repair"),
+    (("waterproof",), "waterproofing"),
+    (("garage door",), "garage-door"),
+    (("gutter",), "gutters"),
+    (("appliance",), "appliance-repair"),
+    (("dui", "dwi"), "dui-dwi-attorneys"),
+    (("personal injury", "injury attorney", "injury lawyer"), "personal-injury-attorneys"),
+    (("accident attorney", "accident lawyer", "car accident", "auto accident"), "auto-accident-attorneys"),
+    (("plumb",), "plumbing"),
+    (("roof",), "roofing"),
+    (("hvac", "heating", "air condition", "furnace", "cooling", "ac repair"), "hvac"),
+    (("electric",), "electrical"),
+    (("pest", "exterminat", "termite"), "pest-control"),
+    (("landscap", "lawn care", "lawn service"), "landscaping"),
+    (("paint",), "painting"),
+    (("siding",), "siding"),
+    (("window",), "windows"),
+    (("deck",), "deck"),
+]
+
+# Exact niche slugs the engine knows — so a CSV that already carries the slug
+# ("plumbing") or a close label ("Plumbing") is honoured directly.
+_NICHE_SLUGS = {
+    "appliance-repair", "auto-accident-attorneys", "bathroom-remodeling", "biohazard",
+    "deck", "dui-dwi-attorneys", "electrical", "fire-damage", "foundation-repair",
+    "garage-door", "gutters", "hvac", "kitchen-remodeling", "landscaping",
+    "mold-removal", "painting", "personal-injury-attorneys", "pest-control",
+    "plumbing", "roofing", "siding", "water-damage", "waterproofing", "windows",
+}
+
+
+def niche_from_category(text: str) -> str:
+    """Map a free-text business category to an engine niche slug, or '' if none."""
+    t = str(text or "").strip().lower()
+    if not t:
+        return ""
+    slug = t.replace(" ", "-").replace("_", "-").replace("/", "-")
+    if slug in _NICHE_SLUGS:
+        return slug
+    for needles, niche in _CATEGORY_NICHE:
+        if any(n in t for n in needles):
+            return niche
+    return ""
+
+
 def _row_to_payload(cells: dict[str, str]) -> dict[str, Any]:
     """Map one resolved {canonical_field: value} into a save_business payload."""
     g = lambda k: (cells.get(k) or "").strip()          # noqa: E731
@@ -89,11 +150,14 @@ def _row_to_payload(cells: dict[str, str]) -> dict[str, Any]:
     }
     for b in _BOOL_FIELDS:
         facts[b] = _truthy(cells.get(b, ""))
+    category = g("category")
     return {
         "company": g("company"), "brand": g("brand"),
         "phone": g("phone"), "email": g("email"),
         "street": g("street"), "city": g("city"),
         "state": g("state"), "zip": g("zip"),
+        "category": category,
+        "niche": niche_from_category(category),
         "facts": facts,
     }
 
@@ -149,10 +213,10 @@ def parse(text: str) -> tuple[list[dict[str, Any]], list[str]]:
     return payloads, problems
 
 
-TEMPLATE_HEADER = ("company,phone,email,street,city,state,zip,years,hours,"
+TEMPLATE_HEADER = ("company,category,phone,email,street,city,state,zip,years,hours,"
                    "warranty,free_estimates,licensed,insured,emergency_24_7,"
                    "financing,family_owned")
-TEMPLATE_EXAMPLE = ('Control Check Roofing,+1 833 000 0001,hello@example.com,'
+TEMPLATE_EXAMPLE = ('Control Check Roofing,Roofing contractor,+1 833 000 0001,hello@example.com,'
                     '1 Test Way,Marietta,GA,30060,12,Mon-Fri 8:00-18:00,10,'
                     'yes,yes,yes,yes,no,yes')
 

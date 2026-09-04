@@ -26,8 +26,9 @@
       {% for n in NICHES %}<option value="{{ n }}" {{ 'selected' if s.niche == n }}>{{ niche_labels[n] }}</option>{% endfor %}
     </select>
   </label>
-  <p class="note">Lists every business that has a site in the chosen trade — or every business you have
-  added, if you pick “All”.</p>
+  <p class="note">Lists only businesses in the chosen trade — matched on each business’s own category
+  (set from its scraped category on import). A plumbing directory shows only plumbers, never a
+  salon or dentist, even if you tick them below. Pick “All” to list every business you have added.</p>
 
   <label>Theme
     <select name="theme">
@@ -40,6 +41,11 @@
       {% for key, st in STYLES.items() %}<option value="{{ key }}" {{ 'selected' if (s.style or 'classic') == key }}>{{ st.label }}</option>{% endfor %}
     </select>
   </label>
+
+  <label>Max businesses to list (total)
+    <input name="max_total" type="number" min="0" value="{{ s.max_total or '' }}" placeholder="e.g. 100 — blank for no limit">
+  </label>
+  <p class="note">Caps the <strong>total</strong> number of businesses the directory lists — keep it professional (50, 100, 500). Highest-rated kept first; your sponsored picks are always kept. Blank = list every match.</p>
 
   <label>Max businesses per city
     <input name="per_city_limit" type="number" min="0" value="{{ s.per_city_limit or '' }}" placeholder="Leave blank for no limit">

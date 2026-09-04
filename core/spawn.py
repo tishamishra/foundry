@@ -221,6 +221,16 @@ def save_business(root: Path, data: dict) -> str:
         },
         "facts": facts,
     }
+    # The business's own trade — the niche slug it belongs to (from its scraped
+    # category on import). This is what a directory filters on, so a plumbing
+    # directory lists only plumbing businesses. Kept only when known; the raw
+    # category is retained for reference.
+    niche = (data.get("niche") or "").strip()
+    if niche:
+        record["niche"] = niche
+    category = (data.get("category") or "").strip()
+    if category:
+        record["category"] = category
     folder = root / "data" / "businesses"
     folder.mkdir(parents=True, exist_ok=True)
     (folder / f"{slug}.yaml").write_text(
@@ -310,6 +320,14 @@ def save_directory(root: Path, data: dict) -> str:
         limit = 0
     if limit > 0:
         record["per_city_limit"] = limit
+    # Optional cap on the TOTAL businesses the directory lists (highest-rated
+    # kept first; sponsored picks are always kept). Blank = list all matching.
+    try:
+        max_total = int(data.get("max_total") or 0)
+    except (TypeError, ValueError):
+        max_total = 0
+    if max_total > 0:
+        record["max_total"] = max_total
     # Up to 3 sponsored ("Best <trade>") businesses, shown first on every
     # provider page's related list.
     sponsored = [b for b in (data.get("sponsored") or []) if b][:3]

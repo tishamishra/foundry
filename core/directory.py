@@ -139,17 +139,19 @@ def load_providers(root: Path, niche_filter: str | None = None,
             continue
         sites = site_index.get(slug, [])
 
-        # The provider's category comes from the site(s) built for it. With no
-        # explicit pick, filter to the directory's niche when one is set.
-        niches = [s.get("niche") for s in sites if s.get("niche")]
-        if niche_filter and include_slugs is None:
+        # The business's trade. It comes from the business record's OWN niche
+        # (set from its scraped category on import) first, then from any site
+        # built for it. A directory's niche filter ALWAYS applies when set —
+        # even to an explicit pick — so a plumbing directory lists only plumbing
+        # businesses and never a salon or a dentist that happened to be ticked.
+        own_niche = (biz.get("niche") or "").strip()
+        niches = ([own_niche] if own_niche else []) + [s.get("niche") for s in sites if s.get("niche")]
+        if niche_filter:
             if niche_filter not in niches:
                 continue
             niche_key = niche_filter
-        elif niche_filter:
-            niche_key = niche_filter
         else:
-            niche_key = niches[0] if niches else None
+            niche_key = own_niche or (niches[0] if niches else None)
 
         svc_names: list[str] = []
         niche_label = ""
@@ -250,6 +252,20 @@ def build_directory(root: Path, site: dict, out_root: Path | None = None):
     include = site.get("businesses") or None
     providers = load_providers(root, site.get("niche") or None,
                                include_slugs=set(include) if include else None)
+
+    # Total cap — a professional directory lists a curated number, not thousands.
+    # Keep the highest-rated businesses, but never drop a sponsored pick.
+    try:
+        max_total = int(site.get("max_total") or 0)
+    except (TypeError, ValueError):
+        max_total = 0
+    if max_total > 0 and len(providers) > max_total:
+        sp_slugs = set(site.get("sponsored") or [])
+        ranked = sorted(providers, key=lambda p: (-(p["rating"] or 0), p["name"]))
+        sp = [p for p in ranked if p["biz_slug"] in sp_slugs]
+        rest = [p for p in ranked if p["biz_slug"] not in sp_slugs]
+        providers = sp + rest[: max(0, max_total - len(sp))]
+
     cities = _cities(providers)
 
     # Optional cap: at most N businesses per city (highest-rated kept first).
