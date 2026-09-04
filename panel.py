@@ -237,10 +237,10 @@ def download_site(site_id: str):
     import io
     import zipfile
     from flask import Response
-    try:
-        domain = load_graph(ROOT, site_id).site["domain"]
-    except FoundryError as exc:
-        flash(str(exc), "bad")
+    # Domain from the record (works for directory sites too, which have no graph).
+    domain = read_yaml(ROOT / "data" / "sites" / f"{site_id}.yaml").get("domain")
+    if not domain:
+        flash(f"{site_id}: no domain on record.", "bad")
         return redirect(url_for("dashboard"))
     root = ROOT / "dist" / domain
     if not (root / "index.html").is_file():
@@ -1203,10 +1203,11 @@ def preview(site_id: str, subpath: str):
     link/asset under /preview/<id>/, so the whole site is browsable on-domain.
     """
     from flask import Response, abort
-    try:
-        domain = load_graph(ROOT, site_id).site["domain"]
-    except FoundryError as exc:
-        flash(str(exc), "bad")
+    # Read the domain straight from the site record — a directory site has no
+    # single-business graph, so load_graph would wrongly reject it here.
+    domain = read_yaml(ROOT / "data" / "sites" / f"{site_id}.yaml").get("domain")
+    if not domain:
+        flash(f"{site_id}: no domain on record.", "bad")
         return redirect(url_for("dashboard"))
     site_root = ROOT / "dist" / domain
     if not (site_root / "index.html").is_file():
