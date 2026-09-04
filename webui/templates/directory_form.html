@@ -47,6 +47,23 @@
   <p class="note">Caps how many businesses are listed for each city (highest-rated kept first). Blank = list all.</p>
 
   <fieldset style="border:1px solid #e2e6ee;border-radius:12px;padding:14px;margin:14px 0">
+    <legend style="font-weight:700;padding:0 6px">Sponsored — “Best” businesses (up to 3)</legend>
+    <p class="note" style="margin-top:0">Pick up to <strong>3</strong> of your own businesses to feature. They show first, badged, at the top of every business’s “related” list across the whole directory.</p>
+    <label>Badge label
+      <input name="sponsored_label" value="{{ s.sponsored_label or '' }}" placeholder="Best Plumber (leave blank to auto-name by trade)">
+    </label>
+    <div style="max-height:220px;overflow:auto;display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:6px;margin-top:8px">
+      {% for b in biz_rows %}
+      <label class="chk" style="display:flex;gap:8px;align-items:baseline;padding:4px 2px">
+        <input type="checkbox" name="sponsored" value="{{ b.slug }}" {{ 'checked' if b.slug in sponsored }} onchange="var n=document.querySelectorAll('[name=sponsored]:checked').length; if(n>3){this.checked=false; alert('Pick at most 3 sponsored businesses.');}">
+        <span>{{ b.company }}{% if b.place %} <span class="dim">· {{ b.place }}</span>{% endif %}</span>
+      </label>
+      {% endfor %}
+      {% if not biz_rows %}<p class="dim">Add businesses first.</p>{% endif %}
+    </div>
+  </fieldset>
+
+  <fieldset style="border:1px solid #e2e6ee;border-radius:12px;padding:14px;margin:14px 0">
     <legend style="font-weight:700;padding:0 6px">Businesses to include</legend>
     <p class="note" style="margin-top:0">Tick specific businesses to list exactly those. Leave <strong>all unticked</strong> to include every business that matches the trade filter above.</p>
     <div style="display:flex;gap:8px;margin:8px 0">

@@ -310,6 +310,14 @@ def save_directory(root: Path, data: dict) -> str:
         limit = 0
     if limit > 0:
         record["per_city_limit"] = limit
+    # Up to 3 sponsored ("Best <trade>") businesses, shown first on every
+    # provider page's related list.
+    sponsored = [b for b in (data.get("sponsored") or []) if b][:3]
+    if sponsored:
+        record["sponsored"] = sponsored
+    label = (data.get("sponsored_label") or "").strip()
+    if label:
+        record["sponsored_label"] = label
 
     folder = root / "data" / "sites"
     folder.mkdir(parents=True, exist_ok=True)

@@ -54,6 +54,22 @@ _STATE_ABBR = {
 }
 
 
+# The singular tradesperson noun per niche, for badges like "Best Plumber".
+# Falls back to the niche label when a trade is not listed.
+PROVIDER_NOUN = {
+    "plumbing": "Plumber", "roofing": "Roofer", "electrical": "Electrician",
+    "hvac": "HVAC Pro", "pest-control": "Pest Control Pro", "landscaping": "Landscaper",
+    "painting": "Painter", "garage-door": "Garage Door Pro", "gutters": "Gutter Pro",
+    "siding": "Siding Pro", "windows": "Window Pro", "deck": "Deck Builder",
+    "foundation-repair": "Foundation Pro", "waterproofing": "Waterproofing Pro",
+    "bathroom-remodeling": "Bathroom Remodeler", "kitchen-remodeling": "Kitchen Remodeler",
+    "water-damage": "Water Damage Pro", "fire-damage": "Fire Damage Pro",
+    "mold-removal": "Mold Removal Pro", "biohazard": "Biohazard Pro",
+    "appliance-repair": "Appliance Pro", "auto-accident-attorneys": "Accident Attorney",
+    "dui-dwi-attorneys": "DUI Attorney", "personal-injury-attorneys": "Injury Attorney",
+}
+
+
 def _abbr(state: str) -> str:
     s = (state or "").strip()
     if len(s) == 2:
@@ -158,6 +174,7 @@ def load_providers(root: Path, niche_filter: str | None = None,
 
         providers.append({
             "slug": slugify(company),
+            "biz_slug": slug,
             "name": company,
             "phone": biz.get("phone") or "",
             "phone_link": _phone_link(biz.get("phone") or ""),
@@ -271,12 +288,36 @@ def build_directory(root: Path, site: dict, out_root: Path | None = None):
     rated = [p["rating"] for p in providers if p.get("rating")]
     avg_rating = round(sum(rated) / len(rated), 1) if rated else None
 
+    # Sponsored ("Best <trade>") — up to 3 of the operator's own businesses,
+    # chosen by business slug, shown first on every provider page's related list.
+    by_biz = {p["biz_slug"]: p for p in providers}
+    sponsored = [by_biz[s] for s in (site.get("sponsored") or []) if s in by_biz][:3]
+    noun = PROVIDER_NOUN.get(site.get("niche") or "", niche_label)
+    sponsored_label = site.get("sponsored_label") or ("Best " + noun)
+
+    def related_for(prov):
+        """Up to 56 related businesses: the sponsored ones first, then same-city,
+        then everywhere else — the current business excluded."""
+        out, seen = [], {prov["slug"]}
+        for sp in sponsored:
+            if sp["slug"] not in seen:
+                out.append(sp); seen.add(sp["slug"])
+        rest = ([p for p in providers if p["place"] == prov["place"] and p["slug"] not in seen] +
+                [p for p in providers if p["place"] != prov["place"] and p["slug"] not in seen])
+        for p in rest:
+            if len(out) >= 56:
+                break
+            out.append(p); seen.add(p["slug"])
+        return out
+
     base = {
         "site": site, "domain": domain, "theme": theme, "style": style,
         "globals": globals_, "dir_title": dir_title, "niche_label": niche_label,
         "tagline": site.get("tagline") or (f"Compare trusted local {niche_label.lower()} companies — ratings, services and contact details in one place."),
         "providers": providers, "cities": cities, "total": len(providers),
         "services": svc_names, "avg_rating": avg_rating, "rated_count": len(rated),
+        "sponsored": sponsored, "sponsored_label": sponsored_label, "noun": noun,
+        "sponsored_slugs": [p["slug"] for p in sponsored],
         "phone_link": None,
     }
 
@@ -285,6 +326,12 @@ def build_directory(root: Path, site: dict, out_root: Path | None = None):
     home_desc = f"Browse {len(providers)} {niche_label.lower()} businesses across {len(cities)} cities. Compare, view details and contact them directly."
     emit("/", tpl.render(page="home", url="/", title=home_title, description=home_desc, **base),
          "home", home_title, home_desc)
+
+    # ---- the full 'All businesses' page ----
+    all_title = f"All {niche_label} businesses ({len(providers)}) | {dir_title}"
+    all_desc = f"The complete directory — every one of the {len(providers)} {niche_label.lower()} businesses we list across {len(cities)} cities. Compare and contact them directly."
+    emit("/businesses", tpl.render(page="all", url="/businesses", title=all_title, description=all_desc, **base),
+         "services", all_title, all_desc)
 
     # ---- one page per city ----
     for c in cities:
@@ -300,7 +347,8 @@ def build_directory(root: Path, site: dict, out_root: Path | None = None):
         place = prov["place"] or niche_label
         t = f"{prov['name']} — {niche_label} in {place} | {dir_title}"
         d = f"{prov['name']}, {niche_label.lower()} in {place}. Contact details, services and hours." + (f" Call {prov['phone']}." if prov['phone'] else "")
-        emit(u, tpl.render(page="provider", url=u, prov=prov, title=t, description=d, **base),
+        emit(u, tpl.render(page="provider", url=u, prov=prov, related=related_for(prov),
+                           title=t, description=d, **base),
              "service", t, d)
 
     return result

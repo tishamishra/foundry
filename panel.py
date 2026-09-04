@@ -533,7 +533,8 @@ def directory_form(site_id: str | None = None):
     biz_rows.sort(key=lambda x: (x["place"], x["company"]))
     return render_template("directory_form.html", s=record, site_id=site_id,
                            niche_labels=niche_labels, biz_rows=biz_rows,
-                           picked=set(record.get("businesses") or []))
+                           picked=set(record.get("businesses") or []),
+                           sponsored=set(record.get("sponsored") or []))
 
 
 @app.route("/directory/save", methods=["POST"])
@@ -551,6 +552,8 @@ def directory_save():
         "style": f.get("style"),
         "businesses": f.getlist("businesses"),
         "per_city_limit": (f.get("per_city_limit") or "").strip() or None,
+        "sponsored": f.getlist("sponsored"),
+        "sponsored_label": (f.get("sponsored_label") or "").strip() or None,
     }
     try:
         site_id = save_directory(ROOT, payload)

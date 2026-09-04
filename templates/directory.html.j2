@@ -192,6 +192,36 @@
 .dir-cta-in{display:flex;flex-wrap:wrap;gap:1.2rem;align-items:center;justify-content:space-between;padding:2.6rem 0}
 .dir-cta h2{color:#fff;margin:0 0 .3rem;font-size:clamp(1.4rem,3vw,2rem)}
 .dir-cta p{color:rgba(255,255,255,.9);margin:0}
+/* long-form prose (city / all / provider) */
+.dir-prose{max-width:70ch}
+.dir-prose p{color:var(--muted);font-size:1.02rem;line-height:1.75;margin:0 0 1rem}
+.dir-prose .sec-h2{max-width:none}
+.pin-ic{vertical-align:-2px}
+/* provider services list */
+.svc-list{display:grid;gap:.7rem;grid-template-columns:1fr}
+@media(min-width:560px){.svc-list{grid-template-columns:1fr 1fr}}
+.svc-item{display:flex;gap:.7rem;align-items:flex-start}
+.svc-tick{flex:none;width:1.5rem;height:1.5rem;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;
+  color:var(--brand);background:color-mix(in srgb,var(--brand) 12%,#fff);box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--brand) 20%,transparent);margin-top:.1rem}
+.svc-item b{display:block;font-size:.96rem}
+.svc-item span{display:block;color:var(--muted);font-size:.86rem;line-height:1.5}
+/* related businesses list */
+.rel-list{display:grid;gap:.9rem;grid-template-columns:1fr}
+@media(min-width:560px){.rel-list{grid-template-columns:1fr 1fr}}
+@media(min-width:960px){.rel-list{grid-template-columns:repeat(3,1fr)}}
+.rel-card{position:relative;display:flex;flex-direction:column;gap:.25rem;background:#fff;border:1px solid var(--line);
+  border-radius:14px;padding:1.1rem 1.15rem;color:inherit;transition:transform .14s ease,box-shadow .14s ease,border-color .14s ease}
+.rel-card:hover{transform:translateY(-2px);box-shadow:0 18px 40px -30px rgba(8,20,55,.5);border-color:color-mix(in srgb,var(--brand) 30%,var(--line));text-decoration:none}
+.rel-card.best{border-color:color-mix(in srgb,var(--accent) 55%,var(--line));box-shadow:0 18px 40px -28px color-mix(in srgb,var(--accent) 55%,transparent)}
+.rel-name{font-weight:800;color:var(--ink);font-size:1rem;line-height:1.25}
+.rel-place{color:var(--muted);font-size:.84rem;font-weight:600;display:inline-flex;align-items:center;gap:.3rem}
+.rel-foot{display:flex;gap:.8rem;align-items:center;margin-top:.35rem}
+.rel-rate{color:var(--brand-dark);font-weight:800;font-size:.84rem}
+.rel-phone{color:var(--muted);font-weight:700;font-size:.84rem}
+.best-badge{position:absolute;top:-.7rem;left:1rem;background:var(--accent);color:var(--accent-text);
+  font-size:.72rem;font-weight:800;letter-spacing:.02em;padding:.2rem .6rem;border-radius:999px;
+  box-shadow:0 8px 18px -8px color-mix(in srgb,var(--accent) 60%,transparent)}
+.rel-card.best{padding-top:1.4rem}
 </style>
 </head>
 <body class="page-directory" data-style="{{ style.key }}" data-cards="{{ style.cards }}"
@@ -203,10 +233,12 @@
 {%- endif -%}
 {%- endmacro -%}
 
+{%- set pin -%}<svg class="pin-ic" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21c4-4.3 6-7.4 6-10a6 6 0 1 0-12 0c0 2.6 2 5.7 6 10Z"/><circle cx="12" cy="11" r="2.2"/></svg>{%- endset -%}
+
 {%- macro card(prov) -%}
 <article class="prov-card" data-search="{{ (prov.name ~ ' ' ~ prov.place ~ ' ' ~ (prov.services|join(' ')))|lower }}">
   <h3><a href="/provider/{{ prov.slug }}">{{ prov.name }}</a></h3>
-  <p class="prov-place">📍 {{ prov.place or 'Service area' }}</p>
+  <p class="prov-place">{{ pin }} {{ prov.place or 'Service area' }}</p>
   {{ rating(prov) }}
   {% if prov.services %}<div class="prov-tags">{% for s in prov.services[:3] %}<span class="prov-tag">{{ s }}</span>{% endfor %}</div>{% endif %}
   <div class="prov-foot">
@@ -216,11 +248,20 @@
 </article>
 {%- endmacro -%}
 
+{%- macro rel_card(prov, badge='') -%}
+<a class="rel-card{{ ' best' if badge }}" href="/provider/{{ prov.slug }}">
+  {% if badge %}<span class="best-badge">★ {{ badge }}</span>{% endif %}
+  <span class="rel-name">{{ prov.name }}</span>
+  <span class="rel-place">{{ pin }} {{ prov.place or 'Service area' }}</span>
+  <span class="rel-foot">{% if prov.rating %}<span class="rel-rate">★ {{ '%.1f'|format(prov.rating) }}</span>{% endif %}{% if prov.phone %}<span class="rel-phone">{{ prov.phone }}</span>{% endif %}</span>
+</a>
+{%- endmacro -%}
+
 <header class="dir-hdr">
   <div class="wrap">
     <span class="dir-brand"><a href="/">{{ dir_title }}</a></span>
     <nav>
-      <a href="/">All businesses</a>
+      <a href="/businesses">All businesses</a>
       {% for c in cities[:5] %}<a href="/city/{{ c.slug }}">{{ c.city }}</a>{% endfor %}
     </nav>
   </div>
@@ -355,22 +396,77 @@
   <a class="btn btn-light btn-lg" href="#listings">Browse the directory &rarr;</a>
 </div></section>
 
+{% elif page == 'all' %}
+<section class="pv-head"><div class="wrap">
+  <p class="crumbs"><a href="/">{{ dir_title }}</a> <span>›</span> <span>All businesses</span></p>
+  <h1>All {{ niche_label|lower }} businesses</h1>
+  <p style="color:var(--muted);margin:0">Every {{ niche_label|lower }} business we list — {{ total }} across {{ cities|length }} {{ 'city' if cities|length == 1 else 'cities' }}.</p>
+</div></section>
+<section class="dir-sec"><div class="wrap dir-prose">
+  <p>This is the complete {{ dir_title }} — {{ total }} local {{ niche_label|lower }} {{ 'business' if total == 1 else 'businesses' }} serving {{ cities|length }} {{ 'city' if cities|length == 1 else 'cities' }} and the areas around them. Every listing is a real local company with its own contact details and the services it covers, so you can compare a shortlist and reach the right one directly — free, with no lead fees and no middleman.</p>
+  <p>Use the search to filter by name, city or service, tap a service to narrow the list, or browse by city below. When you have found a {{ niche_label|lower }} company that fits, open its page for full contact details, a map and other {{ niche_label|lower }} companies nearby.</p>
+</div></section>
+<section class="dir-sec sec-alt" style="background:var(--surface)" id="listings"><div class="wrap">
+  <h2 class="sec-h2">Search all {{ total }} businesses</h2>
+  <div class="dir-search"><input type="search" id="dirq" placeholder="Search by name, city or service…" aria-label="Search businesses"></div>
+  {% if services %}<div class="svc-chips">{% for s in services[:10] %}<button type="button" class="svc-chip" data-q="{{ s|lower }}">{{ s }}</button>{% endfor %}</div>{% endif %}
+  {% set featured = providers|selectattr('featured')|list %}
+  <div class="prov-grid" id="provlist">{% for prov in (featured + (providers|rejectattr('featured')|list)) %}{{ card(prov) }}{% endfor %}</div>
+  <p class="dir-empty" id="noresult" hidden>No businesses match that search.</p>
+</div></section>
+{% if cities %}
+<section class="dir-sec"><div class="wrap">
+  <p class="sec-eyebrow">Service areas</p>
+  <h2 class="sec-h2">Browse by city</h2>
+  <div class="city-grid">{% for c in cities %}<a class="city-chip" href="/city/{{ c.slug }}"><span>{{ c.place }}</span><span class="n">{{ c.count }}</span></a>{% endfor %}</div>
+</div></section>
+{% endif %}
+
 {% elif page == 'city' %}
 <section class="pv-head"><div class="wrap">
-  <p class="crumbs"><a href="/">{{ dir_title }}</a> <span>›</span> <span>{{ city.place }}</span></p>
-  <h1>{{ niche_label }} in {{ city.place }}</h1>
-  <p style="color:var(--muted);margin:0">{{ city.count }} {{ niche_label|lower }} {{ 'business' if city.count == 1 else 'businesses' }} listed in {{ city.place }}.</p>
+  <p class="crumbs"><a href="/">{{ dir_title }}</a> <span>›</span> <a href="/businesses">All businesses</a> <span>›</span> <span>{{ city.place }}</span></p>
+  <h1>{{ niche_label }} companies in {{ city.place }}</h1>
+  <p style="color:var(--muted);margin:0">{{ city.count }} local {{ niche_label|lower }} {{ 'business' if city.count == 1 else 'businesses' }} serving {{ city.place }} — compare and contact them directly.</p>
 </div></section>
 <section class="dir-sec"><div class="wrap">
   <div class="prov-grid">{% for prov in city.providers %}{{ card(prov) }}{% endfor %}</div>
-  <p style="margin-top:1.6rem"><a class="more" href="/">&larr; All cities</a></p>
 </div></section>
+<section class="dir-sec sec-alt" style="background:var(--surface)"><div class="wrap dir-prose">
+  <h2 class="sec-h2">Finding a {{ niche_label|lower }} company in {{ city.city }}</h2>
+  <p>Looking for a {{ niche_label|lower }} company in {{ city.place }}? This page lists {{ city.count }} local {{ niche_label|lower }} {{ 'business' if city.count == 1 else 'businesses' }} serving {{ city.city }} and the surrounding area. Each listing shows the company's contact details and the services it covers — and, where available, its rating — so you can line up a few and reach the right one directly.</p>
+  <p>Local knowledge matters for {{ niche_label|lower }} work. A company that already covers {{ city.city }} knows the area and the kinds of properties in it, and can usually get to you sooner. Browse the businesses above, compare what each one offers, then call or message them to talk through your job and get a written quote before anything starts. Using {{ dir_title }} is free — you deal with each company directly, with no lead fees.</p>
+</div></section>
+<section class="dir-sec"><div class="wrap">
+  <p class="sec-eyebrow">Before you call</p>
+  <h2 class="sec-h2">How to choose a {{ niche_label|lower }} company in {{ city.city }}</h2>
+  <div class="how-grid">
+    <div class="how-step"><span class="how-n">1</span><h3>Match the service</h3><p>Check the company covers the exact {{ niche_label|lower }} job you need — not every business does everything.</p></div>
+    <div class="how-step"><span class="how-n">2</span><h3>Compare ratings</h3><p>Look at ratings and reviews, and how established each business is.</p></div>
+    <div class="how-step"><span class="how-n">3</span><h3>Ask for a written quote</h3><p>A written quote before work starts is the best way to avoid surprises.</p></div>
+    <div class="how-step"><span class="how-n">4</span><h3>Confirm the details</h3><p>Confirm licensing, insurance and timing directly with the business.</p></div>
+  </div>
+</div></section>
+<section class="dir-sec sec-alt" style="background:var(--surface)"><div class="wrap dir-faq">
+  <p class="sec-eyebrow">Good to know</p>
+  <h2 class="sec-h2">{{ niche_label }} in {{ city.city }} — questions answered</h2>
+  <details><summary>How many {{ niche_label|lower }} companies are listed in {{ city.city }}?</summary><p>{{ city.count }} in {{ city.place }} right now, and more are added as new local businesses join the directory.</p></details>
+  <details><summary>Are these {{ city.city }} {{ niche_label|lower }} companies vetted?</summary><p>Listings are drawn from local {{ niche_label|lower }} businesses serving {{ city.place }}. Always confirm licensing, insurance and recent reviews directly with a business before hiring.</p></details>
+  <details><summary>How do I contact a {{ niche_label|lower }} company in {{ city.city }}?</summary><p>Open any listing to see the phone number and, where available, email, website and a map — then reach out to the business directly.</p></details>
+  <details><summary>Is it free to use this directory?</summary><p>Yes. Browsing and contacting {{ niche_label|lower }} companies in {{ city.city }} is completely free.</p></details>
+</div></section>
+{% if cities|length > 1 %}
+<section class="dir-sec"><div class="wrap">
+  <p class="sec-eyebrow">Nearby</p>
+  <h2 class="sec-h2">{{ niche_label }} companies in other cities</h2>
+  <div class="city-grid">{% for c in cities if c.slug != city.slug %}<a class="city-chip" href="/city/{{ c.slug }}"><span>{{ c.place }}</span><span class="n">{{ c.count }}</span></a>{% endfor %}</div>
+</div></section>
+{% endif %}
 
 {% elif page == 'provider' %}
 <section class="pv-head"><div class="wrap">
   <p class="crumbs"><a href="/">{{ dir_title }}</a> <span>›</span> {% if prov.place %}<a href="/city/{{ prov.place|slug }}">{{ prov.place }}</a> <span>›</span> {% endif %}<span>{{ prov.name }}</span></p>
   <h1>{{ prov.name }}</h1>
-  <p style="color:var(--muted);margin:0;font-weight:600">{{ niche_label }}{% if prov.place %} · {{ prov.place }}{% endif %}</p>
+  <p style="color:var(--muted);margin:0;font-weight:600">{{ niche_label }} company{% if prov.place %} · {{ prov.place }}{% endif %}</p>
   {{ rating(prov) }}
 </div></section>
 <div class="wrap pv-grid">
@@ -382,11 +478,23 @@
       {% if prov.hours %}<dt>Hours</dt><dd>{{ prov.hours }}</dd>{% endif %}
       {% if prov.years %}<dt>Experience</dt><dd>{{ prov.years }} years in business</dd>{% endif %}
     </dl>
-    {% if prov.services %}
-    <h2 style="font-size:1.1rem;margin:0 0 .7rem">Services</h2>
-    <div class="prov-tags">{% for s in prov.services %}<span class="prov-tag">{{ s }}</span>{% endfor %}</div>
+    <h2 style="font-size:1.2rem;margin:.4rem 0 .7rem">About {{ prov.name }}</h2>
+    <p style="color:var(--muted)">{{ prov.name }} is a {{ niche_label|lower }} business{% if prov.place %} serving {{ prov.place }} and the surrounding area{% endif %}{% if prov.years %}, with {{ prov.years }} years in business{% endif %}. This page brings together everything you need to get in touch — the phone number{% if prov.email %}, email{% endif %}{% if prov.address_full %}, address{% endif %}{% if prov.hours %} and opening hours{% endif %} — so you can reach them directly.</p>
+    <p style="color:var(--muted)">{{ niche_label }} work ranges from small repairs to larger installations, and the right company depends on the job in front of you. Contact {{ prov.name }} to describe what you need, ask any questions and get a written quote before any work begins. There is no fee to use {{ dir_title }} and no middleman — you deal with the business directly.</p>
+    {% set plist = prov.services or services %}
+    {% if plist %}
+    <h2 style="font-size:1.2rem;margin:1.6rem 0 .8rem">Services</h2>
+    <div class="svc-list">
+      {% for s in plist %}<div class="svc-item"><span class="svc-tick" aria-hidden="true"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.3L19 7"/></svg></span><div><b>{{ s }}</b><span>Ask {{ prov.name }} about {{ s|lower }}{% if prov.place %} in {{ prov.city or prov.place }}{% endif %}.</span></div></div>{% endfor %}
+    </div>
     {% endif %}
-    <p style="color:var(--muted);margin-top:1.3rem">{{ prov.name }} is a {{ niche_label|lower }} business{% if prov.place %} serving {{ prov.place }}{% endif %}. Contact them directly using the details above.</p>
+    <h2 style="font-size:1.2rem;margin:1.6rem 0 .8rem">Frequently asked questions</h2>
+    <div class="dir-faq">
+      <details open><summary>How do I contact {{ prov.name }}?</summary><p>{% if prov.phone %}Call {{ prov.phone }}{% if prov.email %} or email {{ prov.email }}{% endif %}.{% else %}Use the contact details listed above.{% endif %}{% if prov.address_full %} You can also find them at {{ prov.address_full }}.{% endif %}</p></details>
+      <details><summary>What areas does {{ prov.name }} serve?</summary><p>{{ prov.name }} is based in {{ prov.place or 'the local area' }} and serves {{ prov.city or prov.place or 'the surrounding area' }} and nearby communities. Confirm your address is covered when you get in touch.</p></details>
+      <details><summary>What {{ niche_label|lower }} services does {{ prov.name }} offer?</summary><p>{% if plist %}Typical services include {{ plist[:6]|join(', ') }}{% if plist|length > 6 %} and more{% endif %}. {% endif %}Contact {{ prov.name }} to confirm they cover your specific job.</p></details>
+      <details><summary>How do I choose between {{ niche_label|lower }} companies?</summary><p>Compare the services each one offers, their ratings and how close they are, then ask a couple for a written quote before deciding. The related companies below make it easy to line up a few options.</p></details>
+    </div>
   </div>
   <aside class="pv-side">
     {% if prov.phone %}<a class="btn btn-accent btn-lg" href="tel:{{ prov.phone_link }}">Call {{ prov.phone }}</a>{% endif %}
@@ -395,6 +503,17 @@
     {% if mapq %}<div class="pv-map"><iframe title="Map — {{ prov.name }}" loading="lazy" src="https://maps.google.com/maps?q={{ mapq|urlencode }}&t=&z=12&ie=UTF8&iwloc=&output=embed"></iframe></div>{% endif %}
   </aside>
 </div>
+
+{% if related %}
+<section class="dir-sec sec-alt" style="background:var(--surface)"><div class="wrap">
+  <p class="sec-eyebrow">Compare more options</p>
+  <h2 class="sec-h2">More {{ niche_label|lower }} companies{% if prov.place %} near {{ prov.place }}{% endif %}</h2>
+  <div class="rel-list">
+    {% for rp in related %}{{ rel_card(rp, sponsored_label if rp.slug in sponsored_slugs else '') }}{% endfor %}
+  </div>
+  <p style="margin-top:1.6rem"><a class="more" href="/businesses">See all {{ total }} {{ niche_label|lower }} businesses &rarr;</a></p>
+</div></section>
+{% endif %}
 {% endif %}
 
 <footer class="dir-ftr"><div class="wrap">
@@ -402,7 +521,7 @@
   <p class="micro" style="color:rgba(255,255,255,.6)">&copy; 2026 {{ dir_title }}</p>
 </div></footer>
 
-{% if page == 'home' and providers %}
+{% if page in ('home', 'all') and providers %}
 <script>
 (function(){
   var q=document.getElementById('dirq'), list=document.getElementById('provlist'),
