@@ -165,8 +165,14 @@
 .feat-grid{display:grid;gap:1.2rem;grid-template-columns:1fr}
 @media(min-width:600px){.feat-grid{grid-template-columns:repeat(2,1fr)}}
 @media(min-width:1000px){.feat-grid{grid-template-columns:repeat(4,1fr)}}
-.feat{background:#fff;border:1px solid var(--line);border-radius:16px;padding:1.6rem 1.4rem}
-.feat-ic{font-size:1.6rem;display:block;margin-bottom:.7rem}
+.feat{background:#fff;border:1px solid var(--line);border-radius:16px;padding:1.6rem 1.4rem;
+  transition:transform .16s ease,box-shadow .16s ease,border-color .16s ease}
+.feat:hover{transform:translateY(-3px);box-shadow:0 22px 46px -30px rgba(8,20,55,.5);border-color:color-mix(in srgb,var(--brand) 30%,var(--line))}
+.feat-ic{display:inline-flex;align-items:center;justify-content:center;width:3rem;height:3rem;border-radius:14px;
+  margin-bottom:1rem;color:var(--brand);
+  background:linear-gradient(150deg,color-mix(in srgb,var(--brand) 16%,#fff),color-mix(in srgb,var(--brand) 7%,#fff));
+  box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--brand) 20%,transparent),0 8px 18px -10px color-mix(in srgb,var(--brand) 45%,transparent)}
+.feat-ic svg{width:24px;height:24px;display:block}
 .feat h3{font-size:1.06rem;margin:0 0 .4rem}
 .feat p{color:var(--muted);font-size:.93rem;margin:0;line-height:1.6}
 /* service quick-chips */
@@ -284,10 +290,22 @@
   <p class="sec-eyebrow">Why use {{ dir_title }}</p>
   <h2 class="sec-h2">Everything you need to choose with confidence</h2>
   <div class="feat-grid">
-    <div class="feat"><span class="feat-ic">📍</span><h3>Local businesses only</h3><p>Every listing is a {{ niche_label|lower }} business serving your area — no national call centres.</p></div>
-    <div class="feat"><span class="feat-ic">⭐</span><h3>Compare in one place</h3><p>Ratings, services and details for every company, side by side.</p></div>
-    <div class="feat"><span class="feat-ic">📞</span><h3>Contact directly</h3><p>Reach each business yourself — free to use, with no fees or lead charges.</p></div>
-    <div class="feat"><span class="feat-ic">🛠️</span><h3>Every service covered</h3><p>From small repairs to big installs, find a company for the exact job.</p></div>
+    <div class="feat">
+      <span class="feat-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21c4.2-4.5 6.4-7.8 6.4-10.6a6.4 6.4 0 1 0-12.8 0C5.6 13.2 7.8 16.5 12 21Z"/><circle cx="12" cy="10.3" r="2.5"/></svg></span>
+      <h3>Local businesses only</h3><p>Every listing is a {{ niche_label|lower }} business serving your area — no national call centres.</p>
+    </div>
+    <div class="feat">
+      <span class="feat-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 7h14M5 12h14M5 17h14"/><circle cx="15" cy="7" r="2" fill="currentColor" stroke="none"/><circle cx="9" cy="12" r="2" fill="currentColor" stroke="none"/><circle cx="13" cy="17" r="2" fill="currentColor" stroke="none"/></svg></span>
+      <h3>Compare in one place</h3><p>Ratings, services and details for every company, side by side.</p>
+    </div>
+    <div class="feat">
+      <span class="feat-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 3.5h3l1.6 4-2.1 1.4a10.5 10.5 0 0 0 4.6 4.6l1.4-2.1 4 1.6v3a2 2 0 0 1-2.2 2A15.5 15.5 0 0 1 4.5 5.7 2 2 0 0 1 6.5 3.5Z"/></svg></span>
+      <h3>Contact directly</h3><p>Reach each business yourself — free to use, with no fees or lead charges.</p>
+    </div>
+    <div class="feat">
+      <span class="feat-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14.8 6.2a3.6 3.6 0 0 0-4.6 4.6l-5.6 5.6a1.6 1.6 0 0 0 2.3 2.3l5.6-5.6a3.6 3.6 0 0 0 4.6-4.6l-2.3 2.3-2-.6-.6-2 2.2-2Z"/></svg></span>
+      <h3>Every service covered</h3><p>From small repairs to big installs, find a company for the exact job.</p>
+    </div>
   </div>
 </div></section>
 
