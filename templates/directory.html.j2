@@ -116,6 +116,76 @@
 .dir-ftr .wrap{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-between;align-items:center}
 .dir-ftr b{color:#fff;font-family:var(--font-display),serif;font-size:1.1rem}
 .dir-ftr p{margin:.3rem 0 0;font-size:.85rem;max-width:52ch}
+
+/* ===== eLocal-style lead-gen home ===== */
+.sec-eyebrow{text-transform:uppercase;letter-spacing:.12em;font-size:.74rem;font-weight:800;color:var(--brand-dark);margin:0 0 .5rem}
+.sec-h2{font-size:clamp(1.5rem,3.4vw,2.2rem);line-height:1.15;margin:0 0 1.6rem;max-width:22ch}
+/* hero */
+.lead-hero{background:radial-gradient(120% 130% at 85% -10%,color-mix(in srgb,var(--brand) 82%,#fff),var(--brand) 38%,var(--brand-dark) 78%,color-mix(in srgb,var(--brand-dark) 72%,#000));color:#fff;overflow:hidden}
+.lh-in{display:grid;gap:2.4rem;padding:clamp(2.6rem,6vw,4.6rem) 0;align-items:center}
+@media(min-width:940px){.lh-in{grid-template-columns:1.15fr .85fr}}
+.lh-eyebrow{text-transform:uppercase;letter-spacing:.12em;font-size:.76rem;font-weight:800;color:#fff;opacity:.85;margin:0 0 .8rem}
+.lh-copy h1{color:#fff;font-size:clamp(2rem,5vw,3.2rem);line-height:1.08;margin:0 0 .7rem}
+.lh-sub{color:rgba(255,255,255,.9);font-size:1.08rem;max-width:52ch;margin:0 0 1.5rem}
+.lh-search{display:flex;flex-wrap:wrap;gap:.6rem;background:#fff;border-radius:16px;padding:.7rem;box-shadow:0 30px 60px -30px rgba(8,20,55,.5)}
+.lh-field{flex:1 1 12rem;display:flex;flex-direction:column;gap:.15rem;min-width:0;text-align:left;padding:.2rem .6rem}
+.lh-field span{font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;font-weight:800;color:var(--muted)}
+.lh-field select{font:inherit;font-size:1rem;font-weight:600;border:0;background:transparent;color:var(--ink);padding:.15rem 0;outline:none;cursor:pointer;min-width:0}
+.lh-go{flex:0 0 auto;align-self:stretch;border-radius:12px}
+@media(max-width:560px){.lh-go{width:100%}}
+.lh-trust{margin:1.1rem 0 0;font-size:.9rem;color:rgba(255,255,255,.9);font-weight:600;display:flex;align-items:center;gap:.5rem;flex-wrap:wrap}
+.lh-stars{color:var(--star);letter-spacing:1px}
+/* hero decorative panel */
+.lh-panel{display:none}
+@media(min-width:940px){.lh-panel{display:block}}
+.lh-card{background:#fff;border-radius:18px;padding:1.4rem;box-shadow:0 40px 80px -30px rgba(8,20,55,.6)}
+.lh-card-top{display:flex;gap:.4rem;margin-bottom:1rem}
+.lh-dot{width:.6rem;height:.6rem;border-radius:50%;background:var(--line)}
+.lh-row{display:flex;align-items:center;gap:.7rem;padding:.6rem 0;border-top:1px solid var(--line)}
+.lh-av{flex:none;width:2rem;height:2rem;border-radius:50%;background:linear-gradient(150deg,var(--brand),var(--brand-dark));color:#fff;display:grid;place-items:center;font-weight:800;font-size:.85rem}
+.lh-bar{height:.6rem;border-radius:99px;background:var(--brand-light);flex:1}
+.lh-bar.w70{max-width:70%}.lh-bar.w55{max-width:55%}.lh-bar.w80{max-width:80%}
+.lh-rate{font-size:.8rem;font-weight:800;color:var(--brand-dark);white-space:nowrap}
+.lh-cta{margin-top:1rem;text-align:center;background:var(--accent);color:var(--accent-text);font-weight:800;padding:.7rem;border-radius:12px;font-size:.92rem}
+/* stat band */
+.stat-band{background:var(--ink);color:#fff}
+.stat-in{display:grid;grid-template-columns:repeat(2,1fr);gap:1.4rem 1rem;padding:2rem 0;text-align:center}
+@media(min-width:820px){.stat-in{grid-template-columns:repeat(4,1fr)}}
+.stat-cell b{display:block;font-family:var(--font-display),serif;font-size:clamp(1.8rem,4vw,2.6rem);color:#fff;line-height:1}
+.stat-cell span{display:block;margin-top:.35rem;font-size:.82rem;color:rgba(255,255,255,.72);text-transform:uppercase;letter-spacing:.06em;font-weight:600}
+/* how it works */
+.how-grid{display:grid;gap:1.2rem;grid-template-columns:1fr}
+@media(min-width:600px){.how-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.how-grid{grid-template-columns:repeat(4,1fr)}}
+.how-step{background:#fff;border:1px solid var(--line);border-radius:16px;padding:2.3rem 1.4rem 1.5rem;position:relative;box-shadow:0 16px 40px -32px rgba(8,20,55,.4)}
+.how-n{position:absolute;top:-1rem;left:1.4rem;width:2.5rem;height:2.5rem;border-radius:50%;background:linear-gradient(150deg,var(--brand),var(--brand-dark));color:#fff;display:grid;place-items:center;font-family:var(--font-display),serif;font-weight:800;font-size:1.15rem;box-shadow:0 10px 20px -8px color-mix(in srgb,var(--brand) 60%,transparent)}
+.how-step h3{font-size:1.1rem;margin:0 0 .4rem}
+.how-step p{color:var(--muted);font-size:.94rem;margin:0;line-height:1.6}
+/* why-us feature grid */
+.feat-grid{display:grid;gap:1.2rem;grid-template-columns:1fr}
+@media(min-width:600px){.feat-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.feat-grid{grid-template-columns:repeat(4,1fr)}}
+.feat{background:#fff;border:1px solid var(--line);border-radius:16px;padding:1.6rem 1.4rem}
+.feat-ic{font-size:1.6rem;display:block;margin-bottom:.7rem}
+.feat h3{font-size:1.06rem;margin:0 0 .4rem}
+.feat p{color:var(--muted);font-size:.93rem;margin:0;line-height:1.6}
+/* service quick-chips */
+.svc-chips{display:flex;flex-wrap:wrap;gap:.5rem;margin:0 0 1.4rem}
+.svc-chip{background:#fff;border:1px solid var(--line);border-radius:999px;padding:.4rem .9rem;font:inherit;font-size:.86rem;font-weight:600;color:var(--muted);cursor:pointer;transition:.15s}
+.svc-chip:hover{border-color:var(--brand);color:var(--brand-dark)}
+.svc-chip.on{background:var(--brand);border-color:var(--brand);color:#fff}
+/* FAQ */
+.dir-faq details{background:#fff;border:1px solid var(--line);border-radius:12px;padding:1rem 1.2rem;margin-bottom:.7rem}
+.dir-faq summary{cursor:pointer;font-weight:700;list-style:none;display:flex;justify-content:space-between;gap:1rem}
+.dir-faq summary::-webkit-details-marker{display:none}
+.dir-faq summary::after{content:"+";color:var(--brand);font-weight:800;font-size:1.2rem}
+.dir-faq details[open] summary::after{content:"–"}
+.dir-faq p{margin:.7rem 0 0;color:var(--muted);line-height:1.6}
+/* closing CTA */
+.dir-cta{background:linear-gradient(150deg,var(--brand),var(--brand-dark));color:#fff}
+.dir-cta-in{display:flex;flex-wrap:wrap;gap:1.2rem;align-items:center;justify-content:space-between;padding:2.6rem 0}
+.dir-cta h2{color:#fff;margin:0 0 .3rem;font-size:clamp(1.4rem,3vw,2rem)}
+.dir-cta p{color:rgba(255,255,255,.9);margin:0}
 </style>
 </head>
 <body class="page-directory" data-style="{{ style.key }}" data-cards="{{ style.cards }}"
@@ -151,40 +221,120 @@
 </header>
 
 {% if page == 'home' %}
-<section class="dir-hero">
-  <div class="wrap">
-    <h1>{{ dir_title }}</h1>
-    <p>{{ tagline }}</p>
-    <div class="dir-stat"><span><b>{{ total }}</b> businesses listed</span><span><b>{{ cities|length }}</b> cities covered</span></div>
-    <div class="dir-search"><input type="search" id="dirq" placeholder="Search by name, city or service…" aria-label="Search businesses"></div>
+{# ---------- 1. lead-gen hero with a service + location search ---------- #}
+<section class="lead-hero">
+  <div class="wrap lh-in">
+    <div class="lh-copy">
+      <p class="lh-eyebrow">{{ niche_label }} directory{% if avg_rating %} · ★ {{ avg_rating }} average rating{% endif %}</p>
+      <h1>Find a trusted local {{ niche_label|lower }} company, fast</h1>
+      <p class="lh-sub">{{ tagline }}</p>
+      <form class="lh-search" onsubmit="return dirSearch(event)">
+        {% if services %}
+        <label class="lh-field"><span>What do you need?</span>
+          <select id="lh-service">
+            <option value="">Any {{ niche_label|lower }} service</option>
+            {% for s in services %}<option value="{{ s|lower }}">{{ s }}</option>{% endfor %}
+          </select>
+        </label>
+        {% endif %}
+        <label class="lh-field"><span>Where?</span>
+          <select id="lh-city">
+            <option value="">All areas</option>
+            {% for c in cities %}<option value="{{ c.place|lower }}">{{ c.place }}</option>{% endfor %}
+          </select>
+        </label>
+        <button class="btn btn-accent lh-go" type="submit">Find {{ niche_label|lower }} companies</button>
+      </form>
+      <p class="lh-trust"><span class="lh-stars" aria-hidden="true">★★★★★</span> {{ total }} local {{ niche_label|lower }} businesses across {{ cities|length }} {{ 'city' if cities|length == 1 else 'cities' }}</p>
+    </div>
+    <div class="lh-panel" aria-hidden="true">
+      <div class="lh-card">
+        <div class="lh-card-top"><span class="lh-dot"></span><span class="lh-dot"></span><span class="lh-dot"></span></div>
+        <div class="lh-row"><span class="lh-av">A</span><span class="lh-bar w70"></span><span class="lh-rate">★ 4.9</span></div>
+        <div class="lh-row"><span class="lh-av">B</span><span class="lh-bar w55"></span><span class="lh-rate">★ 4.8</span></div>
+        <div class="lh-row"><span class="lh-av">C</span><span class="lh-bar w80"></span><span class="lh-rate">★ 4.7</span></div>
+        <div class="lh-cta">Compare &amp; call &rarr;</div>
+      </div>
+    </div>
   </div>
 </section>
 
-{% set featured = providers|selectattr('featured')|list %}
-{% if featured %}
-<section class="dir-sec"><div class="wrap">
-  <h2>Featured businesses</h2>
-  <div class="prov-grid">{% for prov in featured[:6] %}{{ card(prov) }}{% endfor %}</div>
+{# ---------- 2. proven-results band (REAL counts only, nothing invented) ---------- #}
+<section class="stat-band"><div class="wrap stat-in">
+  <div class="stat-cell"><b>{{ total }}</b><span>{{ niche_label }} businesses listed</span></div>
+  <div class="stat-cell"><b>{{ cities|length }}</b><span>Cities covered</span></div>
+  {% if services %}<div class="stat-cell"><b>{{ services|length }}</b><span>Services covered</span></div>{% endif %}
+  <div class="stat-cell"><b>{% if avg_rating %}{{ avg_rating }}{% else %}★{% endif %}</b><span>{% if avg_rating %}Average rating{% else %}Rated by locals{% endif %}</span></div>
 </div></section>
-{% endif %}
 
-{% if cities %}
+{# ---------- 3. how it works ---------- #}
+<section class="dir-sec"><div class="wrap">
+  <p class="sec-eyebrow">How it works</p>
+  <h2 class="sec-h2">Find the right {{ niche_label|lower }} company in four steps</h2>
+  <div class="how-grid">
+    <div class="how-step"><span class="how-n">1</span><h3>Search your area</h3><p>Pick your city or a service to see {{ niche_label|lower }} companies near you.</p></div>
+    <div class="how-step"><span class="how-n">2</span><h3>Compare</h3><p>Line up ratings, services and contact details side by side.</p></div>
+    <div class="how-step"><span class="how-n">3</span><h3>Contact directly</h3><p>Call or message the business that fits — no middleman, no fees.</p></div>
+    <div class="how-step"><span class="how-n">4</span><h3>Get it done</h3><p>Agree the work and a written quote before anything starts.</p></div>
+  </div>
+</div></section>
+
+{# ---------- 4. why use this directory ---------- #}
 <section class="dir-sec sec-alt" style="background:var(--surface)"><div class="wrap">
-  <h2>Browse by city</h2>
+  <p class="sec-eyebrow">Why use {{ dir_title }}</p>
+  <h2 class="sec-h2">Everything you need to choose with confidence</h2>
+  <div class="feat-grid">
+    <div class="feat"><span class="feat-ic">📍</span><h3>Local businesses only</h3><p>Every listing is a {{ niche_label|lower }} business serving your area — no national call centres.</p></div>
+    <div class="feat"><span class="feat-ic">⭐</span><h3>Compare in one place</h3><p>Ratings, services and details for every company, side by side.</p></div>
+    <div class="feat"><span class="feat-ic">📞</span><h3>Contact directly</h3><p>Reach each business yourself — free to use, with no fees or lead charges.</p></div>
+    <div class="feat"><span class="feat-ic">🛠️</span><h3>Every service covered</h3><p>From small repairs to big installs, find a company for the exact job.</p></div>
+  </div>
+</div></section>
+
+{# ---------- 5. browse by city ---------- #}
+{% if cities %}
+<section class="dir-sec"><div class="wrap">
+  <p class="sec-eyebrow">Service areas</p>
+  <h2 class="sec-h2">Browse {{ niche_label|lower }} companies by city</h2>
   <div class="city-grid">
     {% for c in cities %}<a class="city-chip" href="/city/{{ c.slug }}"><span>{{ c.place }}</span><span class="n">{{ c.count }}</span></a>{% endfor %}
   </div>
 </div></section>
 {% endif %}
 
-<section class="dir-sec"><div class="wrap">
-  <h2>All businesses <span style="color:var(--muted);font-weight:600;font-size:.7em">({{ total }})</span></h2>
+{# ---------- 6. the directory listing (search filters this) ---------- #}
+<section class="dir-sec sec-alt" style="background:var(--surface)" id="listings"><div class="wrap">
+  <p class="sec-eyebrow">The directory</p>
+  <h2 class="sec-h2">{{ total }} {{ niche_label|lower }} {{ 'business' if total == 1 else 'businesses' }} listed</h2>
+  <div class="dir-search"><input type="search" id="dirq" placeholder="Search by name, city or service…" aria-label="Search businesses"></div>
+  {% if services %}
+  <div class="svc-chips">{% for s in services[:10] %}<button type="button" class="svc-chip" data-q="{{ s|lower }}">{{ s }}</button>{% endfor %}</div>
+  {% endif %}
   {% if providers %}
-  <div class="prov-grid" id="provlist">{% for prov in providers %}{{ card(prov) }}{% endfor %}</div>
+  {% set featured = providers|selectattr('featured')|list %}
+  <div class="prov-grid" id="provlist">
+    {% for prov in (featured + (providers|rejectattr('featured')|list)) %}{{ card(prov) }}{% endfor %}
+  </div>
   <p class="dir-empty" id="noresult" hidden>No businesses match that search.</p>
   {% else %}
   <p class="dir-empty">No businesses are listed yet. Add businesses in the engine and they will appear here.</p>
   {% endif %}
+</div></section>
+
+{# ---------- 7. FAQ ---------- #}
+<section class="dir-sec"><div class="wrap dir-faq">
+  <p class="sec-eyebrow">Good to know</p>
+  <h2 class="sec-h2">{{ niche_label }} directory — questions answered</h2>
+  <details><summary>How do I choose a {{ niche_label|lower }} company?</summary><p>Compare ratings, the services each one offers and how close they are, then contact a few directly to talk through your job and get a written quote before any work begins.</p></details>
+  <details><summary>Is it free to use this directory?</summary><p>Yes. Browsing the listings and contacting any business is completely free — you deal with each company directly.</p></details>
+  <details><summary>Are these {{ niche_label|lower }} companies vetted?</summary><p>Listings are drawn from local {{ niche_label|lower }} businesses serving this area. Always confirm licensing, insurance and recent reviews directly with a business before hiring.</p></details>
+  <details><summary>How many {{ niche_label|lower }} companies are listed?</summary><p>{{ total }} across {{ cities|length }} {{ 'city' if cities|length == 1 else 'cities' }}, and the list grows as more local businesses are added.</p></details>
+</div></section>
+
+{# ---------- 8. closing CTA ---------- #}
+<section class="dir-cta"><div class="wrap dir-cta-in">
+  <div><h2>Ready to find your {{ niche_label|lower }} company?</h2><p>Search {{ total }} local businesses and contact the right one today.</p></div>
+  <a class="btn btn-light btn-lg" href="#listings">Browse the directory &rarr;</a>
 </div></section>
 
 {% elif page == 'city' %}
@@ -239,16 +389,38 @@
 (function(){
   var q=document.getElementById('dirq'), list=document.getElementById('provlist'),
       none=document.getElementById('noresult');
-  if(!q||!list) return;
+  if(!list) return;
   var cards=[].slice.call(list.querySelectorAll('.prov-card'));
-  q.addEventListener('input', function(){
-    var v=q.value.trim().toLowerCase(), shown=0;
+  function apply(v){
+    var toks=(v||'').toLowerCase().split(/[\s,]+/).filter(Boolean), shown=0;
     cards.forEach(function(c){
-      var hit = !v || c.getAttribute('data-search').indexOf(v)>-1;
-      c.hidden = !hit; if(hit) shown++;
+      var d=c.getAttribute('data-search');
+      var hit=toks.every(function(t){ return d.indexOf(t)>-1; });
+      c.hidden=!hit; if(hit) shown++;
     });
-    if(none) none.hidden = shown>0;
+    if(none) none.hidden=shown>0;
+  }
+  if(q) q.addEventListener('input', function(){ apply(q.value); });
+  // service quick-chips
+  [].slice.call(document.querySelectorAll('.svc-chip')).forEach(function(ch){
+    ch.addEventListener('click', function(){
+      var val=ch.getAttribute('data-q');
+      if(q) q.value=val; apply(val);
+      document.querySelectorAll('.svc-chip.on').forEach(function(x){x.classList.remove('on');});
+      ch.classList.add('on');
+    });
   });
+  // hero search form -> build a query from service + city, filter, scroll to listings
+  window.dirSearch=function(e){
+    e.preventDefault();
+    var s=document.getElementById('lh-service'), c=document.getElementById('lh-city');
+    var terms=[(s&&s.value)||'', (c&&c.value)||''].filter(Boolean);
+    var query=terms.join(' ').trim();
+    if(q) q.value=query; apply(query);
+    var target=document.getElementById('listings');
+    if(target) target.scrollIntoView({behavior:'smooth'});
+    return false;
+  };
 })();
 </script>
 {% endif %}

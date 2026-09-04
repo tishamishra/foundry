@@ -262,11 +262,21 @@ def build_directory(root: Path, site: dict, out_root: Path | None = None):
         target.write_text(html, encoding="utf-8")
         result.pages.append(Page(url=url, kind=kind, title=title, description=desc, html=""))
 
+    # Services offered across the directory (from the niche) for the browse row.
+    svc_names: list[str] = []
+    if site.get("niche"):
+        smap, _lbl = _niche_services(root, site["niche"])
+        svc_names = list(smap.values())
+    # Honest rating stat — only from providers that actually have a rating.
+    rated = [p["rating"] for p in providers if p.get("rating")]
+    avg_rating = round(sum(rated) / len(rated), 1) if rated else None
+
     base = {
         "site": site, "domain": domain, "theme": theme, "style": style,
         "globals": globals_, "dir_title": dir_title, "niche_label": niche_label,
-        "tagline": site.get("tagline") or (f"Find a trusted {niche_label.lower()} near you"),
+        "tagline": site.get("tagline") or (f"Compare trusted local {niche_label.lower()} companies — ratings, services and contact details in one place."),
         "providers": providers, "cities": cities, "total": len(providers),
+        "services": svc_names, "avg_rating": avg_rating, "rated_count": len(rated),
         "phone_link": None,
     }
 
