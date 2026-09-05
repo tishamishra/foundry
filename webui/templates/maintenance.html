@@ -7,6 +7,18 @@
   so old demo builds stop taking space.</p>
 </div>
 
+<div class="card" style="display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between">
+  <div><strong>Business search index</strong>
+    <div class="dim">{{ '{:,}'.format(db_count) }} businesses indexed in the database
+      {%- if yaml_count and yaml_count != db_count %} · {{ '{:,}'.format(yaml_count) }} records on disk (out of sync){% endif %}.
+      The panel and directory builds read from this index, which is what keeps things fast at tens of thousands of records.</div>
+  </div>
+  <form method="post" action="{{ url_for('maintenance_reindex') }}"
+        onsubmit="this.querySelector('button').disabled=true;this.querySelector('button').textContent='Rebuilding…'">
+    <button class="btn{{ ' danger' if yaml_count and yaml_count != db_count }}" type="submit">Rebuild index</button>
+  </form>
+</div>
+
 {% if not orphans %}
   <div class="card"><p>✅ Nothing to clean. Every build on disk belongs to a live site.</p></div>
 {% else %}

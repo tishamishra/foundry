@@ -239,6 +239,12 @@ def save_business(root: Path, data: dict) -> str:
     folder.mkdir(parents=True, exist_ok=True)
     (folder / f"{slug}.yaml").write_text(
         yaml.safe_dump(record, sort_keys=False, allow_unicode=True), encoding="utf-8")
+    # Keep the fast query DB in sync (YAML stays canonical; the DB is the index).
+    try:
+        from . import bizdb
+        bizdb.upsert(root, {"slug": slug, **record})
+    except Exception:
+        pass
     return slug
 
 
@@ -450,6 +456,11 @@ def delete_business(root: Path, slug: str) -> list[str]:
     path = root / "data" / "businesses" / f"{slug}.yaml"
     if path.is_file():
         path.unlink()
+    try:
+        from . import bizdb
+        bizdb.delete(root, slug)
+    except Exception:
+        pass
     return []
 
 

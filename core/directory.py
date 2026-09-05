@@ -29,6 +29,7 @@ dist/<domain>/ tree that previews and deploys exactly like any other site.
 
 from __future__ import annotations
 
+import json
 import re
 from pathlib import Path
 from typing import Any
@@ -115,102 +116,94 @@ def _niche_services(root: Path, niche_key: str) -> dict[str, str]:
     return out, (n.get("label") or niche_key.replace("-", " ").title())
 
 
-def load_providers(root: Path, niche_filter: str | None = None,
-                   include_slugs: set | None = None) -> list[dict]:
-    """Build the provider list from the engine's OWN business + site records.
+def _build_provider(root: Path, biz: dict, sites: list[dict],
+                    niche_filter: str | None) -> dict | None:
+    """Turn one business record (+ any sites built for it) into a provider dict,
+    applying the niche filter. Returns None when the business is filtered out."""
+    company = biz.get("company") or biz.get("brand")
+    if not company:
+        return None
+    slug = biz.get("slug")
 
-    include_slugs, when given, is an explicit pick of business slugs to list —
-    exactly those businesses appear, regardless of niche. When it is None the
-    listing is every business (optionally filtered to one trade by niche_filter).
-    """
-    site_index = _load_site_index(root)
-    folder = root / "data" / "businesses"
-    providers: list[dict] = []
-    if not folder.is_dir():
-        return providers
+    own_niche = (biz.get("niche") or "").strip()
+    site_niches = [s.get("niche") for s in sites if s.get("niche")]
+    inferred = ""
+    if not own_niche and not site_niches:
+        inferred = (niche_from_category(biz.get("category") or "")
+                    or niche_from_category(company))
+    niches = (([own_niche] if own_niche else []) + site_niches
+              + ([inferred] if inferred else []))
+    if niche_filter:
+        if niche_filter not in niches:
+            return None
+        niche_key = niche_filter
+    else:
+        niche_key = own_niche or (site_niches[0] if site_niches else inferred) or None
 
-    for p in sorted(folder.glob("*.yaml")):
-        biz = _read_yaml(p)
-        company = biz.get("company") or biz.get("brand")
-        if not company:
-            continue
-        slug = biz.get("slug") or p.stem
-        # An explicit pick wins: include exactly the chosen businesses.
-        if include_slugs is not None and slug not in include_slugs:
-            continue
-        sites = site_index.get(slug, [])
+    svc_names: list[str] = []
+    niche_label = ""
+    if niche_key:
+        svc_map, niche_label = _niche_services(root, niche_key)
+        picked: list[str] = []
+        for s in sites:
+            if s.get("niche") == niche_key:
+                picked = s.get("services") or picked
+        slugs = picked or list(svc_map.keys())
+        svc_names = [svc_map[x] for x in slugs if x in svc_map][:8]
 
-        # The business's trade, most trustworthy source first:
-        #   1. the record's OWN niche      (set from its scraped category on import)
-        #   2. any marketing SITE's niche  (a site actually built for it)
-        #   3. INFERRED from the raw category or the company name — the safety net
-        #      for records imported before categories were captured, so a plumbing
-        #      directory can still tell "Joe's Plumbing" from "Glamour Hair Studio".
-        # A directory's niche filter ALWAYS applies when set — even to an explicit
-        # pick — so a plumbing directory lists only plumbers and never a salon,
-        # a dentist, an electrician or a mechanic that happened to be ticked.
-        own_niche = (biz.get("niche") or "").strip()
-        site_niches = [s.get("niche") for s in sites if s.get("niche")]
-        inferred = ""
-        if not own_niche and not site_niches:
-            inferred = (niche_from_category(biz.get("category") or "")
-                        or niche_from_category(company))
-        niches = (([own_niche] if own_niche else []) + site_niches
-                  + ([inferred] if inferred else []))
-        if niche_filter:
-            if niche_filter not in niches:
-                continue
-            niche_key = niche_filter
-        else:
-            niche_key = own_niche or (site_niches[0] if site_niches else inferred) or None
+    addr = biz.get("address") or {}
+    facts = biz.get("facts") or {}
+    city = (addr.get("city") or "").strip()
+    state_abbr = _abbr(addr.get("state") or "")
+    if sites and sites[0].get("domain"):
+        website = "https://" + sites[0]["domain"]
+    else:
+        w = (biz.get("website") or "").strip()
+        website = w if w.startswith(("http://", "https://")) else (("https://" + w) if w else "")
+    rating = facts.get("rating")
+    parts = [addr.get("street"), city, state_abbr, addr.get("zip")]
+    address_full = ", ".join([x for x in parts if x])
 
-        svc_names: list[str] = []
-        niche_label = ""
-        if niche_key:
-            svc_map, niche_label = _niche_services(root, niche_key)
-            # services the business's site actually selected, else the niche's own
-            picked: list[str] = []
-            for s in sites:
-                if s.get("niche") == niche_key:
-                    picked = s.get("services") or picked
-            slugs = picked or list(svc_map.keys())
-            svc_names = [svc_map[x] for x in slugs if x in svc_map][:8]
+    return {
+        "slug": slugify(company),
+        "biz_slug": slug,
+        "name": company,
+        "phone": biz.get("phone") or "",
+        "phone_link": _phone_link(biz.get("phone") or ""),
+        "email": biz.get("email") or "",
+        "city": city,
+        "state_abbr": state_abbr,
+        "place": (f"{city}, {state_abbr}" if city and state_abbr else (city or state_abbr)),
+        "address_full": address_full,
+        "hours": facts.get("hours") or "",
+        "years": facts.get("years_in_business"),
+        "rating": float(rating) if isinstance(rating, (int, float)) else None,
+        "website": website,
+        "niche": niche_key or "",
+        "niche_label": niche_label,
+        "services": svc_names,
+        "featured": bool(sites) and any(s.get("directory_featured") for s in sites),
+    }
 
-        addr = biz.get("address") or {}
-        facts = biz.get("facts") or {}
-        city = (addr.get("city") or "").strip()
-        state_abbr = _abbr(addr.get("state") or "")
-        if sites and sites[0].get("domain"):
-            website = "https://" + sites[0]["domain"]
-        else:
-            w = (biz.get("website") or "").strip()
-            website = w if w.startswith(("http://", "https://")) else (("https://" + w) if w else "")
-        rating = facts.get("rating")
-        parts = [addr.get("street"), city, state_abbr, addr.get("zip")]
-        address_full = ", ".join([x for x in parts if x])
 
-        providers.append({
-            "slug": slugify(company),
-            "biz_slug": slug,
-            "name": company,
-            "phone": biz.get("phone") or "",
-            "phone_link": _phone_link(biz.get("phone") or ""),
-            "email": biz.get("email") or "",
-            "city": city,
-            "state_abbr": state_abbr,
-            "place": (f"{city}, {state_abbr}" if city and state_abbr else (city or state_abbr)),
-            "address_full": address_full,
-            "hours": facts.get("hours") or "",
-            "years": facts.get("years_in_business"),
-            "rating": float(rating) if isinstance(rating, (int, float)) else None,
-            "website": website,
-            "niche": niche_key or "",
-            "niche_label": niche_label,
-            "services": svc_names,
-            "featured": bool(sites) and any(s.get("directory_featured") for s in sites),
-        })
+def _biz_from_db_row(row: dict) -> dict:
+    """A flat DB row -> the nested business shape _build_provider expects."""
+    try:
+        facts = json.loads(row.get("facts_json") or "{}")
+    except Exception:
+        facts = {}
+    return {
+        "slug": row.get("slug"), "company": row.get("company"), "brand": row.get("brand"),
+        "phone": row.get("phone"), "email": row.get("email"),
+        "niche": row.get("niche"), "category": row.get("category"),
+        "website": row.get("website"),
+        "address": {"street": row.get("street"), "city": row.get("city"),
+                    "state": row.get("state"), "zip": row.get("zip")},
+        "facts": facts,
+    }
 
-    # de-dupe slugs (two businesses with the same company name)
+
+def _dedupe_slugs(providers: list[dict]) -> list[dict]:
     seen: dict[str, int] = {}
     for prov in providers:
         base = prov["slug"]
@@ -220,6 +213,49 @@ def load_providers(root: Path, niche_filter: str | None = None,
         else:
             seen[base] = 1
     return providers
+
+
+def load_providers(root: Path, niche_filter: str | None = None,
+                   include_slugs: set | None = None) -> list[dict]:
+    """Build the provider list. Reads from the fast SQLite index when it is
+    populated (so a build never scans tens of thousands of YAML files), and
+    falls back to scanning data/businesses/*.yaml when the DB is empty."""
+    site_index = _load_site_index(root)
+    providers: list[dict] = []
+
+    # --- Fast path: the SQLite business index ---
+    try:
+        from . import bizdb
+        bizdb.ensure_ready(root)
+        use_db = not bizdb.is_empty(root)
+    except Exception:
+        use_db = False
+
+    if use_db:
+        rows = bizdb.providers_for(
+            root,
+            niche=niche_filter or None,
+            slugs=list(include_slugs) if include_slugs is not None else None)
+        for row in rows:
+            biz = _biz_from_db_row(row)
+            prov = _build_provider(root, biz, site_index.get(biz["slug"], []), niche_filter)
+            if prov:
+                providers.append(prov)
+        return _dedupe_slugs(providers)
+
+    # --- Fallback: scan the YAML records ---
+    folder = root / "data" / "businesses"
+    if not folder.is_dir():
+        return providers
+    for p in sorted(folder.glob("*.yaml")):
+        biz = _read_yaml(p)
+        biz.setdefault("slug", p.stem)
+        if include_slugs is not None and biz["slug"] not in include_slugs:
+            continue
+        prov = _build_provider(root, biz, site_index.get(biz["slug"], []), niche_filter)
+        if prov:
+            providers.append(prov)
+    return _dedupe_slugs(providers)
 
 
 def _cities(providers: list[dict]) -> list[dict]:

@@ -45,6 +45,7 @@ from core.prompts import (GLOBAL_COLUMNS, REQUIRED_SCHEMA, SHAPE_CSV,  # noqa: E
                           shape_of, smart_parse, tag_claims)
 from core import aiwrite  # noqa: E402
 from core import bizcsv  # noqa: E402
+from core import bizdb  # noqa: E402
 from core.tokens import unknown_tokens  # noqa: E402
 from core.preview import PreviewPool, free_port, load_asset  # noqa: E402
 from core.render import build_site  # noqa: E402
@@ -107,7 +108,12 @@ def businesses() -> list[dict]:
 
 
 def business_count() -> int:
-    """How many business records exist — WITHOUT reading any file."""
+    """How many business records exist — a single COUNT(*) from the DB."""
+    bizdb.ensure_ready(ROOT)
+    n = bizdb.count(ROOT)
+    if n:
+        return n
+    # Fallback before the DB is populated: count files without reading them.
     folder = ROOT / "data" / "businesses"
     return sum(1 for _ in folder.glob("*.yaml")) if folder.is_dir() else 0
 
@@ -143,12 +149,17 @@ def business_index() -> list[dict]:
 
 
 def business_lookup(slugs) -> list[dict]:
-    """Resolve a small set of slugs to {slug, company, place} using the index."""
-    want = set(slugs or [])
-    if not want:
+    """Resolve a small set of slugs to {slug, company, place} — one indexed DB
+    read each, so it never scans the whole set."""
+    if not slugs:
         return []
-    by = {r["slug"]: r for r in business_index()}
-    return [by[s] for s in slugs if s in by]
+    bizdb.ensure_ready(ROOT)
+    out = []
+    for s in slugs:
+        r = bizdb.get(ROOT, s)
+        if r:
+            out.append({"slug": r["slug"], "company": r["company"], "place": r["place"]})
+    return out
 
 
 def coverage_states(niche: str) -> list[str]:
@@ -586,21 +597,22 @@ def site_save():
 @app.route("/api/businesses")
 @guard
 def api_businesses():
-    """Type-ahead search over the cached business index. Returns a small page of
-    matches so the pickers never render thousands of rows at once."""
-    q = (request.args.get("q") or "").strip().lower()
+    """Type-ahead search + pagination straight from the DB. `offset` + a returned
+    `total` let the pickers 'load the next 500' instead of loading everything."""
+    bizdb.ensure_ready(ROOT)
+    q = (request.args.get("q") or "").strip()
+    niche = (request.args.get("niche") or "").strip() or None
     try:
-        limit = min(int(request.args.get("limit") or 30), 100)
+        limit = min(int(request.args.get("limit") or 30), 500)
     except ValueError:
         limit = 30
-    rows = business_index()
-    if q:
-        toks = q.split()
-        hits = [r for r in rows
-                if all(t in (r["company"] + " " + r["place"]).lower() for t in toks)]
-    else:
-        hits = rows
-    return jsonify({"total": len(hits), "rows": hits[:limit]})
+    try:
+        offset = max(int(request.args.get("offset") or 0), 0)
+    except ValueError:
+        offset = 0
+    total, rows = bizdb.search(ROOT, q=q, niche=niche, limit=limit, offset=offset)
+    return jsonify({"total": total, "offset": offset, "limit": limit,
+                    "returned": len(rows), "rows": rows})
 
 
 @app.route("/directory/new")
@@ -1393,8 +1405,11 @@ def maintenance():
     total = sum(o["bytes"] for o in orphans)
     for o in orphans:
         o["size"] = _fmt_bytes(o["bytes"])
+    yaml_n = sum(1 for _ in (ROOT / "data" / "businesses").glob("*.yaml")) \
+        if (ROOT / "data" / "businesses").is_dir() else 0
     return render_template("maintenance.html", orphans=orphans,
-                           total=_fmt_bytes(total), count=len(orphans))
+                           total=_fmt_bytes(total), count=len(orphans),
+                           db_count=bizdb.count(ROOT), yaml_count=yaml_n)
 
 
 @app.route("/maintenance/prune", methods=["POST"])
@@ -1406,6 +1421,15 @@ def maintenance_prune():
               f"These were builds of sites you had already deleted.", "good")
     else:
         flash("Nothing to clean — no orphaned builds on disk.", "good")
+    return redirect(url_for("maintenance"))
+
+
+@app.route("/maintenance/reindex", methods=["POST"])
+@guard
+def maintenance_reindex():
+    n = bizdb.rebuild_from_yaml(ROOT)
+    flash(f"Rebuilt the business database index from your records — {n:,} businesses "
+          f"indexed. Search, counts and directory builds read from this.", "good")
     return redirect(url_for("maintenance"))
 
 

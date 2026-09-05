@@ -10,14 +10,7 @@ __pycache__/
 *.pyc
 .foundry-trash-*
 
-# Cowork-delivered files (screenshots, previews) — not part of the app
-Claude outputs/
-_to_delete/
-
-# macOS cruft and empty sibling folders that are not part of the engine
-.DS_Store
-/cpasites/
-/foundry/
-/gmbscr/
-/search-console-dashboard/
-_incoming_design.zip
+# Business search index (runtime, rebuilt from YAML on the volume):
+data/businesses.db
+data/businesses.db-wal
+data/businesses.db-shm
