@@ -23,8 +23,8 @@ import traceback
 from functools import wraps
 from pathlib import Path
 
-from flask import (Flask, abort, flash, redirect, render_template, request,
-                   session, url_for)
+from flask import (Flask, abort, flash, jsonify, redirect, render_template,
+                   request, session, url_for)
 
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))
@@ -103,6 +103,51 @@ def businesses() -> list[dict]:
         return []
     return sorted((read_yaml(p) for p in folder.glob("*.yaml")),
                   key=lambda b: b.get("company", ""))
+
+
+def business_count() -> int:
+    """How many business records exist — WITHOUT reading any file."""
+    folder = ROOT / "data" / "businesses"
+    return sum(1 for _ in folder.glob("*.yaml")) if folder.is_dir() else 0
+
+
+# A lightweight, cached index of every business — just what the pickers need
+# (slug, company, place). Reading thousands of YAMLs on every panel page was the
+# cause of the slowness; this reads them once and rebuilds only when the folder
+# changes (a file added/removed or newer than the cache).
+_BIZ_INDEX: dict = {"sig": None, "rows": []}
+
+
+def business_index() -> list[dict]:
+    folder = ROOT / "data" / "businesses"
+    if not folder.is_dir():
+        return []
+    files = list(folder.glob("*.yaml"))
+    sig = (len(files), max((f.stat().st_mtime for f in files), default=0.0))
+    if _BIZ_INDEX["sig"] != sig:
+        rows = []
+        for p in files:
+            d = read_yaml(p)
+            addr = d.get("address") or {}
+            rows.append({
+                "slug": d.get("slug") or p.stem,
+                "company": d.get("company") or d.get("brand") or p.stem,
+                "place": ", ".join([x for x in (addr.get("city"), addr.get("state")) if x]),
+                "niche": d.get("niche") or "",
+            })
+        rows.sort(key=lambda x: (x["place"], x["company"]))
+        _BIZ_INDEX["sig"] = sig
+        _BIZ_INDEX["rows"] = rows
+    return _BIZ_INDEX["rows"]
+
+
+def business_lookup(slugs) -> list[dict]:
+    """Resolve a small set of slugs to {slug, company, place} using the index."""
+    want = set(slugs or [])
+    if not want:
+        return []
+    by = {r["slug"]: r for r in business_index()}
+    return [by[s] for s in slugs if s in by]
 
 
 def coverage_states(niche: str) -> list[str]:
@@ -310,7 +355,7 @@ def dashboard():
         nd = read_yaml(ROOT / "data" / "niches" / f"{pick}.yaml")
         caps[pick] = capacity(libs[pick].counts, len(nd.get("services") or []), 4,
                               read_yaml(ROOT / "data" / "global.yaml").get("counts"))
-    return render_template("dashboard.html", rows=rows, businesses=businesses(),
+    return render_template("dashboard.html", rows=rows, business_count=business_count(),
                            libs=libs, caps=caps, cap_pick=pick, all_niches=all_niches,
                            coverage={n: coverage_states(n) for n in niches()})
 
@@ -479,7 +524,8 @@ def site_form(site_id: str | None = None):
         niche_services[n] = raw.get("services") or []
         niche_labels[n] = raw.get("label") or n.replace("-", " ").title()
     return render_template("site_form.html", s=record, site_id=site_id,
-                           businesses=businesses(), niche_services=niche_services,
+                           selected_business=(business_lookup([record.get("business")])[:1] or [{}])[0],
+                           niche_services=niche_services,
                            niche_labels=niche_labels,
                            cover={n: coverage_states(n) for n in niches()})
 
@@ -536,6 +582,26 @@ def site_save():
         return redirect(url_for("site_form"))
 
 
+@app.route("/api/businesses")
+@guard
+def api_businesses():
+    """Type-ahead search over the cached business index. Returns a small page of
+    matches so the pickers never render thousands of rows at once."""
+    q = (request.args.get("q") or "").strip().lower()
+    try:
+        limit = min(int(request.args.get("limit") or 30), 100)
+    except ValueError:
+        limit = 30
+    rows = business_index()
+    if q:
+        toks = q.split()
+        hits = [r for r in rows
+                if all(t in (r["company"] + " " + r["place"]).lower() for t in toks)]
+    else:
+        hits = rows
+    return jsonify({"total": len(hits), "rows": hits[:limit]})
+
+
 @app.route("/directory/new")
 @app.route("/directory/<site_id>/edit")
 @guard
@@ -545,20 +611,13 @@ def directory_form(site_id: str | None = None):
     for n in niches():
         raw = read_yaml(ROOT / "data" / "niches" / f"{n}.yaml")
         niche_labels[n] = raw.get("label") or n.replace("-", " ").title()
-    # Businesses the operator can pick from, each with the city it will list under.
-    biz_rows = []
-    for b in businesses():
-        addr = b.get("address") or {}
-        biz_rows.append({
-            "slug": b.get("slug"),
-            "company": b.get("company") or b.get("brand") or b.get("slug"),
-            "place": ", ".join([x for x in (addr.get("city"), addr.get("state")) if x]),
-        })
-    biz_rows.sort(key=lambda x: (x["place"], x["company"]))
+    # Only resolve the businesses ALREADY chosen (a handful) into chips — the
+    # picker searches the rest on demand via /api/businesses, so this page no
+    # longer loads thousands of records.
     return render_template("directory_form.html", s=record, site_id=site_id,
-                           niche_labels=niche_labels, biz_rows=biz_rows,
-                           picked=set(record.get("businesses") or []),
-                           sponsored=set(record.get("sponsored") or []))
+                           niche_labels=niche_labels,
+                           picked_rows=business_lookup(record.get("businesses")),
+                           sponsored_rows=business_lookup(record.get("sponsored")))
 
 
 @app.route("/directory/save", methods=["POST"])

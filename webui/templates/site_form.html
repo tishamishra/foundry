@@ -45,12 +45,14 @@
   <input type="hidden" name="site_id" value="{{ site_id or '' }}">
   <div class="two">
     <label>Business *
-      <select name="business" required>
-        <option value="">— pick one —</option>
-        {% for b in businesses %}
-        <option value="{{ b.slug }}" {{ 'selected' if s.business == b.slug }}>{{ b.company }}</option>
-        {% endfor %}
-      </select>
+      <div class="bizpick" data-selected="{{ s.business or '' }}"
+           data-selected-label="{{ (selected_business.company ~ (' · ' ~ selected_business.place if selected_business.place else '')) if selected_business.company else '' }}">
+        <input type="hidden" name="business" value="{{ s.business or '' }}" required>
+        <input type="search" class="bizpick-input" autocomplete="off"
+               placeholder="Search your businesses by name or city…"
+               value="{{ (selected_business.company ~ (' · ' ~ selected_business.place if selected_business.place else '')) if selected_business.company else '' }}">
+        <div class="bizpick-results" hidden></div>
+      </div>
     </label>
     <label>Domain *<input name="domain" value="{{ s.domain or '' }}" placeholder="example.com" required></label>
     <label>Niche *

@@ -61,36 +61,35 @@
 
   <fieldset style="border:1px solid #e2e6ee;border-radius:12px;padding:14px;margin:14px 0">
     <legend style="font-weight:700;padding:0 6px">Sponsored — “Best” businesses (up to 3)</legend>
-    <p class="note" style="margin-top:0">Pick up to <strong>3</strong> of your own businesses to feature. They show first, badged, at the top of every business’s “related” list across the whole directory.</p>
+    <p class="note" style="margin-top:0">Search and pick up to <strong>3</strong> of your own businesses to feature. They show first, badged, at the top of every business’s “related” list across the whole directory.</p>
     <label>Badge label
       <input name="sponsored_label" value="{{ s.sponsored_label or '' }}" placeholder="Best Plumber (leave blank to auto-name by trade)">
     </label>
-    <div style="max-height:220px;overflow:auto;display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:6px;margin-top:8px">
-      {% for b in biz_rows %}
-      <label class="chk" style="display:flex;gap:8px;align-items:baseline;padding:4px 2px">
-        <input type="checkbox" name="sponsored" value="{{ b.slug }}" {{ 'checked' if b.slug in sponsored }} onchange="var n=document.querySelectorAll('[name=sponsored]:checked').length; if(n>3){this.checked=false; alert('Pick at most 3 sponsored businesses.');}">
-        <span>{{ b.company }}{% if b.place %} <span class="dim">· {{ b.place }}</span>{% endif %}</span>
-      </label>
-      {% endfor %}
-      {% if not biz_rows %}<p class="dim">Add businesses first.</p>{% endif %}
+    <div class="bizpick" data-multi="true" data-name="sponsored" data-max="3" style="margin-top:8px">
+      <div class="bizpick-chips">
+        {% for b in sponsored_rows %}
+        <span class="bizpick-chip"><span>{{ b.company }}{% if b.place %} · {{ b.place }}{% endif %}</span>
+          <input type="hidden" name="sponsored" value="{{ b.slug }}"><button type="button" aria-label="Remove" onclick="this.closest('.bizpick-chip').remove()">×</button></span>
+        {% endfor %}
+      </div>
+      <input type="search" class="bizpick-input" autocomplete="off" placeholder="Search your businesses by name or city…">
+      <div class="bizpick-results" hidden></div>
+      <p class="bizpick-note"></p>
     </div>
   </fieldset>
 
   <fieldset style="border:1px solid #e2e6ee;border-radius:12px;padding:14px;margin:14px 0">
     <legend style="font-weight:700;padding:0 6px">Businesses to include</legend>
-    <p class="note" style="margin-top:0">Tick specific businesses to list exactly those. Leave <strong>all unticked</strong> to include every business that matches the trade filter above.</p>
-    <div style="display:flex;gap:8px;margin:8px 0">
-      <button type="button" class="btn sm ghost" onclick="document.querySelectorAll('[name=businesses]').forEach(c=>c.checked=true)">Select all</button>
-      <button type="button" class="btn sm ghost" onclick="document.querySelectorAll('[name=businesses]').forEach(c=>c.checked=false)">Clear</button>
-    </div>
-    <div style="max-height:280px;overflow:auto;display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:6px">
-      {% for b in biz_rows %}
-      <label class="chk" style="display:flex;gap:8px;align-items:baseline;padding:4px 2px">
-        <input type="checkbox" name="businesses" value="{{ b.slug }}" {{ 'checked' if b.slug in picked }}>
-        <span>{{ b.company }}{% if b.place %} <span class="dim">· {{ b.place }}</span>{% endif %}</span>
-      </label>
-      {% endfor %}
-      {% if not biz_rows %}<p class="dim">No businesses added yet. Add businesses first, then they appear here.</p>{% endif %}
+    <p class="note" style="margin-top:0">Usually leave this <strong>empty</strong> — the directory then lists every business matching the trade filter above (the recommended way now). Add specific businesses here only if you want to hand-pick an exact set.</p>
+    <div class="bizpick" data-multi="true" data-name="businesses" style="margin-top:8px">
+      <div class="bizpick-chips">
+        {% for b in picked_rows %}
+        <span class="bizpick-chip"><span>{{ b.company }}{% if b.place %} · {{ b.place }}{% endif %}</span>
+          <input type="hidden" name="businesses" value="{{ b.slug }}"><button type="button" aria-label="Remove" onclick="this.closest('.bizpick-chip').remove()">×</button></span>
+        {% endfor %}
+      </div>
+      <input type="search" class="bizpick-input" autocomplete="off" placeholder="Search to add specific businesses…">
+      <div class="bizpick-results" hidden></div>
     </div>
   </fieldset>
 

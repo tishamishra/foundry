@@ -3,6 +3,26 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{% block title %}Foundry{% endblock %}</title>
 <link rel="stylesheet" href="{{ url_for('static', filename='admin.css') }}">
+<style>
+/* Shared type-ahead business picker (fast: searches a cached index via /api/businesses) */
+.bizpick{position:relative}
+.bizpick-input{width:100%}
+.bizpick-results{position:absolute;z-index:40;left:0;right:0;top:100%;margin-top:4px;background:#fff;
+  border:1px solid #d7dced;border-radius:10px;box-shadow:0 18px 40px -24px rgba(8,20,55,.45);
+  max-height:280px;overflow:auto}
+.bizpick-results button{display:block;width:100%;text-align:left;border:0;background:none;cursor:pointer;
+  padding:.55rem .7rem;font:inherit;border-bottom:1px solid #eef1f7}
+.bizpick-results button:hover,.bizpick-results button.on{background:#eef2fb}
+.bizpick-results .bp-co{font-weight:700}
+.bizpick-results .bp-pl{color:#667;font-size:.85rem}
+.bizpick-results .bp-empty{padding:.6rem .7rem;color:#889}
+.bizpick-chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:6px}
+.bizpick-chip{display:inline-flex;align-items:center;gap:6px;background:#eef2fb;border:1px solid #d7dced;
+  border-radius:999px;padding:.25rem .3rem .25rem .6rem;font-size:.88rem}
+.bizpick-chip button{border:0;background:#c9d2ea;color:#334;border-radius:999px;width:18px;height:18px;
+  line-height:1;cursor:pointer;font-size:13px}
+.bizpick-note{color:#889;font-size:.8rem;margin-top:4px}
+</style>
 {% block head %}{% endblock %}
 </head><body>
 {% if session.get('in') %}
@@ -36,4 +56,70 @@
   {% endwith %}
   {% block body %}{% endblock %}
 </main>
+<script>
+(function(){
+  function esc(s){return (s||'').replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+  function labelOf(r){return r.company + (r.place ? ' · ' + r.place : '');}
+  document.querySelectorAll('.bizpick').forEach(function(box){
+    var multi = box.getAttribute('data-multi') === 'true';
+    var name  = box.getAttribute('data-name') || 'business';
+    var max   = parseInt(box.getAttribute('data-max')||'0',10);
+    var input = box.querySelector('.bizpick-input');
+    var results = box.querySelector('.bizpick-results');
+    var chips = box.querySelector('.bizpick-chips');
+    var hidden = box.querySelector('input[type=hidden]'); // single mode
+    var note = box.querySelector('.bizpick-note');
+    var timer=null;
+
+    function chosenSlugs(){return Array.prototype.map.call(box.querySelectorAll('input[type=hidden][name="'+name+'"]'),function(h){return h.value;});}
+    function count(){return box.querySelectorAll('.bizpick-chip').length;}
+    function setNote(){ if(note && max) note.textContent = count()+' of '+max+' selected'; }
+
+    function addChip(r){
+      if(!multi) return;
+      if(max && count()>=max){ if(note){note.textContent='You can pick at most '+max+'.';} return; }
+      if(chosenSlugs().indexOf(r.slug)>-1) return;
+      var chip=document.createElement('span'); chip.className='bizpick-chip';
+      chip.innerHTML='<span>'+esc(labelOf(r))+'</span>'+
+        '<input type="hidden" name="'+name+'" value="'+esc(r.slug)+'">'+
+        '<button type="button" aria-label="Remove">×</button>';
+      chip.querySelector('button').addEventListener('click',function(){chip.remove();setNote();});
+      chips.appendChild(chip); setNote();
+    }
+    function pickSingle(r){ hidden.value=r.slug; input.value=labelOf(r); }
+
+    function render(rows,total){
+      if(!rows.length){ results.innerHTML='<div class="bp-empty">No matches</div>'; results.hidden=false; return; }
+      results.innerHTML = rows.map(function(r){
+        return '<button type="button" data-slug="'+esc(r.slug)+'">'+
+               '<span class="bp-co">'+esc(r.company)+'</span>'+
+               (r.place?' <span class="bp-pl">'+esc(r.place)+'</span>':'')+'</button>';
+      }).join('') + (total>rows.length?'<div class="bp-empty">Showing '+rows.length+' of '+total+' — keep typing to narrow</div>':'');
+      Array.prototype.forEach.call(results.querySelectorAll('button'),function(b,i){
+        b.addEventListener('click',function(){
+          var r=rows[i];
+          if(multi){ addChip(r); input.value=''; } else { pickSingle(r); }
+          results.hidden=true;
+        });
+      });
+      results.hidden=false;
+    }
+    function search(){
+      var q=input.value.trim();
+      if(!multi && hidden){ hidden.value=hidden.value; } // keep until re-picked
+      fetch('/api/businesses?q='+encodeURIComponent(q)+'&limit=25')
+        .then(function(r){return r.json();})
+        .then(function(d){ render(d.rows||[], d.total||0); })
+        .catch(function(){ results.hidden=true; });
+    }
+    input.addEventListener('input',function(){
+      if(!multi && hidden) hidden.value='';           // typing clears a single pick until re-chosen
+      clearTimeout(timer); timer=setTimeout(search,180);
+    });
+    input.addEventListener('focus',search);
+    document.addEventListener('click',function(e){ if(!box.contains(e.target)) results.hidden=true; });
+    setNote();
+  });
+})();
+</script>
 </body></html>

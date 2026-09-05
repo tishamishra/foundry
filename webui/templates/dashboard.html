@@ -1,6 +1,6 @@
 {% extends "base.html" %}{% block body %}
 <div class="head">
-  <div><h1>Sites</h1><p class="sub">{{ rows|length }} site(s) · {{ businesses|length }} business record(s)</p></div>
+  <div><h1>Sites</h1><p class="sub">{{ rows|length }} site(s) · {{ business_count }} business record(s)</p></div>
   <div class="actions">
     <a class="btn" href="{{ url_for('site_form') }}">New site</a>
     <a class="btn ghost" href="{{ url_for('business_form') }}">New business</a>
