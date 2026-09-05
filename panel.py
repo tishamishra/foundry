@@ -50,7 +50,8 @@ from core.preview import PreviewPool, free_port, load_asset  # noqa: E402
 from core.render import build_site  # noqa: E402
 from core.seo import audit as seo_audit  # noqa: E402
 from core.spawn import (BLOCK_AT, WARN_AT, capacity, create_from_rows,  # noqa: E402
-                        delete_business, delete_site, find_seed, parse_bulk,
+                        delete_business, delete_site, find_seed,
+                        list_orphan_builds, parse_bulk, prune_orphan_builds,
                         save_business, save_site)
 from core.verify import (check_site, diagnose, load_shipped, record_shipped,  # noqa: E402
                          signature)
@@ -1374,6 +1375,38 @@ def deploy_credentials():
     flash("Credentials written to data/secrets.yaml at 0600 and added to "
           ".gitignore. They are never rendered back into this page.", "good")
     return redirect(url_for("deploy_home"))
+
+
+def _fmt_bytes(n: int) -> str:
+    x = float(n)
+    for unit in ("B", "KB", "MB", "GB"):
+        if x < 1024 or unit == "GB":
+            return f"{x:.0f} {unit}" if unit in ("B", "KB") else f"{x:.1f} {unit}"
+        x /= 1024
+    return f"{n} B"
+
+
+@app.route("/maintenance")
+@guard
+def maintenance():
+    orphans = list_orphan_builds(ROOT)
+    total = sum(o["bytes"] for o in orphans)
+    for o in orphans:
+        o["size"] = _fmt_bytes(o["bytes"])
+    return render_template("maintenance.html", orphans=orphans,
+                           total=_fmt_bytes(total), count=len(orphans))
+
+
+@app.route("/maintenance/prune", methods=["POST"])
+@guard
+def maintenance_prune():
+    removed, freed = prune_orphan_builds(ROOT)
+    if removed:
+        flash(f"Removed {len(removed)} orphaned build(s) and freed {_fmt_bytes(freed)}. "
+              f"These were builds of sites you had already deleted.", "good")
+    else:
+        flash("Nothing to clean — no orphaned builds on disk.", "good")
+    return redirect(url_for("maintenance"))
 
 
 @app.route("/deploy/<site_id>/github", methods=["POST"])

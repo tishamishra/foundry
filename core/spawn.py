@@ -353,10 +353,88 @@ def save_directory(root: Path, data: dict) -> str:
     return site_id
 
 
+import shutil
+
+# Prefix that core.render uses for build output it renames aside; a leftover of
+# these is always disposable. Kept in sync by value, not import, to avoid a cycle.
+_TRASH_PREFIX = ".foundry-trash-"
+
+
+def _dir_bytes(p: Path) -> int:
+    total = 0
+    for f in p.rglob("*"):
+        try:
+            if f.is_file():
+                total += f.stat().st_size
+        except OSError:
+            pass
+    return total
+
+
 def delete_site(root: Path, site_id: str) -> None:
+    """Remove a site RECORD and everything derived from it: its built output in
+    dist/<domain> and any deploy worktree in .deploy/<site_id>. Deleting only the
+    record (the old behaviour) left the whole build orphaned on disk forever."""
     path = root / "data" / "sites" / f"{site_id}.yaml"
+    domain = ""
     if path.is_file():
+        try:
+            rec = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
+            domain = (rec.get("domain") or "").strip()
+        except Exception:
+            domain = ""
         path.unlink()
+    if domain:
+        shutil.rmtree(root / "dist" / domain, ignore_errors=True)
+    shutil.rmtree(root / ".deploy" / site_id, ignore_errors=True)
+
+
+def list_orphan_builds(root: Path) -> list[dict]:
+    """Built folders on disk with no live site behind them: dist/<domain> for a
+    domain no current site uses, .deploy/<site_id> for a deleted site, and any
+    leftover build-trash folders. Each entry carries its size so the panel can
+    show what will be freed."""
+    sites_dir = root / "data" / "sites"
+    domains: set[str] = set()
+    site_ids: set[str] = set()
+    if sites_dir.is_dir():
+        for p in sites_dir.glob("*.yaml"):
+            site_ids.add(p.stem)
+            try:
+                rec = yaml.safe_load(p.read_text(encoding="utf-8")) or {}
+            except Exception:
+                rec = {}
+            if rec.get("domain"):
+                domains.add(str(rec["domain"]).strip())
+
+    orphans: list[dict] = []
+    dist = root / "dist"
+    if dist.is_dir():
+        for d in dist.iterdir():
+            if not d.is_dir():
+                continue
+            if d.name.startswith(_TRASH_PREFIX):
+                orphans.append({"kind": "trash", "name": d.name, "path": str(d), "bytes": _dir_bytes(d)})
+            elif d.name not in domains:
+                orphans.append({"kind": "build", "name": d.name, "path": str(d), "bytes": _dir_bytes(d)})
+    deploy = root / ".deploy"
+    if deploy.is_dir():
+        for d in deploy.iterdir():
+            if d.is_dir() and d.name not in site_ids:
+                orphans.append({"kind": "deploy", "name": d.name, "path": str(d), "bytes": _dir_bytes(d)})
+    orphans.sort(key=lambda o: -o["bytes"])
+    return orphans
+
+
+def prune_orphan_builds(root: Path) -> tuple[list[dict], int]:
+    """Delete every orphan list_orphan_builds finds. Returns (removed, bytes_freed)."""
+    removed, freed = [], 0
+    for o in list_orphan_builds(root):
+        shutil.rmtree(o["path"], ignore_errors=True)
+        if not Path(o["path"]).exists():
+            removed.append(o)
+            freed += o["bytes"]
+    return removed, freed
 
 
 def delete_business(root: Path, slug: str) -> list[str]:

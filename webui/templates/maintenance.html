@@ -1,0 +1,39 @@
+{% extends "base.html" %}{% block title %}Storage — Foundry{% endblock %}
+{% block body %}
+<div class="head">
+  <h1>Storage &amp; cleanup</h1>
+  <p class="sub">Built output for sites you have <strong>deleted</strong> used to stay on disk forever.
+  Deleting a site now removes its build automatically — this page sweeps up anything left over from before,
+  so old demo builds stop taking space.</p>
+</div>
+
+{% if not orphans %}
+  <div class="card"><p>✅ Nothing to clean. Every build on disk belongs to a live site.</p></div>
+{% else %}
+  <div class="card" style="display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between">
+    <div><strong>{{ count }} orphaned build{{ 's' if count != 1 }}</strong> · {{ total }} to free
+      <div class="dim">These are builds and deploy copies with no matching site — safe to remove. Your business
+      records, live site records and data are untouched.</div>
+    </div>
+    <form method="post" action="{{ url_for('maintenance_prune') }}"
+          onsubmit="this.querySelector('button').disabled=true;this.querySelector('button').textContent='Cleaning…'">
+      <button class="btn danger" type="submit">Remove all &amp; free {{ total }}</button>
+    </form>
+  </div>
+
+  <table style="width:100%;border-collapse:collapse;margin-top:12px">
+    <thead><tr>
+      <th style="text-align:left">Name</th><th style="text-align:left">Type</th><th style="text-align:right">Size</th>
+    </tr></thead>
+    <tbody>
+      {% for o in orphans %}
+      <tr style="border-top:1px solid #e2e6ee">
+        <td class="mono">{{ o.name }}</td>
+        <td><span class="pill">{{ {'build':'orphaned build','deploy':'deploy copy','trash':'build trash'}[o.kind] }}</span></td>
+        <td style="text-align:right">{{ o.size }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endif %}
+{% endblock %}
