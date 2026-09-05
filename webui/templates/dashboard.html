@@ -30,7 +30,11 @@
   <td class="row-actions">
     <a class="mini" href="{{ url_for('build', site=r.site_id) }}">Build</a>
     {% if r.built %}<a class="mini" href="{{ url_for('preview', site_id=r.site_id) }}" target="_blank">Preview</a>
-    <a class="mini" href="{{ url_for('download_site', site_id=r.site_id) }}">Download</a>{% endif %}
+    <a class="mini" href="{{ url_for('download_site', site_id=r.site_id) }}">Download</a>
+    <form method="post" action="{{ url_for('deploy_github_oneclick', site_id=r.site_id) }}" class="inline"
+          onsubmit="this.querySelector('button').disabled=true;this.querySelector('button').textContent='Deploying…'">
+      <button class="mini" title="Create a GitHub repo and push this built site">Deploy to GitHub</button>
+    </form>{% endif %}
     <a class="mini" href="{{ url_for('directory_form', site_id=r.site_id) }}">Edit</a>
     <form method="post" action="{{ url_for('site_delete', site_id=r.site_id) }}" class="inline"><button class="mini danger">Delete</button></form>
   </td>
@@ -51,7 +55,11 @@
   <td class="row-actions">
     <a class="mini" href="{{ url_for('build', site=r.site_id) }}">Build</a>
     {% if r.built %}<a class="mini" href="{{ url_for('preview', site_id=r.site_id) }}" target="_blank">Preview</a>
-    <a class="mini" href="{{ url_for('download_site', site_id=r.site_id) }}">Download</a>{% endif %}
+    <a class="mini" href="{{ url_for('download_site', site_id=r.site_id) }}">Download</a>
+    <form method="post" action="{{ url_for('deploy_github_oneclick', site_id=r.site_id) }}" class="inline"
+          onsubmit="this.querySelector('button').disabled=true;this.querySelector('button').textContent='Deploying…'">
+      <button class="mini" title="Create a GitHub repo and push this built site">Deploy to GitHub</button>
+    </form>{% endif %}
     <a class="mini" href="{{ url_for('spinoff', site_id=r.site_id) }}">Spin-off</a>
     <a class="mini" href="{{ url_for('site_form', site_id=r.site_id) }}">Edit</a>
     <form method="post" action="{{ url_for('site_seed', site_id=r.site_id) }}" class="inline"><button class="mini">Re-seed</button></form>

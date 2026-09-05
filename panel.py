@@ -1376,6 +1376,25 @@ def deploy_credentials():
     return redirect(url_for("deploy_home"))
 
 
+@app.route("/deploy/<site_id>/github", methods=["POST"])
+@guard
+def deploy_github_oneclick(site_id: str):
+    """One click: make sure a GitHub repo exists for this site (create it if not),
+    then push the built site to it. From GitHub the user connects Cloudflare Pages
+    (or any host)."""
+    from core.deploy import ensure_github_repo
+    try:
+        info = ensure_github_repo(ROOT, site_id)
+    except FoundryError as exc:
+        flash(str(exc), "bad")
+        return redirect(request.referrer or url_for("deploy_home", site=site_id))
+    flash(f"GitHub repo {'created' if info['created'] else 'ready'}: {info['web']} "
+          f"({'private' if info['private'] else 'public'}). Pushing the built site now…",
+          "good")
+    job = RUNNER.start([site_id], lambda s: deploy_one(s, "github", False), kind="deploy")
+    return redirect(url_for("job_status", job_id=job.id))
+
+
 @app.route("/deploy/run", methods=["POST"])
 @guard
 def deploy_run():

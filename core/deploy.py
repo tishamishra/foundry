@@ -48,12 +48,15 @@ Three properties worth stating because they were deliberate:
 
 from __future__ import annotations
 
+import json
 import os
 import re
 import shlex
 import shutil
 import subprocess
 import time
+import urllib.error
+import urllib.request
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any
@@ -173,6 +176,83 @@ def save_secrets(root: Path, values: dict) -> None:
     except OSError:
         pass
     _gitignore(path.parent.parent)
+
+
+def _gh_api(method: str, url: str, token: str, body: dict | None = None):
+    """A tiny GitHub REST call — no dependency. Returns (status, json)."""
+    data = json.dumps(body).encode() if body is not None else None
+    req = urllib.request.Request(url, data=data, method=method)
+    req.add_header("Authorization", f"Bearer {token}")
+    req.add_header("Accept", "application/vnd.github+json")
+    req.add_header("X-GitHub-Api-Version", "2022-11-28")
+    req.add_header("User-Agent", "foundry-deploy")
+    if data:
+        req.add_header("Content-Type", "application/json")
+    try:
+        with urllib.request.urlopen(req, timeout=30) as r:
+            return r.status, json.loads(r.read().decode() or "{}")
+    except urllib.error.HTTPError as e:
+        try:
+            return e.code, json.loads(e.read().decode() or "{}")
+        except Exception:
+            return e.code, {}
+    except urllib.error.URLError as e:
+        raise FoundryError(f"Could not reach GitHub: {e.reason}", {"target": "github"})
+
+
+def _repo_name(domain: str) -> str:
+    name = re.sub(r"[^A-Za-z0-9._-]", "-", (domain or "").strip().lower()).strip("-.")
+    return name or "site"
+
+
+def ensure_github_repo(root: Path, site_id: str, private: bool = True) -> dict:
+    """One-click prerequisite: make sure a GitHub repo exists for this site and
+    record it in deploy.yaml, so a plain `deploy(github)` can push straight to it.
+    Creates the repo (named after the domain) under the token's account if absent."""
+    token = load_secrets(root).get("github_token")
+    if not token:
+        raise FoundryError(
+            "No GitHub token saved. Add a GitHub personal-access token with 'repo' "
+            "scope under Deploy → Credentials (or set GITHUB_TOKEN in the environment), "
+            "then click Deploy to GitHub again.",
+            {"target_unconfigured": True, "target": "github"})
+
+    site = _read(root / "data" / "sites" / f"{site_id}.yaml")
+    domain = (site.get("domain") or site_id).strip().lower()
+    repo = _repo_name(domain)
+
+    status, me = _gh_api("GET", "https://api.github.com/user", token)
+    if status != 200 or not me.get("login"):
+        raise FoundryError(
+            f"GitHub rejected the token (HTTP {status}). Check it is valid and has "
+            f"'repo' scope.", {"target": "github"})
+    owner = me["login"]
+
+    status, _info = _gh_api("GET", f"https://api.github.com/repos/{owner}/{repo}", token)
+    created = False
+    if status == 404:
+        status, resp = _gh_api(
+            "POST", "https://api.github.com/user/repos", token,
+            {"name": repo, "private": private, "auto_init": False,
+             "description": f"{domain} — built with Foundry"})
+        if status not in (200, 201):
+            raise FoundryError(
+                f"Could not create the GitHub repo (HTTP {status}): "
+                f"{resp.get('message', 'unknown error')}", {"target": "github"})
+        created = True
+    elif status != 200:
+        raise FoundryError(
+            f"GitHub API error checking the repo (HTTP {status}).", {"target": "github"})
+
+    repo_url = f"https://github.com/{owner}/{repo}.git"
+    cfg = load_config(root)
+    g = cfg.setdefault(site_id, {}).setdefault("github", {})
+    g["repo"] = repo_url
+    g.setdefault("branch", "main")
+    g.setdefault("pages", True)
+    save_config(root, cfg)
+    return {"owner": owner, "repo": repo, "url": repo_url, "created": created,
+            "private": private, "web": f"https://github.com/{owner}/{repo}"}
 
 
 def _gitignore(root: Path) -> None:

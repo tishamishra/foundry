@@ -34,7 +34,11 @@
     <h2>{{ r.site_id }}</h2>
     <span class="pill {{ 'good' if r.ok else 'bad' }}">{{ 'pass' if r.ok else 'blocked' }}</span>
     <span class="dim">{{ r.seconds }}s</span>
-    {% if r.ok %}<a class="btn sm" href="{{ url_for('preview', site_id=r.site_id) }}" target="_blank">Preview</a>{% endif %}
+    {% if r.ok %}<a class="btn sm" href="{{ url_for('preview', site_id=r.site_id) }}" target="_blank">Preview</a>
+    <form method="post" action="{{ url_for('deploy_github_oneclick', site_id=r.site_id) }}" style="display:inline"
+          onsubmit="this.querySelector('button').disabled=true;this.querySelector('button').textContent='Deploying…'">
+      <button class="btn sm" type="submit" title="Create a GitHub repo for this site and push the build">Deploy to GitHub</button>
+    </form>{% endif %}
   </div>
 
   {% if r.stats and r.report %}
