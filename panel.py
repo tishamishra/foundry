@@ -391,11 +391,28 @@ def business_import():
         return render_template("business_form.html",
                                b=_payload_to_record(payloads[0]), slug=None)
 
-    # Many rows (or the bulk box): create them all.
+    # Many rows (or the bulk box): create them all. Bulk lists routinely carry
+    # the same company name in different cities (national chains, franchises), so
+    # a slug derived from the name alone would silently overwrite. Make each slug
+    # unique — company, then company+city, then a numeric suffix — so no business
+    # is lost on import.
+    from core.graph import slugify as _slugify  # noqa: E402
+    existing = {p.stem for p in (ROOT / "data" / "businesses").glob("*.yaml")}
+    used: set[str] = set(existing)
     saved, failed = [], []
     for p in payloads:
+        base = _slugify(p.get("company") or "")
+        cand = base
+        if cand in used:
+            city_slug = _slugify(p.get("city") or "")
+            cand = f"{base}-{city_slug}" if city_slug and f"{base}-{city_slug}" not in used else base
+        n = 2
+        while cand in used:
+            cand = f"{base}-{n}"
+            n += 1
+        used.add(cand)
         try:
-            slug = save_business(ROOT, {"slug": p.get("company"), **p})
+            slug = save_business(ROOT, {"slug": cand, **p})
             saved.append(slug)
         except FoundryError as exc:
             failed.append(f"{p.get('company') or 'a row'}: {exc}")

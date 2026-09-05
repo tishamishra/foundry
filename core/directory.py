@@ -33,6 +33,7 @@ import re
 from pathlib import Path
 from typing import Any
 
+from .bizcsv import niche_from_category
 from .graph import _read_yaml, slugify
 
 # US state name -> USPS abbreviation, so "Marietta, Georgia" displays as
@@ -139,19 +140,29 @@ def load_providers(root: Path, niche_filter: str | None = None,
             continue
         sites = site_index.get(slug, [])
 
-        # The business's trade. It comes from the business record's OWN niche
-        # (set from its scraped category on import) first, then from any site
-        # built for it. A directory's niche filter ALWAYS applies when set —
-        # even to an explicit pick — so a plumbing directory lists only plumbing
-        # businesses and never a salon or a dentist that happened to be ticked.
+        # The business's trade, most trustworthy source first:
+        #   1. the record's OWN niche      (set from its scraped category on import)
+        #   2. any marketing SITE's niche  (a site actually built for it)
+        #   3. INFERRED from the raw category or the company name — the safety net
+        #      for records imported before categories were captured, so a plumbing
+        #      directory can still tell "Joe's Plumbing" from "Glamour Hair Studio".
+        # A directory's niche filter ALWAYS applies when set — even to an explicit
+        # pick — so a plumbing directory lists only plumbers and never a salon,
+        # a dentist, an electrician or a mechanic that happened to be ticked.
         own_niche = (biz.get("niche") or "").strip()
-        niches = ([own_niche] if own_niche else []) + [s.get("niche") for s in sites if s.get("niche")]
+        site_niches = [s.get("niche") for s in sites if s.get("niche")]
+        inferred = ""
+        if not own_niche and not site_niches:
+            inferred = (niche_from_category(biz.get("category") or "")
+                        or niche_from_category(company))
+        niches = (([own_niche] if own_niche else []) + site_niches
+                  + ([inferred] if inferred else []))
         if niche_filter:
             if niche_filter not in niches:
                 continue
             niche_key = niche_filter
         else:
-            niche_key = own_niche or (niches[0] if niches else None)
+            niche_key = own_niche or (site_niches[0] if site_niches else inferred) or None
 
         svc_names: list[str] = []
         niche_label = ""
@@ -169,7 +180,11 @@ def load_providers(root: Path, niche_filter: str | None = None,
         facts = biz.get("facts") or {}
         city = (addr.get("city") or "").strip()
         state_abbr = _abbr(addr.get("state") or "")
-        website = ("https://" + sites[0]["domain"]) if sites and sites[0].get("domain") else ""
+        if sites and sites[0].get("domain"):
+            website = "https://" + sites[0]["domain"]
+        else:
+            w = (biz.get("website") or "").strip()
+            website = w if w.startswith(("http://", "https://")) else (("https://" + w) if w else "")
         rating = facts.get("rating")
         parts = [addr.get("street"), city, state_abbr, addr.get("zip")]
         address_full = ", ".join([x for x in parts if x])

@@ -48,6 +48,9 @@ _add("state", "state", "region", "province")
 _add("zip", "zip", "zipcode", "postal", "postcode", "postalcode")
 _add("years", "years", "yearsinbusiness", "established", "yrs", "yearsofexperience", "experience")
 _add("hours", "hours", "businesshours", "openinghours", "timings", "workinghours")
+_add("rating", "rating", "stars", "starrating", "googlerating", "score")
+_add("reviews", "reviews", "reviewcount", "reviews", "numreviews", "totalreviews", "ratingcount")
+_add("website", "website", "url", "site", "webaddress", "web", "homepage")
 _add("warranty", "warranty", "warrantyyears", "guarantee", "warrantyyrs")
 _add("free_estimates", "freeestimates", "freeestimate", "freequote", "freequotes", "freeinspection")
 _add("licensed", "licensed", "license", "licence", "licenced")
@@ -68,6 +71,15 @@ def _truthy(value: str) -> bool:
 
 def _norm_val(value: str) -> str:
     return str(value or "").strip().lower()
+
+
+def _rating(value: str) -> float | None:
+    """A star rating like '4.8' -> 4.8, clamped to 0-5; blank/garbage -> None."""
+    try:
+        r = float(str(value or "").strip())
+    except ValueError:
+        return None
+    return round(r, 1) if 0 < r <= 5 else None
 
 
 def _digits(value: str) -> int | bool:
@@ -103,7 +115,7 @@ _CATEGORY_NICHE: list[tuple[tuple[str, ...], str]] = [
     (("dui", "dwi"), "dui-dwi-attorneys"),
     (("personal injury", "injury attorney", "injury lawyer"), "personal-injury-attorneys"),
     (("accident attorney", "accident lawyer", "car accident", "auto accident"), "auto-accident-attorneys"),
-    (("plumb",), "plumbing"),
+    (("plumb", "rooter", "drain", "sewer", "septic"), "plumbing"),
     (("roof",), "roofing"),
     (("hvac", "heating", "air condition", "furnace", "cooling", "ac repair"), "hvac"),
     (("electric",), "electrical"),
@@ -148,6 +160,12 @@ def _row_to_payload(cells: dict[str, str]) -> dict[str, Any]:
         "hours": g("hours") or None,
         "warranty_years": _digits(cells.get("warranty", "")),
     }
+    rating = _rating(cells.get("rating", ""))
+    if rating is not None:
+        facts["rating"] = rating
+    reviews = _digits(cells.get("reviews", ""))
+    if reviews:
+        facts["review_count"] = reviews
     for b in _BOOL_FIELDS:
         facts[b] = _truthy(cells.get(b, ""))
     category = g("category")
@@ -156,6 +174,7 @@ def _row_to_payload(cells: dict[str, str]) -> dict[str, Any]:
         "phone": g("phone"), "email": g("email"),
         "street": g("street"), "city": g("city"),
         "state": g("state"), "zip": g("zip"),
+        "website": g("website"),
         "category": category,
         "niche": niche_from_category(category),
         "facts": facts,

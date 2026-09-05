@@ -179,7 +179,8 @@ def find_seed(root: Path, graph: Graph, *, exclude: str | None = None,
 
 FACT_KEYS = ["years_in_business", "hours", "free_estimates", "licensed", "insured",
              "emergency_24_7", "warranty_years", "financing", "family_owned",
-             "bbb_rating", "rating", "awards", "certifications", "volume_claims"]
+             "bbb_rating", "rating", "review_count", "awards", "certifications",
+             "volume_claims"]
 
 
 def blank_facts() -> dict:
@@ -231,6 +232,9 @@ def save_business(root: Path, data: dict) -> str:
     category = (data.get("category") or "").strip()
     if category:
         record["category"] = category
+    website = (data.get("website") or "").strip()
+    if website:
+        record["website"] = website
     folder = root / "data" / "businesses"
     folder.mkdir(parents=True, exist_ok=True)
     (folder / f"{slug}.yaml").write_text(
