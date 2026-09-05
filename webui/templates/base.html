@@ -13,6 +13,7 @@
       <a href="{{ url_for('dashboard') }}">Dashboard</a>
       <a href="{{ url_for('site_form') }}">New site</a>
       <a href="{{ url_for('directory_form') }}">New directory</a>
+      <a href="{{ url_for('submissions') }}">Submissions{% if PENDING_SUBMISSIONS %} <span class="pill">{{ PENDING_SUBMISSIONS }}</span>{% endif %}</a>
       <a href="{{ url_for('bulk') }}">Bulk</a>
       <a href="{{ url_for('coverage') }}">Coverage</a>
       <a href="{{ url_for('library') }}">Library</a>

@@ -47,6 +47,13 @@
   </label>
   <p class="note">Caps the <strong>total</strong> number of businesses the directory lists — keep it professional (50, 100, 500). Highest-rated kept first; your sponsored picks are always kept. Blank = list every match.</p>
 
+  <label>“Add your business” form endpoint
+    <input name="submit_url" value="{{ s.submit_url or '' }}" placeholder="https://eng.affmeet.com/submit-business">
+  </label>
+  <p class="note">Where the directory’s public “Add your business” form sends submissions. Leave blank to use this
+  panel’s default (<code>https://eng.affmeet.com/submit-business</code>). Submissions land in
+  <strong>Submissions</strong> for your approval — nothing goes live until you approve it.</p>
+
   <label>Max businesses per city
     <input name="per_city_limit" type="number" min="0" value="{{ s.per_city_limit or '' }}" placeholder="Leave blank for no limit">
   </label>

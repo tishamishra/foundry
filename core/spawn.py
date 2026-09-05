@@ -340,6 +340,11 @@ def save_directory(root: Path, data: dict) -> str:
     label = (data.get("sponsored_label") or "").strip()
     if label:
         record["sponsored_label"] = label
+    # Where the public "Add your business" form posts (the panel's
+    # /submit-business endpoint). Optional; a sensible default is applied at build.
+    submit_url = (data.get("submit_url") or "").strip()
+    if submit_url:
+        record["submit_url"] = submit_url
 
     folder = root / "data" / "sites"
     folder.mkdir(parents=True, exist_ok=True)

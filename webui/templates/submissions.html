@@ -1,0 +1,68 @@
+{% extends "base.html" %}{% block title %}Submissions — Foundry{% endblock %}
+{% block body %}
+<div class="head">
+  <h1>Business submissions</h1>
+  <p class="sub">Businesses people submitted through the “Add your business” form on your directories.
+  Nothing appears on a live directory until you approve it here — approving creates a business record
+  (categorised by its trade); rebuild the directory to show it.</p>
+</div>
+
+<h2 style="margin:1.2rem 0 .6rem">Pending review {% if pending %}<span class="pill">{{ pending|length }}</span>{% endif %}</h2>
+{% if not pending %}
+  <p class="dim">No submissions waiting. New ones will appear here.</p>
+{% else %}
+<div style="display:grid;gap:12px">
+  {% for s in pending %}
+  <div class="card" style="display:flex;flex-wrap:wrap;gap:14px;align-items:flex-start;justify-content:space-between">
+    <div style="min-width:260px;flex:1">
+      <div style="font-weight:800;font-size:1.05rem">{{ s.company }}
+        {% if s.niche %}<span class="pill">{{ s.niche }}</span>{% elif s.category %}<span class="pill">{{ s.category }}</span>{% endif %}
+      </div>
+      <div class="dim" style="margin:.25rem 0 .5rem">
+        {% if s.city %}{{ s.city }}{% if s.state %}, {{ s.state }}{% endif %} · {% endif %}
+        submitted {{ s.submitted_at }}{% if s.directory %} · via {{ s.directory }}{% endif %}
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:4px 18px;font-size:.92rem">
+        {% if s.phone %}<div><b>Phone:</b> {{ s.phone }}</div>{% endif %}
+        {% if s.email %}<div><b>Email:</b> {{ s.email }}</div>{% endif %}
+        {% if s.category %}<div><b>Category:</b> {{ s.category }}</div>{% endif %}
+        {% if s.website %}<div><b>Website:</b> <a href="{{ s.website }}" target="_blank" rel="noopener">{{ s.website }}</a></div>{% endif %}
+      </div>
+      {% if s.message %}<p style="margin:.5rem 0 0"><b>Notes:</b> {{ s.message }}</p>{% endif %}
+    </div>
+    <div style="display:flex;gap:8px;align-items:center">
+      <form method="post" action="{{ url_for('submission_approve', sid=s.id) }}">
+        <button class="btn" type="submit">Approve &amp; add</button>
+      </form>
+      <form method="post" action="{{ url_for('submission_reject', sid=s.id) }}"
+            onsubmit="return confirm('Reject {{ s.company|e }}?')">
+        <button class="btn ghost" type="submit">Reject</button>
+      </form>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
+
+{% if done %}
+<h2 style="margin:2rem 0 .6rem">Reviewed</h2>
+<table class="tbl" style="width:100%;border-collapse:collapse">
+  <thead><tr>
+    <th style="text-align:left">Business</th><th style="text-align:left">Trade</th>
+    <th style="text-align:left">Location</th><th style="text-align:left">Status</th>
+    <th style="text-align:left">Reviewed</th>
+  </tr></thead>
+  <tbody>
+  {% for s in done %}
+    <tr style="border-top:1px solid #e2e6ee">
+      <td>{{ s.company }}</td>
+      <td>{{ s.niche or s.category or '—' }}</td>
+      <td>{{ s.city }}{% if s.state %}, {{ s.state }}{% endif %}</td>
+      <td><span class="pill {{ 'good' if s.status == 'approved' else 'bad' }}">{{ s.status }}</span></td>
+      <td class="dim">{{ s.reviewed_at or '' }}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+{% endif %}
+{% endblock %}

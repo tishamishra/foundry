@@ -116,10 +116,22 @@
 .dir-hdr .wrap{display:flex;align-items:center;gap:1rem;min-height:66px}
 .dir-brand{font-family:var(--font-display),serif;font-weight:800;font-size:1.16rem;color:var(--ink);flex:1}
 .dir-brand a{color:inherit}
-.dir-hdr nav{display:none;gap:1.3rem}
-.dir-hdr nav a{color:var(--muted);font-weight:600;font-size:.94rem}
-.dir-hdr nav a:hover{color:var(--brand-dark)}
-@media(min-width:760px){.dir-hdr nav{display:flex}}
+.dir-nav{display:none;align-items:center;gap:1.6rem}
+.dir-nav a{color:var(--muted);font-weight:600;font-size:.94rem}
+.dir-nav a:hover{color:var(--brand-dark)}
+.dir-nav .dir-nav-cta{background:var(--accent);color:var(--accent-text);padding:.5rem .95rem;border-radius:999px;font-weight:800}
+.dir-nav .dir-nav-cta:hover{color:var(--accent-text);filter:brightness(.96)}
+.dir-nav-toggle{display:inline-flex;align-items:center;justify-content:center;background:none;border:0;color:var(--ink);cursor:pointer;padding:.3rem}
+@media(min-width:860px){
+  .dir-nav{display:flex}
+  .dir-nav-toggle{display:none}
+}
+@media(max-width:859px){
+  .dir-nav.open{display:flex;position:absolute;top:66px;left:0;right:0;flex-direction:column;align-items:stretch;
+    gap:0;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 18px 40px -30px rgba(8,20,55,.5)}
+  .dir-nav.open a{padding:.9rem 1.2rem;border-top:1px solid var(--line)}
+  .dir-nav.open .dir-nav-cta{border-radius:0;text-align:center}
+}
 .dir-hero{background:linear-gradient(160deg,var(--brand-light),#fff);border-bottom:1px solid var(--line);
   padding:clamp(2.4rem,6vw,4.2rem) 0}
 .dir-hero h1{font-size:clamp(1.9rem,5vw,3rem);line-height:1.1;margin:0 0 .6rem}
@@ -334,6 +346,27 @@
   .dlrow{grid-template-columns:1fr auto;gap:.55rem .85rem;padding:.95rem 1.05rem}
   .dlrow-act{grid-column:1 / -1;flex-direction:row;align-items:center;justify-content:space-between;width:100%;margin-top:.15rem}
 }
+
+/* Add-your-business form */
+.add-wrap{max-width:760px}
+.add-form{background:#fff;border:1px solid var(--line);border-radius:16px;padding:1.6rem;box-shadow:0 22px 48px -36px rgba(8,20,55,.42)}
+.add-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.add-col2{grid-column:1 / -1}
+.add-field{display:flex;flex-direction:column;gap:.35rem;font-weight:700;color:var(--ink);font-size:.9rem}
+.add-field .req{color:var(--accent)}
+.add-field input,.add-field textarea{font:inherit;font-weight:500;color:var(--ink);background:#fff;
+  border:1px solid var(--line);border-radius:10px;padding:.7rem .8rem;width:100%}
+.add-field input:focus,.add-field textarea:focus{outline:none;border-color:var(--brand);
+  box-shadow:0 0 0 3px color-mix(in srgb,var(--brand) 18%,transparent)}
+.add-hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.add-foot{display:flex;flex-wrap:wrap;align-items:center;gap:.9rem;margin-top:1.3rem}
+.add-fine{color:var(--muted);font-size:.82rem}
+.add-note{display:flex;flex-direction:column;gap:.2rem;background:color-mix(in srgb,var(--brand) 8%,#fff);
+  border:1px solid color-mix(in srgb,var(--brand) 30%,var(--line));border-radius:12px;padding:1rem 1.2rem;margin-bottom:1.3rem}
+.add-note[hidden]{display:none}
+.add-note strong{color:var(--brand-dark)}
+.add-note span{color:var(--muted);font-size:.9rem}
+@media(max-width:560px){.add-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body class="page-directory" data-style="{{ style.key }}" data-cards="{{ style.cards }}"
@@ -385,9 +418,14 @@
 <header class="dir-hdr">
   <div class="wrap">
     <span class="dir-brand"><a href="/">{{ dir_title }}</a></span>
-    <nav>
-      <a href="/businesses">All businesses</a>
-      {% for c in cities[:5] %}<a href="/city/{{ c.slug }}">{{ c.city }}</a>{% endfor %}
+    <button class="dir-nav-toggle" aria-label="Menu" aria-expanded="false" onclick="var n=document.getElementById('dnav');var o=this.getAttribute('aria-expanded')==='true';this.setAttribute('aria-expanded',!o);n.classList.toggle('open')">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <nav class="dir-nav" id="dnav">
+      <a href="/">Home</a>
+      <a href="/businesses">All Businesses</a>
+      <a href="/#cities">Browse by City</a>
+      <a href="/add-your-business/" class="dir-nav-cta">Add Your Business</a>
     </nav>
   </div>
 </header>
@@ -477,7 +515,7 @@
 
 {# ---------- 5. browse by city ---------- #}
 {% if cities %}
-<section class="dir-sec"><div class="wrap">
+<section class="dir-sec" id="cities"><div class="wrap">
   <p class="sec-eyebrow">Service areas</p>
   <h2 class="sec-h2">Browse {{ niche_label|lower }} companies by city</h2>
   <div class="city-grid">
@@ -630,6 +668,59 @@
   <p style="margin-top:1.6rem"><a class="more" href="/businesses">See all {{ total }} {{ niche_label|lower }} businesses &rarr;</a></p>
 </div></section>
 {% endif %}
+
+{% elif page == 'add' %}
+<section class="pv-head"><div class="wrap">
+  <p class="crumbs"><a href="/">{{ dir_title }}</a> <span>›</span> <span>Add your business</span></p>
+  <h1>Add your business to {{ dir_title }}</h1>
+  <p style="color:var(--muted);margin:0;max-width:60ch">List your {{ niche_label|lower }} business in front of local customers searching for a company like yours. It’s free — fill in the details below and we’ll review your submission before it goes live.</p>
+</div></section>
+
+<section class="dir-sec"><div class="wrap add-wrap">
+  <div class="add-note" id="add-thanks" hidden>
+    <strong>Thank you — your business has been submitted.</strong>
+    <span>We review every listing before it goes live, so it will appear once approved. You can close this page.</span>
+  </div>
+
+  <form class="add-form" method="post" action="{{ submit_url }}" id="add-form">
+    <input type="hidden" name="directory" value="{{ domain }}">
+    <input type="hidden" name="niche" value="{{ site.niche or '' }}">
+    <input type="hidden" name="return_url" value="https://{{ domain }}/add-your-business/">
+    {# honeypot: real people leave this empty; bots fill it and get rejected #}
+    <div class="add-hp" aria-hidden="true"><label>Do not fill this in<input type="text" name="company_url" tabindex="-1" autocomplete="off"></label></div>
+
+    <div class="add-grid">
+      <label class="add-field add-col2">Business name <span class="req">*</span>
+        <input name="company" required placeholder="e.g. Rapid Rooter Plumbing">
+      </label>
+      <label class="add-field">Trade / category
+        <input name="category" placeholder="e.g. {{ noun }}" value="{{ noun }}">
+      </label>
+      <label class="add-field">Phone <span class="req">*</span>
+        <input name="phone" required placeholder="(555) 123-4567">
+      </label>
+      <label class="add-field">Email
+        <input name="email" type="email" placeholder="you@business.com">
+      </label>
+      <label class="add-field">Website
+        <input name="website" placeholder="https://…">
+      </label>
+      <label class="add-field">City
+        <input name="city" placeholder="e.g. Chicago">
+      </label>
+      <label class="add-field">State
+        <input name="state" placeholder="e.g. IL" maxlength="20">
+      </label>
+      <label class="add-field add-col2">Anything else? (optional)
+        <textarea name="message" rows="3" placeholder="Services you offer, hours, service area…"></textarea>
+      </label>
+    </div>
+    <div class="add-foot">
+      <button class="btn btn-accent btn-lg" type="submit">Submit for review</button>
+      <span class="add-fine">Submissions are reviewed before they appear. We never share your details.</span>
+    </div>
+  </form>
+</div></section>
 {% endif %}
 
 <footer class="dir-ftr">
@@ -673,6 +764,7 @@
     <nav class="dftr-col"><h4>Directory</h4><ul>
       <li><a href="/">Home</a></li>
       <li><a href="/businesses">All businesses</a></li>
+      <li><a href="/add-your-business/">Add your business</a></li>
     </ul></nav>
   </div>
 
@@ -681,6 +773,22 @@
     <p class="dftr-copy">&copy; 2026 {{ dir_title }}. All rights reserved.</p>
   </div>
 </footer>
+
+{% if page == 'add' %}
+<script>
+(function(){
+  // Show the thank-you note when the panel redirects back after a submission.
+  try{
+    if(new URLSearchParams(location.search).get('submitted')==='1'){
+      var t=document.getElementById('add-thanks'), f=document.getElementById('add-form');
+      if(t) t.hidden=false;
+      if(f) f.hidden=true;
+      window.scrollTo({top:0,behavior:'smooth'});
+    }
+  }catch(e){}
+})();
+</script>
+{% endif %}
 
 {% if page in ('home', 'all') and providers %}
 <script>

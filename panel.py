@@ -23,8 +23,8 @@ import traceback
 from functools import wraps
 from pathlib import Path
 
-from flask import (Flask, flash, redirect, render_template, request, session,
-                   url_for)
+from flask import (Flask, abort, flash, redirect, render_template, request,
+                   session, url_for)
 
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))
@@ -201,8 +201,15 @@ def build_one(site_id: str) -> dict:
 
 @app.context_processor
 def inject():
+    pending = 0
+    folder = ROOT / "data" / "submissions"
+    if folder.is_dir():
+        for p in folder.glob("*.yaml"):
+            d = read_yaml(p)
+            if d.get("status") == "pending":
+                pending += 1
     return {"NICHES": niches(), "THEMES": themes(), "STYLES": styles(), "SKELETONS": skeletons(), "STATES": STATES,
-            "BLOCK_AT": BLOCK_AT, "WARN_AT": WARN_AT}
+            "BLOCK_AT": BLOCK_AT, "WARN_AT": WARN_AT, "PENDING_SUBMISSIONS": pending}
 
 
 # --------------------------------------------------------------------------
@@ -570,6 +577,7 @@ def directory_save():
         "businesses": f.getlist("businesses"),
         "per_city_limit": (f.get("per_city_limit") or "").strip() or None,
         "max_total": (f.get("max_total") or "").strip() or None,
+        "submit_url": (f.get("submit_url") or "").strip() or None,
         "sponsored": f.getlist("sponsored"),
         "sponsored_label": (f.get("sponsored_label") or "").strip() or None,
     }
@@ -589,6 +597,132 @@ def site_delete(site_id: str):
     delete_site(ROOT, site_id)
     flash(f"Deleted {site_id}. Its business record is untouched.", "good")
     return redirect(url_for("dashboard"))
+
+
+# --------------------------------------------------------------------------
+# Public business submissions ("Add your business" on a directory) + review.
+# --------------------------------------------------------------------------
+SUBMISSIONS = ROOT / "data" / "submissions"
+
+
+def _load_submissions() -> list[dict]:
+    out: list[dict] = []
+    if SUBMISSIONS.is_dir():
+        for p in sorted(SUBMISSIONS.glob("*.yaml"), reverse=True):
+            d = read_yaml(p)
+            if d:
+                d["id"] = p.stem
+                out.append(d)
+    return out
+
+
+@app.route("/submit-business", methods=["POST"])
+def submit_business():
+    """PUBLIC (no login): receives an 'Add your business' submission from a
+    directory site and files it for approval. Never publishes on its own."""
+    f = request.form
+    return_url = (f.get("return_url") or "").strip()
+
+    def _bounce(param: str):
+        if return_url.startswith(("http://", "https://")):
+            sep = "&" if "?" in return_url else "?"
+            return redirect(f"{return_url}{sep}{param}=1")
+        if param == "submitted":
+            return "<h2 style='font:600 20px system-ui;margin:3rem'>Thank you — your business has been submitted for review.</h2>"
+        return "<h2 style='font:600 20px system-ui;margin:3rem'>Please include at least a business name and phone number.</h2>", 400
+
+    # Honeypot: real visitors leave this empty. Silently accept-and-drop bots.
+    if (f.get("company_url") or "").strip():
+        return _bounce("submitted")
+
+    company = (f.get("company") or "").strip()
+    phone = (f.get("phone") or "").strip()
+    if not company or not phone:
+        return _bounce("error")
+
+    sub = {
+        "status": "pending",
+        "submitted_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+        "directory": (f.get("directory") or "").strip(),
+        "niche": (f.get("niche") or "").strip(),
+        "company": company,
+        "category": (f.get("category") or "").strip(),
+        "phone": phone,
+        "email": (f.get("email") or "").strip(),
+        "website": (f.get("website") or "").strip(),
+        "city": (f.get("city") or "").strip(),
+        "state": (f.get("state") or "").strip(),
+        "message": (f.get("message") or "").strip(),
+    }
+    SUBMISSIONS.mkdir(parents=True, exist_ok=True)
+    from core.graph import slugify as _sl  # noqa: E402
+    sid = f"{int(time.time())}-{(_sl(company) or 'business')[:40]}"
+    (SUBMISSIONS / f"{sid}.yaml").write_text(
+        yaml.safe_dump(sub, sort_keys=False, allow_unicode=True), encoding="utf-8")
+    return _bounce("submitted")
+
+
+@app.route("/submissions")
+@guard
+def submissions():
+    subs = _load_submissions()
+    pending = [s for s in subs if s.get("status") == "pending"]
+    done = [s for s in subs if s.get("status") != "pending"]
+    return render_template("submissions.html", pending=pending, done=done)
+
+
+@app.route("/submissions/<sid>/approve", methods=["POST"])
+@guard
+def submission_approve(sid: str):
+    p = SUBMISSIONS / f"{sid}.yaml"
+    if not p.is_file():
+        abort(404)
+    d = read_yaml(p)
+    from core.bizcsv import niche_from_category
+    from core.graph import slugify as _sl
+    niche = (d.get("niche") or "").strip() or niche_from_category(d.get("category") or "")
+    # unique slug across existing businesses
+    existing = {q.stem for q in (ROOT / "data" / "businesses").glob("*.yaml")}
+    base = _sl(d.get("company") or "") or "business"
+    cand = base
+    if cand in existing:
+        cs = _sl(d.get("city") or "")
+        cand = f"{base}-{cs}" if cs and f"{base}-{cs}" not in existing else base
+    n = 2
+    while cand in existing:
+        cand = f"{base}-{n}"; n += 1
+    try:
+        save_business(ROOT, {
+            "slug": cand, "company": d.get("company"), "phone": d.get("phone"),
+            "email": d.get("email"), "city": d.get("city"), "state": d.get("state"),
+            "website": d.get("website"), "category": d.get("category"), "niche": niche,
+        })
+    except FoundryError as exc:
+        flash(f"Could not add {d.get('company')}: {exc}", "bad")
+        return redirect(url_for("submissions"))
+    d["status"] = "approved"
+    d["reviewed_at"] = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
+    d["business_slug"] = cand
+    d.pop("id", None)
+    p.write_text(yaml.safe_dump(d, sort_keys=False, allow_unicode=True), encoding="utf-8")
+    flash(f"Approved — {d.get('company')} added as a {niche or 'business'} listing. "
+          f"Rebuild the directory to show it.", "good")
+    return redirect(url_for("submissions"))
+
+
+@app.route("/submissions/<sid>/reject", methods=["POST"])
+@guard
+def submission_reject(sid: str):
+    p = SUBMISSIONS / f"{sid}.yaml"
+    if not p.is_file():
+        abort(404)
+    d = read_yaml(p)
+    d["status"] = "rejected"
+    d["reviewed_at"] = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
+    d.pop("id", None)
+    p.write_text(yaml.safe_dump(d, sort_keys=False, allow_unicode=True), encoding="utf-8")
+    flash(f"Rejected {d.get('company')}.", "good")
+    return redirect(url_for("submissions"))
 
 
 @app.route("/site/<site_id>/seed", methods=["POST"])

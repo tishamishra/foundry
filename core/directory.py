@@ -350,6 +350,9 @@ def build_directory(root: Path, site: dict, out_root: Path | None = None):
         "sponsored": sponsored, "sponsored_label": sponsored_label, "noun": noun,
         "sponsored_slugs": [p["slug"] for p in sponsored],
         "phone_link": None,
+        # Where the "Add your business" form posts. The panel exposes a public
+        # /submit-business endpoint that files the submission for approval.
+        "submit_url": (site.get("submit_url") or "https://eng.affmeet.com/submit-business"),
     }
 
     # ---- home ----
@@ -363,6 +366,12 @@ def build_directory(root: Path, site: dict, out_root: Path | None = None):
     all_desc = f"The complete directory — every one of the {len(providers)} {niche_label.lower()} businesses we list across {len(cities)} cities. Compare and contact them directly."
     emit("/businesses", tpl.render(page="all", url="/businesses", title=all_title, description=all_desc, **base),
          "services", all_title, all_desc)
+
+    # ---- 'Add your business' submission page ----
+    add_title = f"Add your business | {dir_title}"
+    add_desc = f"List your {niche_label.lower()} business in {dir_title}. Submit your details — every listing is reviewed before it goes live."
+    emit("/add-your-business", tpl.render(page="add", url="/add-your-business", title=add_title, description=add_desc, **base),
+         "default", add_title, add_desc)
 
     # ---- one page per city ----
     for c in cities:
